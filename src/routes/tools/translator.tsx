@@ -3,6 +3,9 @@ import { Languages } from "lucide-react";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { ToolLayout } from "@/components/tools/ToolLayout";
 import { Translator } from "@/components/tools/Translator";
+import { useI18n } from "@/lib/i18n";
+import { categoryNameKey, toolNameKey } from "@/lib/tools";
+
 
 export const Route = createFileRoute("/tools/translator")({
   head: () => ({
@@ -27,16 +30,19 @@ export const Route = createFileRoute("/tools/translator")({
 });
 
 function TranslatorPage() {
+  const { t } = useI18n();
+
   return (
     <SiteLayout>
       <ToolLayout
         icon={Languages}
-        name="AI Translator"
-        description="Auto-detect the source language and translate in seconds."
-        category="Language"
+        name={t(toolNameKey("translator"))}
+        description={t("translator.pageDescription")}
+        category={t(categoryNameKey("language"))}
       >
         <Translator />
       </ToolLayout>
     </SiteLayout>
   );
 }
+
