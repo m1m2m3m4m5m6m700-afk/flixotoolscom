@@ -20,19 +20,20 @@ export function Hero({ query, onQueryChange }: HeroProps) {
         </span>
 
         <h1
-          className="mt-6 animate-rise text-4xl font-bold leading-[1.05] text-balance md:text-6xl"
+          className="mt-6 animate-rise font-display text-6xl font-bold leading-[1.02] tracking-tight text-balance md:text-8xl"
           style={{ animationDelay: "80ms" }}
         >
-          The AI toolkit that feels like <span className="text-gradient-brand">one product</span>
+          <span className="text-gradient-brand">Flixo</span>
         </h1>
 
         <p
           className="mx-auto mt-5 max-w-xl animate-rise text-base leading-relaxed text-muted-foreground md:text-lg"
           style={{ animationDelay: "160ms" }}
         >
-          Flixo brings translation, writing, vision and audio tools under a single calm interface —
-          no tab juggling, no setup, no accounts.
+          A premium AI toolkit that brings translation, writing, vision and audio tools under a
+          single calm interface — no tab juggling, no setup, no accounts.
         </p>
+
 
         <div
           className="mx-auto mt-9 flex max-w-xl animate-rise items-center gap-2 rounded-2xl border border-border bg-card/80 p-2 shadow-soft backdrop-blur"

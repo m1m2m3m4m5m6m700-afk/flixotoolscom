@@ -4,6 +4,8 @@ import { Categories } from "@/components/landing/Categories";
 import { FAQ } from "@/components/landing/FAQ";
 import { FeaturedTools } from "@/components/landing/FeaturedTools";
 import { Hero } from "@/components/landing/Hero";
+import { PopularTools } from "@/components/landing/PopularTools";
+
 import { Statistics } from "@/components/landing/Statistics";
 import { WhyFlixo } from "@/components/landing/WhyFlixo";
 import { SiteLayout } from "@/components/layout/SiteLayout";
@@ -38,6 +40,8 @@ function Index() {
       <Hero query={query} onQueryChange={setQuery} />
       <FeaturedTools query={query} />
       <Categories />
+      <PopularTools />
+
       <WhyFlixo />
       <Statistics />
       <FAQ />
