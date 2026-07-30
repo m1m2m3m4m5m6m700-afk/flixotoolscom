@@ -1,31 +1,33 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, TrendingUp } from "lucide-react";
 import { Section } from "@/components/layout/Section";
-import { tools } from "@/lib/tools";
+import { useI18n } from "@/lib/i18n";
+import { toolNameKey, toolTaglineKey, tools } from "@/lib/tools";
 
 /** Ranked view of the registry — presentation-only popularity metadata. */
-const popularity: Record<string, { rank: number; uses: string; trend: string }> = {
-  translator: { rank: 1, uses: "412k runs", trend: "+18%" },
-  summarizer: { rank: 2, uses: "286k runs", trend: "+12%" },
-  "image-studio": { rank: 3, uses: "204k runs", trend: "+31%" },
-  transcribe: { rank: 4, uses: "158k runs", trend: "+9%" },
-  "code-explain": { rank: 5, uses: "121k runs", trend: "+6%" },
+const popularity: Record<string, { rank: number; runs: string; trend: string }> = {
+  translator: { rank: 1, runs: "412k", trend: "+18%" },
+  summarizer: { rank: 2, runs: "286k", trend: "+12%" },
+  "image-studio": { rank: 3, runs: "204k", trend: "+31%" },
+  transcribe: { rank: 4, runs: "158k", trend: "+9%" },
+  "code-explain": { rank: 5, runs: "121k", trend: "+6%" },
 };
 
 export function PopularTools() {
+  const { t } = useI18n();
   const ranked = tools
-    .filter((t) => popularity[t.slug])
+    .filter((tool) => popularity[tool.slug])
     .sort((a, b) => popularity[a.slug].rank - popularity[b.slug].rank);
 
   return (
     <Section
       id="popular"
-      eyebrow="Popular"
-      title="What people reach for most"
-      description="The tools our community opens day after day, ranked by usage this month."
+      eyebrow={t("popular.eyebrow")}
+      title={t("popular.title")}
+      description={t("popular.description")}
       className="pt-0"
     >
-      <div className="mx-auto max-w-3xl overflow-hidden rounded-3xl border border-border bg-card/60 backdrop-blur-xl shadow-lift">
+      <div className="mx-auto max-w-3xl overflow-hidden rounded-3xl border border-border bg-card/60 shadow-lift backdrop-blur-xl">
         {ranked.map((tool, i) => {
           const Icon = tool.icon;
           const meta = popularity[tool.slug];
@@ -46,19 +48,23 @@ export function PopularTools() {
 
               <div className="min-w-0">
                 <h3 className="flex items-center gap-1.5 truncate text-sm font-semibold sm:text-base">
-                  {tool.name}
+                  {t(toolNameKey(tool.slug))}
                   {tool.status === "live" && (
-                    <ArrowUpRight className="size-3.5 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    <ArrowUpRight className="size-3.5 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 rtl:-scale-x-100" />
                   )}
                 </h3>
-                <p className="truncate text-xs text-muted-foreground sm:text-sm">{tool.tagline}</p>
+                <p className="truncate text-xs text-muted-foreground sm:text-sm">
+                  {t(toolTaglineKey(tool.slug))}
+                </p>
               </div>
 
-              <div className="shrink-0 text-right">
-                <p className="text-xs font-medium text-muted-foreground">{meta.uses}</p>
+              <div className="shrink-0 text-end">
+                <p className="text-xs font-medium text-muted-foreground">
+                  {t("popular.runs", { count: meta.runs })}
+                </p>
                 <p className="mt-0.5 inline-flex items-center gap-1 text-xs font-medium text-primary">
                   <TrendingUp className="size-3" />
-                  {meta.trend}
+                  <span dir="ltr">{meta.trend}</span>
                 </p>
               </div>
             </div>

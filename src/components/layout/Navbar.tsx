@@ -1,21 +1,24 @@
 import { Link } from "@tanstack/react-router";
 import { Menu, Moon, Sun, Sparkles } from "lucide-react";
 import { useState } from "react";
+import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { Button } from "@/components/ui/button";
+import { useI18n } from "@/lib/i18n";
+import type { TranslationKey } from "@/lib/i18n/locales/en";
 import { useTheme } from "@/lib/theme";
 import { cn } from "@/lib/utils";
 
-const links = [
-  { label: "Tools", href: "/#tools" },
-  { label: "Categories", href: "/#categories" },
-  { label: "Popular", href: "/#popular" },
-  { label: "Why Flixo", href: "/#why" },
-
-  { label: "FAQ", href: "/#faq" },
+const links: { key: TranslationKey; href: string }[] = [
+  { key: "nav.tools", href: "/#tools" },
+  { key: "nav.categories", href: "/#categories" },
+  { key: "nav.popular", href: "/#popular" },
+  { key: "nav.why", href: "/#why" },
+  { key: "nav.faq", href: "/#faq" },
 ];
 
 export function Navbar() {
   const { theme, toggleTheme } = useTheme();
+  const { t } = useI18n();
   const [open, setOpen] = useState(false);
 
   return (
@@ -28,35 +31,36 @@ export function Navbar() {
           <span className="font-display text-lg font-bold tracking-tight">Flixo</span>
         </Link>
 
-        <nav className="ml-4 hidden items-center gap-1 md:flex">
+        <nav className="ms-4 hidden items-center gap-1 md:flex">
           {links.map((l) => (
             <a
-              key={l.label}
+              key={l.key}
               href={l.href}
               className="rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-surface hover:text-foreground"
             >
-              {l.label}
+              {t(l.key)}
             </a>
           ))}
         </nav>
 
-        <div className="ml-auto flex shrink-0 items-center gap-2">
+        <div className="ms-auto flex shrink-0 items-center gap-1.5">
+          <LanguageSwitcher />
           <Button
             variant="ghost"
             size="icon"
-            aria-label="Toggle color theme"
+            aria-label={t("nav.toggleTheme")}
             onClick={toggleTheme}
             className="rounded-xl"
           >
             {theme === "dark" ? <Sun className="size-4" /> : <Moon className="size-4" />}
           </Button>
           <Button asChild className="hidden rounded-xl sm:inline-flex">
-            <Link to="/tools/translator">Open Translator</Link>
+            <Link to="/tools/translator">{t("nav.openTranslator")}</Link>
           </Button>
           <Button
             variant="ghost"
             size="icon"
-            aria-label="Toggle navigation"
+            aria-label={t("nav.toggleMenu")}
             className="rounded-xl md:hidden"
             onClick={() => setOpen((v) => !v)}
           >
@@ -69,16 +73,16 @@ export function Navbar() {
         <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-5 py-3">
           {links.map((l) => (
             <a
-              key={l.label}
+              key={l.key}
               href={l.href}
               onClick={() => setOpen(false)}
               className="rounded-lg px-3 py-2 text-sm text-muted-foreground hover:bg-surface hover:text-foreground"
             >
-              {l.label}
+              {t(l.key)}
             </a>
           ))}
           <Button asChild className="mt-2 rounded-xl">
-            <Link to="/tools/translator">Open Translator</Link>
+            <Link to="/tools/translator">{t("nav.openTranslator")}</Link>
           </Button>
         </nav>
       </div>
