@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowLeft, type LucideIcon } from "lucide-react";
 import type { ReactNode } from "react";
+import { useI18n } from "@/lib/i18n";
 
 interface ToolLayoutProps {
   icon: LucideIcon;
@@ -12,6 +13,8 @@ interface ToolLayoutProps {
 
 /** Shared chrome for every tool page — reuse this for future tools. */
 export function ToolLayout({ icon: Icon, name, description, category, children }: ToolLayoutProps) {
+  const { t } = useI18n();
+
   return (
     <div className="bg-hero-glow">
       <div className="mx-auto max-w-5xl px-5 pb-20 pt-10 md:pt-14">
@@ -19,8 +22,8 @@ export function ToolLayout({ icon: Icon, name, description, category, children }
           to="/"
           className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
         >
-          <ArrowLeft className="size-4" />
-          All tools
+          <ArrowLeft className="size-4 rtl:-scale-x-100" />
+          {t("tool.back")}
         </Link>
 
         <header className="mt-6 grid grid-cols-[minmax(0,1fr)_auto] items-start gap-4 sm:flex sm:items-center">
