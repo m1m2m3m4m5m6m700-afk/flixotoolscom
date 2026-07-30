@@ -1,24 +1,46 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
+import { Categories } from "@/components/landing/Categories";
+import { FAQ } from "@/components/landing/FAQ";
+import { FeaturedTools } from "@/components/landing/FeaturedTools";
+import { Hero } from "@/components/landing/Hero";
+import { Statistics } from "@/components/landing/Statistics";
+import { WhyFlixo } from "@/components/landing/WhyFlixo";
+import { SiteLayout } from "@/components/layout/SiteLayout";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Flixo — The AI Toolkit That Feels Like One Product" },
+      {
+        name: "description",
+        content:
+          "Flixo brings translation, writing, vision and audio AI tools into one fast, private workspace. Free, no accounts, no API keys.",
+      },
+      { property: "og:title", content: "Flixo — One workspace for every AI tool" },
+      {
+        property: "og:description",
+        content:
+          "Translation, writing, vision and audio tools under a single calm interface. Start with the free AI Translator.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
+  const [query, setQuery] = useState("");
+
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <SiteLayout>
+      <Hero query={query} onQueryChange={setQuery} />
+      <FeaturedTools query={query} />
+      <Categories />
+      <WhyFlixo />
+      <Statistics />
+      <FAQ />
+    </SiteLayout>
   );
 }
