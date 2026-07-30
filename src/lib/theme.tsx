@@ -10,15 +10,14 @@ const ThemeContext = createContext<{ theme: Theme; toggleTheme: () => void }>({
 });
 
 /** Inlined in <head> so the first paint already has the right theme class. */
-export const themeInitScript = `(function(){try{var t=localStorage.getItem('${STORAGE_KEY}');if(!t){t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';}document.documentElement.classList.toggle('dark',t==='dark');}catch(e){document.documentElement.classList.add('dark');}})();`;
+export const themeInitScript = `(function(){try{var t=localStorage.getItem('${STORAGE_KEY}');document.documentElement.classList.toggle('dark',t!=='light');}catch(e){}})();`;
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<Theme>("dark");
 
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY) as Theme | null;
-    const initial =
-      stored ?? (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+    const initial: Theme = stored === "light" ? "light" : "dark";
     setTheme(initial);
     document.documentElement.classList.toggle("dark", initial === "dark");
   }, []);
