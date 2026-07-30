@@ -20,7 +20,9 @@ export function Footer() {
 
         <FooterCol title="Product">
           <FooterLink href="/#tools">Featured tools</FooterLink>
+          <FooterLink href="/#popular">Popular tools</FooterLink>
           <FooterLink href="/#why">Why Flixo</FooterLink>
+
           <FooterLink href="/#stats">Numbers</FooterLink>
           <FooterLink href="/#faq">FAQ</FooterLink>
         </FooterCol>

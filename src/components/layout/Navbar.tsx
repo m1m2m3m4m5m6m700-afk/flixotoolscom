@@ -8,7 +8,9 @@ import { cn } from "@/lib/utils";
 const links = [
   { label: "Tools", href: "/#tools" },
   { label: "Categories", href: "/#categories" },
+  { label: "Popular", href: "/#popular" },
   { label: "Why Flixo", href: "/#why" },
+
   { label: "FAQ", href: "/#faq" },
 ];
 
