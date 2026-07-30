@@ -1,3 +1,4 @@
+import type { LinkProps } from "@tanstack/react-router";
 import type { LucideIcon } from "lucide-react";
 import { Languages, FileText, Image, Mic, Code2, Sparkles } from "lucide-react";
 
@@ -10,7 +11,7 @@ export interface Tool {
   category: string;
   icon: LucideIcon;
   status: ToolStatus;
-  href?: string;
+  href?: LinkProps["to"];
 }
 
 /**
