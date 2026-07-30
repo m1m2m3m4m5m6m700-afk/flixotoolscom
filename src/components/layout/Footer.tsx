@@ -1,8 +1,11 @@
 import { Link } from "@tanstack/react-router";
 import { Sparkles } from "lucide-react";
-import { categories } from "@/lib/tools";
+import { useI18n } from "@/lib/i18n";
+import { categories, categoryNameKey, toolNameKey } from "@/lib/tools";
 
 export function Footer() {
+  const { t } = useI18n();
+
   return (
     <footer className="border-t border-border/60 bg-surface/60">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
@@ -13,45 +16,42 @@ export function Footer() {
             </span>
             <span className="font-display text-lg font-bold">Flixo</span>
           </div>
-          <p className="mt-4 max-w-xs text-sm text-muted-foreground">
-            One calm workspace for every AI tool your team reaches for during the day.
-          </p>
+          <p className="mt-4 max-w-xs text-sm text-muted-foreground">{t("footer.tagline")}</p>
         </div>
 
-        <FooterCol title="Product">
-          <FooterLink href="/#tools">Featured tools</FooterLink>
-          <FooterLink href="/#popular">Popular tools</FooterLink>
-          <FooterLink href="/#why">Why Flixo</FooterLink>
-
-          <FooterLink href="/#stats">Numbers</FooterLink>
-          <FooterLink href="/#faq">FAQ</FooterLink>
+        <FooterCol title={t("footer.product")}>
+          <FooterLink href="/#tools">{t("footer.featured")}</FooterLink>
+          <FooterLink href="/#popular">{t("footer.popular")}</FooterLink>
+          <FooterLink href="/#why">{t("nav.why")}</FooterLink>
+          <FooterLink href="/#stats">{t("footer.numbers")}</FooterLink>
+          <FooterLink href="/#faq">{t("nav.faq")}</FooterLink>
         </FooterCol>
 
-        <FooterCol title="Categories">
+        <FooterCol title={t("footer.categories")}>
           {categories.slice(0, 4).map((c) => (
-            <FooterLink key={c.name} href="/#categories">
-              {c.name}
+            <FooterLink key={c.id} href="/#categories">
+              {t(categoryNameKey(c.id))}
             </FooterLink>
           ))}
         </FooterCol>
 
-        <FooterCol title="Tools">
+        <FooterCol title={t("footer.tools")}>
           <li>
             <Link
               to="/tools/translator"
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
-              AI Translator
+              {t(toolNameKey("translator"))}
             </Link>
           </li>
-          <li className="text-sm text-muted-foreground/70">More coming soon</li>
+          <li className="text-sm text-muted-foreground/70">{t("footer.more")}</li>
         </FooterCol>
       </div>
 
       <div className="border-t border-border/60">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Flixo. All rights reserved.</p>
-          <p>Built for teams that ship fast.</p>
+          <p>{t("footer.rights", { year: new Date().getFullYear() })}</p>
+          <p>{t("footer.built")}</p>
         </div>
       </div>
     </footer>

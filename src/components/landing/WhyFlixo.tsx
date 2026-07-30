@@ -1,42 +1,32 @@
 import { Gauge, KeyRound, Layers, ShieldCheck } from "lucide-react";
 import { Section } from "@/components/layout/Section";
+import { useI18n } from "@/lib/i18n";
+import type { TranslationKey } from "@/lib/i18n/locales/en";
 
 const reasons = [
-  {
-    icon: Gauge,
-    title: "Instant by default",
-    body: "Tools open in under a second and run in the browser — no queues, no cold starts.",
-  },
-  {
-    icon: Layers,
-    title: "One consistent surface",
-    body: "Every tool shares the same layout, shortcuts and result actions, so nothing needs relearning.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Privacy-first",
-    body: "Nothing is stored between sessions. Your input stays in the tab you typed it in.",
-  },
-  {
-    icon: KeyRound,
-    title: "No accounts, no keys",
-    body: "Skip API keys, dashboards and seat management. Open a tool and start working.",
-  },
+  { id: "speed", icon: Gauge },
+  { id: "consistency", icon: Layers },
+  { id: "privacy", icon: ShieldCheck },
+  { id: "access", icon: KeyRound },
 ];
 
 export function WhyFlixo() {
+  const { t } = useI18n();
+
   return (
     <div className="border-y border-border/60 bg-surface/40">
-      <Section id="why" eyebrow="Why Flixo" title="Built to remove friction, not add features">
+      <Section id="why" eyebrow={t("why.eyebrow")} title={t("why.title")}>
         <div className="grid gap-4 md:grid-cols-2">
-          {reasons.map(({ icon: Icon, title, body }) => (
-            <div key={title} className="flex gap-4 rounded-2xl border border-border bg-card p-6">
+          {reasons.map(({ id, icon: Icon }) => (
+            <div key={id} className="flex gap-4 rounded-2xl border border-border bg-card p-6">
               <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-accent/15 text-accent-foreground">
                 <Icon className="size-5" />
               </span>
               <div className="min-w-0">
-                <h3 className="text-base font-semibold">{title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{body}</p>
+                <h3 className="text-base font-semibold">{t(`why.${id}.title` as TranslationKey)}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {t(`why.${id}.body` as TranslationKey)}
+                </p>
               </div>
             </div>
           ))}

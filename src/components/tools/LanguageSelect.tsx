@@ -5,6 +5,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { useI18n } from "@/lib/i18n";
 import { AUTO_DETECT, LANGUAGES } from "@/lib/tools/translate";
 
 interface LanguageSelectProps {
@@ -15,6 +16,8 @@ interface LanguageSelectProps {
 }
 
 export function LanguageSelect({ value, onChange, label, includeAuto }: LanguageSelectProps) {
+  const { t } = useI18n();
+
   return (
     <div className="min-w-0 flex-1">
       <span className="mb-1.5 block text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground">
@@ -25,7 +28,7 @@ export function LanguageSelect({ value, onChange, label, includeAuto }: Language
           <SelectValue />
         </SelectTrigger>
         <SelectContent className="max-h-72">
-          {includeAuto && <SelectItem value={AUTO_DETECT}>Auto detect</SelectItem>}
+          {includeAuto && <SelectItem value={AUTO_DETECT}>{t("translator.auto")}</SelectItem>}
           {LANGUAGES.map((l) => (
             <SelectItem key={l.code} value={l.code}>
               {l.name}

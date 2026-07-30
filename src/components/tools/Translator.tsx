@@ -11,35 +11,35 @@ import {
 import { useCallback, useEffect, useRef, useState } from "react";
 import { LanguageSelect } from "@/components/tools/LanguageSelect";
 import { Button } from "@/components/ui/button";
-import {
-  AUTO_DETECT,
-  MAX_CHARS,
-  languageName,
-  translateText,
-} from "@/lib/tools/translate";
+import { useI18n } from "@/lib/i18n";
+import type { TranslationKey } from "@/lib/i18n/locales/en";
+import { AUTO_DETECT, MAX_CHARS, languageName, translateText } from "@/lib/tools/translate";
 import { cn } from "@/lib/utils";
 
 export function Translator() {
+  const { t } = useI18n();
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
   const [from, setFrom] = useState(AUTO_DETECT);
   const [to, setTo] = useState("es");
   const [detected, setDetected] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [errorKey, setErrorKey] = useState<TranslationKey | null>(null);
   const [copied, setCopied] = useState(false);
   const abortRef = useRef<AbortController | null>(null);
 
   useEffect(() => () => abortRef.current?.abort(), []);
 
   const overLimit = input.length > MAX_CHARS;
+  const label = (code: string) =>
+    code === AUTO_DETECT ? t("translator.auto") : languageName(code);
 
   const handleTranslate = useCallback(async () => {
     abortRef.current?.abort();
     const controller = new AbortController();
     abortRef.current = controller;
 
-    setError(null);
+    setErrorKey(null);
     setLoading(true);
     try {
       const result = await translateText({ text: input, from, to, signal: controller.signal });
@@ -49,7 +49,7 @@ export function Translator() {
       if (err instanceof DOMException && err.name === "AbortError") return;
       setOutput("");
       setDetected(null);
-      setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+      setErrorKey("translator.genericError");
     } finally {
       if (!controller.signal.aborted) setLoading(false);
     }
@@ -63,14 +63,14 @@ export function Translator() {
     setInput(output);
     setOutput(input);
     setDetected(null);
-    setError(null);
+    setErrorKey(null);
   };
 
   const handleClear = () => {
     abortRef.current?.abort();
     setInput("");
     setOutput("");
-    setError(null);
+    setErrorKey(null);
     setDetected(null);
     setLoading(false);
   };
@@ -82,24 +82,24 @@ export function Translator() {
       setCopied(true);
       setTimeout(() => setCopied(false), 1600);
     } catch {
-      setError("Couldn't copy to your clipboard.");
+      setErrorKey("translator.copyError");
     }
   };
 
   return (
     <div className="rounded-3xl border border-border bg-card/80 p-4 shadow-soft backdrop-blur md:p-6">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end">
-        <LanguageSelect label="From" value={from} onChange={setFrom} includeAuto />
+        <LanguageSelect label={t("translator.from")} value={from} onChange={setFrom} includeAuto />
         <Button
           variant="outline"
           size="icon"
           onClick={handleSwap}
-          aria-label="Swap languages"
+          aria-label={t("translator.swap")}
           className="shrink-0 rounded-xl sm:mb-0.5"
         >
           <ArrowLeftRight className="size-4" />
         </Button>
-        <LanguageSelect label="To" value={to} onChange={setTo} />
+        <LanguageSelect label={t("translator.to")} value={to} onChange={setTo} />
       </div>
 
       <div className="mt-5 grid gap-4 lg:grid-cols-2">
@@ -107,13 +107,14 @@ export function Translator() {
         <div className="flex flex-col rounded-2xl border border-border bg-background/60">
           <div className="flex items-center justify-between border-b border-border px-4 py-2.5">
             <span className="text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground">
-              {languageName(from)}
+              {label(from)}
             </span>
             <span
               className={cn(
                 "text-xs tabular-nums",
                 overLimit ? "font-medium text-destructive" : "text-muted-foreground",
               )}
+              dir="ltr"
             >
               {input.length.toLocaleString()} / {MAX_CHARS.toLocaleString()}
             </span>
@@ -121,8 +122,8 @@ export function Translator() {
           <textarea
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Type or paste text to translate…"
-            aria-label="Text to translate"
+            placeholder={t("translator.inputPlaceholder")}
+            aria-label={t("translator.inputLabel")}
             className="min-h-56 w-full resize-y bg-transparent px-4 py-3.5 text-sm leading-relaxed outline-none placeholder:text-muted-foreground"
           />
         </div>
@@ -131,10 +132,10 @@ export function Translator() {
         <div className="flex flex-col rounded-2xl border border-border bg-surface/60">
           <div className="flex items-center justify-between border-b border-border px-4 py-2.5">
             <span className="min-w-0 truncate text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground">
-              {languageName(to)}
+              {label(to)}
               {detected && (
-                <span className="ml-2 normal-case tracking-normal text-primary">
-                  detected {languageName(detected)}
+                <span className="ms-2 normal-case tracking-normal text-primary">
+                  {t("translator.detected", { language: languageName(detected) })}
                 </span>
               )}
             </span>
@@ -145,7 +146,7 @@ export function Translator() {
               className="inline-flex shrink-0 items-center gap-1.5 rounded-lg px-2 py-1 text-xs text-muted-foreground transition-colors hover:bg-card hover:text-foreground disabled:pointer-events-none disabled:opacity-40"
             >
               {copied ? <Check className="size-3.5 text-primary" /> : <Copy className="size-3.5" />}
-              {copied ? "Copied" : "Copy"}
+              {copied ? t("translator.copied") : t("translator.copy")}
             </button>
           </div>
 
@@ -161,13 +162,13 @@ export function Translator() {
         </div>
       </div>
 
-      {error && (
+      {errorKey && (
         <div
           role="alert"
           className="mt-4 flex items-start gap-2.5 rounded-xl border border-destructive/30 bg-destructive/10 px-4 py-3 text-sm text-destructive animate-rise"
         >
           <AlertCircle className="mt-0.5 size-4 shrink-0" />
-          <span>{error}</span>
+          <span>{t(errorKey)}</span>
         </div>
       )}
 
@@ -179,7 +180,7 @@ export function Translator() {
           className="rounded-xl text-muted-foreground"
         >
           <Trash2 className="size-4" />
-          Clear
+          {t("translator.clear")}
         </Button>
         <Button
           onClick={handleTranslate}
@@ -190,12 +191,12 @@ export function Translator() {
           {loading ? (
             <>
               <Loader2 className="size-4 animate-spin" />
-              Translating…
+              {t("translator.translating")}
             </>
           ) : (
             <>
               <Sparkles className="size-4" />
-              Translate
+              {t("translator.translate")}
             </>
           )}
         </Button>
@@ -219,15 +220,15 @@ function LoadingState() {
 }
 
 function EmptyState() {
+  const { t } = useI18n();
   return (
     <div className="flex h-full min-h-48 flex-col items-center justify-center gap-3 text-center">
       <span className="grid size-12 place-items-center rounded-2xl bg-primary/10 text-primary">
         <Languages className="size-5" />
       </span>
-      <p className="text-sm font-medium">Your translation appears here</p>
+      <p className="text-sm font-medium">{t("translator.emptyTitle")}</p>
       <p className="max-w-xs text-xs leading-relaxed text-muted-foreground">
-        Pick a target language, drop in some text, and hit Translate. Auto detect figures out the
-        source for you.
+        {t("translator.emptyBody")}
       </p>
     </div>
   );

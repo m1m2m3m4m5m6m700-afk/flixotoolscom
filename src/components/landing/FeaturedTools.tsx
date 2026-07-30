@@ -1,28 +1,35 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, SearchX } from "lucide-react";
 import { Section } from "@/components/layout/Section";
-import { tools } from "@/lib/tools";
+import { useI18n } from "@/lib/i18n";
+import { categoryNameKey, toolNameKey, toolTaglineKey, tools } from "@/lib/tools";
 
 export function FeaturedTools({ query }: { query: string }) {
+  const { t } = useI18n();
   const q = query.trim().toLowerCase();
   const visible = q
-    ? tools.filter((t) =>
-        [t.name, t.tagline, t.category].some((f) => f.toLowerCase().includes(q)),
+    ? tools.filter((tool) =>
+        [
+          t(toolNameKey(tool.slug)),
+          t(toolTaglineKey(tool.slug)),
+          t(categoryNameKey(tool.categoryId)),
+          tool.slug,
+        ].some((f) => f.toLowerCase().includes(q)),
       )
     : tools;
 
   return (
     <Section
       id="tools"
-      eyebrow="Featured tools"
-      title="Purpose-built tools, not a chat box"
-      description="Each tool is designed around one job and shares the same shortcuts, layout and keyboard flow."
+      eyebrow={t("featured.eyebrow")}
+      title={t("featured.title")}
+      description={t("featured.description")}
     >
       {visible.length === 0 ? (
         <div className="mx-auto max-w-md rounded-2xl border border-dashed border-border bg-surface/50 p-10 text-center">
           <SearchX className="mx-auto size-6 text-muted-foreground" />
           <p className="mt-3 text-sm text-muted-foreground">
-            No tools match “{query}”. Try “translate” or “summarize”.
+            {t("featured.empty", { query })}
           </p>
         </div>
       ) : (
@@ -42,18 +49,20 @@ export function FeaturedTools({ query }: { query: string }) {
                         : "rounded-full bg-muted px-2.5 py-1 text-[11px] font-medium text-muted-foreground"
                     }
                   >
-                    {tool.status === "live" ? "Live" : "Soon"}
+                    {tool.status === "live" ? t("status.live") : t("status.soon")}
                   </span>
                 </div>
                 <h3 className="mt-5 flex items-center gap-1.5 text-lg font-semibold">
-                  {tool.name}
+                  {t(toolNameKey(tool.slug))}
                   {tool.status === "live" && (
-                    <ArrowUpRight className="size-4 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    <ArrowUpRight className="size-4 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 rtl:-scale-x-100" />
                   )}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{tool.tagline}</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {t(toolTaglineKey(tool.slug))}
+                </p>
                 <p className="mt-5 text-xs uppercase tracking-[0.14em] text-muted-foreground/70">
-                  {tool.category}
+                  {t(categoryNameKey(tool.categoryId))}
                 </p>
               </div>
             );

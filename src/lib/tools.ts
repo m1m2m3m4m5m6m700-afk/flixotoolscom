@@ -1,81 +1,57 @@
 import type { LinkProps } from "@tanstack/react-router";
 import type { LucideIcon } from "lucide-react";
 import { Languages, FileText, Image, Mic, Code2, Sparkles } from "lucide-react";
+import type { TranslationKey } from "@/lib/i18n/locales/en";
 
 export type ToolStatus = "live" | "soon";
 
 export interface Tool {
   slug: string;
-  name: string;
-  tagline: string;
-  category: string;
+  categoryId: CategoryId;
   icon: LucideIcon;
   status: ToolStatus;
   href?: LinkProps["to"];
 }
 
+export type CategoryId =
+  | "language"
+  | "writing"
+  | "vision"
+  | "audio"
+  | "developer"
+  | "research";
+
+/** Translation-key helpers so every label flows through the i18n layer. */
+export const toolNameKey = (slug: string) => `tool.${slug}.name` as TranslationKey;
+export const toolTaglineKey = (slug: string) => `tool.${slug}.tagline` as TranslationKey;
+export const categoryNameKey = (id: CategoryId) => `category.${id}.name` as TranslationKey;
+export const categoryBlurbKey = (id: CategoryId) => `category.${id}.blurb` as TranslationKey;
+
 /**
  * Central registry — add a new entry here and it appears across the site.
- * A tool becomes usable by adding a route at src/routes/tools/<slug>.tsx
- * and flipping status to "live".
+ * A tool becomes usable by adding a route at src/routes/tools/<slug>.tsx,
+ * flipping status to "live" and adding tool.<slug>.* keys to each locale file.
  */
 export const tools: Tool[] = [
   {
     slug: "translator",
-    name: "AI Translator",
-    tagline: "Translate between 20+ languages with auto detection and instant swapping.",
-    category: "Language",
+    categoryId: "language",
     icon: Languages,
     status: "live",
     href: "/tools/translator",
   },
-  {
-    slug: "summarizer",
-    name: "Text Summarizer",
-    tagline: "Condense long documents into sharp, readable takeaways.",
-    category: "Writing",
-    icon: FileText,
-    status: "soon",
-  },
-  {
-    slug: "image-studio",
-    name: "Image Studio",
-    tagline: "Generate and restyle visuals from a single prompt.",
-    category: "Vision",
-    icon: Image,
-    status: "soon",
-  },
-  {
-    slug: "transcribe",
-    name: "Voice Transcriber",
-    tagline: "Turn meetings and voice notes into clean, timestamped text.",
-    category: "Audio",
-    icon: Mic,
-    status: "soon",
-  },
-  {
-    slug: "code-explain",
-    name: "Code Explainer",
-    tagline: "Understand unfamiliar code with line-by-line commentary.",
-    category: "Developer",
-    icon: Code2,
-    status: "soon",
-  },
-  {
-    slug: "rewriter",
-    name: "Tone Rewriter",
-    tagline: "Rewrite any passage for tone, clarity, or audience.",
-    category: "Writing",
-    icon: Sparkles,
-    status: "soon",
-  },
+  { slug: "summarizer", categoryId: "writing", icon: FileText, status: "soon" },
+  { slug: "image-studio", categoryId: "vision", icon: Image, status: "soon" },
+  { slug: "transcribe", categoryId: "audio", icon: Mic, status: "soon" },
+  { slug: "code-explain", categoryId: "developer", icon: Code2, status: "soon" },
+  { slug: "rewriter", categoryId: "writing", icon: Sparkles, status: "soon" },
 ];
 
-export const categories = [
-  { name: "Language", count: 6, blurb: "Translation, localization and multilingual copy." },
-  { name: "Writing", count: 9, blurb: "Drafting, editing, summarizing and rewriting." },
-  { name: "Vision", count: 5, blurb: "Image generation, upscaling and background work." },
-  { name: "Audio", count: 4, blurb: "Transcription, voice cleanup and dubbing." },
-  { name: "Developer", count: 7, blurb: "Code review, explanation and test scaffolding." },
-  { name: "Research", count: 3, blurb: "Extraction, comparison and structured analysis." },
+export const categories: { id: CategoryId; count: number }[] = [
+  { id: "language", count: 6 },
+  { id: "writing", count: 9 },
+  { id: "vision", count: 5 },
+  { id: "audio", count: 4 },
+  { id: "developer", count: 7 },
+  { id: "research", count: 3 },
 ];
