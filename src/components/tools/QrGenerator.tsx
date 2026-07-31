@@ -4,13 +4,13 @@ import {
   Copy,
   Check,
   Trash2,
-  Sparkles,
   Link2,
   Wifi,
   Mail,
   Type,
   Phone,
   Sliders,
+  AlertCircle,
 } from "lucide-react";
 import QRCode from "qrcode";
 import { useEffect, useState } from "react";
@@ -23,31 +23,22 @@ type PresetMode = "url" | "text" | "wifi" | "email" | "phone";
 export function QrGenerator() {
   const [mode, setMode] = useState<PresetMode>("url");
   const [input, setInput] = useState("https://flixotools.com");
-
-  // Wi-Fi fields
   const [wifiSsid, setWifiSsid] = useState("");
   const [wifiPass, setWifiPass] = useState("");
   const [wifiEncryption, setWifiEncryption] = useState<"WPA" | "WEP" | "nopass">("WPA");
-
-  // Email fields
   const [emailTo, setEmailTo] = useState("");
   const [emailSubject, setEmailSubject] = useState("");
-
-  // Phone fields
   const [phoneNumber, setPhoneNumber] = useState("");
-
-  // Styling options
-  const [size, setSize] = useState<number>(300);
+  const [size] = useState<number>(300);
   const [darkColor, setDarkColor] = useState("#0f172a");
   const [lightColor, setLightColor] = useState("#ffffff");
-  const [ecLevel, setEcLevel] = useState<"L" | "M" | "Q" | "H">("M");
+  const [ecLevel] = useState<"L" | "M" | "Q" | "H">("M");
 
   const [qrDataUrl, setQrDataUrl] = useState<string>("");
   const [qrSvgString, setQrSvgString] = useState<string>("");
   const [copied, setCopied] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // Derive the payload string depending on selected preset mode
   const getPayload = (): string => {
     switch (mode) {
       case "wifi":
@@ -65,7 +56,6 @@ export function QrGenerator() {
 
   const payload = getPayload();
 
-  // Generate QR Code on payload / options change
   useEffect(() => {
     if (!payload.trim()) {
       setQrDataUrl("");
@@ -75,7 +65,6 @@ export function QrGenerator() {
 
     setError(null);
 
-    // PNG Data URL
     QRCode.toDataURL(payload, {
       width: size,
       margin: 2,
@@ -91,7 +80,6 @@ export function QrGenerator() {
         setError("Invalid QR input text or format.");
       });
 
-    // SVG String
     QRCode.toString(payload, {
       type: "svg",
       width: size,
@@ -103,7 +91,9 @@ export function QrGenerator() {
       errorCorrectionLevel: ecLevel,
     })
       .then((svg) => setQrSvgString(svg))
-      .catch(() => {});
+      .catch(() => {
+        setQrSvgString("");
+      });
   }, [payload, size, darkColor, lightColor, ecLevel]);
 
   const handleCopyText = async () => {
@@ -152,7 +142,6 @@ export function QrGenerator() {
 
   return (
     <div className="rounded-3xl border border-border bg-card/80 p-4 shadow-soft backdrop-blur md:p-6">
-      {/* Preset Mode Tabs */}
       <div className="flex flex-wrap items-center gap-2 border-b border-border/60 pb-4">
         {[
           { id: "url", label: "Website URL", icon: Link2 },
@@ -166,6 +155,7 @@ export function QrGenerator() {
           return (
             <button
               key={item.id}
+              type="button"
               onClick={() => {
                 setMode(item.id as PresetMode);
                 setError(null);
@@ -184,7 +174,6 @@ export function QrGenerator() {
       </div>
 
       <div className="mt-6 grid gap-6 lg:grid-cols-[1fr_340px]">
-        {/* Left Inputs Column */}
         <div className="space-y-5">
           {mode === "url" && (
             <div>
@@ -193,7 +182,7 @@ export function QrGenerator() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="https://example.com"
-                className="mt-1.5 text-sm rounded-xl"
+                className="mt-1.5 rounded-xl text-sm"
               />
             </div>
           )}
@@ -218,7 +207,7 @@ export function QrGenerator() {
                   value={wifiSsid}
                   onChange={(e) => setWifiSsid(e.target.value)}
                   placeholder="MyHomeWiFi"
-                  className="mt-1.5 text-sm rounded-xl"
+                  className="mt-1.5 rounded-xl text-sm"
                 />
               </div>
               <div>
@@ -228,7 +217,7 @@ export function QrGenerator() {
                   value={wifiPass}
                   onChange={(e) => setWifiPass(e.target.value)}
                   placeholder="Wi-Fi Password"
-                  className="mt-1.5 text-sm rounded-xl"
+                  className="mt-1.5 rounded-xl text-sm"
                 />
               </div>
               <div>
@@ -255,7 +244,7 @@ export function QrGenerator() {
                   value={emailTo}
                   onChange={(e) => setEmailTo(e.target.value)}
                   placeholder="name@example.com"
-                  className="mt-1.5 text-sm rounded-xl"
+                  className="mt-1.5 rounded-xl text-sm"
                 />
               </div>
               <div>
@@ -264,7 +253,7 @@ export function QrGenerator() {
                   value={emailSubject}
                   onChange={(e) => setEmailSubject(e.target.value)}
                   placeholder="Inquiry about project"
-                  className="mt-1.5 text-sm rounded-xl"
+                  className="mt-1.5 rounded-xl text-sm"
                 />
               </div>
             </div>
@@ -278,14 +267,13 @@ export function QrGenerator() {
                 value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)}
                 placeholder="+1 (555) 000-0000"
-                className="mt-1.5 text-sm rounded-xl"
+                className="mt-1.5 rounded-xl text-sm"
               />
             </div>
           )}
 
-          {/* Customization Options */}
-          <div className="rounded-2xl border border-border/60 bg-surface/40 p-4 space-y-3">
-            <span className="text-xs font-semibold uppercase tracking-wider text-foreground flex items-center gap-1.5">
+          <div className="space-y-3 rounded-2xl border border-border/60 bg-surface/40 p-4">
+            <span className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-foreground">
               <Sliders className="size-3.5 text-primary" />
               Customization Options
             </span>
@@ -293,12 +281,12 @@ export function QrGenerator() {
             <div className="grid grid-cols-2 gap-3 pt-1">
               <div>
                 <Label className="text-[11px] text-muted-foreground">Foreground Color</Label>
-                <div className="flex items-center gap-2 mt-1">
+                <div className="mt-1 flex items-center gap-2">
                   <input
                     type="color"
                     value={darkColor}
                     onChange={(e) => setDarkColor(e.target.value)}
-                    className="size-7 rounded cursor-pointer border-0 bg-transparent"
+                    className="size-7 cursor-pointer rounded border-0 bg-transparent"
                   />
                   <span className="font-mono text-xs text-foreground">{darkColor}</span>
                 </div>
@@ -306,18 +294,25 @@ export function QrGenerator() {
 
               <div>
                 <Label className="text-[11px] text-muted-foreground">Background Color</Label>
-                <div className="flex items-center gap-2 mt-1">
+                <div className="mt-1 flex items-center gap-2">
                   <input
                     type="color"
                     value={lightColor}
                     onChange={(e) => setLightColor(e.target.value)}
-                    className="size-7 rounded cursor-pointer border-0 bg-transparent"
+                    className="size-7 cursor-pointer rounded border-0 bg-transparent"
                   />
                   <span className="font-mono text-xs text-foreground">{lightColor}</span>
                 </div>
               </div>
             </div>
           </div>
+
+          {error && (
+            <div className="flex items-start gap-2 rounded-xl border border-destructive/30 bg-destructive/10 px-3 py-2 text-xs text-destructive">
+              <AlertCircle className="mt-0.5 size-4 shrink-0" />
+              <span>{error}</span>
+            </div>
+          )}
 
           <div className="flex items-center justify-between pt-2">
             <Button
@@ -346,7 +341,6 @@ export function QrGenerator() {
           </div>
         </div>
 
-        {/* Right QR Preview Column */}
         <div className="flex flex-col items-center justify-between rounded-2xl border border-border/70 bg-surface/60 p-6 text-center">
           <div className="w-full">
             <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
@@ -358,11 +352,11 @@ export function QrGenerator() {
                 <img
                   src={qrDataUrl}
                   alt="Generated QR Code"
-                  className="max-h-56 object-contain animate-rise"
+                  className="max-h-56 animate-rise object-contain"
                 />
               ) : (
                 <div className="flex flex-col items-center justify-center text-muted-foreground">
-                  <QrCode className="size-10 text-muted-foreground/40 mb-2" />
+                  <QrCode className="mb-2 size-10 text-muted-foreground/40" />
                   <p className="text-xs">Enter content to preview QR code</p>
                 </div>
               )}

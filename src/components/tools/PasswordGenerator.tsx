@@ -1,14 +1,10 @@
 import {
-  KeyRound,
   Copy,
   Check,
   RefreshCw,
   ShieldAlert,
   ShieldCheck,
   Shield,
-  Sliders,
-  Sparkles,
-  Lock,
 } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -70,9 +66,8 @@ export function PasswordGenerator() {
     generatePassword();
   }, [generatePassword]);
 
-  // Entropy & strength score calculation
   const calculateStrength = () => {
-    if (!password) return { label: "None", score: 0, color: "bg-muted" };
+    if (!password) return { label: "None", score: 0, color: "bg-muted", text: "text-muted-foreground" };
 
     let poolSize = 0;
     if (useUpper) poolSize += 26;
@@ -109,19 +104,18 @@ export function PasswordGenerator() {
 
   return (
     <div className="rounded-3xl border border-border bg-card/80 p-4 shadow-soft backdrop-blur md:p-6">
-      {/* Password Display Box */}
-      <div className="relative flex flex-col sm:flex-row sm:items-center justify-between gap-3 rounded-2xl border border-border bg-background/80 p-4 shadow-inner">
+      <div className="relative flex flex-col justify-between gap-3 rounded-2xl border border-border bg-background/80 p-4 shadow-inner sm:flex-row sm:items-center">
         <div className="min-w-0 flex-1 overflow-x-auto py-1">
-          <p className="font-mono text-xl sm:text-2xl font-bold tracking-wider text-foreground select-all break-all">
+          <p className="select-all break-all font-mono text-xl font-bold tracking-wider text-foreground sm:text-2xl">
             {password || (
-              <span className="text-muted-foreground italic text-base">
+              <span className="text-base italic text-muted-foreground">
                 Select at least one character set
               </span>
             )}
           </p>
         </div>
 
-        <div className="flex items-center gap-2 shrink-0">
+        <div className="flex shrink-0 items-center gap-2">
           <Button
             variant="outline"
             size="icon"
@@ -138,7 +132,6 @@ export function PasswordGenerator() {
         </div>
       </div>
 
-      {/* Strength Meter Bar */}
       <div className="mt-4 flex items-center justify-between rounded-xl border border-border/60 bg-surface/50 px-4 py-2.5">
         <div className="flex items-center gap-2">
           {strength.score >= 4 ? (
@@ -169,11 +162,9 @@ export function PasswordGenerator() {
         </div>
       </div>
 
-      {/* Customization Options */}
       <div className="mt-6 space-y-6">
-        {/* Length Slider */}
         <div className="rounded-2xl border border-border/60 bg-surface/40 p-4">
-          <div className="flex items-center justify-between text-xs mb-2">
+          <div className="mb-2 flex items-center justify-between text-xs">
             <span className="font-semibold text-foreground">Password Length</span>
             <span className="font-mono text-base font-bold text-primary">{length} characters</span>
           </div>
@@ -186,7 +177,6 @@ export function PasswordGenerator() {
           />
         </div>
 
-        {/* Toggles Grid */}
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="flex items-center justify-between rounded-2xl border border-border/60 bg-surface/40 p-4">
             <div>
@@ -221,7 +211,6 @@ export function PasswordGenerator() {
           </div>
         </div>
 
-        {/* Exclude Ambiguous Option */}
         <div className="flex items-center justify-between rounded-2xl border border-border/60 bg-surface/40 p-4">
           <div>
             <Label className="text-xs font-semibold">Exclude Ambiguous Characters</Label>

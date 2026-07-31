@@ -17,11 +17,12 @@ function getInitialData(): AnalyticsData {
 
 export class LocalAnalyticsProvider implements AnalyticsProviderInterface {
   name = "local";
+  private unloadListenerRegistered = false;
 
   init(_config: AnalyticsConfig): void {
-    if (typeof window === "undefined") return;
+    if (typeof window === "undefined" || this.unloadListenerRegistered) return;
 
-    // Attach beforeunload listener for exit page tracking
+    this.unloadListenerRegistered = true;
     window.addEventListener("beforeunload", () => {
       if (lastVisitedPage) {
         this.trackExitPage(lastVisitedPage);
@@ -78,10 +79,15 @@ export class LocalAnalyticsProvider implements AnalyticsProviderInterface {
     const data = this.getData();
     data.pageViews[pagePath] = (data.pageViews[pagePath] || 0) + 1;
 
-    if (!sessionStorage.getItem("flixo_session_started")) {
-      sessionStorage.setItem("flixo_session_started", "true");
+    try {
+      if (!sessionStorage.getItem("flixo_session_started")) {
+        sessionStorage.setItem("flixo_session_started", "true");
+        data.landingPages[pagePath] = (data.landingPages[pagePath] || 0) + 1;
+      }
+    } catch {
       data.landingPages[pagePath] = (data.landingPages[pagePath] || 0) + 1;
     }
+
     this.saveData(data);
   }
 

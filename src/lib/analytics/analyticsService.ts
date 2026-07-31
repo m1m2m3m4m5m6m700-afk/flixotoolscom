@@ -10,6 +10,7 @@ class AnalyticsService {
     enabled: true,
   };
   private initialized = false;
+  private initializationStarted = false;
 
   constructor() {
     this.localProvider = new LocalAnalyticsProvider();
@@ -17,7 +18,7 @@ class AnalyticsService {
   }
 
   public init(customConfig?: Partial<AnalyticsConfig>): void {
-    if (typeof window === "undefined" || this.initialized) return;
+    if (typeof window === "undefined" || this.initialized || this.initializationStarted) return;
 
     const envEnabled = import.meta.env.VITE_ENABLE_ANALYTICS !== "false";
     const debug = import.meta.env.VITE_ANALYTICS_DEBUG === "true";
@@ -31,23 +32,22 @@ class AnalyticsService {
     };
 
     if (!this.config.enabled) {
+      this.initialized = true;
       if (debug) console.log("[Analytics] Disabled via configuration");
       return;
     }
 
-    // Defer initialization to requestIdleCallback or setTimeout to minimize main thread blocking
+    this.initializationStarted = true;
+
     const loadProviders = () => {
-      // Auto-register GA4 if ID is present
       if (this.config.gaMeasurementId && !this.providers.some((p) => p.name === "ga4")) {
         this.providers.push(new GA4Provider());
       }
 
-      // Auto-register Clarity if Project ID is present
       if (this.config.clarityProjectId && !this.providers.some((p) => p.name === "clarity")) {
         this.providers.push(new ClarityProvider());
       }
 
-      // Add custom providers if specified in config
       if (this.config.customProviders) {
         this.config.customProviders.forEach((p) => {
           if (!this.providers.some((existing) => existing.name === p.name)) {
@@ -56,7 +56,6 @@ class AnalyticsService {
         });
       }
 
-      // Initialize all providers
       this.providers.forEach((provider) => {
         try {
           provider.init(this.config);
@@ -66,6 +65,7 @@ class AnalyticsService {
       });
 
       this.initialized = true;
+      this.initializationStarted = false;
       if (debug) {
         console.log(
           `[Analytics] Centralized service initialized with ${this.providers.length} providers.`,
