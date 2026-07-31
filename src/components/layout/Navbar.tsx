@@ -9,7 +9,7 @@ import { useTheme } from "@/lib/theme";
 import { cn } from "@/lib/utils";
 
 const links: { key: TranslationKey; href: string }[] = [
-  { key: "nav.tools", href: "/#tools" },
+  { key: "nav.tools", href: "/#categories" },
   { key: "nav.why", href: "/#why" },
   { key: "nav.faq", href: "/#faq" },
 ];

@@ -1,10 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { CategoryGrid } from "@/components/landing/CategoryGrid";
 import { FAQ } from "@/components/landing/FAQ";
-import { FeaturedTools } from "@/components/landing/FeaturedTools";
-import { Hero } from "@/components/landing/Hero";
+import { HomeHero } from "@/components/landing/HomeHero";
 import { RequestToolDialog } from "@/components/landing/RequestToolDialog";
 import { Statistics } from "@/components/landing/Statistics";
+import { ToolDirectory } from "@/components/landing/ToolDirectory";
 import { WhyFlixo } from "@/components/landing/WhyFlixo";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 
@@ -36,8 +37,13 @@ function Index() {
 
   return (
     <SiteLayout>
-      <Hero prompt={query} onPromptChange={setQuery} onRequestTool={() => setRequestOpen(true)} />
-      <FeaturedTools />
+      <HomeHero
+        prompt={query}
+        onPromptChange={setQuery}
+        onRequestTool={() => setRequestOpen(true)}
+      />
+      <CategoryGrid />
+      <ToolDirectory onRequestTool={() => setRequestOpen(true)} />
       <WhyFlixo />
       <Statistics />
       <FAQ />
