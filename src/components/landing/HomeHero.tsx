@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import { AITaskInterface } from "@/components/assistant/AITaskInterface";
 import { readyTools, tools } from "@/data/tools";
 import { categories, type CategoryId } from "@/data/categories";
+import { useI18n } from "@/lib/i18n";
 
 interface HomeHeroProps {
   prompt: string;
@@ -17,6 +18,7 @@ export function HomeHero({
   onRequestTool,
   onSelectCategory,
 }: HomeHeroProps) {
+  const { t } = useI18n();
   const stats = [
     { label: "Categories", value: categories.length },
     { label: "AI Skills mapped", value: tools.length },
@@ -61,6 +63,21 @@ export function HomeHero({
           Your conversational AI task assistant. Describe what you need to accomplish and Flixo
           matches the right AI skill instantly.
         </motion.p>
+
+        {/* Promo Panel */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.25 }}
+          className="mx-auto mt-6 flex max-w-2xl flex-col items-start gap-3 rounded-3xl border border-primary/20 bg-primary/5 px-5 py-4 text-left shadow-sm backdrop-blur-sm"
+        >
+          <span className="inline-flex items-center gap-2 rounded-full bg-primary/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary/90">
+            {t("hero.promo.badge")}
+          </span>
+          <p className="text-sm font-medium text-foreground md:text-base">
+            {t("hero.promo.body")}
+          </p>
+        </motion.div>
 
         {/* Conversational AI Task Interface */}
         <motion.div

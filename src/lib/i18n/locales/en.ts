@@ -19,6 +19,8 @@ export const en = {
   "hero.title": "One workspace for every AI tool",
   "hero.description":
     "Translation, images, PDFs, writing and utilities — five tool hubs under a single calm interface. No accounts, no API keys, just open a tool and start working.",
+  "hero.promo.badge": "New",
+  "hero.promo.body": "Try the AI Image Enhancer today — sharpen, upscale, and remove noise from your photos instantly.",
   "hero.searchLabel": "Describe what you want to do",
   "hero.searchPlaceholder":
     "Try: “translate this to Arabic”, “summarize a PDF”, “generate an image”…",
