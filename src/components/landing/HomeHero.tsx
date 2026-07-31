@@ -4,16 +4,10 @@ import { AITaskInterface } from "@/components/assistant/AITaskInterface";
 import { useI18n } from "@/lib/i18n";
 
 interface HomeHeroProps {
-  prompt: string;
-  onPromptChange: (value: string) => void;
   onRequestTool: (prefillPrompt?: string) => void;
 }
 
-export function HomeHero({
-  prompt,
-  onPromptChange,
-  onRequestTool,
-}: HomeHeroProps) {
+export function HomeHero({ onRequestTool }: HomeHeroProps) {
   const { t } = useI18n();
 
   return (
@@ -65,9 +59,7 @@ export function HomeHero({
           <span className="inline-flex items-center gap-2 rounded-full bg-primary/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary/90">
             {t("hero.promo.badge")}
           </span>
-          <p className="text-sm font-medium text-foreground md:text-base">
-            {t("hero.promo.body")}
-          </p>
+          <p className="text-sm font-medium text-foreground md:text-base">{t("hero.promo.body")}</p>
         </motion.div>
 
         {/* Conversational AI Task Interface */}

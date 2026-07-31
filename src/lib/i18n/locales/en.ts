@@ -20,7 +20,8 @@ export const en = {
   "hero.description":
     "Translation, images, PDFs, writing and utilities — five tool hubs under a single calm interface. No accounts, no API keys, just open a tool and start working.",
   "hero.promo.badge": "New",
-  "hero.promo.body": "Try the AI Image Enhancer today — sharpen, upscale, and remove noise from your photos instantly.",
+  "hero.promo.body":
+    "Try the AI Image Enhancer today — sharpen, upscale, and remove noise from your photos instantly.",
   "hero.searchLabel": "Describe what you want to do",
   "hero.searchPlaceholder":
     "Try: “translate this to Arabic”, “summarize a PDF”, “generate an image”…",
@@ -107,17 +108,23 @@ export const en = {
   "tool.password-generator.name": "Password Generator",
   "tool.password-generator.tagline": "Generate strong, secure passwords with entropy meter.",
   "tool.ai-chat.name": "AI Chat",
-  "tool.ai-chat.tagline": "Ask questions, brainstorm ideas, or get instant answers from a general AI assistant.",
-  "tool.ai-chat.pageDescription": "Chat with a general AI assistant for ideas, questions, and quick problem solving.",
+  "tool.ai-chat.tagline":
+    "Ask questions, brainstorm ideas, or get instant answers from a general AI assistant.",
+  "tool.ai-chat.pageDescription":
+    "Chat with a general AI assistant for ideas, questions, and quick problem solving.",
   "tool.prompt-improver.name": "Prompt Improver",
   "tool.prompt-improver.tagline": "Rewrite your prompts to get clearer, more useful AI results.",
-  "tool.prompt-improver.pageDescription": "Improve prompts for better performance across all AI tools and workflows.",
+  "tool.prompt-improver.pageDescription":
+    "Improve prompts for better performance across all AI tools and workflows.",
   "tool.code-explainer.name": "Code Explainer",
-  "tool.code-explainer.tagline": "Explain code snippets in plain language and discover what they do.",
-  "tool.code-explainer.pageDescription": "Paste a code snippet and get an easy-to-understand explanation of its behavior.",
+  "tool.code-explainer.tagline":
+    "Explain code snippets in plain language and discover what they do.",
+  "tool.code-explainer.pageDescription":
+    "Paste a code snippet and get an easy-to-understand explanation of its behavior.",
   "tool.data-insights.name": "Data Insights",
   "tool.data-insights.tagline": "Upload tables or CSVs and surface AI-driven insights quickly.",
-  "tool.data-insights.pageDescription": "Analyze tables, CSVs, and data sets with instant AI insights and summaries.",
+  "tool.data-insights.pageDescription":
+    "Analyze tables, CSVs, and data sets with instant AI insights and summaries.",
 
   "why.eyebrow": "Why Flixo",
   "why.title": "Built to remove friction, not add features",

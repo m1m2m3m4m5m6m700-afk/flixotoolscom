@@ -3,14 +3,16 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { Assistant } from "@/components/landing/Assistant";
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/lib/i18n";
+import type { CategoryId } from "@/data/categories";
 
 interface HeroProps {
   prompt: string;
   onPromptChange: (value: string) => void;
   onRequestTool: () => void;
+  onSelectCategory: (categoryId: CategoryId) => void;
 }
 
-export function Hero({ prompt, onPromptChange, onRequestTool }: HeroProps) {
+export function Hero({ prompt, onPromptChange, onRequestTool, onSelectCategory }: HeroProps) {
   const { t } = useI18n();
 
   return (
@@ -38,7 +40,12 @@ export function Hero({ prompt, onPromptChange, onRequestTool }: HeroProps) {
           {t("hero.description")}
         </p>
 
-        <Assistant prompt={prompt} onPromptChange={onPromptChange} onRequestTool={onRequestTool} />
+        <Assistant
+          prompt={prompt}
+          onPromptChange={onPromptChange}
+          onRequestTool={onRequestTool}
+          onSelectCategory={onSelectCategory}
+        />
 
         <div
           className="mt-8 flex animate-rise flex-col items-center justify-center gap-3 sm:flex-row"

@@ -18,7 +18,8 @@ export const ar: Dictionary = {
   "hero.description":
     "الترجمة والصور وملفات PDF والكتابة والأدوات المساعدة — خمسة مراكز أدوات في واجهة واحدة هادئة. بلا حسابات ولا مفاتيح واجهات، افتح الأداة وابدأ العمل.",
   "hero.promo.badge": "جديد",
-  "hero.promo.body": "جرب مُحسّن الصور بالذكاء الاصطناعي الآن — وضّح الصورة، وكبّرها، وأزل الضوضاء فورًا.",
+  "hero.promo.body":
+    "جرب مُحسّن الصور بالذكاء الاصطناعي الآن — وضّح الصورة، وكبّرها، وأزل الضوضاء فورًا.",
   "hero.searchLabel": "صف ما تريد إنجازه",
   "hero.searchPlaceholder": "جرّب: «ترجم هذا إلى العربية»، «لخّص ملف PDF»، «أنشئ صورة»…",
   "hero.browse": "تصفّح الأدوات",
@@ -100,16 +101,20 @@ export const ar: Dictionary = {
   "tool.password-generator.tagline": "أنشئ كلمات مرور قوية وآمنة مع مقياس المتانة الأمني.",
   "tool.ai-chat.name": "دردشة الذكاء الاصطناعي",
   "tool.ai-chat.tagline": "اطرح الأسئلة، ابتكر أفكارًا، واحصل على إجابات فورية.",
-  "tool.ai-chat.pageDescription": "تحدث مع مساعد ذكاء اصطناعي عام للأفكار والأسئلة وحل المشكلات السريع.",
+  "tool.ai-chat.pageDescription":
+    "تحدث مع مساعد ذكاء اصطناعي عام للأفكار والأسئلة وحل المشكلات السريع.",
   "tool.prompt-improver.name": "محسّن المطالبات",
-  "tool.prompt-improver.tagline": "أعد صياغة مطالباتك للحصول على نتائج أذكى من أدوات الذكاء الاصطناعي.",
-  "tool.prompt-improver.pageDescription": "حسن مطالباتك لتحصل على أداء أفضل عبر جميع أدوات وسير عمل الذكاء الاصطناعي.",
+  "tool.prompt-improver.tagline":
+    "أعد صياغة مطالباتك للحصول على نتائج أذكى من أدوات الذكاء الاصطناعي.",
+  "tool.prompt-improver.pageDescription":
+    "حسن مطالباتك لتحصل على أداء أفضل عبر جميع أدوات وسير عمل الذكاء الاصطناعي.",
   "tool.code-explainer.name": "مفسّر الكود",
   "tool.code-explainer.tagline": "اشرح مقاطع الكود بلغة بسيطة وافهم ما تفعله.",
   "tool.code-explainer.pageDescription": "ألصق مقطع كود واحصل على تفسير سهل الفهم لسلوكه.",
   "tool.data-insights.name": "رؤى البيانات",
   "tool.data-insights.tagline": "حمّل الجداول أو CSV واكتشف رؤى ذكاء اصطناعي بسرعة.",
-  "tool.data-insights.pageDescription": "حلل الجداول وCSV وبياناتك عبر الذكاء الاصطناعي للحصول على رؤى فورية.",
+  "tool.data-insights.pageDescription":
+    "حلل الجداول وCSV وبياناتك عبر الذكاء الاصطناعي للحصول على رؤى فورية.",
 
   "why.eyebrow": "لماذا فليكسو",
   "why.title": "مبنية لإزالة العوائق، لا لإضافة المزيد من المزايا",

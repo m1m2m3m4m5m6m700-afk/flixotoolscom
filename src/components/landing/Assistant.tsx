@@ -59,7 +59,7 @@ export function Assistant({
         if (classification.tool) {
           trackToolOpen(classification.tool.name);
         }
-        onSelectCategory?.(classification.category.id);
+        handleScrollToCategory(classification.category.anchor, classification.category.id);
       }
     }, 400);
   };
