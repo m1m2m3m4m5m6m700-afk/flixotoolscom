@@ -526,7 +526,9 @@ export function useCommunicationStore() {
     const unsubscribe = communicationStore.subscribe(() => {
       setTick((t) => t + 1);
     });
-    return () => { unsubscribe(); };
+    return () => {
+      unsubscribe();
+    };
   }, []);
 
   return {
