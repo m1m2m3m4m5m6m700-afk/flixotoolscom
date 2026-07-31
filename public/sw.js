@@ -1,10 +1,10 @@
-const CACHE_NAME = "flixo-pwa-v1";
-const ASSETS_TO_CACHE = ["/", "/manifest.json", "/robots.txt", "/sitemap.xml"];
+const CACHE_NAME = "flixo-pwa-v2";
+const APP_SHELL = ["/", "/manifest.json", "/robots.txt", "/sitemap.xml"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(ASSETS_TO_CACHE);
+      return cache.addAll(APP_SHELL);
     }),
   );
   self.skipWaiting();
@@ -22,28 +22,58 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
-  if (event.request.method !== "GET") return;
+  const { request } = event;
+  const url = new URL(request.url);
+
+  if (request.method !== "GET") return;
+  if (url.origin !== self.location.origin) return;
+
+  if (request.mode === "navigate") {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          if (response && response.ok) {
+            const copy = response.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(request, copy);
+            });
+          }
+          return response;
+        })
+        .catch(async () => {
+          const cachedPage = await caches.match(request);
+          if (cachedPage) return cachedPage;
+          return caches.match("/");
+        }),
+    );
+    return;
+  }
 
   event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
+    caches.match(request).then((cachedResponse) => {
       if (cachedResponse) {
-        // Fetch background update for cache-first strategy
-        fetch(event.request)
+        void fetch(request)
           .then((networkResponse) => {
-            if (networkResponse && networkResponse.status === 200) {
+            if (networkResponse && networkResponse.ok) {
               caches.open(CACHE_NAME).then((cache) => {
-                cache.put(event.request, networkResponse);
+                cache.put(request, networkResponse.clone());
               });
             }
           })
           .catch(() => {
-            /* Ignore offline network failures */
+            /* Ignore background refresh failures */
           });
         return cachedResponse;
       }
 
-      return fetch(event.request).catch(() => {
-        return caches.match("/");
+      return fetch(request).then((networkResponse) => {
+        if (networkResponse && networkResponse.ok && request.destination !== "") {
+          const copy = networkResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(request, copy);
+          });
+        }
+        return networkResponse;
       });
     }),
   );
