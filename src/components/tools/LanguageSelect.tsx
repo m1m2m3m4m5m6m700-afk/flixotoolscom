@@ -31,7 +31,11 @@ export function LanguageSelect({ value, onChange, label, includeAuto }: Language
           {includeAuto && <SelectItem value={AUTO_DETECT}>{t("translator.auto")}</SelectItem>}
           {LANGUAGES.map((l) => (
             <SelectItem key={l.code} value={l.code}>
-              {l.name}
+              <span className="inline-flex items-center gap-2">
+                <span>{l.flag}</span>
+                <span>{l.name}</span>
+                <span className="text-muted-foreground text-xs">({l.nativeName})</span>
+              </span>
             </SelectItem>
           ))}
         </SelectContent>
