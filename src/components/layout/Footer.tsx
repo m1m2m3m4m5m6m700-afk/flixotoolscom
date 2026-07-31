@@ -1,14 +1,18 @@
 import { Link } from "@tanstack/react-router";
 import { Sparkles } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
-import { categories, categoryNameKey, toolNameKey } from "@/lib/tools";
+import { toolNameKey } from "@/lib/tools";
 
-export function Footer() {
+interface FooterProps {
+  onRequestTool?: () => void;
+}
+
+export function Footer({ onRequestTool }: FooterProps) {
   const { t } = useI18n();
 
   return (
     <footer className="border-t border-border/60 bg-surface/60">
-      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
           <div className="flex items-center gap-2">
             <span className="grid size-9 place-items-center rounded-xl bg-primary text-primary-foreground">
@@ -16,23 +20,26 @@ export function Footer() {
             </span>
             <span className="font-display text-lg font-bold">Flixo</span>
           </div>
-          <p className="mt-4 max-w-xs text-sm text-muted-foreground">{t("footer.tagline")}</p>
+          <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
+            {t("footer.tagline")}
+          </p>
         </div>
 
         <FooterCol title={t("footer.product")}>
           <FooterLink href="/#tools">{t("footer.featured")}</FooterLink>
-          <FooterLink href="/#popular">{t("footer.popular")}</FooterLink>
           <FooterLink href="/#why">{t("nav.why")}</FooterLink>
           <FooterLink href="/#stats">{t("footer.numbers")}</FooterLink>
           <FooterLink href="/#faq">{t("nav.faq")}</FooterLink>
-        </FooterCol>
-
-        <FooterCol title={t("footer.categories")}>
-          {categories.slice(0, 4).map((c) => (
-            <FooterLink key={c.id} href="/#categories">
-              {t(categoryNameKey(c.id))}
-            </FooterLink>
-          ))}
+          {onRequestTool && (
+            <li>
+              <button
+                onClick={onRequestTool}
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                {t("request.trigger")}
+              </button>
+            </li>
+          )}
         </FooterCol>
 
         <FooterCol title={t("footer.tools")}>

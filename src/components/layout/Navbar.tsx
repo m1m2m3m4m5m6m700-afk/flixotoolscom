@@ -10,8 +10,6 @@ import { cn } from "@/lib/utils";
 
 const links: { key: TranslationKey; href: string }[] = [
   { key: "nav.tools", href: "/#tools" },
-  { key: "nav.categories", href: "/#categories" },
-  { key: "nav.popular", href: "/#popular" },
   { key: "nav.why", href: "/#why" },
   { key: "nav.faq", href: "/#faq" },
 ];

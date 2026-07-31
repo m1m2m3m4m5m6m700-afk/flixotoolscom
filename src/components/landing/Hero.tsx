@@ -1,14 +1,16 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, Search, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
+import { Assistant } from "@/components/landing/Assistant";
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/lib/i18n";
 
 interface HeroProps {
-  query: string;
-  onQueryChange: (value: string) => void;
+  prompt: string;
+  onPromptChange: (value: string) => void;
+  onRequestTool: () => void;
 }
 
-export function Hero({ query, onQueryChange }: HeroProps) {
+export function Hero({ prompt, onPromptChange, onRequestTool }: HeroProps) {
   const { t } = useI18n();
 
   return (
@@ -16,17 +18,17 @@ export function Hero({ query, onQueryChange }: HeroProps) {
       <div className="pointer-events-none absolute inset-0 grid-lines opacity-40 [mask-image:radial-gradient(70%_60%_at_50%_0%,black,transparent)]" />
       <div className="pointer-events-none absolute -top-24 left-1/2 size-[420px] -translate-x-1/2 rounded-full bg-primary/20 blur-3xl animate-float" />
 
-      <div className="relative mx-auto max-w-3xl px-5 pb-20 pt-24 text-center md:pb-28 md:pt-32">
+      <div className="relative mx-auto max-w-3xl px-5 pb-24 pt-24 text-center md:pb-32 md:pt-36">
         <span className="inline-flex animate-rise items-center gap-2 rounded-full border border-border bg-card/70 px-3 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur">
           <Sparkles className="size-3.5 text-primary" />
           {t("hero.badge")}
         </span>
 
         <h1
-          className="mt-6 animate-rise font-display text-6xl font-bold leading-[1.02] tracking-tight text-balance md:text-8xl"
+          className="mx-auto mt-6 max-w-2xl animate-rise font-display text-4xl font-bold leading-[1.05] tracking-tight text-balance md:text-6xl"
           style={{ animationDelay: "80ms" }}
         >
-          <span className="text-gradient-brand">Flixo</span>
+          {t("hero.title")}
         </h1>
 
         <p
@@ -36,29 +38,15 @@ export function Hero({ query, onQueryChange }: HeroProps) {
           {t("hero.description")}
         </p>
 
-        <div
-          className="mx-auto mt-9 flex max-w-xl animate-rise items-center gap-2 rounded-2xl border border-border bg-card/80 p-2 shadow-soft backdrop-blur"
-          style={{ animationDelay: "240ms" }}
-        >
-          <Search className="ms-2 size-4 shrink-0 text-muted-foreground" />
-          <label htmlFor="tool-search" className="sr-only">
-            {t("hero.searchLabel")}
-          </label>
-          <input
-            id="tool-search"
-            value={query}
-            onChange={(e) => onQueryChange(e.target.value)}
-            placeholder={t("hero.searchPlaceholder")}
-            className="min-w-0 flex-1 bg-transparent py-2 text-sm outline-none placeholder:text-muted-foreground"
-          />
-          <Button asChild size="sm" className="shrink-0 rounded-xl">
-            <a href="#tools">{t("hero.browse")}</a>
-          </Button>
-        </div>
+        <Assistant
+          prompt={prompt}
+          onPromptChange={onPromptChange}
+          onRequestTool={onRequestTool}
+        />
 
         <div
           className="mt-8 flex animate-rise flex-col items-center justify-center gap-3 sm:flex-row"
-          style={{ animationDelay: "320ms" }}
+          style={{ animationDelay: "400ms" }}
         >
           <Button asChild size="lg" className="w-full rounded-xl shadow-lift sm:w-auto">
             <Link to="/tools/translator">

@@ -1,11 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Categories } from "@/components/landing/Categories";
 import { FAQ } from "@/components/landing/FAQ";
 import { FeaturedTools } from "@/components/landing/FeaturedTools";
 import { Hero } from "@/components/landing/Hero";
-import { PopularTools } from "@/components/landing/PopularTools";
-
+import { RequestToolDialog } from "@/components/landing/RequestToolDialog";
 import { Statistics } from "@/components/landing/Statistics";
 import { WhyFlixo } from "@/components/landing/WhyFlixo";
 import { SiteLayout } from "@/components/layout/SiteLayout";
@@ -34,17 +32,25 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const [query, setQuery] = useState("");
+  const [requestOpen, setRequestOpen] = useState(false);
 
   return (
     <SiteLayout>
-      <Hero query={query} onQueryChange={setQuery} />
-      <FeaturedTools query={query} />
-      <Categories />
-      <PopularTools />
-
+      <Hero
+        prompt={query}
+        onPromptChange={setQuery}
+        onRequestTool={() => setRequestOpen(true)}
+      />
+      <FeaturedTools />
       <WhyFlixo />
       <Statistics />
       <FAQ />
+
+      <RequestToolDialog
+        open={requestOpen}
+        onOpenChange={setRequestOpen}
+        initialDescription={query}
+      />
     </SiteLayout>
   );
 }
