@@ -1,6 +1,6 @@
-import { Sparkles } from "lucide-react";
+import { Sparkles, Bot } from "lucide-react";
 import { motion } from "motion/react";
-import { Assistant } from "@/components/landing/Assistant";
+import { AITaskInterface } from "@/components/assistant/AITaskInterface";
 import { readyTools, tools } from "@/data/tools";
 import { categories, type CategoryId } from "@/data/categories";
 
@@ -19,8 +19,8 @@ export function HomeHero({
 }: HomeHeroProps) {
   const stats = [
     { label: "Categories", value: categories.length },
-    { label: "Tools mapped", value: tools.length },
-    { label: "Live now", value: readyTools().length },
+    { label: "AI Skills mapped", value: tools.length },
+    { label: "Live ready", value: readyTools().length },
   ];
 
   return (
@@ -29,16 +29,16 @@ export function HomeHero({
       <div className="pointer-events-none absolute inset-0 grid-lines opacity-40 [mask-image:radial-gradient(70%_60%_at_50%_0%,black,transparent)]" />
       <div className="pointer-events-none absolute -top-24 left-1/2 size-[450px] -translate-x-1/2 rounded-full bg-primary/20 blur-3xl animate-float" />
 
-      <div className="relative mx-auto max-w-4xl px-5 pb-20 pt-16 text-center md:pb-28 md:pt-24">
+      <div className="relative mx-auto max-w-4xl px-5 pb-16 pt-14 text-center md:pb-24 md:pt-20">
         {/* Eyebrow Badge */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-card/70 px-3.5 py-1.5 text-xs font-medium text-muted-foreground shadow-xs backdrop-blur"
+          className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-card/70 px-4 py-1.5 text-xs font-semibold text-foreground shadow-xs backdrop-blur"
         >
-          <Sparkles className="size-3.5 text-primary" />
-          <span>One workspace for every AI tool</span>
+          <Bot className="size-4 text-primary animate-pulse" />
+          <span>Flixo AI Task Assistant</span>
         </motion.div>
 
         {/* Main Title */}
@@ -46,7 +46,7 @@ export function HomeHero({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="mt-6 bg-gradient-to-b from-foreground via-foreground/90 to-foreground/60 bg-clip-text font-display text-5xl font-bold leading-[1.02] tracking-tight text-transparent sm:text-6xl md:text-7xl"
+          className="mt-5 bg-gradient-to-b from-foreground via-foreground/90 to-foreground/60 bg-clip-text font-display text-5xl font-bold leading-[1.02] tracking-tight text-transparent sm:text-6xl md:text-7xl"
         >
           Flixo
         </motion.h1>
@@ -56,25 +56,20 @@ export function HomeHero({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg"
+          className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg"
         >
-          A growing directory of fast, private AI tools — translation, images, PDF, writing, audio,
-          video and developer utilities. Describe your task and Flixo finds the tool.
+          Your conversational AI task assistant. Describe what you need to accomplish and Flixo
+          matches the right AI skill instantly.
         </motion.p>
 
-        {/* AI Assistant Search Box */}
+        {/* Conversational AI Task Interface */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-8"
+          className="mt-8 text-start"
         >
-          <Assistant
-            prompt={prompt}
-            onPromptChange={onPromptChange}
-            onRequestTool={onRequestTool}
-            onSelectCategory={onSelectCategory}
-          />
+          <AITaskInterface onRequestTool={onRequestTool} onSelectCategory={onSelectCategory} />
         </motion.div>
 
         {/* Stats Grid */}
@@ -82,7 +77,7 @@ export function HomeHero({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="mx-auto mt-12 grid max-w-md grid-cols-3 gap-3"
+          className="mx-auto mt-12 grid max-w-md grid-cols-3 gap-3 text-center"
         >
           {stats.map((s) => (
             <div
