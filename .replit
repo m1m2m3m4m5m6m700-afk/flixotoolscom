@@ -30,7 +30,11 @@ modules = ["nodejs-20", "web", "python-base-3.13"]
     [workflows.workflow.metadata]
     outputType = "webview"
 
-    [[ports]]
-    localPort = 5000
-    externalPort = 80
+[[ports]]
+localPort = 5000
+externalPort = 5000
+
+[[ports]]
+localPort = 8080
+externalPort = 80
     

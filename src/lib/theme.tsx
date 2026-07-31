@@ -9,9 +9,6 @@ const ThemeContext = createContext<{ theme: Theme; toggleTheme: () => void }>({
   toggleTheme: () => {},
 });
 
-/** Inlined in <head> so the first paint already has the right theme class. */
-export const themeInitScript = `(function(){try{var t=localStorage.getItem('${STORAGE_KEY}');document.documentElement.classList.toggle('dark',t!=='light');}catch(e){}})();`;
-
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<Theme>("dark");
 

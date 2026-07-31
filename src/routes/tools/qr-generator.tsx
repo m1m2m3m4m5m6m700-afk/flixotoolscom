@@ -4,7 +4,7 @@ import { SiteLayout } from "@/components/layout/SiteLayout";
 import { ToolLayout } from "@/components/tools/ToolLayout";
 import { QrGenerator } from "@/components/tools/QrGenerator";
 import { useI18n } from "@/lib/i18n";
-import { categoryNameKey, toolNameKey } from "@/lib/tools";
+import { categoryNameKey, toolNameKey } from "@/lib/i18n/keys";
 
 export const Route = createFileRoute("/tools/qr-generator")({
   head: () => ({
@@ -37,6 +37,7 @@ function QrGeneratorPage() {
         name={t(toolNameKey("qr-generator"))}
         description="Generate high quality QR codes for URLs, Wi-Fi credentials, text and contact information."
         category={t(categoryNameKey("utilities"))}
+        slug="qr-generator"
       >
         <QrGenerator />
       </ToolLayout>

@@ -10,9 +10,10 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
-import { ThemeProvider, themeInitScript } from "../lib/theme";
-import { I18nProvider, localeInitScript } from "../lib/i18n";
+import { JsonLd } from "../components/seo/JsonLd";
+import { reportClientError } from "../lib/client-error-reporting";
+import { ThemeProvider } from "../lib/theme";
+import { I18nProvider } from "../lib/i18n";
 import { AnalyticsProvider } from "../lib/analytics";
 
 const jsonLdData = {
@@ -30,14 +31,6 @@ const jsonLdData = {
     priceCurrency: "USD",
   },
 };
-
-const swInitScript = `
-if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js').catch(() => {});
-  });
-}
-`;
 
 function NotFoundComponent() {
   return (
@@ -62,10 +55,9 @@ function NotFoundComponent() {
 }
 
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
-  console.error(error);
   const router = useRouter();
   useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
+    reportClientError(error, { boundary: "tanstack_root_error_component" });
   }, [error]);
 
   return (
@@ -129,7 +121,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
@@ -149,13 +141,10 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="en" dir="ltr" className="dark" suppressHydrationWarning>
       <head>
         <HeadContent />
-        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
-        <script dangerouslySetInnerHTML={{ __html: localeInitScript }} />
-        <script dangerouslySetInnerHTML={{ __html: swInitScript }} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
-        />
+        <script src="/init-theme.js" />
+        <script src="/init-locale.js" />
+        <script src="/register-sw.js" />
+        <JsonLd data={jsonLdData} />
       </head>
       <body>
         {children}

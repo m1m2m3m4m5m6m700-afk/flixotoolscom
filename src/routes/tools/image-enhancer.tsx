@@ -4,7 +4,7 @@ import { SiteLayout } from "@/components/layout/SiteLayout";
 import { ToolLayout } from "@/components/tools/ToolLayout";
 import { ImageEnhancer } from "@/components/tools/ImageEnhancer";
 import { useI18n } from "@/lib/i18n";
-import { categoryNameKey, toolNameKey } from "@/lib/tools";
+import { categoryNameKey, toolNameKey } from "@/lib/i18n/keys";
 
 export const Route = createFileRoute("/tools/image-enhancer")({
   head: () => ({

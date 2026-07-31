@@ -13,6 +13,7 @@ import {
 import { getCategory, categoryById, type CategoryId } from "@/data/categories";
 import { tools, type Tool } from "@/data/tools";
 import { SiteLayout } from "@/components/layout/SiteLayout";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { usePageSeo } from "@/lib/usePageSeo";
 import { trackCategoryVisit, trackPageView } from "@/lib/analytics";
 
@@ -130,14 +131,8 @@ export function CategoryLandingPage({ categoryId }: CategoryLandingPageProps) {
   return (
     <SiteLayout>
       {/* JSON-LD Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={faqSchema} />
 
       <div className="bg-hero-glow min-h-screen">
         <div className="mx-auto max-w-5xl px-5 pb-20 pt-10 md:pt-14 space-y-12">

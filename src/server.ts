@@ -1,10 +1,14 @@
 import "./lib/error-capture";
 
-import { consumeLastCapturedError } from "./lib/error-capture";
+import { consumeLastCapturedError, runWithErrorCapture } from "./lib/error-capture";
 import { renderErrorPage } from "./lib/error-page";
+import { withSecurityHeaders } from "./lib/security-headers";
 
 type ServerEntry = {
-  fetch: (request: Request, env: unknown, ctx: unknown) => Promise<Response> | Response;
+  fetch: (
+    request: Request,
+    options?: { context?: { nonce?: string } },
+  ) => Promise<Response> | Response;
 };
 
 let serverEntryPromise: Promise<ServerEntry> | undefined;
@@ -44,18 +48,28 @@ function isH3SwallowedErrorBody(body: string): boolean {
   }
 }
 
+function createCspNonce(): string {
+  return globalThis.crypto.randomUUID().replaceAll("-", "");
+}
+
 export default {
-  async fetch(request: Request, env: unknown, ctx: unknown) {
-    try {
-      const handler = await getServerEntry();
-      const response = await handler.fetch(request, env, ctx);
-      return await normalizeCatastrophicSsrResponse(response);
-    } catch (error) {
-      console.error(error);
-      return new Response(renderErrorPage(), {
-        status: 500,
-        headers: { "content-type": "text/html; charset=utf-8" },
-      });
-    }
+  async fetch(request: Request) {
+    return runWithErrorCapture(async () => {
+      const nonce = createCspNonce();
+      try {
+        const handler = await getServerEntry();
+        const response = await handler.fetch(request, { context: { nonce } });
+        return withSecurityHeaders(await normalizeCatastrophicSsrResponse(response), nonce);
+      } catch (error) {
+        console.error(error);
+        return withSecurityHeaders(
+          new Response(renderErrorPage(), {
+            status: 500,
+            headers: { "content-type": "text/html; charset=utf-8" },
+          }),
+          nonce,
+        );
+      }
+    });
   },
 };

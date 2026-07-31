@@ -4,7 +4,7 @@ import { SiteLayout } from "@/components/layout/SiteLayout";
 import { ToolLayout } from "@/components/tools/ToolLayout";
 import { PasswordGenerator } from "@/components/tools/PasswordGenerator";
 import { useI18n } from "@/lib/i18n";
-import { categoryNameKey, toolNameKey } from "@/lib/tools";
+import { categoryNameKey, toolNameKey } from "@/lib/i18n/keys";
 
 export const Route = createFileRoute("/tools/password-generator")({
   head: () => ({
@@ -37,6 +37,7 @@ function PasswordGeneratorPage() {
         name={t(toolNameKey("password-generator"))}
         description="Generate strong, secure passwords with custom character rules and strength evaluation."
         category={t(categoryNameKey("utilities"))}
+        slug="password-generator"
       >
         <PasswordGenerator />
       </ToolLayout>

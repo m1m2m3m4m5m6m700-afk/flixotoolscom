@@ -2,20 +2,14 @@ import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 import { Section } from "@/components/layout/Section";
 import { useI18n } from "@/lib/i18n";
-import {
-  categoryBlurbKey,
-  categoryNameKey,
-  categoryToolsKey,
-  categories,
-  tools,
-  type CategoryId,
-} from "@/lib/tools";
+import { sortedCategories, type CategoryId } from "@/data/categories";
+import { toolsByCategory } from "@/data/tools";
 
 export function FeaturedTools() {
   const { t } = useI18n();
 
   const liveCount = (id: CategoryId) =>
-    tools.filter((tool) => tool.categoryId === id && tool.status === "live").length;
+    toolsByCategory(id).filter((tool) => tool.status === "ready").length;
 
   return (
     <Section
@@ -25,10 +19,14 @@ export function FeaturedTools() {
       description={t("categories.description")}
     >
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {categories.map((cat) => {
+        {sortedCategories.map((cat) => {
           const Icon = cat.icon;
           const count = liveCount(cat.id);
           const isLive = count > 0;
+          const toolNames = toolsByCategory(cat.id)
+            .slice(0, 3)
+            .map((tool) => tool.name)
+            .join(" · ");
 
           const card = (
             <div className="group flex h-full flex-col rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-lift">
@@ -48,13 +46,13 @@ export function FeaturedTools() {
               </div>
 
               <h3 className="mt-5 flex items-center gap-1.5 text-lg font-semibold">
-                {t(categoryNameKey(cat.id))}
+                {cat.name}
                 {isLive && (
                   <ArrowUpRight className="size-4 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 rtl:-scale-x-100" />
                 )}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                {t(categoryBlurbKey(cat.id))}
+                {cat.description}
               </p>
 
               <div className="mt-auto pt-5">
@@ -62,14 +60,14 @@ export function FeaturedTools() {
                   {t("categories.toolsLabel")}
                 </p>
                 <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground/90">
-                  {t(categoryToolsKey(cat.id))}
+                  {toolNames || "More tools coming soon"}
                 </p>
               </div>
             </div>
           );
 
-          return isLive ? (
-            <Link key={cat.id} to="/tools/translator" className="block">
+          return isLive && cat.route ? (
+            <Link key={cat.id} to={cat.route as never} className="block">
               {card}
             </Link>
           ) : (

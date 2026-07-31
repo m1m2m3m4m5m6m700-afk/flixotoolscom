@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Sparkles, BarChart3 } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
-import { toolNameKey } from "@/lib/tools";
 
 interface FooterProps {
   onRequestTool?: () => void;

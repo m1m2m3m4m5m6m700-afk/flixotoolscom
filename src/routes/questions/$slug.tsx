@@ -4,6 +4,7 @@ import { ChevronRight, HelpCircle, Check, ArrowRight, ChevronDown, BookOpen } fr
 import { questionRegistry } from "@/data/seoEnterpriseData";
 import { tools } from "@/data/tools";
 import { SiteLayout } from "@/components/layout/SiteLayout";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { usePageSeo } from "@/lib/usePageSeo";
 import { trackPageView } from "@/lib/analytics";
 import { LastUpdatedBadge } from "@/components/seo/LastUpdatedBadge";
@@ -85,18 +86,9 @@ function QuestionSlugRoute() {
 
   return (
     <SiteLayout>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={howToSchema} />
+      <JsonLd data={faqSchema} />
 
       <div className="bg-hero-glow min-h-screen">
         <article className="mx-auto max-w-4xl px-5 pb-20 pt-10 md:pt-14 space-y-10">

@@ -13,6 +13,7 @@ import {
 import { getBlogPost } from "@/data/blogData";
 import { tools } from "@/data/tools";
 import { SiteLayout } from "@/components/layout/SiteLayout";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { usePageSeo } from "@/lib/usePageSeo";
 import { trackPageView } from "@/lib/analytics";
 
@@ -73,7 +74,7 @@ function BlogPostRoute() {
       name: "Flixo",
       logo: {
         "@type": "ImageObject",
-        url: `${siteUrl}/favicon.ico`,
+        url: `${siteUrl}/favicon.svg`,
       },
     },
     mainEntityOfPage: pageUrl,
@@ -121,20 +122,9 @@ function BlogPostRoute() {
 
   return (
     <SiteLayout>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      {faqSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-      )}
+      <JsonLd data={articleSchema} />
+      <JsonLd data={breadcrumbSchema} />
+      {faqSchema && <JsonLd data={faqSchema} />}
 
       <div className="bg-hero-glow min-h-screen">
         <article className="mx-auto max-w-4xl px-5 pb-20 pt-10 md:pt-14 space-y-10">

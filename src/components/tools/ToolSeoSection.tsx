@@ -23,6 +23,7 @@ import { tools, type Tool } from "@/data/tools";
 import { categoryById, type CategoryId } from "@/data/categories";
 import { trackPageView, trackToolOpen } from "@/lib/analytics";
 import { LastUpdatedBadge } from "@/components/seo/LastUpdatedBadge";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { ToolStatsWidget } from "@/components/seo/ToolStatsWidget";
 import {
   comparisonRegistry,
@@ -163,7 +164,7 @@ export function ToolSeoSection({ slug, toolName, categoryName, categoryId }: Too
     "@type": "Organization",
     name: "Flixo",
     url: siteUrl,
-    logo: `${siteUrl}/favicon.ico`,
+    logo: `${siteUrl}/favicon.svg`,
     sameAs: ["https://twitter.com/FlixoTools"],
   };
 
@@ -182,30 +183,12 @@ export function ToolSeoSection({ slug, toolName, categoryName, categoryId }: Too
   return (
     <article className="mt-16 border-t border-border/60 pt-12 text-foreground space-y-12">
       {/* 6 Schema.org JSON-LD Injections */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareAppSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-      />
+      <JsonLd data={webAppSchema} />
+      <JsonLd data={softwareAppSchema} />
+      <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={faqSchema} />
+      <JsonLd data={orgSchema} />
+      <JsonLd data={websiteSchema} />
 
       {/* SEO Navigation & Breadcrumb */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">

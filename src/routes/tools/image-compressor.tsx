@@ -4,7 +4,7 @@ import { SiteLayout } from "@/components/layout/SiteLayout";
 import { ToolLayout } from "@/components/tools/ToolLayout";
 import { ImageCompressor } from "@/components/tools/ImageCompressor";
 import { useI18n } from "@/lib/i18n";
-import { categoryNameKey, toolNameKey } from "@/lib/tools";
+import { categoryNameKey, toolNameKey } from "@/lib/i18n/keys";
 
 export const Route = createFileRoute("/tools/image-compressor")({
   head: () => ({
@@ -38,6 +38,7 @@ function ImageCompressorPage() {
         name={t(toolNameKey("image-compressor"))}
         description="Shrink image file size in your browser with real-time compression ratio preview."
         category={t(categoryNameKey("images"))}
+        slug="image-compressor"
       >
         <ImageCompressor />
       </ToolLayout>

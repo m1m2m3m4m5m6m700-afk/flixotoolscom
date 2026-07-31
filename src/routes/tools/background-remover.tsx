@@ -4,7 +4,7 @@ import { SiteLayout } from "@/components/layout/SiteLayout";
 import { ToolLayout } from "@/components/tools/ToolLayout";
 import { BackgroundRemover } from "@/components/tools/BackgroundRemover";
 import { useI18n } from "@/lib/i18n";
-import { categoryNameKey, toolNameKey } from "@/lib/tools";
+import { categoryNameKey, toolNameKey } from "@/lib/i18n/keys";
 
 export const Route = createFileRoute("/tools/background-remover")({
   head: () => ({
@@ -38,6 +38,7 @@ function BackgroundRemoverPage() {
         name={t(toolNameKey("background-remover"))}
         description="Cut out image backgrounds automatically with edge refine controls and export transparent PNGs."
         category={t(categoryNameKey("images"))}
+        slug="background-remover"
       >
         <BackgroundRemover />
       </ToolLayout>

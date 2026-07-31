@@ -4,7 +4,7 @@ import { SiteLayout } from "@/components/layout/SiteLayout";
 import { ToolLayout } from "@/components/tools/ToolLayout";
 import { Translator } from "@/components/tools/Translator";
 import { useI18n } from "@/lib/i18n";
-import { categoryNameKey, toolNameKey } from "@/lib/tools";
+import { categoryNameKey, toolNameKey } from "@/lib/i18n/keys";
 
 export const Route = createFileRoute("/tools/translator")({
   head: () => ({
@@ -38,6 +38,7 @@ function TranslatorPage() {
         name={t(toolNameKey("translator"))}
         description={t("translator.pageDescription")}
         category={t(categoryNameKey("translation"))}
+        slug="translator"
       >
         <Translator />
       </ToolLayout>

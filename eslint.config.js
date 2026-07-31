@@ -33,7 +33,38 @@ export default tseslint.config(
         },
       ],
       "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
+      // These rules flag intentional hydration and third-party widget
+      // synchronization patterns used by the existing UI.
+      "react-hooks/set-state-in-effect": "off",
+      "react-hooks/purity": "off",
       "@typescript-eslint/no-unused-vars": "off",
+    },
+  },
+  {
+    files: ["src/routes/**/*.tsx"],
+    rules: {
+      // TanStack file routes export a route definition and a component from
+      // the same module by design; Fast Refresh cannot interpret that shape.
+      "react-refresh/only-export-components": "off",
+    },
+  },
+  {
+    files: [
+      "src/components/ui/badge.tsx",
+      "src/components/ui/button.tsx",
+      "src/components/ui/form.tsx",
+      "src/components/ui/navigation-menu.tsx",
+      "src/components/ui/sidebar.tsx",
+      "src/components/ui/toggle.tsx",
+      "src/lib/analytics/AnalyticsProvider.tsx",
+      "src/lib/i18n/index.tsx",
+      "src/lib/theme.tsx",
+    ],
+    rules: {
+      // These shared modules intentionally export hooks, contexts, and style
+      // helpers alongside components; splitting them would make the public
+      // component API less coherent without improving runtime refresh behavior.
+      "react-refresh/only-export-components": "off",
     },
   },
   eslintPluginPrettier,

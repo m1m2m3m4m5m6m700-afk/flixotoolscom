@@ -1,33 +1,51 @@
-// Captures the original Error out-of-band so server.ts can recover the stack
-// when h3 has already swallowed the throw into a generic 500 Response.
+import { AsyncLocalStorage } from "node:async_hooks";
 
-let lastCapturedError: { error: unknown; at: number } | undefined;
-const TTL_MS = 5_000;
+type CaptureStore = {
+  description?: string;
+};
 
-function record(error: unknown) {
-  lastCapturedError = { error, at: Date.now() };
+const captureStorage = new AsyncLocalStorage<CaptureStore>();
+const CAUSE_DEPTH_LIMIT = 5;
+const DESCRIPTION_LENGTH_LIMIT = 4_000;
+
+const SENSITIVE_VALUE_PATTERNS = [
+  /((?:authorization|cookie)\s*[:=]\s*(?:bearer\s+)?)[^\s,;]+/gi,
+  /((?:api[_ -]?key|secret|password|passwd|token)\s*[:=]\s*)[^\s,;]+/gi,
+  /(postgres(?:ql)?:\/\/[^/\s:]+:)[^@\s]+(@)/gi,
+];
+
+function redactSensitive(value: string): string {
+  return SENSITIVE_VALUE_PATTERNS.reduce(
+    (result, pattern) => result.replace(pattern, "$1[REDACTED]$2"),
+    value,
+  );
 }
 
-// h3's HTTPError serializes to {"status":500,"unhandled":true,"message":"HTTPError"} —
-// no stack, no cause — so a plain console.error(error) reaches the log pipeline with
-// the failure detail stripped. Expand Error-like args into a string that keeps the
-// message, stack, and the full cause chain.
-const CAUSE_DEPTH_LIMIT = 5;
-const DESCRIPTION_LENGTH_LIMIT = 8_000;
+function record(error: unknown) {
+  const store = captureStorage.getStore();
+  if (store) store.description = describeError(error);
+}
 
+/**
+ * Describe only safe, bounded error metadata. Raw error objects and stack
+ * traces are never retained across requests or forwarded to the log pipeline.
+ */
 export function describeError(error: unknown): string {
   const parts: string[] = [];
   let current: unknown = error;
+
   for (let depth = 0; depth < CAUSE_DEPTH_LIMIT && current != null; depth++) {
     if (!(current instanceof Error)) {
-      parts.push(typeof current === "string" ? current : safeStringify(current));
+      parts.push(typeof current === "string" ? redactSensitive(current) : safeStringify(current));
       break;
     }
+
     const label = depth === 0 ? "" : "caused by: ";
     const status = describeStatus(current);
-    parts.push(`${label}${current.stack ?? `${current.name}: ${current.message}`}${status}`);
+    parts.push(`${label}${current.name}: ${redactSensitive(current.message)}${status}`);
     current = current.cause;
   }
+
   return parts.join("\n").slice(0, DESCRIPTION_LENGTH_LIMIT);
 }
 
@@ -39,9 +57,9 @@ function describeStatus(error: Error): string {
 
 function safeStringify(value: unknown): string {
   try {
-    return JSON.stringify(value) ?? String(value);
+    return redactSensitive(JSON.stringify(value) ?? String(value));
   } catch {
-    return String(value);
+    return "[Unserializable error]";
   }
 }
 
@@ -49,33 +67,28 @@ function isErrorLike(value: unknown): value is Error {
   return value instanceof Error;
 }
 
-// Wrap console.error so errors logged by any layer — including h3's internal
-// unhandled-error logging, which this file cannot hook directly — are both
-// recorded for consumeLastCapturedError and expanded before serialization.
+// h3 may report swallowed SSR failures through console.error. Capture only a
+// sanitized description in the active request context so concurrent requests
+// cannot overwrite one another.
 const originalConsoleError = console.error.bind(console);
 console.error = (...args: unknown[]) => {
   const expanded = args.map((arg) => {
-    if (!isErrorLike(arg)) return arg;
-    record(arg);
-    return describeError(arg);
+    if (isErrorLike(arg)) {
+      record(arg);
+      return describeError(arg);
+    }
+    return typeof arg === "string" ? redactSensitive(arg) : arg;
   });
   originalConsoleError(...expanded);
 };
 
-if (typeof globalThis.addEventListener === "function") {
-  globalThis.addEventListener("error", (event) => record((event as ErrorEvent).error ?? event));
-  globalThis.addEventListener("unhandledrejection", (event) =>
-    record((event as PromiseRejectionEvent).reason),
-  );
+export function runWithErrorCapture<T>(callback: () => Promise<T>): Promise<T> {
+  return captureStorage.run({}, callback);
 }
 
-export function consumeLastCapturedError(): unknown {
-  if (!lastCapturedError) return undefined;
-  if (Date.now() - lastCapturedError.at > TTL_MS) {
-    lastCapturedError = undefined;
-    return undefined;
-  }
-  const { error } = lastCapturedError;
-  lastCapturedError = undefined;
-  return error;
+export function consumeLastCapturedError(): string | undefined {
+  const store = captureStorage.getStore();
+  const description = store?.description;
+  if (store) store.description = undefined;
+  return description;
 }

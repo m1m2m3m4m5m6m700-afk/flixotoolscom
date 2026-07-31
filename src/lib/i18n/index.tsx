@@ -35,14 +35,6 @@ export function localeMeta(code: LocaleCode): LocaleMeta {
   return LOCALES.find((l) => l.code === code) ?? LOCALES[0];
 }
 
-/**
- * Runs in <head> before paint so the first frame already has the right
- * lang/dir — no flash and no hydration jump.
- */
-export const localeInitScript = `(function(){try{var c=${JSON.stringify(
-  LOCALES.map((l) => l.code),
-)};var s=localStorage.getItem('${LOCALE_STORAGE_KEY}');if(c.indexOf(s)===-1){s=null;var n=(navigator.languages&&navigator.languages[0])||navigator.language||'';for(var i=0;i<c.length;i++){if(n.toLowerCase().indexOf(c[i])===0){s=c[i];break;}}}var l=s||'${DEFAULT_LOCALE}';var d=document.documentElement;d.setAttribute('lang',l);d.setAttribute('dir',l==='ar'?'rtl':'ltr');}catch(e){}})();`;
-
 type Vars = Record<string, string | number>;
 
 interface I18nValue {
