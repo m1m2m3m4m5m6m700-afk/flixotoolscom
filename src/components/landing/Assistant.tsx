@@ -53,8 +53,9 @@ export function Assistant({ prompt, onPromptChange, onRequestTool }: AssistantPr
   };
 
   const suggestionKey = result ? SUGGESTION_KEY[result.category] : null;
-  const hasCategory = result && result.category !== "unknown";
-  const CategoryIcon = hasCategory ? CATEGORY_ICON[result.category] : null;
+  const matchedCategory =
+    result && result.category !== "unknown" ? (result.category as CategoryId) : null;
+  const CategoryIcon = matchedCategory ? CATEGORY_ICON[matchedCategory] : null;
   const ToolIcon = result?.tool?.icon;
 
   return (
