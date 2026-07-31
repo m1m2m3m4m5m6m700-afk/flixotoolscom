@@ -13,13 +13,7 @@ export interface Tool {
   href?: LinkProps["to"];
 }
 
-export type CategoryId =
-  | "language"
-  | "writing"
-  | "vision"
-  | "audio"
-  | "developer"
-  | "research";
+export type CategoryId = "language" | "writing" | "vision" | "audio" | "developer" | "research";
 
 /** Translation-key helpers so every label flows through the i18n layer. */
 export const toolNameKey = (slug: string) => `tool.${slug}.name` as TranslationKey;

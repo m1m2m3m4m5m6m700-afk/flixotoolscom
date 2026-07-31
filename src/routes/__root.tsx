@@ -8,12 +8,12 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { ThemeProvider, themeInitScript } from "../lib/theme";
 import { I18nProvider, localeInitScript } from "../lib/i18n";
-
 
 function NotFoundComponent() {
   return (
@@ -90,8 +90,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Flixo — One workspace for every AI tool" },
       {
         property: "og:description",
-        content:
-          "Translation, writing, vision and audio tools under a single calm interface.",
+        content: "Translation, writing, vision and audio tools under a single calm interface.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -127,6 +126,7 @@ function RootShell({ children }: { children: ReactNode }) {
       </head>
       <body>
         {children}
+        <SpeedInsights />
         <Scripts />
       </body>
     </html>
@@ -147,4 +147,3 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
-

@@ -28,9 +28,7 @@ export function FeaturedTools({ query }: { query: string }) {
       {visible.length === 0 ? (
         <div className="mx-auto max-w-md rounded-2xl border border-dashed border-border bg-surface/50 p-10 text-center">
           <SearchX className="mx-auto size-6 text-muted-foreground" />
-          <p className="mt-3 text-sm text-muted-foreground">
-            {t("featured.empty", { query })}
-          </p>
+          <p className="mt-3 text-sm text-muted-foreground">{t("featured.empty", { query })}</p>
         </div>
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

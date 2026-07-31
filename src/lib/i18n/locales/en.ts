@@ -67,8 +67,7 @@ export const en = {
 
   "popular.eyebrow": "Popular",
   "popular.title": "What people reach for most",
-  "popular.description":
-    "The tools our community opens day after day, ranked by usage this month.",
+  "popular.description": "The tools our community opens day after day, ranked by usage this month.",
   "popular.runs": "{count} runs",
 
   "why.eyebrow": "Why Flixo",
