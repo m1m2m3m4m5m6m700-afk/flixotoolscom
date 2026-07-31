@@ -9,6 +9,7 @@ import {
   categoryNameKey,
   classifyIntent,
   toolNameKey,
+  type CategoryId,
   type ClassifyResult,
   type IntentCategory,
 } from "@/lib/tools";
@@ -106,10 +107,10 @@ export function Assistant({ prompt, onPromptChange, onRequestTool }: AssistantPr
               <p className="text-sm leading-relaxed text-foreground">{t(suggestionKey)}</p>
 
               <div className="mt-4 flex flex-wrap items-center gap-2 text-xs">
-                {hasCategory && (
+                {matchedCategory && (
                   <span className="inline-flex items-center gap-1.5 rounded-full border border-border px-2.5 py-1 text-muted-foreground">
                     {CategoryIcon && <CategoryIcon className="size-3.5" />}
-                    {t(categoryNameKey(result.category))}
+                    {t(categoryNameKey(matchedCategory))}
                   </span>
                 )}
                 {result.matchedKeywords.length > 0 && (
