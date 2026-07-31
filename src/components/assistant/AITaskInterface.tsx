@@ -160,6 +160,27 @@ export function AITaskInterface({ onRequestTool, onSelectCategory }: AITaskInter
                     </Button>
                   )}
                 </div>
+
+                {result.alternativeSkills.length > 0 && (
+                  <div className="mt-5 rounded-3xl border border-border/70 bg-surface/80 p-4">
+                    <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground">
+                      Suggested workflow
+                    </p>
+                    <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                      {result.alternativeSkills.map((skill) => (
+                        <div
+                          key={skill.id}
+                          className="rounded-2xl border border-border/70 bg-card/60 p-3"
+                        >
+                          <p className="text-sm font-semibold text-foreground">{skill.name}</p>
+                          <p className="text-xs text-muted-foreground leading-relaxed">
+                            {skill.description}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             ) : (
               <div className="flex items-center justify-between gap-3">

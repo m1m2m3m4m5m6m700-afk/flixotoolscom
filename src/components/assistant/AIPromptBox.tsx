@@ -1,4 +1,4 @@
-import { useState, useRef, type ChangeEvent, type KeyboardEvent } from "react";
+import { useState, useRef, type ChangeEvent, type DragEvent, type KeyboardEvent } from "react";
 import {
   Sparkles,
   Paperclip,
@@ -19,6 +19,19 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Input } from "@/components/ui/input";
 import type { BrainStatus } from "@/lib/brain";
+
+const EXAMPLE_PROMPTS = [
+  "Remove watermark from this image",
+  "Compress this PDF",
+  "Download this YouTube video",
+  "Generate a logo",
+  "Translate this document",
+  "Upscale this image",
+  "Convert MP4 to MP3",
+  "Extract text from image",
+  "Summarize this website",
+  "Generate source code",
+];
 
 interface AIPromptBoxProps {
   prompt: string;
@@ -45,6 +58,7 @@ export function AIPromptBox({
   const [pastedLink, setPastedLink] = useState<string>("");
   const [linkPopoverOpen, setLinkPopoverOpen] = useState<boolean>(false);
   const [tempLink, setTempLink] = useState<string>("");
+  const [isDragging, setIsDragging] = useState(false);
 
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -77,6 +91,26 @@ export function AIPromptBox({
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       handleTriggerSubmit();
+    }
+  };
+
+  const handleDragOver = (e: DragEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    setIsDragging(true);
+  };
+
+  const handleDragLeave = (e: DragEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    setIsDragging(false);
+  };
+
+  const handleDrop = (e: DragEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    setIsDragging(false);
+    const file = e.dataTransfer.files?.[0];
+    if (file) {
+      setAttachedFile(file);
+      setPastedLink("");
     }
   };
 
@@ -116,7 +150,14 @@ export function AIPromptBox({
       </AnimatePresence>
 
       {/* Main Container */}
-      <div className="relative rounded-3xl border border-border/80 bg-card/80 p-3 shadow-lift backdrop-blur-xl transition-all duration-300 focus-within:border-primary/60 focus-within:ring-2 focus-within:ring-primary/20">
+      <div
+        className={`relative rounded-3xl border bg-card/80 p-3 shadow-lift backdrop-blur-xl transition-all duration-300 focus-within:border-primary/60 focus-within:ring-2 focus-within:ring-primary/20 ${
+          isDragging ? "border-primary/60 bg-primary/10" : "border-border/80"
+        }`}
+        onDragOver={handleDragOver}
+        onDragLeave={handleDragLeave}
+        onDrop={handleDrop}
+      >
         {/* Attachment Chips Bar */}
         {(attachedFile || pastedLink) && (
           <div className="flex flex-wrap items-center gap-2 px-3 pt-1 pb-2 border-b border-border/50">
@@ -158,10 +199,26 @@ export function AIPromptBox({
             value={prompt}
             onChange={(e) => onPromptChange(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Describe your task..."
-            rows={2}
+            placeholder="What would you like to do today?"
+            rows={3}
             className="w-full resize-none bg-transparent px-2 py-1 text-base md:text-lg outline-none placeholder:text-muted-foreground/60 font-sans"
           />
+        </div>
+
+        <div className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          {EXAMPLE_PROMPTS.slice(0, 6).map((example) => (
+            <button
+              key={example}
+              type="button"
+              onClick={() => {
+                onPromptChange(example);
+                handleTriggerSubmit();
+              }}
+              className="rounded-2xl border border-border/70 bg-surface/80 px-3 py-2 text-left text-xs font-medium text-muted-foreground transition-all duration-200 hover:border-primary/40 hover:bg-card"
+            >
+              {example}
+            </button>
+          ))}
         </div>
 
         {/* Control Bar inside input */}
@@ -186,6 +243,24 @@ export function AIPromptBox({
                   </Button>
                 </TooltipTrigger>
                 <TooltipContent>Attach PDF, image, video, audio or document</TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+            {/* Drag / Drop hint */}
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Button
+                    type="button"
+                    variant="ghost"
+                    size="sm"
+                    className="rounded-xl px-2.5 py-1.5 text-xs font-medium text-muted-foreground hover:bg-surface hover:text-foreground"
+                  >
+                    <FileText className="me-1.5 size-4 text-primary" />
+                    <span>Drag & Drop</span>
+                  </Button>
+                </TooltipTrigger>
+                <TooltipContent>Drop a file anywhere on the card to attach it</TooltipContent>
               </Tooltip>
             </TooltipProvider>
 

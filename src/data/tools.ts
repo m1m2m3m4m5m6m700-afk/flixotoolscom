@@ -443,7 +443,7 @@ export const tools: Tool[] = [
   t("ai-chat", "AI Chat", "ai", "Ask anything and get answers in a chat interface.", "planned", [
     "chat",
     "assistant",
-  ]),
+  ], "ai-chat"),
   t(
     "prompt-improver",
     "Prompt Improver",
@@ -451,6 +451,7 @@ export const tools: Tool[] = [
     "Rewrite prompts to get better AI results.",
     "placeholder",
     ["prompt", "ai"],
+    "prompt-improver",
   ),
   t(
     "code-explainer",
@@ -459,6 +460,7 @@ export const tools: Tool[] = [
     "Explain what a snippet of code actually does.",
     "placeholder",
     ["code", "explain"],
+    "code-explainer",
   ),
   t(
     "data-insights",
@@ -467,6 +469,7 @@ export const tools: Tool[] = [
     "Upload a table and get instant AI insights.",
     "placeholder",
     ["data", "analysis"],
+    "data-insights",
   ),
 
   // Future Features

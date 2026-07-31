@@ -1,14 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { CategoryGrid } from "@/components/landing/CategoryGrid";
-import { FAQ } from "@/components/landing/FAQ";
 import { HomeHero } from "@/components/landing/HomeHero";
 import { RequestToolDialog } from "@/components/landing/RequestToolDialog";
-import { Statistics } from "@/components/landing/Statistics";
-import { ToolDirectory } from "@/components/landing/ToolDirectory";
-import { WhyFlixo } from "@/components/landing/WhyFlixo";
 import { SiteLayout } from "@/components/layout/SiteLayout";
-import type { CategoryId } from "@/data/categories";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -17,13 +11,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Flixo brings translation, image, PDF, writing, video, audio, developer and utility tools into one fast, private workspace. Free, no accounts, no API keys.",
+          "Flixo is an AI task assistant that understands your intent, files, links, and media, and instantly selects the best workflow. No tool hunting needed.",
       },
-      { property: "og:title", content: "Flixo — One workspace for every AI tool" },
+      { property: "og:title", content: "Flixo — AI Task Assistant" },
       {
         property: "og:description",
         content:
-          "Fourteen category hubs under a single calm interface. Start with the free AI Translator.",
+          "Describe what you want to do and Flixo matches the right AI skill or workflow instantly, with file upload, links, and drag-and-drop support.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -35,7 +29,6 @@ export const Route = createFileRoute("/")({
 function Index() {
   const [query, setQuery] = useState("");
   const [requestOpen, setRequestOpen] = useState(false);
-  const [highlightedCategory, setHighlightedCategory] = useState<CategoryId | null>(null);
 
   const handleRequestTool = (prefillPrompt?: string) => {
     if (prefillPrompt) {
@@ -46,23 +39,7 @@ function Index() {
 
   return (
     <SiteLayout onRequestTool={() => handleRequestTool()}>
-      <HomeHero
-        prompt={query}
-        onPromptChange={setQuery}
-        onRequestTool={handleRequestTool}
-        onSelectCategory={setHighlightedCategory}
-      />
-      <CategoryGrid
-        highlightedCategoryId={highlightedCategory}
-        onSelectCategory={setHighlightedCategory}
-      />
-      <ToolDirectory
-        onRequestTool={handleRequestTool}
-        highlightedCategoryId={highlightedCategory}
-      />
-      <WhyFlixo />
-      <Statistics />
-      <FAQ />
+      <HomeHero onRequestTool={handleRequestTool} />
 
       <RequestToolDialog
         open={requestOpen}

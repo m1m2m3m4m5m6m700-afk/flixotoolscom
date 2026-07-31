@@ -1,29 +1,20 @@
 import { Sparkles, Bot } from "lucide-react";
 import { motion } from "motion/react";
 import { AITaskInterface } from "@/components/assistant/AITaskInterface";
-import { readyTools, tools } from "@/data/tools";
-import { categories, type CategoryId } from "@/data/categories";
 import { useI18n } from "@/lib/i18n";
 
 interface HomeHeroProps {
   prompt: string;
   onPromptChange: (value: string) => void;
   onRequestTool: (prefillPrompt?: string) => void;
-  onSelectCategory?: (categoryId: CategoryId) => void;
 }
 
 export function HomeHero({
   prompt,
   onPromptChange,
   onRequestTool,
-  onSelectCategory,
 }: HomeHeroProps) {
   const { t } = useI18n();
-  const stats = [
-    { label: "Categories", value: categories.length },
-    { label: "AI Skills mapped", value: tools.length },
-    { label: "Live ready", value: readyTools().length },
-  ];
 
   return (
     <section className="relative overflow-hidden bg-hero-glow">
@@ -86,26 +77,8 @@ export function HomeHero({
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-8 text-start"
         >
-          <AITaskInterface onRequestTool={onRequestTool} onSelectCategory={onSelectCategory} />
+          <AITaskInterface onRequestTool={onRequestTool} />
         </motion.div>
-
-        {/* Stats Grid */}
-        <motion.dl
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="mx-auto mt-12 grid max-w-md grid-cols-3 gap-3 text-center"
-        >
-          {stats.map((s) => (
-            <div
-              key={s.label}
-              className="rounded-2xl border border-border/70 bg-card/60 px-3 py-4 shadow-xs backdrop-blur transition-all duration-300 hover:border-primary/30 hover:bg-card"
-            >
-              <dt className="text-xs font-medium text-muted-foreground">{s.label}</dt>
-              <dd className="mt-1 font-display text-2xl font-bold text-foreground">{s.value}</dd>
-            </div>
-          ))}
-        </motion.dl>
       </div>
     </section>
   );
