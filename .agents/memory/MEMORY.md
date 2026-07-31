@@ -1,1 +1,2 @@
 - [TanStack SSR hydration](tanstack-ssr-hydration.md) — request-scoped CSP values and route-derived render state must be deterministic across SSR and the first client render.
+- [GitHub push authentication](github-push-auth.md) — use the managed GitHub push when the HTTPS shell remote lacks credentials.
