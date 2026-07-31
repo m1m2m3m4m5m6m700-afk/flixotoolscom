@@ -23,6 +23,23 @@ export interface AnalyticsProviderInterface {
   trackEvent?(eventName: string, params?: AnalyticsEventParams): void;
 }
 
+export type AnalyticsRecentEventType =
+  | "page_view"
+  | "search"
+  | "tool_click"
+  | "category_click"
+  | "download"
+  | "copy"
+  | "external_link";
+
+export interface AnalyticsRecentEvent {
+  id: string;
+  type: AnalyticsRecentEventType;
+  title: string;
+  detail: string;
+  createdAt: string;
+}
+
 export interface AnalyticsData {
   visitedCategories: Record<string, number>;
   openedTools: Record<string, number>;
@@ -31,4 +48,5 @@ export interface AnalyticsData {
   pageViews: Record<string, number>;
   landingPages: Record<string, number>;
   exitPages: Record<string, number>;
+  recentEvents: AnalyticsRecentEvent[];
 }
