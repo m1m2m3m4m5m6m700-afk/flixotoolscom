@@ -10,11 +10,175 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AudioToolsRouteImport } from './routes/audio-tools'
+import { Route as ChangelogRouteImport } from './routes/changelog'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ImageToolsRouteImport } from './routes/image-tools'
+import { Route as PdfToolsRouteImport } from './routes/pdf-tools'
+import { Route as SitemapRouteImport } from './routes/sitemap'
+import { Route as TranslationToolsRouteImport } from './routes/translation-tools'
+import { Route as VideoToolsRouteImport } from './routes/video-tools'
+import { Route as AdminAnalyticsRouteImport } from './routes/admin/analytics'
+import { Route as AdminInboxRouteImport } from './routes/admin/inbox'
+import { Route as BlogIndexRouteImport } from './routes/blog/index'
+import { Route as BlogSlugRouteImport } from './routes/blog/$slug'
+import { Route as CategoriesSlugRouteImport } from './routes/categories/$slug'
+import { Route as CollectionsIndexRouteImport } from './routes/collections/index'
+import { Route as CollectionsSlugRouteImport } from './routes/collections/$slug'
+import { Route as CompareIndexRouteImport } from './routes/compare/index'
+import { Route as CompareSlugRouteImport } from './routes/compare/$slug'
+import { Route as FileTypesIndexRouteImport } from './routes/file-types/index'
+import { Route as FileTypesSlugRouteImport } from './routes/file-types/$slug'
+import { Route as QuestionsIndexRouteImport } from './routes/questions/index'
+import { Route as QuestionsSlugRouteImport } from './routes/questions/$slug'
+import { Route as RobotsTxtRouteImport } from './routes/robots.txt'
+import { Route as ToolsBackgroundRemoverRouteImport } from './routes/tools/background-remover'
+import { Route as ToolsImageCompressorRouteImport } from './routes/tools/image-compressor'
+import { Route as ToolsImageEnhancerRouteImport } from './routes/tools/image-enhancer'
+import { Route as ToolsPasswordGeneratorRouteImport } from './routes/tools/password-generator'
+import { Route as ToolsQrGeneratorRouteImport } from './routes/tools/qr-generator'
 import { Route as ToolsTranslatorRouteImport } from './routes/tools/translator'
+import { Route as UseCasesIndexRouteImport } from './routes/use-cases/index'
+import { Route as UseCasesSlugRouteImport } from './routes/use-cases/$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AudioToolsRoute = AudioToolsRouteImport.update({
+  id: '/audio-tools',
+  path: '/audio-tools',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ChangelogRoute = ChangelogRouteImport.update({
+  id: '/changelog',
+  path: '/changelog',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ImageToolsRoute = ImageToolsRouteImport.update({
+  id: '/image-tools',
+  path: '/image-tools',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PdfToolsRoute = PdfToolsRouteImport.update({
+  id: '/pdf-tools',
+  path: '/pdf-tools',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapRoute = SitemapRouteImport.update({
+  id: '/sitemap',
+  path: '/sitemap',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TranslationToolsRoute = TranslationToolsRouteImport.update({
+  id: '/translation-tools',
+  path: '/translation-tools',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VideoToolsRoute = VideoToolsRouteImport.update({
+  id: '/video-tools',
+  path: '/video-tools',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminAnalyticsRoute = AdminAnalyticsRouteImport.update({
+  id: '/admin/analytics',
+  path: '/admin/analytics',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminInboxRoute = AdminInboxRouteImport.update({
+  id: '/admin/inbox',
+  path: '/admin/inbox',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogSlugRoute = BlogSlugRouteImport.update({
+  id: '/blog/$slug',
+  path: '/blog/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CategoriesSlugRoute = CategoriesSlugRouteImport.update({
+  id: '/categories/$slug',
+  path: '/categories/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CollectionsIndexRoute = CollectionsIndexRouteImport.update({
+  id: '/collections/',
+  path: '/collections/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CollectionsSlugRoute = CollectionsSlugRouteImport.update({
+  id: '/collections/$slug',
+  path: '/collections/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CompareIndexRoute = CompareIndexRouteImport.update({
+  id: '/compare/',
+  path: '/compare/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CompareSlugRoute = CompareSlugRouteImport.update({
+  id: '/compare/$slug',
+  path: '/compare/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FileTypesIndexRoute = FileTypesIndexRouteImport.update({
+  id: '/file-types/',
+  path: '/file-types/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FileTypesSlugRoute = FileTypesSlugRouteImport.update({
+  id: '/file-types/$slug',
+  path: '/file-types/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const QuestionsIndexRoute = QuestionsIndexRouteImport.update({
+  id: '/questions/',
+  path: '/questions/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const QuestionsSlugRoute = QuestionsSlugRouteImport.update({
+  id: '/questions/$slug',
+  path: '/questions/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RobotsTxtRoute = RobotsTxtRouteImport.update({
+  id: '/robots/txt',
+  path: '/robots/txt',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsBackgroundRemoverRoute = ToolsBackgroundRemoverRouteImport.update({
+  id: '/tools/background-remover',
+  path: '/tools/background-remover',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsImageCompressorRoute = ToolsImageCompressorRouteImport.update({
+  id: '/tools/image-compressor',
+  path: '/tools/image-compressor',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsImageEnhancerRoute = ToolsImageEnhancerRouteImport.update({
+  id: '/tools/image-enhancer',
+  path: '/tools/image-enhancer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsPasswordGeneratorRoute = ToolsPasswordGeneratorRouteImport.update({
+  id: '/tools/password-generator',
+  path: '/tools/password-generator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsQrGeneratorRoute = ToolsQrGeneratorRouteImport.update({
+  id: '/tools/qr-generator',
+  path: '/tools/qr-generator',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ToolsTranslatorRoute = ToolsTranslatorRouteImport.update({
@@ -22,31 +186,251 @@ const ToolsTranslatorRoute = ToolsTranslatorRouteImport.update({
   path: '/tools/translator',
   getParentRoute: () => rootRouteImport,
 } as any)
+const UseCasesIndexRoute = UseCasesIndexRouteImport.update({
+  id: '/use-cases/',
+  path: '/use-cases/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UseCasesSlugRoute = UseCasesSlugRouteImport.update({
+  id: '/use-cases/$slug',
+  path: '/use-cases/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/audio-tools': typeof AudioToolsRoute
+  '/changelog': typeof ChangelogRoute
+  '/contact': typeof ContactRoute
+  '/image-tools': typeof ImageToolsRoute
+  '/pdf-tools': typeof PdfToolsRoute
+  '/sitemap': typeof SitemapRoute
+  '/translation-tools': typeof TranslationToolsRoute
+  '/video-tools': typeof VideoToolsRoute
+  '/admin/analytics': typeof AdminAnalyticsRoute
+  '/admin/inbox': typeof AdminInboxRoute
+  '/blog/$slug': typeof BlogSlugRoute
+  '/categories/$slug': typeof CategoriesSlugRoute
+  '/collections/$slug': typeof CollectionsSlugRoute
+  '/compare/$slug': typeof CompareSlugRoute
+  '/file-types/$slug': typeof FileTypesSlugRoute
+  '/questions/$slug': typeof QuestionsSlugRoute
+  '/robots/txt': typeof RobotsTxtRoute
+  '/tools/background-remover': typeof ToolsBackgroundRemoverRoute
+  '/tools/image-compressor': typeof ToolsImageCompressorRoute
+  '/tools/image-enhancer': typeof ToolsImageEnhancerRoute
+  '/tools/password-generator': typeof ToolsPasswordGeneratorRoute
+  '/tools/qr-generator': typeof ToolsQrGeneratorRoute
   '/tools/translator': typeof ToolsTranslatorRoute
+  '/use-cases/$slug': typeof UseCasesSlugRoute
+  '/blog/': typeof BlogIndexRoute
+  '/collections/': typeof CollectionsIndexRoute
+  '/compare/': typeof CompareIndexRoute
+  '/file-types/': typeof FileTypesIndexRoute
+  '/questions/': typeof QuestionsIndexRoute
+  '/use-cases/': typeof UseCasesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/audio-tools': typeof AudioToolsRoute
+  '/changelog': typeof ChangelogRoute
+  '/contact': typeof ContactRoute
+  '/image-tools': typeof ImageToolsRoute
+  '/pdf-tools': typeof PdfToolsRoute
+  '/sitemap': typeof SitemapRoute
+  '/translation-tools': typeof TranslationToolsRoute
+  '/video-tools': typeof VideoToolsRoute
+  '/admin/analytics': typeof AdminAnalyticsRoute
+  '/admin/inbox': typeof AdminInboxRoute
+  '/blog/$slug': typeof BlogSlugRoute
+  '/categories/$slug': typeof CategoriesSlugRoute
+  '/collections/$slug': typeof CollectionsSlugRoute
+  '/compare/$slug': typeof CompareSlugRoute
+  '/file-types/$slug': typeof FileTypesSlugRoute
+  '/questions/$slug': typeof QuestionsSlugRoute
+  '/robots/txt': typeof RobotsTxtRoute
+  '/tools/background-remover': typeof ToolsBackgroundRemoverRoute
+  '/tools/image-compressor': typeof ToolsImageCompressorRoute
+  '/tools/image-enhancer': typeof ToolsImageEnhancerRoute
+  '/tools/password-generator': typeof ToolsPasswordGeneratorRoute
+  '/tools/qr-generator': typeof ToolsQrGeneratorRoute
   '/tools/translator': typeof ToolsTranslatorRoute
+  '/use-cases/$slug': typeof UseCasesSlugRoute
+  '/blog': typeof BlogIndexRoute
+  '/collections': typeof CollectionsIndexRoute
+  '/compare': typeof CompareIndexRoute
+  '/file-types': typeof FileTypesIndexRoute
+  '/questions': typeof QuestionsIndexRoute
+  '/use-cases': typeof UseCasesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/audio-tools': typeof AudioToolsRoute
+  '/changelog': typeof ChangelogRoute
+  '/contact': typeof ContactRoute
+  '/image-tools': typeof ImageToolsRoute
+  '/pdf-tools': typeof PdfToolsRoute
+  '/sitemap': typeof SitemapRoute
+  '/translation-tools': typeof TranslationToolsRoute
+  '/video-tools': typeof VideoToolsRoute
+  '/admin/analytics': typeof AdminAnalyticsRoute
+  '/admin/inbox': typeof AdminInboxRoute
+  '/blog/$slug': typeof BlogSlugRoute
+  '/categories/$slug': typeof CategoriesSlugRoute
+  '/collections/$slug': typeof CollectionsSlugRoute
+  '/compare/$slug': typeof CompareSlugRoute
+  '/file-types/$slug': typeof FileTypesSlugRoute
+  '/questions/$slug': typeof QuestionsSlugRoute
+  '/robots/txt': typeof RobotsTxtRoute
+  '/tools/background-remover': typeof ToolsBackgroundRemoverRoute
+  '/tools/image-compressor': typeof ToolsImageCompressorRoute
+  '/tools/image-enhancer': typeof ToolsImageEnhancerRoute
+  '/tools/password-generator': typeof ToolsPasswordGeneratorRoute
+  '/tools/qr-generator': typeof ToolsQrGeneratorRoute
   '/tools/translator': typeof ToolsTranslatorRoute
+  '/use-cases/$slug': typeof UseCasesSlugRoute
+  '/blog/': typeof BlogIndexRoute
+  '/collections/': typeof CollectionsIndexRoute
+  '/compare/': typeof CompareIndexRoute
+  '/file-types/': typeof FileTypesIndexRoute
+  '/questions/': typeof QuestionsIndexRoute
+  '/use-cases/': typeof UseCasesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/tools/translator'
+  fullPaths:
+    | '/'
+    | '/audio-tools'
+    | '/changelog'
+    | '/contact'
+    | '/image-tools'
+    | '/pdf-tools'
+    | '/sitemap'
+    | '/translation-tools'
+    | '/video-tools'
+    | '/admin/analytics'
+    | '/admin/inbox'
+    | '/blog/$slug'
+    | '/categories/$slug'
+    | '/collections/$slug'
+    | '/compare/$slug'
+    | '/file-types/$slug'
+    | '/questions/$slug'
+    | '/robots/txt'
+    | '/tools/background-remover'
+    | '/tools/image-compressor'
+    | '/tools/image-enhancer'
+    | '/tools/password-generator'
+    | '/tools/qr-generator'
+    | '/tools/translator'
+    | '/use-cases/$slug'
+    | '/blog/'
+    | '/collections/'
+    | '/compare/'
+    | '/file-types/'
+    | '/questions/'
+    | '/use-cases/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/tools/translator'
-  id: '__root__' | '/' | '/tools/translator'
+  to:
+    | '/'
+    | '/audio-tools'
+    | '/changelog'
+    | '/contact'
+    | '/image-tools'
+    | '/pdf-tools'
+    | '/sitemap'
+    | '/translation-tools'
+    | '/video-tools'
+    | '/admin/analytics'
+    | '/admin/inbox'
+    | '/blog/$slug'
+    | '/categories/$slug'
+    | '/collections/$slug'
+    | '/compare/$slug'
+    | '/file-types/$slug'
+    | '/questions/$slug'
+    | '/robots/txt'
+    | '/tools/background-remover'
+    | '/tools/image-compressor'
+    | '/tools/image-enhancer'
+    | '/tools/password-generator'
+    | '/tools/qr-generator'
+    | '/tools/translator'
+    | '/use-cases/$slug'
+    | '/blog'
+    | '/collections'
+    | '/compare'
+    | '/file-types'
+    | '/questions'
+    | '/use-cases'
+  id:
+    | '__root__'
+    | '/'
+    | '/audio-tools'
+    | '/changelog'
+    | '/contact'
+    | '/image-tools'
+    | '/pdf-tools'
+    | '/sitemap'
+    | '/translation-tools'
+    | '/video-tools'
+    | '/admin/analytics'
+    | '/admin/inbox'
+    | '/blog/$slug'
+    | '/categories/$slug'
+    | '/collections/$slug'
+    | '/compare/$slug'
+    | '/file-types/$slug'
+    | '/questions/$slug'
+    | '/robots/txt'
+    | '/tools/background-remover'
+    | '/tools/image-compressor'
+    | '/tools/image-enhancer'
+    | '/tools/password-generator'
+    | '/tools/qr-generator'
+    | '/tools/translator'
+    | '/use-cases/$slug'
+    | '/blog/'
+    | '/collections/'
+    | '/compare/'
+    | '/file-types/'
+    | '/questions/'
+    | '/use-cases/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AudioToolsRoute: typeof AudioToolsRoute
+  ChangelogRoute: typeof ChangelogRoute
+  ContactRoute: typeof ContactRoute
+  ImageToolsRoute: typeof ImageToolsRoute
+  PdfToolsRoute: typeof PdfToolsRoute
+  SitemapRoute: typeof SitemapRoute
+  TranslationToolsRoute: typeof TranslationToolsRoute
+  VideoToolsRoute: typeof VideoToolsRoute
+  AdminAnalyticsRoute: typeof AdminAnalyticsRoute
+  AdminInboxRoute: typeof AdminInboxRoute
+  BlogSlugRoute: typeof BlogSlugRoute
+  CategoriesSlugRoute: typeof CategoriesSlugRoute
+  CollectionsSlugRoute: typeof CollectionsSlugRoute
+  CompareSlugRoute: typeof CompareSlugRoute
+  FileTypesSlugRoute: typeof FileTypesSlugRoute
+  QuestionsSlugRoute: typeof QuestionsSlugRoute
+  RobotsTxtRoute: typeof RobotsTxtRoute
+  ToolsBackgroundRemoverRoute: typeof ToolsBackgroundRemoverRoute
+  ToolsImageCompressorRoute: typeof ToolsImageCompressorRoute
+  ToolsImageEnhancerRoute: typeof ToolsImageEnhancerRoute
+  ToolsPasswordGeneratorRoute: typeof ToolsPasswordGeneratorRoute
+  ToolsQrGeneratorRoute: typeof ToolsQrGeneratorRoute
   ToolsTranslatorRoute: typeof ToolsTranslatorRoute
+  UseCasesSlugRoute: typeof UseCasesSlugRoute
+  BlogIndexRoute: typeof BlogIndexRoute
+  CollectionsIndexRoute: typeof CollectionsIndexRoute
+  CompareIndexRoute: typeof CompareIndexRoute
+  FileTypesIndexRoute: typeof FileTypesIndexRoute
+  QuestionsIndexRoute: typeof QuestionsIndexRoute
+  UseCasesIndexRoute: typeof UseCasesIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -58,6 +442,195 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/audio-tools': {
+      id: '/audio-tools'
+      path: '/audio-tools'
+      fullPath: '/audio-tools'
+      preLoaderRoute: typeof AudioToolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/changelog': {
+      id: '/changelog'
+      path: '/changelog'
+      fullPath: '/changelog'
+      preLoaderRoute: typeof ChangelogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/image-tools': {
+      id: '/image-tools'
+      path: '/image-tools'
+      fullPath: '/image-tools'
+      preLoaderRoute: typeof ImageToolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pdf-tools': {
+      id: '/pdf-tools'
+      path: '/pdf-tools'
+      fullPath: '/pdf-tools'
+      preLoaderRoute: typeof PdfToolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap': {
+      id: '/sitemap'
+      path: '/sitemap'
+      fullPath: '/sitemap'
+      preLoaderRoute: typeof SitemapRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/translation-tools': {
+      id: '/translation-tools'
+      path: '/translation-tools'
+      fullPath: '/translation-tools'
+      preLoaderRoute: typeof TranslationToolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/video-tools': {
+      id: '/video-tools'
+      path: '/video-tools'
+      fullPath: '/video-tools'
+      preLoaderRoute: typeof VideoToolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/analytics': {
+      id: '/admin/analytics'
+      path: '/admin/analytics'
+      fullPath: '/admin/analytics'
+      preLoaderRoute: typeof AdminAnalyticsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/inbox': {
+      id: '/admin/inbox'
+      path: '/admin/inbox'
+      fullPath: '/admin/inbox'
+      preLoaderRoute: typeof AdminInboxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/blog/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/categories/$slug': {
+      id: '/categories/$slug'
+      path: '/categories/$slug'
+      fullPath: '/categories/$slug'
+      preLoaderRoute: typeof CategoriesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/collections/': {
+      id: '/collections/'
+      path: '/collections'
+      fullPath: '/collections/'
+      preLoaderRoute: typeof CollectionsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/collections/$slug': {
+      id: '/collections/$slug'
+      path: '/collections/$slug'
+      fullPath: '/collections/$slug'
+      preLoaderRoute: typeof CollectionsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/compare/': {
+      id: '/compare/'
+      path: '/compare'
+      fullPath: '/compare/'
+      preLoaderRoute: typeof CompareIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/compare/$slug': {
+      id: '/compare/$slug'
+      path: '/compare/$slug'
+      fullPath: '/compare/$slug'
+      preLoaderRoute: typeof CompareSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/file-types/': {
+      id: '/file-types/'
+      path: '/file-types'
+      fullPath: '/file-types/'
+      preLoaderRoute: typeof FileTypesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/file-types/$slug': {
+      id: '/file-types/$slug'
+      path: '/file-types/$slug'
+      fullPath: '/file-types/$slug'
+      preLoaderRoute: typeof FileTypesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/questions/': {
+      id: '/questions/'
+      path: '/questions'
+      fullPath: '/questions/'
+      preLoaderRoute: typeof QuestionsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/questions/$slug': {
+      id: '/questions/$slug'
+      path: '/questions/$slug'
+      fullPath: '/questions/$slug'
+      preLoaderRoute: typeof QuestionsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/robots/txt': {
+      id: '/robots/txt'
+      path: '/robots/txt'
+      fullPath: '/robots/txt'
+      preLoaderRoute: typeof RobotsTxtRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/background-remover': {
+      id: '/tools/background-remover'
+      path: '/tools/background-remover'
+      fullPath: '/tools/background-remover'
+      preLoaderRoute: typeof ToolsBackgroundRemoverRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/image-compressor': {
+      id: '/tools/image-compressor'
+      path: '/tools/image-compressor'
+      fullPath: '/tools/image-compressor'
+      preLoaderRoute: typeof ToolsImageCompressorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/image-enhancer': {
+      id: '/tools/image-enhancer'
+      path: '/tools/image-enhancer'
+      fullPath: '/tools/image-enhancer'
+      preLoaderRoute: typeof ToolsImageEnhancerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/password-generator': {
+      id: '/tools/password-generator'
+      path: '/tools/password-generator'
+      fullPath: '/tools/password-generator'
+      preLoaderRoute: typeof ToolsPasswordGeneratorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/qr-generator': {
+      id: '/tools/qr-generator'
+      path: '/tools/qr-generator'
+      fullPath: '/tools/qr-generator'
+      preLoaderRoute: typeof ToolsQrGeneratorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tools/translator': {
       id: '/tools/translator'
       path: '/tools/translator'
@@ -65,12 +638,55 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsTranslatorRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/use-cases/': {
+      id: '/use-cases/'
+      path: '/use-cases'
+      fullPath: '/use-cases/'
+      preLoaderRoute: typeof UseCasesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/use-cases/$slug': {
+      id: '/use-cases/$slug'
+      path: '/use-cases/$slug'
+      fullPath: '/use-cases/$slug'
+      preLoaderRoute: typeof UseCasesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AudioToolsRoute: AudioToolsRoute,
+  ChangelogRoute: ChangelogRoute,
+  ContactRoute: ContactRoute,
+  ImageToolsRoute: ImageToolsRoute,
+  PdfToolsRoute: PdfToolsRoute,
+  SitemapRoute: SitemapRoute,
+  TranslationToolsRoute: TranslationToolsRoute,
+  VideoToolsRoute: VideoToolsRoute,
+  AdminAnalyticsRoute: AdminAnalyticsRoute,
+  AdminInboxRoute: AdminInboxRoute,
+  BlogSlugRoute: BlogSlugRoute,
+  CategoriesSlugRoute: CategoriesSlugRoute,
+  CollectionsSlugRoute: CollectionsSlugRoute,
+  CompareSlugRoute: CompareSlugRoute,
+  FileTypesSlugRoute: FileTypesSlugRoute,
+  QuestionsSlugRoute: QuestionsSlugRoute,
+  RobotsTxtRoute: RobotsTxtRoute,
+  ToolsBackgroundRemoverRoute: ToolsBackgroundRemoverRoute,
+  ToolsImageCompressorRoute: ToolsImageCompressorRoute,
+  ToolsImageEnhancerRoute: ToolsImageEnhancerRoute,
+  ToolsPasswordGeneratorRoute: ToolsPasswordGeneratorRoute,
+  ToolsQrGeneratorRoute: ToolsQrGeneratorRoute,
   ToolsTranslatorRoute: ToolsTranslatorRoute,
+  UseCasesSlugRoute: UseCasesSlugRoute,
+  BlogIndexRoute: BlogIndexRoute,
+  CollectionsIndexRoute: CollectionsIndexRoute,
+  CompareIndexRoute: CompareIndexRoute,
+  FileTypesIndexRoute: FileTypesIndexRoute,
+  QuestionsIndexRoute: QuestionsIndexRoute,
+  UseCasesIndexRoute: UseCasesIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

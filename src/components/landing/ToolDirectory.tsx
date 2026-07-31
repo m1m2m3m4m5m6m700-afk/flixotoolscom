@@ -1,111 +1,132 @@
-import { Link } from "@tanstack/react-router";
-import { ArrowUpRight } from "lucide-react";
+import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
-import { sortedCategories } from "@/data/categories";
-import { toolRoute, toolsByCategory, type Tool, type ToolStatus } from "@/data/tools";
+import { sortedCategories, type CategoryId } from "@/data/categories";
+import { toolsByCategory } from "@/data/tools";
+import { ToolCard } from "@/components/landing/ToolCard";
+import { SponsorSection } from "@/components/landing/SponsorSection";
+import { Sparkles } from "lucide-react";
 
-const STATUS_LABEL: Record<ToolStatus, string> = {
-  ready: "Ready",
-  planned: "Planned",
-  placeholder: "Idea",
-};
-
-const STATUS_CLASS: Record<ToolStatus, string> = {
-  ready: "bg-primary/12 text-primary",
-  planned: "bg-accent/15 text-accent-foreground",
-  placeholder: "bg-muted text-muted-foreground",
-};
-
-function ToolCard({ tool, onRequestTool }: { tool: Tool; onRequestTool: () => void }) {
-  const route = tool.status === "ready" ? toolRoute(tool) : undefined;
-
-  const body = (
-    <div className="flex h-full flex-col rounded-2xl border border-border bg-card/60 p-5 backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-lift">
-      <div className="flex items-start justify-between gap-3">
-        <h4 className="min-w-0 text-sm font-semibold">{tool.name}</h4>
-        <span
-          className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium ${STATUS_CLASS[tool.status]}`}
-        >
-          {STATUS_LABEL[tool.status]}
-        </span>
-      </div>
-      <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{tool.description}</p>
-      {route && (
-        <span className="mt-4 inline-flex items-center gap-1 text-xs font-medium text-primary">
-          Open tool
-          <ArrowUpRight className="size-3.5 rtl:-scale-x-100" />
-        </span>
-      )}
-    </div>
-  );
-
-  if (route) {
-    return (
-      <Link to={route} className="block h-full">
-        {body}
-      </Link>
-    );
-  }
-
-  return (
-    <button onClick={onRequestTool} className="block h-full w-full text-start">
-      {body}
-    </button>
-  );
+interface ToolDirectoryProps {
+  onRequestTool: (prefillPrompt?: string) => void;
+  highlightedCategoryId?: CategoryId | null;
 }
 
-/** Full tools directory — one section per category, all data-driven. */
-export function ToolDirectory({ onRequestTool }: { onRequestTool: () => void }) {
+/** Full tools directory — one section per category, completely data-driven. */
+export function ToolDirectory({ onRequestTool, highlightedCategoryId }: ToolDirectoryProps) {
   return (
-    <section id="tools" className="mx-auto max-w-6xl scroll-mt-20 px-5 py-20 md:py-28">
-      <div className="mx-auto mb-12 max-w-2xl text-center">
-        <span className="inline-flex rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground">
-          Directory
+    <section id="tools" className="mx-auto max-w-7xl scroll-mt-20 px-5 py-20 md:py-28">
+      {/* Directory Section Header */}
+      <div className="mx-auto mb-16 max-w-2xl text-center">
+        <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground shadow-xs">
+          <Sparkles className="size-3.5 text-primary" />
+          Full Directory
         </span>
-        <h2 className="mt-4 text-3xl font-bold text-balance md:text-4xl">All Flixo tools</h2>
+        <h2 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
+          All Flixo Tools & Roadmap
+        </h2>
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-          Everything on the roadmap, grouped by hub. Ready tools open instantly; anything else can
-          be nudged up the queue with a request.
+          Everything on our active roadmap, organized into high-speed hubs. Ready tools launch
+          instantly in your browser; planned tools can be requested for priority development.
         </p>
       </div>
 
-      <div className="space-y-14">
-        {sortedCategories.map((category) => {
+      {/* Category Sections */}
+      <div className="space-y-16">
+        {sortedCategories.map((category, index) => {
           const Icon = category.icon;
           const catTools = toolsByCategory(category.id);
           if (catTools.length === 0) return null;
 
-          return (
-            <div key={category.id} id={`cat-${category.anchor}`} className="scroll-mt-24">
-              <div className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-3">
-                <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary">
-                  <Icon className="size-5" />
-                </span>
-                <div className="min-w-0">
-                  <h3 className="truncate text-lg font-semibold">{category.name}</h3>
-                  <p className="truncate text-xs text-muted-foreground">{category.description}</p>
-                </div>
-              </div>
+          const readyCount = catTools.filter((t) => t.status === "ready").length;
+          const isHighlighted = highlightedCategoryId === category.id;
+          const showSponsorBetween = index === 2;
 
-              <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                {catTools.map((tool) => (
-                  <ToolCard key={tool.id} tool={tool} onRequestTool={onRequestTool} />
-                ))}
-              </div>
+          return (
+            <div key={category.id} className="space-y-16">
+              <motion.div
+                id={`cat-${category.anchor}`}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.5 }}
+                className={`scroll-mt-24 rounded-3xl border p-6 md:p-8 backdrop-blur-md transition-all duration-300 ${
+                  isHighlighted
+                    ? "border-primary/60 bg-primary/5 ring-2 ring-primary/40 shadow-lift"
+                    : "border-border/60 bg-card/40"
+                }`}
+              >
+                {/* Category Header */}
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-border/50 pb-5">
+                  <div className="flex items-center gap-3.5">
+                    <span className="grid size-11 shrink-0 place-items-center rounded-2xl bg-primary/10 text-primary shadow-xs">
+                      <Icon className="size-5" />
+                    </span>
+                    <div>
+                      <h3 className="text-xl font-bold tracking-tight text-foreground flex items-center gap-2">
+                        {category.name}
+                        {isHighlighted && (
+                          <span className="rounded-full bg-primary/20 px-2 py-0.5 text-xs font-medium text-primary animate-pulse">
+                            Matched
+                          </span>
+                        )}
+                      </h3>
+                      <p className="text-xs text-muted-foreground mt-0.5">{category.description}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2 text-xs">
+                    <span className="rounded-full border border-border/80 bg-surface/80 px-3 py-1 font-medium text-muted-foreground">
+                      {catTools.length} {catTools.length === 1 ? "tool" : "tools"}
+                    </span>
+                    {readyCount > 0 && (
+                      <span className="rounded-full border border-primary/30 bg-primary/15 px-3 py-1 font-semibold text-primary">
+                        {readyCount} ready
+                      </span>
+                    )}
+                  </div>
+                </div>
+
+                {/* Responsive Tools Grid */}
+                <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                  {catTools.map((tool) => (
+                    <ToolCard
+                      key={tool.id}
+                      tool={tool}
+                      onRequestTool={onRequestTool}
+                      isHighlighted={isHighlighted}
+                    />
+                  ))}
+                </div>
+              </motion.div>
+
+              {showSponsorBetween && <SponsorSection />}
             </div>
           );
         })}
       </div>
 
-      <div className="mt-16 rounded-3xl border border-border bg-card/60 p-8 text-center backdrop-blur">
-        <h3 className="text-xl font-semibold">Missing something?</h3>
-        <p className="mx-auto mt-2 max-w-md text-sm text-muted-foreground">
-          Tell us the tool you wish existed — requests shape what we ship next.
-        </p>
-        <Button className="mt-5 rounded-xl" onClick={onRequestTool}>
-          Request a tool
-        </Button>
-      </div>
+      {/* Call to Action Banner */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="mt-20 rounded-3xl border border-border/80 bg-gradient-to-br from-card/80 via-card/50 to-surface/80 p-8 md:p-12 text-center shadow-lift backdrop-blur-xl"
+      >
+        <div className="mx-auto max-w-md">
+          <span className="grid size-12 mx-auto place-items-center rounded-2xl bg-primary/15 text-primary">
+            <Sparkles className="size-6" />
+          </span>
+          <h3 className="mt-4 text-2xl font-bold text-foreground">Need a tool that isn't here?</h3>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+            We build tools directly based on user requests. Tell us what workflow you'd like to
+            automate next.
+          </p>
+          <Button className="mt-6 rounded-xl px-6 py-2.5 shadow-md" onClick={() => onRequestTool()}>
+            Request a custom tool
+          </Button>
+        </div>
+      </motion.div>
     </section>
   );
 }

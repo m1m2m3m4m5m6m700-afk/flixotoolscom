@@ -86,6 +86,16 @@ export const ar: Dictionary = {
 
   "tool.translator.name": "المترجم الذكي",
   "tool.translator.tagline": "ترجم بين أكثر من 20 لغة مع كشف تلقائي وتبديل فوري للاتجاه.",
+  "tool.background-remover.name": "مزيل الخلفيات",
+  "tool.background-remover.tagline": "اقطع خلفيات الصور واستخرج ملفات PNG شفافة عالية الجودة.",
+  "tool.image-enhancer.name": "محسّن الصور بالذكاء الاصطناعي",
+  "tool.image-enhancer.tagline": "كبّر الدقة حتى 8 أضعاف، رمم الوجوه، أزل الضوضاء وحدّد الصور.",
+  "tool.image-compressor.name": "ضاغط الصور",
+  "tool.image-compressor.tagline": "قلل حجم ملفات الصور مباشرة داخل متصفحك.",
+  "tool.qr-generator.name": "مولّد رمز QR",
+  "tool.qr-generator.tagline": "أنشئ رموز QR مخصصة للروابط والنصوص وشبكات الواي فاي.",
+  "tool.password-generator.name": "مولّد كلمة المرور",
+  "tool.password-generator.tagline": "أنشئ كلمات مرور قوية وآمنة مع مقياس المتانة الأمني.",
 
   "why.eyebrow": "لماذا فليكسو",
   "why.title": "مبنية لإزالة العوائق، لا لإضافة المزيد من المزايا",

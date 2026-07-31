@@ -4,6 +4,7 @@ import { ArrowRight, Lightbulb, Loader as Loader2, Sparkles, Wand as Wand2 } fro
 import { Button } from "@/components/ui/button";
 import { classifyIntent, type ClassificationResult } from "@/lib/tool-classifier";
 import { toolRoute } from "@/data/tools";
+import { trackSearch } from "@/lib/analytics";
 
 interface PromptBoxProps {
   value: string;
@@ -26,6 +27,7 @@ export function PromptBox({ value, onChange, onRequestTool }: PromptBoxProps) {
   const run = (text: string) => {
     if (!text.trim()) return;
     setLoading(true);
+    trackSearch(text);
     setTimeout(() => {
       setResult(classifyIntent(text));
       setLoading(false);
@@ -33,7 +35,10 @@ export function PromptBox({ value, onChange, onRequestTool }: PromptBoxProps) {
   };
 
   return (
-    <div className="mx-auto mt-10 w-full max-w-2xl animate-rise" style={{ animationDelay: "300ms" }}>
+    <div
+      className="mx-auto mt-10 w-full max-w-2xl animate-rise"
+      style={{ animationDelay: "300ms" }}
+    >
       <div className="rounded-3xl border border-border bg-card/70 p-2 shadow-lift backdrop-blur-xl">
         <div className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-2 sm:flex">
           <span className="grid size-10 shrink-0 place-items-center rounded-2xl bg-primary/10 text-primary">
@@ -55,7 +60,11 @@ export function PromptBox({ value, onChange, onRequestTool }: PromptBoxProps) {
             disabled={loading || !value.trim()}
             className="col-span-2 shrink-0 rounded-2xl sm:col-span-1"
           >
-            {loading ? <Loader2 className="size-4 animate-spin" /> : <Sparkles className="size-4" />}
+            {loading ? (
+              <Loader2 className="size-4 animate-spin" />
+            ) : (
+              <Sparkles className="size-4" />
+            )}
             {loading ? "Thinking" : "Find tool"}
           </Button>
         </div>

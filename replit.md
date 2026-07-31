@@ -1,53 +1,58 @@
 # Flixo Studio
 
-A premium SaaS landing page and AI tools workspace built with React + Vite + TanStack Start + Tailwind CSS.
+A premium SaaS landing page and AI tools workspace built with TanStack Start, React 19, TypeScript, Tailwind CSS v4, and Radix UI.
 
-## How to run
+## Running the app
 
-The dev server starts automatically via the "Start application" workflow:
+The "Start application" workflow runs the Vite development server on port 5000:
 
 ```sh
 npm run dev
 ```
 
-Runs on port 5000. Open the preview pane to see the app.
+Open the Replit preview pane to view the app.
 
 ## Stack
 
-- **React 19** + **TypeScript**
-- **Vite 8** with `@lovable.dev/vite-tanstack-config`
-- **TanStack Start** (SSR/file-based routing via TanStack Router)
-- **Tailwind CSS v4**
-- **Radix UI** component primitives
-- **TanStack Query** for data fetching
+- **Framework**: TanStack Start (SSR + Vite)
+- **Router**: TanStack Router (file-based)
+- **UI**: Radix UI + Tailwind CSS v4
+- **Translation**: Gemini API when configured, with a local mock fallback
+
+## Environment variables
+
+| Variable | Required | Description |
+|---|---|---|
+| `GEMINI_API_KEY` | Optional | Enables real AI translation |
+| `VITE_GA_MEASUREMENT_ID` | Optional | Google Analytics |
+| `VITE_CLARITY_PROJECT_ID` | Optional | Microsoft Clarity analytics |
 
 ## Project structure
 
-```
+```text
 src/
-  routes/          # File-based routes (TanStack Router)
-    index.tsx      # Landing page
-    tools/         # AI tool pages (e.g. translator)
-  components/
-    landing/       # Landing page sections
-    layout/        # Shared layout (navbar, footer)
-    tools/         # Tool-specific UI components
-    ui/            # Reusable Radix-based primitives
-  lib/             # Utilities, theme, i18n helpers
-  data/            # Static data (tool catalog, categories)
-  hooks/           # Custom React hooks
+  routes/       # File-based routes and page-level metadata
+  components/   # Reusable UI, landing, layout, tool, and admin components
+  hooks/        # Custom React hooks
+  lib/          # Utilities, services, i18n, theme, and shared logic
+  data/         # Static tool and content data
+  styles.css    # Global Tailwind styles and theme tokens
 ```
 
-## Adding a new AI tool
+## Adding a tool
 
-1. Add tool metadata to `src/data/`.
-2. Create a route file under `src/routes/tools/<tool-name>.tsx`.
-3. Build the tool UI in `src/components/tools/`.
+1. Add the tool metadata to the canonical registry in `src/data/tools.ts`.
+2. Add or update the corresponding category metadata in `src/data/categories.ts`.
+3. Create a route under `src/routes/tools/<tool-name>.tsx`.
+4. Build reusable UI in `src/components/tools/`.
 
-## Notes
+## Security notes
 
-- No backend, no authentication required.
-- Translation uses a mock function — swap it for a real API call when ready.
-- `vite.config.ts` sets `host: "0.0.0.0"` and `port: 5000` so the app works inside Replit's proxied preview.
+- Keep provider keys in Replit Secrets or environment variables; never commit them.
+- The development server is configured for Replit's proxied preview and must not be exposed as a public production server.
+- Run `npm run typecheck`, `npm run lint`, and `npm run build` before shipping changes.
 
 ## User preferences
+
+- Keep port 5000 for development and Replit preview.
+- Preserve the existing TanStack Start architecture and project layout.

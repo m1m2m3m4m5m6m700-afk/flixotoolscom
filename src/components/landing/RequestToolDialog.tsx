@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/dialog";
 import { Textarea } from "@/components/ui/textarea";
 import { useI18n } from "@/lib/i18n";
+import { trackToolRequest } from "@/lib/analytics";
 
 interface RequestToolDialogProps {
   open: boolean;
@@ -35,6 +36,7 @@ export function RequestToolDialog({
   }, [open, initialDescription]);
 
   const handleSubmit = () => {
+    trackToolRequest(description);
     setSubmitted(true);
   };
 

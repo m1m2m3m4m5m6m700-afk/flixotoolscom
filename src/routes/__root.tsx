@@ -13,6 +13,31 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { ThemeProvider, themeInitScript } from "../lib/theme";
 import { I18nProvider, localeInitScript } from "../lib/i18n";
+import { AnalyticsProvider } from "../lib/analytics";
+
+const jsonLdData = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Flixo",
+  url: "https://flixotools.com",
+  description:
+    "Flixo brings translation, image, PDF, writing, video, audio and developer tools into one fast, private workspace.",
+  applicationCategory: "DeveloperApplication",
+  operatingSystem: "All",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
+};
+
+const swInitScript = `
+if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+  });
+}
+`;
 
 function NotFoundComponent() {
   return (
@@ -86,6 +111,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Flixo brings translation, writing, vision and audio AI tools into one fast, private workspace.",
       },
       { name: "author", content: "Flixo" },
+      { name: "theme-color", content: "#0d9488" },
+      { name: "apple-mobile-web-app-capable", content: "yes" },
+      { name: "apple-mobile-web-app-status-bar-style", content: "black-translucent" },
       { property: "og:title", content: "Flixo — One workspace for every AI tool" },
       {
         property: "og:description",
@@ -93,9 +121,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@FlixoTools" },
     ],
     links: [
+      { rel: "manifest", href: "/manifest.json" },
       {
         rel: "stylesheet",
         href: appCss,
@@ -122,6 +151,11 @@ function RootShell({ children }: { children: ReactNode }) {
         <HeadContent />
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         <script dangerouslySetInnerHTML={{ __html: localeInitScript }} />
+        <script dangerouslySetInnerHTML={{ __html: swInitScript }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+        />
       </head>
       <body>
         {children}
@@ -138,8 +172,10 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
         <I18nProvider>
-          {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-          <Outlet />
+          <AnalyticsProvider>
+            {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+            <Outlet />
+          </AnalyticsProvider>
         </I18nProvider>
       </ThemeProvider>
     </QueryClientProvider>

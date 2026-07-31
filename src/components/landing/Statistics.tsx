@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import { useI18n } from "@/lib/i18n";
 import type { TranslationKey } from "@/lib/i18n/locales/en";
 
@@ -13,16 +14,32 @@ export function Statistics() {
 
   return (
     <section id="stats" className="mx-auto max-w-6xl scroll-mt-20 px-5 py-20 md:py-24">
-      <div className="grid gap-px overflow-hidden rounded-3xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
-        {stats.map((s) => (
-          <div key={s.key} className="bg-card px-6 py-10 text-center">
-            <p className="font-display text-4xl font-bold text-gradient-brand" dir="ltr">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.98 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="grid gap-px overflow-hidden rounded-3xl border border-border/80 bg-border/60 shadow-lift sm:grid-cols-2 lg:grid-cols-4"
+      >
+        {stats.map((s, idx) => (
+          <motion.div
+            key={s.key}
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: idx * 0.1 }}
+            className="bg-card/90 p-8 text-center backdrop-blur-md transition-colors hover:bg-card"
+          >
+            <p
+              className="font-display text-4xl font-bold bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent"
+              dir="ltr"
+            >
               {s.value}
             </p>
-            <p className="mt-2 text-sm text-muted-foreground">{t(s.key)}</p>
-          </div>
+            <p className="mt-2 text-xs md:text-sm font-medium text-muted-foreground">{t(s.key)}</p>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

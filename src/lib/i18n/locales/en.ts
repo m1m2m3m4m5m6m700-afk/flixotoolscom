@@ -93,6 +93,17 @@ export const en = {
   "tool.translator.name": "AI Translator",
   "tool.translator.tagline":
     "Translate between 20+ languages with auto detection and instant swapping.",
+  "tool.background-remover.name": "Background Remover",
+  "tool.background-remover.tagline": "Cut out image backgrounds and export transparent PNGs.",
+  "tool.image-enhancer.name": "AI Image Enhancer",
+  "tool.image-enhancer.tagline":
+    "Upscale resolution up to 8x, restore faces, remove noise and sharpen photos.",
+  "tool.image-compressor.name": "Image Compressor",
+  "tool.image-compressor.tagline": "Shrink image file size directly in your browser.",
+  "tool.qr-generator.name": "QR Generator",
+  "tool.qr-generator.tagline": "Create custom QR codes for links, text, Wi-Fi and contact details.",
+  "tool.password-generator.name": "Password Generator",
+  "tool.password-generator.tagline": "Generate strong, secure passwords with entropy meter.",
 
   "why.eyebrow": "Why Flixo",
   "why.title": "Built to remove friction, not add features",

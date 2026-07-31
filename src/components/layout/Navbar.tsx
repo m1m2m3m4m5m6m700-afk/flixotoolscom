@@ -39,6 +39,60 @@ export function Navbar() {
               {t(l.key)}
             </a>
           ))}
+          <Link
+            to="/compare"
+            className="rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-surface hover:text-foreground font-medium"
+          >
+            Compare
+          </Link>
+          <Link
+            to="/use-cases"
+            className="rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-surface hover:text-foreground font-medium"
+          >
+            Use Cases
+          </Link>
+          <Link
+            to="/file-types"
+            className="rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-surface hover:text-foreground font-medium"
+          >
+            Formats
+          </Link>
+          <Link
+            to="/changelog"
+            className="rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-surface hover:text-foreground font-medium"
+          >
+            Updates
+          </Link>
+          <Link
+            to="/blog"
+            className="rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-surface hover:text-foreground font-medium"
+          >
+            Blog
+          </Link>
+          <Link
+            to="/sitemap"
+            className="rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-surface hover:text-foreground"
+          >
+            Sitemap
+          </Link>
+          <Link
+            to="/contact"
+            className="rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-surface hover:text-foreground"
+          >
+            Contact Owner
+          </Link>
+          <Link
+            to="/admin/inbox"
+            className="rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-surface hover:text-foreground font-semibold"
+          >
+            Owner Inbox
+          </Link>
+          <Link
+            to="/admin/analytics"
+            className="rounded-lg px-3 py-2 text-sm text-primary font-bold transition-colors hover:bg-primary/10"
+          >
+            Analytics
+          </Link>
         </nav>
 
         <div className="ms-auto flex shrink-0 items-center gap-1.5">

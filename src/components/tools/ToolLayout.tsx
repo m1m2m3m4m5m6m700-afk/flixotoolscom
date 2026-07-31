@@ -2,18 +2,38 @@ import { Link } from "@tanstack/react-router";
 import { ArrowLeft, type LucideIcon } from "lucide-react";
 import type { ReactNode } from "react";
 import { useI18n } from "@/lib/i18n";
+import { ToolSeoSection } from "./ToolSeoSection";
+import { SponsorSection } from "@/components/landing/SponsorSection";
+import { usePageSeo } from "@/lib/usePageSeo";
 
 interface ToolLayoutProps {
   icon: LucideIcon;
   name: string;
   description: string;
   category: string;
+  slug?: string;
   children: ReactNode;
 }
 
 /** Shared chrome for every tool page — reuse this for future tools. */
-export function ToolLayout({ icon: Icon, name, description, category, children }: ToolLayoutProps) {
+export function ToolLayout({
+  icon: Icon,
+  name,
+  description,
+  category,
+  slug,
+  children,
+}: ToolLayoutProps) {
   const { t } = useI18n();
+
+  // Extract slug from pathname if not explicitly passed
+  const pathSlug =
+    slug ||
+    (typeof window !== "undefined"
+      ? window.location.pathname.replace(/^\/tools\//, "").split("/")[0]
+      : "");
+
+  usePageSeo(pathSlug);
 
   return (
     <div className="bg-hero-glow">
@@ -42,6 +62,14 @@ export function ToolLayout({ icon: Icon, name, description, category, children }
         </header>
 
         <div className="mt-8">{children}</div>
+
+        {/* Dynamic SEO Section with Breadcrumbs, Content, FAQ Accordions, and Internal Links */}
+        {pathSlug && <ToolSeoSection slug={pathSlug} toolName={name} categoryName={category} />}
+
+        {/* Reusable Sponsor Section at the bottom of every tool page */}
+        <div className="mt-16">
+          <SponsorSection variant="compact" />
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,16 @@
 import type { LinkProps } from "@tanstack/react-router";
 import type { LucideIcon } from "lucide-react";
-import { Languages, ImageIcon, FileText, PenLine, Wrench } from "lucide-react";
+import {
+  Languages,
+  ImageIcon,
+  FileImage,
+  QrCode,
+  KeyRound,
+  FileText,
+  PenLine,
+  Wrench,
+  Sparkles,
+} from "lucide-react";
 import type { TranslationKey } from "@/lib/i18n/locales/en";
 
 export type ToolStatus = "live" | "soon";
@@ -80,6 +90,41 @@ export const tools: Tool[] = [
     icon: Languages,
     status: "live",
     href: "/tools/translator",
+  },
+  {
+    slug: "background-remover",
+    categoryId: "images",
+    icon: ImageIcon,
+    status: "live",
+    href: "/tools/background-remover",
+  },
+  {
+    slug: "image-enhancer",
+    categoryId: "images",
+    icon: Sparkles,
+    status: "live",
+    href: "/tools/image-enhancer",
+  },
+  {
+    slug: "image-compressor",
+    categoryId: "images",
+    icon: FileImage,
+    status: "live",
+    href: "/tools/image-compressor",
+  },
+  {
+    slug: "qr-generator",
+    categoryId: "utilities",
+    icon: QrCode,
+    status: "live",
+    href: "/tools/qr-generator",
+  },
+  {
+    slug: "password-generator",
+    categoryId: "utilities",
+    icon: KeyRound,
+    status: "live",
+    href: "/tools/password-generator",
   },
 ];
 

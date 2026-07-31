@@ -3,6 +3,7 @@ import {
   ArrowLeftRight,
   Check,
   Copy,
+  Download,
   Languages,
   Loader2,
   Sparkles,
@@ -86,6 +87,19 @@ export function Translator() {
     }
   };
 
+  const handleDownload = () => {
+    if (!output) return;
+    const blob = new Blob([output], { type: "text/plain;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `translation-${to}-${Date.now()}.txt`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
   return (
     <div className="rounded-3xl border border-border bg-card/80 p-4 shadow-soft backdrop-blur md:p-6">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end">
@@ -139,15 +153,31 @@ export function Translator() {
                 </span>
               )}
             </span>
-            <button
-              type="button"
-              onClick={handleCopy}
-              disabled={!output}
-              className="inline-flex shrink-0 items-center gap-1.5 rounded-lg px-2 py-1 text-xs text-muted-foreground transition-colors hover:bg-card hover:text-foreground disabled:pointer-events-none disabled:opacity-40"
-            >
-              {copied ? <Check className="size-3.5 text-primary" /> : <Copy className="size-3.5" />}
-              {copied ? t("translator.copied") : t("translator.copy")}
-            </button>
+            <div className="flex items-center gap-1">
+              <button
+                type="button"
+                onClick={handleDownload}
+                disabled={!output}
+                title="Download .txt"
+                className="inline-flex shrink-0 items-center gap-1 rounded-lg px-2 py-1 text-xs text-muted-foreground transition-colors hover:bg-card hover:text-foreground disabled:pointer-events-none disabled:opacity-40"
+              >
+                <Download className="size-3.5" />
+                <span>Save .txt</span>
+              </button>
+              <button
+                type="button"
+                onClick={handleCopy}
+                disabled={!output}
+                className="inline-flex shrink-0 items-center gap-1 rounded-lg px-2 py-1 text-xs text-muted-foreground transition-colors hover:bg-card hover:text-foreground disabled:pointer-events-none disabled:opacity-40"
+              >
+                {copied ? (
+                  <Check className="size-3.5 text-primary" />
+                ) : (
+                  <Copy className="size-3.5" />
+                )}
+                {copied ? t("translator.copied") : t("translator.copy")}
+              </button>
+            </div>
           </div>
 
           <div className="relative min-h-56 flex-1 px-4 py-3.5">

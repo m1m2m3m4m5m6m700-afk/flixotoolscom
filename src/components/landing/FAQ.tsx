@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import {
   Accordion,
   AccordionContent,
@@ -20,21 +21,28 @@ export function FAQ() {
       title={t("faq.title")}
       description={t("faq.description")}
     >
-      <div className="mx-auto max-w-2xl">
-        <Accordion type="single" collapsible className="space-y-3">
-          {faqIds.map((id) => (
-            <AccordionItem
+      <div className="mx-auto max-w-3xl">
+        <Accordion type="single" collapsible className="space-y-3.5">
+          {faqIds.map((id, index) => (
+            <motion.div
               key={id}
-              value={`item-${id}`}
-              className="rounded-2xl border border-border bg-card px-5"
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.35, delay: index * 0.08 }}
             >
-              <AccordionTrigger className="text-start text-base font-medium hover:no-underline">
-                {t(`faq.q${id}` as TranslationKey)}
-              </AccordionTrigger>
-              <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
-                {t(`faq.a${id}` as TranslationKey)}
-              </AccordionContent>
-            </AccordionItem>
+              <AccordionItem
+                value={`item-${id}`}
+                className="rounded-2xl border border-border/70 bg-card/80 px-5 shadow-xs transition-colors hover:border-primary/40 backdrop-blur"
+              >
+                <AccordionTrigger className="text-start text-base font-medium text-foreground hover:no-underline py-4">
+                  {t(`faq.q${id}` as TranslationKey)}
+                </AccordionTrigger>
+                <AccordionContent className="pb-4 text-sm leading-relaxed text-muted-foreground">
+                  {t(`faq.a${id}` as TranslationKey)}
+                </AccordionContent>
+              </AccordionItem>
+            </motion.div>
           ))}
         </Accordion>
       </div>
