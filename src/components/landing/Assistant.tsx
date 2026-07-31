@@ -4,9 +4,16 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/lib/i18n";
 import type { TranslationKey } from "@/lib/i18n/locales/en";
-import { classifyIntent, categoryNameKey, toolNameKey, type ClassifyResult } from "@/lib/tools";
+import {
+  categories,
+  categoryNameKey,
+  classifyIntent,
+  toolNameKey,
+  type ClassifyResult,
+  type IntentCategory,
+} from "@/lib/tools";
 
-const SUGGESTION_KEY: Record<ClassifyResult["category"], TranslationKey> = {
+const SUGGESTION_KEY: Record<IntentCategory, TranslationKey> = {
   translation: "assistant.suggestion.translation",
   images: "assistant.suggestion.images",
   pdf: "assistant.suggestion.pdf",
@@ -14,6 +21,11 @@ const SUGGESTION_KEY: Record<ClassifyResult["category"], TranslationKey> = {
   utilities: "assistant.suggestion.utilities",
   unknown: "assistant.suggestion.unknown",
 };
+
+const CATEGORY_ICON = Object.fromEntries(categories.map((c) => [c.id, c.icon])) as Record<
+  IntentCategory,
+  (typeof categories)[number]["icon"]
+>;
 
 interface AssistantProps {
   prompt: string;
@@ -41,7 +53,9 @@ export function Assistant({ prompt, onPromptChange, onRequestTool }: AssistantPr
   };
 
   const suggestionKey = result ? SUGGESTION_KEY[result.category] : null;
-  const Icon = result?.tool?.icon;
+  const hasCategory = result && result.category !== "unknown";
+  const CategoryIcon = hasCategory ? CATEGORY_ICON[result.category] : null;
+  const ToolIcon = result?.tool?.icon;
 
   return (
     <div className="mx-auto mt-10 max-w-2xl animate-rise" style={{ animationDelay: "320ms" }}>
@@ -91,9 +105,12 @@ export function Assistant({ prompt, onPromptChange, onRequestTool }: AssistantPr
               <p className="text-sm leading-relaxed text-foreground">{t(suggestionKey)}</p>
 
               <div className="mt-4 flex flex-wrap items-center gap-2 text-xs">
-                <span className="rounded-full border border-border px-2.5 py-1 text-muted-foreground">
-                  {t("assistant.result.category")}: {result.tool ? t(categoryNameKey(result.tool.categoryId)) : "—"}
-                </span>
+                {hasCategory && (
+                  <span className="inline-flex items-center gap-1.5 rounded-full border border-border px-2.5 py-1 text-muted-foreground">
+                    {CategoryIcon && <CategoryIcon className="size-3.5" />}
+                    {t(categoryNameKey(result.category))}
+                  </span>
+                )}
                 {result.matchedKeywords.length > 0 && (
                   <span className="rounded-full border border-border px-2.5 py-1 text-muted-foreground">
                     {t("assistant.result.matched")}: {result.matchedKeywords.slice(0, 3).join(", ")}
@@ -101,30 +118,23 @@ export function Assistant({ prompt, onPromptChange, onRequestTool }: AssistantPr
                 )}
               </div>
 
-              {result.tool && (
+              {result.tool && result.tool.status === "live" && result.tool.href ? (
                 <div className="mt-4 flex flex-wrap items-center gap-3">
-                  {result.tool.status === "live" && result.tool.href ? (
-                    <Button asChild size="sm" className="rounded-xl">
-                      <Link to={result.tool.href}>
-                        {Icon && <Icon className="size-4" />}
-                        {t(toolNameKey(result.tool.slug))}
-                        <ArrowRight className="size-4 rtl:-scale-x-100" />
-                      </Link>
-                    </Button>
-                  ) : (
-                    <span className="inline-flex items-center gap-1.5 rounded-xl bg-muted px-3 py-1.5 text-sm font-medium text-muted-foreground">
-                      {Icon && <Icon className="size-4" />}
-                      {t(toolNameKey(result.tool.slug))} · {t("assistant.result.soon")}
-                    </span>
-                  )}
-                  <Button variant="ghost" size="sm" className="rounded-xl" onClick={onRequestTool}>
-                    {t("request.trigger")}
+                  <Button asChild size="sm" className="rounded-xl">
+                    <Link to={result.tool.href}>
+                      {ToolIcon && <ToolIcon className="size-4" />}
+                      {t(toolNameKey(result.tool.slug))}
+                      <ArrowRight className="size-4 rtl:-scale-x-100" />
+                    </Link>
                   </Button>
                 </div>
-              )}
-
-              {!result.tool && (
-                <Button variant="outline" size="sm" className="mt-4 rounded-xl" onClick={onRequestTool}>
+              ) : (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="mt-4 rounded-xl"
+                  onClick={onRequestTool}
+                >
                   {t("request.trigger")}
                 </Button>
               )}
@@ -143,8 +153,12 @@ export function Assistant({ prompt, onPromptChange, onRequestTool }: AssistantPr
       {!result && !loading && (
         <div className="mt-4 rounded-2xl border border-dashed border-border bg-surface/40 p-8 text-center">
           <Sparkles className="mx-auto size-5 text-muted-foreground/60" />
-          <p className="mt-2 text-sm font-medium text-muted-foreground">{t("assistant.empty.title")}</p>
-          <p className="mt-1 text-xs leading-relaxed text-muted-foreground/80">{t("assistant.empty.body")}</p>
+          <p className="mt-2 text-sm font-medium text-muted-foreground">
+            {t("assistant.empty.title")}
+          </p>
+          <p className="mt-1 text-xs leading-relaxed text-muted-foreground/80">
+            {t("assistant.empty.body")}
+          </p>
         </div>
       )}
     </div>

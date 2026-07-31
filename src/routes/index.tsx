@@ -15,13 +15,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Flixo brings translation, writing, vision and audio AI tools into one fast, private workspace. Free, no accounts, no API keys.",
+          "Flixo brings translation, image, PDF, writing and utility AI tools into five hubs under one fast, private workspace. Free, no accounts, no API keys.",
       },
       { property: "og:title", content: "Flixo — One workspace for every AI tool" },
       {
         property: "og:description",
         content:
-          "Translation, writing, vision and audio tools under a single calm interface. Start with the free AI Translator.",
+          "Five tool hubs — Translation, Images, PDF, Writing and Utilities — under a single calm interface. Start with the free AI Translator.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -36,11 +36,7 @@ function Index() {
 
   return (
     <SiteLayout>
-      <Hero
-        prompt={query}
-        onPromptChange={setQuery}
-        onRequestTool={() => setRequestOpen(true)}
-      />
+      <Hero prompt={query} onPromptChange={setQuery} onRequestTool={() => setRequestOpen(true)} />
       <FeaturedTools />
       <WhyFlixo />
       <Statistics />

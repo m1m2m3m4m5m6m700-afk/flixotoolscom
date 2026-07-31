@@ -16,11 +16,12 @@ export const en = {
   "nav.toggleMenu": "Toggle navigation",
 
   "hero.badge": "One workspace, every AI tool",
-  "hero.title": "The AI toolkit that feels like one product",
+  "hero.title": "One workspace for every AI tool",
   "hero.description":
-    "Translation, writing, vision and audio tools under a single calm interface. No tab juggling, no setup, no accounts — just open a tool and start working.",
+    "Translation, images, PDFs, writing and utilities — five tool hubs under a single calm interface. No accounts, no API keys, just open a tool and start working.",
   "hero.searchLabel": "Describe what you want to do",
-  "hero.searchPlaceholder": "Try: “translate this to Arabic”, “summarize a PDF”, “generate an image”…",
+  "hero.searchPlaceholder":
+    "Try: “translate this to Arabic”, “summarize a PDF”, “generate an image”…",
   "hero.browse": "Browse tools",
   "hero.cta": "Try the AI Translator",
   "hero.note": "Free · No sign-up required",
@@ -35,14 +36,21 @@ export const en = {
   "assistant.result.matched": "Matched",
   "assistant.result.open": "Open tool",
   "assistant.result.soon": "Coming soon",
-  "assistant.suggestion.translation": "It looks like you want to translate text. The AI Translator is ready for you.",
-  "assistant.suggestion.images": "You're looking to work with images. Image Studio is on the way — request it below if you need it sooner.",
-  "assistant.suggestion.pdf": "You mentioned a PDF. We don't have a dedicated PDF tool yet — request one and we'll prioritize it.",
-  "assistant.suggestion.writing": "You want help with writing. The Text Summarizer and Tone Rewriter are coming soon.",
-  "assistant.suggestion.utilities": "You need a utility tool. We're adding more — request the specific one you need.",
-  "assistant.suggestion.unknown": "I'm not sure which tool fits that yet. Describe a bit more, or request a new tool and we'll build it.",
+  "assistant.suggestion.translation":
+    "It looks like you want to translate text. The AI Translator is ready for you.",
+  "assistant.suggestion.images":
+    "You're looking to work with images. No image tool is live yet — request one and we'll prioritize it.",
+  "assistant.suggestion.pdf":
+    "You mentioned a PDF. No PDF tool is live yet — request one and we'll prioritize it.",
+  "assistant.suggestion.writing":
+    "You want help with writing. No writing tool is live yet — request one and we'll prioritize it.",
+  "assistant.suggestion.utilities":
+    "You need a utility tool. No utility tool is live yet — request one and we'll prioritize it.",
+  "assistant.suggestion.unknown":
+    "I'm not sure which category fits that yet. Describe a bit more, or request a new tool and we'll build it.",
   "assistant.empty.title": "Your suggestion appears here",
-  "assistant.empty.body": "Type a task above and the assistant will match you to the right Flixo tool — or help you request a new one.",
+  "assistant.empty.body":
+    "Type a task above and the assistant will match you to the right Flixo tool — or help you request a new one.",
 
   "request.trigger": "Request a Tool",
   "request.title": "Request a new tool",
@@ -51,55 +59,40 @@ export const en = {
   "request.placeholder": "e.g. A tool that converts PDF to Word while keeping formatting…",
   "request.submit": "Submit request",
   "request.cancel": "Cancel",
-  "request.success": "Thanks! Your request has been noted — we'll prioritize it for the next release.",
+  "request.success":
+    "Thanks! Your request has been noted — we'll prioritize it for the next release.",
   "request.ok": "Done",
 
-  "featured.eyebrow": "Featured tools",
-  "featured.title": "Purpose-built tools, not a chat box",
-  "featured.description":
-    "Each tool is designed around one job and shares the same shortcuts, layout and keyboard flow.",
-  "featured.empty": "No tools match “{query}”. Try “translate” or “summarize”.",
+  "categories.eyebrow": "Tool hubs",
+  "categories.title": "Five hubs, one workspace",
+  "categories.description":
+    "Every Flixo tool lives in one of these hubs. Each is a placeholder for now — the foundation is ready to scale.",
+  "categories.status.coming": "Coming soon",
+  "categories.status.live": "{count} live",
+  "categories.toolsLabel": "Planned tools",
   "status.live": "Live",
   "status.soon": "Soon",
 
-  "categories.eyebrow": "Categories",
-  "categories.title": "Organised the way work actually happens",
-  "categories.description":
-    "Browse by the outcome you need rather than by model names or provider logos.",
-  "categories.count": "{count} tools",
-
-  "category.language.name": "Language",
-  "category.language.blurb": "Translation, localization and multilingual copy.",
-  "category.writing.name": "Writing",
-  "category.writing.blurb": "Drafting, editing, summarizing and rewriting.",
-  "category.vision.name": "Vision",
-  "category.vision.blurb": "Image generation, upscaling and background work.",
-  "category.audio.name": "Audio",
-  "category.audio.blurb": "Transcription, voice cleanup and dubbing.",
-  "category.developer.name": "Developer",
-  "category.developer.blurb": "Code review, explanation and test scaffolding.",
-  "category.research.name": "Research",
-  "category.research.blurb": "Extraction, comparison and structured analysis.",
+  "category.translation.name": "Translation Hub",
+  "category.translation.blurb":
+    "Translate, localize and subtitle across 20+ languages with auto detection.",
+  "category.translation.tools": "Translator · Localizer · Subtitle Translator",
+  "category.images.name": "Image Tools",
+  "category.images.blurb": "Generate, upscale and remove backgrounds from images.",
+  "category.images.tools": "Image Generator · Upscaler · Background Remover",
+  "category.pdf.name": "PDF Tools",
+  "category.pdf.blurb": "Merge, split, compress and convert PDF documents.",
+  "category.pdf.tools": "Merge · Split · Compress · PDF to Word",
+  "category.writing.name": "AI Writing",
+  "category.writing.blurb": "Summarize, rewrite and draft content with the right tone.",
+  "category.writing.tools": "Summarizer · Tone Rewriter · Email Drafter",
+  "category.utilities.name": "Utilities",
+  "category.utilities.blurb": "Format, convert and generate everyday technical snippets.",
+  "category.utilities.tools": "JSON Formatter · QR Generator · Base64 Converter",
 
   "tool.translator.name": "AI Translator",
   "tool.translator.tagline":
     "Translate between 20+ languages with auto detection and instant swapping.",
-  "tool.summarizer.name": "Text Summarizer",
-  "tool.summarizer.tagline": "Condense long documents into sharp, readable takeaways.",
-  "tool.image-studio.name": "Image Studio",
-  "tool.image-studio.tagline": "Generate and restyle visuals from a single prompt.",
-  "tool.transcribe.name": "Voice Transcriber",
-  "tool.transcribe.tagline": "Turn meetings and voice notes into clean, timestamped text.",
-  "tool.code-explain.name": "Code Explainer",
-  "tool.code-explain.tagline": "Understand unfamiliar code with line-by-line commentary.",
-  "tool.rewriter.name": "Tone Rewriter",
-  "tool.rewriter.tagline": "Rewrite any passage for tone, clarity, or audience.",
-
-  "popular.eyebrow": "Popular",
-  "popular.title": "What people reach for most",
-  "popular.description":
-    "The tools our community opens day after day, ranked by usage this month.",
-  "popular.runs": "{count} runs",
 
   "why.eyebrow": "Why Flixo",
   "why.title": "Built to remove friction, not add features",
@@ -136,9 +129,9 @@ export const en = {
   "faq.q4": "Which languages are supported?",
   "faq.a4":
     "Twenty languages across Latin, Cyrillic, Arabic, Hebrew, Indic and CJK scripts, plus automatic source detection.",
-  "faq.q5": "When are the other tools launching?",
+  "faq.q5": "When will the other tools launch?",
   "faq.a5":
-    "Summarizer, Image Studio and Voice Transcriber are next. Each new tool plugs into the same registry and inherits the shared layout.",
+    "The five hubs — Translation, Images, PDF, Writing and Utilities — are the roadmap. New tools plug into the same registry and inherit the shared layout as they're built.",
 
   "footer.tagline": "One calm workspace for every AI tool your team reaches for during the day.",
   "footer.product": "Product",

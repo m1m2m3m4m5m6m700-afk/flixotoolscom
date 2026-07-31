@@ -23,7 +23,9 @@ export function WhyFlixo() {
                 <Icon className="size-5" />
               </span>
               <div className="min-w-0">
-                <h3 className="text-base font-semibold">{t(`why.${id}.title` as TranslationKey)}</h3>
+                <h3 className="text-base font-semibold">
+                  {t(`why.${id}.title` as TranslationKey)}
+                </h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   {t(`why.${id}.body` as TranslationKey)}
                 </p>

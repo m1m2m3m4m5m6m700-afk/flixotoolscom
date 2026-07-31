@@ -38,11 +38,7 @@ export function Hero({ prompt, onPromptChange, onRequestTool }: HeroProps) {
           {t("hero.description")}
         </p>
 
-        <Assistant
-          prompt={prompt}
-          onPromptChange={onPromptChange}
-          onRequestTool={onRequestTool}
-        />
+        <Assistant prompt={prompt} onPromptChange={onPromptChange} onRequestTool={onRequestTool} />
 
         <div
           className="mt-8 flex animate-rise flex-col items-center justify-center gap-3 sm:flex-row"

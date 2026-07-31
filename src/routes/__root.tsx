@@ -14,7 +14,6 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { ThemeProvider, themeInitScript } from "../lib/theme";
 import { I18nProvider, localeInitScript } from "../lib/i18n";
 
-
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -90,8 +89,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Flixo — One workspace for every AI tool" },
       {
         property: "og:description",
-        content:
-          "Translation, writing, vision and audio tools under a single calm interface.",
+        content: "Translation, writing, vision and audio tools under a single calm interface.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -147,4 +145,3 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
-

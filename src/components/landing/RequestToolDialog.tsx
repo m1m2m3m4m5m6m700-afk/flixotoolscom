@@ -18,7 +18,11 @@ interface RequestToolDialogProps {
   initialDescription?: string;
 }
 
-export function RequestToolDialog({ open, onOpenChange, initialDescription }: RequestToolDialogProps) {
+export function RequestToolDialog({
+  open,
+  onOpenChange,
+  initialDescription,
+}: RequestToolDialogProps) {
   const { t } = useI18n();
   const [description, setDescription] = useState("");
   const [submitted, setSubmitted] = useState(false);

@@ -22,7 +22,10 @@ export function Section({
   align = "center",
 }: SectionProps) {
   return (
-    <section id={id} className={cn("mx-auto max-w-6xl scroll-mt-20 px-5 py-20 md:py-28", className)}>
+    <section
+      id={id}
+      className={cn("mx-auto max-w-6xl scroll-mt-20 px-5 py-20 md:py-28", className)}
+    >
       {(eyebrow || title || description) && (
         <div className={cn("mb-12 max-w-2xl", align === "center" && "mx-auto text-center")}>
           {eyebrow && (
@@ -30,9 +33,7 @@ export function Section({
               {eyebrow}
             </span>
           )}
-          {title && (
-            <h2 className="mt-4 text-3xl font-bold text-balance md:text-4xl">{title}</h2>
-          )}
+          {title && <h2 className="mt-4 text-3xl font-bold text-balance md:text-4xl">{title}</h2>}
           {description && (
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{description}</p>
           )}

@@ -1,6 +1,6 @@
 import type { LinkProps } from "@tanstack/react-router";
 import type { LucideIcon } from "lucide-react";
-import { Languages, FileText, Image, Mic, Code as Code2 } from "lucide-react";
+import { Languages, ImageIcon, FileText, PenLine, Wrench } from "lucide-react";
 import type { TranslationKey } from "@/lib/i18n/locales/en";
 
 export type ToolStatus = "live" | "soon";
@@ -13,119 +13,175 @@ export interface Tool {
   href?: LinkProps["to"];
 }
 
-export type CategoryId =
-  | "language"
-  | "writing"
-  | "vision"
-  | "audio"
-  | "developer"
-  | "research"
-  | "utilities";
+/**
+ * The five long-term roadmap categories for Flixo.
+ * Every tool added in the future belongs to one of these.
+ */
+export type CategoryId = "translation" | "images" | "pdf" | "writing" | "utilities";
 
-export type IntentCategory =
-  | "translation"
-  | "images"
-  | "pdf"
-  | "writing"
-  | "utilities"
-  | "unknown";
+export interface Category {
+  id: CategoryId;
+  icon: LucideIcon;
+  /** Future tools planned for this category — names shown as placeholders. */
+  tools: string[];
+}
+
+export type IntentCategory = CategoryId | "unknown";
 
 /** Translation-key helpers so every label flows through the i18n layer. */
 export const toolNameKey = (slug: string) => `tool.${slug}.name` as TranslationKey;
 export const toolTaglineKey = (slug: string) => `tool.${slug}.tagline` as TranslationKey;
 export const categoryNameKey = (id: CategoryId) => `category.${id}.name` as TranslationKey;
 export const categoryBlurbKey = (id: CategoryId) => `category.${id}.blurb` as TranslationKey;
+export const categoryToolsKey = (id: CategoryId) => `category.${id}.tools` as TranslationKey;
 
 /**
- * Central registry — add a new entry here and it appears across the site.
+ * Central category registry — the roadmap shown on the homepage.
+ * Each category lists the placeholder tools planned for it.
  * A tool becomes usable by adding a route at src/routes/tools/<slug>.tsx,
- * flipping status to "live" and adding tool.<slug>.* keys to each locale file.
+ * flipping its status to "live" and adding tool.<slug>.* keys to each locale.
+ */
+export const categories: Category[] = [
+  {
+    id: "translation",
+    icon: Languages,
+    tools: ["translator", "localizer", "subtitle-translator"],
+  },
+  {
+    id: "images",
+    icon: ImageIcon,
+    tools: ["image-generator", "image-upscaler", "background-remover"],
+  },
+  {
+    id: "pdf",
+    icon: FileText,
+    tools: ["pdf-merge", "pdf-split", "pdf-compress", "pdf-to-word"],
+  },
+  {
+    id: "writing",
+    icon: PenLine,
+    tools: ["summarizer", "tone-rewriter", "email-drafter"],
+  },
+  {
+    id: "utilities",
+    icon: Wrench,
+    tools: ["json-formatter", "qr-generator", "base64-converter"],
+  },
+];
+
+/**
+ * Central tool registry — only tools with a status ("live" or "soon").
+ * Currently only the translator is live; everything else is a placeholder.
  */
 export const tools: Tool[] = [
   {
     slug: "translator",
-    categoryId: "language",
+    categoryId: "translation",
     icon: Languages,
     status: "live",
     href: "/tools/translator",
   },
-  { slug: "summarizer", categoryId: "writing", icon: FileText, status: "soon" },
-  { slug: "image-studio", categoryId: "vision", icon: Image, status: "soon" },
-  { slug: "transcribe", categoryId: "audio", icon: Mic, status: "soon" },
-  { slug: "code-explain", categoryId: "developer", icon: Code2, status: "soon" },
-];
-
-export const categories: { id: CategoryId; count: number }[] = [
-  { id: "language", count: 6 },
-  { id: "writing", count: 9 },
-  { id: "vision", count: 5 },
-  { id: "audio", count: 4 },
-  { id: "developer", count: 7 },
-  { id: "utilities", count: 3 },
 ];
 
 export interface ClassifyResult {
   category: IntentCategory;
+  /** A live tool in the matched category, if one exists. */
   tool?: Tool;
   matchedKeywords: string[];
 }
 
-const KEYWORD_MAP: Record<Exclude<IntentCategory, "unknown">, string[]> = {
+const KEYWORD_MAP: Record<CategoryId, string[]> = {
   translation: [
-    "translate", "translation", "ترجم", "ترجمة", "لغة", "language",
-    "english", "arabic", "french", "spanish", "english to", "convert language",
+    "translate",
+    "translation",
+    "ترجم",
+    "ترجمة",
+    "language",
+    "لغة",
+    "english",
+    "arabic",
+    "french",
+    "spanish",
+    "subtitle",
+    "localize",
   ],
   images: [
-    "image", "photo", "picture", "صورة", "generate image", "upscale",
-    "background", "visual", "تصميم", "رسم",
+    "image",
+    "photo",
+    "picture",
+    "صورة",
+    "generate image",
+    "upscale",
+    "background",
+    "visual",
+    "تصميم",
+    "رسم",
+    "صور",
   ],
   pdf: [
-    "pdf", "document", "merge pdf", "split pdf", "compress pdf",
-    "مستند", "ملف", "تحويل pdf",
+    "pdf",
+    "document",
+    "merge pdf",
+    "split pdf",
+    "compress pdf",
+    "مستند",
+    "ملف",
+    "تحويل pdf",
+    "pdf to word",
   ],
   writing: [
-    "write", "summarize", "rewrite", "draft", "edit", "اكتب", "لخص",
-    "تلخيص", "إعادة صياغة", "article", "blog", "email", "content",
+    "write",
+    "summarize",
+    "rewrite",
+    "draft",
+    "edit",
+    "اكتب",
+    "لخص",
+    "تلخيص",
+    "إعادة صياغة",
+    "article",
+    "blog",
+    "email",
+    "content",
+    "كتابة",
   ],
   utilities: [
-    "convert", "compress", "format", "json", "csv", "حول", "ضغط",
-    "تنسيق", "qr", "base64", "hash",
+    "convert",
+    "compress",
+    "format",
+    "json",
+    "csv",
+    "حول",
+    "ضغط",
+    "تنسيق",
+    "qr",
+    "base64",
+    "hash",
+    "أداة مساعدة",
   ],
-};
-
-const INTENT_TO_CATEGORY: Record<Exclude<IntentCategory, "unknown">, CategoryId> = {
-  translation: "language",
-  images: "vision",
-  pdf: "utilities",
-  writing: "writing",
-  utilities: "utilities",
 };
 
 /**
  * Mock intent classifier — runs entirely in the browser.
- * Matches the user's prompt against keyword lists per intent, returns
- * the best-matching tool (if one exists in the registry) and the matched
+ * Matches the user's prompt against keyword lists per category, returns
+ * the best-matching category, a live tool if one exists, and the matched
  * keywords so the UI can explain its reasoning.
  */
 export function classifyIntent(prompt: string): ClassifyResult {
   const text = prompt.toLowerCase().trim();
   if (!text) return { category: "unknown", matchedKeywords: [] };
 
-  const scores: Record<string, { category: Exclude<IntentCategory, "unknown">; matched: string[] }> = {};
+  const scores: { category: CategoryId; matched: string[] }[] = [];
 
-  (Object.keys(KEYWORD_MAP) as Array<Exclude<IntentCategory, "unknown">>).forEach((cat) => {
+  (Object.keys(KEYWORD_MAP) as CategoryId[]).forEach((cat) => {
     const matched = KEYWORD_MAP[cat].filter((kw) => text.includes(kw));
-    if (matched.length > 0) {
-      scores[cat] = { category: cat, matched };
-    }
+    if (matched.length > 0) scores.push({ category: cat, matched });
   });
 
-  const ranked = Object.values(scores).sort((a, b) => b.matched.length - a.matched.length);
-  if (ranked.length === 0) return { category: "unknown", matchedKeywords: [] };
+  if (scores.length === 0) return { category: "unknown", matchedKeywords: [] };
 
-  const best = ranked[0];
-  const categoryId = INTENT_TO_CATEGORY[best.category];
-  const tool = tools.find((t) => t.categoryId === categoryId);
+  const best = scores.sort((a, b) => b.matched.length - a.matched.length)[0];
+  const tool = tools.find((t) => t.categoryId === best.category && t.status === "live");
 
   return { category: best.category, tool, matchedKeywords: best.matched };
 }
