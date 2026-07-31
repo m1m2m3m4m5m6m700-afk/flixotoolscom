@@ -6,7 +6,6 @@ import { Translator } from "@/components/tools/Translator";
 import { useI18n } from "@/lib/i18n";
 import { categoryNameKey, toolNameKey } from "@/lib/tools";
 
-
 export const Route = createFileRoute("/tools/translator")({
   head: () => ({
     meta: [
@@ -45,4 +44,3 @@ function TranslatorPage() {
     </SiteLayout>
   );
 }
-

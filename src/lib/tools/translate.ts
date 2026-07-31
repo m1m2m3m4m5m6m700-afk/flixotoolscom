@@ -90,7 +90,8 @@ export async function translateText(params: {
 
   if (!text.trim()) throw new Error("Enter some text to translate.");
   if (text.length > MAX_CHARS) throw new Error(`Text is limited to ${MAX_CHARS} characters.`);
-  if (/^\s*fail\s*$/i.test(text)) throw new Error("The translation service is unavailable. Please try again.");
+  if (/^\s*fail\s*$/i.test(text))
+    throw new Error("The translation service is unavailable. Please try again.");
 
   const detectedSource = from === AUTO_DETECT ? detectLanguage(text) : from;
 
@@ -153,7 +154,9 @@ function transliterate(word: string, to: string) {
   const chars = [...alphabet];
   let seed = 0;
   for (const ch of word) seed = (seed * 31 + ch.charCodeAt(0)) % 100000;
-  const len = ["zh", "ja", "ko"].includes(to) ? Math.max(1, Math.ceil(word.length / 3)) : word.length;
+  const len = ["zh", "ja", "ko"].includes(to)
+    ? Math.max(1, Math.ceil(word.length / 3))
+    : word.length;
   let out = "";
   for (let i = 0; i < len; i++) {
     seed = (seed * 1103515245 + 12345 + i) % 2147483648;
