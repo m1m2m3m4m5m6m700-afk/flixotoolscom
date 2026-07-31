@@ -1,126 +1,73 @@
-export interface AnalyticsData {
-  visitedCategories: Record<string, number>;
-  openedTools: Record<string, number>;
-  searchedKeywords: Record<string, number>;
-  requestedTools: Record<string, number>;
-  pageViews: Record<string, number>;
-  landingPages: Record<string, number>;
-  exitPages: Record<string, number>;
+import { analytics } from "./analytics/analyticsService";
+import type { AnalyticsData, AnalyticsEventParams } from "./analytics/types";
+
+export * from "./analytics/types";
+export * from "./analytics/analyticsService";
+export * from "./analytics/providers/ga4";
+export * from "./analytics/providers/clarity";
+export * from "./analytics/providers/local";
+export * from "./analytics/providers/custom";
+export * from "./analytics/AnalyticsProvider";
+
+// Direct helper functions for easy import everywhere
+export function trackPageView(path: string, title?: string): void {
+  analytics.trackPageView(path, title);
 }
 
-const STORAGE_KEY = "flixo_analytics_v1";
-let lastVisitedPage: string | null = null;
-
-function getInitialData(): AnalyticsData {
-  return {
-    visitedCategories: {},
-    openedTools: {},
-    searchedKeywords: {},
-    requestedTools: {},
-    pageViews: {},
-    landingPages: {},
-    exitPages: {},
-  };
+export function trackSearch(query: string, resultCount?: number, category?: string): void {
+  analytics.trackSearch(query, resultCount, category);
 }
 
+export function trackToolClick(toolId: string, toolName?: string, category?: string): void {
+  analytics.trackToolClick(toolId, toolName, category);
+}
+
+export function trackCategoryClick(categoryId: string, categoryName?: string): void {
+  analytics.trackCategoryClick(categoryId, categoryName);
+}
+
+export function trackExternalLinkClick(url: string, label?: string): void {
+  analytics.trackExternalLinkClick(url, label);
+}
+
+export function trackCopyAction(contentType: string, textLength?: number, toolId?: string): void {
+  analytics.trackCopy(contentType, textLength, toolId);
+}
+
+export function trackDownloadAction(fileName: string, fileType?: string, toolId?: string): void {
+  analytics.trackDownload(fileName, fileType, toolId);
+}
+
+export function trackEvent(eventName: string, params?: AnalyticsEventParams): void {
+  analytics.trackEvent(eventName, params);
+}
+
+// Backwards-compatible local functions for existing components (e.g. AnalyticsDialog, ToolCard, etc.)
 export function getAnalytics(): AnalyticsData {
-  if (typeof window === "undefined") return getInitialData();
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    const parsed = raw ? (JSON.parse(raw) as AnalyticsData) : getInitialData();
-    return {
-      visitedCategories: parsed.visitedCategories || {},
-      openedTools: parsed.openedTools || {},
-      searchedKeywords: parsed.searchedKeywords || {},
-      requestedTools: parsed.requestedTools || {},
-      pageViews: parsed.pageViews || {},
-      landingPages: parsed.landingPages || {},
-      exitPages: parsed.exitPages || {},
-    };
-  } catch {
-    return getInitialData();
-  }
+  return analytics.getLocalProvider().getData();
 }
 
-function saveAnalytics(data: AnalyticsData) {
-  if (typeof window === "undefined") return;
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-  } catch (err) {
-    console.warn("Failed to save analytics to localStorage:", err);
-  }
+export function clearAnalytics(): void {
+  analytics.getLocalProvider().clearData();
 }
 
-export function trackCategoryVisit(categoryId: string) {
-  const data = getAnalytics();
-  data.visitedCategories[categoryId] = (data.visitedCategories[categoryId] || 0) + 1;
-  saveAnalytics(data);
+export function trackCategoryVisit(categoryId: string, categoryName?: string): void {
+  analytics.trackCategoryClick(categoryId, categoryName);
 }
 
-export function trackToolOpen(toolIdOrName: string) {
-  const data = getAnalytics();
-  data.openedTools[toolIdOrName] = (data.openedTools[toolIdOrName] || 0) + 1;
-  saveAnalytics(data);
+export function trackToolOpen(toolIdOrName: string, toolName?: string, category?: string): void {
+  analytics.trackToolClick(toolIdOrName, toolName, category);
 }
 
-export function trackExitPage(path: string) {
-  if (!path) return;
-  const data = getAnalytics();
-  data.exitPages[path] = (data.exitPages[path] || 0) + 1;
-  saveAnalytics(data);
+export function trackKeywordSearch(keyword: string, resultCount?: number): void {
+  analytics.trackSearch(keyword, resultCount);
 }
 
-export function trackPageView(path: string) {
-  if (typeof window === "undefined") return;
-  const pagePath = path || window.location.pathname;
-
-  // Track exit for previous page if navigating internally
-  if (lastVisitedPage && lastVisitedPage !== pagePath) {
-    trackExitPage(lastVisitedPage);
-  }
-  lastVisitedPage = pagePath;
-
-  const data = getAnalytics();
-  data.pageViews[pagePath] = (data.pageViews[pagePath] || 0) + 1;
-
-  // Track landing page if session started
-  if (!sessionStorage.getItem("flixo_session_started")) {
-    sessionStorage.setItem("flixo_session_started", "true");
-    data.landingPages[pagePath] = (data.landingPages[pagePath] || 0) + 1;
-  }
-  saveAnalytics(data);
+export function trackToolRequest(requestText: string): void {
+  analytics.getLocalProvider().trackToolRequest(requestText);
+  analytics.trackEvent("tool_request", { requestText });
 }
 
-// Global window listener for tab close/unload exit page tracking
-if (typeof window !== "undefined") {
-  window.addEventListener("beforeunload", () => {
-    if (lastVisitedPage) {
-      trackExitPage(lastVisitedPage);
-    }
-  });
-}
-
-export function trackKeywordSearch(keyword: string) {
-  const cleaned = keyword.trim().toLowerCase();
-  if (!cleaned) return;
-  const data = getAnalytics();
-  data.searchedKeywords[cleaned] = (data.searchedKeywords[cleaned] || 0) + 1;
-  saveAnalytics(data);
-}
-
-export function trackToolRequest(requestText: string) {
-  const cleaned = requestText.trim();
-  if (!cleaned) return;
-  const data = getAnalytics();
-  data.requestedTools[cleaned] = (data.requestedTools[cleaned] || 0) + 1;
-  saveAnalytics(data);
-}
-
-export function clearAnalytics() {
-  if (typeof window === "undefined") return;
-  try {
-    localStorage.removeItem(STORAGE_KEY);
-  } catch {
-    // Ignore error
-  }
+export function trackExitPage(path: string): void {
+  analytics.getLocalProvider().trackExitPage(path);
 }

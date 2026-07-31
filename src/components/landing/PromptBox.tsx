@@ -4,6 +4,7 @@ import { ArrowRight, Lightbulb, Loader as Loader2, Sparkles, Wand as Wand2 } fro
 import { Button } from "@/components/ui/button";
 import { classifyIntent, type ClassificationResult } from "@/lib/tool-classifier";
 import { toolRoute } from "@/data/tools";
+import { trackSearch } from "@/lib/analytics";
 
 interface PromptBoxProps {
   value: string;
@@ -26,6 +27,7 @@ export function PromptBox({ value, onChange, onRequestTool }: PromptBoxProps) {
   const run = (text: string) => {
     if (!text.trim()) return;
     setLoading(true);
+    trackSearch(text);
     setTimeout(() => {
       setResult(classifyIntent(text));
       setLoading(false);

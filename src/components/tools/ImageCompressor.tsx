@@ -20,6 +20,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { cn } from "@/lib/utils";
+import { trackDownloadAction } from "@/lib/analytics";
 
 function formatBytes(bytes: number, decimals = 2) {
   if (bytes === 0) return "0 Bytes";
@@ -149,9 +150,11 @@ export function ImageCompressor() {
     if (!compressedUrl || !file) return;
     const ext = format === "jpeg" ? "jpg" : format;
     const baseName = file.name.substring(0, file.name.lastIndexOf(".")) || file.name;
+    const fileName = `${baseName}-compressed.${ext}`;
+    trackDownloadAction(fileName, ext, "image-compressor");
     const a = document.createElement("a");
     a.href = compressedUrl;
-    a.download = `${baseName}-compressed.${ext}`;
+    a.download = fileName;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);

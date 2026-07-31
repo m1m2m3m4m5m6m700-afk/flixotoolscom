@@ -16,6 +16,7 @@ import { Slider } from "@/components/ui/slider";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
+import { trackCopyAction } from "@/lib/analytics";
 
 const UPPERCASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const LOWERCASE = "abcdefghijklmnopqrstuvwxyz";
@@ -98,6 +99,7 @@ export function PasswordGenerator() {
     if (!password) return;
     try {
       await navigator.clipboard.writeText(password);
+      trackCopyAction("password", password.length, "password-generator");
       setCopied(true);
       setTimeout(() => setCopied(false), 1600);
     } catch {

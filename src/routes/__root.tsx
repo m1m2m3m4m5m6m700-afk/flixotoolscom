@@ -13,6 +13,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { ThemeProvider, themeInitScript } from "../lib/theme";
 import { I18nProvider, localeInitScript } from "../lib/i18n";
+import { AnalyticsProvider } from "../lib/analytics";
 
 const jsonLdData = {
   "@context": "https://schema.org",
@@ -171,8 +172,10 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
         <I18nProvider>
-          {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-          <Outlet />
+          <AnalyticsProvider>
+            {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+            <Outlet />
+          </AnalyticsProvider>
         </I18nProvider>
       </ThemeProvider>
     </QueryClientProvider>
