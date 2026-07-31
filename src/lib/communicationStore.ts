@@ -69,201 +69,7 @@ export interface Conversation {
 }
 
 const STORAGE_KEY = "flixo_owner_communication_conversations_v1";
-
-const INITIAL_CONVERSATIONS: Conversation[] = [
-  {
-    id: "conv-101",
-    visitorName: "Alex Mercer",
-    visitorEmail: "alex.mercer@techstudio.io",
-    category: "Sponsor Request",
-    subject: "Sponsoring Flixo Image Tools Hub",
-    status: "New",
-    priority: "High",
-    starred: true,
-    pinned: true,
-    archived: false,
-    unreadByVisitor: false,
-    unreadByAdmin: true,
-    userInfo: {
-      browser: "Chrome 126.0 (macOS)",
-      os: "macOS Sonoma 14.5",
-      location: "San Francisco, CA, USA",
-      ip: "192.0.2.45",
-      pageUrl: "https://flixotools.com/contact",
-    },
-    internalNotes: [
-      {
-        id: "note-1",
-        text: "TechStudio is interested in a 3-month sponsorship tier for the Image Compressor & Enhancer tools.",
-        createdAt: "2026-07-30T20:15:00Z",
-        authorName: "Flixo Owner",
-      },
-    ],
-    messages: [
-      {
-        id: "msg-101",
-        sender: "visitor",
-        senderName: "Alex Mercer",
-        text: "Hi Flixo team! We love the privacy-first suite and would like to sponsor the Image Tools directory. Attached is our company sponsorship deck.",
-        timestamp: "2026-07-30T20:10:00Z",
-        readStatus: "read",
-        attachments: [
-          {
-            id: "att-1",
-            name: "TechStudio_Sponsorship_Deck.pdf",
-            type: "pdf",
-            url: "#",
-            size: "2.4 MB",
-          },
-        ],
-      },
-    ],
-    createdAt: "2026-07-30T20:10:00Z",
-    updatedAt: "2026-07-30T20:10:00Z",
-  },
-  {
-    id: "conv-102",
-    visitorName: "Elena Rostova",
-    visitorEmail: "elena.design@creatives.co",
-    category: "Request a Tool",
-    subject: "SVG Path Optimizer & Converter Tool Request",
-    status: "In Progress",
-    priority: "Medium",
-    starred: false,
-    pinned: false,
-    archived: false,
-    unreadByVisitor: false,
-    unreadByAdmin: false,
-    userInfo: {
-      browser: "Firefox 127.0 (Windows)",
-      os: "Windows 11",
-      location: "Berlin, Germany",
-      ip: "198.51.100.12",
-      pageUrl: "https://flixotools.com/#categories",
-    },
-    internalNotes: [
-      {
-        id: "note-2",
-        text: "Great suggestion! Adding SVG clean/minifier to roadmap for Q3.",
-        createdAt: "2026-07-30T18:40:00Z",
-        authorName: "Flixo Owner",
-      },
-    ],
-    messages: [
-      {
-        id: "msg-102",
-        sender: "visitor",
-        senderName: "Elena Rostova",
-        text: "Would it be possible to add an inline SVG optimizer tool to clean extra metadata and shrink vector sizes?",
-        timestamp: "2026-07-30T18:30:00Z",
-        readStatus: "read",
-      },
-      {
-        id: "msg-103",
-        sender: "owner",
-        senderName: "Flixo Owner",
-        text: "Hey Elena! Thanks for reaching out. We are actually prototyping a vector optimization tool right now! Stay tuned for updates.",
-        timestamp: "2026-07-30T18:38:00Z",
-        readStatus: "read",
-      },
-    ],
-    createdAt: "2026-07-30T18:30:00Z",
-    updatedAt: "2026-07-30T18:38:00Z",
-  },
-  {
-    id: "conv-103",
-    visitorName: "Marcus Vance",
-    visitorEmail: "m.vance@devstack.net",
-    category: "Report a Bug",
-    subject: "QR Generator batch export canvas sizing",
-    status: "Waiting for Reply",
-    priority: "Urgent",
-    starred: true,
-    pinned: false,
-    archived: false,
-    unreadByVisitor: true,
-    unreadByAdmin: false,
-    userInfo: {
-      browser: "Safari 17.4 (macOS)",
-      os: "macOS Sonoma 14.4",
-      location: "Toronto, Canada",
-      ip: "203.0.113.88",
-      pageUrl: "https://flixotools.com/tools/qr-generator",
-    },
-    internalNotes: [],
-    messages: [
-      {
-        id: "msg-104",
-        sender: "visitor",
-        senderName: "Marcus Vance",
-        text: "Hello, when downloading high-DPI transparent QR codes on Safari, the canvas margin clips slightly on retina displays. Sample attached.",
-        timestamp: "2026-07-30T16:20:00Z",
-        readStatus: "read",
-        attachments: [
-          {
-            id: "att-2",
-            name: "qr_canvas_issue.png",
-            type: "image",
-            url: "https://images.unsplash.com/photo-1595079672139-cee4c0849f4a?w=400&auto=format&fit=crop&q=80",
-            size: "412 KB",
-          },
-        ],
-      },
-      {
-        id: "msg-105",
-        sender: "owner",
-        senderName: "Flixo Owner",
-        text: "Hi Marcus, we identified the devicePixelRatio scaling parameter and released a hotfix! Could you test downloading again and let us know if it works?",
-        timestamp: "2026-07-30T17:05:00Z",
-        readStatus: "delivered",
-      },
-    ],
-    createdAt: "2026-07-30T16:20:00Z",
-    updatedAt: "2026-07-30T17:05:00Z",
-  },
-  {
-    id: "conv-104",
-    visitorName: "Sophia Lin",
-    visitorEmail: "sophia@venturelabs.co",
-    category: "Partnership",
-    subject: "Developer API Ecosystem Collaboration",
-    status: "Resolved",
-    priority: "Low",
-    starred: false,
-    pinned: false,
-    archived: false,
-    unreadByVisitor: false,
-    unreadByAdmin: false,
-    userInfo: {
-      browser: "Edge 125.0 (Windows)",
-      os: "Windows 11",
-      location: "Singapore",
-      ip: "198.51.100.99",
-      pageUrl: "https://flixotools.com/contact",
-    },
-    internalNotes: [],
-    messages: [
-      {
-        id: "msg-106",
-        sender: "visitor",
-        senderName: "Sophia Lin",
-        text: "Great work on Flixo! We would love to feature Flixo in our weekly developer productivity roundup newsletter.",
-        timestamp: "2026-07-29T14:00:00Z",
-        readStatus: "read",
-      },
-      {
-        id: "msg-107",
-        sender: "owner",
-        senderName: "Flixo Owner",
-        text: "Thank you Sophia! That would be fantastic. Feel free to use our official brand assets from our media kit.",
-        timestamp: "2026-07-29T14:45:00Z",
-        readStatus: "read",
-      },
-    ],
-    createdAt: "2026-07-29T14:00:00Z",
-    updatedAt: "2026-07-29T14:45:00Z",
-  },
-];
+const INITIAL_CONVERSATIONS: Conversation[] = [];
 
 class CommunicationStore {
   private conversations: Conversation[] = INITIAL_CONVERSATIONS;
@@ -271,7 +77,7 @@ class CommunicationStore {
   private isInitialized = false;
 
   constructor() {
-    // Initialized with INITIAL_CONVERSATIONS to ensure initial SSR and client hydration HTML match perfectly.
+    // Initialized with empty data to avoid bundling demo inbox content in production.
   }
 
   public init() {
@@ -280,12 +86,14 @@ class CommunicationStore {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
-        this.conversations = JSON.parse(saved);
+        const parsed = JSON.parse(saved) as Conversation[];
+        this.conversations = Array.isArray(parsed) ? parsed : INITIAL_CONVERSATIONS;
         this.notify();
       } else {
         this.save();
       }
     } catch {
+      this.conversations = INITIAL_CONVERSATIONS;
       // ignore storage errors
     }
   }
@@ -415,7 +223,6 @@ class CommunicationStore {
     conv.status = status;
     conv.updatedAt = new Date().toISOString();
 
-    // Add system notification message
     conv.messages.push({
       id: `sys-${Date.now()}`,
       sender: "system",
@@ -497,7 +304,6 @@ class CommunicationStore {
       (c) => c.status === "Resolved" || c.status === "Closed",
     ).length;
 
-    // Category distribution
     const categoryCounts: Record<string, number> = {};
     this.conversations.forEach((c) => {
       categoryCounts[c.category] = (categoryCounts[c.category] || 0) + 1;
