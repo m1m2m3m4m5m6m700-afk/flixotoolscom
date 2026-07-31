@@ -87,6 +87,12 @@ export function Navbar() {
           >
             Owner Inbox
           </Link>
+          <Link
+            to="/admin/analytics"
+            className="rounded-lg px-3 py-2 text-sm text-primary font-bold transition-colors hover:bg-primary/10"
+          >
+            Analytics
+          </Link>
         </nav>
 
         <div className="ms-auto flex shrink-0 items-center gap-1.5">

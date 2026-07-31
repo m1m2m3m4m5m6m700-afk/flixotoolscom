@@ -131,6 +131,14 @@ export function Footer({ onRequestTool, onOpenAnalytics }: FooterProps) {
               Owner Inbox
             </Link>
           </li>
+          <li>
+            <Link
+              to="/admin/analytics"
+              className="text-sm text-primary font-bold transition-colors hover:underline"
+            >
+              Admin Analytics
+            </Link>
+          </li>
         </FooterCol>
 
         <FooterCol title="Category Hubs">

@@ -18,6 +18,7 @@ import { Route as PdfToolsRouteImport } from './routes/pdf-tools'
 import { Route as SitemapRouteImport } from './routes/sitemap'
 import { Route as TranslationToolsRouteImport } from './routes/translation-tools'
 import { Route as VideoToolsRouteImport } from './routes/video-tools'
+import { Route as AdminAnalyticsRouteImport } from './routes/admin/analytics'
 import { Route as AdminInboxRouteImport } from './routes/admin/inbox'
 import { Route as BlogIndexRouteImport } from './routes/blog/index'
 import { Route as BlogSlugRouteImport } from './routes/blog/$slug'
@@ -83,6 +84,11 @@ const TranslationToolsRoute = TranslationToolsRouteImport.update({
 const VideoToolsRoute = VideoToolsRouteImport.update({
   id: '/video-tools',
   path: '/video-tools',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminAnalyticsRoute = AdminAnalyticsRouteImport.update({
+  id: '/admin/analytics',
+  path: '/admin/analytics',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AdminInboxRoute = AdminInboxRouteImport.update({
@@ -201,6 +207,7 @@ export interface FileRoutesByFullPath {
   '/sitemap': typeof SitemapRoute
   '/translation-tools': typeof TranslationToolsRoute
   '/video-tools': typeof VideoToolsRoute
+  '/admin/analytics': typeof AdminAnalyticsRoute
   '/admin/inbox': typeof AdminInboxRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/categories/$slug': typeof CategoriesSlugRoute
@@ -233,6 +240,7 @@ export interface FileRoutesByTo {
   '/sitemap': typeof SitemapRoute
   '/translation-tools': typeof TranslationToolsRoute
   '/video-tools': typeof VideoToolsRoute
+  '/admin/analytics': typeof AdminAnalyticsRoute
   '/admin/inbox': typeof AdminInboxRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/categories/$slug': typeof CategoriesSlugRoute
@@ -266,6 +274,7 @@ export interface FileRoutesById {
   '/sitemap': typeof SitemapRoute
   '/translation-tools': typeof TranslationToolsRoute
   '/video-tools': typeof VideoToolsRoute
+  '/admin/analytics': typeof AdminAnalyticsRoute
   '/admin/inbox': typeof AdminInboxRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/categories/$slug': typeof CategoriesSlugRoute
@@ -300,6 +309,7 @@ export interface FileRouteTypes {
     | '/sitemap'
     | '/translation-tools'
     | '/video-tools'
+    | '/admin/analytics'
     | '/admin/inbox'
     | '/blog/$slug'
     | '/categories/$slug'
@@ -332,6 +342,7 @@ export interface FileRouteTypes {
     | '/sitemap'
     | '/translation-tools'
     | '/video-tools'
+    | '/admin/analytics'
     | '/admin/inbox'
     | '/blog/$slug'
     | '/categories/$slug'
@@ -364,6 +375,7 @@ export interface FileRouteTypes {
     | '/sitemap'
     | '/translation-tools'
     | '/video-tools'
+    | '/admin/analytics'
     | '/admin/inbox'
     | '/blog/$slug'
     | '/categories/$slug'
@@ -397,6 +409,7 @@ export interface RootRouteChildren {
   SitemapRoute: typeof SitemapRoute
   TranslationToolsRoute: typeof TranslationToolsRoute
   VideoToolsRoute: typeof VideoToolsRoute
+  AdminAnalyticsRoute: typeof AdminAnalyticsRoute
   AdminInboxRoute: typeof AdminInboxRoute
   BlogSlugRoute: typeof BlogSlugRoute
   CategoriesSlugRoute: typeof CategoriesSlugRoute
@@ -483,6 +496,13 @@ declare module '@tanstack/react-router' {
       path: '/video-tools'
       fullPath: '/video-tools'
       preLoaderRoute: typeof VideoToolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/analytics': {
+      id: '/admin/analytics'
+      path: '/admin/analytics'
+      fullPath: '/admin/analytics'
+      preLoaderRoute: typeof AdminAnalyticsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/admin/inbox': {
@@ -645,6 +665,7 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapRoute: SitemapRoute,
   TranslationToolsRoute: TranslationToolsRoute,
   VideoToolsRoute: VideoToolsRoute,
+  AdminAnalyticsRoute: AdminAnalyticsRoute,
   AdminInboxRoute: AdminInboxRoute,
   BlogSlugRoute: BlogSlugRoute,
   CategoriesSlugRoute: CategoriesSlugRoute,
