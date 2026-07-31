@@ -45,7 +45,7 @@ export function PopularCategories({ onSelectCategory }: PopularCategoriesProps) 
                   {cat.name}
                 </h4>
                 <p className="text-[10px] text-muted-foreground line-clamp-1 mt-0.5">
-                  {cat.tagline}
+                  {(cat as { tagline?: string }).tagline}
                 </p>
               </div>
             </button>

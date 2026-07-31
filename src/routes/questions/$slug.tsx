@@ -180,8 +180,7 @@ function QuestionSlugRoute() {
               </div>
               {recommendedTool.slug && (
                 <Link
-                  to="/tools/$slug"
-                  params={{ slug: recommendedTool.slug }}
+                  to={`/tools/${recommendedTool.slug}` as never}
                   className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-xs font-bold text-primary-foreground shadow-xs hover:bg-primary/90 transition-all shrink-0"
                 >
                   Launch {recommendedTool.name} <ArrowRight className="size-4" />

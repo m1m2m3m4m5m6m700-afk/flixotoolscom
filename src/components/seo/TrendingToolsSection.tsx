@@ -29,8 +29,7 @@ export function TrendingToolsSection() {
           return (
             <Link
               key={tool.id}
-              to="/tools/$slug"
-              params={{ slug: tool.slug! }}
+              to={`/tools/${tool.slug!}` as never}
               className="group rounded-2xl border border-border/80 bg-card p-4 transition-all hover:border-primary/50 hover:shadow-xs flex flex-col justify-between"
             >
               <div>

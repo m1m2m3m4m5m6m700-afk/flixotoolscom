@@ -528,7 +528,7 @@ export function AdminAnalyticsDashboard() {
     document.body.removeChild(link);
   };
 
-  const totalVisitorsCount = 12480 + (analyticsData.pageViews || 0);
+  const totalVisitorsCount = 12480 + Object.values(analyticsData.pageViews || {}).reduce((a, b) => a + b, 0);
   const totalSearchesCount =
     3840 + Object.values(analyticsData.searchedKeywords || {}).reduce((a, b) => a + b, 0);
   const totalToolOpensCount =

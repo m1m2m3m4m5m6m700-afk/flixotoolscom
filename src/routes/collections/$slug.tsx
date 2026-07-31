@@ -159,8 +159,7 @@ function CollectionSlugRoute() {
                   </div>
                   {tool.slug && (
                     <Link
-                      to="/tools/$slug"
-                      params={{ slug: tool.slug }}
+                      to={`/tools/${tool.slug}` as never}
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline"
                     >
                       Launch Utility <ArrowRight className="size-3.5" />

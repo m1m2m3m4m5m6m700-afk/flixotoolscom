@@ -523,9 +523,10 @@ export function useCommunicationStore() {
 
   useEffect(() => {
     communicationStore.init();
-    return communicationStore.subscribe(() => {
+    const unsubscribe = communicationStore.subscribe(() => {
       setTick((t) => t + 1);
     });
+    return () => { unsubscribe(); };
   }, []);
 
   return {

@@ -193,7 +193,7 @@ ${allPages
                   {tools.map((t) => (
                     <Link
                       key={t.id}
-                      to={t.slug ? `/tools/${t.slug}` : `/#${t.categoryId}`}
+                      to={(t.slug ? `/tools/${t.slug}` : `/#${t.categoryId}`) as never}
                       className="rounded-xl border border-border/60 bg-surface/50 p-3 text-xs font-medium text-muted-foreground hover:text-foreground hover:border-primary/40 transition-all flex items-center justify-between"
                     >
                       <span className="truncate">{t.name}</span>

@@ -270,7 +270,7 @@ function BlogPostRoute() {
                   return (
                     <Link
                       key={tool.id}
-                      to={isReady ? `/tools/${tool.slug}` : "/#categories"}
+                      to={(isReady ? `/tools/${tool.slug}` : "/#categories") as never}
                       className="group rounded-2xl border border-border/60 bg-surface/50 p-4 transition-all hover:border-primary/50 flex flex-col justify-between"
                     >
                       <div>

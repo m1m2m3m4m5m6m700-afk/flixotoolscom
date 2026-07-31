@@ -193,8 +193,7 @@ function ComparisonSlugRoute() {
                 </p>
               </div>
               <Link
-                to="/tools/$slug"
-                params={{ slug: matchedTool.slug }}
+                to={`/tools/${matchedTool.slug}` as never}
                 className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-xs font-bold text-primary-foreground shadow-xs hover:bg-primary/90 transition-all shrink-0"
               >
                 Launch {matchedTool.name} <ArrowRight className="size-4" />

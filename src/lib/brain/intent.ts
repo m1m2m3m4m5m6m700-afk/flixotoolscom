@@ -83,7 +83,7 @@ export function extractIntent(
   const detectedFileTypes = FILE_TYPES.filter((type) => cleanPrompt.includes(type));
 
   // Extract URLs
-  const extractedUrls = rawPrompt.match(URL_REGEX) || [];
+  const extractedUrls: string[] = rawPrompt.match(URL_REGEX) || [];
   if (options?.url && !extractedUrls.includes(options.url)) {
     extractedUrls.push(options.url);
   }

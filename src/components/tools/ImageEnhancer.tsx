@@ -198,42 +198,6 @@ export function ImageEnhancer() {
     };
   }, [originalUrl, enhancedUrl]);
 
-  const handleFileSelect = useCallback(
-    (file: File) => {
-      if (!file.type.startsWith("image/")) {
-        setError("Please select a valid image file (PNG, JPG, WebP).");
-        return;
-      }
-      setError(null);
-      setImageFile(file);
-      const url = URL.createObjectURL(file);
-      setOriginalUrl(url);
-      setEnhancedUrl(null);
-      setStats(null);
-      processEnhancement(url, options, file.size);
-    },
-    [options, processEnhancement],
-  );
-
-  // Handle Clipboard Paste listener
-  useEffect(() => {
-    const handlePaste = (e: ClipboardEvent) => {
-      if (!e.clipboardData) return;
-      const items = e.clipboardData.items;
-      for (let i = 0; i < items.length; i++) {
-        if (items[i].type.indexOf("image") !== -1) {
-          const file = items[i].getAsFile();
-          if (file) {
-            handleFileSelect(file);
-            break;
-          }
-        }
-      }
-    };
-    window.addEventListener("paste", handlePaste);
-    return () => window.removeEventListener("paste", handlePaste);
-  }, [handleFileSelect]);
-
   const handleSampleLoad = async (sampleUrl: string, sampleName: string) => {
     try {
       setLoading(true);
@@ -466,6 +430,42 @@ export function ImageEnhancer() {
     },
     [],
   );
+
+  const handleFileSelect = useCallback(
+    (file: File) => {
+      if (!file.type.startsWith("image/")) {
+        setError("Please select a valid image file (PNG, JPG, WebP).");
+        return;
+      }
+      setError(null);
+      setImageFile(file);
+      const url = URL.createObjectURL(file);
+      setOriginalUrl(url);
+      setEnhancedUrl(null);
+      setStats(null);
+      processEnhancement(url, options, file.size);
+    },
+    [options, processEnhancement],
+  );
+
+  // Handle Clipboard Paste listener
+  useEffect(() => {
+    const handlePaste = (e: ClipboardEvent) => {
+      if (!e.clipboardData) return;
+      const items = e.clipboardData.items;
+      for (let i = 0; i < items.length; i++) {
+        if (items[i].type.indexOf("image") !== -1) {
+          const file = items[i].getAsFile();
+          if (file) {
+            handleFileSelect(file);
+            break;
+          }
+        }
+      }
+    };
+    window.addEventListener("paste", handlePaste);
+    return () => window.removeEventListener("paste", handlePaste);
+  }, [handleFileSelect]);
 
   // Split Slider Pointer Drag Handlers
   const handleSplitMove = useCallback((clientX: number) => {

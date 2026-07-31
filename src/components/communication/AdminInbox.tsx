@@ -31,6 +31,7 @@ import {
   Eye,
   ChevronRight,
   RefreshCw,
+  X,
 } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
