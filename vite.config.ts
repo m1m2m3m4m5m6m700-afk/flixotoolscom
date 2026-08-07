@@ -6,14 +6,18 @@
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
+// Detect if running on Vercel
+const isVercel = process.env.VERCEL === "1" || !!process.env.VERCEL_GIT_DIR_REF;
+
 export default defineConfig({
-  nitro: {
-    preset: "node-server",
-  },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
+  },
+  nitro: {
+    // Use vercel preset when deploying to Vercel, otherwise use node-server
+    preset: isVercel ? "vercel" : "node-server",
   },
   vite: {
     server: {

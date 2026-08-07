@@ -7,6 +7,7 @@
  * - Locale-based URL rewriting
  * - x-default handling
  */
+import type { H3Event, EventHandlerRequest } from "h3";
 import {
   defineEventHandler,
   getRequestURL,
@@ -82,7 +83,7 @@ function extractLocaleFromPath(path: string): { locale: LocaleCode; cleanPath: s
 /**
  * Detect preferred locale from various sources
  */
-function detectLocale(event: { req: unknown }): LocaleCode {
+function detectLocale(event: H3Event<EventHandlerRequest>): LocaleCode {
   const url = getRequestURL(event);
   const path = url.pathname;
 
@@ -112,7 +113,7 @@ function detectLocale(event: { req: unknown }): LocaleCode {
 /**
  * Set locale cookie
  */
-function setLocaleCookie(event: { req: unknown }, locale: LocaleCode): void {
+function setLocaleCookie(event: H3Event<EventHandlerRequest>, locale: LocaleCode): void {
   setCookie(event, LOCALE_STORAGE_KEY, locale, {
     maxAge: LOCALE_COOKIE_MAX_AGE,
     path: "/",
