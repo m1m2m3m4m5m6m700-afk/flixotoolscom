@@ -1,15 +1,17 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
-import { AITaskInterface } from "@/components/assistant/AITaskInterface";
-import { CapabilityCards, SupportedFiles } from "@/components/assistant/HomeSignals";
-import { PopularToolsSection } from "@/components/landing/PopularToolsSection";
-import { NewToolsSection } from "@/components/landing/NewToolsSection";
-import { TrendingToolsSection } from "@/components/seo/TrendingToolsSection";
-import { WhyFlixo } from "@/components/landing/WhyFlixo";
-import { FAQ } from "@/components/landing/FAQ";
-import { SponsorSection } from "@/components/landing/SponsorSection";
+import { Suspense, lazy, useState } from "react";
+import type { CategoryId } from "@/data/categories";
+import { Hero } from "@/components/landing/Hero";
 import { RequestToolDialog } from "@/components/landing/RequestToolDialog";
 import { SiteLayout } from "@/components/layout/SiteLayout";
+import { Skeleton } from "@/components/ui/skeleton";
+
+const CategoryGrid = lazy(() =>
+  import("@/components/landing/CategoryGrid").then((mod) => ({ default: mod.CategoryGrid })),
+);
+const ToolDirectory = lazy(() =>
+  import("@/components/landing/ToolDirectory").then((mod) => ({ default: mod.ToolDirectory })),
+);
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -36,6 +38,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   const [query, setQuery] = useState("");
   const [requestOpen, setRequestOpen] = useState(false);
+  const [highlightedCategoryId, setHighlightedCategoryId] = useState<CategoryId | null>(null);
 
   const handleRequestTool = (prefillPrompt?: string) => {
     if (prefillPrompt) {
@@ -44,42 +47,44 @@ function Index() {
     setRequestOpen(true);
   };
 
-  return (
-    <SiteLayout onRequestTool={() => handleRequestTool()}>
-      <div className="bg-hero-glow">
-        <div className="mx-auto max-w-4xl space-y-16 px-5 py-20 sm:px-6 lg:px-8">
-          {/* 1. Hero search + trust bar + quick access */}
-          <AITaskInterface onRequestTool={handleRequestTool} />
+  const handleSelectCategory = (categoryId: CategoryId) => setHighlightedCategoryId(categoryId);
 
-          {/* 2. Most used tools */}
-          <PopularToolsSection />
-
-          {/* 3. Flixo capabilities */}
-          <CapabilityCards />
-
-          {/* 4. Supported file types */}
-          <SupportedFiles />
+  const loadingFallback = (
+    <div className="mx-auto max-w-6xl space-y-6 px-5 py-16 lg:px-8">
+      <div className="space-y-4">
+        <Skeleton className="h-24 w-1/2 rounded-2xl" />
+        <Skeleton className="h-16 w-full rounded-3xl" />
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          <Skeleton className="h-44 rounded-3xl" />
+          <Skeleton className="h-44 rounded-3xl" />
+          <Skeleton className="h-44 rounded-3xl" />
         </div>
       </div>
+    </div>
+  );
 
-      {/* 5. Why Flixo */}
-      <WhyFlixo />
+  return (
+    <SiteLayout onRequestTool={() => handleRequestTool()}>
+      <Hero
+        prompt={query}
+        onPromptChange={setQuery}
+        onRequestTool={handleRequestTool}
+        onSelectCategory={handleSelectCategory}
+      />
 
-      <div className="mx-auto max-w-4xl space-y-16 px-5 py-20 sm:px-6 lg:px-8">
-        {/* 6. Trending today */}
-        <TrendingToolsSection />
+      <Suspense fallback={loadingFallback}>
+        <CategoryGrid
+          highlightedCategoryId={highlightedCategoryId}
+          onSelectCategory={handleSelectCategory}
+        />
+      </Suspense>
 
-        {/* 7. New tools */}
-        <NewToolsSection />
-      </div>
-
-      {/* 8. FAQ */}
-      <FAQ />
-
-      {/* 9. Sponsor space */}
-      <div className="mx-auto max-w-5xl px-5 pb-24 sm:px-6 lg:px-8">
-        <SponsorSection variant="compact" />
-      </div>
+      <Suspense fallback={loadingFallback}>
+        <ToolDirectory
+          highlightedCategoryId={highlightedCategoryId}
+          onRequestTool={handleRequestTool}
+        />
+      </Suspense>
 
       <RequestToolDialog
         open={requestOpen}

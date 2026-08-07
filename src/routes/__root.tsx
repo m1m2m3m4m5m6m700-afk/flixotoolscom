@@ -11,21 +11,26 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { JsonLd } from "../components/seo/JsonLd";
-import {
-  buildOrganizationSchema,
-  buildRootWebApplicationSchema,
-  buildWebSiteSchema,
-} from "@/lib/seo/structuredData";
 import { reportClientError } from "../lib/client-error-reporting";
 import { ThemeProvider } from "../lib/theme";
 import { I18nProvider } from "../lib/i18n";
 import { AnalyticsProvider } from "../lib/analytics";
 
-const jsonLdData = [
-  buildRootWebApplicationSchema(),
-  buildOrganizationSchema(),
-  buildWebSiteSchema(),
-];
+const jsonLdData = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Flixo",
+  url: "https://flixotools.com",
+  description:
+    "Flixo brings translation, image, PDF, writing, video, audio and developer tools into one fast, private workspace.",
+  applicationCategory: "DeveloperApplication",
+  operatingSystem: "All",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
+};
 
 function NotFoundComponent() {
   return (

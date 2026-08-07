@@ -12,7 +12,7 @@ export function Footer({ onRequestTool, onOpenAnalytics }: FooterProps) {
 
   return (
     <footer className="border-t border-border/60 bg-surface/60">
-      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-[1.4fr_1fr]">
+      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
           <div className="flex items-center gap-2">
             <span className="grid size-9 place-items-center rounded-xl bg-primary text-primary-foreground">
@@ -34,46 +34,152 @@ export function Footer({ onRequestTool, onOpenAnalytics }: FooterProps) {
           )}
         </div>
 
-        <FooterCol title="Quick Links">
+        <FooterCol title="SEO & Guides Hub">
           <li>
-            <a
-              href="/contact"
+            <Link
+              to="/compare"
               className="text-sm text-muted-foreground transition-colors hover:text-foreground font-medium"
             >
-              Contact Owner
-            </a>
+              Tool Comparisons
+            </Link>
           </li>
           <li>
-            <a
-              href="/about"
+            <Link
+              to="/use-cases"
               className="text-sm text-muted-foreground transition-colors hover:text-foreground font-medium"
             >
-              About Flixo
-            </a>
+              Use-Case Workflows
+            </Link>
           </li>
           <li>
-            <a
-              href="/privacy"
+            <Link
+              to="/file-types"
               className="text-sm text-muted-foreground transition-colors hover:text-foreground font-medium"
             >
-              Privacy Policy
-            </a>
+              File Format Directory
+            </Link>
           </li>
           <li>
-            <a
-              href="/terms"
+            <Link
+              to="/questions"
               className="text-sm text-muted-foreground transition-colors hover:text-foreground font-medium"
             >
-              Terms of Use
-            </a>
+              How-To Questions
+            </Link>
           </li>
           <li>
-            <a
-              href="/robots/txt"
+            <Link
+              to="/collections"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground font-medium"
+            >
+              Tool Collections
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/changelog"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground font-medium"
+            >
+              Release Changelog
+            </Link>
+          </li>
+        </FooterCol>
+
+        <FooterCol title={t("footer.product")}>
+          <FooterLink href="/#tools">{t("footer.featured")}</FooterLink>
+          <li>
+            <Link
+              to="/blog"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground font-medium"
+            >
+              Flixo Blog & Guides
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/sitemap"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              XML & HTML Sitemap
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/robots/txt"
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               Robots.txt Directive
-            </a>
+            </Link>
+          </li>
+          <FooterLink href="/#why">{t("nav.why")}</FooterLink>
+          <FooterLink href="/#stats">{t("footer.numbers")}</FooterLink>
+          <FooterLink href="/#faq">{t("nav.faq")}</FooterLink>
+          <li>
+            <Link
+              to="/contact"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground font-medium"
+            >
+              Contact Owner
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/admin/inbox"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground font-medium"
+            >
+              Owner Inbox
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/admin/analytics"
+              className="text-sm text-primary font-bold transition-colors hover:underline"
+            >
+              Admin Analytics
+            </Link>
+          </li>
+        </FooterCol>
+
+        <FooterCol title="Category Hubs">
+          <li>
+            <Link
+              to="/image-tools"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Image Tools
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/translation-tools"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Translation Hub
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/pdf-tools"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              PDF Tools
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/video-tools"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Video Tools
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/audio-tools"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Audio Tools
+            </Link>
           </li>
           {onRequestTool && (
             <li className="pt-2">

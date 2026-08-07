@@ -31,7 +31,6 @@ import {
   type Attachment,
 } from "@/lib/communicationStore";
 import { cn } from "@/lib/utils";
-import { revokeAttachmentUrls, revokeObjectUrlSafe } from "@/lib/objectUrls";
 
 const CATEGORIES: { label: ConversationCategory; icon: string; desc: string }[] = [
   { label: "Ask a Question", icon: "❓", desc: "General question about Flixo tools" },
@@ -67,8 +66,6 @@ export function VisitorChatWidget() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const replyFileInputRef = useRef<HTMLInputElement>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
-  const pendingAttachmentsRef = useRef<Attachment[]>([]);
-  const replyAttachmentsRef = useRef<Attachment[]>([]);
 
   const { conversations, createConversation, sendMessage, markAsRead } = useCommunicationStore();
 
@@ -88,21 +85,6 @@ export function VisitorChatWidget() {
       messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
     }
   }, [view, activeConv?.messages.length]);
-
-  useEffect(() => {
-    pendingAttachmentsRef.current = pendingAttachments;
-  }, [pendingAttachments]);
-
-  useEffect(() => {
-    replyAttachmentsRef.current = replyAttachments;
-  }, [replyAttachments]);
-
-  useEffect(() => {
-    return () => {
-      revokeAttachmentUrls(pendingAttachmentsRef.current);
-      revokeAttachmentUrls(replyAttachmentsRef.current);
-    };
-  }, []);
 
   // Handle file uploads
   const handleFileUpload = (files: FileList | null, isReply = false) => {
@@ -471,12 +453,9 @@ export function VisitorChatWidget() {
                             <span className="max-w-[100px] truncate">{att.name}</span>
                             <X
                               className="size-3 cursor-pointer hover:text-destructive"
-                              onClick={() => {
-                                revokeObjectUrlSafe(att.url);
-                                setPendingAttachments((prev) =>
-                                  prev.filter((a) => a.id !== att.id),
-                                );
-                              }}
+                              onClick={() =>
+                                setPendingAttachments((prev) => prev.filter((a) => a.id !== att.id))
+                              }
                             />
                           </Badge>
                         ))}
@@ -613,10 +592,9 @@ export function VisitorChatWidget() {
                             <span className="max-w-[80px] truncate">{att.name}</span>
                             <X
                               className="size-3 cursor-pointer"
-                              onClick={() => {
-                                revokeObjectUrlSafe(att.url);
-                                setReplyAttachments((prev) => prev.filter((a) => a.id !== att.id));
-                              }}
+                              onClick={() =>
+                                setReplyAttachments((prev) => prev.filter((a) => a.id !== att.id))
+                              }
                             />
                           </Badge>
                         ))}

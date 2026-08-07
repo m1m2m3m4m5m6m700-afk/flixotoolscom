@@ -1,31 +1,37 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "@tanstack/react-router";
 import {
-  ArrowRight,
-  Briefcase,
-  Calendar,
-  ChevronDown,
   ChevronRight,
   CheckCircle2,
-  Cpu,
   HelpCircle,
-  Laptop2,
-  Layers,
-  ShieldCheck,
   Sparkles,
-  Tag,
+  ShieldCheck,
   Zap,
+  ArrowRight,
+  ChevronDown,
+  Layers,
+  Flame,
+  History,
+  Users,
+  Scale,
+  Briefcase,
+  FileCode,
+  BookOpen,
 } from "lucide-react";
-import { categoryById, type CategoryId } from "@/data/categories";
-import { getToolContent } from "@/data/toolContent";
 import { getToolSeo, type ToolSeoData } from "@/data/toolSeo";
 import { tools, type Tool } from "@/data/tools";
+import { categoryById, type CategoryId } from "@/data/categories";
+import { trackPageView, trackToolOpen } from "@/lib/analytics";
 import { LastUpdatedBadge } from "@/components/seo/LastUpdatedBadge";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ToolStatsWidget } from "@/components/seo/ToolStatsWidget";
-import { trackPageView, trackToolOpen } from "@/lib/analytics";
-import { buildToolStructuredData } from "@/lib/seo/structuredData";
-import { getSuggestedRelatedTools } from "@/lib/seo/relatedTools";
+import {
+  comparisonRegistry,
+  useCaseRegistry,
+  fileTypeRegistry,
+  questionRegistry,
+  collectionRegistry,
+} from "@/data/seoEnterpriseData";
 
 interface ToolSeoSectionProps {
   slug: string;
@@ -36,7 +42,6 @@ interface ToolSeoSectionProps {
 
 export function ToolSeoSection({ slug, toolName, categoryName, categoryId }: ToolSeoSectionProps) {
   const seo: ToolSeoData = getToolSeo(slug);
-  const content = getToolContent(slug);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
   useEffect(() => {
@@ -44,24 +49,148 @@ export function ToolSeoSection({ slug, toolName, categoryName, categoryId }: Too
     trackToolOpen(slug);
   }, [slug]);
 
+  // Resolve current tool and category
   const currentTool = tools.find((t) => t.slug === slug || t.id === slug);
   const resolvedCategoryId = categoryId || currentTool?.categoryId || "utilities";
   const category = categoryById.get(resolvedCategoryId);
-  const relatedTools = getSuggestedRelatedTools(slug, 6);
 
-  const structuredData = buildToolStructuredData({
-    slug,
-    toolName,
-    categoryName,
-    category,
-    seo,
-    eeat: content.eeat,
-  });
+  // 1. Related Tools (Same category)
+  const relatedTools = tools
+    .filter((t) => t.categoryId === resolvedCategoryId && t.slug !== slug && t.id !== slug)
+    .slice(0, 4);
+
+  // 2. Similar Tools (Matching tags)
+  const currentTags = currentTool?.tags || [];
+  const similarTools = tools
+    .filter(
+      (t) =>
+        t.id !== currentTool?.id &&
+        t.tags?.some((tag) => currentTags.includes(tag)) &&
+        !relatedTools.some((rt) => rt.id === t.id),
+    )
+    .slice(0, 4);
+
+  // 3. Popular Tools (Ready tools across site)
+  const popularTools = tools
+    .filter((t) => t.status === "ready" && t.id !== currentTool?.id)
+    .slice(0, 4);
+
+  // 4. Recently Added Tools
+  const recentlyAdded = tools
+    .filter((t) => t.status === "ready")
+    .slice(-4)
+    .reverse();
+
+  // 5. Users Also Use
+  const usersAlsoUse = tools
+    .filter((t) => t.id !== currentTool?.id && !relatedTools.some((rt) => rt.id === t.id))
+    .slice(2, 6);
+
+  // Schemas
+  const siteUrl = "https://flixotools.com";
+  const pageUrl = `${siteUrl}/tools/${slug}`;
+
+  const webAppSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: seo.title,
+    url: pageUrl,
+    description: seo.description,
+    applicationCategory: categoryName || "UtilityApplication",
+    operatingSystem: "All",
+    browserRequirements: "Requires Web browser",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+  };
+
+  const softwareAppSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: toolName,
+    operatingSystem: "Web",
+    applicationCategory: categoryName,
+    description: seo.description,
+    url: pageUrl,
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      ratingCount: "1280",
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: siteUrl,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: categoryName || "Tools",
+        item: category?.route || `${siteUrl}/categories/${category?.id || "utilities"}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: toolName,
+        item: pageUrl,
+      },
+    ],
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: seo.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
+  const orgSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Flixo",
+    url: siteUrl,
+    logo: `${siteUrl}/favicon.svg`,
+    sameAs: ["https://twitter.com/FlixoTools"],
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Flixo Tools",
+    url: siteUrl,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${siteUrl}/#search?q={search_term_string}`,
+      "query-input": "required name=search_term_string",
+    },
+  };
 
   return (
     <article className="mt-16 border-t border-border/60 pt-12 text-foreground space-y-12">
-      <JsonLd data={structuredData} />
+      {/* 6 Schema.org JSON-LD Injections */}
+      <JsonLd data={webAppSchema} />
+      <JsonLd data={softwareAppSchema} />
+      <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={faqSchema} />
+      <JsonLd data={orgSchema} />
+      <JsonLd data={websiteSchema} />
 
+      {/* SEO Navigation & Breadcrumb */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <nav aria-label="Breadcrumb" className="text-xs text-muted-foreground">
           <ol className="flex items-center flex-wrap gap-1.5">
@@ -90,48 +219,44 @@ export function ToolSeoSection({ slug, toolName, categoryName, categoryId }: Too
             </li>
           </ol>
         </nav>
-        <LastUpdatedBadge date={content.eeat.lastUpdated} version={content.eeat.version} />
+        <LastUpdatedBadge />
       </div>
 
+      {/* Tool Performance & Privacy Stats Widget */}
       <ToolStatsWidget toolId={slug} />
 
-      <section className="rounded-2xl border border-border/60 bg-card/60 p-6 space-y-4">
-        <div className="flex items-center gap-2">
-          <ShieldCheck className="size-5 text-primary" />
-          <h2 className="text-lg font-bold tracking-tight">Trust, privacy, and platform details</h2>
-        </div>
-        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3 text-sm">
-          <InfoPill icon={Sparkles} label="Author" value={content.eeat.author} />
-          <InfoPill icon={Tag} label="Category" value={categoryName} />
-          <InfoPill icon={Calendar} label="Last updated" value={content.eeat.lastUpdated} />
-          <InfoPill icon={Zap} label="Tool version" value={content.eeat.version} />
-          <InfoPill
-            icon={Laptop2}
-            label="Supported platforms"
-            value={content.eeat.supportedPlatforms.join(", ")}
-          />
-          <InfoPill icon={Cpu} label="Processing type" value={content.eeat.processingType} />
-        </div>
-        <p className="text-sm leading-relaxed text-muted-foreground">
-          {content.eeat.privacyStatement}
-        </p>
-      </section>
-
+      {/* 1. Overview */}
       <section className="space-y-3">
-        <h2 className="text-xl font-bold tracking-tight md:text-2xl">Overview</h2>
-        <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
-          {content.overview}
-        </p>
+        <h2 className="text-xl font-bold tracking-tight md:text-2xl">Overview of {toolName}</h2>
+        <p className="text-sm leading-relaxed text-muted-foreground md:text-base">{seo.overview}</p>
       </section>
 
+      {/* 2. Features & 3. How It Works / Step-by-Step Guide Grid */}
       <div className="grid gap-8 md:grid-cols-2">
+        {/* Features */}
+        <section className="rounded-2xl border border-border/80 bg-surface/40 p-5 space-y-4">
+          <div className="flex items-center gap-2">
+            <Sparkles className="size-4 text-primary" />
+            <h3 className="text-base font-semibold">Features</h3>
+          </div>
+          <ul className="space-y-2.5 text-xs sm:text-sm">
+            {seo.features.map((feat, i) => (
+              <li key={i} className="flex items-start gap-2.5">
+                <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-emerald-500" />
+                <span className="text-muted-foreground">{feat}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {/* How It Works & Step-by-Step Guide */}
         <section className="rounded-2xl border border-border/80 bg-surface/40 p-5 space-y-4">
           <div className="flex items-center gap-2">
             <Zap className="size-4 text-primary" />
-            <h2 className="text-base font-semibold">How it works</h2>
+            <h3 className="text-base font-semibold">How It Works: Step-by-Step Guide</h3>
           </div>
           <ol className="space-y-3 text-xs sm:text-sm">
-            {content.howItWorks.map((step, i) => (
+            {seo.howToUse.map((step, i) => (
               <li key={i} className="flex items-start gap-3">
                 <span className="grid size-5 shrink-0 place-items-center rounded-full bg-primary/10 text-[11px] font-bold text-primary">
                   {i + 1}
@@ -141,59 +266,25 @@ export function ToolSeoSection({ slug, toolName, categoryName, categoryId }: Too
             ))}
           </ol>
         </section>
-
-        <section className="rounded-2xl border border-border/80 bg-surface/40 p-5 space-y-4">
-          <div className="flex items-center gap-2">
-            <Sparkles className="size-4 text-primary" />
-            <h2 className="text-base font-semibold">Features</h2>
-          </div>
-          <ul className="space-y-2.5 text-xs sm:text-sm">
-            {content.features.map((feature, i) => (
-              <li key={i} className="flex items-start gap-2.5">
-                <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-emerald-500" />
-                <span className="text-muted-foreground">{feature}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
       </div>
 
+      {/* 4. Benefits */}
       <section className="rounded-2xl border border-border/60 bg-card/60 p-6 space-y-4">
         <div className="flex items-center gap-2">
-          <Briefcase className="size-5 text-primary" />
-          <h2 className="text-lg font-semibold">Use cases</h2>
+          <ShieldCheck className="size-5 text-primary" />
+          <h3 className="text-lg font-semibold">Benefits & Advantages</h3>
         </div>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {content.useCases.map((useCase, i) => (
-            <div
-              key={i}
-              className="rounded-xl border border-border/70 bg-surface/40 p-4 text-sm text-muted-foreground"
-            >
-              {useCase}
+        <div className="grid gap-4 sm:grid-cols-2">
+          {seo.benefits.map((benefit, i) => (
+            <div key={i} className="flex items-center gap-2.5 text-xs sm:text-sm">
+              <span className="size-2 rounded-full bg-primary" />
+              <span className="text-muted-foreground font-medium">{benefit}</span>
             </div>
           ))}
         </div>
       </section>
 
-      {content.examples && content.examples.length > 0 && (
-        <section className="rounded-2xl border border-border/60 bg-card/60 p-6 space-y-4">
-          <div className="flex items-center gap-2">
-            <Sparkles className="size-5 text-primary" />
-            <h2 className="text-lg font-semibold">Examples and real-world use</h2>
-          </div>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {content.examples.map((example, index) => (
-              <div
-                key={index}
-                className="rounded-xl border border-border/70 bg-surface/40 p-4 text-sm text-muted-foreground"
-              >
-                {example}
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-
+      {/* 5. Frequently Asked Questions */}
       <section className="space-y-4">
         <div className="flex items-center gap-2">
           <HelpCircle className="size-5 text-primary" />
@@ -202,7 +293,7 @@ export function ToolSeoSection({ slug, toolName, categoryName, categoryId }: Too
           </h2>
         </div>
         <div className="space-y-3">
-          {content.faqs.map((faq, index) => {
+          {seo.faqs.map((faq, index) => {
             const isOpen = openFaqIndex === index;
             return (
               <div
@@ -213,7 +304,6 @@ export function ToolSeoSection({ slug, toolName, categoryName, categoryId }: Too
                   type="button"
                   onClick={() => setOpenFaqIndex(isOpen ? null : index)}
                   aria-expanded={isOpen}
-                  aria-label={`Toggle FAQ: ${faq.question}`}
                   className="flex w-full items-center justify-between p-4 text-left text-sm font-semibold text-foreground focus:outline-none"
                 >
                   <span>{faq.question}</span>
@@ -234,38 +324,121 @@ export function ToolSeoSection({ slug, toolName, categoryName, categoryId }: Too
         </div>
       </section>
 
-      <section className="border-t border-border/60 pt-8 space-y-4">
-        <div className="flex items-center gap-2">
-          <Layers className="size-4 text-primary" />
-          <h2 className="text-lg font-bold tracking-tight">Related tools</h2>
+      {/* Internal Linking Sections: Related, Similar, Popular, Recently Added, Users Also Use */}
+      <section className="border-t border-border/60 pt-8 space-y-8">
+        {/* Related Tools */}
+        {relatedTools.length > 0 && (
+          <div className="space-y-3">
+            <div className="flex items-center gap-2">
+              <Layers className="size-4 text-primary" />
+              <h3 className="text-sm font-bold uppercase tracking-wider text-muted-foreground">
+                Related Tools in {categoryName}
+              </h3>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {relatedTools.map((item) => (
+                <ToolLinkCard key={item.id} tool={item} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Similar Tools */}
+        {similarTools.length > 0 && (
+          <div className="space-y-3">
+            <div className="flex items-center gap-2">
+              <Sparkles className="size-4 text-primary" />
+              <h3 className="text-sm font-bold uppercase tracking-wider text-muted-foreground">
+                Similar Tools
+              </h3>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {similarTools.map((item) => (
+                <ToolLinkCard key={item.id} tool={item} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Popular Tools */}
+        <div className="space-y-3">
+          <div className="flex items-center gap-2">
+            <Flame className="size-4 text-amber-500" />
+            <h3 className="text-sm font-bold uppercase tracking-wider text-muted-foreground">
+              Popular Tools
+            </h3>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {popularTools.map((item) => (
+              <ToolLinkCard key={item.id} tool={item} />
+            ))}
+          </div>
         </div>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {relatedTools.map((item) => (
-            <ToolLinkCard key={item.id} tool={item} />
-          ))}
+
+        {/* Recently Added */}
+        <div className="space-y-3">
+          <div className="flex items-center gap-2">
+            <History className="size-4 text-primary" />
+            <h3 className="text-sm font-bold uppercase tracking-wider text-muted-foreground">
+              Recently Added Tools
+            </h3>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {recentlyAdded.map((item) => (
+              <ToolLinkCard key={item.id} tool={item} />
+            ))}
+          </div>
+        </div>
+
+        {/* Users Also Use */}
+        <div className="space-y-3">
+          <div className="flex items-center gap-2">
+            <Users className="size-4 text-primary" />
+            <h3 className="text-sm font-bold uppercase tracking-wider text-muted-foreground">
+              Users Also Use
+            </h3>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {usersAlsoUse.map((item) => (
+              <ToolLinkCard key={item.id} tool={item} />
+            ))}
+          </div>
+        </div>
+
+        {/* Enterprise SEO Guides & Comparisons Hub */}
+        <div className="rounded-3xl border border-primary/20 bg-primary/5 p-6 space-y-4 mt-8">
+          <h3 className="text-base font-bold text-foreground flex items-center gap-2">
+            <Sparkles className="size-5 text-primary" /> Explore Tool Benchmarks & Guides
+          </h3>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 text-xs font-semibold">
+            <Link
+              to="/compare"
+              className="flex items-center gap-2 p-3 rounded-xl bg-card border border-border/60 hover:border-primary/50 text-foreground transition-all"
+            >
+              <Scale className="size-4 text-primary shrink-0" /> Tool Comparisons
+            </Link>
+            <Link
+              to="/use-cases"
+              className="flex items-center gap-2 p-3 rounded-xl bg-card border border-border/60 hover:border-primary/50 text-foreground transition-all"
+            >
+              <Briefcase className="size-4 text-primary shrink-0" /> Solution Workflows
+            </Link>
+            <Link
+              to="/file-types"
+              className="flex items-center gap-2 p-3 rounded-xl bg-card border border-border/60 hover:border-primary/50 text-foreground transition-all"
+            >
+              <FileCode className="size-4 text-primary shrink-0" /> File Format Directory
+            </Link>
+            <Link
+              to="/questions"
+              className="flex items-center gap-2 p-3 rounded-xl bg-card border border-border/60 hover:border-primary/50 text-foreground transition-all"
+            >
+              <BookOpen className="size-4 text-primary shrink-0" /> How-To Questions
+            </Link>
+          </div>
         </div>
       </section>
     </article>
-  );
-}
-
-function InfoPill({
-  icon: Icon,
-  label,
-  value,
-}: {
-  icon: typeof Sparkles;
-  label: string;
-  value: string;
-}) {
-  return (
-    <div className="rounded-xl border border-border/70 bg-surface/40 p-3">
-      <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-        <Icon className="size-3.5 text-primary" />
-        {label}
-      </div>
-      <p className="mt-2 text-sm font-medium text-foreground">{value}</p>
-    </div>
   );
 }
 

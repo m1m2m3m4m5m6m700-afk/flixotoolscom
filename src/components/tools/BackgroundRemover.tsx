@@ -28,6 +28,7 @@ export function BackgroundRemover() {
 
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
+  // Clean up object URLs on unmount
   useEffect(() => {
     return () => {
       if (originalUrl) URL.revokeObjectURL(originalUrl);
@@ -91,6 +92,7 @@ export function BackgroundRemover() {
           const width = canvas.width;
           const height = canvas.height;
 
+          // Sample corner pixels to estimate background color (TL, TR, BL, BR)
           const cornerIndices = [
             0,
             (width - 1) * 4,
@@ -123,6 +125,7 @@ export function BackgroundRemover() {
             const distSq = diffR * diffR + diffG * diffG + diffB * diffB;
 
             if (distSq <= tolSq) {
+              // Smooth edge alpha fading
               const ratio = Math.sqrt(distSq) / (currentTol * 2.55);
               if (currentFeather > 0 && ratio > 0.7) {
                 const alpha = Math.round(((ratio - 0.7) / 0.3) * 255);
@@ -193,6 +196,7 @@ export function BackgroundRemover() {
   return (
     <div className="rounded-3xl border border-border bg-card/80 p-4 shadow-soft backdrop-blur md:p-6">
       {!originalUrl ? (
+        /* Upload & Dropzone Area */
         <div
           onDrop={handleDrop}
           onDragOver={handleDragOver}
@@ -227,7 +231,9 @@ export function BackgroundRemover() {
           </p>
         </div>
       ) : (
+        /* Main Workspace & Preview */
         <div className="space-y-6">
+          {/* Top Bar Controls */}
           <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border/60 pb-4">
             <div className="flex items-center gap-2">
               <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
@@ -235,9 +241,6 @@ export function BackgroundRemover() {
               </span>
               <div className="flex rounded-xl border border-border bg-surface p-1">
                 <button
-                  type="button"
-                  aria-pressed={viewMode === "result"}
-                  aria-label="Show cutout result view"
                   onClick={() => setViewMode("result")}
                   className={cn(
                     "flex items-center gap-1.5 rounded-lg px-2.5 py-1 text-xs font-medium transition-colors",
@@ -250,9 +253,6 @@ export function BackgroundRemover() {
                   Cutout
                 </button>
                 <button
-                  type="button"
-                  aria-pressed={viewMode === "side"}
-                  aria-label="Show compare view"
                   onClick={() => setViewMode("side")}
                   className={cn(
                     "flex items-center gap-1.5 rounded-lg px-2.5 py-1 text-xs font-medium transition-colors",
@@ -265,9 +265,6 @@ export function BackgroundRemover() {
                   Compare
                 </button>
                 <button
-                  type="button"
-                  aria-pressed={viewMode === "original"}
-                  aria-label="Show original image view"
                   onClick={() => setViewMode("original")}
                   className={cn(
                     "flex items-center gap-1.5 rounded-lg px-2.5 py-1 text-xs font-medium transition-colors",
@@ -304,6 +301,7 @@ export function BackgroundRemover() {
             </div>
           </div>
 
+          {/* Canvas Preview Box */}
           <div className="relative min-h-80 flex items-center justify-center rounded-2xl border border-border/80 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] dark:bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:16px_16px] p-4 overflow-hidden">
             {loading && (
               <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-card/70 backdrop-blur-xs">
@@ -360,12 +358,13 @@ export function BackgroundRemover() {
             )}
           </div>
 
+          {/* Fine-tune Controls */}
           <div className="rounded-2xl border border-border/60 bg-surface/40 p-4 space-y-4">
             <div className="flex items-center gap-2">
               <Sliders className="size-4 text-primary" />
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-foreground">
+              <h4 className="text-xs font-semibold uppercase tracking-wider text-foreground">
                 Refine Removal Sensitivity
-              </h3>
+              </h4>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">

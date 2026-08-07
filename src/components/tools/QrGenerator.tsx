@@ -24,15 +24,19 @@ export function QrGenerator() {
   const [mode, setMode] = useState<PresetMode>("url");
   const [input, setInput] = useState("https://flixotools.com");
 
+  // Wi-Fi fields
   const [wifiSsid, setWifiSsid] = useState("");
   const [wifiPass, setWifiPass] = useState("");
   const [wifiEncryption, setWifiEncryption] = useState<"WPA" | "WEP" | "nopass">("WPA");
 
+  // Email fields
   const [emailTo, setEmailTo] = useState("");
   const [emailSubject, setEmailSubject] = useState("");
 
+  // Phone fields
   const [phoneNumber, setPhoneNumber] = useState("");
 
+  // Styling options
   const [size, setSize] = useState<number>(300);
   const [darkColor, setDarkColor] = useState("#0f172a");
   const [lightColor, setLightColor] = useState("#ffffff");
@@ -43,6 +47,7 @@ export function QrGenerator() {
   const [copied, setCopied] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  // Derive the payload string depending on selected preset mode
   const getPayload = (): string => {
     switch (mode) {
       case "wifi":
@@ -60,6 +65,7 @@ export function QrGenerator() {
 
   const payload = getPayload();
 
+  // Generate QR Code on payload / options change
   useEffect(() => {
     if (!payload.trim()) {
       setQrDataUrl("");
@@ -69,6 +75,7 @@ export function QrGenerator() {
 
     setError(null);
 
+    // PNG Data URL
     QRCode.toDataURL(payload, {
       width: size,
       margin: 2,
@@ -84,6 +91,7 @@ export function QrGenerator() {
         setError("Invalid QR input text or format.");
       });
 
+    // SVG String
     QRCode.toString(payload, {
       type: "svg",
       width: size,
@@ -144,6 +152,7 @@ export function QrGenerator() {
 
   return (
     <div className="rounded-3xl border border-border bg-card/80 p-4 shadow-soft backdrop-blur md:p-6">
+      {/* Preset Mode Tabs */}
       <div className="flex flex-wrap items-center gap-2 border-b border-border/60 pb-4">
         {[
           { id: "url", label: "Website URL", icon: Link2 },
@@ -157,9 +166,6 @@ export function QrGenerator() {
           return (
             <button
               key={item.id}
-              type="button"
-              aria-pressed={isActive}
-              aria-label={`Switch QR mode to ${item.label}`}
               onClick={() => {
                 setMode(item.id as PresetMode);
                 setError(null);
@@ -178,6 +184,7 @@ export function QrGenerator() {
       </div>
 
       <div className="mt-6 grid gap-6 lg:grid-cols-[1fr_340px]">
+        {/* Left Inputs Column */}
         <div className="space-y-5">
           {mode === "url" && (
             <div>
@@ -276,6 +283,7 @@ export function QrGenerator() {
             </div>
           )}
 
+          {/* Customization Options */}
           <div className="rounded-2xl border border-border/60 bg-surface/40 p-4 space-y-3">
             <span className="text-xs font-semibold uppercase tracking-wider text-foreground flex items-center gap-1.5">
               <Sliders className="size-3.5 text-primary" />
@@ -338,6 +346,7 @@ export function QrGenerator() {
           </div>
         </div>
 
+        {/* Right QR Preview Column */}
         <div className="flex flex-col items-center justify-between rounded-2xl border border-border/70 bg-surface/60 p-6 text-center">
           <div className="w-full">
             <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">

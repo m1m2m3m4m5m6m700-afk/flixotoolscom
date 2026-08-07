@@ -4,9 +4,12 @@ import { Sparkles, ArrowRight, Lightbulb, CheckCircle2, HelpCircle } from "lucid
 import { motion, AnimatePresence } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { AIPromptBox } from "./AIPromptBox";
+import { TrendingTasks } from "./TrendingTasks";
+import { RecentTasks } from "./RecentTasks";
+import { PopularCategories } from "./PopularCategories";
 import { UnknownTaskDialog } from "./UnknownTaskDialog";
-import { HeroStats, QuickAccessBar, TrustBar } from "./HomeSignals";
 import { FlixoBrain, type BrainStatus, type BrainProcessResult } from "@/lib/brain";
+import { getRecentTasks, addRecentTask, clearRecentTasks } from "@/lib/brain/recentTasksStore";
 import type { CategoryId } from "@/data/categories";
 
 interface AITaskInterfaceProps {
@@ -24,8 +27,13 @@ export function AITaskInterface({ onRequestTool, onSelectCategory }: AITaskInter
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<BrainProcessResult | null>(null);
 
+  const [recentTasks, setRecentTasks] = useState<string[]>([]);
   const [unknownDialogOpen, setUnknownDialogOpen] = useState(false);
   const [unmatchedPrompt, setUnmatchedPrompt] = useState("");
+
+  useEffect(() => {
+    setRecentTasks(getRecentTasks());
+  }, []);
 
   const handleExecuteTask = async (
     inputPrompt: string,
@@ -36,6 +44,10 @@ export function AITaskInterface({ onRequestTool, onSelectCategory }: AITaskInter
 
     setLoading(true);
     setResult(null);
+
+    // Save to recent tasks
+    const updatedHistory = addRecentTask(inputPrompt || attachment?.name || linkUrl || "");
+    setRecentTasks(updatedHistory);
 
     const brainResult = await brain.processRequest(inputPrompt, {
       attachment,
@@ -72,6 +84,11 @@ export function AITaskInterface({ onRequestTool, onSelectCategory }: AITaskInter
     handleExecuteTask(taskPrompt);
   };
 
+  const handleClearHistory = () => {
+    clearRecentTasks();
+    setRecentTasks([]);
+  };
+
   return (
     <div className="mx-auto w-full max-w-4xl space-y-8">
       {/* Central Large AI Prompt Box */}
@@ -83,10 +100,6 @@ export function AITaskInterface({ onRequestTool, onSelectCategory }: AITaskInter
         statusText={statusText}
         loading={loading}
       />
-
-      <TrustBar />
-      <HeroStats />
-      <QuickAccessBar onSelect={handleSelectTask} />
 
       {/* Matched Skill Result Card */}
       <AnimatePresence mode="wait">
@@ -198,7 +211,28 @@ export function AITaskInterface({ onRequestTool, onSelectCategory }: AITaskInter
         )}
       </AnimatePresence>
 
-      {/* The assistant interface only. */}
+      {/* Sections Below Input */}
+      <div className="space-y-6 pt-2">
+        <TrendingTasks onSelectTask={handleSelectTask} />
+
+        <RecentTasks
+          tasks={recentTasks}
+          onSelectTask={handleSelectTask}
+          onClearTasks={handleClearHistory}
+        />
+
+        <PopularCategories
+          onSelectCategory={(catId) => {
+            if (onSelectCategory) {
+              onSelectCategory(catId);
+            }
+            const el = document.getElementById(`cat-${catId}`);
+            if (el) {
+              el.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          }}
+        />
+      </div>
 
       {/* Unknown Task Dialog */}
       <UnknownTaskDialog

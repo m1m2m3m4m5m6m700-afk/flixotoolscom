@@ -1,5 +1,5 @@
-import { getTool, getToolBySlug } from "./tools";
-import { categoryById } from "./categories";
+import { tools, type Tool } from "./tools";
+import { categories, categoryById, type CategoryId } from "./categories";
 
 export interface ToolFaqItem {
   question: string;
@@ -16,7 +16,6 @@ export interface ToolSeoData {
   howToUse: string[];
   benefits: string[];
   faqs: ToolFaqItem[];
-  examples?: string[];
 }
 
 const toolSeoRegistry: Record<string, ToolSeoData> = {
@@ -54,11 +53,6 @@ const toolSeoRegistry: Record<string, ToolSeoData> = {
       "Unlimited free daily text translations",
       "Privacy-focused text handling with no data retention",
       "Mobile-friendly responsive workspace",
-    ],
-    examples: [
-      "Translate a customer support reply into Arabic before sending it to a global client.",
-      "Quickly localize a landing page headline for a new international audience.",
-      "Turn research notes or meeting summaries into a second language for easier review.",
     ],
     faqs: [
       {
@@ -122,11 +116,6 @@ const toolSeoRegistry: Record<string, ToolSeoData> = {
       "Zero server uploads — total privacy guaranteed",
       "Unlimited free enhancements with no watermarks",
     ],
-    examples: [
-      "Upscale a product photo for an online storefront without switching to heavy desktop software.",
-      "Restore a low-resolution family photo before saving it to a digital archive.",
-      "Sharpen a blurry screenshot or social image before reposting it.",
-    ],
     faqs: [
       {
         question: "How does the AI Image Enhancer upscale photos?",
@@ -185,11 +174,6 @@ const toolSeoRegistry: Record<string, ToolSeoData> = {
       "Full export resolution matching your original input",
       "Completely free with no watermarks",
     ],
-    examples: [
-      "Remove the background from a product photo for an e-commerce listing.",
-      "Create a transparent profile image for a portfolio or presentation.",
-      "Generate a clean cutout for an Instagram graphic or marketing banner.",
-    ],
     faqs: [
       {
         question: "Are my images uploaded to external servers?",
@@ -246,11 +230,6 @@ const toolSeoRegistry: Record<string, ToolSeoData> = {
       "Instant feedback with live byte size calculation",
       "No file size caps or daily conversion limits",
     ],
-    examples: [
-      "Compress a blog hero image so pages load faster without sacrificing too much quality.",
-      "Shrink a batch of product shots before sending them in a client chat or email.",
-      "Reduce backup photo sizes so they take less storage on a phone or laptop.",
-    ],
     faqs: [
       {
         question: "How much can I reduce my image size?",
@@ -302,11 +281,6 @@ const toolSeoRegistry: Record<string, ToolSeoData> = {
       "Convenient Wi-Fi guest connection sharing",
       "No expiring links or redirected tracking URLs",
       "Free for commercial and personal projects",
-    ],
-    examples: [
-      "Generate a Wi-Fi QR code for guests at a home, office, or event.",
-      "Create a QR code that links directly to a product page or signup form.",
-      "Make a branded contact card QR code for business cards or printed flyers.",
     ],
     faqs: [
       {
@@ -361,11 +335,6 @@ const toolSeoRegistry: Record<string, ToolSeoData> = {
       "Zero network requests — generated entirely inside your browser",
       "Completely free with no logging",
     ],
-    examples: [
-      "Create a strong password for a new email or cloud account.",
-      "Generate a temporary credential set for a test account or onboarding flow.",
-      "Produce a high-entropy password for a password manager vault.",
-    ],
     faqs: [
       {
         question: "Are generated passwords stored or sent over the internet?",
@@ -384,2053 +353,2120 @@ const toolSeoRegistry: Record<string, ToolSeoData> = {
       },
     ],
   },
-  "large-text-translator": {
-    slug: "large-text-translator",
-    title: "Large Text Translator — Free Online Tool | Flixo",
-    description:
-      "Translate long-form content, web pages, and large blocks of text quickly. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "large text translator",
-      "flixo large-text-translator",
-      "free large-text-translator",
-      "online translation tool",
-    ],
-    overview:
-      "The Flixo Large Text Translator provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Large Text Translator tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+
+  "age-calculator": {
+    slug: "age-calculator",
+    title: "Age Calculator — Free Online Tool | Flixo",
+    description: "Free online age calculator tool. Easy to use, no signup required.",
+    keywords: ["age calculator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use age calculator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Large Text Translator free to use on Flixo?",
-        answer:
-          "Yes, Large Text Translator is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Large Text Translator?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "pdf-translator": {
-    slug: "pdf-translator",
-    title: "PDF Translator — Free Online Tool | Flixo",
-    description:
-      "Translate PDF files while keeping formatting intact. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "pdf translator",
-      "flixo pdf-translator",
-      "free pdf-translator",
-      "online translation tool",
-    ],
-    overview:
-      "The Flixo PDF Translator provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the PDF Translator tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "bmi-calculator": {
+    slug: "bmi-calculator",
+    title: "Bmi Calculator — Free Online Tool | Flixo",
+    description: "Free online bmi calculator tool. Easy to use, no signup required.",
+    keywords: ["bmi calculator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use bmi calculator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is PDF Translator free to use on Flixo?",
-        answer:
-          "Yes, PDF Translator is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using PDF Translator?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "docx-translator": {
-    slug: "docx-translator",
-    title: "DOCX Translator — Free Online Tool | Flixo",
-    description:
-      "Translate Word documents and preserve layout and styles. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "docx translator",
-      "flixo docx-translator",
-      "free docx-translator",
-      "online translation tool",
-    ],
-    overview:
-      "The Flixo DOCX Translator provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the DOCX Translator tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "barcode-generator": {
+    slug: "barcode-generator",
+    title: "Barcode Generator — Free Online Tool | Flixo",
+    description: "Free online barcode generator tool. Easy to use, no signup required.",
+    keywords: ["barcode generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use barcode generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is DOCX Translator free to use on Flixo?",
-        answer:
-          "Yes, DOCX Translator is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using DOCX Translator?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "image-translator": {
-    slug: "image-translator",
-    title: "Image Translator — Free Online Tool | Flixo",
-    description:
-      "Translate text inside images using OCR and AI translation. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "image translator",
-      "flixo image-translator",
-      "free image-translator",
-      "online translation tool",
-    ],
-    overview:
-      "The Flixo Image Translator provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Image Translator tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "base64-encoder": {
+    slug: "base64-encoder",
+    title: "Base64 Encoder — Free Online Tool | Flixo",
+    description: "Free online base64 encoder tool. Easy to use, no signup required.",
+    keywords: ["base64 encoder", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use base64 encoder tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Image Translator free to use on Flixo?",
-        answer:
-          "Yes, Image Translator is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Image Translator?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "ocr-translator": {
-    slug: "ocr-translator",
-    title: "OCR Translator — Free Online Tool | Flixo",
-    description:
-      "Scan text from photos and translate it instantly. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "ocr translator",
-      "flixo ocr-translator",
-      "free ocr-translator",
-      "online translation tool",
-    ],
-    overview:
-      "The Flixo OCR Translator provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the OCR Translator tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "base64-image-encoder": {
+    slug: "base64-image-encoder",
+    title: "Base64 Image Encoder — Free Online Tool | Flixo",
+    description: "Free online base64 image encoder tool. Easy to use, no signup required.",
+    keywords: ["base64 image encoder", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use base64 image encoder tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is OCR Translator free to use on Flixo?",
-        answer:
-          "Yes, OCR Translator is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using OCR Translator?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "subtitle-translator": {
-    slug: "subtitle-translator",
-    title: "Subtitle Translator — Free Online Tool | Flixo",
-    description:
-      "Translate SRT and VTT subtitle files line by line. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "subtitle translator",
-      "flixo subtitle-translator",
-      "free subtitle-translator",
-      "online translation tool",
-    ],
-    overview:
-      "The Flixo Subtitle Translator provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Subtitle Translator tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "binary-converter": {
+    slug: "binary-converter",
+    title: "Binary Converter — Free Online Tool | Flixo",
+    description: "Free online binary converter tool. Easy to use, no signup required.",
+    keywords: ["binary converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use binary converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Subtitle Translator free to use on Flixo?",
-        answer:
-          "Yes, Subtitle Translator is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Subtitle Translator?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "website-translator": {
-    slug: "website-translator",
-    title: "Website Translator — Free Online Tool | Flixo",
-    description:
-      "Translate entire websites and web content in one click. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "website translator",
-      "flixo website-translator",
-      "free website-translator",
-      "online translation tool",
-    ],
-    overview:
-      "The Flixo Website Translator provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Website Translator tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "css-gradient-generator": {
+    slug: "css-gradient-generator",
+    title: "Css Gradient Generator — Free Online Tool | Flixo",
+    description: "Free online css gradient generator tool. Easy to use, no signup required.",
+    keywords: ["css gradient generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use css gradient generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Website Translator free to use on Flixo?",
-        answer:
-          "Yes, Website Translator is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Website Translator?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "voice-translator": {
-    slug: "voice-translator",
-    title: "Voice Translator — Free Online Tool | Flixo",
-    description:
-      "Translate spoken words in real time from one language to another. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "voice translator",
-      "flixo voice-translator",
-      "free voice-translator",
-      "online translation tool",
-    ],
-    overview:
-      "The Flixo Voice Translator provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Voice Translator tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "css-minifier": {
+    slug: "css-minifier",
+    title: "Css Minifier — Free Online Tool | Flixo",
+    description: "Free online css minifier tool. Easy to use, no signup required.",
+    keywords: ["css minifier", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use css minifier tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Voice Translator free to use on Flixo?",
-        answer:
-          "Yes, Voice Translator is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Voice Translator?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "language-detection": {
-    slug: "language-detection",
-    title: "Language Detector — Free Online Tool | Flixo",
-    description:
-      "Detect language automatically before translating text or speech. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "language detector",
-      "flixo language-detection",
-      "free language-detection",
-      "online translation tool",
-    ],
-    overview:
-      "The Flixo Language Detector provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Language Detector tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "csv-to-json-converter": {
+    slug: "csv-to-json-converter",
+    title: "Csv To Json Converter — Free Online Tool | Flixo",
+    description: "Free online csv to json converter tool. Easy to use, no signup required.",
+    keywords: ["csv to json converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use csv to json converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Language Detector free to use on Flixo?",
-        answer:
-          "Yes, Language Detector is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Language Detector?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "document-translator": {
-    slug: "document-translator",
-    title: "Document Translator — Free Online Tool | Flixo",
-    description:
-      "Translate whole documents while keeping their layout. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "document translator",
-      "flixo document-translator",
-      "free document-translator",
-      "online translation tool",
-    ],
-    overview:
-      "The Flixo Document Translator provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Document Translator tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "csv-viewer": {
+    slug: "csv-viewer",
+    title: "Csv Viewer — Free Online Tool | Flixo",
+    description: "Free online csv viewer tool. Easy to use, no signup required.",
+    keywords: ["csv viewer", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use csv viewer tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Document Translator free to use on Flixo?",
-        answer:
-          "Yes, Document Translator is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Document Translator?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "image-generator": {
-    slug: "image-generator",
-    title: "AI Image Generator — Free Online Tool | Flixo",
-    description:
-      "Turn a text prompt into original images. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "ai image generator",
-      "flixo image-generator",
-      "free image-generator",
-      "online images tool",
-    ],
-    overview:
-      "The Flixo AI Image Generator provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the AI Image Generator tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "case-transformer": {
+    slug: "case-transformer",
+    title: "Case Transformer — Free Online Tool | Flixo",
+    description: "Free online case transformer tool. Easy to use, no signup required.",
+    keywords: ["case transformer", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use case transformer tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is AI Image Generator free to use on Flixo?",
-        answer:
-          "Yes, AI Image Generator is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using AI Image Generator?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "image-upscaler": {
-    slug: "image-upscaler",
-    title: "AI Image Upscaler — Free Online Tool | Flixo",
-    description:
-      "Increase image resolution without losing detail. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "ai image upscaler",
-      "flixo image-upscaler",
-      "free image-upscaler",
-      "online images tool",
-    ],
-    overview:
-      "The Flixo AI Image Upscaler provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the AI Image Upscaler tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "color-converter": {
+    slug: "color-converter",
+    title: "Color Converter — Free Online Tool | Flixo",
+    description: "Free online color converter tool. Easy to use, no signup required.",
+    keywords: ["color converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use color converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is AI Image Upscaler free to use on Flixo?",
-        answer:
-          "Yes, AI Image Upscaler is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using AI Image Upscaler?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "background-changer": {
-    slug: "background-changer",
-    title: "Background Changer — Free Online Tool | Flixo",
-    description:
-      "Replace image backgrounds with one click. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "background changer",
-      "flixo background-changer",
-      "free background-changer",
-      "online images tool",
-    ],
-    overview:
-      "The Flixo Background Changer provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Background Changer tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "color-mixer": {
+    slug: "color-mixer",
+    title: "Color Mixer — Free Online Tool | Flixo",
+    description: "Free online color mixer tool. Easy to use, no signup required.",
+    keywords: ["color mixer", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use color mixer tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Background Changer free to use on Flixo?",
-        answer:
-          "Yes, Background Changer is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Background Changer?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
-      },
-    ],
-  },
-  "image-resizer": {
-    slug: "image-resizer",
-    title: "Image Resizer — Free Online Tool | Flixo",
-    description:
-      "Resize images for social media, web, or print. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["image resizer", "flixo image-resizer", "free image-resizer", "online images tool"],
-    overview:
-      "The Flixo Image Resizer provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Image Resizer tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
-    faqs: [
-      {
-        question: "Is Image Resizer free to use on Flixo?",
-        answer:
-          "Yes, Image Resizer is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Image Resizer?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
-      },
-    ],
-  },
-  "crop-image": {
-    slug: "crop-image",
-    title: "Crop Image — Free Online Tool | Flixo",
-    description:
-      "Crop and frame images precisely in the browser. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["crop image", "flixo crop-image", "free crop-image", "online images tool"],
-    overview:
-      "The Flixo Crop Image provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Crop Image tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
-    faqs: [
-      {
-        question: "Is Crop Image free to use on Flixo?",
-        answer:
-          "Yes, Crop Image is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Crop Image?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
-      },
-    ],
-  },
-  "rotate-image": {
-    slug: "rotate-image",
-    title: "Rotate Image — Free Online Tool | Flixo",
-    description:
-      "Rotate images and correct orientation instantly. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["rotate image", "flixo rotate-image", "free rotate-image", "online images tool"],
-    overview:
-      "The Flixo Rotate Image provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Rotate Image tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
-    faqs: [
-      {
-        question: "Is Rotate Image free to use on Flixo?",
-        answer:
-          "Yes, Rotate Image is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Rotate Image?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
-      },
-    ],
-  },
-  "watermark-remover": {
-    slug: "watermark-remover",
-    title: "Watermark Remover — Free Online Tool | Flixo",
-    description:
-      "Remove watermarks and unwanted overlays from images. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "watermark remover",
-      "flixo watermark-remover",
-      "free watermark-remover",
-      "online images tool",
-    ],
-    overview:
-      "The Flixo Watermark Remover provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Watermark Remover tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
-    faqs: [
-      {
-        question: "Is Watermark Remover free to use on Flixo?",
-        answer:
-          "Yes, Watermark Remover is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Watermark Remover?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
-      },
-    ],
-  },
-  "blur-image": {
-    slug: "blur-image",
-    title: "Blur Image — Free Online Tool | Flixo",
-    description:
-      "Apply soft blur effects to photos and backgrounds. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["blur image", "flixo blur-image", "free blur-image", "online images tool"],
-    overview:
-      "The Flixo Blur Image provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Blur Image tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
-    faqs: [
-      {
-        question: "Is Blur Image free to use on Flixo?",
-        answer:
-          "Yes, Blur Image is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Blur Image?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
-      },
-    ],
-  },
-  "sharpen-image": {
-    slug: "sharpen-image",
-    title: "Sharpen Image — Free Online Tool | Flixo",
-    description:
-      "Enhance photo sharpness and clear up blurry edges. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["sharpen image", "flixo sharpen-image", "free sharpen-image", "online images tool"],
-    overview:
-      "The Flixo Sharpen Image provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Sharpen Image tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
-    faqs: [
-      {
-        question: "Is Sharpen Image free to use on Flixo?",
-        answer:
-          "Yes, Sharpen Image is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Sharpen Image?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
-      },
-    ],
-  },
-  "image-converter": {
-    slug: "image-converter",
-    title: "Image Converter — Free Online Tool | Flixo",
-    description:
-      "Convert images between JPG, PNG, WEBP, and AVIF formats. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "image converter",
-      "flixo image-converter",
-      "free image-converter",
-      "online images tool",
-    ],
-    overview:
-      "The Flixo Image Converter provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Image Converter tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
-    faqs: [
-      {
-        question: "Is Image Converter free to use on Flixo?",
-        answer:
-          "Yes, Image Converter is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Image Converter?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
-      },
-    ],
-  },
-  "image-editor": {
-    slug: "image-editor",
-    title: "AI Image Editor — Free Online Tool | Flixo",
-    description:
-      "Edit image brightness, contrast, filters, and styles online. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["ai image editor", "flixo image-editor", "free image-editor", "online images tool"],
-    overview:
-      "The Flixo AI Image Editor provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the AI Image Editor tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
-    faqs: [
-      {
-        question: "Is AI Image Editor free to use on Flixo?",
-        answer:
-          "Yes, AI Image Editor is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using AI Image Editor?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
-      },
-    ],
-  },
-  "color-picker": {
-    slug: "color-picker",
-    title: "Color Picker — Free Online Tool | Flixo",
-    description:
-      "Pick exact HEX and RGB color codes from any uploaded photo. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["color picker", "flixo color-picker", "free color-picker", "online images tool"],
-    overview:
-      "The Flixo Color Picker provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Color Picker tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
-    faqs: [
-      {
-        question: "Is Color Picker free to use on Flixo?",
-        answer:
-          "Yes, Color Picker is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Color Picker?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
   "color-palette-generator": {
     slug: "color-palette-generator",
     title: "Color Palette Generator — Free Online Tool | Flixo",
-    description:
-      "Generate beautiful matching color palettes from images. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "color palette generator",
-      "flixo color-palette-generator",
-      "free color-palette-generator",
-      "online images tool",
-    ],
-    overview:
-      "The Flixo Color Palette Generator provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Color Palette Generator tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+    description: "Free online color palette generator tool. Easy to use, no signup required.",
+    keywords: ["color palette generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use color palette generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Color Palette Generator free to use on Flixo?",
-        answer:
-          "Yes, Color Palette Generator is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Color Palette Generator?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "image-to-pdf": {
-    slug: "image-to-pdf",
-    title: "Image to PDF — Free Online Tool | Flixo",
-    description:
-      "Convert JPG and PNG photos into a single PDF document. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["image to pdf", "flixo image-to-pdf", "free image-to-pdf", "online images tool"],
-    overview:
-      "The Flixo Image to PDF provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Image to PDF tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "countdown-timer": {
+    slug: "countdown-timer",
+    title: "Countdown Timer — Free Online Tool | Flixo",
+    description: "Free online countdown timer tool. Easy to use, no signup required.",
+    keywords: ["countdown timer", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use countdown timer tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Image to PDF free to use on Flixo?",
-        answer:
-          "Yes, Image to PDF is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Image to PDF?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "image-ocr": {
-    slug: "image-ocr",
-    title: "Image to Text (OCR) — Free Online Tool | Flixo",
-    description:
-      "Extract editable text from images, screenshots, and scans. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["image to text (ocr)", "flixo image-ocr", "free image-ocr", "online images tool"],
-    overview:
-      "The Flixo Image to Text (OCR) provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Image to Text (OCR) tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "credit-card-generator": {
+    slug: "credit-card-generator",
+    title: "Credit Card Generator — Free Online Tool | Flixo",
+    description: "Free online credit card generator tool. Easy to use, no signup required.",
+    keywords: ["credit card generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use credit card generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Image to Text (OCR) free to use on Flixo?",
-        answer:
-          "Yes, Image to Text (OCR) is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Image to Text (OCR)?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "face-blur": {
-    slug: "face-blur",
-    title: "Face Blur — Free Online Tool | Flixo",
-    description:
-      "Automatically detect and blur faces in photos for privacy. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["face blur", "flixo face-blur", "free face-blur", "online images tool"],
-    overview:
-      "The Flixo Face Blur provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Face Blur tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "credit-card-validator": {
+    slug: "credit-card-validator",
+    title: "Credit Card Validator — Free Online Tool | Flixo",
+    description: "Free online credit card validator tool. Easy to use, no signup required.",
+    keywords: ["credit card validator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use credit card validator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Face Blur free to use on Flixo?",
-        answer:
-          "Yes, Face Blur is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Face Blur?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "screenshot-editor": {
-    slug: "screenshot-editor",
-    title: "Screenshot Editor — Free Online Tool | Flixo",
-    description:
-      "Annotate, crop, and beautify screenshots with gradients. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "screenshot editor",
-      "flixo screenshot-editor",
-      "free screenshot-editor",
-      "online images tool",
-    ],
-    overview:
-      "The Flixo Screenshot Editor provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Screenshot Editor tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "cron-expression-generator": {
+    slug: "cron-expression-generator",
+    title: "Cron Expression Generator — Free Online Tool | Flixo",
+    description: "Free online cron expression generator tool. Easy to use, no signup required.",
+    keywords: ["cron expression generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use cron expression generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Screenshot Editor free to use on Flixo?",
-        answer:
-          "Yes, Screenshot Editor is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Screenshot Editor?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "pdf-merge": {
-    slug: "pdf-merge",
-    title: "Merge PDF — Free Online Tool | Flixo",
-    description:
-      "Combine multiple PDF files into one structured document. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["merge pdf", "flixo pdf-merge", "free pdf-merge", "online pdf tool"],
-    overview:
-      "The Flixo Merge PDF provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Merge PDF tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "cron-parser": {
+    slug: "cron-parser",
+    title: "Cron Parser — Free Online Tool | Flixo",
+    description: "Free online cron parser tool. Easy to use, no signup required.",
+    keywords: ["cron parser", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use cron parser tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Merge PDF free to use on Flixo?",
-        answer:
-          "Yes, Merge PDF is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Merge PDF?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "pdf-split": {
-    slug: "pdf-split",
-    title: "Split PDF — Free Online Tool | Flixo",
-    description:
-      "Extract individual pages or split PDF documents easily. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["split pdf", "flixo pdf-split", "free pdf-split", "online pdf tool"],
-    overview:
-      "The Flixo Split PDF provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Split PDF tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "currency-converter": {
+    slug: "currency-converter",
+    title: "Currency Converter — Free Online Tool | Flixo",
+    description: "Free online currency converter tool. Easy to use, no signup required.",
+    keywords: ["currency converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use currency converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Split PDF free to use on Flixo?",
-        answer:
-          "Yes, Split PDF is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Split PDF?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "pdf-compress": {
-    slug: "pdf-compress",
-    title: "Compress PDF — Free Online Tool | Flixo",
-    description:
-      "Reduce PDF file size without sacrificing document quality. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["compress pdf", "flixo pdf-compress", "free pdf-compress", "online pdf tool"],
-    overview:
-      "The Flixo Compress PDF provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Compress PDF tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "currency-formatter": {
+    slug: "currency-formatter",
+    title: "Currency Formatter — Free Online Tool | Flixo",
+    description: "Free online currency formatter tool. Easy to use, no signup required.",
+    keywords: ["currency formatter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use currency formatter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Compress PDF free to use on Flixo?",
-        answer:
-          "Yes, Compress PDF is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Compress PDF?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "jpg-to-pdf": {
-    slug: "jpg-to-pdf",
-    title: "JPG to PDF — Free Online Tool | Flixo",
-    description:
-      "Convert JPG image files into clean PDF documents. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["jpg to pdf", "flixo jpg-to-pdf", "free jpg-to-pdf", "online pdf tool"],
-    overview:
-      "The Flixo JPG to PDF provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the JPG to PDF tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "date-calculator": {
+    slug: "date-calculator",
+    title: "Date Calculator — Free Online Tool | Flixo",
+    description: "Free online date calculator tool. Easy to use, no signup required.",
+    keywords: ["date calculator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use date calculator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is JPG to PDF free to use on Flixo?",
-        answer:
-          "Yes, JPG to PDF is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using JPG to PDF?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "word-to-pdf": {
-    slug: "word-to-pdf",
-    title: "Word to PDF — Free Online Tool | Flixo",
-    description:
-      "Convert DOC and DOCX Word files into PDF format. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["word to pdf", "flixo word-to-pdf", "free word-to-pdf", "online pdf tool"],
-    overview:
-      "The Flixo Word to PDF provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Word to PDF tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "dice-roller": {
+    slug: "dice-roller",
+    title: "Dice Roller — Free Online Tool | Flixo",
+    description: "Free online dice roller tool. Easy to use, no signup required.",
+    keywords: ["dice roller", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use dice roller tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Word to PDF free to use on Flixo?",
-        answer:
-          "Yes, Word to PDF is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Word to PDF?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "excel-to-pdf": {
-    slug: "excel-to-pdf",
-    title: "Excel to PDF — Free Online Tool | Flixo",
-    description:
-      "Convert XLS and XLSX spreadsheets into printable PDFs. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["excel to pdf", "flixo excel-to-pdf", "free excel-to-pdf", "online pdf tool"],
-    overview:
-      "The Flixo Excel to PDF provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Excel to PDF tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "discount-calculator": {
+    slug: "discount-calculator",
+    title: "Discount Calculator — Free Online Tool | Flixo",
+    description: "Free online discount calculator tool. Easy to use, no signup required.",
+    keywords: ["discount calculator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use discount calculator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Excel to PDF free to use on Flixo?",
-        answer:
-          "Yes, Excel to PDF is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Excel to PDF?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "powerpoint-to-pdf": {
-    slug: "powerpoint-to-pdf",
-    title: "PowerPoint to PDF — Free Online Tool | Flixo",
-    description:
-      "Convert PPT and PPTX presentations into PDF slides. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "powerpoint to pdf",
-      "flixo powerpoint-to-pdf",
-      "free powerpoint-to-pdf",
-      "online pdf tool",
-    ],
-    overview:
-      "The Flixo PowerPoint to PDF provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the PowerPoint to PDF tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "duplicate-character-finder": {
+    slug: "duplicate-character-finder",
+    title: "Duplicate Character Finder — Free Online Tool | Flixo",
+    description: "Free online duplicate character finder tool. Easy to use, no signup required.",
+    keywords: ["duplicate character finder", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use duplicate character finder tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is PowerPoint to PDF free to use on Flixo?",
-        answer:
-          "Yes, PowerPoint to PDF is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using PowerPoint to PDF?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "pdf-to-word": {
-    slug: "pdf-to-word",
-    title: "PDF to Word — Free Online Tool | Flixo",
-    description:
-      "Convert PDF documents into editable Word files. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["pdf to word", "flixo pdf-to-word", "free pdf-to-word", "online pdf tool"],
-    overview:
-      "The Flixo PDF to Word provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the PDF to Word tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "duplicate-lines-remover": {
+    slug: "duplicate-lines-remover",
+    title: "Duplicate Lines Remover — Free Online Tool | Flixo",
+    description: "Free online duplicate lines remover tool. Easy to use, no signup required.",
+    keywords: ["duplicate lines remover", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use duplicate lines remover tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is PDF to Word free to use on Flixo?",
-        answer:
-          "Yes, PDF to Word is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using PDF to Word?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "pdf-to-jpg": {
-    slug: "pdf-to-jpg",
-    title: "PDF to JPG — Free Online Tool | Flixo",
-    description:
-      "Extract PDF pages as high quality JPG images. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["pdf to jpg", "flixo pdf-to-jpg", "free pdf-to-jpg", "online pdf tool"],
-    overview:
-      "The Flixo PDF to JPG provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the PDF to JPG tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "enc-dec-text": {
+    slug: "enc-dec-text",
+    title: "Enc Dec Text — Free Online Tool | Flixo",
+    description: "Free online enc dec text tool. Easy to use, no signup required.",
+    keywords: ["enc dec text", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use enc dec text tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is PDF to JPG free to use on Flixo?",
-        answer:
-          "Yes, PDF to JPG is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using PDF to JPG?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "pdf-ocr": {
-    slug: "pdf-ocr",
-    title: "PDF OCR — Free Online Tool | Flixo",
-    description:
-      "Convert scanned PDF documents into searchable text. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["pdf ocr", "flixo pdf-ocr", "free pdf-ocr", "online pdf tool"],
-    overview:
-      "The Flixo PDF OCR provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the PDF OCR tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "favicon-generator": {
+    slug: "favicon-generator",
+    title: "Favicon Generator — Free Online Tool | Flixo",
+    description: "Free online favicon generator tool. Easy to use, no signup required.",
+    keywords: ["favicon generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use favicon generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is PDF OCR free to use on Flixo?",
-        answer:
-          "Yes, PDF OCR is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using PDF OCR?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "pdf-unlock": {
-    slug: "pdf-unlock",
-    title: "PDF Unlock — Free Online Tool | Flixo",
-    description:
-      "Remove passwords and restrictions from PDF files. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["pdf unlock", "flixo pdf-unlock", "free pdf-unlock", "online pdf tool"],
-    overview:
-      "The Flixo PDF Unlock provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the PDF Unlock tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "flip-coin-simulator": {
+    slug: "flip-coin-simulator",
+    title: "Flip Coin Simulator — Free Online Tool | Flixo",
+    description: "Free online flip coin simulator tool. Easy to use, no signup required.",
+    keywords: ["flip coin simulator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use flip coin simulator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is PDF Unlock free to use on Flixo?",
-        answer:
-          "Yes, PDF Unlock is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using PDF Unlock?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "pdf-protect": {
-    slug: "pdf-protect",
-    title: "PDF Protect — Free Online Tool | Flixo",
-    description:
-      "Encrypt and password protect sensitive PDF documents. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["pdf protect", "flixo pdf-protect", "free pdf-protect", "online pdf tool"],
-    overview:
-      "The Flixo PDF Protect provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the PDF Protect tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "hsl-to-hex-converter": {
+    slug: "hsl-to-hex-converter",
+    title: "Hsl To Hex Converter — Free Online Tool | Flixo",
+    description: "Free online hsl to hex converter tool. Easy to use, no signup required.",
+    keywords: ["hsl to hex converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use hsl to hex converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is PDF Protect free to use on Flixo?",
-        answer:
-          "Yes, PDF Protect is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using PDF Protect?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "pdf-rotate": {
-    slug: "pdf-rotate",
-    title: "Rotate PDF — Free Online Tool | Flixo",
-    description:
-      "Rotate PDF pages clockwise or counterclockwise. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["rotate pdf", "flixo pdf-rotate", "free pdf-rotate", "online pdf tool"],
-    overview:
-      "The Flixo Rotate PDF provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Rotate PDF tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "html-encoder-decoder": {
+    slug: "html-encoder-decoder",
+    title: "Html Encoder Decoder — Free Online Tool | Flixo",
+    description: "Free online html encoder decoder tool. Easy to use, no signup required.",
+    keywords: ["html encoder decoder", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use html encoder decoder tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Rotate PDF free to use on Flixo?",
-        answer:
-          "Yes, Rotate PDF is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Rotate PDF?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "pdf-sign": {
-    slug: "pdf-sign",
-    title: "PDF Sign — Free Online Tool | Flixo",
-    description:
-      "Add electronic signatures to PDF contracts and forms. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["pdf sign", "flixo pdf-sign", "free pdf-sign", "online pdf tool"],
-    overview:
-      "The Flixo PDF Sign provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the PDF Sign tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "html-minifier": {
+    slug: "html-minifier",
+    title: "Html Minifier — Free Online Tool | Flixo",
+    description: "Free online html minifier tool. Easy to use, no signup required.",
+    keywords: ["html minifier", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use html minifier tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is PDF Sign free to use on Flixo?",
-        answer:
-          "Yes, PDF Sign is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using PDF Sign?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "pdf-edit": {
-    slug: "pdf-edit",
-    title: "Edit PDF — Free Online Tool | Flixo",
-    description:
-      "Add text, annotations, and shapes to PDF files. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["edit pdf", "flixo pdf-edit", "free pdf-edit", "online pdf tool"],
-    overview:
-      "The Flixo Edit PDF provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Edit PDF tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "html-to-react-converter": {
+    slug: "html-to-react-converter",
+    title: "Html To React Converter — Free Online Tool | Flixo",
+    description: "Free online html to react converter tool. Easy to use, no signup required.",
+    keywords: ["html to react converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use html to react converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Edit PDF free to use on Flixo?",
-        answer:
-          "Yes, Edit PDF is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Edit PDF?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "pdf-extract-pages": {
-    slug: "pdf-extract-pages",
-    title: "Extract Pages — Free Online Tool | Flixo",
-    description:
-      "Save selected pages from a PDF as a new document. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "extract pages",
-      "flixo pdf-extract-pages",
-      "free pdf-extract-pages",
-      "online pdf tool",
-    ],
-    overview:
-      "The Flixo Extract Pages provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Extract Pages tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "hash-check-generator": {
+    slug: "hash-check-generator",
+    title: "Hash Check Generator — Free Online Tool | Flixo",
+    description: "Free online hash check generator tool. Easy to use, no signup required.",
+    keywords: ["hash check generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use hash check generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Extract Pages free to use on Flixo?",
-        answer:
-          "Yes, Extract Pages is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Extract Pages?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "pdf-watermark": {
-    slug: "pdf-watermark",
-    title: "Add Watermark — Free Online Tool | Flixo",
-    description:
-      "Add custom text or image watermarks to PDF documents. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["add watermark", "flixo pdf-watermark", "free pdf-watermark", "online pdf tool"],
-    overview:
-      "The Flixo Add Watermark provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Add Watermark tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "hash-comparator": {
+    slug: "hash-comparator",
+    title: "Hash Comparator — Free Online Tool | Flixo",
+    description: "Free online hash comparator tool. Easy to use, no signup required.",
+    keywords: ["hash comparator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use hash comparator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Add Watermark free to use on Flixo?",
-        answer:
-          "Yes, Add Watermark is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Add Watermark?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "ai-writer": {
-    slug: "ai-writer",
-    title: "AI Writer — Free Online Tool | Flixo",
-    description:
-      "Draft essays, articles, and marketing copy with AI. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["ai writer", "flixo ai-writer", "free ai-writer", "online writing tool"],
-    overview:
-      "The Flixo AI Writer provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the AI Writer tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "hash-generator": {
+    slug: "hash-generator",
+    title: "Hash Generator — Free Online Tool | Flixo",
+    description: "Free online hash generator tool. Easy to use, no signup required.",
+    keywords: ["hash generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use hash generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is AI Writer free to use on Flixo?",
-        answer:
-          "Yes, AI Writer is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using AI Writer?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "article-generator": {
-    slug: "article-generator",
-    title: "Article Generator — Free Online Tool | Flixo",
-    description:
-      "Generate long-form articles with structured headings. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "article generator",
-      "flixo article-generator",
-      "free article-generator",
-      "online writing tool",
-    ],
-    overview:
-      "The Flixo Article Generator provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Article Generator tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "hex-converter": {
+    slug: "hex-converter",
+    title: "Hex Converter — Free Online Tool | Flixo",
+    description: "Free online hex converter tool. Easy to use, no signup required.",
+    keywords: ["hex converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use hex converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Article Generator free to use on Flixo?",
-        answer:
-          "Yes, Article Generator is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Article Generator?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "blog-generator": {
-    slug: "blog-generator",
-    title: "Blog Generator — Free Online Tool | Flixo",
-    description:
-      "Create SEO-optimized blog posts on any topic. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "blog generator",
-      "flixo blog-generator",
-      "free blog-generator",
-      "online writing tool",
-    ],
-    overview:
-      "The Flixo Blog Generator provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Blog Generator tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "hex-rgb-converter": {
+    slug: "hex-rgb-converter",
+    title: "Hex Rgb Converter — Free Online Tool | Flixo",
+    description: "Free online hex rgb converter tool. Easy to use, no signup required.",
+    keywords: ["hex rgb converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use hex rgb converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Blog Generator free to use on Flixo?",
-        answer:
-          "Yes, Blog Generator is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Blog Generator?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "rewrite-text": {
-    slug: "rewrite-text",
-    title: "Rewrite Text — Free Online Tool | Flixo",
-    description:
-      "Paraphrase and improve sentences for clarity and style. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["rewrite text", "flixo rewrite-text", "free rewrite-text", "online writing tool"],
-    overview:
-      "The Flixo Rewrite Text provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Rewrite Text tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "hex-to-rgb-converter": {
+    slug: "hex-to-rgb-converter",
+    title: "Hex To Rgb Converter — Free Online Tool | Flixo",
+    description: "Free online hex to rgb converter tool. Easy to use, no signup required.",
+    keywords: ["hex to rgb converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use hex to rgb converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Rewrite Text free to use on Flixo?",
-        answer:
-          "Yes, Rewrite Text is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Rewrite Text?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  summarizer: {
-    slug: "summarizer",
-    title: "Summarizer — Free Online Tool | Flixo",
-    description:
-      "Condense long articles and documents into key bullet points. Fast, private browser-based tool with no sign-up required.",
-    keywords: ["summarizer", "flixo summarizer", "free summarizer", "online writing tool"],
-    overview:
-      "The Flixo Summarizer provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Summarizer tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "ip-address-info": {
+    slug: "ip-address-info",
+    title: "Ip Address Info — Free Online Tool | Flixo",
+    description: "Free online ip address info tool. Easy to use, no signup required.",
+    keywords: ["ip address info", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use ip address info tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Summarizer free to use on Flixo?",
-        answer:
-          "Yes, Summarizer is completely free with no usage limits or registration requirements.",
-      },
-      {
-        question: "Is my data private when using Summarizer?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
-  "grammar-checker": {
-    slug: "grammar-checker",
-    title: "Grammar Checker — Free Online Tool | Flixo",
-    description:
-      "Fix spelling, punctuation, and grammatical errors instantly. Fast, private browser-based tool with no sign-up required.",
-    keywords: [
-      "grammar checker",
-      "flixo grammar-checker",
-      "free grammar-checker",
-      "online writing tool",
-    ],
-    overview:
-      "The Flixo Grammar Checker provides fast, private, and powerful performance directly inside your browser tab.",
-    features: [
-      "100% Client-side browser processing",
-      "No account or sign-up required",
-      "Instant real-time preview and export",
-      "Supports English and Arabic interfaces",
-    ],
-    howToUse: [
-      "Open the Grammar Checker tool.",
-      "Input your data or upload your file.",
-      "Adjust options to your preference.",
-      "Copy or download your result instantly.",
-    ],
-    benefits: [
-      "Complete data privacy with zero server uploads",
-      "Fast response time with no queuing",
-      "Free for personal and commercial usage",
-    ],
+  "interest-calculator": {
+    slug: "interest-calculator",
+    title: "Interest Calculator — Free Online Tool | Flixo",
+    description: "Free online interest calculator tool. Easy to use, no signup required.",
+    keywords: ["interest calculator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use interest calculator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
     faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is Grammar Checker free to use on Flixo?",
-        answer:
-          "Yes, Grammar Checker is completely free with no usage limits or registration requirements.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
+    ],
+  },
+  "investment-calculator": {
+    slug: "investment-calculator",
+    title: "Investment Calculator — Free Online Tool | Flixo",
+    description: "Free online investment calculator tool. Easy to use, no signup required.",
+    keywords: ["investment calculator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use investment calculator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
       {
-        question: "Is my data private when using Grammar Checker?",
-        answer:
-          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "js-minifier": {
+    slug: "js-minifier",
+    title: "Js Minifier — Free Online Tool | Flixo",
+    description: "Free online js minifier tool. Easy to use, no signup required.",
+    keywords: ["js minifier", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use js minifier tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "json-formatter": {
+    slug: "json-formatter",
+    title: "Json Formatter — Free Online Tool | Flixo",
+    description: "Free online json formatter tool. Easy to use, no signup required.",
+    keywords: ["json formatter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use json formatter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "json-merger": {
+    slug: "json-merger",
+    title: "Json Merger — Free Online Tool | Flixo",
+    description: "Free online json merger tool. Easy to use, no signup required.",
+    keywords: ["json merger", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use json merger tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "json-path-evaluator": {
+    slug: "json-path-evaluator",
+    title: "Json Path Evaluator — Free Online Tool | Flixo",
+    description: "Free online json path evaluator tool. Easy to use, no signup required.",
+    keywords: ["json path evaluator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use json path evaluator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "json-path-tester": {
+    slug: "json-path-tester",
+    title: "Json Path Tester — Free Online Tool | Flixo",
+    description: "Free online json path tester tool. Easy to use, no signup required.",
+    keywords: ["json path tester", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use json path tester tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "json-to-csv-converter": {
+    slug: "json-to-csv-converter",
+    title: "Json To Csv Converter — Free Online Tool | Flixo",
+    description: "Free online json to csv converter tool. Easy to use, no signup required.",
+    keywords: ["json to csv converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use json to csv converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "json-to-xml-converter": {
+    slug: "json-to-xml-converter",
+    title: "Json To Xml Converter — Free Online Tool | Flixo",
+    description: "Free online json to xml converter tool. Easy to use, no signup required.",
+    keywords: ["json to xml converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use json to xml converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "json-validator": {
+    slug: "json-validator",
+    title: "Json Validator — Free Online Tool | Flixo",
+    description: "Free online json validator tool. Easy to use, no signup required.",
+    keywords: ["json validator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use json validator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "jwt-decoder": {
+    slug: "jwt-decoder",
+    title: "Jwt Decoder — Free Online Tool | Flixo",
+    description: "Free online jwt decoder tool. Easy to use, no signup required.",
+    keywords: ["jwt decoder", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use jwt decoder tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "jwt-encoder": {
+    slug: "jwt-encoder",
+    title: "Jwt Encoder — Free Online Tool | Flixo",
+    description: "Free online jwt encoder tool. Easy to use, no signup required.",
+    keywords: ["jwt encoder", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use jwt encoder tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "line-counter": {
+    slug: "line-counter",
+    title: "Line Counter — Free Online Tool | Flixo",
+    description: "Free online line counter tool. Easy to use, no signup required.",
+    keywords: ["line counter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use line counter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "list-randomizer": {
+    slug: "list-randomizer",
+    title: "List Randomizer — Free Online Tool | Flixo",
+    description: "Free online list randomizer tool. Easy to use, no signup required.",
+    keywords: ["list randomizer", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use list randomizer tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "loan-calculator": {
+    slug: "loan-calculator",
+    title: "Loan Calculator — Free Online Tool | Flixo",
+    description: "Free online loan calculator tool. Easy to use, no signup required.",
+    keywords: ["loan calculator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use loan calculator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "lorem-ipsum-customizer": {
+    slug: "lorem-ipsum-customizer",
+    title: "Lorem Ipsum Customizer — Free Online Tool | Flixo",
+    description: "Free online lorem ipsum customizer tool. Easy to use, no signup required.",
+    keywords: ["lorem ipsum customizer", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use lorem ipsum customizer tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "lorem-ipsum-generator": {
+    slug: "lorem-ipsum-generator",
+    title: "Lorem Ipsum Generator — Free Online Tool | Flixo",
+    description: "Free online lorem ipsum generator tool. Easy to use, no signup required.",
+    keywords: ["lorem ipsum generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use lorem ipsum generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "md5-generator": {
+    slug: "md5-generator",
+    title: "Md5 Generator — Free Online Tool | Flixo",
+    description: "Free online md5 generator tool. Easy to use, no signup required.",
+    keywords: ["md5 generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use md5 generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "mark-down-preview": {
+    slug: "mark-down-preview",
+    title: "Mark Down Preview — Free Online Tool | Flixo",
+    description: "Free online mark down preview tool. Easy to use, no signup required.",
+    keywords: ["mark down preview", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use mark down preview tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "morse-code-converter": {
+    slug: "morse-code-converter",
+    title: "Morse Code Converter — Free Online Tool | Flixo",
+    description: "Free online morse code converter tool. Easy to use, no signup required.",
+    keywords: ["morse code converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use morse code converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "number-base-converter": {
+    slug: "number-base-converter",
+    title: "Number Base Converter — Free Online Tool | Flixo",
+    description: "Free online number base converter tool. Easy to use, no signup required.",
+    keywords: ["number base converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use number base converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "number-speller": {
+    slug: "number-speller",
+    title: "Number Speller — Free Online Tool | Flixo",
+    description: "Free online number speller tool. Easy to use, no signup required.",
+    keywords: ["number speller", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use number speller tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "number-to-words-converter": {
+    slug: "number-to-words-converter",
+    title: "Number To Words Converter — Free Online Tool | Flixo",
+    description: "Free online number to words converter tool. Easy to use, no signup required.",
+    keywords: ["number to words converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use number to words converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "password-strength-checker": {
+    slug: "password-strength-checker",
+    title: "Password Strength Checker — Free Online Tool | Flixo",
+    description: "Free online password strength checker tool. Easy to use, no signup required.",
+    keywords: ["password strength checker", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use password strength checker tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "password-strength-tester": {
+    slug: "password-strength-tester",
+    title: "Password Strength Tester — Free Online Tool | Flixo",
+    description: "Free online password strength tester tool. Easy to use, no signup required.",
+    keywords: ["password strength tester", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use password strength tester tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "percentage-calculator": {
+    slug: "percentage-calculator",
+    title: "Percentage Calculator — Free Online Tool | Flixo",
+    description: "Free online percentage calculator tool. Easy to use, no signup required.",
+    keywords: ["percentage calculator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use percentage calculator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "percentage-change-calculator": {
+    slug: "percentage-change-calculator",
+    title: "Percentage Change Calculator — Free Online Tool | Flixo",
+    description: "Free online percentage change calculator tool. Easy to use, no signup required.",
+    keywords: ["percentage change calculator", "free tool", "online", "flixo"],
+    overview:
+      "A free, fast, and easy-to-use percentage change calculator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "percentage-difference-calculator": {
+    slug: "percentage-difference-calculator",
+    title: "Percentage Difference Calculator — Free Online Tool | Flixo",
+    description:
+      "Free online percentage difference calculator tool. Easy to use, no signup required.",
+    keywords: ["percentage difference calculator", "free tool", "online", "flixo"],
+    overview:
+      "A free, fast, and easy-to-use percentage difference calculator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "percentage-distribution-calculator": {
+    slug: "percentage-distribution-calculator",
+    title: "Percentage Distribution Calculator — Free Online Tool | Flixo",
+    description:
+      "Free online percentage distribution calculator tool. Easy to use, no signup required.",
+    keywords: ["percentage distribution calculator", "free tool", "online", "flixo"],
+    overview:
+      "A free, fast, and easy-to-use percentage distribution calculator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "qr-code-generator": {
+    slug: "qr-code-generator",
+    title: "Qr Code Generator — Free Online Tool | Flixo",
+    description: "Free online qr code generator tool. Easy to use, no signup required.",
+    keywords: ["qr code generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use qr code generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "random-color-generator": {
+    slug: "random-color-generator",
+    title: "Random Color Generator — Free Online Tool | Flixo",
+    description: "Free online random color generator tool. Easy to use, no signup required.",
+    keywords: ["random color generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use random color generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "random-date-generator": {
+    slug: "random-date-generator",
+    title: "Random Date Generator — Free Online Tool | Flixo",
+    description: "Free online random date generator tool. Easy to use, no signup required.",
+    keywords: ["random date generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use random date generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "random-decimal-generator": {
+    slug: "random-decimal-generator",
+    title: "Random Decimal Generator — Free Online Tool | Flixo",
+    description: "Free online random decimal generator tool. Easy to use, no signup required.",
+    keywords: ["random decimal generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use random decimal generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "random-hex-generator": {
+    slug: "random-hex-generator",
+    title: "Random Hex Generator — Free Online Tool | Flixo",
+    description: "Free online random hex generator tool. Easy to use, no signup required.",
+    keywords: ["random hex generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use random hex generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "random-id-generator": {
+    slug: "random-id-generator",
+    title: "Random Id Generator — Free Online Tool | Flixo",
+    description: "Free online random id generator tool. Easy to use, no signup required.",
+    keywords: ["random id generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use random id generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "random-lottery-number-generator": {
+    slug: "random-lottery-number-generator",
+    title: "Random Lottery Number Generator — Free Online Tool | Flixo",
+    description:
+      "Free online random lottery number generator tool. Easy to use, no signup required.",
+    keywords: ["random lottery number generator", "free tool", "online", "flixo"],
+    overview:
+      "A free, fast, and easy-to-use random lottery number generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "random-name-generator": {
+    slug: "random-name-generator",
+    title: "Random Name Generator — Free Online Tool | Flixo",
+    description: "Free online random name generator tool. Easy to use, no signup required.",
+    keywords: ["random name generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use random name generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "random-number-generator": {
+    slug: "random-number-generator",
+    title: "Random Number Generator — Free Online Tool | Flixo",
+    description: "Free online random number generator tool. Easy to use, no signup required.",
+    keywords: ["random number generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use random number generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "random-password-generator": {
+    slug: "random-password-generator",
+    title: "Random Password Generator — Free Online Tool | Flixo",
+    description: "Free online random password generator tool. Easy to use, no signup required.",
+    keywords: ["random password generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use random password generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "random-picker": {
+    slug: "random-picker",
+    title: "Random Picker — Free Online Tool | Flixo",
+    description: "Free online random picker tool. Easy to use, no signup required.",
+    keywords: ["random picker", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use random picker tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "random-team-generator": {
+    slug: "random-team-generator",
+    title: "Random Team Generator — Free Online Tool | Flixo",
+    description: "Free online random team generator tool. Easy to use, no signup required.",
+    keywords: ["random team generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use random team generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "regex-generator": {
+    slug: "regex-generator",
+    title: "Regex Generator — Free Online Tool | Flixo",
+    description: "Free online regex generator tool. Easy to use, no signup required.",
+    keywords: ["regex generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use regex generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "regex-tester": {
+    slug: "regex-tester",
+    title: "Regex Tester — Free Online Tool | Flixo",
+    description: "Free online regex tester tool. Easy to use, no signup required.",
+    keywords: ["regex tester", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use regex tester tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "roman-numeral-converter": {
+    slug: "roman-numeral-converter",
+    title: "Roman Numeral Converter — Free Online Tool | Flixo",
+    description: "Free online roman numeral converter tool. Easy to use, no signup required.",
+    keywords: ["roman numeral converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use roman numeral converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "sql-formatter": {
+    slug: "sql-formatter",
+    title: "Sql Formatter — Free Online Tool | Flixo",
+    description: "Free online sql formatter tool. Easy to use, no signup required.",
+    keywords: ["sql formatter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use sql formatter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "sentence-case-converter": {
+    slug: "sentence-case-converter",
+    title: "Sentence Case Converter — Free Online Tool | Flixo",
+    description: "Free online sentence case converter tool. Easy to use, no signup required.",
+    keywords: ["sentence case converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use sentence case converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "slug-checker": {
+    slug: "slug-checker",
+    title: "Slug Checker — Free Online Tool | Flixo",
+    description: "Free online slug checker tool. Easy to use, no signup required.",
+    keywords: ["slug checker", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use slug checker tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "slug-generator": {
+    slug: "slug-generator",
+    title: "Slug Generator — Free Online Tool | Flixo",
+    description: "Free online slug generator tool. Easy to use, no signup required.",
+    keywords: ["slug generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use slug generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  stopwatch: {
+    slug: "stopwatch",
+    title: "Stopwatch — Free Online Tool | Flixo",
+    description: "Free online stopwatch tool. Easy to use, no signup required.",
+    keywords: ["stopwatch", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use stopwatch tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "string-diff-checker": {
+    slug: "string-diff-checker",
+    title: "String Diff Checker — Free Online Tool | Flixo",
+    description: "Free online string diff checker tool. Easy to use, no signup required.",
+    keywords: ["string diff checker", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use string diff checker tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "temperature-converter": {
+    slug: "temperature-converter",
+    title: "Temperature Converter — Free Online Tool | Flixo",
+    description: "Free online temperature converter tool. Easy to use, no signup required.",
+    keywords: ["temperature converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use temperature converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "text-case-converter": {
+    slug: "text-case-converter",
+    title: "Text Case Converter — Free Online Tool | Flixo",
+    description: "Free online text case converter tool. Easy to use, no signup required.",
+    keywords: ["text case converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use text case converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "text-diff-checker": {
+    slug: "text-diff-checker",
+    title: "Text Diff Checker — Free Online Tool | Flixo",
+    description: "Free online text diff checker tool. Easy to use, no signup required.",
+    keywords: ["text diff checker", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use text diff checker tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "text-to-slug": {
+    slug: "text-to-slug",
+    title: "Text To Slug — Free Online Tool | Flixo",
+    description: "Free online text to slug tool. Easy to use, no signup required.",
+    keywords: ["text to slug", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use text to slug tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "text-to-speech": {
+    slug: "text-to-speech",
+    title: "Text To Speech — Free Online Tool | Flixo",
+    description: "Free online text to speech tool. Easy to use, no signup required.",
+    keywords: ["text to speech", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use text to speech tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "time-between-dates": {
+    slug: "time-between-dates",
+    title: "Time Between Dates — Free Online Tool | Flixo",
+    description: "Free online time between dates tool. Easy to use, no signup required.",
+    keywords: ["time between dates", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use time between dates tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "time-zone-converter": {
+    slug: "time-zone-converter",
+    title: "Time Zone Converter — Free Online Tool | Flixo",
+    description: "Free online time zone converter tool. Easy to use, no signup required.",
+    keywords: ["time zone converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use time zone converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "tip-calculator": {
+    slug: "tip-calculator",
+    title: "Tip Calculator — Free Online Tool | Flixo",
+    description: "Free online tip calculator tool. Easy to use, no signup required.",
+    keywords: ["tip calculator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use tip calculator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "tip-splitter": {
+    slug: "tip-splitter",
+    title: "Tip Splitter — Free Online Tool | Flixo",
+    description: "Free online tip splitter tool. Easy to use, no signup required.",
+    keywords: ["tip splitter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use tip splitter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "url-encoder": {
+    slug: "url-encoder",
+    title: "Url Encoder — Free Online Tool | Flixo",
+    description: "Free online url encoder tool. Easy to use, no signup required.",
+    keywords: ["url encoder", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use url encoder tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "url-parser": {
+    slug: "url-parser",
+    title: "Url Parser — Free Online Tool | Flixo",
+    description: "Free online url parser tool. Easy to use, no signup required.",
+    keywords: ["url parser", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use url parser tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "uuid-generator": {
+    slug: "uuid-generator",
+    title: "Uuid Generator — Free Online Tool | Flixo",
+    description: "Free online uuid generator tool. Easy to use, no signup required.",
+    keywords: ["uuid generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use uuid generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "uui-dv4-generator": {
+    slug: "uui-dv4-generator",
+    title: "Uui Dv4 Generator — Free Online Tool | Flixo",
+    description: "Free online uui dv4 generator tool. Easy to use, no signup required.",
+    keywords: ["uui dv4 generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use uui dv4 generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "uui-dv7-generator": {
+    slug: "uui-dv7-generator",
+    title: "Uui Dv7 Generator — Free Online Tool | Flixo",
+    description: "Free online uui dv7 generator tool. Easy to use, no signup required.",
+    keywords: ["uui dv7 generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use uui dv7 generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "unit-converter": {
+    slug: "unit-converter",
+    title: "Unit Converter — Free Online Tool | Flixo",
+    description: "Free online unit converter tool. Easy to use, no signup required.",
+    keywords: ["unit converter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use unit converter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "vat-calculator": {
+    slug: "vat-calculator",
+    title: "Vat Calculator — Free Online Tool | Flixo",
+    description: "Free online vat calculator tool. Easy to use, no signup required.",
+    keywords: ["vat calculator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use vat calculator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "word-cloud-generator": {
+    slug: "word-cloud-generator",
+    title: "Word Cloud Generator — Free Online Tool | Flixo",
+    description: "Free online word cloud generator tool. Easy to use, no signup required.",
+    keywords: ["word cloud generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use word cloud generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "word-counter": {
+    slug: "word-counter",
+    title: "Word Counter — Free Online Tool | Flixo",
+    description: "Free online word counter tool. Easy to use, no signup required.",
+    keywords: ["word counter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use word counter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "word-density-analyzer": {
+    slug: "word-density-analyzer",
+    title: "Word Density Analyzer — Free Online Tool | Flixo",
+    description: "Free online word density analyzer tool. Easy to use, no signup required.",
+    keywords: ["word density analyzer", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use word density analyzer tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "word-frequency-analyzer": {
+    slug: "word-frequency-analyzer",
+    title: "Word Frequency Analyzer — Free Online Tool | Flixo",
+    description: "Free online word frequency analyzer tool. Easy to use, no signup required.",
+    keywords: ["word frequency analyzer", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use word frequency analyzer tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "xml-formatter": {
+    slug: "xml-formatter",
+    title: "Xml Formatter — Free Online Tool | Flixo",
+    description: "Free online xml formatter tool. Easy to use, no signup required.",
+    keywords: ["xml formatter", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use xml formatter tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "markdown-preview": {
+    slug: "markdown-preview",
+    title: "Markdown Preview — Free Online Tool | Flixo",
+    description: "Free online markdown preview tool. Easy to use, no signup required.",
+    keywords: ["markdown preview", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use markdown preview tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "uuidv4-generator": {
+    slug: "uuidv4-generator",
+    title: "Uuidv4 Generator — Free Online Tool | Flixo",
+    description: "Free online uuidv4 generator tool. Easy to use, no signup required.",
+    keywords: ["uuidv4 generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use uuidv4 generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "uuidv7-generator": {
+    slug: "uuidv7-generator",
+    title: "Uuidv7 Generator — Free Online Tool | Flixo",
+    description: "Free online uuidv7 generator tool. Easy to use, no signup required.",
+    keywords: ["uuidv7 generator", "free tool", "online", "flixo"],
+    overview: "A free, fast, and easy-to-use uuidv7 generator tool. No signup required.",
+    features: ["100% Free", "No Signup Required", "Instant Results", "Privacy Focused"],
+    howToUse: ["Open the tool", "Enter your input", "Get results instantly"],
+    benefits: ["Fast & Free", "Easy to Use", "Secure"],
+    faqs: [
+      { question: "Is this tool free?", answer: "Yes, this tool is completely free to use." },
+      { question: "Do I need to sign up?", answer: "No signup is required." },
+      {
+        question: "Is my data safe?",
+        answer: "Yes, all processing happens locally in your browser.",
       },
     ],
   },
 };
 
 export function getToolSeo(slug: string): ToolSeoData {
-  return (
-    toolSeoRegistry[slug] ?? {
-      slug,
-      title: `${slug} — Free Online Tool | Flixo`,
-      description: `Use ${slug} online for fast, private browser processing on Flixo.`,
-      keywords: [slug, `flixo ${slug}`],
-      overview: `Flixo ${slug} provides fast, private, and powerful performance directly inside your browser tab.`,
-      features: [
-        "100% Client-side browser processing",
-        "No account or sign-up required",
-        "Instant real-time preview and export",
-        "Supports English and Arabic interfaces",
-      ],
-      howToUse: [
-        `Open the ${slug} tool.`,
-        "Input your data or upload your file.",
-        "Adjust options to your preference.",
-        "Copy or download your result instantly.",
-      ],
-      benefits: [
-        "Complete data privacy with zero server uploads",
-        "Fast response time with no queuing",
-        "Free for personal and commercial usage",
-      ],
-      faqs: [
-        {
-          question: `Is ${slug} free to use on Flixo?`,
-          answer: `Yes, ${slug} is completely free with no usage limits or registration requirements.`,
-        },
-        {
-          question: `Is my data private when using ${slug}?`,
-          answer: `Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.`,
-        },
-      ],
-    }
-  );
+  if (toolSeoRegistry[slug]) {
+    return toolSeoRegistry[slug];
+  }
+
+  // Fallback dynamic SEO for any tool slug
+  const matchedTool = tools.find((t) => t.slug === slug || t.id === slug);
+  const name =
+    matchedTool?.name || slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+  const category = matchedTool ? categoryById.get(matchedTool.categoryId) : undefined;
+  const categoryName = category?.name || "Utility Tools";
+  const desc = matchedTool?.description || `Fast, free, and private online ${name} tool on Flixo.`;
+
+  return {
+    slug,
+    title: `${name} — Online ${categoryName} | Flixo`,
+    description: `${desc} Use Flixo for fast, private, and secure browser-based tools with no sign-up.`,
+    keywords: [
+      name.toLowerCase(),
+      `free ${name.toLowerCase()}`,
+      `online ${name.toLowerCase()}`,
+      "flixo tools",
+      categoryName.toLowerCase(),
+    ],
+    overview: `The Flixo ${name} tool is designed to deliver fast, secure, and private performance right in your browser. With no account required, you can process your files and tasks with full peace of mind.`,
+    features: [
+      `Instant browser-based ${name}`,
+      "Clean, responsive interface for mobile and desktop",
+      "100% Client-side privacy and data protection",
+      "Free to use with zero registration",
+    ],
+    howToUse: [
+      `Open the ${name} tool workspace.`,
+      "Enter your input data or upload your file.",
+      "Configure your desired settings or preferences.",
+      "Copy or download your processed results instantly.",
+    ],
+    benefits: [
+      "Saves time without installing heavy software",
+      "Private and safe with local browser execution",
+      "Available anywhere on phone, tablet, or desktop",
+    ],
+    faqs: [
+      {
+        question: `Is Flixo ${name} free to use?`,
+        answer: `Yes, Flixo ${name} is completely free with no registration or hidden fees.`,
+      },
+      {
+        question: `Does Flixo store my data when using ${name}?`,
+        answer:
+          "No, all data processing occurs strictly in your browser. Your files and text are never uploaded or stored on our servers.",
+      },
+    ],
+  };
 }

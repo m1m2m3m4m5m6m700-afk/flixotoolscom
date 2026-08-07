@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import {
   Inbox,
@@ -62,7 +62,6 @@ import {
   type Attachment,
 } from "@/lib/communicationStore";
 import { cn } from "@/lib/utils";
-import { revokeAttachmentUrls, revokeObjectUrlSafe } from "@/lib/objectUrls";
 
 const STATUS_VARIANTS: Record<ConversationStatus, { label: string; color: string }> = {
   New: { label: "New", color: "bg-blue-500/15 text-blue-500 border-blue-500/30" },
@@ -125,19 +124,8 @@ export function AdminInbox() {
   const [showAnalyticsModal, setShowAnalyticsModal] = useState(false);
 
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const replyAttachmentsRef = useRef<Attachment[]>([]);
 
   const activeConv = conversations.find((c) => c.id === selectedId);
-
-  useEffect(() => {
-    replyAttachmentsRef.current = replyAttachments;
-  }, [replyAttachments]);
-
-  useEffect(() => {
-    return () => {
-      revokeAttachmentUrls(replyAttachmentsRef.current);
-    };
-  }, []);
 
   // Mark as read when admin selects conversation
   const handleSelectConv = (id: string) => {
@@ -836,10 +824,9 @@ export function AdminInbox() {
                         <span>{att.name}</span>
                         <X
                           className="size-3 cursor-pointer"
-                          onClick={() => {
-                            revokeObjectUrlSafe(att.url);
-                            setReplyAttachments((prev) => prev.filter((a) => a.id !== att.id));
-                          }}
+                          onClick={() =>
+                            setReplyAttachments((prev) => prev.filter((a) => a.id !== att.id))
+                          }
                         />
                       </Badge>
                     ))}

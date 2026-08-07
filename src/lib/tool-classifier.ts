@@ -92,7 +92,6 @@ const KEYWORDS: Record<CategoryId, string[]> = {
     "حاسبة",
   ],
   web: ["url", "link", "website", "seo", "meta", "sitemap", "headers", "domain", "موقع"],
-  chrome: ["chrome", "extension", "browser", "tab", "productivity", "google chrome", "متصفح"],
   developer: ["json", "regex", "jwt", "cron", "code", "api", "developer", "format", "برمجة", "كود"],
   ai: ["ai", "chat", "assistant", "prompt", "gpt", "insight", "ذكاء"],
   future: ["workflow", "automation", "team", "roadmap", "integration"],

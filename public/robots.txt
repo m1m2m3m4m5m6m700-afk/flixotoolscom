@@ -1,14 +1,5 @@
 User-agent: *
 Allow: /
-Allow: /tools/
-Allow: /categories/
-Allow: /blog/
-Allow: /compare/
-Allow: /use-cases/
-Allow: /file-types/
-Allow: /questions/
-Allow: /collections/
-Allow: /sitemap.xml
 
 User-agent: Googlebot
 Allow: /
@@ -20,21 +11,6 @@ User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://flixotools.com/sitemap.xml

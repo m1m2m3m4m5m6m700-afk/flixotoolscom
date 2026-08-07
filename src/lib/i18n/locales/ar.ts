@@ -112,6 +112,467 @@ export const ar: Dictionary = {
   "tool.code-explainer.tagline": "اشرح مقاطع الكود بلغة بسيطة وافهم ما تفعله.",
   "tool.code-explainer.pageDescription": "ألصق مقطع كود واحصل على تفسير سهل الفهم لسلوكه.",
   "tool.data-insights.name": "رؤى البيانات",
+
+  "tool.age-calculator.name": "Age Calculator",
+  "tool.age-calculator.tagline": "أداة age calculator مجانية على الإنترنت",
+  "tool.age-calculator.pageDescription":
+    "استخدم أداة age calculator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.bmi-calculator.name": "Bmi Calculator",
+  "tool.bmi-calculator.tagline": "أداة bmi calculator مجانية على الإنترنت",
+  "tool.bmi-calculator.pageDescription":
+    "استخدم أداة bmi calculator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.barcode-generator.name": "Barcode Generator",
+  "tool.barcode-generator.tagline": "أداة barcode generator مجانية على الإنترنت",
+  "tool.barcode-generator.pageDescription":
+    "استخدم أداة barcode generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.base64-encoder.name": "Base64 Encoder",
+  "tool.base64-encoder.tagline": "أداة base64 encoder مجانية على الإنترنت",
+  "tool.base64-encoder.pageDescription":
+    "استخدم أداة base64 encoder المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.base64-image-encoder.name": "Base64 Image Encoder",
+  "tool.base64-image-encoder.tagline": "أداة base64 image encoder مجانية على الإنترنت",
+  "tool.base64-image-encoder.pageDescription":
+    "استخدم أداة base64 image encoder المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.binary-converter.name": "Binary Converter",
+  "tool.binary-converter.tagline": "أداة binary converter مجانية على الإنترنت",
+  "tool.binary-converter.pageDescription":
+    "استخدم أداة binary converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.css-gradient-generator.name": "Css Gradient Generator",
+  "tool.css-gradient-generator.tagline": "أداة css gradient generator مجانية على الإنترنت",
+  "tool.css-gradient-generator.pageDescription":
+    "استخدم أداة css gradient generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.css-minifier.name": "Css Minifier",
+  "tool.css-minifier.tagline": "أداة css minifier مجانية على الإنترنت",
+  "tool.css-minifier.pageDescription":
+    "استخدم أداة css minifier المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.csv-to-json-converter.name": "Csv To Json Converter",
+  "tool.csv-to-json-converter.tagline": "أداة csv to json converter مجانية على الإنترنت",
+  "tool.csv-to-json-converter.pageDescription":
+    "استخدم أداة csv to json converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.csv-viewer.name": "Csv Viewer",
+  "tool.csv-viewer.tagline": "أداة csv viewer مجانية على الإنترنت",
+  "tool.csv-viewer.pageDescription":
+    "استخدم أداة csv viewer المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.case-transformer.name": "Case Transformer",
+  "tool.case-transformer.tagline": "أداة case transformer مجانية على الإنترنت",
+  "tool.case-transformer.pageDescription":
+    "استخدم أداة case transformer المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.color-converter.name": "Color Converter",
+  "tool.color-converter.tagline": "أداة color converter مجانية على الإنترنت",
+  "tool.color-converter.pageDescription":
+    "استخدم أداة color converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.color-mixer.name": "Color Mixer",
+  "tool.color-mixer.tagline": "أداة color mixer مجانية على الإنترنت",
+  "tool.color-mixer.pageDescription":
+    "استخدم أداة color mixer المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.color-palette-generator.name": "Color Palette Generator",
+  "tool.color-palette-generator.tagline": "أداة color palette generator مجانية على الإنترنت",
+  "tool.color-palette-generator.pageDescription":
+    "استخدم أداة color palette generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.countdown-timer.name": "Countdown Timer",
+  "tool.countdown-timer.tagline": "أداة countdown timer مجانية على الإنترنت",
+  "tool.countdown-timer.pageDescription":
+    "استخدم أداة countdown timer المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.credit-card-generator.name": "Credit Card Generator",
+  "tool.credit-card-generator.tagline": "أداة credit card generator مجانية على الإنترنت",
+  "tool.credit-card-generator.pageDescription":
+    "استخدم أداة credit card generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.credit-card-validator.name": "Credit Card Validator",
+  "tool.credit-card-validator.tagline": "أداة credit card validator مجانية على الإنترنت",
+  "tool.credit-card-validator.pageDescription":
+    "استخدم أداة credit card validator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.cron-expression-generator.name": "Cron Expression Generator",
+  "tool.cron-expression-generator.tagline": "أداة cron expression generator مجانية على الإنترنت",
+  "tool.cron-expression-generator.pageDescription":
+    "استخدم أداة cron expression generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.cron-parser.name": "Cron Parser",
+  "tool.cron-parser.tagline": "أداة cron parser مجانية على الإنترنت",
+  "tool.cron-parser.pageDescription":
+    "استخدم أداة cron parser المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.currency-converter.name": "Currency Converter",
+  "tool.currency-converter.tagline": "أداة currency converter مجانية على الإنترنت",
+  "tool.currency-converter.pageDescription":
+    "استخدم أداة currency converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.currency-formatter.name": "Currency Formatter",
+  "tool.currency-formatter.tagline": "أداة currency formatter مجانية على الإنترنت",
+  "tool.currency-formatter.pageDescription":
+    "استخدم أداة currency formatter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.date-calculator.name": "Date Calculator",
+  "tool.date-calculator.tagline": "أداة date calculator مجانية على الإنترنت",
+  "tool.date-calculator.pageDescription":
+    "استخدم أداة date calculator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.dice-roller.name": "Dice Roller",
+  "tool.dice-roller.tagline": "أداة dice roller مجانية على الإنترنت",
+  "tool.dice-roller.pageDescription":
+    "استخدم أداة dice roller المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.discount-calculator.name": "Discount Calculator",
+  "tool.discount-calculator.tagline": "أداة discount calculator مجانية على الإنترنت",
+  "tool.discount-calculator.pageDescription":
+    "استخدم أداة discount calculator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.duplicate-character-finder.name": "Duplicate Character Finder",
+  "tool.duplicate-character-finder.tagline": "أداة duplicate character finder مجانية على الإنترنت",
+  "tool.duplicate-character-finder.pageDescription":
+    "استخدم أداة duplicate character finder المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.duplicate-lines-remover.name": "Duplicate Lines Remover",
+  "tool.duplicate-lines-remover.tagline": "أداة duplicate lines remover مجانية على الإنترنت",
+  "tool.duplicate-lines-remover.pageDescription":
+    "استخدم أداة duplicate lines remover المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.enc-dec-text.name": "Enc Dec Text",
+  "tool.enc-dec-text.tagline": "أداة enc dec text مجانية على الإنترنت",
+  "tool.enc-dec-text.pageDescription":
+    "استخدم أداة enc dec text المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.favicon-generator.name": "Favicon Generator",
+  "tool.favicon-generator.tagline": "أداة favicon generator مجانية على الإنترنت",
+  "tool.favicon-generator.pageDescription":
+    "استخدم أداة favicon generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.flip-coin-simulator.name": "Flip Coin Simulator",
+  "tool.flip-coin-simulator.tagline": "أداة flip coin simulator مجانية على الإنترنت",
+  "tool.flip-coin-simulator.pageDescription":
+    "استخدم أداة flip coin simulator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.hsl-to-hex-converter.name": "Hsl To Hex Converter",
+  "tool.hsl-to-hex-converter.tagline": "أداة hsl to hex converter مجانية على الإنترنت",
+  "tool.hsl-to-hex-converter.pageDescription":
+    "استخدم أداة hsl to hex converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.html-encoder-decoder.name": "Html Encoder Decoder",
+  "tool.html-encoder-decoder.tagline": "أداة html encoder decoder مجانية على الإنترنت",
+  "tool.html-encoder-decoder.pageDescription":
+    "استخدم أداة html encoder decoder المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.html-minifier.name": "Html Minifier",
+  "tool.html-minifier.tagline": "أداة html minifier مجانية على الإنترنت",
+  "tool.html-minifier.pageDescription":
+    "استخدم أداة html minifier المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.html-to-react-converter.name": "Html To React Converter",
+  "tool.html-to-react-converter.tagline": "أداة html to react converter مجانية على الإنترنت",
+  "tool.html-to-react-converter.pageDescription":
+    "استخدم أداة html to react converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.hash-check-generator.name": "Hash Check Generator",
+  "tool.hash-check-generator.tagline": "أداة hash check generator مجانية على الإنترنت",
+  "tool.hash-check-generator.pageDescription":
+    "استخدم أداة hash check generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.hash-comparator.name": "Hash Comparator",
+  "tool.hash-comparator.tagline": "أداة hash comparator مجانية على الإنترنت",
+  "tool.hash-comparator.pageDescription":
+    "استخدم أداة hash comparator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.hash-generator.name": "Hash Generator",
+  "tool.hash-generator.tagline": "أداة hash generator مجانية على الإنترنت",
+  "tool.hash-generator.pageDescription":
+    "استخدم أداة hash generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.hex-converter.name": "Hex Converter",
+  "tool.hex-converter.tagline": "أداة hex converter مجانية على الإنترنت",
+  "tool.hex-converter.pageDescription":
+    "استخدم أداة hex converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.hex-rgb-converter.name": "Hex Rgb Converter",
+  "tool.hex-rgb-converter.tagline": "أداة hex rgb converter مجانية على الإنترنت",
+  "tool.hex-rgb-converter.pageDescription":
+    "استخدم أداة hex rgb converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.hex-to-rgb-converter.name": "Hex To Rgb Converter",
+  "tool.hex-to-rgb-converter.tagline": "أداة hex to rgb converter مجانية على الإنترنت",
+  "tool.hex-to-rgb-converter.pageDescription":
+    "استخدم أداة hex to rgb converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.ip-address-info.name": "Ip Address Info",
+  "tool.ip-address-info.tagline": "أداة ip address info مجانية على الإنترنت",
+  "tool.ip-address-info.pageDescription":
+    "استخدم أداة ip address info المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.interest-calculator.name": "Interest Calculator",
+  "tool.interest-calculator.tagline": "أداة interest calculator مجانية على الإنترنت",
+  "tool.interest-calculator.pageDescription":
+    "استخدم أداة interest calculator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.investment-calculator.name": "Investment Calculator",
+  "tool.investment-calculator.tagline": "أداة investment calculator مجانية على الإنترنت",
+  "tool.investment-calculator.pageDescription":
+    "استخدم أداة investment calculator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.js-minifier.name": "Js Minifier",
+  "tool.js-minifier.tagline": "أداة js minifier مجانية على الإنترنت",
+  "tool.js-minifier.pageDescription":
+    "استخدم أداة js minifier المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.json-formatter.name": "Json Formatter",
+  "tool.json-formatter.tagline": "أداة json formatter مجانية على الإنترنت",
+  "tool.json-formatter.pageDescription":
+    "استخدم أداة json formatter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.json-merger.name": "Json Merger",
+  "tool.json-merger.tagline": "أداة json merger مجانية على الإنترنت",
+  "tool.json-merger.pageDescription":
+    "استخدم أداة json merger المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.json-path-evaluator.name": "Json Path Evaluator",
+  "tool.json-path-evaluator.tagline": "أداة json path evaluator مجانية على الإنترنت",
+  "tool.json-path-evaluator.pageDescription":
+    "استخدم أداة json path evaluator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.json-path-tester.name": "Json Path Tester",
+  "tool.json-path-tester.tagline": "أداة json path tester مجانية على الإنترنت",
+  "tool.json-path-tester.pageDescription":
+    "استخدم أداة json path tester المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.json-to-csv-converter.name": "Json To Csv Converter",
+  "tool.json-to-csv-converter.tagline": "أداة json to csv converter مجانية على الإنترنت",
+  "tool.json-to-csv-converter.pageDescription":
+    "استخدم أداة json to csv converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.json-to-xml-converter.name": "Json To Xml Converter",
+  "tool.json-to-xml-converter.tagline": "أداة json to xml converter مجانية على الإنترنت",
+  "tool.json-to-xml-converter.pageDescription":
+    "استخدم أداة json to xml converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.json-validator.name": "Json Validator",
+  "tool.json-validator.tagline": "أداة json validator مجانية على الإنترنت",
+  "tool.json-validator.pageDescription":
+    "استخدم أداة json validator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.jwt-decoder.name": "Jwt Decoder",
+  "tool.jwt-decoder.tagline": "أداة jwt decoder مجانية على الإنترنت",
+  "tool.jwt-decoder.pageDescription":
+    "استخدم أداة jwt decoder المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.jwt-encoder.name": "Jwt Encoder",
+  "tool.jwt-encoder.tagline": "أداة jwt encoder مجانية على الإنترنت",
+  "tool.jwt-encoder.pageDescription":
+    "استخدم أداة jwt encoder المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.line-counter.name": "Line Counter",
+  "tool.line-counter.tagline": "أداة line counter مجانية على الإنترنت",
+  "tool.line-counter.pageDescription":
+    "استخدم أداة line counter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.list-randomizer.name": "List Randomizer",
+  "tool.list-randomizer.tagline": "أداة list randomizer مجانية على الإنترنت",
+  "tool.list-randomizer.pageDescription":
+    "استخدم أداة list randomizer المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.loan-calculator.name": "Loan Calculator",
+  "tool.loan-calculator.tagline": "أداة loan calculator مجانية على الإنترنت",
+  "tool.loan-calculator.pageDescription":
+    "استخدم أداة loan calculator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.lorem-ipsum-customizer.name": "Lorem Ipsum Customizer",
+  "tool.lorem-ipsum-customizer.tagline": "أداة lorem ipsum customizer مجانية على الإنترنت",
+  "tool.lorem-ipsum-customizer.pageDescription":
+    "استخدم أداة lorem ipsum customizer المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.lorem-ipsum-generator.name": "Lorem Ipsum Generator",
+  "tool.lorem-ipsum-generator.tagline": "أداة lorem ipsum generator مجانية على الإنترنت",
+  "tool.lorem-ipsum-generator.pageDescription":
+    "استخدم أداة lorem ipsum generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.md5-generator.name": "Md5 Generator",
+  "tool.md5-generator.tagline": "أداة md5 generator مجانية على الإنترنت",
+  "tool.md5-generator.pageDescription":
+    "استخدم أداة md5 generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.mark-down-preview.name": "Mark Down Preview",
+  "tool.mark-down-preview.tagline": "أداة mark down preview مجانية على الإنترنت",
+  "tool.mark-down-preview.pageDescription":
+    "استخدم أداة mark down preview المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.morse-code-converter.name": "Morse Code Converter",
+  "tool.morse-code-converter.tagline": "أداة morse code converter مجانية على الإنترنت",
+  "tool.morse-code-converter.pageDescription":
+    "استخدم أداة morse code converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.number-base-converter.name": "Number Base Converter",
+  "tool.number-base-converter.tagline": "أداة number base converter مجانية على الإنترنت",
+  "tool.number-base-converter.pageDescription":
+    "استخدم أداة number base converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.number-speller.name": "Number Speller",
+  "tool.number-speller.tagline": "أداة number speller مجانية على الإنترنت",
+  "tool.number-speller.pageDescription":
+    "استخدم أداة number speller المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.number-to-words-converter.name": "Number To Words Converter",
+  "tool.number-to-words-converter.tagline": "أداة number to words converter مجانية على الإنترنت",
+  "tool.number-to-words-converter.pageDescription":
+    "استخدم أداة number to words converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.password-strength-checker.name": "Password Strength Checker",
+  "tool.password-strength-checker.tagline": "أداة password strength checker مجانية على الإنترنت",
+  "tool.password-strength-checker.pageDescription":
+    "استخدم أداة password strength checker المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.password-strength-tester.name": "Password Strength Tester",
+  "tool.password-strength-tester.tagline": "أداة password strength tester مجانية على الإنترنت",
+  "tool.password-strength-tester.pageDescription":
+    "استخدم أداة password strength tester المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.percentage-calculator.name": "Percentage Calculator",
+  "tool.percentage-calculator.tagline": "أداة percentage calculator مجانية على الإنترنت",
+  "tool.percentage-calculator.pageDescription":
+    "استخدم أداة percentage calculator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.percentage-change-calculator.name": "Percentage Change Calculator",
+  "tool.percentage-change-calculator.tagline":
+    "أداة percentage change calculator مجانية على الإنترنت",
+  "tool.percentage-change-calculator.pageDescription":
+    "استخدم أداة percentage change calculator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.percentage-difference-calculator.name": "Percentage Difference Calculator",
+  "tool.percentage-difference-calculator.tagline":
+    "أداة percentage difference calculator مجانية على الإنترنت",
+  "tool.percentage-difference-calculator.pageDescription":
+    "استخدم أداة percentage difference calculator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.percentage-distribution-calculator.name": "Percentage Distribution Calculator",
+  "tool.percentage-distribution-calculator.tagline":
+    "أداة percentage distribution calculator مجانية على الإنترنت",
+  "tool.percentage-distribution-calculator.pageDescription":
+    "استخدم أداة percentage distribution calculator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.qr-code-generator.name": "Qr Code Generator",
+  "tool.qr-code-generator.tagline": "أداة qr code generator مجانية على الإنترنت",
+  "tool.qr-code-generator.pageDescription":
+    "استخدم أداة qr code generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.random-color-generator.name": "Random Color Generator",
+  "tool.random-color-generator.tagline": "أداة random color generator مجانية على الإنترنت",
+  "tool.random-color-generator.pageDescription":
+    "استخدم أداة random color generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.random-date-generator.name": "Random Date Generator",
+  "tool.random-date-generator.tagline": "أداة random date generator مجانية على الإنترنت",
+  "tool.random-date-generator.pageDescription":
+    "استخدم أداة random date generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.random-decimal-generator.name": "Random Decimal Generator",
+  "tool.random-decimal-generator.tagline": "أداة random decimal generator مجانية على الإنترنت",
+  "tool.random-decimal-generator.pageDescription":
+    "استخدم أداة random decimal generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.random-hex-generator.name": "Random Hex Generator",
+  "tool.random-hex-generator.tagline": "أداة random hex generator مجانية على الإنترنت",
+  "tool.random-hex-generator.pageDescription":
+    "استخدم أداة random hex generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.random-id-generator.name": "Random Id Generator",
+  "tool.random-id-generator.tagline": "أداة random id generator مجانية على الإنترنت",
+  "tool.random-id-generator.pageDescription":
+    "استخدم أداة random id generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.random-lottery-number-generator.name": "Random Lottery Number Generator",
+  "tool.random-lottery-number-generator.tagline":
+    "أداة random lottery number generator مجانية على الإنترنت",
+  "tool.random-lottery-number-generator.pageDescription":
+    "استخدم أداة random lottery number generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.random-name-generator.name": "Random Name Generator",
+  "tool.random-name-generator.tagline": "أداة random name generator مجانية على الإنترنت",
+  "tool.random-name-generator.pageDescription":
+    "استخدم أداة random name generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.random-number-generator.name": "Random Number Generator",
+  "tool.random-number-generator.tagline": "أداة random number generator مجانية على الإنترنت",
+  "tool.random-number-generator.pageDescription":
+    "استخدم أداة random number generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.random-password-generator.name": "Random Password Generator",
+  "tool.random-password-generator.tagline": "أداة random password generator مجانية على الإنترنت",
+  "tool.random-password-generator.pageDescription":
+    "استخدم أداة random password generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.random-picker.name": "Random Picker",
+  "tool.random-picker.tagline": "أداة random picker مجانية على الإنترنت",
+  "tool.random-picker.pageDescription":
+    "استخدم أداة random picker المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.random-team-generator.name": "Random Team Generator",
+  "tool.random-team-generator.tagline": "أداة random team generator مجانية على الإنترنت",
+  "tool.random-team-generator.pageDescription":
+    "استخدم أداة random team generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.regex-generator.name": "Regex Generator",
+  "tool.regex-generator.tagline": "أداة regex generator مجانية على الإنترنت",
+  "tool.regex-generator.pageDescription":
+    "استخدم أداة regex generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.regex-tester.name": "Regex Tester",
+  "tool.regex-tester.tagline": "أداة regex tester مجانية على الإنترنت",
+  "tool.regex-tester.pageDescription":
+    "استخدم أداة regex tester المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.roman-numeral-converter.name": "Roman Numeral Converter",
+  "tool.roman-numeral-converter.tagline": "أداة roman numeral converter مجانية على الإنترنت",
+  "tool.roman-numeral-converter.pageDescription":
+    "استخدم أداة roman numeral converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.sql-formatter.name": "Sql Formatter",
+  "tool.sql-formatter.tagline": "أداة sql formatter مجانية على الإنترنت",
+  "tool.sql-formatter.pageDescription":
+    "استخدم أداة sql formatter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.sentence-case-converter.name": "Sentence Case Converter",
+  "tool.sentence-case-converter.tagline": "أداة sentence case converter مجانية على الإنترنت",
+  "tool.sentence-case-converter.pageDescription":
+    "استخدم أداة sentence case converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.slug-checker.name": "Slug Checker",
+  "tool.slug-checker.tagline": "أداة slug checker مجانية على الإنترنت",
+  "tool.slug-checker.pageDescription":
+    "استخدم أداة slug checker المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.slug-generator.name": "Slug Generator",
+  "tool.slug-generator.tagline": "أداة slug generator مجانية على الإنترنت",
+  "tool.slug-generator.pageDescription":
+    "استخدم أداة slug generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.stopwatch.name": "Stopwatch",
+  "tool.stopwatch.tagline": "أداة stopwatch مجانية على الإنترنت",
+  "tool.stopwatch.pageDescription":
+    "استخدم أداة stopwatch المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.string-diff-checker.name": "String Diff Checker",
+  "tool.string-diff-checker.tagline": "أداة string diff checker مجانية على الإنترنت",
+  "tool.string-diff-checker.pageDescription":
+    "استخدم أداة string diff checker المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.temperature-converter.name": "Temperature Converter",
+  "tool.temperature-converter.tagline": "أداة temperature converter مجانية على الإنترنت",
+  "tool.temperature-converter.pageDescription":
+    "استخدم أداة temperature converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.text-case-converter.name": "Text Case Converter",
+  "tool.text-case-converter.tagline": "أداة text case converter مجانية على الإنترنت",
+  "tool.text-case-converter.pageDescription":
+    "استخدم أداة text case converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.text-diff-checker.name": "Text Diff Checker",
+  "tool.text-diff-checker.tagline": "أداة text diff checker مجانية على الإنترنت",
+  "tool.text-diff-checker.pageDescription":
+    "استخدم أداة text diff checker المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.text-to-slug.name": "Text To Slug",
+  "tool.text-to-slug.tagline": "أداة text to slug مجانية على الإنترنت",
+  "tool.text-to-slug.pageDescription":
+    "استخدم أداة text to slug المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.text-to-speech.name": "Text To Speech",
+  "tool.text-to-speech.tagline": "أداة text to speech مجانية على الإنترنت",
+  "tool.text-to-speech.pageDescription":
+    "استخدم أداة text to speech المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.time-between-dates.name": "Time Between Dates",
+  "tool.time-between-dates.tagline": "أداة time between dates مجانية على الإنترنت",
+  "tool.time-between-dates.pageDescription":
+    "استخدم أداة time between dates المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.time-zone-converter.name": "Time Zone Converter",
+  "tool.time-zone-converter.tagline": "أداة time zone converter مجانية على الإنترنت",
+  "tool.time-zone-converter.pageDescription":
+    "استخدم أداة time zone converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.tip-calculator.name": "Tip Calculator",
+  "tool.tip-calculator.tagline": "أداة tip calculator مجانية على الإنترنت",
+  "tool.tip-calculator.pageDescription":
+    "استخدم أداة tip calculator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.tip-splitter.name": "Tip Splitter",
+  "tool.tip-splitter.tagline": "أداة tip splitter مجانية على الإنترنت",
+  "tool.tip-splitter.pageDescription":
+    "استخدم أداة tip splitter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.url-encoder.name": "Url Encoder",
+  "tool.url-encoder.tagline": "أداة url encoder مجانية على الإنترنت",
+  "tool.url-encoder.pageDescription":
+    "استخدم أداة url encoder المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.url-parser.name": "Url Parser",
+  "tool.url-parser.tagline": "أداة url parser مجانية على الإنترنت",
+  "tool.url-parser.pageDescription":
+    "استخدم أداة url parser المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.uuid-generator.name": "Uuid Generator",
+  "tool.uuid-generator.tagline": "أداة uuid generator مجانية على الإنترنت",
+  "tool.uuid-generator.pageDescription":
+    "استخدم أداة uuid generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.uui-dv4-generator.name": "Uui Dv4 Generator",
+  "tool.uui-dv4-generator.tagline": "أداة uui dv4 generator مجانية على الإنترنت",
+  "tool.uui-dv4-generator.pageDescription":
+    "استخدم أداة uui dv4 generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.uui-dv7-generator.name": "Uui Dv7 Generator",
+  "tool.uui-dv7-generator.tagline": "أداة uui dv7 generator مجانية على الإنترنت",
+  "tool.uui-dv7-generator.pageDescription":
+    "استخدم أداة uui dv7 generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.unit-converter.name": "Unit Converter",
+  "tool.unit-converter.tagline": "أداة unit converter مجانية على الإنترنت",
+  "tool.unit-converter.pageDescription":
+    "استخدم أداة unit converter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.vat-calculator.name": "Vat Calculator",
+  "tool.vat-calculator.tagline": "أداة vat calculator مجانية على الإنترنت",
+  "tool.vat-calculator.pageDescription":
+    "استخدم أداة vat calculator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.word-cloud-generator.name": "Word Cloud Generator",
+  "tool.word-cloud-generator.tagline": "أداة word cloud generator مجانية على الإنترنت",
+  "tool.word-cloud-generator.pageDescription":
+    "استخدم أداة word cloud generator المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.word-counter.name": "Word Counter",
+  "tool.word-counter.tagline": "أداة word counter مجانية على الإنترنت",
+  "tool.word-counter.pageDescription":
+    "استخدم أداة word counter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.word-density-analyzer.name": "Word Density Analyzer",
+  "tool.word-density-analyzer.tagline": "أداة word density analyzer مجانية على الإنترنت",
+  "tool.word-density-analyzer.pageDescription":
+    "استخدم أداة word density analyzer المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.word-frequency-analyzer.name": "Word Frequency Analyzer",
+  "tool.word-frequency-analyzer.tagline": "أداة word frequency analyzer مجانية على الإنترنت",
+  "tool.word-frequency-analyzer.pageDescription":
+    "استخدم أداة word frequency analyzer المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
+  "tool.xml-formatter.name": "Xml Formatter",
+  "tool.markdown-preview.name": "Markdown Preview",
+  "tool.markdown-preview.tagline": "Free online markdown preview tool",
+  "tool.markdown-preview.pageDescription":
+    "Use our free markdown preview tool. No signup, no fees, just results.",
+  "tool.uuidv4-generator.name": "Uuidv4 Generator",
+  "tool.uuidv4-generator.tagline": "Free online uuidv4 generator tool",
+  "tool.uuidv4-generator.pageDescription":
+    "Use our free uuidv4 generator tool. No signup, no fees, just results.",
+  "tool.uuidv7-generator.name": "Uuidv7 Generator",
+  "tool.uuidv7-generator.tagline": "Free online uuidv7 generator tool",
+  "tool.uuidv7-generator.pageDescription":
+    "Use our free uuidv7 generator tool. No signup, no fees, just results.",
+  "tool.xml-formatter.tagline": "أداة xml formatter مجانية على الإنترنت",
+  "tool.xml-formatter.pageDescription":
+    "استخدم أداة xml formatter المجانية. بدون تسجيل، بدون رسوم، فقط النتائج.",
   "tool.data-insights.tagline": "حمّل الجداول أو CSV واكتشف رؤى ذكاء اصطناعي بسرعة.",
   "tool.data-insights.pageDescription":
     "حلل الجداول وCSV وبياناتك عبر الذكاء الاصطناعي للحصول على رؤى فورية.",
@@ -181,168 +642,4 @@ export const ar: Dictionary = {
   "translator.emptyTitle": "ستظهر الترجمة هنا",
   "translator.emptyBody":
     "اختر اللغة الهدف، أدخل النص، ثم اضغط ترجم. الكشف التلقائي سيتعرّف على لغة المصدر نيابةً عنك.",
-  "tool.large-text-translator.name": "مترجم النصوص الطويلة",
-  "tool.large-text-translator.tagline":
-    "ترجمة المحتوى الطويل وصفحات الويب والمستندات النصية الكبيرة بسرعة وسهولة.",
-  "tool.large-text-translator.pageDescription":
-    "ترجمة المحتوى الطويل وصفحات الويب والمستندات النصية الكبيرة بسرعة وسهولة.",
-  "tool.pdf-translator.name": "مترجم ملفات PDF",
-  "tool.pdf-translator.tagline": "ترجمة مستندات PDF مع الحفاظ على التنسيق والتنسيق الأصلي.",
-  "tool.pdf-translator.pageDescription": "ترجمة مستندات PDF مع الحفاظ على التنسيق والتنسيق الأصلي.",
-  "tool.docx-translator.name": "مترجم مستندات Word",
-  "tool.docx-translator.tagline":
-    "ترجمة مستندات Word (DOCX) مع الحفاظ الكامل على التنسيق والأنماط.",
-  "tool.docx-translator.pageDescription":
-    "ترجمة مستندات Word (DOCX) مع الحفاظ الكامل على التنسيق والأنماط.",
-  "tool.image-translator.name": "مترجم الصور",
-  "tool.image-translator.tagline":
-    "ترجمة النصوص الموجودة داخل الصور باستخدام تقنيات التعرف الضوئي والذكاء الاصطناعي.",
-  "tool.image-translator.pageDescription":
-    "ترجمة النصوص الموجودة داخل الصور باستخدام تقنيات التعرف الضوئي والذكاء الاصطناعي.",
-  "tool.ocr-translator.name": "مترجم OCR الضوئي",
-  "tool.ocr-translator.tagline":
-    "استخراج النصوص من المستندات والصور الممسوحة ضوئياً وترجمتها فورياً.",
-  "tool.ocr-translator.pageDescription":
-    "استخراج النصوص من المستندات والصور الممسوحة ضوئياً وترجمتها فورياً.",
-  "tool.subtitle-translator.name": "مترجم الترجمات والترجمات النصية",
-  "tool.subtitle-translator.tagline": "ترجمة ملفات الترجمة مثل SRT و VTT سطراً بسطر بدقة عالية.",
-  "tool.subtitle-translator.pageDescription":
-    "ترجمة ملفات الترجمة مثل SRT و VTT سطراً بسطر بدقة عالية.",
-  "tool.website-translator.name": "مترجم المواقع الإلكترونية",
-  "tool.website-translator.tagline": "ترجمة المواقع والمحتوى الإلكتروني بنقرة واحدة.",
-  "tool.website-translator.pageDescription": "ترجمة المواقع والمحتوى الإلكتروني بنقرة واحدة.",
-  "tool.voice-translator.name": "المترجم الصوتي الفوري",
-  "tool.voice-translator.tagline": "ترجمة المحادثات والأصوات المباشرة بين اللغات المختلفة فورياً.",
-  "tool.voice-translator.pageDescription":
-    "ترجمة المحادثات والأصوات المباشرة بين اللغات المختلفة فورياً.",
-  "tool.language-detection.name": "كاشف اللغة التلقائي",
-  "tool.language-detection.tagline": "التعرف التلقائي على لغة النص أو الصوت بدقة متناهية.",
-  "tool.language-detection.pageDescription": "التعرف التلقائي على لغة النص أو الصوت بدقة متناهية.",
-  "tool.document-translator.name": "مترجم المستندات الشامل",
-  "tool.document-translator.tagline": "ترجمة مختلف أنواع المستندات كاملة مع الحفاظ على هيكلها.",
-  "tool.document-translator.pageDescription":
-    "ترجمة مختلف أنواع المستندات كاملة مع الحفاظ على هيكلها.",
-  "tool.image-generator.name": "مولد الصور بالذكاء الاصطناعي",
-  "tool.image-generator.tagline": "تحويل الأفكار والنصوص إلى صور وفنون رقمية فريدة.",
-  "tool.image-generator.pageDescription": "تحويل الأفكار والنصوص إلى صور وفنون رقمية فريدة.",
-  "tool.image-upscaler.name": "مكبر دقة الصور",
-  "tool.image-upscaler.tagline": "رفع جودة ودقة الصور حتى 8 أضعاف دون فقدان التفاصيل.",
-  "tool.image-upscaler.pageDescription": "رفع جودة ودقة الصور حتى 8 أضعاف دون فقدان التفاصيل.",
-  "tool.background-changer.name": "مغير خلفية الصور",
-  "tool.background-changer.tagline": "استبدال وتغيير خلفيات الصور بنقرة واحدة.",
-  "tool.background-changer.pageDescription": "استبدال وتغيير خلفيات الصور بنقرة واحدة.",
-  "tool.image-resizer.name": "معدل أبعاد الصور",
-  "tool.image-resizer.tagline": "تغيير مقاسات وأبعاد الصور لمنصات التواصل الاجتماعي والويب.",
-  "tool.image-resizer.pageDescription":
-    "تغيير مقاسات وأبعاد الصور لمنصات التواصل الاجتماعي والويب.",
-  "tool.crop-image.name": "قص وتأطير الصور",
-  "tool.crop-image.tagline": "قص الصور وتحديد الأجزاء المطلوبة بدقة عالية.",
-  "tool.crop-image.pageDescription": "قص الصور وتحديد الأجزاء المطلوبة بدقة عالية.",
-  "tool.rotate-image.name": "تدوير وقلب الصور",
-  "tool.rotate-image.tagline": "تدوير الصور وتعديل الاتجاهات بمرونة وسرعة.",
-  "tool.rotate-image.pageDescription": "تدوير الصور وتعديل الاتجاهات بمرونة وسرعة.",
-  "tool.watermark-remover.name": "مزيل العلامات المائية",
-  "tool.watermark-remover.tagline": "إزالة العلامات المائية والنصوص غير المرغوب فيها من الصور.",
-  "tool.watermark-remover.pageDescription":
-    "إزالة العلامات المائية والنصوص غير المرغوب فيها من الصور.",
-  "tool.blur-image.name": "أداة التغبيش والتمويه",
-  "tool.blur-image.tagline": "إضافة تأثيرات التمويه والضبابية على الصور والخلفيات.",
-  "tool.blur-image.pageDescription": "إضافة تأثيرات التمويه والضبابية على الصور والخلفيات.",
-  "tool.sharpen-image.name": "أداة توضيح وتحديد الصور",
-  "tool.sharpen-image.tagline": "تحسين حدة الصور وإبراز التفاصيل والحدود الضبابية.",
-  "tool.sharpen-image.pageDescription": "تحسين حدة الصور وإبراز التفاصيل والحدود الضبابية.",
-  "tool.image-converter.name": "محول صيغ الصور",
-  "tool.image-converter.tagline": "تحويل صيغ الصور بين JPG و PNG و WEBP و AVIF بمرونة.",
-  "tool.image-converter.pageDescription": "تحويل صيغ الصور بين JPG و PNG و WEBP و AVIF بمرونة.",
-  "tool.image-editor.name": "محرر الصور بالذكاء الاصطناعي",
-  "tool.image-editor.tagline": "تعديل الإضاءة والتباين والتأثيرات على الصور بسهولة.",
-  "tool.image-editor.pageDescription": "تعديل الإضاءة والتباين والتأثيرات على الصور بسهولة.",
-  "tool.color-picker.name": "مستخرج الألوان من الصور",
-  "tool.color-picker.tagline": "استخراج رموز الألوان HEX و RGB بدقة من أي صورة.",
-  "tool.color-picker.pageDescription": "استخراج رموز الألوان HEX و RGB بدقة من أي صورة.",
-  "tool.color-palette-generator.name": "مولد لوحات الألوان",
-  "tool.color-palette-generator.tagline": "توليد تناسقات ولوحات ألوان متناغمة من الصور.",
-  "tool.color-palette-generator.pageDescription": "توليد تناسقات ولوحات ألوان متناغمة من الصور.",
-  "tool.image-to-pdf.name": "تحويل الصور إلى PDF",
-  "tool.image-to-pdf.tagline": "دمج وتحويل الصور إلى مستند PDF واحد عالي الجودة.",
-  "tool.image-to-pdf.pageDescription": "دمج وتحويل الصور إلى مستند PDF واحد عالي الجودة.",
-  "tool.image-ocr.name": "استخراج النصوص من الصور (OCR)",
-  "tool.image-ocr.tagline": "تحويل النصوص الموجودة بالصور إلى نص قابل للتعديل والنسخ.",
-  "tool.image-ocr.pageDescription": "تحويل النصوص الموجودة بالصور إلى نص قابل للتعديل والنسخ.",
-  "tool.face-blur.name": "تمويه الوجوه للحفاظ على الخصوصية",
-  "tool.face-blur.tagline": "إخفاء وتمويه الوجوه بالصور تلقائياً لحماية الخصوصية.",
-  "tool.face-blur.pageDescription": "إخفاء وتمويه الوجوه بالصور تلقائياً لحماية الخصوصية.",
-  "tool.screenshot-editor.name": "محرر لقطات الشاشة",
-  "tool.screenshot-editor.tagline": "إضافة خلفيات ملونة وتعليقات توضيحية على لقطات الشاشة.",
-  "tool.screenshot-editor.pageDescription": "إضافة خلفيات ملونة وتعليقات توضيحية على لقطات الشاشة.",
-  "tool.pdf-merge.name": "دمج ملفات PDF",
-  "tool.pdf-merge.tagline": "تجميع ودمج عدة ملفات PDF في مستند واحد منظم.",
-  "tool.pdf-merge.pageDescription": "تجميع ودمج عدة ملفات PDF في مستند واحد منظم.",
-  "tool.pdf-split.name": "تقسيم ملفات PDF",
-  "tool.pdf-split.tagline": "فصل واستخراج صفحات معينة من ملفات PDF.",
-  "tool.pdf-split.pageDescription": "فصل واستخراج صفحات معينة من ملفات PDF.",
-  "tool.pdf-compress.name": "ضغط ملفات PDF",
-  "tool.pdf-compress.tagline": "تقليل حجم ملفات PDF مع الحفاظ على وضوح الخطوط.",
-  "tool.pdf-compress.pageDescription": "تقليل حجم ملفات PDF مع الحفاظ على وضوح الخطوط.",
-  "tool.jpg-to-pdf.name": "تحويل JPG إلى PDF",
-  "tool.jpg-to-pdf.tagline": "تحويل صور JPG إلى مستندات PDF مرتبة.",
-  "tool.jpg-to-pdf.pageDescription": "تحويل صور JPG إلى مستندات PDF مرتبة.",
-  "tool.word-to-pdf.name": "تحويل Word إلى PDF",
-  "tool.word-to-pdf.tagline": "تحويل مستندات Word إلى صيغة PDF مباشرة.",
-  "tool.word-to-pdf.pageDescription": "تحويل مستندات Word إلى صيغة PDF مباشرة.",
-  "tool.excel-to-pdf.name": "تحويل Excel إلى PDF",
-  "tool.excel-to-pdf.tagline": "تحويل جداول البيانات Excel إلى ملفات PDF جاهزة للطباعة.",
-  "tool.excel-to-pdf.pageDescription": "تحويل جداول البيانات Excel إلى ملفات PDF جاهزة للطباعة.",
-  "tool.powerpoint-to-pdf.name": "تحويل PowerPoint إلى PDF",
-  "tool.powerpoint-to-pdf.tagline": "تحويل العروض التقديمية إلى ملفات PDF سهلة المشاركة.",
-  "tool.powerpoint-to-pdf.pageDescription": "تحويل العروض التقديمية إلى ملفات PDF سهلة المشاركة.",
-  "tool.pdf-to-word.name": "تحويل PDF إلى Word",
-  "tool.pdf-to-word.tagline": "تحويل ملفات PDF إلى مستندات Word قابلة والتعديل.",
-  "tool.pdf-to-word.pageDescription": "تحويل ملفات PDF إلى مستندات Word قابلة والتعديل.",
-  "tool.pdf-to-jpg.name": "تحويل PDF إلى صور JPG",
-  "tool.pdf-to-jpg.tagline": "استخراج صفحات PDF كصور JPG عالية الوضوح.",
-  "tool.pdf-to-jpg.pageDescription": "استخراج صفحات PDF كصور JPG عالية الوضوح.",
-  "tool.pdf-ocr.name": "التعرف الضوئي في PDF (OCR)",
-  "tool.pdf-ocr.tagline": "تحويل ملفات PDF الممسوحة ضوئياً إلى نص قابل للبحث.",
-  "tool.pdf-ocr.pageDescription": "تحويل ملفات PDF الممسوحة ضوئياً إلى نص قابل للبحث.",
-  "tool.pdf-unlock.name": "فك حماية ملفات PDF",
-  "tool.pdf-unlock.tagline": "إزالة كلمات المرور والقيود من ملفات PDF.",
-  "tool.pdf-unlock.pageDescription": "إزالة كلمات المرور والقيود من ملفات PDF.",
-  "tool.pdf-protect.name": "حماية وتشفير PDF",
-  "tool.pdf-protect.tagline": "إضافة كلمة مرور وتشفير لحماية مستندات PDF.",
-  "tool.pdf-protect.pageDescription": "إضافة كلمة مرور وتشفير لحماية مستندات PDF.",
-  "tool.pdf-rotate.name": "تدوير صفحات PDF",
-  "tool.pdf-rotate.tagline": "تعديل اتجاه وتدوير صفحات ملفات PDF.",
-  "tool.pdf-rotate.pageDescription": "تعديل اتجاه وتدوير صفحات ملفات PDF.",
-  "tool.pdf-sign.name": "التوقيع الإلكتروني على PDF",
-  "tool.pdf-sign.tagline": "إضافة توقيع إلكتروني ورسمي على المستندات والعقود.",
-  "tool.pdf-sign.pageDescription": "إضافة توقيع إلكتروني ورسمي على المستندات والعقود.",
-  "tool.pdf-edit.name": "تعديل ملفات PDF",
-  "tool.pdf-edit.tagline": "إضافة نصوص وتعليقات وأشكال هندسية على ملفات PDF.",
-  "tool.pdf-edit.pageDescription": "إضافة نصوص وتعليقات وأشكال هندسية على ملفات PDF.",
-  "tool.pdf-extract-pages.name": "استخراج صفحات محددة من PDF",
-  "tool.pdf-extract-pages.tagline": "حفظ صفحات معينة من مستند PDF كملف مستقل.",
-  "tool.pdf-extract-pages.pageDescription": "حفظ صفحات معينة من مستند PDF كملف مستقل.",
-  "tool.pdf-watermark.name": "إضافةعلامة مائية على PDF",
-  "tool.pdf-watermark.tagline": "إضافة علامات مائية نصية أو صورية لحماية مستنداتك.",
-  "tool.pdf-watermark.pageDescription": "إضافة علامات مائية نصية أو صورية لحماية مستنداتك.",
-  "tool.ai-writer.name": "الكاتب بالذكاء الاصطناعي",
-  "tool.ai-writer.tagline": "كتابة المقالات والنسخ التسويقية والنصوص الإبداعية بالذكاء الاصطناعي.",
-  "tool.ai-writer.pageDescription":
-    "كتابة المقالات والنسخ التسويقية والنصوص الإبداعية بالذكاء الاصطناعي.",
-  "tool.article-generator.name": "مولد المقالات المتكامل",
-  "tool.article-generator.tagline": "إنشاء مقالات كاملة ومبوبة بفقرات وعناوين احترافية.",
-  "tool.article-generator.pageDescription": "إنشاء مقالات كاملة ومبوبة بفقرات وعناوين احترافية.",
-  "tool.blog-generator.name": "مولد تدوينات المدونات",
-  "tool.blog-generator.tagline": "كتابة منشورات مدونة محسنة لمحركات البحث (SEO).",
-  "tool.blog-generator.pageDescription": "كتابة منشورات مدونة محسنة لمحركات البحث (SEO).",
-  "tool.rewrite-text.name": "إعادة صياغة النصوص",
-  "tool.rewrite-text.tagline": "تحسين الجمل وإعادة صياغة النصوص لزيادة الوضوح والأسلوب.",
-  "tool.rewrite-text.pageDescription": "تحسين الجمل وإعادة صياغة النصوص لزيادة الوضوح والأسلوب.",
-  "tool.summarizer.name": "ملخص النصوص والمستندات",
-  "tool.summarizer.tagline": "تلخيص المقالات والتقارير الطويلة في نقاط رئيسية موجزة.",
-  "tool.summarizer.pageDescription": "تلخيص المقالات والتقارير الطويلة في نقاط رئيسية موجزة.",
-  "tool.grammar-checker.name": "المقق النحوي والإملائي",
-  "tool.grammar-checker.tagline": "فحص وتصحيح الأخطاء الإملائية والنحوية فورياً.",
-  "tool.grammar-checker.pageDescription": "فحص وتصحيح الأخطاء الإملائية والنحوية فورياً.",
 };
