@@ -1,0 +1,147 @@
+{
+  "id": "whats-new",
+  "slug": "whats-new",
+  "locale": "th",
+  "toolName": "What's New",
+  "englishName": "What's New",
+  "title": "What's New",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "What's New. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free What's New Online - Fast & Easy | Flixo",
+  "metaDescription": "What's New. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is What's New free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "What's New"
+  ],
+  "canonical": "/tools/whats-new",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/whats-new"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/whats-new"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/whats-new"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/whats-new"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/whats-new"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/whats-new"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/whats-new"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/whats-new"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/whats-new"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/whats-new"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/whats-new"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/whats-new"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/whats-new"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/whats-new"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/whats-new"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/whats-new"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/whats-new"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/whats-new"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/whats-new"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/whats-new"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "What's New",
+    "description": "What's New. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/whats-new",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "th"
+  },
+  "openGraph": {
+    "title": "Free What's New - Flixo",
+    "description": "What's New. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/whats-new",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free What's New - Flixo",
+    "description": "What's New. Free online tool that helps you get things done quickly and easily."
+  }
+}

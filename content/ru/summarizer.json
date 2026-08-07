@@ -1,0 +1,148 @@
+{
+  "id": "summarizer",
+  "slug": "summarizer",
+  "locale": "ru",
+  "toolName": "Summarizer",
+  "englishName": "Summarizer",
+  "title": "Summarizer",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Summarizer. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Summarizer Online - Write Better | Flixo",
+  "metaDescription": "Summarizer. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Summarizer free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Summarizer"
+  ],
+  "canonical": "/tools/summarizer",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/summarizer"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/summarizer"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/summarizer"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/summarizer"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/summarizer"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/summarizer"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/summarizer"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/summarizer"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/summarizer"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/summarizer"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/summarizer"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/summarizer"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/summarizer"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/summarizer"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/summarizer"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/summarizer"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/summarizer"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/summarizer"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/summarizer"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/summarizer"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Summarizer",
+    "description": "Summarizer. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/summarizer",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ru"
+  },
+  "openGraph": {
+    "title": "Free Summarizer - Flixo",
+    "description": "Summarizer. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/summarizer",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Summarizer - Flixo",
+    "description": "Summarizer. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

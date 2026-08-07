@@ -1,0 +1,149 @@
+{
+  "id": "document-translator",
+  "slug": "document-translator",
+  "locale": "pt",
+  "toolName": "Document Translator",
+  "englishName": "Document Translator",
+  "title": "Document Translator",
+  "tagline": "Translate text between languages instantly with AI-powered accuracy.",
+  "description": "Document Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+  "shortDescription": "Translate text between languages instantly with AI-powered accuracy.",
+  "metaTitle": "Free Document Translator Online - Translate Text Instantly | Flixo",
+  "metaDescription": "Document Translator. Use our free AI translator. Translate text between 100+ languages instantly. No signup, no fees, accurate results.",
+  "keywords": [
+    "translator",
+    "translation",
+    "ai translator",
+    "translator",
+    "online translator",
+    "text translation"
+  ],
+  "faq": [
+    {
+      "q": "Is Document Translator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Document Translator"
+  ],
+  "canonical": "/tools/document-translator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/document-translator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/document-translator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/document-translator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/document-translator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/document-translator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/document-translator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/document-translator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/document-translator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/document-translator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/document-translator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/document-translator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/document-translator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/document-translator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/document-translator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/document-translator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/document-translator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/document-translator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/document-translator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/document-translator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/document-translator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Document Translator",
+    "description": "Document Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/document-translator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pt"
+  },
+  "openGraph": {
+    "title": "Free Document Translator - Flixo",
+    "description": "Document Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/document-translator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Document Translator - Flixo",
+    "description": "Document Translator. Free online translation tool powered by AI. Translate text accurately and quickly."
+  }
+}

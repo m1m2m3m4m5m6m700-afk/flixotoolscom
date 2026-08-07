@@ -1,0 +1,148 @@
+{
+  "id": "face-blur",
+  "slug": "face-blur",
+  "locale": "en",
+  "toolName": "Face Blur",
+  "englishName": "Face Blur",
+  "title": "Face Blur",
+  "tagline": "Transform and enhance images with powerful AI tools.",
+  "description": "Face Blur. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+  "shortDescription": "Transform and enhance images with powerful AI tools.",
+  "metaTitle": "Free Face Blur Online - AI-Powered Image Editing | Flixo",
+  "metaDescription": "Face Blur. Free online image tools. Enhance, resize, compress, and edit images with AI. No signup required, works in browser.",
+  "keywords": [
+    "image tools",
+    "photo editor",
+    "image enhancer",
+    "image compressor",
+    "image tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Face Blur free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Face Blur"
+  ],
+  "canonical": "/tools/face-blur",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/face-blur"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/face-blur"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/face-blur"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/face-blur"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/face-blur"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/face-blur"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/face-blur"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/face-blur"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/face-blur"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/face-blur"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/face-blur"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/face-blur"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/face-blur"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/face-blur"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/face-blur"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/face-blur"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/face-blur"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/face-blur"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/face-blur"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/face-blur"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Face Blur",
+    "description": "Face Blur. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/face-blur",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "en"
+  },
+  "openGraph": {
+    "title": "Free Face Blur - Flixo",
+    "description": "Face Blur. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/face-blur",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Face Blur - Flixo",
+    "description": "Face Blur. Free online image tools. Edit, enhance, and transform images directly in your browser."
+  }
+}

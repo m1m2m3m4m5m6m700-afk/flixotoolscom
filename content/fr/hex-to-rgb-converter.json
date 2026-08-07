@@ -1,0 +1,148 @@
+{
+  "id": "hex-to-rgb-converter",
+  "slug": "hex-to-rgb-converter",
+  "locale": "fr",
+  "toolName": "HEX to RGB Converter",
+  "englishName": "HEX to RGB Converter",
+  "title": "HEX to RGB Converter",
+  "tagline": "Transform and enhance images with powerful AI tools.",
+  "description": "HEX to RGB Converter. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+  "shortDescription": "Transform and enhance images with powerful AI tools.",
+  "metaTitle": "Free HEX to RGB Converter Online - AI-Powered Image Editing | Flixo",
+  "metaDescription": "HEX to RGB Converter. Free online image tools. Enhance, resize, compress, and edit images with AI. No signup required, works in browser.",
+  "keywords": [
+    "image tools",
+    "photo editor",
+    "image enhancer",
+    "image compressor",
+    "image tools"
+  ],
+  "faq": [
+    {
+      "q": "Is HEX to RGB Converter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "HEX to RGB Converter"
+  ],
+  "canonical": "/tools/hex-to-rgb-converter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/hex-to-rgb-converter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/hex-to-rgb-converter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/hex-to-rgb-converter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/hex-to-rgb-converter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/hex-to-rgb-converter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/hex-to-rgb-converter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/hex-to-rgb-converter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/hex-to-rgb-converter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/hex-to-rgb-converter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/hex-to-rgb-converter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/hex-to-rgb-converter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/hex-to-rgb-converter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/hex-to-rgb-converter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/hex-to-rgb-converter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/hex-to-rgb-converter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/hex-to-rgb-converter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/hex-to-rgb-converter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/hex-to-rgb-converter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/hex-to-rgb-converter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/hex-to-rgb-converter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "HEX to RGB Converter",
+    "description": "HEX to RGB Converter. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/hex-to-rgb-converter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "fr"
+  },
+  "openGraph": {
+    "title": "Free HEX to RGB Converter - Flixo",
+    "description": "HEX to RGB Converter. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/hex-to-rgb-converter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free HEX to RGB Converter - Flixo",
+    "description": "HEX to RGB Converter. Free online image tools. Edit, enhance, and transform images directly in your browser."
+  }
+}

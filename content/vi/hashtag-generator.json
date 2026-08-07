@@ -1,0 +1,148 @@
+{
+  "id": "hashtag-generator",
+  "slug": "hashtag-generator",
+  "locale": "vi",
+  "toolName": "Hashtag Generator",
+  "englishName": "Hashtag Generator",
+  "title": "Hashtag Generator",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Hashtag Generator. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Hashtag Generator Online - Write Better | Flixo",
+  "metaDescription": "Hashtag Generator. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Hashtag Generator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Hashtag Generator"
+  ],
+  "canonical": "/tools/hashtag-generator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/hashtag-generator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/hashtag-generator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/hashtag-generator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/hashtag-generator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/hashtag-generator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/hashtag-generator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/hashtag-generator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/hashtag-generator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/hashtag-generator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/hashtag-generator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/hashtag-generator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/hashtag-generator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/hashtag-generator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/hashtag-generator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/hashtag-generator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/hashtag-generator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/hashtag-generator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/hashtag-generator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/hashtag-generator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/hashtag-generator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Hashtag Generator",
+    "description": "Hashtag Generator. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/hashtag-generator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "vi"
+  },
+  "openGraph": {
+    "title": "Free Hashtag Generator - Flixo",
+    "description": "Hashtag Generator. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/hashtag-generator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Hashtag Generator - Flixo",
+    "description": "Hashtag Generator. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

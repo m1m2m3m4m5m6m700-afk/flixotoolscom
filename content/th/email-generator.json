@@ -1,0 +1,148 @@
+{
+  "id": "email-generator",
+  "slug": "email-generator",
+  "locale": "th",
+  "toolName": "Email Generator",
+  "englishName": "Email Generator",
+  "title": "Email Generator",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Email Generator. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Email Generator Online - Write Better | Flixo",
+  "metaDescription": "Email Generator. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Email Generator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Email Generator"
+  ],
+  "canonical": "/tools/email-generator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/email-generator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/email-generator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/email-generator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/email-generator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/email-generator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/email-generator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/email-generator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/email-generator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/email-generator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/email-generator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/email-generator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/email-generator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/email-generator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/email-generator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/email-generator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/email-generator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/email-generator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/email-generator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/email-generator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/email-generator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Email Generator",
+    "description": "Email Generator. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/email-generator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "th"
+  },
+  "openGraph": {
+    "title": "Free Email Generator - Flixo",
+    "description": "Email Generator. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/email-generator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Email Generator - Flixo",
+    "description": "Email Generator. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "id": "blur-image",
+  "slug": "blur-image",
+  "locale": "zh-CN",
+  "toolName": "Blur Image",
+  "englishName": "Blur Image",
+  "title": "Blur Image",
+  "tagline": "Transform and enhance images with powerful AI tools.",
+  "description": "Blur Image. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+  "shortDescription": "Transform and enhance images with powerful AI tools.",
+  "metaTitle": "Free Blur Image Online - AI-Powered Image Editing | Flixo",
+  "metaDescription": "Blur Image. Free online image tools. Enhance, resize, compress, and edit images with AI. No signup required, works in browser.",
+  "keywords": [
+    "image tools",
+    "photo editor",
+    "image enhancer",
+    "image compressor",
+    "image tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Blur Image free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Blur Image"
+  ],
+  "canonical": "/tools/blur-image",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/blur-image"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/blur-image"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/blur-image"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/blur-image"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/blur-image"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/blur-image"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/blur-image"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/blur-image"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/blur-image"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/blur-image"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/blur-image"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/blur-image"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/blur-image"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/blur-image"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/blur-image"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/blur-image"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/blur-image"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/blur-image"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/blur-image"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/blur-image"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Blur Image",
+    "description": "Blur Image. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/blur-image",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "zh-CN"
+  },
+  "openGraph": {
+    "title": "Free Blur Image - Flixo",
+    "description": "Blur Image. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/blur-image",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Blur Image - Flixo",
+    "description": "Blur Image. Free online image tools. Edit, enhance, and transform images directly in your browser."
+  }
+}

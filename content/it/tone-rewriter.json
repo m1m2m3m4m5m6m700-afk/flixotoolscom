@@ -1,0 +1,148 @@
+{
+  "id": "tone-rewriter",
+  "slug": "tone-rewriter",
+  "locale": "it",
+  "toolName": "Tone Rewriter",
+  "englishName": "Tone Rewriter",
+  "title": "Tone Rewriter",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Tone Rewriter. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Tone Rewriter Online - Write Better | Flixo",
+  "metaDescription": "Tone Rewriter. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Tone Rewriter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Tone Rewriter"
+  ],
+  "canonical": "/tools/tone-rewriter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/tone-rewriter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/tone-rewriter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/tone-rewriter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/tone-rewriter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/tone-rewriter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/tone-rewriter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/tone-rewriter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/tone-rewriter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/tone-rewriter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/tone-rewriter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/tone-rewriter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/tone-rewriter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/tone-rewriter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/tone-rewriter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/tone-rewriter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/tone-rewriter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/tone-rewriter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/tone-rewriter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/tone-rewriter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/tone-rewriter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Tone Rewriter",
+    "description": "Tone Rewriter. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/tone-rewriter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "it"
+  },
+  "openGraph": {
+    "title": "Free Tone Rewriter - Flixo",
+    "description": "Tone Rewriter. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/tone-rewriter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Tone Rewriter - Flixo",
+    "description": "Tone Rewriter. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /**
  * Automated Content Generator for Flixo
- * 
+ *
  * Generates localized content for all 20 languages and all tools.
- * 
+ *
  * Usage:
  *   node src/scripts/generate-localized-content.mjs
  *   node src/scripts/generate-localized-content.mjs --tool password-generator
@@ -61,14 +61,31 @@ const TOOL_DESCRIPTIONS = {
   generator: {
     en: {
       tagline: "Generate secure passwords instantly with customizable options.",
-      description: "A free online password generator that helps you create strong, secure passwords instantly. No signup required, works in your browser.",
+      description:
+        "A free online password generator that helps you create strong, secure passwords instantly. No signup required, works in your browser.",
       metaTitle: "Free Password Generator Online - Generate Secure Passwords Instantly | Flixo",
-      metaDescription: "Use our free password generator tool. Create strong, secure passwords with customizable options. No signup, no fees, instant results.",
-      keywords: ["password generator", "free password generator", "secure password", "random password", "password creator"],
+      metaDescription:
+        "Use our free password generator tool. Create strong, secure passwords with customizable options. No signup, no fees, instant results.",
+      keywords: [
+        "password generator",
+        "free password generator",
+        "secure password",
+        "random password",
+        "password creator",
+      ],
       faq: [
-        { q: "Is this password generator free?", a: "Yes, our password generator is completely free to use with no signup required." },
-        { q: "Is the generated password secure?", a: "Yes, our tool generates cryptographically secure passwords using modern algorithms." },
-        { q: "Can I customize the password?", a: "Yes, you can customize length, characters, and other options." },
+        {
+          q: "Is this password generator free?",
+          a: "Yes, our password generator is completely free to use with no signup required.",
+        },
+        {
+          q: "Is the generated password secure?",
+          a: "Yes, our tool generates cryptographically secure passwords using modern algorithms.",
+        },
+        {
+          q: "Can I customize the password?",
+          a: "Yes, you can customize length, characters, and other options.",
+        },
       ],
       breadcrumb: ["Home", "Tools", "Utility Tools", "Password Generator"],
     },
@@ -76,14 +93,28 @@ const TOOL_DESCRIPTIONS = {
   encoder: {
     en: {
       tagline: "Encode and decode data quickly and accurately.",
-      description: "A free online encoder tool that lets you encode and decode data instantly. No server upload, your data stays private.",
+      description:
+        "A free online encoder tool that lets you encode and decode data instantly. No server upload, your data stays private.",
       metaTitle: "Free Base64 Encoder Online - Encode/Decode Instantly | Flixo",
-      metaDescription: "Use our free encoder tool. Encode or decode data instantly. No signup, no upload, 100% private.",
-      keywords: ["base64 encoder", "encode base64", "decode base64", "free encoder", "online encoder"],
+      metaDescription:
+        "Use our free encoder tool. Encode or decode data instantly. No signup, no upload, 100% private.",
+      keywords: [
+        "base64 encoder",
+        "encode base64",
+        "decode base64",
+        "free encoder",
+        "online encoder",
+      ],
       faq: [
-        { q: "Is my data secure?", a: "Yes, all encoding happens in your browser. Your data never leaves your device." },
+        {
+          q: "Is my data secure?",
+          a: "Yes, all encoding happens in your browser. Your data never leaves your device.",
+        },
         { q: "Is this encoder free?", a: "Yes, completely free with no signup required." },
-        { q: "Can I decode data back?", a: "Yes, use the decode function to reverse the encoding." },
+        {
+          q: "Can I decode data back?",
+          a: "Yes, use the decode function to reverse the encoding.",
+        },
       ],
       breadcrumb: ["Home", "Tools", "Utility Tools", "Base64 Encoder"],
     },
@@ -91,12 +122,23 @@ const TOOL_DESCRIPTIONS = {
   formatter: {
     en: {
       tagline: "Format and validate data with syntax highlighting.",
-      description: "A free online formatter tool that formats, validates, and pretty-prints data. Instant validation with error detection.",
+      description:
+        "A free online formatter tool that formats, validates, and pretty-prints data. Instant validation with error detection.",
       metaTitle: "Free JSON Formatter Online - Format & Validate Instantly | Flixo",
-      metaDescription: "Use our free JSON formatter tool. Format, validate, and beautify JSON. Instant validation, error detection, no signup.",
-      keywords: ["json formatter", "format json", "validate json", "pretty print json", "json beautifier"],
+      metaDescription:
+        "Use our free JSON formatter tool. Format, validate, and beautify JSON. Instant validation, error detection, no signup.",
+      keywords: [
+        "json formatter",
+        "format json",
+        "validate json",
+        "pretty print json",
+        "json beautifier",
+      ],
       faq: [
-        { q: "Does this validate JSON?", a: "Yes, it validates your JSON and highlights any errors." },
+        {
+          q: "Does this validate JSON?",
+          a: "Yes, it validates your JSON and highlights any errors.",
+        },
         { q: "Can I minify JSON?", a: "Yes, use the minify option to compress JSON." },
         { q: "Is my data uploaded?", a: "No, all processing happens locally in your browser." },
       ],
@@ -106,12 +148,23 @@ const TOOL_DESCRIPTIONS = {
   converter: {
     en: {
       tagline: "Convert between different formats quickly and accurately.",
-      description: "A free online converter tool that converts data between different formats. Fast, accurate, and works entirely in your browser.",
+      description:
+        "A free online converter tool that converts data between different formats. Fast, accurate, and works entirely in your browser.",
       metaTitle: "Free Unit Converter Online - Convert Units Instantly | Flixo",
-      metaDescription: "Use our free unit converter tool. Convert between units instantly with high accuracy. No signup, no upload, works offline.",
-      keywords: ["unit converter", "convert units", "measurement converter", "free converter", "online converter"],
+      metaDescription:
+        "Use our free unit converter tool. Convert between units instantly with high accuracy. No signup, no upload, works offline.",
+      keywords: [
+        "unit converter",
+        "convert units",
+        "measurement converter",
+        "free converter",
+        "online converter",
+      ],
       faq: [
-        { q: "What formats are supported?", a: "We support all major formats. Check the tool for full list." },
+        {
+          q: "What formats are supported?",
+          a: "We support all major formats. Check the tool for full list.",
+        },
         { q: "Is this converter free?", a: "Yes, completely free with no signup required." },
         { q: "Is my data secure?", a: "Yes, all conversions happen locally in your browser." },
       ],
@@ -349,9 +402,20 @@ const TOOL_NAME_TRANSLATIONS = {
  */
 function generateToolContent(slug, type, targetLang) {
   const template = TOOL_DESCRIPTIONS[type]?.en || TOOL_DESCRIPTIONS.generator.en;
-  const translatedName = TOOL_NAME_TRANSLATIONS[slug]?.[targetLang] || TOOL_NAME_TRANSLATIONS[slug]?.en || slug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-  const englishName = TOOL_NAME_TRANSLATIONS[slug]?.en || slug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-  
+  const translatedName =
+    TOOL_NAME_TRANSLATIONS[slug]?.[targetLang] ||
+    TOOL_NAME_TRANSLATIONS[slug]?.en ||
+    slug
+      .split("-")
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(" ");
+  const englishName =
+    TOOL_NAME_TRANSLATIONS[slug]?.en ||
+    slug
+      .split("-")
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(" ");
+
   // Generate localized content
   const localizedContent = {
     slug,
@@ -360,17 +424,25 @@ function generateToolContent(slug, type, targetLang) {
     englishName: englishName,
     title: translatedName,
     tagline: template.tagline.replace(/{toolNameLower}/g, englishName.toLowerCase()),
-    description: template.description.replace(/{toolName}/g, translatedName).replace(/{toolNameLower}/g, englishName.toLowerCase()),
-    metaTitle: template.metaTitle.replace(/{toolName}/g, translatedName).replace(/{toolNameLower}/g, englishName.toLowerCase()),
-    metaDescription: template.metaDescription.replace(/{toolName}/g, translatedName).replace(/{toolNameLower}/g, englishName.toLowerCase()),
-    keywords: template.keywords.map(k => k.replace(/{toolNameLower}/g, englishName.toLowerCase())),
-    faq: template.faq.map(item => ({
+    description: template.description
+      .replace(/{toolName}/g, translatedName)
+      .replace(/{toolNameLower}/g, englishName.toLowerCase()),
+    metaTitle: template.metaTitle
+      .replace(/{toolName}/g, translatedName)
+      .replace(/{toolNameLower}/g, englishName.toLowerCase()),
+    metaDescription: template.metaDescription
+      .replace(/{toolName}/g, translatedName)
+      .replace(/{toolNameLower}/g, englishName.toLowerCase()),
+    keywords: template.keywords.map((k) =>
+      k.replace(/{toolNameLower}/g, englishName.toLowerCase()),
+    ),
+    faq: template.faq.map((item) => ({
       q: item.q.replace(/{toolNameLower}/g, englishName.toLowerCase()),
       a: item.a.replace(/{toolNameLower}/g, englishName.toLowerCase()),
     })),
-    breadcrumb: template.breadcrumb.map(b => b.replace(/{toolName}/g, translatedName)),
+    breadcrumb: template.breadcrumb.map((b) => b.replace(/{toolName}/g, translatedName)),
     canonical: `/tools/${slug}`,
-    hreflangs: LANGUAGES.map(l => ({
+    hreflangs: LANGUAGES.map((l) => ({
       lang: l.code,
       url: `/${l.code}/tools/${slug}`,
     })),
@@ -378,7 +450,9 @@ function generateToolContent(slug, type, targetLang) {
       "@context": "https://schema.org",
       "@type": "WebApplication",
       name: translatedName,
-      description: template.description.replace(/{toolName}/g, translatedName).replace(/{toolNameLower}/g, englishName.toLowerCase()),
+      description: template.description
+        .replace(/{toolName}/g, translatedName)
+        .replace(/{toolNameLower}/g, englishName.toLowerCase()),
       url: `https://flixotools.com/tools/${slug}`,
       applicationCategory: "UtilityApplication",
       operatingSystem: "Any",
@@ -390,18 +464,26 @@ function generateToolContent(slug, type, targetLang) {
       inLanguage: targetLang,
     },
     openGraph: {
-      title: template.metaTitle.replace(/{toolName}/g, translatedName).replace(/{toolNameLower}/g, englishName.toLowerCase()),
-      description: template.metaDescription.replace(/{toolName}/g, translatedName).replace(/{toolNameLower}/g, englishName.toLowerCase()),
+      title: template.metaTitle
+        .replace(/{toolName}/g, translatedName)
+        .replace(/{toolNameLower}/g, englishName.toLowerCase()),
+      description: template.metaDescription
+        .replace(/{toolName}/g, translatedName)
+        .replace(/{toolNameLower}/g, englishName.toLowerCase()),
       url: `https://flixotools.com/tools/${slug}`,
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: template.metaTitle.replace(/{toolName}/g, translatedName).replace(/{toolNameLower}/g, englishName.toLowerCase()),
-      description: template.metaDescription.replace(/{toolName}/g, translatedName).replace(/{toolNameLower}/g, englishName.toLowerCase()),
+      title: template.metaTitle
+        .replace(/{toolName}/g, translatedName)
+        .replace(/{toolNameLower}/g, englishName.toLowerCase()),
+      description: template.metaDescription
+        .replace(/{toolName}/g, translatedName)
+        .replace(/{toolNameLower}/g, englishName.toLowerCase()),
     },
   };
-  
+
   return localizedContent;
 }
 
@@ -410,20 +492,20 @@ function generateToolContent(slug, type, targetLang) {
  */
 function generateSitemapEntries(slug) {
   const entries = [];
-  
+
   for (const lang of LANGUAGES) {
     entries.push({
       loc: `https://flixotools.com/${lang.code}/tools/${slug}`,
       lastmod: new Date().toISOString().split("T")[0],
       changefreq: "weekly",
       priority: 0.8,
-      hreflang: LANGUAGES.map(l => ({
+      hreflang: LANGUAGES.map((l) => ({
         lang: l.code,
         href: `https://flixotools.com/${l.code}/tools/${slug}`,
       })),
     });
   }
-  
+
   return entries;
 }
 
@@ -431,12 +513,16 @@ function generateSitemapEntries(slug) {
  * Generate hreflang tags for a tool
  */
 function generateHreflangTags(slug) {
-  const tags = [`<link rel="alternate" hreflang="x-default" href="https://flixotools.com/tools/${slug}" />`];
-  
+  const tags = [
+    `<link rel="alternate" hreflang="x-default" href="https://flixotools.com/tools/${slug}" />`,
+  ];
+
   for (const lang of LANGUAGES) {
-    tags.push(`<link rel="alternate" hreflang="${lang.code}" href="https://flixotools.com/${lang.code}/tools/${slug}" />`);
+    tags.push(
+      `<link rel="alternate" hreflang="${lang.code}" href="https://flixotools.com/${lang.code}/tools/${slug}" />`,
+    );
   }
-  
+
   return tags.join("\n");
 }
 
@@ -444,35 +530,39 @@ function generateHreflangTags(slug) {
  * Main generation function
  */
 async function generateAllContent(options = {}) {
-  const { tools = SAMPLE_TOOLS, languages = LANGUAGES, outputDir = path.join(ROOT, "content") } = options;
-  
+  const {
+    tools = SAMPLE_TOOLS,
+    languages = LANGUAGES,
+    outputDir = path.join(ROOT, "content"),
+  } = options;
+
   console.log("🚀 Starting content generation...\n");
   console.log(`📁 Output directory: ${outputDir}`);
   console.log(`🌍 Languages: ${languages.length}`);
   console.log(`🛠️  Tools: ${tools.length}\n`);
-  
+
   const stats = {
     files: 0,
     tools: 0,
     languages: 0,
     errors: [],
   };
-  
+
   // Generate content for each tool and language
   for (const tool of tools) {
     for (const lang of languages) {
       try {
         const content = generateToolContent(tool.slug, tool.type, lang.code);
-        
+
         // Create output path
         const outputPath = path.join(outputDir, lang.code, `${tool.slug}.json`);
-        
+
         // Ensure directory exists
         fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-        
+
         // Write content
         fs.writeFileSync(outputPath, JSON.stringify(content, null, 2));
-        
+
         stats.files++;
       } catch (error) {
         stats.errors.push({ tool: tool.slug, lang: lang.code, error: error.message });
@@ -480,41 +570,41 @@ async function generateAllContent(options = {}) {
     }
     stats.tools++;
   }
-  
+
   // Generate sitemap entries
   console.log("\n📋 Generating sitemap entries...");
   const sitemapEntries = [];
   for (const tool of tools) {
     sitemapEntries.push(...generateSitemapEntries(tool.slug));
   }
-  
+
   // Write sitemap
   const sitemapPath = path.join(outputDir, "sitemap.json");
   fs.writeFileSync(sitemapPath, JSON.stringify(sitemapEntries, null, 2));
-  
+
   // Generate hreflang tags for each tool
   console.log("🏷️  Generating hreflang tags...");
   const hreflangMap = {};
   for (const tool of tools) {
     hreflangMap[tool.slug] = generateHreflangTags(tool.slug);
   }
-  
+
   const hreflangPath = path.join(outputDir, "hreflangs.json");
   fs.writeFileSync(hreflangPath, JSON.stringify(hreflangMap, null, 2));
-  
+
   // Print summary
   console.log("\n✅ Generation complete!");
   console.log(`📊 Files created: ${stats.files}`);
   console.log(`🛠️  Tools processed: ${stats.tools}`);
   console.log(`🌍 Languages covered: ${languages.length}`);
-  
+
   if (stats.errors.length > 0) {
     console.log(`\n⚠️  Errors: ${stats.errors.length}`);
     for (const err of stats.errors) {
       console.log(`  - ${err.tool} (${err.lang}): ${err.error}`);
     }
   }
-  
+
   return stats;
 }
 

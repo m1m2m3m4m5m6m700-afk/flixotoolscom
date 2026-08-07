@@ -1,0 +1,148 @@
+{
+  "id": "extract-audio",
+  "slug": "extract-audio",
+  "locale": "pl",
+  "toolName": "Extract Audio",
+  "englishName": "Extract Audio",
+  "title": "Extract Audio",
+  "tagline": "Process and edit video files with powerful tools.",
+  "description": "Extract Audio. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+  "shortDescription": "Process and edit video files with powerful tools.",
+  "metaTitle": "Free Extract Audio Online - Compress & Convert Videos | Flixo",
+  "metaDescription": "Extract Audio. Free online video tools. Compress, convert, and edit videos. No signup, no upload, works in browser.",
+  "keywords": [
+    "video tools",
+    "video compressor",
+    "video converter",
+    "video tools",
+    "online video editor"
+  ],
+  "faq": [
+    {
+      "q": "Is Extract Audio free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Extract Audio"
+  ],
+  "canonical": "/tools/extract-audio",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/extract-audio"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/extract-audio"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/extract-audio"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/extract-audio"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/extract-audio"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/extract-audio"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/extract-audio"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/extract-audio"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/extract-audio"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/extract-audio"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/extract-audio"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/extract-audio"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/extract-audio"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/extract-audio"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/extract-audio"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/extract-audio"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/extract-audio"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/extract-audio"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/extract-audio"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/extract-audio"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Extract Audio",
+    "description": "Extract Audio. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+    "url": "https://flixotools.com/tools/extract-audio",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pl"
+  },
+  "openGraph": {
+    "title": "Free Extract Audio - Flixo",
+    "description": "Extract Audio. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+    "url": "https://flixotools.com/tools/extract-audio",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Extract Audio - Flixo",
+    "description": "Extract Audio. Free online video tools. Compress, convert, and enhance videos directly in browser."
+  }
+}

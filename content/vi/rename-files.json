@@ -1,0 +1,147 @@
+{
+  "id": "rename-files",
+  "slug": "rename-files",
+  "locale": "vi",
+  "toolName": "Rename Files",
+  "englishName": "Rename Files",
+  "title": "Rename Files",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Rename Files. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Rename Files Online - Fast & Easy | Flixo",
+  "metaDescription": "Rename Files. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Rename Files free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Rename Files"
+  ],
+  "canonical": "/tools/rename-files",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/rename-files"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/rename-files"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/rename-files"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/rename-files"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/rename-files"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/rename-files"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/rename-files"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/rename-files"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/rename-files"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/rename-files"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/rename-files"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/rename-files"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/rename-files"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/rename-files"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/rename-files"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/rename-files"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/rename-files"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/rename-files"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/rename-files"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/rename-files"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Rename Files",
+    "description": "Rename Files. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/rename-files",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "vi"
+  },
+  "openGraph": {
+    "title": "Free Rename Files - Flixo",
+    "description": "Rename Files. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/rename-files",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Rename Files - Flixo",
+    "description": "Rename Files. Free online tool that helps you get things done quickly and easily."
+  }
+}

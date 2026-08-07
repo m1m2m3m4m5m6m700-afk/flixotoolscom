@@ -1,0 +1,148 @@
+{
+  "id": "number-speller",
+  "slug": "number-speller",
+  "locale": "th",
+  "toolName": "Number Speller",
+  "englishName": "Number Speller",
+  "title": "Number Speller",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Number Speller. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Number Speller Online - Write Better | Flixo",
+  "metaDescription": "Number Speller. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Number Speller free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Number Speller"
+  ],
+  "canonical": "/tools/number-speller",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/number-speller"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/number-speller"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/number-speller"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/number-speller"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/number-speller"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/number-speller"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/number-speller"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/number-speller"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/number-speller"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/number-speller"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/number-speller"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/number-speller"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/number-speller"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/number-speller"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/number-speller"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/number-speller"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/number-speller"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/number-speller"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/number-speller"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/number-speller"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Number Speller",
+    "description": "Number Speller. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/number-speller",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "th"
+  },
+  "openGraph": {
+    "title": "Free Number Speller - Flixo",
+    "description": "Number Speller. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/number-speller",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Number Speller - Flixo",
+    "description": "Number Speller. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

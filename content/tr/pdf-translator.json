@@ -1,0 +1,149 @@
+{
+  "id": "pdf-translator",
+  "slug": "pdf-translator",
+  "locale": "tr",
+  "toolName": "PDF çevirmeni",
+  "englishName": "PDF Translator",
+  "title": "PDF çevirmeni",
+  "tagline": "Translate text between languages instantly with AI-powered accuracy.",
+  "description": "PDF çevirmeni. Free online translation tool powered by AI. Translate text accurately and quickly.",
+  "shortDescription": "Translate text between languages instantly with AI-powered accuracy.",
+  "metaTitle": "Free PDF çevirmeni Online - Translate Text Instantly | Flixo",
+  "metaDescription": "PDF çevirmeni. Use our free AI translator. Translate text between 100+ languages instantly. No signup, no fees, accurate results.",
+  "keywords": [
+    "translator",
+    "translation",
+    "ai translator",
+    "translator",
+    "online translator",
+    "text translation"
+  ],
+  "faq": [
+    {
+      "q": "Is PDF çevirmeni free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "PDF Translator"
+  ],
+  "canonical": "/tools/pdf-translator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/pdf-translator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/pdf-translator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/pdf-translator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/pdf-translator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/pdf-translator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/pdf-translator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/pdf-translator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/pdf-translator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/pdf-translator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/pdf-translator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/pdf-translator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/pdf-translator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/pdf-translator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/pdf-translator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/pdf-translator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/pdf-translator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/pdf-translator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/pdf-translator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/pdf-translator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/pdf-translator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "PDF çevirmeni",
+    "description": "PDF çevirmeni. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/pdf-translator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "tr"
+  },
+  "openGraph": {
+    "title": "Free PDF çevirmeni - Flixo",
+    "description": "PDF çevirmeni. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/pdf-translator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free PDF çevirmeni - Flixo",
+    "description": "PDF çevirmeni. Free online translation tool powered by AI. Translate text accurately and quickly."
+  }
+}

@@ -94,8 +94,6 @@ const categorySubcategory = (tool: Tool): string => {
       return "Calculators";
     case "web":
       return "Web Utilities";
-    case "chrome":
-      return "Browser Extensions";
     case "developer":
       return "Developer Tools";
     case "ai":
@@ -180,7 +178,6 @@ const difficultyScore = (tool: Tool): number => {
     case "pdf":
     case "audio":
     case "web":
-    case "chrome":
       return 3;
     default:
       return 2;

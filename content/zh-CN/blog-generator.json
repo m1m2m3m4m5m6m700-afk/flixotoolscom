@@ -1,0 +1,148 @@
+{
+  "id": "blog-generator",
+  "slug": "blog-generator",
+  "locale": "zh-CN",
+  "toolName": "Blog Generator",
+  "englishName": "Blog Generator",
+  "title": "Blog Generator",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Blog Generator. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Blog Generator Online - Write Better | Flixo",
+  "metaDescription": "Blog Generator. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Blog Generator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Blog Generator"
+  ],
+  "canonical": "/tools/blog-generator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/blog-generator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/blog-generator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/blog-generator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/blog-generator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/blog-generator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/blog-generator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/blog-generator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/blog-generator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/blog-generator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/blog-generator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/blog-generator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/blog-generator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/blog-generator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/blog-generator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/blog-generator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/blog-generator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/blog-generator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/blog-generator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/blog-generator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/blog-generator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Blog Generator",
+    "description": "Blog Generator. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/blog-generator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "zh-CN"
+  },
+  "openGraph": {
+    "title": "Free Blog Generator - Flixo",
+    "description": "Blog Generator. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/blog-generator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Blog Generator - Flixo",
+    "description": "Blog Generator. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "json-path-tester",
+  "slug": "json-path-tester",
+  "locale": "th",
+  "toolName": "JSONPath Tester",
+  "englishName": "JSONPath Tester",
+  "title": "JSONPath Tester",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "JSONPath Tester. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free JSONPath Tester Online - Fast & Easy | Flixo",
+  "metaDescription": "JSONPath Tester. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is JSONPath Tester free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "JSONPath Tester"
+  ],
+  "canonical": "/tools/json-path-tester",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/json-path-tester"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/json-path-tester"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/json-path-tester"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/json-path-tester"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/json-path-tester"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/json-path-tester"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/json-path-tester"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/json-path-tester"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/json-path-tester"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/json-path-tester"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/json-path-tester"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/json-path-tester"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/json-path-tester"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/json-path-tester"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/json-path-tester"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/json-path-tester"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/json-path-tester"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/json-path-tester"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/json-path-tester"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/json-path-tester"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "JSONPath Tester",
+    "description": "JSONPath Tester. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/json-path-tester",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "th"
+  },
+  "openGraph": {
+    "title": "Free JSONPath Tester - Flixo",
+    "description": "JSONPath Tester. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/json-path-tester",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free JSONPath Tester - Flixo",
+    "description": "JSONPath Tester. Free online tool that helps you get things done quickly and easily."
+  }
+}

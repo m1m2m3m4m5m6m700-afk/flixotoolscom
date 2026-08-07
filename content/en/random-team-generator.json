@@ -1,0 +1,147 @@
+{
+  "id": "random-team-generator",
+  "slug": "random-team-generator",
+  "locale": "en",
+  "toolName": "Random Team Generator",
+  "englishName": "Random Team Generator",
+  "title": "Random Team Generator",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Random Team Generator. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Random Team Generator Online - Fast & Easy | Flixo",
+  "metaDescription": "Random Team Generator. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Random Team Generator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Random Team Generator"
+  ],
+  "canonical": "/tools/random-team-generator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/random-team-generator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/random-team-generator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/random-team-generator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/random-team-generator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/random-team-generator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/random-team-generator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/random-team-generator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/random-team-generator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/random-team-generator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/random-team-generator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/random-team-generator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/random-team-generator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/random-team-generator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/random-team-generator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/random-team-generator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/random-team-generator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/random-team-generator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/random-team-generator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/random-team-generator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/random-team-generator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Random Team Generator",
+    "description": "Random Team Generator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/random-team-generator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "en"
+  },
+  "openGraph": {
+    "title": "Free Random Team Generator - Flixo",
+    "description": "Random Team Generator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/random-team-generator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Random Team Generator - Flixo",
+    "description": "Random Team Generator. Free online tool that helps you get things done quickly and easily."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "id": "mp3-converter",
+  "slug": "mp3-converter",
+  "locale": "pl",
+  "toolName": "MP3 Converter",
+  "englishName": "MP3 Converter",
+  "title": "MP3 Converter",
+  "tagline": "Process audio files with powerful tools.",
+  "description": "MP3 Converter. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+  "shortDescription": "Process audio files with powerful tools.",
+  "metaTitle": "Free MP3 Converter Online - Convert & Edit Audio | Flixo",
+  "metaDescription": "MP3 Converter. Free online audio tools. Convert audio formats, compress files, and more. No signup, works in browser.",
+  "keywords": [
+    "audio tools",
+    "audio converter",
+    "audio compressor",
+    "audio tools",
+    "online audio editor"
+  ],
+  "faq": [
+    {
+      "q": "Is MP3 Converter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "MP3 Converter"
+  ],
+  "canonical": "/tools/mp3-converter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/mp3-converter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/mp3-converter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/mp3-converter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/mp3-converter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/mp3-converter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/mp3-converter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/mp3-converter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/mp3-converter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/mp3-converter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/mp3-converter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/mp3-converter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/mp3-converter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/mp3-converter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/mp3-converter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/mp3-converter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/mp3-converter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/mp3-converter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/mp3-converter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/mp3-converter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/mp3-converter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "MP3 Converter",
+    "description": "MP3 Converter. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+    "url": "https://flixotools.com/tools/mp3-converter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pl"
+  },
+  "openGraph": {
+    "title": "Free MP3 Converter - Flixo",
+    "description": "MP3 Converter. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+    "url": "https://flixotools.com/tools/mp3-converter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free MP3 Converter - Flixo",
+    "description": "MP3 Converter. Free online audio tools. Convert, compress, and enhance audio directly in browser."
+  }
+}

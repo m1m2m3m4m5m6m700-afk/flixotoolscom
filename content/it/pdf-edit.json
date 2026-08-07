@@ -1,0 +1,148 @@
+{
+  "id": "pdf-edit",
+  "slug": "pdf-edit",
+  "locale": "it",
+  "toolName": "Edit PDF",
+  "englishName": "Edit PDF",
+  "title": "Edit PDF",
+  "tagline": "Manage PDF documents with ease. Merge, split, convert, and more.",
+  "description": "Edit PDF. Free online PDF tools. Work with PDF documents directly in your browser.",
+  "shortDescription": "Manage PDF documents with ease. Merge, split, convert, and more.",
+  "metaTitle": "Free Edit PDF Online - Merge, Split, Convert PDFs | Flixo",
+  "metaDescription": "Edit PDF. Free online PDF tools. Merge, split, compress, convert, and edit PDFs. No signup, no fees, works in browser.",
+  "keywords": [
+    "pdf tools",
+    "pdf merger",
+    "pdf splitter",
+    "pdf converter",
+    "pdf tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Edit PDF free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Edit PDF"
+  ],
+  "canonical": "/tools/pdf-edit",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/pdf-edit"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/pdf-edit"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/pdf-edit"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/pdf-edit"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/pdf-edit"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/pdf-edit"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/pdf-edit"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/pdf-edit"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/pdf-edit"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/pdf-edit"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/pdf-edit"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/pdf-edit"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/pdf-edit"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/pdf-edit"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/pdf-edit"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/pdf-edit"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/pdf-edit"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/pdf-edit"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/pdf-edit"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/pdf-edit"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Edit PDF",
+    "description": "Edit PDF. Free online PDF tools. Work with PDF documents directly in your browser.",
+    "url": "https://flixotools.com/tools/pdf-edit",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "it"
+  },
+  "openGraph": {
+    "title": "Free Edit PDF - Flixo",
+    "description": "Edit PDF. Free online PDF tools. Work with PDF documents directly in your browser.",
+    "url": "https://flixotools.com/tools/pdf-edit",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Edit PDF - Flixo",
+    "description": "Edit PDF. Free online PDF tools. Work with PDF documents directly in your browser."
+  }
+}

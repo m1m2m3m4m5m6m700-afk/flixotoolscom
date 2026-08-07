@@ -1,0 +1,149 @@
+{
+  "id": "docx-translator",
+  "slug": "docx-translator",
+  "locale": "ru",
+  "toolName": "DOCX Translator",
+  "englishName": "DOCX Translator",
+  "title": "DOCX Translator",
+  "tagline": "Translate text between languages instantly with AI-powered accuracy.",
+  "description": "DOCX Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+  "shortDescription": "Translate text between languages instantly with AI-powered accuracy.",
+  "metaTitle": "Free DOCX Translator Online - Translate Text Instantly | Flixo",
+  "metaDescription": "DOCX Translator. Use our free AI translator. Translate text between 100+ languages instantly. No signup, no fees, accurate results.",
+  "keywords": [
+    "translator",
+    "translation",
+    "ai translator",
+    "translator",
+    "online translator",
+    "text translation"
+  ],
+  "faq": [
+    {
+      "q": "Is DOCX Translator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "DOCX Translator"
+  ],
+  "canonical": "/tools/docx-translator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/docx-translator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/docx-translator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/docx-translator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/docx-translator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/docx-translator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/docx-translator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/docx-translator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/docx-translator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/docx-translator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/docx-translator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/docx-translator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/docx-translator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/docx-translator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/docx-translator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/docx-translator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/docx-translator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/docx-translator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/docx-translator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/docx-translator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/docx-translator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "DOCX Translator",
+    "description": "DOCX Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/docx-translator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ru"
+  },
+  "openGraph": {
+    "title": "Free DOCX Translator - Flixo",
+    "description": "DOCX Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/docx-translator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free DOCX Translator - Flixo",
+    "description": "DOCX Translator. Free online translation tool powered by AI. Translate text accurately and quickly."
+  }
+}

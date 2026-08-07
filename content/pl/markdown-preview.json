@@ -1,0 +1,148 @@
+{
+  "id": "markdown-preview",
+  "slug": "markdown-preview",
+  "locale": "pl",
+  "toolName": "Markdown Preview",
+  "englishName": "Markdown Preview",
+  "title": "Markdown Preview",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Markdown Preview. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Markdown Preview Online - Write Better | Flixo",
+  "metaDescription": "Markdown Preview. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Markdown Preview free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Markdown Preview"
+  ],
+  "canonical": "/tools/markdown-preview",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/markdown-preview"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/markdown-preview"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/markdown-preview"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/markdown-preview"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/markdown-preview"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/markdown-preview"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/markdown-preview"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/markdown-preview"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/markdown-preview"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/markdown-preview"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/markdown-preview"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/markdown-preview"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/markdown-preview"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/markdown-preview"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/markdown-preview"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/markdown-preview"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/markdown-preview"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/markdown-preview"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/markdown-preview"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/markdown-preview"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Markdown Preview",
+    "description": "Markdown Preview. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/markdown-preview",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pl"
+  },
+  "openGraph": {
+    "title": "Free Markdown Preview - Flixo",
+    "description": "Markdown Preview. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/markdown-preview",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Markdown Preview - Flixo",
+    "description": "Markdown Preview. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "id": "subtitle-translator",
+  "slug": "subtitle-translator",
+  "locale": "pl",
+  "toolName": "Subtitle Translator",
+  "englishName": "Subtitle Translator",
+  "title": "Subtitle Translator",
+  "tagline": "Translate text between languages instantly with AI-powered accuracy.",
+  "description": "Subtitle Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+  "shortDescription": "Translate text between languages instantly with AI-powered accuracy.",
+  "metaTitle": "Free Subtitle Translator Online - Translate Text Instantly | Flixo",
+  "metaDescription": "Subtitle Translator. Use our free AI translator. Translate text between 100+ languages instantly. No signup, no fees, accurate results.",
+  "keywords": [
+    "translator",
+    "translation",
+    "ai translator",
+    "translator",
+    "online translator",
+    "text translation"
+  ],
+  "faq": [
+    {
+      "q": "Is Subtitle Translator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Subtitle Translator"
+  ],
+  "canonical": "/tools/subtitle-translator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/subtitle-translator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/subtitle-translator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/subtitle-translator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/subtitle-translator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/subtitle-translator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/subtitle-translator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/subtitle-translator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/subtitle-translator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/subtitle-translator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/subtitle-translator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/subtitle-translator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/subtitle-translator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/subtitle-translator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/subtitle-translator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/subtitle-translator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/subtitle-translator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/subtitle-translator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/subtitle-translator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/subtitle-translator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/subtitle-translator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Subtitle Translator",
+    "description": "Subtitle Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/subtitle-translator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pl"
+  },
+  "openGraph": {
+    "title": "Free Subtitle Translator - Flixo",
+    "description": "Subtitle Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/subtitle-translator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Subtitle Translator - Flixo",
+    "description": "Subtitle Translator. Free online translation tool powered by AI. Translate text accurately and quickly."
+  }
+}

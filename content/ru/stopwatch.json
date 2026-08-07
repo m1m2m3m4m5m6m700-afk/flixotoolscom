@@ -1,0 +1,147 @@
+{
+  "id": "stopwatch",
+  "slug": "stopwatch",
+  "locale": "ru",
+  "toolName": "Stopwatch",
+  "englishName": "Stopwatch",
+  "title": "Stopwatch",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Stopwatch. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Stopwatch Online - Fast & Easy | Flixo",
+  "metaDescription": "Stopwatch. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Stopwatch free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Stopwatch"
+  ],
+  "canonical": "/tools/stopwatch",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/stopwatch"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/stopwatch"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/stopwatch"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/stopwatch"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/stopwatch"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/stopwatch"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/stopwatch"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/stopwatch"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/stopwatch"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/stopwatch"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/stopwatch"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/stopwatch"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/stopwatch"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/stopwatch"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/stopwatch"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/stopwatch"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/stopwatch"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/stopwatch"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/stopwatch"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/stopwatch"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Stopwatch",
+    "description": "Stopwatch. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/stopwatch",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ru"
+  },
+  "openGraph": {
+    "title": "Free Stopwatch - Flixo",
+    "description": "Stopwatch. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/stopwatch",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Stopwatch - Flixo",
+    "description": "Stopwatch. Free online tool that helps you get things done quickly and easily."
+  }
+}

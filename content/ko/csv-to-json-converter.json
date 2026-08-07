@@ -1,0 +1,147 @@
+{
+  "id": "csv-to-json-converter",
+  "slug": "csv-to-json-converter",
+  "locale": "ko",
+  "toolName": "Csv To Json Converter",
+  "englishName": "Csv To Json Converter",
+  "title": "Csv To Json Converter",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Csv To Json Converter. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Csv To Json Converter Online - Fast & Easy | Flixo",
+  "metaDescription": "Csv To Json Converter. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Csv To Json Converter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Csv To Json Converter"
+  ],
+  "canonical": "/tools/csv-to-json-converter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/csv-to-json-converter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/csv-to-json-converter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/csv-to-json-converter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/csv-to-json-converter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/csv-to-json-converter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/csv-to-json-converter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/csv-to-json-converter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/csv-to-json-converter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/csv-to-json-converter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/csv-to-json-converter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/csv-to-json-converter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/csv-to-json-converter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/csv-to-json-converter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/csv-to-json-converter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/csv-to-json-converter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/csv-to-json-converter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/csv-to-json-converter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/csv-to-json-converter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/csv-to-json-converter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/csv-to-json-converter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Csv To Json Converter",
+    "description": "Csv To Json Converter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/csv-to-json-converter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ko"
+  },
+  "openGraph": {
+    "title": "Free Csv To Json Converter - Flixo",
+    "description": "Csv To Json Converter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/csv-to-json-converter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Csv To Json Converter - Flixo",
+    "description": "Csv To Json Converter. Free online tool that helps you get things done quickly and easily."
+  }
+}

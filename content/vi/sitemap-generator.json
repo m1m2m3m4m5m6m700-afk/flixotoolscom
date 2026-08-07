@@ -1,0 +1,147 @@
+{
+  "id": "sitemap-generator",
+  "slug": "sitemap-generator",
+  "locale": "vi",
+  "toolName": "Sitemap Generator",
+  "englishName": "Sitemap Generator",
+  "title": "Sitemap Generator",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Sitemap Generator. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Sitemap Generator Online - Fast & Easy | Flixo",
+  "metaDescription": "Sitemap Generator. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Sitemap Generator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Sitemap Generator"
+  ],
+  "canonical": "/tools/sitemap-generator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/sitemap-generator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/sitemap-generator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/sitemap-generator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/sitemap-generator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/sitemap-generator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/sitemap-generator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/sitemap-generator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/sitemap-generator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/sitemap-generator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/sitemap-generator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/sitemap-generator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/sitemap-generator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/sitemap-generator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/sitemap-generator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/sitemap-generator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/sitemap-generator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/sitemap-generator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/sitemap-generator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/sitemap-generator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/sitemap-generator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Sitemap Generator",
+    "description": "Sitemap Generator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/sitemap-generator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "vi"
+  },
+  "openGraph": {
+    "title": "Free Sitemap Generator - Flixo",
+    "description": "Sitemap Generator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/sitemap-generator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Sitemap Generator - Flixo",
+    "description": "Sitemap Generator. Free online tool that helps you get things done quickly and easily."
+  }
+}

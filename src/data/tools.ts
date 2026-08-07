@@ -2719,8 +2719,13 @@ export const tools: Tool[] = [
 ];
 
 export const toolById = new Map<string, Tool>(tools.map((tool) => [tool.id, tool]));
+export const toolBySlug = new Map<string, Tool>(
+  tools.filter((tool) => tool.slug).map((tool) => [tool.slug!, tool]),
+);
 
 export const getTool = (id: string): Tool | undefined => toolById.get(id);
+
+export const getToolBySlug = (slug: string): Tool | undefined => toolBySlug.get(slug);
 
 export const toolsByCategory = (categoryId: CategoryId): Tool[] =>
   tools.filter((tool) => tool.categoryId === categoryId);

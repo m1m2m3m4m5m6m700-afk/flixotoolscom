@@ -1,0 +1,147 @@
+{
+  "id": "number-to-words-converter",
+  "slug": "number-to-words-converter",
+  "locale": "hi",
+  "toolName": "Number To Words Converter",
+  "englishName": "Number To Words Converter",
+  "title": "Number To Words Converter",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Number To Words Converter. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Number To Words Converter Online - Fast & Easy | Flixo",
+  "metaDescription": "Number To Words Converter. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Number To Words Converter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Number To Words Converter"
+  ],
+  "canonical": "/tools/number-to-words-converter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/number-to-words-converter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/number-to-words-converter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/number-to-words-converter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/number-to-words-converter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/number-to-words-converter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/number-to-words-converter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/number-to-words-converter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/number-to-words-converter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/number-to-words-converter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/number-to-words-converter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/number-to-words-converter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/number-to-words-converter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/number-to-words-converter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/number-to-words-converter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/number-to-words-converter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/number-to-words-converter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/number-to-words-converter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/number-to-words-converter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/number-to-words-converter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/number-to-words-converter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Number To Words Converter",
+    "description": "Number To Words Converter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/number-to-words-converter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "hi"
+  },
+  "openGraph": {
+    "title": "Free Number To Words Converter - Flixo",
+    "description": "Number To Words Converter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/number-to-words-converter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Number To Words Converter - Flixo",
+    "description": "Number To Words Converter. Free online tool that helps you get things done quickly and easily."
+  }
+}

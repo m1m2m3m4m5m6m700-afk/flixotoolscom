@@ -1,0 +1,147 @@
+{
+  "id": "speed-converter",
+  "slug": "speed-converter",
+  "locale": "ko",
+  "toolName": "Speed Converter",
+  "englishName": "Speed Converter",
+  "title": "Speed Converter",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Speed Converter. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Speed Converter Online - Fast & Easy | Flixo",
+  "metaDescription": "Speed Converter. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Speed Converter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Speed Converter"
+  ],
+  "canonical": "/tools/speed-converter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/speed-converter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/speed-converter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/speed-converter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/speed-converter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/speed-converter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/speed-converter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/speed-converter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/speed-converter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/speed-converter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/speed-converter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/speed-converter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/speed-converter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/speed-converter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/speed-converter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/speed-converter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/speed-converter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/speed-converter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/speed-converter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/speed-converter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/speed-converter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Speed Converter",
+    "description": "Speed Converter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/speed-converter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ko"
+  },
+  "openGraph": {
+    "title": "Free Speed Converter - Flixo",
+    "description": "Speed Converter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/speed-converter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Speed Converter - Flixo",
+    "description": "Speed Converter. Free online tool that helps you get things done quickly and easily."
+  }
+}

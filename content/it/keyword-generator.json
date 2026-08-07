@@ -1,0 +1,148 @@
+{
+  "id": "keyword-generator",
+  "slug": "keyword-generator",
+  "locale": "it",
+  "toolName": "Keyword Generator",
+  "englishName": "Keyword Generator",
+  "title": "Keyword Generator",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Keyword Generator. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Keyword Generator Online - Write Better | Flixo",
+  "metaDescription": "Keyword Generator. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Keyword Generator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Keyword Generator"
+  ],
+  "canonical": "/tools/keyword-generator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/keyword-generator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/keyword-generator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/keyword-generator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/keyword-generator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/keyword-generator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/keyword-generator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/keyword-generator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/keyword-generator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/keyword-generator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/keyword-generator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/keyword-generator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/keyword-generator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/keyword-generator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/keyword-generator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/keyword-generator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/keyword-generator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/keyword-generator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/keyword-generator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/keyword-generator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/keyword-generator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Keyword Generator",
+    "description": "Keyword Generator. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/keyword-generator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "it"
+  },
+  "openGraph": {
+    "title": "Free Keyword Generator - Flixo",
+    "description": "Keyword Generator. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/keyword-generator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Keyword Generator - Flixo",
+    "description": "Keyword Generator. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

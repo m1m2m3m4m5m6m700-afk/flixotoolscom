@@ -1,0 +1,148 @@
+{
+  "id": "rewrite-text",
+  "slug": "rewrite-text",
+  "locale": "en",
+  "toolName": "Rewrite Text",
+  "englishName": "Rewrite Text",
+  "title": "Rewrite Text",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Rewrite Text. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Rewrite Text Online - Write Better | Flixo",
+  "metaDescription": "Rewrite Text. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Rewrite Text free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Rewrite Text"
+  ],
+  "canonical": "/tools/rewrite-text",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/rewrite-text"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/rewrite-text"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/rewrite-text"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/rewrite-text"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/rewrite-text"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/rewrite-text"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/rewrite-text"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/rewrite-text"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/rewrite-text"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/rewrite-text"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/rewrite-text"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/rewrite-text"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/rewrite-text"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/rewrite-text"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/rewrite-text"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/rewrite-text"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/rewrite-text"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/rewrite-text"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/rewrite-text"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/rewrite-text"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Rewrite Text",
+    "description": "Rewrite Text. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/rewrite-text",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "en"
+  },
+  "openGraph": {
+    "title": "Free Rewrite Text - Flixo",
+    "description": "Rewrite Text. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/rewrite-text",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Rewrite Text - Flixo",
+    "description": "Rewrite Text. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "id": "sentence-case-converter",
+  "slug": "sentence-case-converter",
+  "locale": "es",
+  "toolName": "Sentence Case Converter",
+  "englishName": "Sentence Case Converter",
+  "title": "Sentence Case Converter",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Sentence Case Converter. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Sentence Case Converter Online - Write Better | Flixo",
+  "metaDescription": "Sentence Case Converter. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Sentence Case Converter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Sentence Case Converter"
+  ],
+  "canonical": "/tools/sentence-case-converter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/sentence-case-converter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/sentence-case-converter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/sentence-case-converter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/sentence-case-converter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/sentence-case-converter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/sentence-case-converter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/sentence-case-converter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/sentence-case-converter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/sentence-case-converter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/sentence-case-converter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/sentence-case-converter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/sentence-case-converter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/sentence-case-converter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/sentence-case-converter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/sentence-case-converter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/sentence-case-converter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/sentence-case-converter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/sentence-case-converter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/sentence-case-converter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/sentence-case-converter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Sentence Case Converter",
+    "description": "Sentence Case Converter. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/sentence-case-converter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "es"
+  },
+  "openGraph": {
+    "title": "Free Sentence Case Converter - Flixo",
+    "description": "Sentence Case Converter. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/sentence-case-converter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Sentence Case Converter - Flixo",
+    "description": "Sentence Case Converter. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

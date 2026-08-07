@@ -1,0 +1,148 @@
+{
+  "id": "image-generator",
+  "slug": "image-generator",
+  "locale": "hi",
+  "toolName": "Image Generator",
+  "englishName": "Image Generator",
+  "title": "Image Generator",
+  "tagline": "Transform and enhance images with powerful AI tools.",
+  "description": "Image Generator. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+  "shortDescription": "Transform and enhance images with powerful AI tools.",
+  "metaTitle": "Free Image Generator Online - AI-Powered Image Editing | Flixo",
+  "metaDescription": "Image Generator. Free online image tools. Enhance, resize, compress, and edit images with AI. No signup required, works in browser.",
+  "keywords": [
+    "image tools",
+    "photo editor",
+    "image enhancer",
+    "image compressor",
+    "image tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Image Generator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Image Generator"
+  ],
+  "canonical": "/tools/image-generator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/image-generator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/image-generator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/image-generator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/image-generator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/image-generator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/image-generator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/image-generator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/image-generator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/image-generator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/image-generator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/image-generator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/image-generator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/image-generator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/image-generator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/image-generator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/image-generator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/image-generator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/image-generator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/image-generator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/image-generator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Image Generator",
+    "description": "Image Generator. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/image-generator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "hi"
+  },
+  "openGraph": {
+    "title": "Free Image Generator - Flixo",
+    "description": "Image Generator. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/image-generator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Image Generator - Flixo",
+    "description": "Image Generator. Free online image tools. Edit, enhance, and transform images directly in your browser."
+  }
+}

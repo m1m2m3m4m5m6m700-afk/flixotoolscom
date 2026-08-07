@@ -1,0 +1,148 @@
+{
+  "id": "watermark-remover",
+  "slug": "watermark-remover",
+  "locale": "th",
+  "toolName": "Watermark Remover",
+  "englishName": "Watermark Remover",
+  "title": "Watermark Remover",
+  "tagline": "Transform and enhance images with powerful AI tools.",
+  "description": "Watermark Remover. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+  "shortDescription": "Transform and enhance images with powerful AI tools.",
+  "metaTitle": "Free Watermark Remover Online - AI-Powered Image Editing | Flixo",
+  "metaDescription": "Watermark Remover. Free online image tools. Enhance, resize, compress, and edit images with AI. No signup required, works in browser.",
+  "keywords": [
+    "image tools",
+    "photo editor",
+    "image enhancer",
+    "image compressor",
+    "image tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Watermark Remover free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Watermark Remover"
+  ],
+  "canonical": "/tools/watermark-remover",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/watermark-remover"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/watermark-remover"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/watermark-remover"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/watermark-remover"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/watermark-remover"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/watermark-remover"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/watermark-remover"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/watermark-remover"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/watermark-remover"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/watermark-remover"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/watermark-remover"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/watermark-remover"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/watermark-remover"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/watermark-remover"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/watermark-remover"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/watermark-remover"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/watermark-remover"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/watermark-remover"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/watermark-remover"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/watermark-remover"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Watermark Remover",
+    "description": "Watermark Remover. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/watermark-remover",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "th"
+  },
+  "openGraph": {
+    "title": "Free Watermark Remover - Flixo",
+    "description": "Watermark Remover. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/watermark-remover",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Watermark Remover - Flixo",
+    "description": "Watermark Remover. Free online image tools. Edit, enhance, and transform images directly in your browser."
+  }
+}

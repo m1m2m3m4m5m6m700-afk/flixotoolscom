@@ -1,0 +1,148 @@
+{
+  "id": "auto-subtitles",
+  "slug": "auto-subtitles",
+  "locale": "pl",
+  "toolName": "Auto Subtitles",
+  "englishName": "Auto Subtitles",
+  "title": "Auto Subtitles",
+  "tagline": "Process and edit video files with powerful tools.",
+  "description": "Auto Subtitles. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+  "shortDescription": "Process and edit video files with powerful tools.",
+  "metaTitle": "Free Auto Subtitles Online - Compress & Convert Videos | Flixo",
+  "metaDescription": "Auto Subtitles. Free online video tools. Compress, convert, and edit videos. No signup, no upload, works in browser.",
+  "keywords": [
+    "video tools",
+    "video compressor",
+    "video converter",
+    "video tools",
+    "online video editor"
+  ],
+  "faq": [
+    {
+      "q": "Is Auto Subtitles free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Auto Subtitles"
+  ],
+  "canonical": "/tools/auto-subtitles",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/auto-subtitles"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/auto-subtitles"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/auto-subtitles"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/auto-subtitles"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/auto-subtitles"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/auto-subtitles"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/auto-subtitles"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/auto-subtitles"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/auto-subtitles"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/auto-subtitles"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/auto-subtitles"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/auto-subtitles"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/auto-subtitles"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/auto-subtitles"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/auto-subtitles"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/auto-subtitles"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/auto-subtitles"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/auto-subtitles"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/auto-subtitles"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/auto-subtitles"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Auto Subtitles",
+    "description": "Auto Subtitles. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+    "url": "https://flixotools.com/tools/auto-subtitles",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pl"
+  },
+  "openGraph": {
+    "title": "Free Auto Subtitles - Flixo",
+    "description": "Auto Subtitles. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+    "url": "https://flixotools.com/tools/auto-subtitles",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Auto Subtitles - Flixo",
+    "description": "Auto Subtitles. Free online video tools. Compress, convert, and enhance videos directly in browser."
+  }
+}

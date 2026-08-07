@@ -1,0 +1,147 @@
+{
+  "id": "weight-converter",
+  "slug": "weight-converter",
+  "locale": "ar",
+  "toolName": "Weight Converter",
+  "englishName": "Weight Converter",
+  "title": "Weight Converter",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Weight Converter. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Weight Converter Online - Fast & Easy | Flixo",
+  "metaDescription": "Weight Converter. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Weight Converter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Weight Converter"
+  ],
+  "canonical": "/tools/weight-converter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/weight-converter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/weight-converter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/weight-converter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/weight-converter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/weight-converter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/weight-converter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/weight-converter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/weight-converter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/weight-converter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/weight-converter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/weight-converter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/weight-converter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/weight-converter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/weight-converter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/weight-converter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/weight-converter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/weight-converter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/weight-converter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/weight-converter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/weight-converter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Weight Converter",
+    "description": "Weight Converter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/weight-converter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ar"
+  },
+  "openGraph": {
+    "title": "Free Weight Converter - Flixo",
+    "description": "Weight Converter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/weight-converter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Weight Converter - Flixo",
+    "description": "Weight Converter. Free online tool that helps you get things done quickly and easily."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "id": "image-to-pdf",
+  "slug": "image-to-pdf",
+  "locale": "de",
+  "toolName": "Image to PDF",
+  "englishName": "Image to PDF",
+  "title": "Image to PDF",
+  "tagline": "Transform and enhance images with powerful AI tools.",
+  "description": "Image to PDF. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+  "shortDescription": "Transform and enhance images with powerful AI tools.",
+  "metaTitle": "Free Image to PDF Online - AI-Powered Image Editing | Flixo",
+  "metaDescription": "Image to PDF. Free online image tools. Enhance, resize, compress, and edit images with AI. No signup required, works in browser.",
+  "keywords": [
+    "image tools",
+    "photo editor",
+    "image enhancer",
+    "image compressor",
+    "image tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Image to PDF free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Image to PDF"
+  ],
+  "canonical": "/tools/image-to-pdf",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/image-to-pdf"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/image-to-pdf"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/image-to-pdf"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/image-to-pdf"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/image-to-pdf"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/image-to-pdf"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/image-to-pdf"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/image-to-pdf"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/image-to-pdf"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/image-to-pdf"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/image-to-pdf"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/image-to-pdf"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/image-to-pdf"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/image-to-pdf"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/image-to-pdf"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/image-to-pdf"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/image-to-pdf"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/image-to-pdf"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/image-to-pdf"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/image-to-pdf"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Image to PDF",
+    "description": "Image to PDF. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/image-to-pdf",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "de"
+  },
+  "openGraph": {
+    "title": "Free Image to PDF - Flixo",
+    "description": "Image to PDF. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/image-to-pdf",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Image to PDF - Flixo",
+    "description": "Image to PDF. Free online image tools. Edit, enhance, and transform images directly in your browser."
+  }
+}

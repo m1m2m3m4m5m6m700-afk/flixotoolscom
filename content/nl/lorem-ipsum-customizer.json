@@ -1,0 +1,147 @@
+{
+  "id": "lorem-ipsum-customizer",
+  "slug": "lorem-ipsum-customizer",
+  "locale": "nl",
+  "toolName": "Lorem Ipsum Customizer",
+  "englishName": "Lorem Ipsum Customizer",
+  "title": "Lorem Ipsum Customizer",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Lorem Ipsum Customizer. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Lorem Ipsum Customizer Online - Fast & Easy | Flixo",
+  "metaDescription": "Lorem Ipsum Customizer. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Lorem Ipsum Customizer free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Lorem Ipsum Customizer"
+  ],
+  "canonical": "/tools/lorem-ipsum-customizer",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/lorem-ipsum-customizer"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/lorem-ipsum-customizer"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/lorem-ipsum-customizer"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/lorem-ipsum-customizer"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/lorem-ipsum-customizer"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/lorem-ipsum-customizer"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/lorem-ipsum-customizer"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/lorem-ipsum-customizer"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/lorem-ipsum-customizer"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/lorem-ipsum-customizer"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/lorem-ipsum-customizer"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/lorem-ipsum-customizer"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/lorem-ipsum-customizer"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/lorem-ipsum-customizer"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/lorem-ipsum-customizer"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/lorem-ipsum-customizer"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/lorem-ipsum-customizer"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/lorem-ipsum-customizer"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/lorem-ipsum-customizer"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/lorem-ipsum-customizer"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Lorem Ipsum Customizer",
+    "description": "Lorem Ipsum Customizer. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/lorem-ipsum-customizer",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "nl"
+  },
+  "openGraph": {
+    "title": "Free Lorem Ipsum Customizer - Flixo",
+    "description": "Lorem Ipsum Customizer. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/lorem-ipsum-customizer",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Lorem Ipsum Customizer - Flixo",
+    "description": "Lorem Ipsum Customizer. Free online tool that helps you get things done quickly and easily."
+  }
+}

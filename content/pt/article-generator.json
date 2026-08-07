@@ -1,0 +1,148 @@
+{
+  "id": "article-generator",
+  "slug": "article-generator",
+  "locale": "pt",
+  "toolName": "Article Generator",
+  "englishName": "Article Generator",
+  "title": "Article Generator",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Article Generator. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Article Generator Online - Write Better | Flixo",
+  "metaDescription": "Article Generator. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Article Generator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Article Generator"
+  ],
+  "canonical": "/tools/article-generator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/article-generator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/article-generator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/article-generator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/article-generator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/article-generator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/article-generator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/article-generator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/article-generator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/article-generator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/article-generator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/article-generator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/article-generator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/article-generator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/article-generator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/article-generator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/article-generator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/article-generator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/article-generator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/article-generator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/article-generator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Article Generator",
+    "description": "Article Generator. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/article-generator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pt"
+  },
+  "openGraph": {
+    "title": "Free Article Generator - Flixo",
+    "description": "Article Generator. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/article-generator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Article Generator - Flixo",
+    "description": "Article Generator. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

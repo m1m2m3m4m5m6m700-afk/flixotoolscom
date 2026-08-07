@@ -1,0 +1,148 @@
+{
+  "id": "image-resizer",
+  "slug": "image-resizer",
+  "locale": "pt",
+  "toolName": "Image Resizer",
+  "englishName": "Image Resizer",
+  "title": "Image Resizer",
+  "tagline": "Transform and enhance images with powerful AI tools.",
+  "description": "Image Resizer. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+  "shortDescription": "Transform and enhance images with powerful AI tools.",
+  "metaTitle": "Free Image Resizer Online - AI-Powered Image Editing | Flixo",
+  "metaDescription": "Image Resizer. Free online image tools. Enhance, resize, compress, and edit images with AI. No signup required, works in browser.",
+  "keywords": [
+    "image tools",
+    "photo editor",
+    "image enhancer",
+    "image compressor",
+    "image tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Image Resizer free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Image Resizer"
+  ],
+  "canonical": "/tools/image-resizer",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/image-resizer"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/image-resizer"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/image-resizer"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/image-resizer"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/image-resizer"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/image-resizer"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/image-resizer"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/image-resizer"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/image-resizer"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/image-resizer"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/image-resizer"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/image-resizer"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/image-resizer"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/image-resizer"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/image-resizer"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/image-resizer"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/image-resizer"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/image-resizer"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/image-resizer"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/image-resizer"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Image Resizer",
+    "description": "Image Resizer. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/image-resizer",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pt"
+  },
+  "openGraph": {
+    "title": "Free Image Resizer - Flixo",
+    "description": "Image Resizer. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/image-resizer",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Image Resizer - Flixo",
+    "description": "Image Resizer. Free online image tools. Edit, enhance, and transform images directly in your browser."
+  }
+}

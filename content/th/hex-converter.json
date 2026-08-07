@@ -1,0 +1,147 @@
+{
+  "id": "hex-converter",
+  "slug": "hex-converter",
+  "locale": "th",
+  "toolName": "Hex Converter",
+  "englishName": "Hex Converter",
+  "title": "Hex Converter",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Hex Converter. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Hex Converter Online - Fast & Easy | Flixo",
+  "metaDescription": "Hex Converter. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Hex Converter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Hex Converter"
+  ],
+  "canonical": "/tools/hex-converter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/hex-converter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/hex-converter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/hex-converter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/hex-converter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/hex-converter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/hex-converter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/hex-converter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/hex-converter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/hex-converter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/hex-converter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/hex-converter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/hex-converter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/hex-converter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/hex-converter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/hex-converter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/hex-converter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/hex-converter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/hex-converter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/hex-converter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/hex-converter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Hex Converter",
+    "description": "Hex Converter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/hex-converter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "th"
+  },
+  "openGraph": {
+    "title": "Free Hex Converter - Flixo",
+    "description": "Hex Converter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/hex-converter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Hex Converter - Flixo",
+    "description": "Hex Converter. Free online tool that helps you get things done quickly and easily."
+  }
+}

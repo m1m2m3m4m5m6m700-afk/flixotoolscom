@@ -1,0 +1,148 @@
+{
+  "id": "screenshot-editor",
+  "slug": "screenshot-editor",
+  "locale": "id",
+  "toolName": "Screenshot Editor",
+  "englishName": "Screenshot Editor",
+  "title": "Screenshot Editor",
+  "tagline": "Transform and enhance images with powerful AI tools.",
+  "description": "Screenshot Editor. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+  "shortDescription": "Transform and enhance images with powerful AI tools.",
+  "metaTitle": "Free Screenshot Editor Online - AI-Powered Image Editing | Flixo",
+  "metaDescription": "Screenshot Editor. Free online image tools. Enhance, resize, compress, and edit images with AI. No signup required, works in browser.",
+  "keywords": [
+    "image tools",
+    "photo editor",
+    "image enhancer",
+    "image compressor",
+    "image tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Screenshot Editor free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Screenshot Editor"
+  ],
+  "canonical": "/tools/screenshot-editor",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/screenshot-editor"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/screenshot-editor"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/screenshot-editor"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/screenshot-editor"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/screenshot-editor"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/screenshot-editor"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/screenshot-editor"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/screenshot-editor"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/screenshot-editor"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/screenshot-editor"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/screenshot-editor"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/screenshot-editor"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/screenshot-editor"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/screenshot-editor"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/screenshot-editor"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/screenshot-editor"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/screenshot-editor"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/screenshot-editor"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/screenshot-editor"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/screenshot-editor"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Screenshot Editor",
+    "description": "Screenshot Editor. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/screenshot-editor",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "id"
+  },
+  "openGraph": {
+    "title": "Free Screenshot Editor - Flixo",
+    "description": "Screenshot Editor. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/screenshot-editor",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Screenshot Editor - Flixo",
+    "description": "Screenshot Editor. Free online image tools. Edit, enhance, and transform images directly in your browser."
+  }
+}

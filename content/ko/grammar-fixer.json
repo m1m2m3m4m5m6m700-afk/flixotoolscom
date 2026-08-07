@@ -1,0 +1,148 @@
+{
+  "id": "grammar-fixer",
+  "slug": "grammar-fixer",
+  "locale": "ko",
+  "toolName": "Grammar Fixer",
+  "englishName": "Grammar Fixer",
+  "title": "Grammar Fixer",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Grammar Fixer. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Grammar Fixer Online - Write Better | Flixo",
+  "metaDescription": "Grammar Fixer. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Grammar Fixer free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Grammar Fixer"
+  ],
+  "canonical": "/tools/grammar-fixer",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/grammar-fixer"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/grammar-fixer"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/grammar-fixer"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/grammar-fixer"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/grammar-fixer"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/grammar-fixer"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/grammar-fixer"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/grammar-fixer"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/grammar-fixer"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/grammar-fixer"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/grammar-fixer"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/grammar-fixer"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/grammar-fixer"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/grammar-fixer"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/grammar-fixer"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/grammar-fixer"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/grammar-fixer"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/grammar-fixer"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/grammar-fixer"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/grammar-fixer"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Grammar Fixer",
+    "description": "Grammar Fixer. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/grammar-fixer",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ko"
+  },
+  "openGraph": {
+    "title": "Free Grammar Fixer - Flixo",
+    "description": "Grammar Fixer. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/grammar-fixer",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Grammar Fixer - Flixo",
+    "description": "Grammar Fixer. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

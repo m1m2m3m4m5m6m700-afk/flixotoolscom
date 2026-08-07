@@ -1,0 +1,148 @@
+{
+  "id": "convert-video",
+  "slug": "convert-video",
+  "locale": "hi",
+  "toolName": "Convert Video",
+  "englishName": "Convert Video",
+  "title": "Convert Video",
+  "tagline": "Process and edit video files with powerful tools.",
+  "description": "Convert Video. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+  "shortDescription": "Process and edit video files with powerful tools.",
+  "metaTitle": "Free Convert Video Online - Compress & Convert Videos | Flixo",
+  "metaDescription": "Convert Video. Free online video tools. Compress, convert, and edit videos. No signup, no upload, works in browser.",
+  "keywords": [
+    "video tools",
+    "video compressor",
+    "video converter",
+    "video tools",
+    "online video editor"
+  ],
+  "faq": [
+    {
+      "q": "Is Convert Video free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Convert Video"
+  ],
+  "canonical": "/tools/convert-video",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/convert-video"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/convert-video"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/convert-video"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/convert-video"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/convert-video"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/convert-video"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/convert-video"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/convert-video"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/convert-video"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/convert-video"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/convert-video"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/convert-video"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/convert-video"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/convert-video"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/convert-video"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/convert-video"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/convert-video"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/convert-video"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/convert-video"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/convert-video"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Convert Video",
+    "description": "Convert Video. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+    "url": "https://flixotools.com/tools/convert-video",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "hi"
+  },
+  "openGraph": {
+    "title": "Free Convert Video - Flixo",
+    "description": "Convert Video. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+    "url": "https://flixotools.com/tools/convert-video",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Convert Video - Flixo",
+    "description": "Convert Video. Free online video tools. Compress, convert, and enhance videos directly in browser."
+  }
+}

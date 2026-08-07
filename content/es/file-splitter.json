@@ -1,0 +1,147 @@
+{
+  "id": "file-splitter",
+  "slug": "file-splitter",
+  "locale": "es",
+  "toolName": "File Splitter",
+  "englishName": "File Splitter",
+  "title": "File Splitter",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "File Splitter. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free File Splitter Online - Fast & Easy | Flixo",
+  "metaDescription": "File Splitter. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is File Splitter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "File Splitter"
+  ],
+  "canonical": "/tools/file-splitter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/file-splitter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/file-splitter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/file-splitter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/file-splitter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/file-splitter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/file-splitter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/file-splitter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/file-splitter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/file-splitter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/file-splitter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/file-splitter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/file-splitter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/file-splitter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/file-splitter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/file-splitter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/file-splitter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/file-splitter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/file-splitter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/file-splitter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/file-splitter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "File Splitter",
+    "description": "File Splitter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/file-splitter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "es"
+  },
+  "openGraph": {
+    "title": "Free File Splitter - Flixo",
+    "description": "File Splitter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/file-splitter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free File Splitter - Flixo",
+    "description": "File Splitter. Free online tool that helps you get things done quickly and easily."
+  }
+}

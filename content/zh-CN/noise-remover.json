@@ -1,0 +1,148 @@
+{
+  "id": "noise-remover",
+  "slug": "noise-remover",
+  "locale": "zh-CN",
+  "toolName": "Noise Remover",
+  "englishName": "Noise Remover",
+  "title": "Noise Remover",
+  "tagline": "Process audio files with powerful tools.",
+  "description": "Noise Remover. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+  "shortDescription": "Process audio files with powerful tools.",
+  "metaTitle": "Free Noise Remover Online - Convert & Edit Audio | Flixo",
+  "metaDescription": "Noise Remover. Free online audio tools. Convert audio formats, compress files, and more. No signup, works in browser.",
+  "keywords": [
+    "audio tools",
+    "audio converter",
+    "audio compressor",
+    "audio tools",
+    "online audio editor"
+  ],
+  "faq": [
+    {
+      "q": "Is Noise Remover free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Noise Remover"
+  ],
+  "canonical": "/tools/noise-remover",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/noise-remover"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/noise-remover"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/noise-remover"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/noise-remover"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/noise-remover"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/noise-remover"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/noise-remover"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/noise-remover"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/noise-remover"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/noise-remover"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/noise-remover"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/noise-remover"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/noise-remover"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/noise-remover"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/noise-remover"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/noise-remover"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/noise-remover"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/noise-remover"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/noise-remover"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/noise-remover"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Noise Remover",
+    "description": "Noise Remover. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+    "url": "https://flixotools.com/tools/noise-remover",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "zh-CN"
+  },
+  "openGraph": {
+    "title": "Free Noise Remover - Flixo",
+    "description": "Noise Remover. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+    "url": "https://flixotools.com/tools/noise-remover",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Noise Remover - Flixo",
+    "description": "Noise Remover. Free online audio tools. Convert, compress, and enhance audio directly in browser."
+  }
+}

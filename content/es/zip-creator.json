@@ -1,0 +1,147 @@
+{
+  "id": "zip-creator",
+  "slug": "zip-creator",
+  "locale": "es",
+  "toolName": "ZIP Creator",
+  "englishName": "ZIP Creator",
+  "title": "ZIP Creator",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "ZIP Creator. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free ZIP Creator Online - Fast & Easy | Flixo",
+  "metaDescription": "ZIP Creator. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is ZIP Creator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "ZIP Creator"
+  ],
+  "canonical": "/tools/zip-creator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/zip-creator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/zip-creator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/zip-creator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/zip-creator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/zip-creator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/zip-creator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/zip-creator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/zip-creator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/zip-creator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/zip-creator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/zip-creator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/zip-creator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/zip-creator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/zip-creator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/zip-creator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/zip-creator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/zip-creator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/zip-creator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/zip-creator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/zip-creator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ZIP Creator",
+    "description": "ZIP Creator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/zip-creator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "es"
+  },
+  "openGraph": {
+    "title": "Free ZIP Creator - Flixo",
+    "description": "ZIP Creator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/zip-creator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free ZIP Creator - Flixo",
+    "description": "ZIP Creator. Free online tool that helps you get things done quickly and easily."
+  }
+}

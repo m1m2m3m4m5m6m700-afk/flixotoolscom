@@ -1,0 +1,148 @@
+{
+  "id": "pdf-merge",
+  "slug": "pdf-merge",
+  "locale": "pt",
+  "toolName": "Merge PDF",
+  "englishName": "Merge PDF",
+  "title": "Merge PDF",
+  "tagline": "Manage PDF documents with ease. Merge, split, convert, and more.",
+  "description": "Merge PDF. Free online PDF tools. Work with PDF documents directly in your browser.",
+  "shortDescription": "Manage PDF documents with ease. Merge, split, convert, and more.",
+  "metaTitle": "Free Merge PDF Online - Merge, Split, Convert PDFs | Flixo",
+  "metaDescription": "Merge PDF. Free online PDF tools. Merge, split, compress, convert, and edit PDFs. No signup, no fees, works in browser.",
+  "keywords": [
+    "pdf tools",
+    "pdf merger",
+    "pdf splitter",
+    "pdf converter",
+    "pdf tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Merge PDF free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Merge PDF"
+  ],
+  "canonical": "/tools/pdf-merge",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/pdf-merge"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/pdf-merge"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/pdf-merge"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/pdf-merge"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/pdf-merge"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/pdf-merge"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/pdf-merge"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/pdf-merge"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/pdf-merge"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/pdf-merge"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/pdf-merge"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/pdf-merge"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/pdf-merge"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/pdf-merge"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/pdf-merge"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/pdf-merge"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/pdf-merge"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/pdf-merge"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/pdf-merge"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/pdf-merge"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Merge PDF",
+    "description": "Merge PDF. Free online PDF tools. Work with PDF documents directly in your browser.",
+    "url": "https://flixotools.com/tools/pdf-merge",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pt"
+  },
+  "openGraph": {
+    "title": "Free Merge PDF - Flixo",
+    "description": "Merge PDF. Free online PDF tools. Work with PDF documents directly in your browser.",
+    "url": "https://flixotools.com/tools/pdf-merge",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Merge PDF - Flixo",
+    "description": "Merge PDF. Free online PDF tools. Work with PDF documents directly in your browser."
+  }
+}

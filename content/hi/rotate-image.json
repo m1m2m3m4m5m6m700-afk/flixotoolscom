@@ -1,0 +1,148 @@
+{
+  "id": "rotate-image",
+  "slug": "rotate-image",
+  "locale": "hi",
+  "toolName": "Rotate Image",
+  "englishName": "Rotate Image",
+  "title": "Rotate Image",
+  "tagline": "Transform and enhance images with powerful AI tools.",
+  "description": "Rotate Image. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+  "shortDescription": "Transform and enhance images with powerful AI tools.",
+  "metaTitle": "Free Rotate Image Online - AI-Powered Image Editing | Flixo",
+  "metaDescription": "Rotate Image. Free online image tools. Enhance, resize, compress, and edit images with AI. No signup required, works in browser.",
+  "keywords": [
+    "image tools",
+    "photo editor",
+    "image enhancer",
+    "image compressor",
+    "image tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Rotate Image free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Rotate Image"
+  ],
+  "canonical": "/tools/rotate-image",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/rotate-image"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/rotate-image"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/rotate-image"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/rotate-image"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/rotate-image"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/rotate-image"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/rotate-image"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/rotate-image"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/rotate-image"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/rotate-image"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/rotate-image"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/rotate-image"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/rotate-image"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/rotate-image"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/rotate-image"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/rotate-image"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/rotate-image"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/rotate-image"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/rotate-image"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/rotate-image"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Rotate Image",
+    "description": "Rotate Image. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/rotate-image",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "hi"
+  },
+  "openGraph": {
+    "title": "Free Rotate Image - Flixo",
+    "description": "Rotate Image. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/rotate-image",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Rotate Image - Flixo",
+    "description": "Rotate Image. Free online image tools. Edit, enhance, and transform images directly in your browser."
+  }
+}

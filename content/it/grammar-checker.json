@@ -1,0 +1,148 @@
+{
+  "id": "grammar-checker",
+  "slug": "grammar-checker",
+  "locale": "it",
+  "toolName": "Grammar Checker",
+  "englishName": "Grammar Checker",
+  "title": "Grammar Checker",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Grammar Checker. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Grammar Checker Online - Write Better | Flixo",
+  "metaDescription": "Grammar Checker. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Grammar Checker free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Grammar Checker"
+  ],
+  "canonical": "/tools/grammar-checker",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/grammar-checker"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/grammar-checker"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/grammar-checker"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/grammar-checker"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/grammar-checker"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/grammar-checker"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/grammar-checker"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/grammar-checker"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/grammar-checker"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/grammar-checker"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/grammar-checker"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/grammar-checker"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/grammar-checker"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/grammar-checker"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/grammar-checker"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/grammar-checker"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/grammar-checker"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/grammar-checker"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/grammar-checker"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/grammar-checker"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Grammar Checker",
+    "description": "Grammar Checker. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/grammar-checker",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "it"
+  },
+  "openGraph": {
+    "title": "Free Grammar Checker - Flixo",
+    "description": "Grammar Checker. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/grammar-checker",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Grammar Checker - Flixo",
+    "description": "Grammar Checker. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "base64-decoder",
+  "slug": "base64-decoder",
+  "locale": "pl",
+  "toolName": "Base64 Decoder",
+  "englishName": "Base64 Decoder",
+  "title": "Base64 Decoder",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Base64 Decoder. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Base64 Decoder Online - Fast & Easy | Flixo",
+  "metaDescription": "Base64 Decoder. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Base64 Decoder free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Base64 Decoder"
+  ],
+  "canonical": "/tools/base64-decoder",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/base64-decoder"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/base64-decoder"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/base64-decoder"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/base64-decoder"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/base64-decoder"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/base64-decoder"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/base64-decoder"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/base64-decoder"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/base64-decoder"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/base64-decoder"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/base64-decoder"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/base64-decoder"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/base64-decoder"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/base64-decoder"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/base64-decoder"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/base64-decoder"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/base64-decoder"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/base64-decoder"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/base64-decoder"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/base64-decoder"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Base64 Decoder",
+    "description": "Base64 Decoder. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/base64-decoder",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pl"
+  },
+  "openGraph": {
+    "title": "Free Base64 Decoder - Flixo",
+    "description": "Base64 Decoder. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/base64-decoder",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Base64 Decoder - Flixo",
+    "description": "Base64 Decoder. Free online tool that helps you get things done quickly and easily."
+  }
+}

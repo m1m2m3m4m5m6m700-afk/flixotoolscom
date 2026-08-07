@@ -1,0 +1,148 @@
+{
+  "id": "audio-transcriber",
+  "slug": "audio-transcriber",
+  "locale": "es",
+  "toolName": "Audio Transcriber",
+  "englishName": "Audio Transcriber",
+  "title": "Audio Transcriber",
+  "tagline": "Process audio files with powerful tools.",
+  "description": "Audio Transcriber. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+  "shortDescription": "Process audio files with powerful tools.",
+  "metaTitle": "Free Audio Transcriber Online - Convert & Edit Audio | Flixo",
+  "metaDescription": "Audio Transcriber. Free online audio tools. Convert audio formats, compress files, and more. No signup, works in browser.",
+  "keywords": [
+    "audio tools",
+    "audio converter",
+    "audio compressor",
+    "audio tools",
+    "online audio editor"
+  ],
+  "faq": [
+    {
+      "q": "Is Audio Transcriber free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Audio Transcriber"
+  ],
+  "canonical": "/tools/audio-transcriber",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/audio-transcriber"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/audio-transcriber"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/audio-transcriber"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/audio-transcriber"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/audio-transcriber"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/audio-transcriber"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/audio-transcriber"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/audio-transcriber"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/audio-transcriber"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/audio-transcriber"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/audio-transcriber"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/audio-transcriber"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/audio-transcriber"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/audio-transcriber"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/audio-transcriber"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/audio-transcriber"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/audio-transcriber"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/audio-transcriber"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/audio-transcriber"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/audio-transcriber"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Audio Transcriber",
+    "description": "Audio Transcriber. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+    "url": "https://flixotools.com/tools/audio-transcriber",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "es"
+  },
+  "openGraph": {
+    "title": "Free Audio Transcriber - Flixo",
+    "description": "Audio Transcriber. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+    "url": "https://flixotools.com/tools/audio-transcriber",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Audio Transcriber - Flixo",
+    "description": "Audio Transcriber. Free online audio tools. Convert, compress, and enhance audio directly in browser."
+  }
+}

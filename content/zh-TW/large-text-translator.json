@@ -1,0 +1,149 @@
+{
+  "id": "large-text-translator",
+  "slug": "large-text-translator",
+  "locale": "zh-TW",
+  "toolName": "長文本翻譯",
+  "englishName": "Large Text Translator",
+  "title": "長文本翻譯",
+  "tagline": "Translate text between languages instantly with AI-powered accuracy.",
+  "description": "長文本翻譯. Free online translation tool powered by AI. Translate text accurately and quickly.",
+  "shortDescription": "Translate text between languages instantly with AI-powered accuracy.",
+  "metaTitle": "Free 長文本翻譯 Online - Translate Text Instantly | Flixo",
+  "metaDescription": "長文本翻譯. Use our free AI translator. Translate text between 100+ languages instantly. No signup, no fees, accurate results.",
+  "keywords": [
+    "translator",
+    "translation",
+    "ai translator",
+    "translator",
+    "online translator",
+    "text translation"
+  ],
+  "faq": [
+    {
+      "q": "Is 長文本翻譯 free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Large Text Translator"
+  ],
+  "canonical": "/tools/large-text-translator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/large-text-translator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/large-text-translator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/large-text-translator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/large-text-translator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/large-text-translator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/large-text-translator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/large-text-translator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/large-text-translator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/large-text-translator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/large-text-translator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/large-text-translator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/large-text-translator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/large-text-translator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/large-text-translator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/large-text-translator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/large-text-translator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/large-text-translator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/large-text-translator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/large-text-translator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/large-text-translator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "長文本翻譯",
+    "description": "長文本翻譯. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/large-text-translator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "zh-TW"
+  },
+  "openGraph": {
+    "title": "Free 長文本翻譯 - Flixo",
+    "description": "長文本翻譯. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/large-text-translator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free 長文本翻譯 - Flixo",
+    "description": "長文本翻譯. Free online translation tool powered by AI. Translate text accurately and quickly."
+  }
+}

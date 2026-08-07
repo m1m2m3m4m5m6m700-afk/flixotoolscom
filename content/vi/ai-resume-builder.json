@@ -1,0 +1,148 @@
+{
+  "id": "ai-resume-builder",
+  "slug": "ai-resume-builder",
+  "locale": "vi",
+  "toolName": "AI Resume Builder",
+  "englishName": "AI Resume Builder",
+  "title": "AI Resume Builder",
+  "tagline": "AI-powered tools for productivity and creativity.",
+  "description": "AI Resume Builder. Free AI tools. Chat, generate content, analyze data, and more.",
+  "shortDescription": "AI-powered tools for productivity and creativity.",
+  "metaTitle": "Free AI Resume Builder Online - Chat, Generate & Analyze | Flixo",
+  "metaDescription": "AI Resume Builder. Free AI tools. Chat with AI, generate content, analyze data. No signup, instant results.",
+  "keywords": [
+    "ai tools",
+    "ai chat",
+    "ai assistant",
+    "ai",
+    "chatgpt alternative"
+  ],
+  "faq": [
+    {
+      "q": "Is AI Resume Builder free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "AI Resume Builder"
+  ],
+  "canonical": "/tools/ai-resume-builder",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/ai-resume-builder"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/ai-resume-builder"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/ai-resume-builder"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/ai-resume-builder"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/ai-resume-builder"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/ai-resume-builder"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/ai-resume-builder"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/ai-resume-builder"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/ai-resume-builder"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/ai-resume-builder"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/ai-resume-builder"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/ai-resume-builder"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/ai-resume-builder"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/ai-resume-builder"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/ai-resume-builder"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/ai-resume-builder"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/ai-resume-builder"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/ai-resume-builder"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/ai-resume-builder"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/ai-resume-builder"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "AI Resume Builder",
+    "description": "AI Resume Builder. Free AI tools. Chat, generate content, analyze data, and more.",
+    "url": "https://flixotools.com/tools/ai-resume-builder",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "vi"
+  },
+  "openGraph": {
+    "title": "Free AI Resume Builder - Flixo",
+    "description": "AI Resume Builder. Free AI tools. Chat, generate content, analyze data, and more.",
+    "url": "https://flixotools.com/tools/ai-resume-builder",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free AI Resume Builder - Flixo",
+    "description": "AI Resume Builder. Free AI tools. Chat, generate content, analyze data, and more."
+  }
+}

@@ -16,6 +16,7 @@ export interface ToolSeoData {
   howToUse: string[];
   benefits: string[];
   faqs: ToolFaqItem[];
+  examples?: string[];
 }
 
 const toolSeoRegistry: Record<string, ToolSeoData> = {

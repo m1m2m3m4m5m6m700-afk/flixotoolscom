@@ -1,0 +1,149 @@
+{
+  "id": "translator",
+  "slug": "translator",
+  "locale": "id",
+  "toolName": "Penerjemah",
+  "englishName": "AI Translator",
+  "title": "Penerjemah",
+  "tagline": "Translate text between languages instantly with AI-powered accuracy.",
+  "description": "Penerjemah. Free online translation tool powered by AI. Translate text accurately and quickly.",
+  "shortDescription": "Translate text between languages instantly with AI-powered accuracy.",
+  "metaTitle": "Free Penerjemah Online - Translate Text Instantly | Flixo",
+  "metaDescription": "Penerjemah. Use our free AI translator. Translate text between 100+ languages instantly. No signup, no fees, accurate results.",
+  "keywords": [
+    "translator",
+    "translation",
+    "ai translator",
+    "translator",
+    "online translator",
+    "text translation"
+  ],
+  "faq": [
+    {
+      "q": "Is Penerjemah free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "AI Translator"
+  ],
+  "canonical": "/tools/translator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/translator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/translator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/translator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/translator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/translator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/translator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/translator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/translator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/translator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/translator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/translator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/translator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/translator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/translator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/translator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/translator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/translator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/translator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/translator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/translator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Penerjemah",
+    "description": "Penerjemah. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/translator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "id"
+  },
+  "openGraph": {
+    "title": "Free Penerjemah - Flixo",
+    "description": "Penerjemah. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/translator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Penerjemah - Flixo",
+    "description": "Penerjemah. Free online translation tool powered by AI. Translate text accurately and quickly."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "id": "pdf-sign",
+  "slug": "pdf-sign",
+  "locale": "vi",
+  "toolName": "PDF Sign",
+  "englishName": "PDF Sign",
+  "title": "PDF Sign",
+  "tagline": "Manage PDF documents with ease. Merge, split, convert, and more.",
+  "description": "PDF Sign. Free online PDF tools. Work with PDF documents directly in your browser.",
+  "shortDescription": "Manage PDF documents with ease. Merge, split, convert, and more.",
+  "metaTitle": "Free PDF Sign Online - Merge, Split, Convert PDFs | Flixo",
+  "metaDescription": "PDF Sign. Free online PDF tools. Merge, split, compress, convert, and edit PDFs. No signup, no fees, works in browser.",
+  "keywords": [
+    "pdf tools",
+    "pdf merger",
+    "pdf splitter",
+    "pdf converter",
+    "pdf tools"
+  ],
+  "faq": [
+    {
+      "q": "Is PDF Sign free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "PDF Sign"
+  ],
+  "canonical": "/tools/pdf-sign",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/pdf-sign"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/pdf-sign"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/pdf-sign"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/pdf-sign"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/pdf-sign"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/pdf-sign"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/pdf-sign"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/pdf-sign"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/pdf-sign"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/pdf-sign"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/pdf-sign"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/pdf-sign"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/pdf-sign"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/pdf-sign"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/pdf-sign"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/pdf-sign"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/pdf-sign"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/pdf-sign"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/pdf-sign"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/pdf-sign"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "PDF Sign",
+    "description": "PDF Sign. Free online PDF tools. Work with PDF documents directly in your browser.",
+    "url": "https://flixotools.com/tools/pdf-sign",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "vi"
+  },
+  "openGraph": {
+    "title": "Free PDF Sign - Flixo",
+    "description": "PDF Sign. Free online PDF tools. Work with PDF documents directly in your browser.",
+    "url": "https://flixotools.com/tools/pdf-sign",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free PDF Sign - Flixo",
+    "description": "PDF Sign. Free online PDF tools. Work with PDF documents directly in your browser."
+  }
+}

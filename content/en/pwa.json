@@ -1,0 +1,147 @@
+{
+  "id": "pwa",
+  "slug": "pwa",
+  "locale": "en",
+  "toolName": "PWA",
+  "englishName": "PWA",
+  "title": "PWA",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "PWA. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free PWA Online - Fast & Easy | Flixo",
+  "metaDescription": "PWA. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is PWA free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "PWA"
+  ],
+  "canonical": "/tools/pwa",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/pwa"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/pwa"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/pwa"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/pwa"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/pwa"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/pwa"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/pwa"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/pwa"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/pwa"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/pwa"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/pwa"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/pwa"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/pwa"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/pwa"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/pwa"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/pwa"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/pwa"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/pwa"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/pwa"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/pwa"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "PWA",
+    "description": "PWA. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/pwa",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "en"
+  },
+  "openGraph": {
+    "title": "Free PWA - Flixo",
+    "description": "PWA. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/pwa",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free PWA - Flixo",
+    "description": "PWA. Free online tool that helps you get things done quickly and easily."
+  }
+}

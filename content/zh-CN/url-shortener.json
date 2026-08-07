@@ -1,0 +1,147 @@
+{
+  "id": "url-shortener",
+  "slug": "url-shortener",
+  "locale": "zh-CN",
+  "toolName": "URL Shortener",
+  "englishName": "URL Shortener",
+  "title": "URL Shortener",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "URL Shortener. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free URL Shortener Online - Fast & Easy | Flixo",
+  "metaDescription": "URL Shortener. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is URL Shortener free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "URL Shortener"
+  ],
+  "canonical": "/tools/url-shortener",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/url-shortener"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/url-shortener"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/url-shortener"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/url-shortener"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/url-shortener"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/url-shortener"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/url-shortener"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/url-shortener"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/url-shortener"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/url-shortener"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/url-shortener"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/url-shortener"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/url-shortener"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/url-shortener"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/url-shortener"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/url-shortener"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/url-shortener"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/url-shortener"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/url-shortener"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/url-shortener"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "URL Shortener",
+    "description": "URL Shortener. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/url-shortener",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "zh-CN"
+  },
+  "openGraph": {
+    "title": "Free URL Shortener - Flixo",
+    "description": "URL Shortener. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/url-shortener",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free URL Shortener - Flixo",
+    "description": "URL Shortener. Free online tool that helps you get things done quickly and easily."
+  }
+}

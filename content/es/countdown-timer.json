@@ -1,0 +1,147 @@
+{
+  "id": "countdown-timer",
+  "slug": "countdown-timer",
+  "locale": "es",
+  "toolName": "Countdown Timer",
+  "englishName": "Countdown Timer",
+  "title": "Countdown Timer",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Countdown Timer. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Countdown Timer Online - Fast & Easy | Flixo",
+  "metaDescription": "Countdown Timer. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Countdown Timer free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Countdown Timer"
+  ],
+  "canonical": "/tools/countdown-timer",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/countdown-timer"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/countdown-timer"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/countdown-timer"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/countdown-timer"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/countdown-timer"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/countdown-timer"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/countdown-timer"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/countdown-timer"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/countdown-timer"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/countdown-timer"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/countdown-timer"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/countdown-timer"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/countdown-timer"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/countdown-timer"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/countdown-timer"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/countdown-timer"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/countdown-timer"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/countdown-timer"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/countdown-timer"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/countdown-timer"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Countdown Timer",
+    "description": "Countdown Timer. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/countdown-timer",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "es"
+  },
+  "openGraph": {
+    "title": "Free Countdown Timer - Flixo",
+    "description": "Countdown Timer. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/countdown-timer",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Countdown Timer - Flixo",
+    "description": "Countdown Timer. Free online tool that helps you get things done quickly and easily."
+  }
+}

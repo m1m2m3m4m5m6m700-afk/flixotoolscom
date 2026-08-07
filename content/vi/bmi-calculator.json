@@ -1,0 +1,147 @@
+{
+  "id": "bmi-calculator",
+  "slug": "bmi-calculator",
+  "locale": "vi",
+  "toolName": "Bmi Calculator",
+  "englishName": "Bmi Calculator",
+  "title": "Bmi Calculator",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Bmi Calculator. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Bmi Calculator Online - Fast & Easy | Flixo",
+  "metaDescription": "Bmi Calculator. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Bmi Calculator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Bmi Calculator"
+  ],
+  "canonical": "/tools/bmi-calculator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/bmi-calculator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/bmi-calculator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/bmi-calculator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/bmi-calculator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/bmi-calculator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/bmi-calculator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/bmi-calculator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/bmi-calculator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/bmi-calculator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/bmi-calculator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/bmi-calculator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/bmi-calculator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/bmi-calculator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/bmi-calculator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/bmi-calculator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/bmi-calculator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/bmi-calculator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/bmi-calculator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/bmi-calculator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/bmi-calculator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Bmi Calculator",
+    "description": "Bmi Calculator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/bmi-calculator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "vi"
+  },
+  "openGraph": {
+    "title": "Free Bmi Calculator - Flixo",
+    "description": "Bmi Calculator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/bmi-calculator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Bmi Calculator - Flixo",
+    "description": "Bmi Calculator. Free online tool that helps you get things done quickly and easily."
+  }
+}

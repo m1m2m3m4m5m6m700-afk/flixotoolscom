@@ -1,0 +1,147 @@
+{
+  "id": "duplicate-lines-remover",
+  "slug": "duplicate-lines-remover",
+  "locale": "ko",
+  "toolName": "Duplicate Lines Remover",
+  "englishName": "Duplicate Lines Remover",
+  "title": "Duplicate Lines Remover",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Duplicate Lines Remover. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Duplicate Lines Remover Online - Fast & Easy | Flixo",
+  "metaDescription": "Duplicate Lines Remover. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Duplicate Lines Remover free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Duplicate Lines Remover"
+  ],
+  "canonical": "/tools/duplicate-lines-remover",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/duplicate-lines-remover"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/duplicate-lines-remover"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/duplicate-lines-remover"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/duplicate-lines-remover"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/duplicate-lines-remover"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/duplicate-lines-remover"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/duplicate-lines-remover"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/duplicate-lines-remover"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/duplicate-lines-remover"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/duplicate-lines-remover"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/duplicate-lines-remover"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/duplicate-lines-remover"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/duplicate-lines-remover"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/duplicate-lines-remover"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/duplicate-lines-remover"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/duplicate-lines-remover"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/duplicate-lines-remover"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/duplicate-lines-remover"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/duplicate-lines-remover"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/duplicate-lines-remover"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Duplicate Lines Remover",
+    "description": "Duplicate Lines Remover. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/duplicate-lines-remover",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ko"
+  },
+  "openGraph": {
+    "title": "Free Duplicate Lines Remover - Flixo",
+    "description": "Duplicate Lines Remover. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/duplicate-lines-remover",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Duplicate Lines Remover - Flixo",
+    "description": "Duplicate Lines Remover. Free online tool that helps you get things done quickly and easily."
+  }
+}

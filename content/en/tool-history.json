@@ -1,0 +1,147 @@
+{
+  "id": "tool-history",
+  "slug": "tool-history",
+  "locale": "en",
+  "toolName": "Tool History",
+  "englishName": "Tool History",
+  "title": "Tool History",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Tool History. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Tool History Online - Fast & Easy | Flixo",
+  "metaDescription": "Tool History. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Tool History free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Tool History"
+  ],
+  "canonical": "/tools/tool-history",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/tool-history"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/tool-history"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/tool-history"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/tool-history"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/tool-history"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/tool-history"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/tool-history"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/tool-history"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/tool-history"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/tool-history"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/tool-history"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/tool-history"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/tool-history"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/tool-history"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/tool-history"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/tool-history"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/tool-history"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/tool-history"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/tool-history"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/tool-history"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Tool History",
+    "description": "Tool History. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/tool-history",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "en"
+  },
+  "openGraph": {
+    "title": "Free Tool History - Flixo",
+    "description": "Tool History. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/tool-history",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Tool History - Flixo",
+    "description": "Tool History. Free online tool that helps you get things done quickly and easily."
+  }
+}

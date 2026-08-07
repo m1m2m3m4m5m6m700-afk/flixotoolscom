@@ -1,0 +1,147 @@
+{
+  "id": "lorem-ipsum",
+  "slug": "lorem-ipsum",
+  "locale": "pl",
+  "toolName": "Lorem Ipsum Generator",
+  "englishName": "Lorem Ipsum Generator",
+  "title": "Lorem Ipsum Generator",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Lorem Ipsum Generator. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Lorem Ipsum Generator Online - Fast & Easy | Flixo",
+  "metaDescription": "Lorem Ipsum Generator. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Lorem Ipsum Generator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Lorem Ipsum Generator"
+  ],
+  "canonical": "/tools/lorem-ipsum",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/lorem-ipsum"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/lorem-ipsum"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/lorem-ipsum"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/lorem-ipsum"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/lorem-ipsum"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/lorem-ipsum"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/lorem-ipsum"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/lorem-ipsum"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/lorem-ipsum"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/lorem-ipsum"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/lorem-ipsum"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/lorem-ipsum"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/lorem-ipsum"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/lorem-ipsum"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/lorem-ipsum"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/lorem-ipsum"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/lorem-ipsum"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/lorem-ipsum"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/lorem-ipsum"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/lorem-ipsum"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Lorem Ipsum Generator",
+    "description": "Lorem Ipsum Generator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/lorem-ipsum",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pl"
+  },
+  "openGraph": {
+    "title": "Free Lorem Ipsum Generator - Flixo",
+    "description": "Lorem Ipsum Generator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/lorem-ipsum",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Lorem Ipsum Generator - Flixo",
+    "description": "Lorem Ipsum Generator. Free online tool that helps you get things done quickly and easily."
+  }
+}

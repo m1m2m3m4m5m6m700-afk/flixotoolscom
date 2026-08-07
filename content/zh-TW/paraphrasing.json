@@ -1,0 +1,148 @@
+{
+  "id": "paraphrasing",
+  "slug": "paraphrasing",
+  "locale": "zh-TW",
+  "toolName": "Paraphrasing",
+  "englishName": "Paraphrasing",
+  "title": "Paraphrasing",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Paraphrasing. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Paraphrasing Online - Write Better | Flixo",
+  "metaDescription": "Paraphrasing. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Paraphrasing free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Paraphrasing"
+  ],
+  "canonical": "/tools/paraphrasing",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/paraphrasing"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/paraphrasing"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/paraphrasing"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/paraphrasing"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/paraphrasing"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/paraphrasing"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/paraphrasing"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/paraphrasing"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/paraphrasing"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/paraphrasing"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/paraphrasing"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/paraphrasing"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/paraphrasing"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/paraphrasing"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/paraphrasing"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/paraphrasing"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/paraphrasing"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/paraphrasing"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/paraphrasing"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/paraphrasing"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Paraphrasing",
+    "description": "Paraphrasing. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/paraphrasing",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "zh-TW"
+  },
+  "openGraph": {
+    "title": "Free Paraphrasing - Flixo",
+    "description": "Paraphrasing. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/paraphrasing",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Paraphrasing - Flixo",
+    "description": "Paraphrasing. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "html-encoder-decoder",
+  "slug": "html-encoder-decoder",
+  "locale": "ja",
+  "toolName": "Html Encoder Decoder",
+  "englishName": "Html Encoder Decoder",
+  "title": "Html Encoder Decoder",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Html Encoder Decoder. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Html Encoder Decoder Online - Fast & Easy | Flixo",
+  "metaDescription": "Html Encoder Decoder. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Html Encoder Decoder free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Html Encoder Decoder"
+  ],
+  "canonical": "/tools/html-encoder-decoder",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/html-encoder-decoder"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/html-encoder-decoder"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/html-encoder-decoder"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/html-encoder-decoder"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/html-encoder-decoder"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/html-encoder-decoder"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/html-encoder-decoder"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/html-encoder-decoder"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/html-encoder-decoder"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/html-encoder-decoder"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/html-encoder-decoder"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/html-encoder-decoder"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/html-encoder-decoder"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/html-encoder-decoder"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/html-encoder-decoder"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/html-encoder-decoder"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/html-encoder-decoder"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/html-encoder-decoder"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/html-encoder-decoder"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/html-encoder-decoder"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Html Encoder Decoder",
+    "description": "Html Encoder Decoder. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/html-encoder-decoder",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ja"
+  },
+  "openGraph": {
+    "title": "Free Html Encoder Decoder - Flixo",
+    "description": "Html Encoder Decoder. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/html-encoder-decoder",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Html Encoder Decoder - Flixo",
+    "description": "Html Encoder Decoder. Free online tool that helps you get things done quickly and easily."
+  }
+}

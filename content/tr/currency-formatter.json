@@ -1,0 +1,148 @@
+{
+  "id": "currency-formatter",
+  "slug": "currency-formatter",
+  "locale": "tr",
+  "toolName": "Currency Formatter",
+  "englishName": "Currency Formatter",
+  "title": "Currency Formatter",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Currency Formatter. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Currency Formatter Online - Write Better | Flixo",
+  "metaDescription": "Currency Formatter. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Currency Formatter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Currency Formatter"
+  ],
+  "canonical": "/tools/currency-formatter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/currency-formatter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/currency-formatter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/currency-formatter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/currency-formatter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/currency-formatter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/currency-formatter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/currency-formatter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/currency-formatter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/currency-formatter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/currency-formatter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/currency-formatter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/currency-formatter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/currency-formatter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/currency-formatter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/currency-formatter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/currency-formatter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/currency-formatter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/currency-formatter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/currency-formatter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/currency-formatter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Currency Formatter",
+    "description": "Currency Formatter. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/currency-formatter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "tr"
+  },
+  "openGraph": {
+    "title": "Free Currency Formatter - Flixo",
+    "description": "Currency Formatter. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/currency-formatter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Currency Formatter - Flixo",
+    "description": "Currency Formatter. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "plugin-system",
+  "slug": "plugin-system",
+  "locale": "id",
+  "toolName": "Plugin System",
+  "englishName": "Plugin System",
+  "title": "Plugin System",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Plugin System. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Plugin System Online - Fast & Easy | Flixo",
+  "metaDescription": "Plugin System. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Plugin System free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Plugin System"
+  ],
+  "canonical": "/tools/plugin-system",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/plugin-system"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/plugin-system"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/plugin-system"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/plugin-system"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/plugin-system"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/plugin-system"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/plugin-system"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/plugin-system"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/plugin-system"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/plugin-system"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/plugin-system"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/plugin-system"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/plugin-system"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/plugin-system"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/plugin-system"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/plugin-system"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/plugin-system"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/plugin-system"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/plugin-system"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/plugin-system"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Plugin System",
+    "description": "Plugin System. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/plugin-system",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "id"
+  },
+  "openGraph": {
+    "title": "Free Plugin System - Flixo",
+    "description": "Plugin System. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/plugin-system",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Plugin System - Flixo",
+    "description": "Plugin System. Free online tool that helps you get things done quickly and easily."
+  }
+}

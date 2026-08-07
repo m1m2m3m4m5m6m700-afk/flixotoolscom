@@ -1,0 +1,147 @@
+{
+  "id": "website-screenshot",
+  "slug": "website-screenshot",
+  "locale": "ar",
+  "toolName": "Website Screenshot",
+  "englishName": "Website Screenshot",
+  "title": "Website Screenshot",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Website Screenshot. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Website Screenshot Online - Fast & Easy | Flixo",
+  "metaDescription": "Website Screenshot. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Website Screenshot free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Website Screenshot"
+  ],
+  "canonical": "/tools/website-screenshot",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/website-screenshot"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/website-screenshot"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/website-screenshot"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/website-screenshot"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/website-screenshot"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/website-screenshot"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/website-screenshot"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/website-screenshot"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/website-screenshot"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/website-screenshot"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/website-screenshot"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/website-screenshot"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/website-screenshot"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/website-screenshot"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/website-screenshot"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/website-screenshot"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/website-screenshot"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/website-screenshot"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/website-screenshot"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/website-screenshot"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Website Screenshot",
+    "description": "Website Screenshot. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/website-screenshot",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ar"
+  },
+  "openGraph": {
+    "title": "Free Website Screenshot - Flixo",
+    "description": "Website Screenshot. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/website-screenshot",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Website Screenshot - Flixo",
+    "description": "Website Screenshot. Free online tool that helps you get things done quickly and easily."
+  }
+}

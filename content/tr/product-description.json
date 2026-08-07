@@ -1,0 +1,148 @@
+{
+  "id": "product-description",
+  "slug": "product-description",
+  "locale": "tr",
+  "toolName": "Product Description",
+  "englishName": "Product Description",
+  "title": "Product Description",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Product Description. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Product Description Online - Write Better | Flixo",
+  "metaDescription": "Product Description. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Product Description free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Product Description"
+  ],
+  "canonical": "/tools/product-description",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/product-description"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/product-description"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/product-description"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/product-description"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/product-description"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/product-description"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/product-description"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/product-description"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/product-description"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/product-description"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/product-description"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/product-description"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/product-description"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/product-description"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/product-description"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/product-description"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/product-description"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/product-description"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/product-description"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/product-description"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Product Description",
+    "description": "Product Description. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/product-description",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "tr"
+  },
+  "openGraph": {
+    "title": "Free Product Description - Flixo",
+    "description": "Product Description. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/product-description",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Product Description - Flixo",
+    "description": "Product Description. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

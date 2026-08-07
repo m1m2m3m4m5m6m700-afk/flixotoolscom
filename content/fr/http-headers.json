@@ -1,0 +1,147 @@
+{
+  "id": "http-headers",
+  "slug": "http-headers",
+  "locale": "fr",
+  "toolName": "HTTP Header Inspector",
+  "englishName": "HTTP Header Inspector",
+  "title": "HTTP Header Inspector",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "HTTP Header Inspector. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free HTTP Header Inspector Online - Fast & Easy | Flixo",
+  "metaDescription": "HTTP Header Inspector. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is HTTP Header Inspector free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "HTTP Header Inspector"
+  ],
+  "canonical": "/tools/http-headers",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/http-headers"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/http-headers"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/http-headers"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/http-headers"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/http-headers"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/http-headers"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/http-headers"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/http-headers"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/http-headers"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/http-headers"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/http-headers"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/http-headers"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/http-headers"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/http-headers"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/http-headers"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/http-headers"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/http-headers"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/http-headers"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/http-headers"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/http-headers"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "HTTP Header Inspector",
+    "description": "HTTP Header Inspector. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/http-headers",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "fr"
+  },
+  "openGraph": {
+    "title": "Free HTTP Header Inspector - Flixo",
+    "description": "HTTP Header Inspector. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/http-headers",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free HTTP Header Inspector - Flixo",
+    "description": "HTTP Header Inspector. Free online tool that helps you get things done quickly and easily."
+  }
+}

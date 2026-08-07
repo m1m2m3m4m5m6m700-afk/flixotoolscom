@@ -1,0 +1,148 @@
+{
+  "id": "spell-checker",
+  "slug": "spell-checker",
+  "locale": "pl",
+  "toolName": "Spell Checker",
+  "englishName": "Spell Checker",
+  "title": "Spell Checker",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Spell Checker. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Spell Checker Online - Write Better | Flixo",
+  "metaDescription": "Spell Checker. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Spell Checker free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Spell Checker"
+  ],
+  "canonical": "/tools/spell-checker",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/spell-checker"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/spell-checker"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/spell-checker"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/spell-checker"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/spell-checker"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/spell-checker"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/spell-checker"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/spell-checker"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/spell-checker"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/spell-checker"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/spell-checker"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/spell-checker"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/spell-checker"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/spell-checker"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/spell-checker"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/spell-checker"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/spell-checker"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/spell-checker"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/spell-checker"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/spell-checker"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Spell Checker",
+    "description": "Spell Checker. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/spell-checker",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pl"
+  },
+  "openGraph": {
+    "title": "Free Spell Checker - Flixo",
+    "description": "Spell Checker. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/spell-checker",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Spell Checker - Flixo",
+    "description": "Spell Checker. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

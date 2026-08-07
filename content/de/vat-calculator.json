@@ -1,0 +1,147 @@
+{
+  "id": "vat-calculator",
+  "slug": "vat-calculator",
+  "locale": "de",
+  "toolName": "Vat Calculator",
+  "englishName": "Vat Calculator",
+  "title": "Vat Calculator",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Vat Calculator. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Vat Calculator Online - Fast & Easy | Flixo",
+  "metaDescription": "Vat Calculator. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Vat Calculator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Vat Calculator"
+  ],
+  "canonical": "/tools/vat-calculator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/vat-calculator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/vat-calculator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/vat-calculator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/vat-calculator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/vat-calculator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/vat-calculator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/vat-calculator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/vat-calculator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/vat-calculator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/vat-calculator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/vat-calculator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/vat-calculator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/vat-calculator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/vat-calculator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/vat-calculator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/vat-calculator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/vat-calculator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/vat-calculator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/vat-calculator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/vat-calculator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Vat Calculator",
+    "description": "Vat Calculator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/vat-calculator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "de"
+  },
+  "openGraph": {
+    "title": "Free Vat Calculator - Flixo",
+    "description": "Vat Calculator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/vat-calculator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Vat Calculator - Flixo",
+    "description": "Vat Calculator. Free online tool that helps you get things done quickly and easily."
+  }
+}

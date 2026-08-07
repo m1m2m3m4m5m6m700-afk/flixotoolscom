@@ -1,0 +1,147 @@
+{
+  "id": "desktop-app",
+  "slug": "desktop-app",
+  "locale": "ja",
+  "toolName": "Desktop App",
+  "englishName": "Desktop App",
+  "title": "Desktop App",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Desktop App. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Desktop App Online - Fast & Easy | Flixo",
+  "metaDescription": "Desktop App. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Desktop App free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Desktop App"
+  ],
+  "canonical": "/tools/desktop-app",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/desktop-app"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/desktop-app"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/desktop-app"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/desktop-app"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/desktop-app"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/desktop-app"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/desktop-app"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/desktop-app"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/desktop-app"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/desktop-app"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/desktop-app"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/desktop-app"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/desktop-app"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/desktop-app"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/desktop-app"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/desktop-app"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/desktop-app"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/desktop-app"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/desktop-app"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/desktop-app"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Desktop App",
+    "description": "Desktop App. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/desktop-app",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ja"
+  },
+  "openGraph": {
+    "title": "Free Desktop App - Flixo",
+    "description": "Desktop App. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/desktop-app",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Desktop App - Flixo",
+    "description": "Desktop App. Free online tool that helps you get things done quickly and easily."
+  }
+}

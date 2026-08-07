@@ -1,0 +1,149 @@
+{
+  "id": "ocr-translator",
+  "slug": "ocr-translator",
+  "locale": "nl",
+  "toolName": "OCR Translator",
+  "englishName": "OCR Translator",
+  "title": "OCR Translator",
+  "tagline": "Translate text between languages instantly with AI-powered accuracy.",
+  "description": "OCR Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+  "shortDescription": "Translate text between languages instantly with AI-powered accuracy.",
+  "metaTitle": "Free OCR Translator Online - Translate Text Instantly | Flixo",
+  "metaDescription": "OCR Translator. Use our free AI translator. Translate text between 100+ languages instantly. No signup, no fees, accurate results.",
+  "keywords": [
+    "translator",
+    "translation",
+    "ai translator",
+    "translator",
+    "online translator",
+    "text translation"
+  ],
+  "faq": [
+    {
+      "q": "Is OCR Translator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "OCR Translator"
+  ],
+  "canonical": "/tools/ocr-translator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/ocr-translator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/ocr-translator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/ocr-translator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/ocr-translator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/ocr-translator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/ocr-translator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/ocr-translator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/ocr-translator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/ocr-translator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/ocr-translator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/ocr-translator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/ocr-translator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/ocr-translator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/ocr-translator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/ocr-translator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/ocr-translator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/ocr-translator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/ocr-translator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/ocr-translator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/ocr-translator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OCR Translator",
+    "description": "OCR Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/ocr-translator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "nl"
+  },
+  "openGraph": {
+    "title": "Free OCR Translator - Flixo",
+    "description": "OCR Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/ocr-translator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free OCR Translator - Flixo",
+    "description": "OCR Translator. Free online translation tool powered by AI. Translate text accurately and quickly."
+  }
+}

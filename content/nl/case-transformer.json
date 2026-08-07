@@ -1,0 +1,148 @@
+{
+  "id": "case-transformer",
+  "slug": "case-transformer",
+  "locale": "nl",
+  "toolName": "Case Transformer",
+  "englishName": "Case Transformer",
+  "title": "Case Transformer",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Case Transformer. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Case Transformer Online - Write Better | Flixo",
+  "metaDescription": "Case Transformer. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Case Transformer free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Case Transformer"
+  ],
+  "canonical": "/tools/case-transformer",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/case-transformer"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/case-transformer"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/case-transformer"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/case-transformer"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/case-transformer"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/case-transformer"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/case-transformer"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/case-transformer"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/case-transformer"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/case-transformer"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/case-transformer"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/case-transformer"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/case-transformer"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/case-transformer"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/case-transformer"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/case-transformer"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/case-transformer"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/case-transformer"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/case-transformer"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/case-transformer"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Case Transformer",
+    "description": "Case Transformer. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/case-transformer",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "nl"
+  },
+  "openGraph": {
+    "title": "Free Case Transformer - Flixo",
+    "description": "Case Transformer. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/case-transformer",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Case Transformer - Flixo",
+    "description": "Case Transformer. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "id": "ai-voice-cleaner",
+  "slug": "ai-voice-cleaner",
+  "locale": "es",
+  "toolName": "AI Voice Cleaner",
+  "englishName": "AI Voice Cleaner",
+  "title": "AI Voice Cleaner",
+  "tagline": "Process audio files with powerful tools.",
+  "description": "AI Voice Cleaner. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+  "shortDescription": "Process audio files with powerful tools.",
+  "metaTitle": "Free AI Voice Cleaner Online - Convert & Edit Audio | Flixo",
+  "metaDescription": "AI Voice Cleaner. Free online audio tools. Convert audio formats, compress files, and more. No signup, works in browser.",
+  "keywords": [
+    "audio tools",
+    "audio converter",
+    "audio compressor",
+    "audio tools",
+    "online audio editor"
+  ],
+  "faq": [
+    {
+      "q": "Is AI Voice Cleaner free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "AI Voice Cleaner"
+  ],
+  "canonical": "/tools/ai-voice-cleaner",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/ai-voice-cleaner"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/ai-voice-cleaner"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/ai-voice-cleaner"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/ai-voice-cleaner"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/ai-voice-cleaner"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/ai-voice-cleaner"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/ai-voice-cleaner"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/ai-voice-cleaner"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/ai-voice-cleaner"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/ai-voice-cleaner"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/ai-voice-cleaner"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/ai-voice-cleaner"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/ai-voice-cleaner"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/ai-voice-cleaner"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/ai-voice-cleaner"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/ai-voice-cleaner"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/ai-voice-cleaner"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/ai-voice-cleaner"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/ai-voice-cleaner"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/ai-voice-cleaner"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "AI Voice Cleaner",
+    "description": "AI Voice Cleaner. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+    "url": "https://flixotools.com/tools/ai-voice-cleaner",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "es"
+  },
+  "openGraph": {
+    "title": "Free AI Voice Cleaner - Flixo",
+    "description": "AI Voice Cleaner. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+    "url": "https://flixotools.com/tools/ai-voice-cleaner",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free AI Voice Cleaner - Flixo",
+    "description": "AI Voice Cleaner. Free online audio tools. Convert, compress, and enhance audio directly in browser."
+  }
+}

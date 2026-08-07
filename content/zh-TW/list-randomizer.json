@@ -1,0 +1,147 @@
+{
+  "id": "list-randomizer",
+  "slug": "list-randomizer",
+  "locale": "zh-TW",
+  "toolName": "List Randomizer",
+  "englishName": "List Randomizer",
+  "title": "List Randomizer",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "List Randomizer. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free List Randomizer Online - Fast & Easy | Flixo",
+  "metaDescription": "List Randomizer. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is List Randomizer free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "List Randomizer"
+  ],
+  "canonical": "/tools/list-randomizer",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/list-randomizer"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/list-randomizer"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/list-randomizer"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/list-randomizer"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/list-randomizer"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/list-randomizer"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/list-randomizer"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/list-randomizer"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/list-randomizer"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/list-randomizer"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/list-randomizer"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/list-randomizer"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/list-randomizer"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/list-randomizer"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/list-randomizer"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/list-randomizer"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/list-randomizer"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/list-randomizer"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/list-randomizer"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/list-randomizer"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "List Randomizer",
+    "description": "List Randomizer. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/list-randomizer",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "zh-TW"
+  },
+  "openGraph": {
+    "title": "Free List Randomizer - Flixo",
+    "description": "List Randomizer. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/list-randomizer",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free List Randomizer - Flixo",
+    "description": "List Randomizer. Free online tool that helps you get things done quickly and easily."
+  }
+}

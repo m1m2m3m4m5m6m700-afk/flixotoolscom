@@ -1,0 +1,147 @@
+{
+  "id": "random-name",
+  "slug": "random-name",
+  "locale": "ko",
+  "toolName": "Random Name",
+  "englishName": "Random Name",
+  "title": "Random Name",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Random Name. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Random Name Online - Fast & Easy | Flixo",
+  "metaDescription": "Random Name. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Random Name free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Random Name"
+  ],
+  "canonical": "/tools/random-name",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/random-name"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/random-name"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/random-name"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/random-name"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/random-name"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/random-name"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/random-name"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/random-name"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/random-name"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/random-name"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/random-name"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/random-name"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/random-name"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/random-name"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/random-name"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/random-name"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/random-name"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/random-name"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/random-name"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/random-name"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Random Name",
+    "description": "Random Name. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/random-name",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ko"
+  },
+  "openGraph": {
+    "title": "Free Random Name - Flixo",
+    "description": "Random Name. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/random-name",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Random Name - Flixo",
+    "description": "Random Name. Free online tool that helps you get things done quickly and easily."
+  }
+}

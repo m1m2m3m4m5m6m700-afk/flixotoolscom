@@ -1,0 +1,148 @@
+{
+  "id": "word-density-analyzer",
+  "slug": "word-density-analyzer",
+  "locale": "en",
+  "toolName": "Word Density Analyzer",
+  "englishName": "Word Density Analyzer",
+  "title": "Word Density Analyzer",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Word Density Analyzer. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Word Density Analyzer Online - Write Better | Flixo",
+  "metaDescription": "Word Density Analyzer. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Word Density Analyzer free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Word Density Analyzer"
+  ],
+  "canonical": "/tools/word-density-analyzer",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/word-density-analyzer"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/word-density-analyzer"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/word-density-analyzer"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/word-density-analyzer"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/word-density-analyzer"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/word-density-analyzer"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/word-density-analyzer"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/word-density-analyzer"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/word-density-analyzer"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/word-density-analyzer"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/word-density-analyzer"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/word-density-analyzer"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/word-density-analyzer"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/word-density-analyzer"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/word-density-analyzer"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/word-density-analyzer"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/word-density-analyzer"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/word-density-analyzer"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/word-density-analyzer"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/word-density-analyzer"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Word Density Analyzer",
+    "description": "Word Density Analyzer. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/word-density-analyzer",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "en"
+  },
+  "openGraph": {
+    "title": "Free Word Density Analyzer - Flixo",
+    "description": "Word Density Analyzer. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/word-density-analyzer",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Word Density Analyzer - Flixo",
+    "description": "Word Density Analyzer. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

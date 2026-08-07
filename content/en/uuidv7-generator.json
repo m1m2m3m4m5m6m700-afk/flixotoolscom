@@ -1,0 +1,147 @@
+{
+  "id": "uuidv7-generator",
+  "slug": "uuidv7-generator",
+  "locale": "en",
+  "toolName": "UUID v7 Generator",
+  "englishName": "UUID v7 Generator",
+  "title": "UUID v7 Generator",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "UUID v7 Generator. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free UUID v7 Generator Online - Fast & Easy | Flixo",
+  "metaDescription": "UUID v7 Generator. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is UUID v7 Generator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "UUID v7 Generator"
+  ],
+  "canonical": "/tools/uuidv7-generator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/uuidv7-generator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/uuidv7-generator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/uuidv7-generator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/uuidv7-generator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/uuidv7-generator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/uuidv7-generator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/uuidv7-generator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/uuidv7-generator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/uuidv7-generator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/uuidv7-generator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/uuidv7-generator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/uuidv7-generator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/uuidv7-generator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/uuidv7-generator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/uuidv7-generator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/uuidv7-generator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/uuidv7-generator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/uuidv7-generator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/uuidv7-generator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/uuidv7-generator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "UUID v7 Generator",
+    "description": "UUID v7 Generator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/uuidv7-generator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "en"
+  },
+  "openGraph": {
+    "title": "Free UUID v7 Generator - Flixo",
+    "description": "UUID v7 Generator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/uuidv7-generator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free UUID v7 Generator - Flixo",
+    "description": "UUID v7 Generator. Free online tool that helps you get things done quickly and easily."
+  }
+}

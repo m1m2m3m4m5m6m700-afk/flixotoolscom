@@ -1,0 +1,147 @@
+{
+  "id": "duplicate-finder",
+  "slug": "duplicate-finder",
+  "locale": "nl",
+  "toolName": "Duplicate Finder",
+  "englishName": "Duplicate Finder",
+  "title": "Duplicate Finder",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Duplicate Finder. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Duplicate Finder Online - Fast & Easy | Flixo",
+  "metaDescription": "Duplicate Finder. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Duplicate Finder free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Duplicate Finder"
+  ],
+  "canonical": "/tools/duplicate-finder",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/duplicate-finder"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/duplicate-finder"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/duplicate-finder"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/duplicate-finder"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/duplicate-finder"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/duplicate-finder"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/duplicate-finder"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/duplicate-finder"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/duplicate-finder"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/duplicate-finder"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/duplicate-finder"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/duplicate-finder"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/duplicate-finder"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/duplicate-finder"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/duplicate-finder"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/duplicate-finder"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/duplicate-finder"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/duplicate-finder"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/duplicate-finder"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/duplicate-finder"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Duplicate Finder",
+    "description": "Duplicate Finder. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/duplicate-finder",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "nl"
+  },
+  "openGraph": {
+    "title": "Free Duplicate Finder - Flixo",
+    "description": "Duplicate Finder. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/duplicate-finder",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Duplicate Finder - Flixo",
+    "description": "Duplicate Finder. Free online tool that helps you get things done quickly and easily."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "id": "ai-presentation-creator",
+  "slug": "ai-presentation-creator",
+  "locale": "pt",
+  "toolName": "AI Presentation Creator",
+  "englishName": "AI Presentation Creator",
+  "title": "AI Presentation Creator",
+  "tagline": "AI-powered tools for productivity and creativity.",
+  "description": "AI Presentation Creator. Free AI tools. Chat, generate content, analyze data, and more.",
+  "shortDescription": "AI-powered tools for productivity and creativity.",
+  "metaTitle": "Free AI Presentation Creator Online - Chat, Generate & Analyze | Flixo",
+  "metaDescription": "AI Presentation Creator. Free AI tools. Chat with AI, generate content, analyze data. No signup, instant results.",
+  "keywords": [
+    "ai tools",
+    "ai chat",
+    "ai assistant",
+    "ai",
+    "chatgpt alternative"
+  ],
+  "faq": [
+    {
+      "q": "Is AI Presentation Creator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "AI Presentation Creator"
+  ],
+  "canonical": "/tools/ai-presentation-creator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/ai-presentation-creator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/ai-presentation-creator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/ai-presentation-creator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/ai-presentation-creator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/ai-presentation-creator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/ai-presentation-creator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/ai-presentation-creator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/ai-presentation-creator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/ai-presentation-creator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/ai-presentation-creator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/ai-presentation-creator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/ai-presentation-creator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/ai-presentation-creator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/ai-presentation-creator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/ai-presentation-creator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/ai-presentation-creator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/ai-presentation-creator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/ai-presentation-creator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/ai-presentation-creator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/ai-presentation-creator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "AI Presentation Creator",
+    "description": "AI Presentation Creator. Free AI tools. Chat, generate content, analyze data, and more.",
+    "url": "https://flixotools.com/tools/ai-presentation-creator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pt"
+  },
+  "openGraph": {
+    "title": "Free AI Presentation Creator - Flixo",
+    "description": "AI Presentation Creator. Free AI tools. Chat, generate content, analyze data, and more.",
+    "url": "https://flixotools.com/tools/ai-presentation-creator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free AI Presentation Creator - Flixo",
+    "description": "AI Presentation Creator. Free AI tools. Chat, generate content, analyze data, and more."
+  }
+}

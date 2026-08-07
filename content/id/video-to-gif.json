@@ -1,0 +1,148 @@
+{
+  "id": "video-to-gif",
+  "slug": "video-to-gif",
+  "locale": "id",
+  "toolName": "Video to GIF",
+  "englishName": "Video to GIF",
+  "title": "Video to GIF",
+  "tagline": "Process and edit video files with powerful tools.",
+  "description": "Video to GIF. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+  "shortDescription": "Process and edit video files with powerful tools.",
+  "metaTitle": "Free Video to GIF Online - Compress & Convert Videos | Flixo",
+  "metaDescription": "Video to GIF. Free online video tools. Compress, convert, and edit videos. No signup, no upload, works in browser.",
+  "keywords": [
+    "video tools",
+    "video compressor",
+    "video converter",
+    "video tools",
+    "online video editor"
+  ],
+  "faq": [
+    {
+      "q": "Is Video to GIF free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Video to GIF"
+  ],
+  "canonical": "/tools/video-to-gif",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/video-to-gif"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/video-to-gif"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/video-to-gif"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/video-to-gif"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/video-to-gif"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/video-to-gif"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/video-to-gif"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/video-to-gif"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/video-to-gif"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/video-to-gif"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/video-to-gif"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/video-to-gif"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/video-to-gif"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/video-to-gif"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/video-to-gif"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/video-to-gif"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/video-to-gif"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/video-to-gif"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/video-to-gif"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/video-to-gif"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Video to GIF",
+    "description": "Video to GIF. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+    "url": "https://flixotools.com/tools/video-to-gif",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "id"
+  },
+  "openGraph": {
+    "title": "Free Video to GIF - Flixo",
+    "description": "Video to GIF. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+    "url": "https://flixotools.com/tools/video-to-gif",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Video to GIF - Flixo",
+    "description": "Video to GIF. Free online video tools. Compress, convert, and enhance videos directly in browser."
+  }
+}

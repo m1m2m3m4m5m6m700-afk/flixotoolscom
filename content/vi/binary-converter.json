@@ -1,39 +1,39 @@
 {
+  "id": "binary-converter",
   "slug": "binary-converter",
   "locale": "vi",
   "toolName": "Trình chuyển đổi nhị phân",
   "englishName": "Binary Converter",
   "title": "Trình chuyển đổi nhị phân",
-  "tagline": "Convert between different formats quickly and accurately.",
-  "description": "A free online converter tool that converts data between different formats. Fast, accurate, and works entirely in your browser.",
-  "metaTitle": "Free Unit Converter Online - Convert Units Instantly | Flixo",
-  "metaDescription": "Use our free unit converter tool. Convert between units instantly with high accuracy. No signup, no upload, works offline.",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Trình chuyển đổi nhị phân. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Trình chuyển đổi nhị phân Online - Fast & Easy | Flixo",
+  "metaDescription": "Trình chuyển đổi nhị phân. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
   "keywords": [
-    "unit converter",
-    "convert units",
-    "measurement converter",
-    "free converter",
-    "online converter"
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
   ],
   "faq": [
     {
-      "q": "What formats are supported?",
-      "a": "We support all major formats. Check the tool for full list."
-    },
-    {
-      "q": "Is this converter free?",
-      "a": "Yes, completely free with no signup required."
+      "q": "Is Trình chuyển đổi nhị phân free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
     },
     {
       "q": "Is my data secure?",
-      "a": "Yes, all conversions happen locally in your browser."
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
     }
   ],
   "breadcrumb": [
     "Home",
     "Tools",
-    "Utility Tools",
-    "Unit Converter"
+    "Binary Converter"
   ],
   "canonical": "/tools/binary-converter",
   "hreflangs": [
@@ -122,7 +122,7 @@
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "Trình chuyển đổi nhị phân",
-    "description": "A free online converter tool that converts data between different formats. Fast, accurate, and works entirely in your browser.",
+    "description": "Trình chuyển đổi nhị phân. Free online tool that helps you get things done quickly and easily.",
     "url": "https://flixotools.com/tools/binary-converter",
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "Any",
@@ -134,14 +134,14 @@
     "inLanguage": "vi"
   },
   "openGraph": {
-    "title": "Free Unit Converter Online - Convert Units Instantly | Flixo",
-    "description": "Use our free unit converter tool. Convert between units instantly with high accuracy. No signup, no upload, works offline.",
+    "title": "Free Trình chuyển đổi nhị phân - Flixo",
+    "description": "Trình chuyển đổi nhị phân. Free online tool that helps you get things done quickly and easily.",
     "url": "https://flixotools.com/tools/binary-converter",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Free Unit Converter Online - Convert Units Instantly | Flixo",
-    "description": "Use our free unit converter tool. Convert between units instantly with high accuracy. No signup, no upload, works offline."
+    "title": "Free Trình chuyển đổi nhị phân - Flixo",
+    "description": "Trình chuyển đổi nhị phân. Free online tool that helps you get things done quickly and easily."
   }
 }

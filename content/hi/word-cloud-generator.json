@@ -1,0 +1,147 @@
+{
+  "id": "word-cloud-generator",
+  "slug": "word-cloud-generator",
+  "locale": "hi",
+  "toolName": "Word Cloud Generator",
+  "englishName": "Word Cloud Generator",
+  "title": "Word Cloud Generator",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Word Cloud Generator. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Word Cloud Generator Online - Fast & Easy | Flixo",
+  "metaDescription": "Word Cloud Generator. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Word Cloud Generator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Word Cloud Generator"
+  ],
+  "canonical": "/tools/word-cloud-generator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/word-cloud-generator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/word-cloud-generator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/word-cloud-generator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/word-cloud-generator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/word-cloud-generator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/word-cloud-generator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/word-cloud-generator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/word-cloud-generator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/word-cloud-generator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/word-cloud-generator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/word-cloud-generator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/word-cloud-generator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/word-cloud-generator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/word-cloud-generator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/word-cloud-generator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/word-cloud-generator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/word-cloud-generator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/word-cloud-generator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/word-cloud-generator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/word-cloud-generator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Word Cloud Generator",
+    "description": "Word Cloud Generator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/word-cloud-generator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "hi"
+  },
+  "openGraph": {
+    "title": "Free Word Cloud Generator - Flixo",
+    "description": "Word Cloud Generator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/word-cloud-generator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Word Cloud Generator - Flixo",
+    "description": "Word Cloud Generator. Free online tool that helps you get things done quickly and easily."
+  }
+}

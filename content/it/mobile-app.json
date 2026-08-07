@@ -1,0 +1,147 @@
+{
+  "id": "mobile-app",
+  "slug": "mobile-app",
+  "locale": "it",
+  "toolName": "Mobile App",
+  "englishName": "Mobile App",
+  "title": "Mobile App",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Mobile App. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Mobile App Online - Fast & Easy | Flixo",
+  "metaDescription": "Mobile App. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Mobile App free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Mobile App"
+  ],
+  "canonical": "/tools/mobile-app",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/mobile-app"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/mobile-app"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/mobile-app"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/mobile-app"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/mobile-app"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/mobile-app"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/mobile-app"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/mobile-app"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/mobile-app"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/mobile-app"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/mobile-app"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/mobile-app"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/mobile-app"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/mobile-app"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/mobile-app"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/mobile-app"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/mobile-app"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/mobile-app"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/mobile-app"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/mobile-app"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Mobile App",
+    "description": "Mobile App. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/mobile-app",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "it"
+  },
+  "openGraph": {
+    "title": "Free Mobile App - Flixo",
+    "description": "Mobile App. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/mobile-app",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Mobile App - Flixo",
+    "description": "Mobile App. Free online tool that helps you get things done quickly and easily."
+  }
+}

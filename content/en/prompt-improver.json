@@ -1,0 +1,148 @@
+{
+  "id": "prompt-improver",
+  "slug": "prompt-improver",
+  "locale": "en",
+  "toolName": "Prompt Improver",
+  "englishName": "Prompt Improver",
+  "title": "Prompt Improver",
+  "tagline": "AI-powered tools for productivity and creativity.",
+  "description": "Prompt Improver. Free AI tools. Chat, generate content, analyze data, and more.",
+  "shortDescription": "AI-powered tools for productivity and creativity.",
+  "metaTitle": "Free Prompt Improver Online - Chat, Generate & Analyze | Flixo",
+  "metaDescription": "Prompt Improver. Free AI tools. Chat with AI, generate content, analyze data. No signup, instant results.",
+  "keywords": [
+    "ai tools",
+    "ai chat",
+    "ai assistant",
+    "ai",
+    "chatgpt alternative"
+  ],
+  "faq": [
+    {
+      "q": "Is Prompt Improver free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Prompt Improver"
+  ],
+  "canonical": "/tools/prompt-improver",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/prompt-improver"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/prompt-improver"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/prompt-improver"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/prompt-improver"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/prompt-improver"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/prompt-improver"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/prompt-improver"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/prompt-improver"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/prompt-improver"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/prompt-improver"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/prompt-improver"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/prompt-improver"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/prompt-improver"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/prompt-improver"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/prompt-improver"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/prompt-improver"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/prompt-improver"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/prompt-improver"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/prompt-improver"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/prompt-improver"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Prompt Improver",
+    "description": "Prompt Improver. Free AI tools. Chat, generate content, analyze data, and more.",
+    "url": "https://flixotools.com/tools/prompt-improver",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "en"
+  },
+  "openGraph": {
+    "title": "Free Prompt Improver - Flixo",
+    "description": "Prompt Improver. Free AI tools. Chat, generate content, analyze data, and more.",
+    "url": "https://flixotools.com/tools/prompt-improver",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Prompt Improver - Flixo",
+    "description": "Prompt Improver. Free AI tools. Chat, generate content, analyze data, and more."
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "tip-splitter",
+  "slug": "tip-splitter",
+  "locale": "nl",
+  "toolName": "Tip Splitter",
+  "englishName": "Tip Splitter",
+  "title": "Tip Splitter",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Tip Splitter. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Tip Splitter Online - Fast & Easy | Flixo",
+  "metaDescription": "Tip Splitter. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Tip Splitter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Tip Splitter"
+  ],
+  "canonical": "/tools/tip-splitter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/tip-splitter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/tip-splitter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/tip-splitter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/tip-splitter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/tip-splitter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/tip-splitter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/tip-splitter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/tip-splitter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/tip-splitter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/tip-splitter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/tip-splitter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/tip-splitter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/tip-splitter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/tip-splitter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/tip-splitter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/tip-splitter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/tip-splitter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/tip-splitter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/tip-splitter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/tip-splitter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Tip Splitter",
+    "description": "Tip Splitter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/tip-splitter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "nl"
+  },
+  "openGraph": {
+    "title": "Free Tip Splitter - Flixo",
+    "description": "Tip Splitter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/tip-splitter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Tip Splitter - Flixo",
+    "description": "Tip Splitter. Free online tool that helps you get things done quickly and easily."
+  }
+}

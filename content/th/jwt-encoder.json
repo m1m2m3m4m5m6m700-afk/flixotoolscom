@@ -1,0 +1,147 @@
+{
+  "id": "jwt-encoder",
+  "slug": "jwt-encoder",
+  "locale": "th",
+  "toolName": "Jwt Encoder",
+  "englishName": "Jwt Encoder",
+  "title": "Jwt Encoder",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Jwt Encoder. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Jwt Encoder Online - Fast & Easy | Flixo",
+  "metaDescription": "Jwt Encoder. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Jwt Encoder free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Jwt Encoder"
+  ],
+  "canonical": "/tools/jwt-encoder",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/jwt-encoder"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/jwt-encoder"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/jwt-encoder"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/jwt-encoder"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/jwt-encoder"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/jwt-encoder"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/jwt-encoder"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/jwt-encoder"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/jwt-encoder"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/jwt-encoder"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/jwt-encoder"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/jwt-encoder"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/jwt-encoder"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/jwt-encoder"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/jwt-encoder"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/jwt-encoder"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/jwt-encoder"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/jwt-encoder"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/jwt-encoder"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/jwt-encoder"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Jwt Encoder",
+    "description": "Jwt Encoder. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/jwt-encoder",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "th"
+  },
+  "openGraph": {
+    "title": "Free Jwt Encoder - Flixo",
+    "description": "Jwt Encoder. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/jwt-encoder",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Jwt Encoder - Flixo",
+    "description": "Jwt Encoder. Free online tool that helps you get things done quickly and easily."
+  }
+}

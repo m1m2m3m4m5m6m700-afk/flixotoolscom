@@ -1,0 +1,148 @@
+{
+  "id": "audio-compressor",
+  "slug": "audio-compressor",
+  "locale": "vi",
+  "toolName": "Audio Compressor",
+  "englishName": "Audio Compressor",
+  "title": "Audio Compressor",
+  "tagline": "Process audio files with powerful tools.",
+  "description": "Audio Compressor. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+  "shortDescription": "Process audio files with powerful tools.",
+  "metaTitle": "Free Audio Compressor Online - Convert & Edit Audio | Flixo",
+  "metaDescription": "Audio Compressor. Free online audio tools. Convert audio formats, compress files, and more. No signup, works in browser.",
+  "keywords": [
+    "audio tools",
+    "audio converter",
+    "audio compressor",
+    "audio tools",
+    "online audio editor"
+  ],
+  "faq": [
+    {
+      "q": "Is Audio Compressor free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Audio Compressor"
+  ],
+  "canonical": "/tools/audio-compressor",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/audio-compressor"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/audio-compressor"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/audio-compressor"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/audio-compressor"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/audio-compressor"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/audio-compressor"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/audio-compressor"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/audio-compressor"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/audio-compressor"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/audio-compressor"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/audio-compressor"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/audio-compressor"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/audio-compressor"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/audio-compressor"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/audio-compressor"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/audio-compressor"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/audio-compressor"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/audio-compressor"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/audio-compressor"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/audio-compressor"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Audio Compressor",
+    "description": "Audio Compressor. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+    "url": "https://flixotools.com/tools/audio-compressor",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "vi"
+  },
+  "openGraph": {
+    "title": "Free Audio Compressor - Flixo",
+    "description": "Audio Compressor. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+    "url": "https://flixotools.com/tools/audio-compressor",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Audio Compressor - Flixo",
+    "description": "Audio Compressor. Free online audio tools. Convert, compress, and enhance audio directly in browser."
+  }
+}

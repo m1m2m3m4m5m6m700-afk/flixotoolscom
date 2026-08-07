@@ -1,0 +1,148 @@
+{
+  "id": "slug-checker",
+  "slug": "slug-checker",
+  "locale": "pt",
+  "toolName": "Slug Checker",
+  "englishName": "Slug Checker",
+  "title": "Slug Checker",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Slug Checker. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Slug Checker Online - Write Better | Flixo",
+  "metaDescription": "Slug Checker. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Slug Checker free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Slug Checker"
+  ],
+  "canonical": "/tools/slug-checker",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/slug-checker"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/slug-checker"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/slug-checker"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/slug-checker"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/slug-checker"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/slug-checker"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/slug-checker"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/slug-checker"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/slug-checker"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/slug-checker"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/slug-checker"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/slug-checker"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/slug-checker"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/slug-checker"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/slug-checker"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/slug-checker"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/slug-checker"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/slug-checker"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/slug-checker"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/slug-checker"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Slug Checker",
+    "description": "Slug Checker. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/slug-checker",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pt"
+  },
+  "openGraph": {
+    "title": "Free Slug Checker - Flixo",
+    "description": "Slug Checker. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/slug-checker",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Slug Checker - Flixo",
+    "description": "Slug Checker. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

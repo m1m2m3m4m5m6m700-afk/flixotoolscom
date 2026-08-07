@@ -1,0 +1,147 @@
+{
+  "id": "html-minifier",
+  "slug": "html-minifier",
+  "locale": "ko",
+  "toolName": "Html Minifier",
+  "englishName": "Html Minifier",
+  "title": "Html Minifier",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Html Minifier. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Html Minifier Online - Fast & Easy | Flixo",
+  "metaDescription": "Html Minifier. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Html Minifier free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Html Minifier"
+  ],
+  "canonical": "/tools/html-minifier",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/html-minifier"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/html-minifier"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/html-minifier"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/html-minifier"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/html-minifier"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/html-minifier"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/html-minifier"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/html-minifier"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/html-minifier"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/html-minifier"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/html-minifier"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/html-minifier"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/html-minifier"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/html-minifier"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/html-minifier"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/html-minifier"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/html-minifier"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/html-minifier"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/html-minifier"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/html-minifier"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Html Minifier",
+    "description": "Html Minifier. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/html-minifier",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ko"
+  },
+  "openGraph": {
+    "title": "Free Html Minifier - Flixo",
+    "description": "Html Minifier. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/html-minifier",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Html Minifier - Flixo",
+    "description": "Html Minifier. Free online tool that helps you get things done quickly and easily."
+  }
+}

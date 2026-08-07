@@ -1,0 +1,148 @@
+{
+  "id": "lorem-ipsum-generator",
+  "slug": "lorem-ipsum-generator",
+  "locale": "th",
+  "toolName": "Lorem Ipsum Generator",
+  "englishName": "Lorem Ipsum Generator",
+  "title": "Lorem Ipsum Generator",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Lorem Ipsum Generator. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Lorem Ipsum Generator Online - Write Better | Flixo",
+  "metaDescription": "Lorem Ipsum Generator. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Lorem Ipsum Generator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Lorem Ipsum Generator"
+  ],
+  "canonical": "/tools/lorem-ipsum-generator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/lorem-ipsum-generator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/lorem-ipsum-generator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/lorem-ipsum-generator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/lorem-ipsum-generator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/lorem-ipsum-generator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/lorem-ipsum-generator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/lorem-ipsum-generator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/lorem-ipsum-generator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/lorem-ipsum-generator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/lorem-ipsum-generator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/lorem-ipsum-generator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/lorem-ipsum-generator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/lorem-ipsum-generator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/lorem-ipsum-generator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/lorem-ipsum-generator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/lorem-ipsum-generator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/lorem-ipsum-generator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/lorem-ipsum-generator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/lorem-ipsum-generator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/lorem-ipsum-generator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Lorem Ipsum Generator",
+    "description": "Lorem Ipsum Generator. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/lorem-ipsum-generator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "th"
+  },
+  "openGraph": {
+    "title": "Free Lorem Ipsum Generator - Flixo",
+    "description": "Lorem Ipsum Generator. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/lorem-ipsum-generator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Lorem Ipsum Generator - Flixo",
+    "description": "Lorem Ipsum Generator. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

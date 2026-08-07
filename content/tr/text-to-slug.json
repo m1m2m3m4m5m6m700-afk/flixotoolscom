@@ -1,0 +1,148 @@
+{
+  "id": "text-to-slug",
+  "slug": "text-to-slug",
+  "locale": "tr",
+  "toolName": "Text to Slug",
+  "englishName": "Text to Slug",
+  "title": "Text to Slug",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Text to Slug. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Text to Slug Online - Write Better | Flixo",
+  "metaDescription": "Text to Slug. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Text to Slug free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Text to Slug"
+  ],
+  "canonical": "/tools/text-to-slug",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/text-to-slug"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/text-to-slug"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/text-to-slug"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/text-to-slug"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/text-to-slug"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/text-to-slug"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/text-to-slug"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/text-to-slug"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/text-to-slug"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/text-to-slug"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/text-to-slug"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/text-to-slug"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/text-to-slug"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/text-to-slug"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/text-to-slug"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/text-to-slug"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/text-to-slug"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/text-to-slug"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/text-to-slug"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/text-to-slug"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Text to Slug",
+    "description": "Text to Slug. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/text-to-slug",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "tr"
+  },
+  "openGraph": {
+    "title": "Free Text to Slug - Flixo",
+    "description": "Text to Slug. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/text-to-slug",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Text to Slug - Flixo",
+    "description": "Text to Slug. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

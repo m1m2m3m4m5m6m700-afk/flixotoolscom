@@ -1,0 +1,149 @@
+{
+  "id": "localizer",
+  "slug": "localizer",
+  "locale": "uk",
+  "toolName": "App Localizer",
+  "englishName": "App Localizer",
+  "title": "App Localizer",
+  "tagline": "Translate text between languages instantly with AI-powered accuracy.",
+  "description": "App Localizer. Free online translation tool powered by AI. Translate text accurately and quickly.",
+  "shortDescription": "Translate text between languages instantly with AI-powered accuracy.",
+  "metaTitle": "Free App Localizer Online - Translate Text Instantly | Flixo",
+  "metaDescription": "App Localizer. Use our free AI translator. Translate text between 100+ languages instantly. No signup, no fees, accurate results.",
+  "keywords": [
+    "translator",
+    "translation",
+    "ai translator",
+    "translator",
+    "online translator",
+    "text translation"
+  ],
+  "faq": [
+    {
+      "q": "Is App Localizer free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "App Localizer"
+  ],
+  "canonical": "/tools/localizer",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/localizer"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/localizer"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/localizer"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/localizer"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/localizer"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/localizer"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/localizer"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/localizer"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/localizer"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/localizer"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/localizer"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/localizer"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/localizer"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/localizer"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/localizer"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/localizer"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/localizer"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/localizer"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/localizer"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/localizer"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "App Localizer",
+    "description": "App Localizer. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/localizer",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "uk"
+  },
+  "openGraph": {
+    "title": "Free App Localizer - Flixo",
+    "description": "App Localizer. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/localizer",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free App Localizer - Flixo",
+    "description": "App Localizer. Free online translation tool powered by AI. Translate text accurately and quickly."
+  }
+}

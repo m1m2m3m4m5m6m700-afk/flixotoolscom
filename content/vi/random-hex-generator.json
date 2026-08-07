@@ -1,0 +1,147 @@
+{
+  "id": "random-hex-generator",
+  "slug": "random-hex-generator",
+  "locale": "vi",
+  "toolName": "Random HEX Generator",
+  "englishName": "Random HEX Generator",
+  "title": "Random HEX Generator",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Random HEX Generator. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Random HEX Generator Online - Fast & Easy | Flixo",
+  "metaDescription": "Random HEX Generator. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Random HEX Generator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Random HEX Generator"
+  ],
+  "canonical": "/tools/random-hex-generator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/random-hex-generator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/random-hex-generator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/random-hex-generator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/random-hex-generator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/random-hex-generator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/random-hex-generator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/random-hex-generator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/random-hex-generator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/random-hex-generator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/random-hex-generator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/random-hex-generator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/random-hex-generator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/random-hex-generator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/random-hex-generator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/random-hex-generator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/random-hex-generator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/random-hex-generator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/random-hex-generator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/random-hex-generator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/random-hex-generator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Random HEX Generator",
+    "description": "Random HEX Generator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/random-hex-generator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "vi"
+  },
+  "openGraph": {
+    "title": "Free Random HEX Generator - Flixo",
+    "description": "Random HEX Generator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/random-hex-generator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Random HEX Generator - Flixo",
+    "description": "Random HEX Generator. Free online tool that helps you get things done quickly and easily."
+  }
+}

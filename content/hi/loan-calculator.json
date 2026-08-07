@@ -1,0 +1,147 @@
+{
+  "id": "loan-calculator",
+  "slug": "loan-calculator",
+  "locale": "hi",
+  "toolName": "Loan Calculator",
+  "englishName": "Loan Calculator",
+  "title": "Loan Calculator",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Loan Calculator. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Loan Calculator Online - Fast & Easy | Flixo",
+  "metaDescription": "Loan Calculator. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Loan Calculator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Loan Calculator"
+  ],
+  "canonical": "/tools/loan-calculator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/loan-calculator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/loan-calculator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/loan-calculator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/loan-calculator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/loan-calculator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/loan-calculator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/loan-calculator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/loan-calculator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/loan-calculator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/loan-calculator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/loan-calculator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/loan-calculator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/loan-calculator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/loan-calculator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/loan-calculator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/loan-calculator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/loan-calculator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/loan-calculator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/loan-calculator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/loan-calculator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Loan Calculator",
+    "description": "Loan Calculator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/loan-calculator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "hi"
+  },
+  "openGraph": {
+    "title": "Free Loan Calculator - Flixo",
+    "description": "Loan Calculator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/loan-calculator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Loan Calculator - Flixo",
+    "description": "Loan Calculator. Free online tool that helps you get things done quickly and easily."
+  }
+}

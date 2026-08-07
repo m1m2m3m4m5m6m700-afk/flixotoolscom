@@ -1,0 +1,147 @@
+{
+  "id": "percentage-difference-calculator",
+  "slug": "percentage-difference-calculator",
+  "locale": "tr",
+  "toolName": "Percentage Difference Calculator",
+  "englishName": "Percentage Difference Calculator",
+  "title": "Percentage Difference Calculator",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Percentage Difference Calculator. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Percentage Difference Calculator Online - Fast & Easy | Flixo",
+  "metaDescription": "Percentage Difference Calculator. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Percentage Difference Calculator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Percentage Difference Calculator"
+  ],
+  "canonical": "/tools/percentage-difference-calculator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/percentage-difference-calculator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/percentage-difference-calculator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/percentage-difference-calculator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/percentage-difference-calculator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/percentage-difference-calculator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/percentage-difference-calculator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/percentage-difference-calculator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/percentage-difference-calculator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/percentage-difference-calculator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/percentage-difference-calculator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/percentage-difference-calculator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/percentage-difference-calculator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/percentage-difference-calculator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/percentage-difference-calculator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/percentage-difference-calculator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/percentage-difference-calculator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/percentage-difference-calculator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/percentage-difference-calculator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/percentage-difference-calculator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/percentage-difference-calculator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Percentage Difference Calculator",
+    "description": "Percentage Difference Calculator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/percentage-difference-calculator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "tr"
+  },
+  "openGraph": {
+    "title": "Free Percentage Difference Calculator - Flixo",
+    "description": "Percentage Difference Calculator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/percentage-difference-calculator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Percentage Difference Calculator - Flixo",
+    "description": "Percentage Difference Calculator. Free online tool that helps you get things done quickly and easily."
+  }
+}

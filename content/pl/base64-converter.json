@@ -1,0 +1,147 @@
+{
+  "id": "base64-converter",
+  "slug": "base64-converter",
+  "locale": "pl",
+  "toolName": "Base64 Converter",
+  "englishName": "Base64 Converter",
+  "title": "Base64 Converter",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Base64 Converter. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Base64 Converter Online - Fast & Easy | Flixo",
+  "metaDescription": "Base64 Converter. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Base64 Converter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Base64 Converter"
+  ],
+  "canonical": "/tools/base64-converter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/base64-converter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/base64-converter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/base64-converter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/base64-converter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/base64-converter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/base64-converter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/base64-converter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/base64-converter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/base64-converter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/base64-converter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/base64-converter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/base64-converter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/base64-converter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/base64-converter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/base64-converter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/base64-converter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/base64-converter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/base64-converter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/base64-converter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/base64-converter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Base64 Converter",
+    "description": "Base64 Converter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/base64-converter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pl"
+  },
+  "openGraph": {
+    "title": "Free Base64 Converter - Flixo",
+    "description": "Base64 Converter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/base64-converter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Base64 Converter - Flixo",
+    "description": "Base64 Converter. Free online tool that helps you get things done quickly and easily."
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "file-converter",
+  "slug": "file-converter",
+  "locale": "de",
+  "toolName": "File Converter",
+  "englishName": "File Converter",
+  "title": "File Converter",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "File Converter. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free File Converter Online - Fast & Easy | Flixo",
+  "metaDescription": "File Converter. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is File Converter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "File Converter"
+  ],
+  "canonical": "/tools/file-converter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/file-converter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/file-converter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/file-converter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/file-converter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/file-converter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/file-converter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/file-converter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/file-converter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/file-converter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/file-converter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/file-converter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/file-converter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/file-converter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/file-converter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/file-converter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/file-converter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/file-converter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/file-converter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/file-converter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/file-converter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "File Converter",
+    "description": "File Converter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/file-converter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "de"
+  },
+  "openGraph": {
+    "title": "Free File Converter - Flixo",
+    "description": "File Converter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/file-converter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free File Converter - Flixo",
+    "description": "File Converter. Free online tool that helps you get things done quickly and easily."
+  }
+}

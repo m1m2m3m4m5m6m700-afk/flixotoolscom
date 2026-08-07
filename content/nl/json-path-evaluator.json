@@ -1,0 +1,147 @@
+{
+  "id": "json-path-evaluator",
+  "slug": "json-path-evaluator",
+  "locale": "nl",
+  "toolName": "JSONPath Evaluator",
+  "englishName": "JSONPath Evaluator",
+  "title": "JSONPath Evaluator",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "JSONPath Evaluator. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free JSONPath Evaluator Online - Fast & Easy | Flixo",
+  "metaDescription": "JSONPath Evaluator. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is JSONPath Evaluator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "JSONPath Evaluator"
+  ],
+  "canonical": "/tools/json-path-evaluator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/json-path-evaluator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/json-path-evaluator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/json-path-evaluator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/json-path-evaluator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/json-path-evaluator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/json-path-evaluator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/json-path-evaluator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/json-path-evaluator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/json-path-evaluator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/json-path-evaluator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/json-path-evaluator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/json-path-evaluator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/json-path-evaluator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/json-path-evaluator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/json-path-evaluator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/json-path-evaluator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/json-path-evaluator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/json-path-evaluator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/json-path-evaluator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/json-path-evaluator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "JSONPath Evaluator",
+    "description": "JSONPath Evaluator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/json-path-evaluator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "nl"
+  },
+  "openGraph": {
+    "title": "Free JSONPath Evaluator - Flixo",
+    "description": "JSONPath Evaluator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/json-path-evaluator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free JSONPath Evaluator - Flixo",
+    "description": "JSONPath Evaluator. Free online tool that helps you get things done quickly and easily."
+  }
+}

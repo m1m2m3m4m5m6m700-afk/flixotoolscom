@@ -1,0 +1,148 @@
+{
+  "id": "merge-video",
+  "slug": "merge-video",
+  "locale": "ko",
+  "toolName": "Merge Video",
+  "englishName": "Merge Video",
+  "title": "Merge Video",
+  "tagline": "Process and edit video files with powerful tools.",
+  "description": "Merge Video. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+  "shortDescription": "Process and edit video files with powerful tools.",
+  "metaTitle": "Free Merge Video Online - Compress & Convert Videos | Flixo",
+  "metaDescription": "Merge Video. Free online video tools. Compress, convert, and edit videos. No signup, no upload, works in browser.",
+  "keywords": [
+    "video tools",
+    "video compressor",
+    "video converter",
+    "video tools",
+    "online video editor"
+  ],
+  "faq": [
+    {
+      "q": "Is Merge Video free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Merge Video"
+  ],
+  "canonical": "/tools/merge-video",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/merge-video"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/merge-video"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/merge-video"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/merge-video"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/merge-video"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/merge-video"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/merge-video"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/merge-video"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/merge-video"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/merge-video"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/merge-video"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/merge-video"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/merge-video"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/merge-video"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/merge-video"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/merge-video"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/merge-video"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/merge-video"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/merge-video"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/merge-video"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Merge Video",
+    "description": "Merge Video. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+    "url": "https://flixotools.com/tools/merge-video",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ko"
+  },
+  "openGraph": {
+    "title": "Free Merge Video - Flixo",
+    "description": "Merge Video. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+    "url": "https://flixotools.com/tools/merge-video",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Merge Video - Flixo",
+    "description": "Merge Video. Free online video tools. Compress, convert, and enhance videos directly in browser."
+  }
+}

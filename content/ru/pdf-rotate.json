@@ -1,0 +1,148 @@
+{
+  "id": "pdf-rotate",
+  "slug": "pdf-rotate",
+  "locale": "ru",
+  "toolName": "Rotate PDF",
+  "englishName": "Rotate PDF",
+  "title": "Rotate PDF",
+  "tagline": "Manage PDF documents with ease. Merge, split, convert, and more.",
+  "description": "Rotate PDF. Free online PDF tools. Work with PDF documents directly in your browser.",
+  "shortDescription": "Manage PDF documents with ease. Merge, split, convert, and more.",
+  "metaTitle": "Free Rotate PDF Online - Merge, Split, Convert PDFs | Flixo",
+  "metaDescription": "Rotate PDF. Free online PDF tools. Merge, split, compress, convert, and edit PDFs. No signup, no fees, works in browser.",
+  "keywords": [
+    "pdf tools",
+    "pdf merger",
+    "pdf splitter",
+    "pdf converter",
+    "pdf tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Rotate PDF free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Rotate PDF"
+  ],
+  "canonical": "/tools/pdf-rotate",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/pdf-rotate"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/pdf-rotate"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/pdf-rotate"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/pdf-rotate"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/pdf-rotate"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/pdf-rotate"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/pdf-rotate"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/pdf-rotate"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/pdf-rotate"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/pdf-rotate"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/pdf-rotate"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/pdf-rotate"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/pdf-rotate"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/pdf-rotate"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/pdf-rotate"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/pdf-rotate"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/pdf-rotate"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/pdf-rotate"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/pdf-rotate"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/pdf-rotate"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Rotate PDF",
+    "description": "Rotate PDF. Free online PDF tools. Work with PDF documents directly in your browser.",
+    "url": "https://flixotools.com/tools/pdf-rotate",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ru"
+  },
+  "openGraph": {
+    "title": "Free Rotate PDF - Flixo",
+    "description": "Rotate PDF. Free online PDF tools. Work with PDF documents directly in your browser.",
+    "url": "https://flixotools.com/tools/pdf-rotate",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Rotate PDF - Flixo",
+    "description": "Rotate PDF. Free online PDF tools. Work with PDF documents directly in your browser."
+  }
+}

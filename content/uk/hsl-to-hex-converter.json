@@ -1,0 +1,148 @@
+{
+  "id": "hsl-to-hex-converter",
+  "slug": "hsl-to-hex-converter",
+  "locale": "uk",
+  "toolName": "HSL to HEX Converter",
+  "englishName": "HSL to HEX Converter",
+  "title": "HSL to HEX Converter",
+  "tagline": "Transform and enhance images with powerful AI tools.",
+  "description": "HSL to HEX Converter. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+  "shortDescription": "Transform and enhance images with powerful AI tools.",
+  "metaTitle": "Free HSL to HEX Converter Online - AI-Powered Image Editing | Flixo",
+  "metaDescription": "HSL to HEX Converter. Free online image tools. Enhance, resize, compress, and edit images with AI. No signup required, works in browser.",
+  "keywords": [
+    "image tools",
+    "photo editor",
+    "image enhancer",
+    "image compressor",
+    "image tools"
+  ],
+  "faq": [
+    {
+      "q": "Is HSL to HEX Converter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "HSL to HEX Converter"
+  ],
+  "canonical": "/tools/hsl-to-hex-converter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/hsl-to-hex-converter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/hsl-to-hex-converter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/hsl-to-hex-converter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/hsl-to-hex-converter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/hsl-to-hex-converter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/hsl-to-hex-converter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/hsl-to-hex-converter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/hsl-to-hex-converter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/hsl-to-hex-converter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/hsl-to-hex-converter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/hsl-to-hex-converter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/hsl-to-hex-converter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/hsl-to-hex-converter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/hsl-to-hex-converter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/hsl-to-hex-converter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/hsl-to-hex-converter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/hsl-to-hex-converter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/hsl-to-hex-converter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/hsl-to-hex-converter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/hsl-to-hex-converter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "HSL to HEX Converter",
+    "description": "HSL to HEX Converter. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/hsl-to-hex-converter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "uk"
+  },
+  "openGraph": {
+    "title": "Free HSL to HEX Converter - Flixo",
+    "description": "HSL to HEX Converter. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/hsl-to-hex-converter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free HSL to HEX Converter - Flixo",
+    "description": "HSL to HEX Converter. Free online image tools. Edit, enhance, and transform images directly in your browser."
+  }
+}

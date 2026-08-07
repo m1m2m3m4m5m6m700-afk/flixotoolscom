@@ -1,0 +1,148 @@
+{
+  "id": "word-to-pdf",
+  "slug": "word-to-pdf",
+  "locale": "pt",
+  "toolName": "Word to PDF",
+  "englishName": "Word to PDF",
+  "title": "Word to PDF",
+  "tagline": "Manage PDF documents with ease. Merge, split, convert, and more.",
+  "description": "Word to PDF. Free online PDF tools. Work with PDF documents directly in your browser.",
+  "shortDescription": "Manage PDF documents with ease. Merge, split, convert, and more.",
+  "metaTitle": "Free Word to PDF Online - Merge, Split, Convert PDFs | Flixo",
+  "metaDescription": "Word to PDF. Free online PDF tools. Merge, split, compress, convert, and edit PDFs. No signup, no fees, works in browser.",
+  "keywords": [
+    "pdf tools",
+    "pdf merger",
+    "pdf splitter",
+    "pdf converter",
+    "pdf tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Word to PDF free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Word to PDF"
+  ],
+  "canonical": "/tools/word-to-pdf",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/word-to-pdf"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/word-to-pdf"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/word-to-pdf"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/word-to-pdf"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/word-to-pdf"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/word-to-pdf"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/word-to-pdf"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/word-to-pdf"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/word-to-pdf"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/word-to-pdf"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/word-to-pdf"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/word-to-pdf"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/word-to-pdf"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/word-to-pdf"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/word-to-pdf"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/word-to-pdf"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/word-to-pdf"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/word-to-pdf"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/word-to-pdf"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/word-to-pdf"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Word to PDF",
+    "description": "Word to PDF. Free online PDF tools. Work with PDF documents directly in your browser.",
+    "url": "https://flixotools.com/tools/word-to-pdf",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pt"
+  },
+  "openGraph": {
+    "title": "Free Word to PDF - Flixo",
+    "description": "Word to PDF. Free online PDF tools. Work with PDF documents directly in your browser.",
+    "url": "https://flixotools.com/tools/word-to-pdf",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Word to PDF - Flixo",
+    "description": "Word to PDF. Free online PDF tools. Work with PDF documents directly in your browser."
+  }
+}

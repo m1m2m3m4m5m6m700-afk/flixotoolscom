@@ -1,0 +1,148 @@
+{
+  "id": "subtitle-generator",
+  "slug": "subtitle-generator",
+  "locale": "de",
+  "toolName": "Subtitle Generator",
+  "englishName": "Subtitle Generator",
+  "title": "Subtitle Generator",
+  "tagline": "Process and edit video files with powerful tools.",
+  "description": "Subtitle Generator. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+  "shortDescription": "Process and edit video files with powerful tools.",
+  "metaTitle": "Free Subtitle Generator Online - Compress & Convert Videos | Flixo",
+  "metaDescription": "Subtitle Generator. Free online video tools. Compress, convert, and edit videos. No signup, no upload, works in browser.",
+  "keywords": [
+    "video tools",
+    "video compressor",
+    "video converter",
+    "video tools",
+    "online video editor"
+  ],
+  "faq": [
+    {
+      "q": "Is Subtitle Generator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Subtitle Generator"
+  ],
+  "canonical": "/tools/subtitle-generator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/subtitle-generator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/subtitle-generator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/subtitle-generator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/subtitle-generator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/subtitle-generator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/subtitle-generator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/subtitle-generator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/subtitle-generator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/subtitle-generator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/subtitle-generator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/subtitle-generator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/subtitle-generator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/subtitle-generator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/subtitle-generator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/subtitle-generator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/subtitle-generator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/subtitle-generator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/subtitle-generator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/subtitle-generator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/subtitle-generator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Subtitle Generator",
+    "description": "Subtitle Generator. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+    "url": "https://flixotools.com/tools/subtitle-generator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "de"
+  },
+  "openGraph": {
+    "title": "Free Subtitle Generator - Flixo",
+    "description": "Subtitle Generator. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+    "url": "https://flixotools.com/tools/subtitle-generator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Subtitle Generator - Flixo",
+    "description": "Subtitle Generator. Free online video tools. Compress, convert, and enhance videos directly in browser."
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "random-picker",
+  "slug": "random-picker",
+  "locale": "th",
+  "toolName": "Random Picker",
+  "englishName": "Random Picker",
+  "title": "Random Picker",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Random Picker. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Random Picker Online - Fast & Easy | Flixo",
+  "metaDescription": "Random Picker. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Random Picker free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Random Picker"
+  ],
+  "canonical": "/tools/random-picker",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/random-picker"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/random-picker"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/random-picker"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/random-picker"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/random-picker"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/random-picker"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/random-picker"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/random-picker"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/random-picker"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/random-picker"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/random-picker"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/random-picker"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/random-picker"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/random-picker"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/random-picker"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/random-picker"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/random-picker"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/random-picker"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/random-picker"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/random-picker"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Random Picker",
+    "description": "Random Picker. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/random-picker",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "th"
+  },
+  "openGraph": {
+    "title": "Free Random Picker - Flixo",
+    "description": "Random Picker. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/random-picker",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Random Picker - Flixo",
+    "description": "Random Picker. Free online tool that helps you get things done quickly and easily."
+  }
+}

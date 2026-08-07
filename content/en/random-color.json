@@ -1,0 +1,147 @@
+{
+  "id": "random-color",
+  "slug": "random-color",
+  "locale": "en",
+  "toolName": "Random Color",
+  "englishName": "Random Color",
+  "title": "Random Color",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Random Color. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Random Color Online - Fast & Easy | Flixo",
+  "metaDescription": "Random Color. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Random Color free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Random Color"
+  ],
+  "canonical": "/tools/random-color",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/random-color"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/random-color"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/random-color"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/random-color"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/random-color"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/random-color"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/random-color"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/random-color"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/random-color"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/random-color"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/random-color"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/random-color"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/random-color"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/random-color"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/random-color"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/random-color"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/random-color"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/random-color"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/random-color"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/random-color"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Random Color",
+    "description": "Random Color. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/random-color",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "en"
+  },
+  "openGraph": {
+    "title": "Free Random Color - Flixo",
+    "description": "Random Color. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/random-color",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Random Color - Flixo",
+    "description": "Random Color. Free online tool that helps you get things done quickly and easily."
+  }
+}

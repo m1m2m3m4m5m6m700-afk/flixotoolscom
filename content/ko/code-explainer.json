@@ -1,0 +1,148 @@
+{
+  "id": "code-explainer",
+  "slug": "code-explainer",
+  "locale": "ko",
+  "toolName": "코드 설명기",
+  "englishName": "Code Explainer",
+  "title": "코드 설명기",
+  "tagline": "AI-powered tools for productivity and creativity.",
+  "description": "코드 설명기. Free AI tools. Chat, generate content, analyze data, and more.",
+  "shortDescription": "AI-powered tools for productivity and creativity.",
+  "metaTitle": "Free 코드 설명기 Online - Chat, Generate & Analyze | Flixo",
+  "metaDescription": "코드 설명기. Free AI tools. Chat with AI, generate content, analyze data. No signup, instant results.",
+  "keywords": [
+    "ai tools",
+    "ai chat",
+    "ai assistant",
+    "ai",
+    "chatgpt alternative"
+  ],
+  "faq": [
+    {
+      "q": "Is 코드 설명기 free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Code Explainer"
+  ],
+  "canonical": "/tools/code-explainer",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/code-explainer"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/code-explainer"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/code-explainer"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/code-explainer"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/code-explainer"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/code-explainer"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/code-explainer"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/code-explainer"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/code-explainer"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/code-explainer"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/code-explainer"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/code-explainer"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/code-explainer"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/code-explainer"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/code-explainer"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/code-explainer"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/code-explainer"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/code-explainer"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/code-explainer"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/code-explainer"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "코드 설명기",
+    "description": "코드 설명기. Free AI tools. Chat, generate content, analyze data, and more.",
+    "url": "https://flixotools.com/tools/code-explainer",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ko"
+  },
+  "openGraph": {
+    "title": "Free 코드 설명기 - Flixo",
+    "description": "코드 설명기. Free AI tools. Chat, generate content, analyze data, and more.",
+    "url": "https://flixotools.com/tools/code-explainer",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free 코드 설명기 - Flixo",
+    "description": "코드 설명기. Free AI tools. Chat, generate content, analyze data, and more."
+  }
+}

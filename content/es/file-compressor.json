@@ -1,0 +1,147 @@
+{
+  "id": "file-compressor",
+  "slug": "file-compressor",
+  "locale": "es",
+  "toolName": "File Compressor",
+  "englishName": "File Compressor",
+  "title": "File Compressor",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "File Compressor. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free File Compressor Online - Fast & Easy | Flixo",
+  "metaDescription": "File Compressor. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is File Compressor free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "File Compressor"
+  ],
+  "canonical": "/tools/file-compressor",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/file-compressor"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/file-compressor"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/file-compressor"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/file-compressor"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/file-compressor"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/file-compressor"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/file-compressor"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/file-compressor"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/file-compressor"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/file-compressor"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/file-compressor"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/file-compressor"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/file-compressor"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/file-compressor"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/file-compressor"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/file-compressor"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/file-compressor"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/file-compressor"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/file-compressor"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/file-compressor"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "File Compressor",
+    "description": "File Compressor. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/file-compressor",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "es"
+  },
+  "openGraph": {
+    "title": "Free File Compressor - Flixo",
+    "description": "File Compressor. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/file-compressor",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free File Compressor - Flixo",
+    "description": "File Compressor. Free online tool that helps you get things done quickly and easily."
+  }
+}

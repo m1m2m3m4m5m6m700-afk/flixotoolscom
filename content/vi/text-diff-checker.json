@@ -1,0 +1,147 @@
+{
+  "id": "text-diff-checker",
+  "slug": "text-diff-checker",
+  "locale": "vi",
+  "toolName": "Text Diff Checker",
+  "englishName": "Text Diff Checker",
+  "title": "Text Diff Checker",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Text Diff Checker. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Text Diff Checker Online - Fast & Easy | Flixo",
+  "metaDescription": "Text Diff Checker. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Text Diff Checker free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Text Diff Checker"
+  ],
+  "canonical": "/tools/text-diff-checker",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/text-diff-checker"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/text-diff-checker"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/text-diff-checker"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/text-diff-checker"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/text-diff-checker"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/text-diff-checker"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/text-diff-checker"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/text-diff-checker"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/text-diff-checker"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/text-diff-checker"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/text-diff-checker"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/text-diff-checker"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/text-diff-checker"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/text-diff-checker"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/text-diff-checker"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/text-diff-checker"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/text-diff-checker"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/text-diff-checker"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/text-diff-checker"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/text-diff-checker"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Text Diff Checker",
+    "description": "Text Diff Checker. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/text-diff-checker",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "vi"
+  },
+  "openGraph": {
+    "title": "Free Text Diff Checker - Flixo",
+    "description": "Text Diff Checker. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/text-diff-checker",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Text Diff Checker - Flixo",
+    "description": "Text Diff Checker. Free online tool that helps you get things done quickly and easily."
+  }
+}

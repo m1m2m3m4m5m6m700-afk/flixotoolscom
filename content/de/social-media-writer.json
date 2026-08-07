@@ -1,0 +1,148 @@
+{
+  "id": "social-media-writer",
+  "slug": "social-media-writer",
+  "locale": "de",
+  "toolName": "Social Media Writer",
+  "englishName": "Social Media Writer",
+  "title": "Social Media Writer",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Social Media Writer. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Social Media Writer Online - Write Better | Flixo",
+  "metaDescription": "Social Media Writer. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Social Media Writer free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Social Media Writer"
+  ],
+  "canonical": "/tools/social-media-writer",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/social-media-writer"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/social-media-writer"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/social-media-writer"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/social-media-writer"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/social-media-writer"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/social-media-writer"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/social-media-writer"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/social-media-writer"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/social-media-writer"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/social-media-writer"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/social-media-writer"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/social-media-writer"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/social-media-writer"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/social-media-writer"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/social-media-writer"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/social-media-writer"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/social-media-writer"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/social-media-writer"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/social-media-writer"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/social-media-writer"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Social Media Writer",
+    "description": "Social Media Writer. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/social-media-writer",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "de"
+  },
+  "openGraph": {
+    "title": "Free Social Media Writer - Flixo",
+    "description": "Social Media Writer. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/social-media-writer",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Social Media Writer - Flixo",
+    "description": "Social Media Writer. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

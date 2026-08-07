@@ -1,0 +1,148 @@
+{
+  "id": "image-converter",
+  "slug": "image-converter",
+  "locale": "ar",
+  "toolName": "Image Converter",
+  "englishName": "Image Converter",
+  "title": "Image Converter",
+  "tagline": "Transform and enhance images with powerful AI tools.",
+  "description": "Image Converter. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+  "shortDescription": "Transform and enhance images with powerful AI tools.",
+  "metaTitle": "Free Image Converter Online - AI-Powered Image Editing | Flixo",
+  "metaDescription": "Image Converter. Free online image tools. Enhance, resize, compress, and edit images with AI. No signup required, works in browser.",
+  "keywords": [
+    "image tools",
+    "photo editor",
+    "image enhancer",
+    "image compressor",
+    "image tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Image Converter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Image Converter"
+  ],
+  "canonical": "/tools/image-converter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/image-converter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/image-converter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/image-converter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/image-converter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/image-converter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/image-converter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/image-converter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/image-converter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/image-converter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/image-converter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/image-converter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/image-converter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/image-converter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/image-converter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/image-converter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/image-converter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/image-converter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/image-converter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/image-converter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/image-converter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Image Converter",
+    "description": "Image Converter. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/image-converter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ar"
+  },
+  "openGraph": {
+    "title": "Free Image Converter - Flixo",
+    "description": "Image Converter. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/image-converter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Image Converter - Flixo",
+    "description": "Image Converter. Free online image tools. Edit, enhance, and transform images directly in your browser."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "id": "seo-writer",
+  "slug": "seo-writer",
+  "locale": "es",
+  "toolName": "SEO Writer",
+  "englishName": "SEO Writer",
+  "title": "SEO Writer",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "SEO Writer. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free SEO Writer Online - Write Better | Flixo",
+  "metaDescription": "SEO Writer. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is SEO Writer free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "SEO Writer"
+  ],
+  "canonical": "/tools/seo-writer",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/seo-writer"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/seo-writer"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/seo-writer"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/seo-writer"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/seo-writer"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/seo-writer"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/seo-writer"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/seo-writer"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/seo-writer"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/seo-writer"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/seo-writer"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/seo-writer"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/seo-writer"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/seo-writer"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/seo-writer"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/seo-writer"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/seo-writer"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/seo-writer"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/seo-writer"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/seo-writer"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "SEO Writer",
+    "description": "SEO Writer. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/seo-writer",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "es"
+  },
+  "openGraph": {
+    "title": "Free SEO Writer - Flixo",
+    "description": "SEO Writer. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/seo-writer",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free SEO Writer - Flixo",
+    "description": "SEO Writer. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

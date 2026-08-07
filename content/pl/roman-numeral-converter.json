@@ -1,0 +1,147 @@
+{
+  "id": "roman-numeral-converter",
+  "slug": "roman-numeral-converter",
+  "locale": "pl",
+  "toolName": "Roman Numeral Converter",
+  "englishName": "Roman Numeral Converter",
+  "title": "Roman Numeral Converter",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Roman Numeral Converter. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Roman Numeral Converter Online - Fast & Easy | Flixo",
+  "metaDescription": "Roman Numeral Converter. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Roman Numeral Converter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Roman Numeral Converter"
+  ],
+  "canonical": "/tools/roman-numeral-converter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/roman-numeral-converter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/roman-numeral-converter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/roman-numeral-converter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/roman-numeral-converter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/roman-numeral-converter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/roman-numeral-converter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/roman-numeral-converter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/roman-numeral-converter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/roman-numeral-converter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/roman-numeral-converter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/roman-numeral-converter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/roman-numeral-converter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/roman-numeral-converter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/roman-numeral-converter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/roman-numeral-converter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/roman-numeral-converter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/roman-numeral-converter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/roman-numeral-converter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/roman-numeral-converter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/roman-numeral-converter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Roman Numeral Converter",
+    "description": "Roman Numeral Converter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/roman-numeral-converter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pl"
+  },
+  "openGraph": {
+    "title": "Free Roman Numeral Converter - Flixo",
+    "description": "Roman Numeral Converter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/roman-numeral-converter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Roman Numeral Converter - Flixo",
+    "description": "Roman Numeral Converter. Free online tool that helps you get things done quickly and easily."
+  }
+}

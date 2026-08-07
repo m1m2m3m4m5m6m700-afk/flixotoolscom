@@ -1,0 +1,147 @@
+{
+  "id": "percentage-distribution-calculator",
+  "slug": "percentage-distribution-calculator",
+  "locale": "zh-TW",
+  "toolName": "Percentage Distribution Calculator",
+  "englishName": "Percentage Distribution Calculator",
+  "title": "Percentage Distribution Calculator",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Percentage Distribution Calculator. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Percentage Distribution Calculator Online - Fast & Easy | Flixo",
+  "metaDescription": "Percentage Distribution Calculator. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Percentage Distribution Calculator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Percentage Distribution Calculator"
+  ],
+  "canonical": "/tools/percentage-distribution-calculator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/percentage-distribution-calculator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/percentage-distribution-calculator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/percentage-distribution-calculator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/percentage-distribution-calculator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/percentage-distribution-calculator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/percentage-distribution-calculator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/percentage-distribution-calculator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/percentage-distribution-calculator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/percentage-distribution-calculator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/percentage-distribution-calculator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/percentage-distribution-calculator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/percentage-distribution-calculator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/percentage-distribution-calculator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/percentage-distribution-calculator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/percentage-distribution-calculator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/percentage-distribution-calculator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/percentage-distribution-calculator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/percentage-distribution-calculator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/percentage-distribution-calculator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/percentage-distribution-calculator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Percentage Distribution Calculator",
+    "description": "Percentage Distribution Calculator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/percentage-distribution-calculator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "zh-TW"
+  },
+  "openGraph": {
+    "title": "Free Percentage Distribution Calculator - Flixo",
+    "description": "Percentage Distribution Calculator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/percentage-distribution-calculator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Percentage Distribution Calculator - Flixo",
+    "description": "Percentage Distribution Calculator. Free online tool that helps you get things done quickly and easily."
+  }
+}

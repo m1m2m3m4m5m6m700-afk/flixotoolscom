@@ -1,0 +1,147 @@
+{
+  "id": "word-frequency-analyzer",
+  "slug": "word-frequency-analyzer",
+  "locale": "zh-CN",
+  "toolName": "Word Frequency Analyzer",
+  "englishName": "Word Frequency Analyzer",
+  "title": "Word Frequency Analyzer",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Word Frequency Analyzer. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Word Frequency Analyzer Online - Fast & Easy | Flixo",
+  "metaDescription": "Word Frequency Analyzer. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Word Frequency Analyzer free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Word Frequency Analyzer"
+  ],
+  "canonical": "/tools/word-frequency-analyzer",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/word-frequency-analyzer"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/word-frequency-analyzer"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/word-frequency-analyzer"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/word-frequency-analyzer"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/word-frequency-analyzer"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/word-frequency-analyzer"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/word-frequency-analyzer"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/word-frequency-analyzer"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/word-frequency-analyzer"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/word-frequency-analyzer"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/word-frequency-analyzer"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/word-frequency-analyzer"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/word-frequency-analyzer"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/word-frequency-analyzer"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/word-frequency-analyzer"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/word-frequency-analyzer"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/word-frequency-analyzer"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/word-frequency-analyzer"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/word-frequency-analyzer"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/word-frequency-analyzer"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Word Frequency Analyzer",
+    "description": "Word Frequency Analyzer. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/word-frequency-analyzer",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "zh-CN"
+  },
+  "openGraph": {
+    "title": "Free Word Frequency Analyzer - Flixo",
+    "description": "Word Frequency Analyzer. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/word-frequency-analyzer",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Word Frequency Analyzer - Flixo",
+    "description": "Word Frequency Analyzer. Free online tool that helps you get things done quickly and easily."
+  }
+}

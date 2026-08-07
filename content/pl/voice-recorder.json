@@ -1,0 +1,148 @@
+{
+  "id": "voice-recorder",
+  "slug": "voice-recorder",
+  "locale": "pl",
+  "toolName": "Voice Recorder",
+  "englishName": "Voice Recorder",
+  "title": "Voice Recorder",
+  "tagline": "Process audio files with powerful tools.",
+  "description": "Voice Recorder. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+  "shortDescription": "Process audio files with powerful tools.",
+  "metaTitle": "Free Voice Recorder Online - Convert & Edit Audio | Flixo",
+  "metaDescription": "Voice Recorder. Free online audio tools. Convert audio formats, compress files, and more. No signup, works in browser.",
+  "keywords": [
+    "audio tools",
+    "audio converter",
+    "audio compressor",
+    "audio tools",
+    "online audio editor"
+  ],
+  "faq": [
+    {
+      "q": "Is Voice Recorder free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Voice Recorder"
+  ],
+  "canonical": "/tools/voice-recorder",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/voice-recorder"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/voice-recorder"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/voice-recorder"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/voice-recorder"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/voice-recorder"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/voice-recorder"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/voice-recorder"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/voice-recorder"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/voice-recorder"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/voice-recorder"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/voice-recorder"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/voice-recorder"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/voice-recorder"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/voice-recorder"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/voice-recorder"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/voice-recorder"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/voice-recorder"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/voice-recorder"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/voice-recorder"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/voice-recorder"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Voice Recorder",
+    "description": "Voice Recorder. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+    "url": "https://flixotools.com/tools/voice-recorder",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pl"
+  },
+  "openGraph": {
+    "title": "Free Voice Recorder - Flixo",
+    "description": "Voice Recorder. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+    "url": "https://flixotools.com/tools/voice-recorder",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Voice Recorder - Flixo",
+    "description": "Voice Recorder. Free online audio tools. Convert, compress, and enhance audio directly in browser."
+  }
+}

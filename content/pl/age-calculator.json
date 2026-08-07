@@ -1,0 +1,147 @@
+{
+  "id": "age-calculator",
+  "slug": "age-calculator",
+  "locale": "pl",
+  "toolName": "Age Calculator",
+  "englishName": "Age Calculator",
+  "title": "Age Calculator",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Age Calculator. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Age Calculator Online - Fast & Easy | Flixo",
+  "metaDescription": "Age Calculator. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Age Calculator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Age Calculator"
+  ],
+  "canonical": "/tools/age-calculator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/age-calculator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/age-calculator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/age-calculator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/age-calculator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/age-calculator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/age-calculator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/age-calculator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/age-calculator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/age-calculator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/age-calculator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/age-calculator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/age-calculator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/age-calculator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/age-calculator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/age-calculator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/age-calculator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/age-calculator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/age-calculator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/age-calculator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/age-calculator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Age Calculator",
+    "description": "Age Calculator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/age-calculator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pl"
+  },
+  "openGraph": {
+    "title": "Free Age Calculator - Flixo",
+    "description": "Age Calculator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/age-calculator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Age Calculator - Flixo",
+    "description": "Age Calculator. Free online tool that helps you get things done quickly and easily."
+  }
+}

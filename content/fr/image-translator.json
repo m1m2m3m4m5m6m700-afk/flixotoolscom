@@ -1,0 +1,149 @@
+{
+  "id": "image-translator",
+  "slug": "image-translator",
+  "locale": "fr",
+  "toolName": "Image Translator",
+  "englishName": "Image Translator",
+  "title": "Image Translator",
+  "tagline": "Translate text between languages instantly with AI-powered accuracy.",
+  "description": "Image Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+  "shortDescription": "Translate text between languages instantly with AI-powered accuracy.",
+  "metaTitle": "Free Image Translator Online - Translate Text Instantly | Flixo",
+  "metaDescription": "Image Translator. Use our free AI translator. Translate text between 100+ languages instantly. No signup, no fees, accurate results.",
+  "keywords": [
+    "translator",
+    "translation",
+    "ai translator",
+    "translator",
+    "online translator",
+    "text translation"
+  ],
+  "faq": [
+    {
+      "q": "Is Image Translator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Image Translator"
+  ],
+  "canonical": "/tools/image-translator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/image-translator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/image-translator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/image-translator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/image-translator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/image-translator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/image-translator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/image-translator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/image-translator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/image-translator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/image-translator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/image-translator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/image-translator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/image-translator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/image-translator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/image-translator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/image-translator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/image-translator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/image-translator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/image-translator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/image-translator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Image Translator",
+    "description": "Image Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/image-translator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "fr"
+  },
+  "openGraph": {
+    "title": "Free Image Translator - Flixo",
+    "description": "Image Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/image-translator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Image Translator - Flixo",
+    "description": "Image Translator. Free online translation tool powered by AI. Translate text accurately and quickly."
+  }
+}

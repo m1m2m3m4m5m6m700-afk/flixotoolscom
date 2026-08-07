@@ -1,0 +1,148 @@
+{
+  "id": "pdf-split",
+  "slug": "pdf-split",
+  "locale": "ar",
+  "toolName": "Split PDF",
+  "englishName": "Split PDF",
+  "title": "Split PDF",
+  "tagline": "Manage PDF documents with ease. Merge, split, convert, and more.",
+  "description": "Split PDF. Free online PDF tools. Work with PDF documents directly in your browser.",
+  "shortDescription": "Manage PDF documents with ease. Merge, split, convert, and more.",
+  "metaTitle": "Free Split PDF Online - Merge, Split, Convert PDFs | Flixo",
+  "metaDescription": "Split PDF. Free online PDF tools. Merge, split, compress, convert, and edit PDFs. No signup, no fees, works in browser.",
+  "keywords": [
+    "pdf tools",
+    "pdf merger",
+    "pdf splitter",
+    "pdf converter",
+    "pdf tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Split PDF free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Split PDF"
+  ],
+  "canonical": "/tools/pdf-split",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/pdf-split"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/pdf-split"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/pdf-split"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/pdf-split"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/pdf-split"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/pdf-split"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/pdf-split"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/pdf-split"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/pdf-split"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/pdf-split"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/pdf-split"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/pdf-split"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/pdf-split"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/pdf-split"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/pdf-split"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/pdf-split"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/pdf-split"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/pdf-split"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/pdf-split"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/pdf-split"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Split PDF",
+    "description": "Split PDF. Free online PDF tools. Work with PDF documents directly in your browser.",
+    "url": "https://flixotools.com/tools/pdf-split",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ar"
+  },
+  "openGraph": {
+    "title": "Free Split PDF - Flixo",
+    "description": "Split PDF. Free online PDF tools. Work with PDF documents directly in your browser.",
+    "url": "https://flixotools.com/tools/pdf-split",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Split PDF - Flixo",
+    "description": "Split PDF. Free online PDF tools. Work with PDF documents directly in your browser."
+  }
+}

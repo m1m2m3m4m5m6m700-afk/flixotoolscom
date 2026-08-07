@@ -1,0 +1,147 @@
+{
+  "id": "meta-tag-generator",
+  "slug": "meta-tag-generator",
+  "locale": "nl",
+  "toolName": "Meta Tag Generator",
+  "englishName": "Meta Tag Generator",
+  "title": "Meta Tag Generator",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Meta Tag Generator. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Meta Tag Generator Online - Fast & Easy | Flixo",
+  "metaDescription": "Meta Tag Generator. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Meta Tag Generator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Meta Tag Generator"
+  ],
+  "canonical": "/tools/meta-tag-generator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/meta-tag-generator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/meta-tag-generator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/meta-tag-generator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/meta-tag-generator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/meta-tag-generator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/meta-tag-generator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/meta-tag-generator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/meta-tag-generator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/meta-tag-generator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/meta-tag-generator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/meta-tag-generator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/meta-tag-generator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/meta-tag-generator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/meta-tag-generator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/meta-tag-generator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/meta-tag-generator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/meta-tag-generator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/meta-tag-generator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/meta-tag-generator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/meta-tag-generator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Meta Tag Generator",
+    "description": "Meta Tag Generator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/meta-tag-generator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "nl"
+  },
+  "openGraph": {
+    "title": "Free Meta Tag Generator - Flixo",
+    "description": "Meta Tag Generator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/meta-tag-generator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Meta Tag Generator - Flixo",
+    "description": "Meta Tag Generator. Free online tool that helps you get things done quickly and easily."
+  }
+}

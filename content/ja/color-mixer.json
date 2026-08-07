@@ -1,0 +1,148 @@
+{
+  "id": "color-mixer",
+  "slug": "color-mixer",
+  "locale": "ja",
+  "toolName": "Color Mixer",
+  "englishName": "Color Mixer",
+  "title": "Color Mixer",
+  "tagline": "Transform and enhance images with powerful AI tools.",
+  "description": "Color Mixer. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+  "shortDescription": "Transform and enhance images with powerful AI tools.",
+  "metaTitle": "Free Color Mixer Online - AI-Powered Image Editing | Flixo",
+  "metaDescription": "Color Mixer. Free online image tools. Enhance, resize, compress, and edit images with AI. No signup required, works in browser.",
+  "keywords": [
+    "image tools",
+    "photo editor",
+    "image enhancer",
+    "image compressor",
+    "image tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Color Mixer free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Color Mixer"
+  ],
+  "canonical": "/tools/color-mixer",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/color-mixer"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/color-mixer"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/color-mixer"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/color-mixer"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/color-mixer"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/color-mixer"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/color-mixer"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/color-mixer"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/color-mixer"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/color-mixer"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/color-mixer"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/color-mixer"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/color-mixer"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/color-mixer"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/color-mixer"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/color-mixer"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/color-mixer"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/color-mixer"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/color-mixer"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/color-mixer"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Color Mixer",
+    "description": "Color Mixer. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/color-mixer",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ja"
+  },
+  "openGraph": {
+    "title": "Free Color Mixer - Flixo",
+    "description": "Color Mixer. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/color-mixer",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Color Mixer - Flixo",
+    "description": "Color Mixer. Free online image tools. Edit, enhance, and transform images directly in your browser."
+  }
+}

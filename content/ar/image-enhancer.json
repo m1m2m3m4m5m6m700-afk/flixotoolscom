@@ -1,0 +1,148 @@
+{
+  "id": "image-enhancer",
+  "slug": "image-enhancer",
+  "locale": "ar",
+  "toolName": "محسن الصور",
+  "englishName": "AI Image Enhancer",
+  "title": "محسن الصور",
+  "tagline": "Transform and enhance images with powerful AI tools.",
+  "description": "محسن الصور. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+  "shortDescription": "Transform and enhance images with powerful AI tools.",
+  "metaTitle": "Free محسن الصور Online - AI-Powered Image Editing | Flixo",
+  "metaDescription": "محسن الصور. Free online image tools. Enhance, resize, compress, and edit images with AI. No signup required, works in browser.",
+  "keywords": [
+    "image tools",
+    "photo editor",
+    "image enhancer",
+    "image compressor",
+    "image tools"
+  ],
+  "faq": [
+    {
+      "q": "Is محسن الصور free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "AI Image Enhancer"
+  ],
+  "canonical": "/tools/image-enhancer",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/image-enhancer"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/image-enhancer"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/image-enhancer"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/image-enhancer"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/image-enhancer"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/image-enhancer"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/image-enhancer"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/image-enhancer"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/image-enhancer"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/image-enhancer"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/image-enhancer"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/image-enhancer"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/image-enhancer"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/image-enhancer"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/image-enhancer"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/image-enhancer"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/image-enhancer"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/image-enhancer"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/image-enhancer"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/image-enhancer"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "محسن الصور",
+    "description": "محسن الصور. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/image-enhancer",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ar"
+  },
+  "openGraph": {
+    "title": "Free محسن الصور - Flixo",
+    "description": "محسن الصور. Free online image tools. Edit, enhance, and transform images directly in your browser.",
+    "url": "https://flixotools.com/tools/image-enhancer",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free محسن الصور - Flixo",
+    "description": "محسن الصور. Free online image tools. Edit, enhance, and transform images directly in your browser."
+  }
+}

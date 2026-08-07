@@ -1,13 +1,21 @@
 /**
  * Flixo Middleware - Language Detection and URL Localization
- * 
+ *
  * Features:
  * - Browser language detection
  * - Cookie persistence
  * - Locale-based URL rewriting
  * - x-default handling
  */
-import { defineEventHandler, getRequestURL, sendRedirect, getHeader, setHeader, getCookie, setCookie } from "h3";
+import {
+  defineEventHandler,
+  getRequestURL,
+  sendRedirect,
+  getHeader,
+  setHeader,
+  getCookie,
+  setCookie,
+} from "h3";
 import { LOCALES, DEFAULT_LOCALE, isValidLocale, type LocaleCode } from "./lib/i18n";
 
 const LOCALE_STORAGE_KEY = "flixo-lang";
@@ -55,11 +63,11 @@ function extractLocaleFromPath(path: string): { locale: LocaleCode; cleanPath: s
   // Remove leading slash
   const cleanPath = path.startsWith("/") ? path.slice(1) : path;
   const segments = cleanPath.split("/");
-  
+
   if (segments.length === 0) return null;
-  
+
   const firstSegment = segments[0];
-  
+
   // Check if first segment is a valid locale code
   if (isValidLocale(firstSegment)) {
     return {
@@ -67,36 +75,36 @@ function extractLocaleFromPath(path: string): { locale: LocaleCode; cleanPath: s
       cleanPath: "/" + segments.slice(1).join("/"),
     };
   }
-  
+
   return null;
 }
 
 /**
  * Detect preferred locale from various sources
  */
-function detectLocale(event: any): LocaleCode {
+function detectLocale(event: { req: unknown }): LocaleCode {
   const url = getRequestURL(event);
   const path = url.pathname;
-  
+
   // 1. Check if path already has locale prefix
   const pathLocale = extractLocaleFromPath(path);
   if (pathLocale) {
     return pathLocale.locale;
   }
-  
+
   // 2. Check cookie
   const cookieLocale = getCookie(event, LOCALE_STORAGE_KEY);
   if (cookieLocale && isValidLocale(cookieLocale)) {
     return cookieLocale as LocaleCode;
   }
-  
+
   // 3. Check Accept-Language header
   const acceptLanguage = getHeader(event, "accept-language");
   const browserLocale = parseAcceptLanguage(acceptLanguage);
   if (browserLocale) {
     return browserLocale;
   }
-  
+
   // 4. Default to English
   return DEFAULT_LOCALE;
 }
@@ -104,7 +112,7 @@ function detectLocale(event: any): LocaleCode {
 /**
  * Set locale cookie
  */
-function setLocaleCookie(event: any, locale: LocaleCode): void {
+function setLocaleCookie(event: { req: unknown }, locale: LocaleCode): void {
   setCookie(event, LOCALE_STORAGE_KEY, locale, {
     maxAge: LOCALE_COOKIE_MAX_AGE,
     path: "/",
@@ -115,7 +123,7 @@ function setLocaleCookie(event: any, locale: LocaleCode): void {
 
 /**
  * Handle locale routing
- * 
+ *
  * Rules:
  * - /password-generator → /en/password-generator (default locale)
  * - /{locale}/password-generator → localized version
@@ -125,7 +133,7 @@ function setLocaleCookie(event: any, locale: LocaleCode): void {
 export default defineEventHandler((event) => {
   const url = getRequestURL(event);
   const path = url.pathname;
-  
+
   // Skip middleware for:
   // - Static assets
   // - API routes
@@ -147,26 +155,26 @@ export default defineEventHandler((event) => {
     setHeader(event, "x-locale", locale);
     return;
   }
-  
+
   // Detect locale
   const locale = detectLocale(event);
-  
+
   // Redirect to localized path if not already localized
   // Only redirect if path is not root
   if (path !== "/" && !path.match(/^\/[a-z]{2}(-[A-Z]{2})?/)) {
     const targetPath = `/${locale}${path === "/" ? "" : path}`;
-    
+
     // Set cookie for persistence
     setLocaleCookie(event, locale);
-    
+
     // Set header for downstream handlers
     setHeader(event, "x-locale", locale);
     setHeader(event, "x-original-path", path);
-    
+
     // Redirect with 307 (Temporary Redirect) to preserve method
     return sendRedirect(event, targetPath, 307);
   }
-  
+
   // Set locale header for downstream handlers
   setHeader(event, "x-locale", locale);
   setLocaleCookie(event, locale);

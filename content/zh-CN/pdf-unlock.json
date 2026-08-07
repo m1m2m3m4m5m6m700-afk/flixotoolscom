@@ -1,0 +1,148 @@
+{
+  "id": "pdf-unlock",
+  "slug": "pdf-unlock",
+  "locale": "zh-CN",
+  "toolName": "PDF Unlock",
+  "englishName": "PDF Unlock",
+  "title": "PDF Unlock",
+  "tagline": "Manage PDF documents with ease. Merge, split, convert, and more.",
+  "description": "PDF Unlock. Free online PDF tools. Work with PDF documents directly in your browser.",
+  "shortDescription": "Manage PDF documents with ease. Merge, split, convert, and more.",
+  "metaTitle": "Free PDF Unlock Online - Merge, Split, Convert PDFs | Flixo",
+  "metaDescription": "PDF Unlock. Free online PDF tools. Merge, split, compress, convert, and edit PDFs. No signup, no fees, works in browser.",
+  "keywords": [
+    "pdf tools",
+    "pdf merger",
+    "pdf splitter",
+    "pdf converter",
+    "pdf tools"
+  ],
+  "faq": [
+    {
+      "q": "Is PDF Unlock free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "PDF Unlock"
+  ],
+  "canonical": "/tools/pdf-unlock",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/pdf-unlock"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/pdf-unlock"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/pdf-unlock"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/pdf-unlock"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/pdf-unlock"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/pdf-unlock"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/pdf-unlock"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/pdf-unlock"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/pdf-unlock"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/pdf-unlock"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/pdf-unlock"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/pdf-unlock"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/pdf-unlock"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/pdf-unlock"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/pdf-unlock"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/pdf-unlock"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/pdf-unlock"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/pdf-unlock"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/pdf-unlock"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/pdf-unlock"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "PDF Unlock",
+    "description": "PDF Unlock. Free online PDF tools. Work with PDF documents directly in your browser.",
+    "url": "https://flixotools.com/tools/pdf-unlock",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "zh-CN"
+  },
+  "openGraph": {
+    "title": "Free PDF Unlock - Flixo",
+    "description": "PDF Unlock. Free online PDF tools. Work with PDF documents directly in your browser.",
+    "url": "https://flixotools.com/tools/pdf-unlock",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free PDF Unlock - Flixo",
+    "description": "PDF Unlock. Free online PDF tools. Work with PDF documents directly in your browser."
+  }
+}

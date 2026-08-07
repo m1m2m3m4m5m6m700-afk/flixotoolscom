@@ -1,0 +1,147 @@
+{
+  "id": "multi-language",
+  "slug": "multi-language",
+  "locale": "fr",
+  "toolName": "Multi-language",
+  "englishName": "Multi-language",
+  "title": "Multi-language",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Multi-language. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Multi-language Online - Fast & Easy | Flixo",
+  "metaDescription": "Multi-language. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Multi-language free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Multi-language"
+  ],
+  "canonical": "/tools/multi-language",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/multi-language"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/multi-language"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/multi-language"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/multi-language"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/multi-language"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/multi-language"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/multi-language"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/multi-language"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/multi-language"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/multi-language"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/multi-language"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/multi-language"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/multi-language"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/multi-language"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/multi-language"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/multi-language"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/multi-language"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/multi-language"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/multi-language"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/multi-language"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Multi-language",
+    "description": "Multi-language. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/multi-language",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "fr"
+  },
+  "openGraph": {
+    "title": "Free Multi-language - Flixo",
+    "description": "Multi-language. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/multi-language",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Multi-language - Flixo",
+    "description": "Multi-language. Free online tool that helps you get things done quickly and easily."
+  }
+}

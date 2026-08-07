@@ -1,0 +1,148 @@
+{
+  "id": "pdf-to-jpg",
+  "slug": "pdf-to-jpg",
+  "locale": "zh-TW",
+  "toolName": "PDF to JPG",
+  "englishName": "PDF to JPG",
+  "title": "PDF to JPG",
+  "tagline": "Manage PDF documents with ease. Merge, split, convert, and more.",
+  "description": "PDF to JPG. Free online PDF tools. Work with PDF documents directly in your browser.",
+  "shortDescription": "Manage PDF documents with ease. Merge, split, convert, and more.",
+  "metaTitle": "Free PDF to JPG Online - Merge, Split, Convert PDFs | Flixo",
+  "metaDescription": "PDF to JPG. Free online PDF tools. Merge, split, compress, convert, and edit PDFs. No signup, no fees, works in browser.",
+  "keywords": [
+    "pdf tools",
+    "pdf merger",
+    "pdf splitter",
+    "pdf converter",
+    "pdf tools"
+  ],
+  "faq": [
+    {
+      "q": "Is PDF to JPG free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "PDF to JPG"
+  ],
+  "canonical": "/tools/pdf-to-jpg",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/pdf-to-jpg"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/pdf-to-jpg"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/pdf-to-jpg"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/pdf-to-jpg"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/pdf-to-jpg"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/pdf-to-jpg"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/pdf-to-jpg"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/pdf-to-jpg"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/pdf-to-jpg"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/pdf-to-jpg"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/pdf-to-jpg"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/pdf-to-jpg"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/pdf-to-jpg"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/pdf-to-jpg"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/pdf-to-jpg"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/pdf-to-jpg"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/pdf-to-jpg"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/pdf-to-jpg"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/pdf-to-jpg"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/pdf-to-jpg"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "PDF to JPG",
+    "description": "PDF to JPG. Free online PDF tools. Work with PDF documents directly in your browser.",
+    "url": "https://flixotools.com/tools/pdf-to-jpg",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "zh-TW"
+  },
+  "openGraph": {
+    "title": "Free PDF to JPG - Flixo",
+    "description": "PDF to JPG. Free online PDF tools. Work with PDF documents directly in your browser.",
+    "url": "https://flixotools.com/tools/pdf-to-jpg",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free PDF to JPG - Flixo",
+    "description": "PDF to JPG. Free online PDF tools. Work with PDF documents directly in your browser."
+  }
+}

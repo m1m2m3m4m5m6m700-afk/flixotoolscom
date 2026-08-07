@@ -1,0 +1,149 @@
+{
+  "id": "voice-translator",
+  "slug": "voice-translator",
+  "locale": "zh-TW",
+  "toolName": "Voice Translator",
+  "englishName": "Voice Translator",
+  "title": "Voice Translator",
+  "tagline": "Translate text between languages instantly with AI-powered accuracy.",
+  "description": "Voice Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+  "shortDescription": "Translate text between languages instantly with AI-powered accuracy.",
+  "metaTitle": "Free Voice Translator Online - Translate Text Instantly | Flixo",
+  "metaDescription": "Voice Translator. Use our free AI translator. Translate text between 100+ languages instantly. No signup, no fees, accurate results.",
+  "keywords": [
+    "translator",
+    "translation",
+    "ai translator",
+    "translator",
+    "online translator",
+    "text translation"
+  ],
+  "faq": [
+    {
+      "q": "Is Voice Translator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Voice Translator"
+  ],
+  "canonical": "/tools/voice-translator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/voice-translator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/voice-translator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/voice-translator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/voice-translator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/voice-translator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/voice-translator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/voice-translator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/voice-translator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/voice-translator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/voice-translator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/voice-translator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/voice-translator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/voice-translator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/voice-translator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/voice-translator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/voice-translator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/voice-translator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/voice-translator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/voice-translator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/voice-translator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Voice Translator",
+    "description": "Voice Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/voice-translator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "zh-TW"
+  },
+  "openGraph": {
+    "title": "Free Voice Translator - Flixo",
+    "description": "Voice Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/voice-translator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Voice Translator - Flixo",
+    "description": "Voice Translator. Free online translation tool powered by AI. Translate text accurately and quickly."
+  }
+}

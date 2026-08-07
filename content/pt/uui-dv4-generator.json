@@ -1,0 +1,147 @@
+{
+  "id": "uui-dv4-generator",
+  "slug": "uui-dv4-generator",
+  "locale": "pt",
+  "toolName": "Uui Dv4 Generator",
+  "englishName": "Uui Dv4 Generator",
+  "title": "Uui Dv4 Generator",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Uui Dv4 Generator. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Uui Dv4 Generator Online - Fast & Easy | Flixo",
+  "metaDescription": "Uui Dv4 Generator. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Uui Dv4 Generator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Uui Dv4 Generator"
+  ],
+  "canonical": "/tools/uui-dv4-generator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/uui-dv4-generator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/uui-dv4-generator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/uui-dv4-generator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/uui-dv4-generator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/uui-dv4-generator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/uui-dv4-generator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/uui-dv4-generator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/uui-dv4-generator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/uui-dv4-generator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/uui-dv4-generator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/uui-dv4-generator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/uui-dv4-generator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/uui-dv4-generator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/uui-dv4-generator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/uui-dv4-generator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/uui-dv4-generator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/uui-dv4-generator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/uui-dv4-generator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/uui-dv4-generator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/uui-dv4-generator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Uui Dv4 Generator",
+    "description": "Uui Dv4 Generator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/uui-dv4-generator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "pt"
+  },
+  "openGraph": {
+    "title": "Free Uui Dv4 Generator - Flixo",
+    "description": "Uui Dv4 Generator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/uui-dv4-generator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Uui Dv4 Generator - Flixo",
+    "description": "Uui Dv4 Generator. Free online tool that helps you get things done quickly and easily."
+  }
+}

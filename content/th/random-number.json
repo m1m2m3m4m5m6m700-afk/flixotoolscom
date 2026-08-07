@@ -1,0 +1,147 @@
+{
+  "id": "random-number",
+  "slug": "random-number",
+  "locale": "th",
+  "toolName": "Random Number",
+  "englishName": "Random Number",
+  "title": "Random Number",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Random Number. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Random Number Online - Fast & Easy | Flixo",
+  "metaDescription": "Random Number. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Random Number free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Random Number"
+  ],
+  "canonical": "/tools/random-number",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/random-number"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/random-number"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/random-number"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/random-number"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/random-number"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/random-number"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/random-number"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/random-number"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/random-number"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/random-number"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/random-number"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/random-number"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/random-number"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/random-number"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/random-number"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/random-number"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/random-number"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/random-number"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/random-number"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/random-number"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Random Number",
+    "description": "Random Number. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/random-number",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "th"
+  },
+  "openGraph": {
+    "title": "Free Random Number - Flixo",
+    "description": "Random Number. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/random-number",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Random Number - Flixo",
+    "description": "Random Number. Free online tool that helps you get things done quickly and easily."
+  }
+}

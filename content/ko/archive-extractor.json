@@ -1,0 +1,147 @@
+{
+  "id": "archive-extractor",
+  "slug": "archive-extractor",
+  "locale": "ko",
+  "toolName": "Archive Extractor",
+  "englishName": "Archive Extractor",
+  "title": "Archive Extractor",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Archive Extractor. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Archive Extractor Online - Fast & Easy | Flixo",
+  "metaDescription": "Archive Extractor. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Archive Extractor free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Archive Extractor"
+  ],
+  "canonical": "/tools/archive-extractor",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/archive-extractor"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/archive-extractor"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/archive-extractor"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/archive-extractor"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/archive-extractor"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/archive-extractor"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/archive-extractor"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/archive-extractor"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/archive-extractor"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/archive-extractor"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/archive-extractor"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/archive-extractor"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/archive-extractor"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/archive-extractor"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/archive-extractor"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/archive-extractor"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/archive-extractor"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/archive-extractor"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/archive-extractor"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/archive-extractor"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Archive Extractor",
+    "description": "Archive Extractor. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/archive-extractor",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ko"
+  },
+  "openGraph": {
+    "title": "Free Archive Extractor - Flixo",
+    "description": "Archive Extractor. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/archive-extractor",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Archive Extractor - Flixo",
+    "description": "Archive Extractor. Free online tool that helps you get things done quickly and easily."
+  }
+}

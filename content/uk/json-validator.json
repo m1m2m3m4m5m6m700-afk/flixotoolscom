@@ -1,0 +1,147 @@
+{
+  "id": "json-validator",
+  "slug": "json-validator",
+  "locale": "uk",
+  "toolName": "Json Validator",
+  "englishName": "Json Validator",
+  "title": "Json Validator",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Json Validator. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Json Validator Online - Fast & Easy | Flixo",
+  "metaDescription": "Json Validator. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Json Validator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Json Validator"
+  ],
+  "canonical": "/tools/json-validator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/json-validator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/json-validator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/json-validator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/json-validator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/json-validator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/json-validator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/json-validator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/json-validator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/json-validator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/json-validator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/json-validator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/json-validator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/json-validator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/json-validator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/json-validator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/json-validator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/json-validator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/json-validator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/json-validator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/json-validator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Json Validator",
+    "description": "Json Validator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/json-validator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "uk"
+  },
+  "openGraph": {
+    "title": "Free Json Validator - Flixo",
+    "description": "Json Validator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/json-validator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Json Validator - Flixo",
+    "description": "Json Validator. Free online tool that helps you get things done quickly and easily."
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "mark-down-preview",
+  "slug": "mark-down-preview",
+  "locale": "id",
+  "toolName": "Mark Down Preview",
+  "englishName": "Mark Down Preview",
+  "title": "Mark Down Preview",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Mark Down Preview. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Mark Down Preview Online - Fast & Easy | Flixo",
+  "metaDescription": "Mark Down Preview. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Mark Down Preview free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Mark Down Preview"
+  ],
+  "canonical": "/tools/mark-down-preview",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/mark-down-preview"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/mark-down-preview"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/mark-down-preview"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/mark-down-preview"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/mark-down-preview"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/mark-down-preview"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/mark-down-preview"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/mark-down-preview"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/mark-down-preview"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/mark-down-preview"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/mark-down-preview"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/mark-down-preview"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/mark-down-preview"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/mark-down-preview"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/mark-down-preview"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/mark-down-preview"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/mark-down-preview"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/mark-down-preview"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/mark-down-preview"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/mark-down-preview"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Mark Down Preview",
+    "description": "Mark Down Preview. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/mark-down-preview",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "id"
+  },
+  "openGraph": {
+    "title": "Free Mark Down Preview - Flixo",
+    "description": "Mark Down Preview. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/mark-down-preview",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Mark Down Preview - Flixo",
+    "description": "Mark Down Preview. Free online tool that helps you get things done quickly and easily."
+  }
+}

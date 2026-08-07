@@ -1,0 +1,149 @@
+{
+  "id": "website-translator",
+  "slug": "website-translator",
+  "locale": "fr",
+  "toolName": "Website Translator",
+  "englishName": "Website Translator",
+  "title": "Website Translator",
+  "tagline": "Translate text between languages instantly with AI-powered accuracy.",
+  "description": "Website Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+  "shortDescription": "Translate text between languages instantly with AI-powered accuracy.",
+  "metaTitle": "Free Website Translator Online - Translate Text Instantly | Flixo",
+  "metaDescription": "Website Translator. Use our free AI translator. Translate text between 100+ languages instantly. No signup, no fees, accurate results.",
+  "keywords": [
+    "translator",
+    "translation",
+    "ai translator",
+    "translator",
+    "online translator",
+    "text translation"
+  ],
+  "faq": [
+    {
+      "q": "Is Website Translator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Website Translator"
+  ],
+  "canonical": "/tools/website-translator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/website-translator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/website-translator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/website-translator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/website-translator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/website-translator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/website-translator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/website-translator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/website-translator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/website-translator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/website-translator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/website-translator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/website-translator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/website-translator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/website-translator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/website-translator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/website-translator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/website-translator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/website-translator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/website-translator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/website-translator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Website Translator",
+    "description": "Website Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/website-translator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "fr"
+  },
+  "openGraph": {
+    "title": "Free Website Translator - Flixo",
+    "description": "Website Translator. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/website-translator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Website Translator - Flixo",
+    "description": "Website Translator. Free online translation tool powered by AI. Translate text accurately and quickly."
+  }
+}

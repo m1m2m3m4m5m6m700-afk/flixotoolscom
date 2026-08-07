@@ -1,0 +1,149 @@
+{
+  "id": "language-detection",
+  "slug": "language-detection",
+  "locale": "ar",
+  "toolName": "Language Detection",
+  "englishName": "Language Detection",
+  "title": "Language Detection",
+  "tagline": "Translate text between languages instantly with AI-powered accuracy.",
+  "description": "Language Detection. Free online translation tool powered by AI. Translate text accurately and quickly.",
+  "shortDescription": "Translate text between languages instantly with AI-powered accuracy.",
+  "metaTitle": "Free Language Detection Online - Translate Text Instantly | Flixo",
+  "metaDescription": "Language Detection. Use our free AI translator. Translate text between 100+ languages instantly. No signup, no fees, accurate results.",
+  "keywords": [
+    "translator",
+    "translation",
+    "ai translator",
+    "translator",
+    "online translator",
+    "text translation"
+  ],
+  "faq": [
+    {
+      "q": "Is Language Detection free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Language Detection"
+  ],
+  "canonical": "/tools/language-detection",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/language-detection"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/language-detection"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/language-detection"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/language-detection"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/language-detection"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/language-detection"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/language-detection"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/language-detection"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/language-detection"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/language-detection"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/language-detection"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/language-detection"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/language-detection"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/language-detection"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/language-detection"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/language-detection"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/language-detection"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/language-detection"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/language-detection"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/language-detection"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Language Detection",
+    "description": "Language Detection. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/language-detection",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ar"
+  },
+  "openGraph": {
+    "title": "Free Language Detection - Flixo",
+    "description": "Language Detection. Free online translation tool powered by AI. Translate text accurately and quickly.",
+    "url": "https://flixotools.com/tools/language-detection",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Language Detection - Flixo",
+    "description": "Language Detection. Free online translation tool powered by AI. Translate text accurately and quickly."
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "character-counter",
+  "slug": "character-counter",
+  "locale": "en",
+  "toolName": "Character Counter",
+  "englishName": "Character Counter",
+  "title": "Character Counter",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Character Counter. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Character Counter Online - Fast & Easy | Flixo",
+  "metaDescription": "Character Counter. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Character Counter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Character Counter"
+  ],
+  "canonical": "/tools/character-counter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/character-counter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/character-counter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/character-counter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/character-counter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/character-counter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/character-counter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/character-counter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/character-counter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/character-counter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/character-counter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/character-counter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/character-counter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/character-counter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/character-counter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/character-counter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/character-counter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/character-counter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/character-counter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/character-counter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/character-counter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Character Counter",
+    "description": "Character Counter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/character-counter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "en"
+  },
+  "openGraph": {
+    "title": "Free Character Counter - Flixo",
+    "description": "Character Counter. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/character-counter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Character Counter - Flixo",
+    "description": "Character Counter. Free online tool that helps you get things done quickly and easily."
+  }
+}

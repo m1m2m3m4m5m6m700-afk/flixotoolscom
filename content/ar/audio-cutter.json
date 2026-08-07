@@ -1,0 +1,148 @@
+{
+  "id": "audio-cutter",
+  "slug": "audio-cutter",
+  "locale": "ar",
+  "toolName": "Audio Cutter",
+  "englishName": "Audio Cutter",
+  "title": "Audio Cutter",
+  "tagline": "Process audio files with powerful tools.",
+  "description": "Audio Cutter. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+  "shortDescription": "Process audio files with powerful tools.",
+  "metaTitle": "Free Audio Cutter Online - Convert & Edit Audio | Flixo",
+  "metaDescription": "Audio Cutter. Free online audio tools. Convert audio formats, compress files, and more. No signup, works in browser.",
+  "keywords": [
+    "audio tools",
+    "audio converter",
+    "audio compressor",
+    "audio tools",
+    "online audio editor"
+  ],
+  "faq": [
+    {
+      "q": "Is Audio Cutter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Audio Cutter"
+  ],
+  "canonical": "/tools/audio-cutter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/audio-cutter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/audio-cutter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/audio-cutter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/audio-cutter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/audio-cutter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/audio-cutter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/audio-cutter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/audio-cutter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/audio-cutter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/audio-cutter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/audio-cutter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/audio-cutter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/audio-cutter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/audio-cutter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/audio-cutter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/audio-cutter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/audio-cutter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/audio-cutter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/audio-cutter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/audio-cutter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Audio Cutter",
+    "description": "Audio Cutter. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+    "url": "https://flixotools.com/tools/audio-cutter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ar"
+  },
+  "openGraph": {
+    "title": "Free Audio Cutter - Flixo",
+    "description": "Audio Cutter. Free online audio tools. Convert, compress, and enhance audio directly in browser.",
+    "url": "https://flixotools.com/tools/audio-cutter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Audio Cutter - Flixo",
+    "description": "Audio Cutter. Free online audio tools. Convert, compress, and enhance audio directly in browser."
+  }
+}

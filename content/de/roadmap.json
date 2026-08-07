@@ -1,0 +1,147 @@
+{
+  "id": "roadmap",
+  "slug": "roadmap",
+  "locale": "de",
+  "toolName": "Roadmap",
+  "englishName": "Roadmap",
+  "title": "Roadmap",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Roadmap. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Roadmap Online - Fast & Easy | Flixo",
+  "metaDescription": "Roadmap. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Roadmap free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Roadmap"
+  ],
+  "canonical": "/tools/roadmap",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/roadmap"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/roadmap"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/roadmap"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/roadmap"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/roadmap"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/roadmap"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/roadmap"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/roadmap"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/roadmap"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/roadmap"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/roadmap"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/roadmap"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/roadmap"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/roadmap"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/roadmap"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/roadmap"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/roadmap"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/roadmap"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/roadmap"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/roadmap"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Roadmap",
+    "description": "Roadmap. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/roadmap",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "de"
+  },
+  "openGraph": {
+    "title": "Free Roadmap - Flixo",
+    "description": "Roadmap. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/roadmap",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Roadmap - Flixo",
+    "description": "Roadmap. Free online tool that helps you get things done quickly and easily."
+  }
+}

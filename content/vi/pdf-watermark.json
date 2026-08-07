@@ -1,0 +1,148 @@
+{
+  "id": "pdf-watermark",
+  "slug": "pdf-watermark",
+  "locale": "vi",
+  "toolName": "Add Watermark",
+  "englishName": "Add Watermark",
+  "title": "Add Watermark",
+  "tagline": "Manage PDF documents with ease. Merge, split, convert, and more.",
+  "description": "Add Watermark. Free online PDF tools. Work with PDF documents directly in your browser.",
+  "shortDescription": "Manage PDF documents with ease. Merge, split, convert, and more.",
+  "metaTitle": "Free Add Watermark Online - Merge, Split, Convert PDFs | Flixo",
+  "metaDescription": "Add Watermark. Free online PDF tools. Merge, split, compress, convert, and edit PDFs. No signup, no fees, works in browser.",
+  "keywords": [
+    "pdf tools",
+    "pdf merger",
+    "pdf splitter",
+    "pdf converter",
+    "pdf tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Add Watermark free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Add Watermark"
+  ],
+  "canonical": "/tools/pdf-watermark",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/pdf-watermark"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/pdf-watermark"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/pdf-watermark"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/pdf-watermark"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/pdf-watermark"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/pdf-watermark"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/pdf-watermark"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/pdf-watermark"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/pdf-watermark"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/pdf-watermark"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/pdf-watermark"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/pdf-watermark"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/pdf-watermark"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/pdf-watermark"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/pdf-watermark"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/pdf-watermark"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/pdf-watermark"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/pdf-watermark"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/pdf-watermark"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/pdf-watermark"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Add Watermark",
+    "description": "Add Watermark. Free online PDF tools. Work with PDF documents directly in your browser.",
+    "url": "https://flixotools.com/tools/pdf-watermark",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "vi"
+  },
+  "openGraph": {
+    "title": "Free Add Watermark - Flixo",
+    "description": "Add Watermark. Free online PDF tools. Work with PDF documents directly in your browser.",
+    "url": "https://flixotools.com/tools/pdf-watermark",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Add Watermark - Flixo",
+    "description": "Add Watermark. Free online PDF tools. Work with PDF documents directly in your browser."
+  }
+}

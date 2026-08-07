@@ -1,0 +1,148 @@
+{
+  "id": "video-compressor",
+  "slug": "video-compressor",
+  "locale": "zh-CN",
+  "toolName": "Video Compressor",
+  "englishName": "Video Compressor",
+  "title": "Video Compressor",
+  "tagline": "Process and edit video files with powerful tools.",
+  "description": "Video Compressor. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+  "shortDescription": "Process and edit video files with powerful tools.",
+  "metaTitle": "Free Video Compressor Online - Compress & Convert Videos | Flixo",
+  "metaDescription": "Video Compressor. Free online video tools. Compress, convert, and edit videos. No signup, no upload, works in browser.",
+  "keywords": [
+    "video tools",
+    "video compressor",
+    "video converter",
+    "video tools",
+    "online video editor"
+  ],
+  "faq": [
+    {
+      "q": "Is Video Compressor free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Video Compressor"
+  ],
+  "canonical": "/tools/video-compressor",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/video-compressor"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/video-compressor"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/video-compressor"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/video-compressor"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/video-compressor"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/video-compressor"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/video-compressor"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/video-compressor"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/video-compressor"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/video-compressor"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/video-compressor"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/video-compressor"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/video-compressor"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/video-compressor"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/video-compressor"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/video-compressor"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/video-compressor"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/video-compressor"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/video-compressor"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/video-compressor"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Video Compressor",
+    "description": "Video Compressor. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+    "url": "https://flixotools.com/tools/video-compressor",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "zh-CN"
+  },
+  "openGraph": {
+    "title": "Free Video Compressor - Flixo",
+    "description": "Video Compressor. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+    "url": "https://flixotools.com/tools/video-compressor",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Video Compressor - Flixo",
+    "description": "Video Compressor. Free online video tools. Compress, convert, and enhance videos directly in browser."
+  }
+}

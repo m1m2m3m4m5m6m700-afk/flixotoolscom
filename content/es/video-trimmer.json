@@ -1,0 +1,148 @@
+{
+  "id": "video-trimmer",
+  "slug": "video-trimmer",
+  "locale": "es",
+  "toolName": "Video Trimmer",
+  "englishName": "Video Trimmer",
+  "title": "Video Trimmer",
+  "tagline": "Process and edit video files with powerful tools.",
+  "description": "Video Trimmer. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+  "shortDescription": "Process and edit video files with powerful tools.",
+  "metaTitle": "Free Video Trimmer Online - Compress & Convert Videos | Flixo",
+  "metaDescription": "Video Trimmer. Free online video tools. Compress, convert, and edit videos. No signup, no upload, works in browser.",
+  "keywords": [
+    "video tools",
+    "video compressor",
+    "video converter",
+    "video tools",
+    "online video editor"
+  ],
+  "faq": [
+    {
+      "q": "Is Video Trimmer free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Video Trimmer"
+  ],
+  "canonical": "/tools/video-trimmer",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/video-trimmer"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/video-trimmer"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/video-trimmer"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/video-trimmer"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/video-trimmer"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/video-trimmer"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/video-trimmer"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/video-trimmer"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/video-trimmer"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/video-trimmer"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/video-trimmer"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/video-trimmer"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/video-trimmer"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/video-trimmer"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/video-trimmer"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/video-trimmer"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/video-trimmer"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/video-trimmer"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/video-trimmer"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/video-trimmer"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Video Trimmer",
+    "description": "Video Trimmer. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+    "url": "https://flixotools.com/tools/video-trimmer",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "es"
+  },
+  "openGraph": {
+    "title": "Free Video Trimmer - Flixo",
+    "description": "Video Trimmer. Free online video tools. Compress, convert, and enhance videos directly in browser.",
+    "url": "https://flixotools.com/tools/video-trimmer",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Video Trimmer - Flixo",
+    "description": "Video Trimmer. Free online video tools. Compress, convert, and enhance videos directly in browser."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "id": "data-insights",
+  "slug": "data-insights",
+  "locale": "vi",
+  "toolName": "Data Insights",
+  "englishName": "Data Insights",
+  "title": "Data Insights",
+  "tagline": "AI-powered tools for productivity and creativity.",
+  "description": "Data Insights. Free AI tools. Chat, generate content, analyze data, and more.",
+  "shortDescription": "AI-powered tools for productivity and creativity.",
+  "metaTitle": "Free Data Insights Online - Chat, Generate & Analyze | Flixo",
+  "metaDescription": "Data Insights. Free AI tools. Chat with AI, generate content, analyze data. No signup, instant results.",
+  "keywords": [
+    "ai tools",
+    "ai chat",
+    "ai assistant",
+    "ai",
+    "chatgpt alternative"
+  ],
+  "faq": [
+    {
+      "q": "Is Data Insights free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Data Insights"
+  ],
+  "canonical": "/tools/data-insights",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/data-insights"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/data-insights"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/data-insights"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/data-insights"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/data-insights"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/data-insights"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/data-insights"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/data-insights"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/data-insights"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/data-insights"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/data-insights"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/data-insights"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/data-insights"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/data-insights"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/data-insights"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/data-insights"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/data-insights"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/data-insights"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/data-insights"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/data-insights"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Data Insights",
+    "description": "Data Insights. Free AI tools. Chat, generate content, analyze data, and more.",
+    "url": "https://flixotools.com/tools/data-insights",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "vi"
+  },
+  "openGraph": {
+    "title": "Free Data Insights - Flixo",
+    "description": "Data Insights. Free AI tools. Chat, generate content, analyze data, and more.",
+    "url": "https://flixotools.com/tools/data-insights",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Data Insights - Flixo",
+    "description": "Data Insights. Free AI tools. Chat, generate content, analyze data, and more."
+  }
+}

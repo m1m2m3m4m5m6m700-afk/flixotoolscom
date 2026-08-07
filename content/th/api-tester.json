@@ -1,0 +1,147 @@
+{
+  "id": "api-tester",
+  "slug": "api-tester",
+  "locale": "th",
+  "toolName": "API Tester",
+  "englishName": "API Tester",
+  "title": "API Tester",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "API Tester. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free API Tester Online - Fast & Easy | Flixo",
+  "metaDescription": "API Tester. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is API Tester free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "API Tester"
+  ],
+  "canonical": "/tools/api-tester",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/api-tester"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/api-tester"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/api-tester"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/api-tester"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/api-tester"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/api-tester"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/api-tester"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/api-tester"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/api-tester"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/api-tester"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/api-tester"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/api-tester"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/api-tester"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/api-tester"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/api-tester"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/api-tester"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/api-tester"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/api-tester"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/api-tester"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/api-tester"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "API Tester",
+    "description": "API Tester. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/api-tester",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "th"
+  },
+  "openGraph": {
+    "title": "Free API Tester - Flixo",
+    "description": "API Tester. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/api-tester",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free API Tester - Flixo",
+    "description": "API Tester. Free online tool that helps you get things done quickly and easily."
+  }
+}

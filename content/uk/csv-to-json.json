@@ -1,0 +1,147 @@
+{
+  "id": "csv-to-json",
+  "slug": "csv-to-json",
+  "locale": "uk",
+  "toolName": "CSV to JSON",
+  "englishName": "CSV to JSON",
+  "title": "CSV to JSON",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "CSV to JSON. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free CSV to JSON Online - Fast & Easy | Flixo",
+  "metaDescription": "CSV to JSON. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is CSV to JSON free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "CSV to JSON"
+  ],
+  "canonical": "/tools/csv-to-json",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/csv-to-json"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/csv-to-json"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/csv-to-json"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/csv-to-json"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/csv-to-json"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/csv-to-json"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/csv-to-json"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/csv-to-json"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/csv-to-json"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/csv-to-json"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/csv-to-json"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/csv-to-json"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/csv-to-json"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/csv-to-json"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/csv-to-json"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/csv-to-json"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/csv-to-json"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/csv-to-json"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/csv-to-json"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/csv-to-json"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "CSV to JSON",
+    "description": "CSV to JSON. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/csv-to-json",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "uk"
+  },
+  "openGraph": {
+    "title": "Free CSV to JSON - Flixo",
+    "description": "CSV to JSON. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/csv-to-json",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free CSV to JSON - Flixo",
+    "description": "CSV to JSON. Free online tool that helps you get things done quickly and easily."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "id": "email-drafter",
+  "slug": "email-drafter",
+  "locale": "es",
+  "toolName": "Email Drafter",
+  "englishName": "Email Drafter",
+  "title": "Email Drafter",
+  "tagline": "Improve your writing with AI-powered tools.",
+  "description": "Email Drafter. Free online writing tools. Summarize, rewrite, and enhance your content.",
+  "shortDescription": "Improve your writing with AI-powered tools.",
+  "metaTitle": "Free Email Drafter Online - Write Better | Flixo",
+  "metaDescription": "Email Drafter. Free AI writing tools. Summarize text, improve writing, check grammar. No signup, no fees, instant results.",
+  "keywords": [
+    "writing tools",
+    "ai writer",
+    "text summarizer",
+    "grammar checker",
+    "writing tools"
+  ],
+  "faq": [
+    {
+      "q": "Is Email Drafter free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Email Drafter"
+  ],
+  "canonical": "/tools/email-drafter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/email-drafter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/email-drafter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/email-drafter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/email-drafter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/email-drafter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/email-drafter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/email-drafter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/email-drafter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/email-drafter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/email-drafter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/email-drafter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/email-drafter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/email-drafter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/email-drafter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/email-drafter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/email-drafter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/email-drafter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/email-drafter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/email-drafter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/email-drafter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Email Drafter",
+    "description": "Email Drafter. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/email-drafter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "es"
+  },
+  "openGraph": {
+    "title": "Free Email Drafter - Flixo",
+    "description": "Email Drafter. Free online writing tools. Summarize, rewrite, and enhance your content.",
+    "url": "https://flixotools.com/tools/email-drafter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Email Drafter - Flixo",
+    "description": "Email Drafter. Free online writing tools. Summarize, rewrite, and enhance your content."
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "tip-calculator",
+  "slug": "tip-calculator",
+  "locale": "ar",
+  "toolName": "Tip Calculator",
+  "englishName": "Tip Calculator",
+  "title": "Tip Calculator",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Tip Calculator. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Tip Calculator Online - Fast & Easy | Flixo",
+  "metaDescription": "Tip Calculator. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Tip Calculator free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Tip Calculator"
+  ],
+  "canonical": "/tools/tip-calculator",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/tip-calculator"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/tip-calculator"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/tip-calculator"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/tip-calculator"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/tip-calculator"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/tip-calculator"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/tip-calculator"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/tip-calculator"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/tip-calculator"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/tip-calculator"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/tip-calculator"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/tip-calculator"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/tip-calculator"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/tip-calculator"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/tip-calculator"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/tip-calculator"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/tip-calculator"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/tip-calculator"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/tip-calculator"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/tip-calculator"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Tip Calculator",
+    "description": "Tip Calculator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/tip-calculator",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ar"
+  },
+  "openGraph": {
+    "title": "Free Tip Calculator - Flixo",
+    "description": "Tip Calculator. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/tip-calculator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Tip Calculator - Flixo",
+    "description": "Tip Calculator. Free online tool that helps you get things done quickly and easily."
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "enc-dec-text",
+  "slug": "enc-dec-text",
+  "locale": "ar",
+  "toolName": "Enc Dec Text",
+  "englishName": "Enc Dec Text",
+  "title": "Enc Dec Text",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Enc Dec Text. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Enc Dec Text Online - Fast & Easy | Flixo",
+  "metaDescription": "Enc Dec Text. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Enc Dec Text free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Enc Dec Text"
+  ],
+  "canonical": "/tools/enc-dec-text",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/enc-dec-text"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/enc-dec-text"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/enc-dec-text"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/enc-dec-text"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/enc-dec-text"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/enc-dec-text"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/enc-dec-text"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/enc-dec-text"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/enc-dec-text"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/enc-dec-text"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/enc-dec-text"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/enc-dec-text"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/enc-dec-text"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/enc-dec-text"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/enc-dec-text"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/enc-dec-text"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/enc-dec-text"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/enc-dec-text"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/enc-dec-text"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/enc-dec-text"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Enc Dec Text",
+    "description": "Enc Dec Text. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/enc-dec-text",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ar"
+  },
+  "openGraph": {
+    "title": "Free Enc Dec Text - Flixo",
+    "description": "Enc Dec Text. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/enc-dec-text",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Enc Dec Text - Flixo",
+    "description": "Enc Dec Text. Free online tool that helps you get things done quickly and easily."
+  }
+}

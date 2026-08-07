@@ -1,0 +1,147 @@
+{
+  "id": "admin-dashboard",
+  "slug": "admin-dashboard",
+  "locale": "nl",
+  "toolName": "Admin Dashboard",
+  "englishName": "Admin Dashboard",
+  "title": "Admin Dashboard",
+  "tagline": "Powerful free online tool for everyday tasks.",
+  "description": "Admin Dashboard. Free online tool that helps you get things done quickly and easily.",
+  "shortDescription": "Powerful free online tool for everyday tasks.",
+  "metaTitle": "Free Admin Dashboard Online - Fast & Easy | Flixo",
+  "metaDescription": "Admin Dashboard. Free online tool. Fast, easy, no signup required. Works directly in your browser.",
+  "keywords": [
+    "online tool",
+    "tool",
+    "web tool",
+    "utility"
+  ],
+  "faq": [
+    {
+      "q": "Is Admin Dashboard free?",
+      "a": "Yes, our tool is completely free to use with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all processing happens locally in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No, you can use the tool directly without creating an account."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Admin Dashboard"
+  ],
+  "canonical": "/tools/admin-dashboard",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/admin-dashboard"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/admin-dashboard"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/admin-dashboard"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/admin-dashboard"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/admin-dashboard"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/admin-dashboard"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/admin-dashboard"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/admin-dashboard"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/admin-dashboard"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/admin-dashboard"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/admin-dashboard"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/admin-dashboard"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/admin-dashboard"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/admin-dashboard"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/admin-dashboard"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/admin-dashboard"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/admin-dashboard"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/admin-dashboard"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/admin-dashboard"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/admin-dashboard"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Admin Dashboard",
+    "description": "Admin Dashboard. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/admin-dashboard",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "nl"
+  },
+  "openGraph": {
+    "title": "Free Admin Dashboard - Flixo",
+    "description": "Admin Dashboard. Free online tool that helps you get things done quickly and easily.",
+    "url": "https://flixotools.com/tools/admin-dashboard",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Admin Dashboard - Flixo",
+    "description": "Admin Dashboard. Free online tool that helps you get things done quickly and easily."
+  }
+}
