@@ -1,36 +1,36 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { ToolLayout } from "@/components/tools/ToolLayout";
-import { UUIDv4Generator } from "@/components/tools/UUIDv4Generator";
+import { JwtEncoder } from "@/components/tools/JwtEncoder";
 import { useI18n } from "@/lib/i18n";
 import { categoryNameKey, toolNameKey } from "@/lib/i18n/keys";
 
-export const Route = createFileRoute("/tools/uuidv4-generator")({
+export const Route = createFileRoute("/tools/jwt-encoder")({
   head: () => ({
     meta: [
       {
-        title: "Uuidv4 Generator — Free Online Tool | Flixo",
+        title: "Jwt Encoder — Free Online Tool | Flixo",
       },
       {
         name: "description",
-        content: "Free online uuidv4 generator tool. Easy to use, no signup required.",
+        content: "Free online jwt encoder tool. Easy to use, no signup required.",
       },
     ],
   }),
-  component: UUIDv4GeneratorPage,
+  component: JwtEncoderPage,
 });
 
-function UUIDv4GeneratorPage() {
+function JwtEncoderPage() {
   const { t } = useI18n();
   return (
     <SiteLayout>
       <ToolLayout
-        name={t(toolNameKey("uuidv4-generator"))}
-        description="Free online uuidv4 generator tool."
+        name={t(toolNameKey("jwt-encoder"))}
+        description="Free online jwt encoder tool."
         category={t(categoryNameKey("utilities"))}
-        slug="uuidv4-generator"
+        slug="jwt-encoder"
       >
-        <UUIDv4Generator />
+        <JwtEncoder />
       </ToolLayout>
     </SiteLayout>
   );

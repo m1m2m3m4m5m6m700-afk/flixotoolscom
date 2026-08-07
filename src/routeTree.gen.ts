@@ -32,9 +32,11 @@ import { Route as FileTypesSlugRouteImport } from './routes/file-types/$slug'
 import { Route as QuestionsIndexRouteImport } from './routes/questions/index'
 import { Route as QuestionsSlugRouteImport } from './routes/questions/$slug'
 import { Route as RobotsTxtRouteImport } from './routes/robots.txt'
+import { Route as ToolsAddLineNumbersRouteImport } from './routes/tools/add-line-numbers'
 import { Route as ToolsAgeCalculatorRouteImport } from './routes/tools/age-calculator'
 import { Route as ToolsBackgroundRemoverRouteImport } from './routes/tools/background-remover'
 import { Route as ToolsBarcodeGeneratorRouteImport } from './routes/tools/barcode-generator'
+import { Route as ToolsBase64DecodeRouteImport } from './routes/tools/base64-decode'
 import { Route as ToolsBase64EncoderRouteImport } from './routes/tools/base64-encoder'
 import { Route as ToolsBase64ImageEncoderRouteImport } from './routes/tools/base64-image-encoder'
 import { Route as ToolsBinaryConverterRouteImport } from './routes/tools/binary-converter'
@@ -44,6 +46,8 @@ import { Route as ToolsCaseTransformerRouteImport } from './routes/tools/case-tr
 import { Route as ToolsColorConverterRouteImport } from './routes/tools/color-converter'
 import { Route as ToolsColorMixerRouteImport } from './routes/tools/color-mixer'
 import { Route as ToolsColorPaletteGeneratorRouteImport } from './routes/tools/color-palette-generator'
+import { Route as ToolsColorPickerRouteImport } from './routes/tools/color-picker'
+import { Route as ToolsCompoundInterestCalculatorRouteImport } from './routes/tools/compound-interest-calculator'
 import { Route as ToolsCountdownTimerRouteImport } from './routes/tools/countdown-timer'
 import { Route as ToolsCreditCardGeneratorRouteImport } from './routes/tools/credit-card-generator'
 import { Route as ToolsCreditCardValidatorRouteImport } from './routes/tools/credit-card-validator'
@@ -51,6 +55,7 @@ import { Route as ToolsCronExpressionGeneratorRouteImport } from './routes/tools
 import { Route as ToolsCronParserRouteImport } from './routes/tools/cron-parser'
 import { Route as ToolsCssGradientGeneratorRouteImport } from './routes/tools/css-gradient-generator'
 import { Route as ToolsCssMinifierRouteImport } from './routes/tools/css-minifier'
+import { Route as ToolsCsvFormatterRouteImport } from './routes/tools/csv-formatter'
 import { Route as ToolsCsvToJsonConverterRouteImport } from './routes/tools/csv-to-json-converter'
 import { Route as ToolsCsvViewerRouteImport } from './routes/tools/csv-viewer'
 import { Route as ToolsCurrencyConverterRouteImport } from './routes/tools/currency-converter'
@@ -62,6 +67,7 @@ import { Route as ToolsDuplicateCharacterFinderRouteImport } from './routes/tool
 import { Route as ToolsDuplicateLinesRemoverRouteImport } from './routes/tools/duplicate-lines-remover'
 import { Route as ToolsEncDecTextRouteImport } from './routes/tools/enc-dec-text'
 import { Route as ToolsFaviconGeneratorRouteImport } from './routes/tools/favicon-generator'
+import { Route as ToolsFindReplaceRouteImport } from './routes/tools/find-replace'
 import { Route as ToolsFlipCoinSimulatorRouteImport } from './routes/tools/flip-coin-simulator'
 import { Route as ToolsHashCheckGeneratorRouteImport } from './routes/tools/hash-check-generator'
 import { Route as ToolsHashComparatorRouteImport } from './routes/tools/hash-comparator'
@@ -85,8 +91,10 @@ import { Route as ToolsJsonPathEvaluatorRouteImport } from './routes/tools/json-
 import { Route as ToolsJsonPathTesterRouteImport } from './routes/tools/json-path-tester'
 import { Route as ToolsJsonToCsvConverterRouteImport } from './routes/tools/json-to-csv-converter'
 import { Route as ToolsJsonToXmlConverterRouteImport } from './routes/tools/json-to-xml-converter'
+import { Route as ToolsJsonToYamlRouteImport } from './routes/tools/json-to-yaml'
 import { Route as ToolsJsonValidatorRouteImport } from './routes/tools/json-validator'
 import { Route as ToolsJwtDecoderRouteImport } from './routes/tools/jwt-decoder'
+import { Route as ToolsJwtEncoderRouteImport } from './routes/tools/jwt-encoder'
 import { Route as ToolsLineCounterRouteImport } from './routes/tools/line-counter'
 import { Route as ToolsListRandomizerRouteImport } from './routes/tools/list-randomizer'
 import { Route as ToolsLoanCalculatorRouteImport } from './routes/tools/loan-calculator'
@@ -94,6 +102,7 @@ import { Route as ToolsLoremIpsumRouteImport } from './routes/tools/lorem-ipsum'
 import { Route as ToolsLoremIpsumCustomizerRouteImport } from './routes/tools/lorem-ipsum-customizer'
 import { Route as ToolsLoremIpsumGeneratorRouteImport } from './routes/tools/lorem-ipsum-generator'
 import { Route as ToolsMarkdownPreviewRouteImport } from './routes/tools/markdown-preview'
+import { Route as ToolsMarkdownTableRouteImport } from './routes/tools/markdown-table'
 import { Route as ToolsMd5GeneratorRouteImport } from './routes/tools/md5-generator'
 import { Route as ToolsMorseCodeConverterRouteImport } from './routes/tools/morse-code-converter'
 import { Route as ToolsNumberBaseConverterRouteImport } from './routes/tools/number-base-converter'
@@ -116,20 +125,26 @@ import { Route as ToolsRandomIdGeneratorRouteImport } from './routes/tools/rando
 import { Route as ToolsRandomLotteryNumberGeneratorRouteImport } from './routes/tools/random-lottery-number-generator'
 import { Route as ToolsRandomNameGeneratorRouteImport } from './routes/tools/random-name-generator'
 import { Route as ToolsRandomNumberGeneratorRouteImport } from './routes/tools/random-number-generator'
+import { Route as ToolsRandomPasswordRouteImport } from './routes/tools/random-password'
 import { Route as ToolsRandomPasswordGeneratorRouteImport } from './routes/tools/random-password-generator'
 import { Route as ToolsRandomPickerRouteImport } from './routes/tools/random-picker'
 import { Route as ToolsRandomTeamGeneratorRouteImport } from './routes/tools/random-team-generator'
 import { Route as ToolsRegexGeneratorRouteImport } from './routes/tools/regex-generator'
 import { Route as ToolsRegexTesterRouteImport } from './routes/tools/regex-tester'
+import { Route as ToolsRemoveDuplicateLinesRouteImport } from './routes/tools/remove-duplicate-lines'
+import { Route as ToolsRemoveEmptyLinesRouteImport } from './routes/tools/remove-empty-lines'
+import { Route as ToolsReverseTextRouteImport } from './routes/tools/reverse-text'
 import { Route as ToolsRomanNumeralConverterRouteImport } from './routes/tools/roman-numeral-converter'
 import { Route as ToolsSentenceCaseConverterRouteImport } from './routes/tools/sentence-case-converter'
 import { Route as ToolsSlugCheckerRouteImport } from './routes/tools/slug-checker'
 import { Route as ToolsSlugGeneratorRouteImport } from './routes/tools/slug-generator'
+import { Route as ToolsSortLinesRouteImport } from './routes/tools/sort-lines'
 import { Route as ToolsSqlFormatterRouteImport } from './routes/tools/sql-formatter'
 import { Route as ToolsStopwatchRouteImport } from './routes/tools/stopwatch'
 import { Route as ToolsStringDiffCheckerRouteImport } from './routes/tools/string-diff-checker'
 import { Route as ToolsTemperatureConverterRouteImport } from './routes/tools/temperature-converter'
 import { Route as ToolsTextCaseConverterRouteImport } from './routes/tools/text-case-converter'
+import { Route as ToolsTextDiffRouteImport } from './routes/tools/text-diff'
 import { Route as ToolsTextDiffCheckerRouteImport } from './routes/tools/text-diff-checker'
 import { Route as ToolsTextToSlugRouteImport } from './routes/tools/text-to-slug'
 import { Route as ToolsTextToSpeechRouteImport } from './routes/tools/text-to-speech'
@@ -139,6 +154,7 @@ import { Route as ToolsTipCalculatorRouteImport } from './routes/tools/tip-calcu
 import { Route as ToolsTipSplitterRouteImport } from './routes/tools/tip-splitter'
 import { Route as ToolsTranslatorRouteImport } from './routes/tools/translator'
 import { Route as ToolsUnitConverterRouteImport } from './routes/tools/unit-converter'
+import { Route as ToolsUrlDecodeRouteImport } from './routes/tools/url-decode'
 import { Route as ToolsUrlEncoderRouteImport } from './routes/tools/url-encoder'
 import { Route as ToolsUrlParserRouteImport } from './routes/tools/url-parser'
 import { Route as ToolsUuidGeneratorRouteImport } from './routes/tools/uuid-generator'
@@ -148,8 +164,11 @@ import { Route as ToolsVatCalculatorRouteImport } from './routes/tools/vat-calcu
 import { Route as ToolsWordCloudGeneratorRouteImport } from './routes/tools/word-cloud-generator'
 import { Route as ToolsWordCounterRouteImport } from './routes/tools/word-counter'
 import { Route as ToolsWordDensityAnalyzerRouteImport } from './routes/tools/word-density-analyzer'
+import { Route as ToolsWordFrequencyRouteImport } from './routes/tools/word-frequency'
 import { Route as ToolsWordFrequencyAnalyzerRouteImport } from './routes/tools/word-frequency-analyzer'
 import { Route as ToolsXmlFormatterRouteImport } from './routes/tools/xml-formatter'
+import { Route as ToolsXmlToJsonRouteImport } from './routes/tools/xml-to-json'
+import { Route as ToolsYamlFormatterRouteImport } from './routes/tools/yaml-formatter'
 import { Route as UseCasesIndexRouteImport } from './routes/use-cases/index'
 import { Route as UseCasesSlugRouteImport } from './routes/use-cases/$slug'
 
@@ -268,6 +287,11 @@ const RobotsTxtRoute = RobotsTxtRouteImport.update({
   path: '/robots/txt',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ToolsAddLineNumbersRoute = ToolsAddLineNumbersRouteImport.update({
+  id: '/tools/add-line-numbers',
+  path: '/tools/add-line-numbers',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ToolsAgeCalculatorRoute = ToolsAgeCalculatorRouteImport.update({
   id: '/tools/age-calculator',
   path: '/tools/age-calculator',
@@ -281,6 +305,11 @@ const ToolsBackgroundRemoverRoute = ToolsBackgroundRemoverRouteImport.update({
 const ToolsBarcodeGeneratorRoute = ToolsBarcodeGeneratorRouteImport.update({
   id: '/tools/barcode-generator',
   path: '/tools/barcode-generator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsBase64DecodeRoute = ToolsBase64DecodeRouteImport.update({
+  id: '/tools/base64-decode',
+  path: '/tools/base64-decode',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ToolsBase64EncoderRoute = ToolsBase64EncoderRouteImport.update({
@@ -329,6 +358,17 @@ const ToolsColorPaletteGeneratorRoute =
     path: '/tools/color-palette-generator',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ToolsColorPickerRoute = ToolsColorPickerRouteImport.update({
+  id: '/tools/color-picker',
+  path: '/tools/color-picker',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsCompoundInterestCalculatorRoute =
+  ToolsCompoundInterestCalculatorRouteImport.update({
+    id: '/tools/compound-interest-calculator',
+    path: '/tools/compound-interest-calculator',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ToolsCountdownTimerRoute = ToolsCountdownTimerRouteImport.update({
   id: '/tools/countdown-timer',
   path: '/tools/countdown-timer',
@@ -366,6 +406,11 @@ const ToolsCssGradientGeneratorRoute =
 const ToolsCssMinifierRoute = ToolsCssMinifierRouteImport.update({
   id: '/tools/css-minifier',
   path: '/tools/css-minifier',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsCsvFormatterRoute = ToolsCsvFormatterRouteImport.update({
+  id: '/tools/csv-formatter',
+  path: '/tools/csv-formatter',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ToolsCsvToJsonConverterRoute = ToolsCsvToJsonConverterRouteImport.update({
@@ -423,6 +468,11 @@ const ToolsEncDecTextRoute = ToolsEncDecTextRouteImport.update({
 const ToolsFaviconGeneratorRoute = ToolsFaviconGeneratorRouteImport.update({
   id: '/tools/favicon-generator',
   path: '/tools/favicon-generator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsFindReplaceRoute = ToolsFindReplaceRouteImport.update({
+  id: '/tools/find-replace',
+  path: '/tools/find-replace',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ToolsFlipCoinSimulatorRoute = ToolsFlipCoinSimulatorRouteImport.update({
@@ -542,6 +592,11 @@ const ToolsJsonToXmlConverterRoute = ToolsJsonToXmlConverterRouteImport.update({
   path: '/tools/json-to-xml-converter',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ToolsJsonToYamlRoute = ToolsJsonToYamlRouteImport.update({
+  id: '/tools/json-to-yaml',
+  path: '/tools/json-to-yaml',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ToolsJsonValidatorRoute = ToolsJsonValidatorRouteImport.update({
   id: '/tools/json-validator',
   path: '/tools/json-validator',
@@ -550,6 +605,11 @@ const ToolsJsonValidatorRoute = ToolsJsonValidatorRouteImport.update({
 const ToolsJwtDecoderRoute = ToolsJwtDecoderRouteImport.update({
   id: '/tools/jwt-decoder',
   path: '/tools/jwt-decoder',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsJwtEncoderRoute = ToolsJwtEncoderRouteImport.update({
+  id: '/tools/jwt-encoder',
+  path: '/tools/jwt-encoder',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ToolsLineCounterRoute = ToolsLineCounterRouteImport.update({
@@ -587,6 +647,11 @@ const ToolsLoremIpsumGeneratorRoute =
 const ToolsMarkdownPreviewRoute = ToolsMarkdownPreviewRouteImport.update({
   id: '/tools/markdown-preview',
   path: '/tools/markdown-preview',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsMarkdownTableRoute = ToolsMarkdownTableRouteImport.update({
+  id: '/tools/markdown-table',
+  path: '/tools/markdown-table',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ToolsMd5GeneratorRoute = ToolsMd5GeneratorRouteImport.update({
@@ -713,6 +778,11 @@ const ToolsRandomNumberGeneratorRoute =
     path: '/tools/random-number-generator',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ToolsRandomPasswordRoute = ToolsRandomPasswordRouteImport.update({
+  id: '/tools/random-password',
+  path: '/tools/random-password',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ToolsRandomPasswordGeneratorRoute =
   ToolsRandomPasswordGeneratorRouteImport.update({
     id: '/tools/random-password-generator',
@@ -740,6 +810,22 @@ const ToolsRegexTesterRoute = ToolsRegexTesterRouteImport.update({
   path: '/tools/regex-tester',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ToolsRemoveDuplicateLinesRoute =
+  ToolsRemoveDuplicateLinesRouteImport.update({
+    id: '/tools/remove-duplicate-lines',
+    path: '/tools/remove-duplicate-lines',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ToolsRemoveEmptyLinesRoute = ToolsRemoveEmptyLinesRouteImport.update({
+  id: '/tools/remove-empty-lines',
+  path: '/tools/remove-empty-lines',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsReverseTextRoute = ToolsReverseTextRouteImport.update({
+  id: '/tools/reverse-text',
+  path: '/tools/reverse-text',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ToolsRomanNumeralConverterRoute =
   ToolsRomanNumeralConverterRouteImport.update({
     id: '/tools/roman-numeral-converter',
@@ -760,6 +846,11 @@ const ToolsSlugCheckerRoute = ToolsSlugCheckerRouteImport.update({
 const ToolsSlugGeneratorRoute = ToolsSlugGeneratorRouteImport.update({
   id: '/tools/slug-generator',
   path: '/tools/slug-generator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsSortLinesRoute = ToolsSortLinesRouteImport.update({
+  id: '/tools/sort-lines',
+  path: '/tools/sort-lines',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ToolsSqlFormatterRoute = ToolsSqlFormatterRouteImport.update({
@@ -786,6 +877,11 @@ const ToolsTemperatureConverterRoute =
 const ToolsTextCaseConverterRoute = ToolsTextCaseConverterRouteImport.update({
   id: '/tools/text-case-converter',
   path: '/tools/text-case-converter',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsTextDiffRoute = ToolsTextDiffRouteImport.update({
+  id: '/tools/text-diff',
+  path: '/tools/text-diff',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ToolsTextDiffCheckerRoute = ToolsTextDiffCheckerRouteImport.update({
@@ -831,6 +927,11 @@ const ToolsTranslatorRoute = ToolsTranslatorRouteImport.update({
 const ToolsUnitConverterRoute = ToolsUnitConverterRouteImport.update({
   id: '/tools/unit-converter',
   path: '/tools/unit-converter',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsUrlDecodeRoute = ToolsUrlDecodeRouteImport.update({
+  id: '/tools/url-decode',
+  path: '/tools/url-decode',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ToolsUrlEncoderRoute = ToolsUrlEncoderRouteImport.update({
@@ -879,6 +980,11 @@ const ToolsWordDensityAnalyzerRoute =
     path: '/tools/word-density-analyzer',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ToolsWordFrequencyRoute = ToolsWordFrequencyRouteImport.update({
+  id: '/tools/word-frequency',
+  path: '/tools/word-frequency',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ToolsWordFrequencyAnalyzerRoute =
   ToolsWordFrequencyAnalyzerRouteImport.update({
     id: '/tools/word-frequency-analyzer',
@@ -888,6 +994,16 @@ const ToolsWordFrequencyAnalyzerRoute =
 const ToolsXmlFormatterRoute = ToolsXmlFormatterRouteImport.update({
   id: '/tools/xml-formatter',
   path: '/tools/xml-formatter',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsXmlToJsonRoute = ToolsXmlToJsonRouteImport.update({
+  id: '/tools/xml-to-json',
+  path: '/tools/xml-to-json',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsYamlFormatterRoute = ToolsYamlFormatterRouteImport.update({
+  id: '/tools/yaml-formatter',
+  path: '/tools/yaml-formatter',
   getParentRoute: () => rootRouteImport,
 } as any)
 const UseCasesIndexRoute = UseCasesIndexRouteImport.update({
@@ -920,9 +1036,11 @@ export interface FileRoutesByFullPath {
   '/file-types/$slug': typeof FileTypesSlugRoute
   '/questions/$slug': typeof QuestionsSlugRoute
   '/robots/txt': typeof RobotsTxtRoute
+  '/tools/add-line-numbers': typeof ToolsAddLineNumbersRoute
   '/tools/age-calculator': typeof ToolsAgeCalculatorRoute
   '/tools/background-remover': typeof ToolsBackgroundRemoverRoute
   '/tools/barcode-generator': typeof ToolsBarcodeGeneratorRoute
+  '/tools/base64-decode': typeof ToolsBase64DecodeRoute
   '/tools/base64-encoder': typeof ToolsBase64EncoderRoute
   '/tools/base64-image-encoder': typeof ToolsBase64ImageEncoderRoute
   '/tools/binary-converter': typeof ToolsBinaryConverterRoute
@@ -932,6 +1050,8 @@ export interface FileRoutesByFullPath {
   '/tools/color-converter': typeof ToolsColorConverterRoute
   '/tools/color-mixer': typeof ToolsColorMixerRoute
   '/tools/color-palette-generator': typeof ToolsColorPaletteGeneratorRoute
+  '/tools/color-picker': typeof ToolsColorPickerRoute
+  '/tools/compound-interest-calculator': typeof ToolsCompoundInterestCalculatorRoute
   '/tools/countdown-timer': typeof ToolsCountdownTimerRoute
   '/tools/credit-card-generator': typeof ToolsCreditCardGeneratorRoute
   '/tools/credit-card-validator': typeof ToolsCreditCardValidatorRoute
@@ -939,6 +1059,7 @@ export interface FileRoutesByFullPath {
   '/tools/cron-parser': typeof ToolsCronParserRoute
   '/tools/css-gradient-generator': typeof ToolsCssGradientGeneratorRoute
   '/tools/css-minifier': typeof ToolsCssMinifierRoute
+  '/tools/csv-formatter': typeof ToolsCsvFormatterRoute
   '/tools/csv-to-json-converter': typeof ToolsCsvToJsonConverterRoute
   '/tools/csv-viewer': typeof ToolsCsvViewerRoute
   '/tools/currency-converter': typeof ToolsCurrencyConverterRoute
@@ -950,6 +1071,7 @@ export interface FileRoutesByFullPath {
   '/tools/duplicate-lines-remover': typeof ToolsDuplicateLinesRemoverRoute
   '/tools/enc-dec-text': typeof ToolsEncDecTextRoute
   '/tools/favicon-generator': typeof ToolsFaviconGeneratorRoute
+  '/tools/find-replace': typeof ToolsFindReplaceRoute
   '/tools/flip-coin-simulator': typeof ToolsFlipCoinSimulatorRoute
   '/tools/hash-check-generator': typeof ToolsHashCheckGeneratorRoute
   '/tools/hash-comparator': typeof ToolsHashComparatorRoute
@@ -973,8 +1095,10 @@ export interface FileRoutesByFullPath {
   '/tools/json-path-tester': typeof ToolsJsonPathTesterRoute
   '/tools/json-to-csv-converter': typeof ToolsJsonToCsvConverterRoute
   '/tools/json-to-xml-converter': typeof ToolsJsonToXmlConverterRoute
+  '/tools/json-to-yaml': typeof ToolsJsonToYamlRoute
   '/tools/json-validator': typeof ToolsJsonValidatorRoute
   '/tools/jwt-decoder': typeof ToolsJwtDecoderRoute
+  '/tools/jwt-encoder': typeof ToolsJwtEncoderRoute
   '/tools/line-counter': typeof ToolsLineCounterRoute
   '/tools/list-randomizer': typeof ToolsListRandomizerRoute
   '/tools/loan-calculator': typeof ToolsLoanCalculatorRoute
@@ -982,6 +1106,7 @@ export interface FileRoutesByFullPath {
   '/tools/lorem-ipsum-customizer': typeof ToolsLoremIpsumCustomizerRoute
   '/tools/lorem-ipsum-generator': typeof ToolsLoremIpsumGeneratorRoute
   '/tools/markdown-preview': typeof ToolsMarkdownPreviewRoute
+  '/tools/markdown-table': typeof ToolsMarkdownTableRoute
   '/tools/md5-generator': typeof ToolsMd5GeneratorRoute
   '/tools/morse-code-converter': typeof ToolsMorseCodeConverterRoute
   '/tools/number-base-converter': typeof ToolsNumberBaseConverterRoute
@@ -1004,20 +1129,26 @@ export interface FileRoutesByFullPath {
   '/tools/random-lottery-number-generator': typeof ToolsRandomLotteryNumberGeneratorRoute
   '/tools/random-name-generator': typeof ToolsRandomNameGeneratorRoute
   '/tools/random-number-generator': typeof ToolsRandomNumberGeneratorRoute
+  '/tools/random-password': typeof ToolsRandomPasswordRoute
   '/tools/random-password-generator': typeof ToolsRandomPasswordGeneratorRoute
   '/tools/random-picker': typeof ToolsRandomPickerRoute
   '/tools/random-team-generator': typeof ToolsRandomTeamGeneratorRoute
   '/tools/regex-generator': typeof ToolsRegexGeneratorRoute
   '/tools/regex-tester': typeof ToolsRegexTesterRoute
+  '/tools/remove-duplicate-lines': typeof ToolsRemoveDuplicateLinesRoute
+  '/tools/remove-empty-lines': typeof ToolsRemoveEmptyLinesRoute
+  '/tools/reverse-text': typeof ToolsReverseTextRoute
   '/tools/roman-numeral-converter': typeof ToolsRomanNumeralConverterRoute
   '/tools/sentence-case-converter': typeof ToolsSentenceCaseConverterRoute
   '/tools/slug-checker': typeof ToolsSlugCheckerRoute
   '/tools/slug-generator': typeof ToolsSlugGeneratorRoute
+  '/tools/sort-lines': typeof ToolsSortLinesRoute
   '/tools/sql-formatter': typeof ToolsSqlFormatterRoute
   '/tools/stopwatch': typeof ToolsStopwatchRoute
   '/tools/string-diff-checker': typeof ToolsStringDiffCheckerRoute
   '/tools/temperature-converter': typeof ToolsTemperatureConverterRoute
   '/tools/text-case-converter': typeof ToolsTextCaseConverterRoute
+  '/tools/text-diff': typeof ToolsTextDiffRoute
   '/tools/text-diff-checker': typeof ToolsTextDiffCheckerRoute
   '/tools/text-to-slug': typeof ToolsTextToSlugRoute
   '/tools/text-to-speech': typeof ToolsTextToSpeechRoute
@@ -1027,6 +1158,7 @@ export interface FileRoutesByFullPath {
   '/tools/tip-splitter': typeof ToolsTipSplitterRoute
   '/tools/translator': typeof ToolsTranslatorRoute
   '/tools/unit-converter': typeof ToolsUnitConverterRoute
+  '/tools/url-decode': typeof ToolsUrlDecodeRoute
   '/tools/url-encoder': typeof ToolsUrlEncoderRoute
   '/tools/url-parser': typeof ToolsUrlParserRoute
   '/tools/uuid-generator': typeof ToolsUuidGeneratorRoute
@@ -1036,8 +1168,11 @@ export interface FileRoutesByFullPath {
   '/tools/word-cloud-generator': typeof ToolsWordCloudGeneratorRoute
   '/tools/word-counter': typeof ToolsWordCounterRoute
   '/tools/word-density-analyzer': typeof ToolsWordDensityAnalyzerRoute
+  '/tools/word-frequency': typeof ToolsWordFrequencyRoute
   '/tools/word-frequency-analyzer': typeof ToolsWordFrequencyAnalyzerRoute
   '/tools/xml-formatter': typeof ToolsXmlFormatterRoute
+  '/tools/xml-to-json': typeof ToolsXmlToJsonRoute
+  '/tools/yaml-formatter': typeof ToolsYamlFormatterRoute
   '/use-cases/$slug': typeof UseCasesSlugRoute
   '/blog/': typeof BlogIndexRoute
   '/collections/': typeof CollectionsIndexRoute
@@ -1065,9 +1200,11 @@ export interface FileRoutesByTo {
   '/file-types/$slug': typeof FileTypesSlugRoute
   '/questions/$slug': typeof QuestionsSlugRoute
   '/robots/txt': typeof RobotsTxtRoute
+  '/tools/add-line-numbers': typeof ToolsAddLineNumbersRoute
   '/tools/age-calculator': typeof ToolsAgeCalculatorRoute
   '/tools/background-remover': typeof ToolsBackgroundRemoverRoute
   '/tools/barcode-generator': typeof ToolsBarcodeGeneratorRoute
+  '/tools/base64-decode': typeof ToolsBase64DecodeRoute
   '/tools/base64-encoder': typeof ToolsBase64EncoderRoute
   '/tools/base64-image-encoder': typeof ToolsBase64ImageEncoderRoute
   '/tools/binary-converter': typeof ToolsBinaryConverterRoute
@@ -1077,6 +1214,8 @@ export interface FileRoutesByTo {
   '/tools/color-converter': typeof ToolsColorConverterRoute
   '/tools/color-mixer': typeof ToolsColorMixerRoute
   '/tools/color-palette-generator': typeof ToolsColorPaletteGeneratorRoute
+  '/tools/color-picker': typeof ToolsColorPickerRoute
+  '/tools/compound-interest-calculator': typeof ToolsCompoundInterestCalculatorRoute
   '/tools/countdown-timer': typeof ToolsCountdownTimerRoute
   '/tools/credit-card-generator': typeof ToolsCreditCardGeneratorRoute
   '/tools/credit-card-validator': typeof ToolsCreditCardValidatorRoute
@@ -1084,6 +1223,7 @@ export interface FileRoutesByTo {
   '/tools/cron-parser': typeof ToolsCronParserRoute
   '/tools/css-gradient-generator': typeof ToolsCssGradientGeneratorRoute
   '/tools/css-minifier': typeof ToolsCssMinifierRoute
+  '/tools/csv-formatter': typeof ToolsCsvFormatterRoute
   '/tools/csv-to-json-converter': typeof ToolsCsvToJsonConverterRoute
   '/tools/csv-viewer': typeof ToolsCsvViewerRoute
   '/tools/currency-converter': typeof ToolsCurrencyConverterRoute
@@ -1095,6 +1235,7 @@ export interface FileRoutesByTo {
   '/tools/duplicate-lines-remover': typeof ToolsDuplicateLinesRemoverRoute
   '/tools/enc-dec-text': typeof ToolsEncDecTextRoute
   '/tools/favicon-generator': typeof ToolsFaviconGeneratorRoute
+  '/tools/find-replace': typeof ToolsFindReplaceRoute
   '/tools/flip-coin-simulator': typeof ToolsFlipCoinSimulatorRoute
   '/tools/hash-check-generator': typeof ToolsHashCheckGeneratorRoute
   '/tools/hash-comparator': typeof ToolsHashComparatorRoute
@@ -1118,8 +1259,10 @@ export interface FileRoutesByTo {
   '/tools/json-path-tester': typeof ToolsJsonPathTesterRoute
   '/tools/json-to-csv-converter': typeof ToolsJsonToCsvConverterRoute
   '/tools/json-to-xml-converter': typeof ToolsJsonToXmlConverterRoute
+  '/tools/json-to-yaml': typeof ToolsJsonToYamlRoute
   '/tools/json-validator': typeof ToolsJsonValidatorRoute
   '/tools/jwt-decoder': typeof ToolsJwtDecoderRoute
+  '/tools/jwt-encoder': typeof ToolsJwtEncoderRoute
   '/tools/line-counter': typeof ToolsLineCounterRoute
   '/tools/list-randomizer': typeof ToolsListRandomizerRoute
   '/tools/loan-calculator': typeof ToolsLoanCalculatorRoute
@@ -1127,6 +1270,7 @@ export interface FileRoutesByTo {
   '/tools/lorem-ipsum-customizer': typeof ToolsLoremIpsumCustomizerRoute
   '/tools/lorem-ipsum-generator': typeof ToolsLoremIpsumGeneratorRoute
   '/tools/markdown-preview': typeof ToolsMarkdownPreviewRoute
+  '/tools/markdown-table': typeof ToolsMarkdownTableRoute
   '/tools/md5-generator': typeof ToolsMd5GeneratorRoute
   '/tools/morse-code-converter': typeof ToolsMorseCodeConverterRoute
   '/tools/number-base-converter': typeof ToolsNumberBaseConverterRoute
@@ -1149,20 +1293,26 @@ export interface FileRoutesByTo {
   '/tools/random-lottery-number-generator': typeof ToolsRandomLotteryNumberGeneratorRoute
   '/tools/random-name-generator': typeof ToolsRandomNameGeneratorRoute
   '/tools/random-number-generator': typeof ToolsRandomNumberGeneratorRoute
+  '/tools/random-password': typeof ToolsRandomPasswordRoute
   '/tools/random-password-generator': typeof ToolsRandomPasswordGeneratorRoute
   '/tools/random-picker': typeof ToolsRandomPickerRoute
   '/tools/random-team-generator': typeof ToolsRandomTeamGeneratorRoute
   '/tools/regex-generator': typeof ToolsRegexGeneratorRoute
   '/tools/regex-tester': typeof ToolsRegexTesterRoute
+  '/tools/remove-duplicate-lines': typeof ToolsRemoveDuplicateLinesRoute
+  '/tools/remove-empty-lines': typeof ToolsRemoveEmptyLinesRoute
+  '/tools/reverse-text': typeof ToolsReverseTextRoute
   '/tools/roman-numeral-converter': typeof ToolsRomanNumeralConverterRoute
   '/tools/sentence-case-converter': typeof ToolsSentenceCaseConverterRoute
   '/tools/slug-checker': typeof ToolsSlugCheckerRoute
   '/tools/slug-generator': typeof ToolsSlugGeneratorRoute
+  '/tools/sort-lines': typeof ToolsSortLinesRoute
   '/tools/sql-formatter': typeof ToolsSqlFormatterRoute
   '/tools/stopwatch': typeof ToolsStopwatchRoute
   '/tools/string-diff-checker': typeof ToolsStringDiffCheckerRoute
   '/tools/temperature-converter': typeof ToolsTemperatureConverterRoute
   '/tools/text-case-converter': typeof ToolsTextCaseConverterRoute
+  '/tools/text-diff': typeof ToolsTextDiffRoute
   '/tools/text-diff-checker': typeof ToolsTextDiffCheckerRoute
   '/tools/text-to-slug': typeof ToolsTextToSlugRoute
   '/tools/text-to-speech': typeof ToolsTextToSpeechRoute
@@ -1172,6 +1322,7 @@ export interface FileRoutesByTo {
   '/tools/tip-splitter': typeof ToolsTipSplitterRoute
   '/tools/translator': typeof ToolsTranslatorRoute
   '/tools/unit-converter': typeof ToolsUnitConverterRoute
+  '/tools/url-decode': typeof ToolsUrlDecodeRoute
   '/tools/url-encoder': typeof ToolsUrlEncoderRoute
   '/tools/url-parser': typeof ToolsUrlParserRoute
   '/tools/uuid-generator': typeof ToolsUuidGeneratorRoute
@@ -1181,8 +1332,11 @@ export interface FileRoutesByTo {
   '/tools/word-cloud-generator': typeof ToolsWordCloudGeneratorRoute
   '/tools/word-counter': typeof ToolsWordCounterRoute
   '/tools/word-density-analyzer': typeof ToolsWordDensityAnalyzerRoute
+  '/tools/word-frequency': typeof ToolsWordFrequencyRoute
   '/tools/word-frequency-analyzer': typeof ToolsWordFrequencyAnalyzerRoute
   '/tools/xml-formatter': typeof ToolsXmlFormatterRoute
+  '/tools/xml-to-json': typeof ToolsXmlToJsonRoute
+  '/tools/yaml-formatter': typeof ToolsYamlFormatterRoute
   '/use-cases/$slug': typeof UseCasesSlugRoute
   '/blog': typeof BlogIndexRoute
   '/collections': typeof CollectionsIndexRoute
@@ -1211,9 +1365,11 @@ export interface FileRoutesById {
   '/file-types/$slug': typeof FileTypesSlugRoute
   '/questions/$slug': typeof QuestionsSlugRoute
   '/robots/txt': typeof RobotsTxtRoute
+  '/tools/add-line-numbers': typeof ToolsAddLineNumbersRoute
   '/tools/age-calculator': typeof ToolsAgeCalculatorRoute
   '/tools/background-remover': typeof ToolsBackgroundRemoverRoute
   '/tools/barcode-generator': typeof ToolsBarcodeGeneratorRoute
+  '/tools/base64-decode': typeof ToolsBase64DecodeRoute
   '/tools/base64-encoder': typeof ToolsBase64EncoderRoute
   '/tools/base64-image-encoder': typeof ToolsBase64ImageEncoderRoute
   '/tools/binary-converter': typeof ToolsBinaryConverterRoute
@@ -1223,6 +1379,8 @@ export interface FileRoutesById {
   '/tools/color-converter': typeof ToolsColorConverterRoute
   '/tools/color-mixer': typeof ToolsColorMixerRoute
   '/tools/color-palette-generator': typeof ToolsColorPaletteGeneratorRoute
+  '/tools/color-picker': typeof ToolsColorPickerRoute
+  '/tools/compound-interest-calculator': typeof ToolsCompoundInterestCalculatorRoute
   '/tools/countdown-timer': typeof ToolsCountdownTimerRoute
   '/tools/credit-card-generator': typeof ToolsCreditCardGeneratorRoute
   '/tools/credit-card-validator': typeof ToolsCreditCardValidatorRoute
@@ -1230,6 +1388,7 @@ export interface FileRoutesById {
   '/tools/cron-parser': typeof ToolsCronParserRoute
   '/tools/css-gradient-generator': typeof ToolsCssGradientGeneratorRoute
   '/tools/css-minifier': typeof ToolsCssMinifierRoute
+  '/tools/csv-formatter': typeof ToolsCsvFormatterRoute
   '/tools/csv-to-json-converter': typeof ToolsCsvToJsonConverterRoute
   '/tools/csv-viewer': typeof ToolsCsvViewerRoute
   '/tools/currency-converter': typeof ToolsCurrencyConverterRoute
@@ -1241,6 +1400,7 @@ export interface FileRoutesById {
   '/tools/duplicate-lines-remover': typeof ToolsDuplicateLinesRemoverRoute
   '/tools/enc-dec-text': typeof ToolsEncDecTextRoute
   '/tools/favicon-generator': typeof ToolsFaviconGeneratorRoute
+  '/tools/find-replace': typeof ToolsFindReplaceRoute
   '/tools/flip-coin-simulator': typeof ToolsFlipCoinSimulatorRoute
   '/tools/hash-check-generator': typeof ToolsHashCheckGeneratorRoute
   '/tools/hash-comparator': typeof ToolsHashComparatorRoute
@@ -1264,8 +1424,10 @@ export interface FileRoutesById {
   '/tools/json-path-tester': typeof ToolsJsonPathTesterRoute
   '/tools/json-to-csv-converter': typeof ToolsJsonToCsvConverterRoute
   '/tools/json-to-xml-converter': typeof ToolsJsonToXmlConverterRoute
+  '/tools/json-to-yaml': typeof ToolsJsonToYamlRoute
   '/tools/json-validator': typeof ToolsJsonValidatorRoute
   '/tools/jwt-decoder': typeof ToolsJwtDecoderRoute
+  '/tools/jwt-encoder': typeof ToolsJwtEncoderRoute
   '/tools/line-counter': typeof ToolsLineCounterRoute
   '/tools/list-randomizer': typeof ToolsListRandomizerRoute
   '/tools/loan-calculator': typeof ToolsLoanCalculatorRoute
@@ -1273,6 +1435,7 @@ export interface FileRoutesById {
   '/tools/lorem-ipsum-customizer': typeof ToolsLoremIpsumCustomizerRoute
   '/tools/lorem-ipsum-generator': typeof ToolsLoremIpsumGeneratorRoute
   '/tools/markdown-preview': typeof ToolsMarkdownPreviewRoute
+  '/tools/markdown-table': typeof ToolsMarkdownTableRoute
   '/tools/md5-generator': typeof ToolsMd5GeneratorRoute
   '/tools/morse-code-converter': typeof ToolsMorseCodeConverterRoute
   '/tools/number-base-converter': typeof ToolsNumberBaseConverterRoute
@@ -1295,20 +1458,26 @@ export interface FileRoutesById {
   '/tools/random-lottery-number-generator': typeof ToolsRandomLotteryNumberGeneratorRoute
   '/tools/random-name-generator': typeof ToolsRandomNameGeneratorRoute
   '/tools/random-number-generator': typeof ToolsRandomNumberGeneratorRoute
+  '/tools/random-password': typeof ToolsRandomPasswordRoute
   '/tools/random-password-generator': typeof ToolsRandomPasswordGeneratorRoute
   '/tools/random-picker': typeof ToolsRandomPickerRoute
   '/tools/random-team-generator': typeof ToolsRandomTeamGeneratorRoute
   '/tools/regex-generator': typeof ToolsRegexGeneratorRoute
   '/tools/regex-tester': typeof ToolsRegexTesterRoute
+  '/tools/remove-duplicate-lines': typeof ToolsRemoveDuplicateLinesRoute
+  '/tools/remove-empty-lines': typeof ToolsRemoveEmptyLinesRoute
+  '/tools/reverse-text': typeof ToolsReverseTextRoute
   '/tools/roman-numeral-converter': typeof ToolsRomanNumeralConverterRoute
   '/tools/sentence-case-converter': typeof ToolsSentenceCaseConverterRoute
   '/tools/slug-checker': typeof ToolsSlugCheckerRoute
   '/tools/slug-generator': typeof ToolsSlugGeneratorRoute
+  '/tools/sort-lines': typeof ToolsSortLinesRoute
   '/tools/sql-formatter': typeof ToolsSqlFormatterRoute
   '/tools/stopwatch': typeof ToolsStopwatchRoute
   '/tools/string-diff-checker': typeof ToolsStringDiffCheckerRoute
   '/tools/temperature-converter': typeof ToolsTemperatureConverterRoute
   '/tools/text-case-converter': typeof ToolsTextCaseConverterRoute
+  '/tools/text-diff': typeof ToolsTextDiffRoute
   '/tools/text-diff-checker': typeof ToolsTextDiffCheckerRoute
   '/tools/text-to-slug': typeof ToolsTextToSlugRoute
   '/tools/text-to-speech': typeof ToolsTextToSpeechRoute
@@ -1318,6 +1487,7 @@ export interface FileRoutesById {
   '/tools/tip-splitter': typeof ToolsTipSplitterRoute
   '/tools/translator': typeof ToolsTranslatorRoute
   '/tools/unit-converter': typeof ToolsUnitConverterRoute
+  '/tools/url-decode': typeof ToolsUrlDecodeRoute
   '/tools/url-encoder': typeof ToolsUrlEncoderRoute
   '/tools/url-parser': typeof ToolsUrlParserRoute
   '/tools/uuid-generator': typeof ToolsUuidGeneratorRoute
@@ -1327,8 +1497,11 @@ export interface FileRoutesById {
   '/tools/word-cloud-generator': typeof ToolsWordCloudGeneratorRoute
   '/tools/word-counter': typeof ToolsWordCounterRoute
   '/tools/word-density-analyzer': typeof ToolsWordDensityAnalyzerRoute
+  '/tools/word-frequency': typeof ToolsWordFrequencyRoute
   '/tools/word-frequency-analyzer': typeof ToolsWordFrequencyAnalyzerRoute
   '/tools/xml-formatter': typeof ToolsXmlFormatterRoute
+  '/tools/xml-to-json': typeof ToolsXmlToJsonRoute
+  '/tools/yaml-formatter': typeof ToolsYamlFormatterRoute
   '/use-cases/$slug': typeof UseCasesSlugRoute
   '/blog/': typeof BlogIndexRoute
   '/collections/': typeof CollectionsIndexRoute
@@ -1358,9 +1531,11 @@ export interface FileRouteTypes {
     | '/file-types/$slug'
     | '/questions/$slug'
     | '/robots/txt'
+    | '/tools/add-line-numbers'
     | '/tools/age-calculator'
     | '/tools/background-remover'
     | '/tools/barcode-generator'
+    | '/tools/base64-decode'
     | '/tools/base64-encoder'
     | '/tools/base64-image-encoder'
     | '/tools/binary-converter'
@@ -1370,6 +1545,8 @@ export interface FileRouteTypes {
     | '/tools/color-converter'
     | '/tools/color-mixer'
     | '/tools/color-palette-generator'
+    | '/tools/color-picker'
+    | '/tools/compound-interest-calculator'
     | '/tools/countdown-timer'
     | '/tools/credit-card-generator'
     | '/tools/credit-card-validator'
@@ -1377,6 +1554,7 @@ export interface FileRouteTypes {
     | '/tools/cron-parser'
     | '/tools/css-gradient-generator'
     | '/tools/css-minifier'
+    | '/tools/csv-formatter'
     | '/tools/csv-to-json-converter'
     | '/tools/csv-viewer'
     | '/tools/currency-converter'
@@ -1388,6 +1566,7 @@ export interface FileRouteTypes {
     | '/tools/duplicate-lines-remover'
     | '/tools/enc-dec-text'
     | '/tools/favicon-generator'
+    | '/tools/find-replace'
     | '/tools/flip-coin-simulator'
     | '/tools/hash-check-generator'
     | '/tools/hash-comparator'
@@ -1411,8 +1590,10 @@ export interface FileRouteTypes {
     | '/tools/json-path-tester'
     | '/tools/json-to-csv-converter'
     | '/tools/json-to-xml-converter'
+    | '/tools/json-to-yaml'
     | '/tools/json-validator'
     | '/tools/jwt-decoder'
+    | '/tools/jwt-encoder'
     | '/tools/line-counter'
     | '/tools/list-randomizer'
     | '/tools/loan-calculator'
@@ -1420,6 +1601,7 @@ export interface FileRouteTypes {
     | '/tools/lorem-ipsum-customizer'
     | '/tools/lorem-ipsum-generator'
     | '/tools/markdown-preview'
+    | '/tools/markdown-table'
     | '/tools/md5-generator'
     | '/tools/morse-code-converter'
     | '/tools/number-base-converter'
@@ -1442,20 +1624,26 @@ export interface FileRouteTypes {
     | '/tools/random-lottery-number-generator'
     | '/tools/random-name-generator'
     | '/tools/random-number-generator'
+    | '/tools/random-password'
     | '/tools/random-password-generator'
     | '/tools/random-picker'
     | '/tools/random-team-generator'
     | '/tools/regex-generator'
     | '/tools/regex-tester'
+    | '/tools/remove-duplicate-lines'
+    | '/tools/remove-empty-lines'
+    | '/tools/reverse-text'
     | '/tools/roman-numeral-converter'
     | '/tools/sentence-case-converter'
     | '/tools/slug-checker'
     | '/tools/slug-generator'
+    | '/tools/sort-lines'
     | '/tools/sql-formatter'
     | '/tools/stopwatch'
     | '/tools/string-diff-checker'
     | '/tools/temperature-converter'
     | '/tools/text-case-converter'
+    | '/tools/text-diff'
     | '/tools/text-diff-checker'
     | '/tools/text-to-slug'
     | '/tools/text-to-speech'
@@ -1465,6 +1653,7 @@ export interface FileRouteTypes {
     | '/tools/tip-splitter'
     | '/tools/translator'
     | '/tools/unit-converter'
+    | '/tools/url-decode'
     | '/tools/url-encoder'
     | '/tools/url-parser'
     | '/tools/uuid-generator'
@@ -1474,8 +1663,11 @@ export interface FileRouteTypes {
     | '/tools/word-cloud-generator'
     | '/tools/word-counter'
     | '/tools/word-density-analyzer'
+    | '/tools/word-frequency'
     | '/tools/word-frequency-analyzer'
     | '/tools/xml-formatter'
+    | '/tools/xml-to-json'
+    | '/tools/yaml-formatter'
     | '/use-cases/$slug'
     | '/blog/'
     | '/collections/'
@@ -1503,9 +1695,11 @@ export interface FileRouteTypes {
     | '/file-types/$slug'
     | '/questions/$slug'
     | '/robots/txt'
+    | '/tools/add-line-numbers'
     | '/tools/age-calculator'
     | '/tools/background-remover'
     | '/tools/barcode-generator'
+    | '/tools/base64-decode'
     | '/tools/base64-encoder'
     | '/tools/base64-image-encoder'
     | '/tools/binary-converter'
@@ -1515,6 +1709,8 @@ export interface FileRouteTypes {
     | '/tools/color-converter'
     | '/tools/color-mixer'
     | '/tools/color-palette-generator'
+    | '/tools/color-picker'
+    | '/tools/compound-interest-calculator'
     | '/tools/countdown-timer'
     | '/tools/credit-card-generator'
     | '/tools/credit-card-validator'
@@ -1522,6 +1718,7 @@ export interface FileRouteTypes {
     | '/tools/cron-parser'
     | '/tools/css-gradient-generator'
     | '/tools/css-minifier'
+    | '/tools/csv-formatter'
     | '/tools/csv-to-json-converter'
     | '/tools/csv-viewer'
     | '/tools/currency-converter'
@@ -1533,6 +1730,7 @@ export interface FileRouteTypes {
     | '/tools/duplicate-lines-remover'
     | '/tools/enc-dec-text'
     | '/tools/favicon-generator'
+    | '/tools/find-replace'
     | '/tools/flip-coin-simulator'
     | '/tools/hash-check-generator'
     | '/tools/hash-comparator'
@@ -1556,8 +1754,10 @@ export interface FileRouteTypes {
     | '/tools/json-path-tester'
     | '/tools/json-to-csv-converter'
     | '/tools/json-to-xml-converter'
+    | '/tools/json-to-yaml'
     | '/tools/json-validator'
     | '/tools/jwt-decoder'
+    | '/tools/jwt-encoder'
     | '/tools/line-counter'
     | '/tools/list-randomizer'
     | '/tools/loan-calculator'
@@ -1565,6 +1765,7 @@ export interface FileRouteTypes {
     | '/tools/lorem-ipsum-customizer'
     | '/tools/lorem-ipsum-generator'
     | '/tools/markdown-preview'
+    | '/tools/markdown-table'
     | '/tools/md5-generator'
     | '/tools/morse-code-converter'
     | '/tools/number-base-converter'
@@ -1587,20 +1788,26 @@ export interface FileRouteTypes {
     | '/tools/random-lottery-number-generator'
     | '/tools/random-name-generator'
     | '/tools/random-number-generator'
+    | '/tools/random-password'
     | '/tools/random-password-generator'
     | '/tools/random-picker'
     | '/tools/random-team-generator'
     | '/tools/regex-generator'
     | '/tools/regex-tester'
+    | '/tools/remove-duplicate-lines'
+    | '/tools/remove-empty-lines'
+    | '/tools/reverse-text'
     | '/tools/roman-numeral-converter'
     | '/tools/sentence-case-converter'
     | '/tools/slug-checker'
     | '/tools/slug-generator'
+    | '/tools/sort-lines'
     | '/tools/sql-formatter'
     | '/tools/stopwatch'
     | '/tools/string-diff-checker'
     | '/tools/temperature-converter'
     | '/tools/text-case-converter'
+    | '/tools/text-diff'
     | '/tools/text-diff-checker'
     | '/tools/text-to-slug'
     | '/tools/text-to-speech'
@@ -1610,6 +1817,7 @@ export interface FileRouteTypes {
     | '/tools/tip-splitter'
     | '/tools/translator'
     | '/tools/unit-converter'
+    | '/tools/url-decode'
     | '/tools/url-encoder'
     | '/tools/url-parser'
     | '/tools/uuid-generator'
@@ -1619,8 +1827,11 @@ export interface FileRouteTypes {
     | '/tools/word-cloud-generator'
     | '/tools/word-counter'
     | '/tools/word-density-analyzer'
+    | '/tools/word-frequency'
     | '/tools/word-frequency-analyzer'
     | '/tools/xml-formatter'
+    | '/tools/xml-to-json'
+    | '/tools/yaml-formatter'
     | '/use-cases/$slug'
     | '/blog'
     | '/collections'
@@ -1648,9 +1859,11 @@ export interface FileRouteTypes {
     | '/file-types/$slug'
     | '/questions/$slug'
     | '/robots/txt'
+    | '/tools/add-line-numbers'
     | '/tools/age-calculator'
     | '/tools/background-remover'
     | '/tools/barcode-generator'
+    | '/tools/base64-decode'
     | '/tools/base64-encoder'
     | '/tools/base64-image-encoder'
     | '/tools/binary-converter'
@@ -1660,6 +1873,8 @@ export interface FileRouteTypes {
     | '/tools/color-converter'
     | '/tools/color-mixer'
     | '/tools/color-palette-generator'
+    | '/tools/color-picker'
+    | '/tools/compound-interest-calculator'
     | '/tools/countdown-timer'
     | '/tools/credit-card-generator'
     | '/tools/credit-card-validator'
@@ -1667,6 +1882,7 @@ export interface FileRouteTypes {
     | '/tools/cron-parser'
     | '/tools/css-gradient-generator'
     | '/tools/css-minifier'
+    | '/tools/csv-formatter'
     | '/tools/csv-to-json-converter'
     | '/tools/csv-viewer'
     | '/tools/currency-converter'
@@ -1678,6 +1894,7 @@ export interface FileRouteTypes {
     | '/tools/duplicate-lines-remover'
     | '/tools/enc-dec-text'
     | '/tools/favicon-generator'
+    | '/tools/find-replace'
     | '/tools/flip-coin-simulator'
     | '/tools/hash-check-generator'
     | '/tools/hash-comparator'
@@ -1701,8 +1918,10 @@ export interface FileRouteTypes {
     | '/tools/json-path-tester'
     | '/tools/json-to-csv-converter'
     | '/tools/json-to-xml-converter'
+    | '/tools/json-to-yaml'
     | '/tools/json-validator'
     | '/tools/jwt-decoder'
+    | '/tools/jwt-encoder'
     | '/tools/line-counter'
     | '/tools/list-randomizer'
     | '/tools/loan-calculator'
@@ -1710,6 +1929,7 @@ export interface FileRouteTypes {
     | '/tools/lorem-ipsum-customizer'
     | '/tools/lorem-ipsum-generator'
     | '/tools/markdown-preview'
+    | '/tools/markdown-table'
     | '/tools/md5-generator'
     | '/tools/morse-code-converter'
     | '/tools/number-base-converter'
@@ -1732,20 +1952,26 @@ export interface FileRouteTypes {
     | '/tools/random-lottery-number-generator'
     | '/tools/random-name-generator'
     | '/tools/random-number-generator'
+    | '/tools/random-password'
     | '/tools/random-password-generator'
     | '/tools/random-picker'
     | '/tools/random-team-generator'
     | '/tools/regex-generator'
     | '/tools/regex-tester'
+    | '/tools/remove-duplicate-lines'
+    | '/tools/remove-empty-lines'
+    | '/tools/reverse-text'
     | '/tools/roman-numeral-converter'
     | '/tools/sentence-case-converter'
     | '/tools/slug-checker'
     | '/tools/slug-generator'
+    | '/tools/sort-lines'
     | '/tools/sql-formatter'
     | '/tools/stopwatch'
     | '/tools/string-diff-checker'
     | '/tools/temperature-converter'
     | '/tools/text-case-converter'
+    | '/tools/text-diff'
     | '/tools/text-diff-checker'
     | '/tools/text-to-slug'
     | '/tools/text-to-speech'
@@ -1755,6 +1981,7 @@ export interface FileRouteTypes {
     | '/tools/tip-splitter'
     | '/tools/translator'
     | '/tools/unit-converter'
+    | '/tools/url-decode'
     | '/tools/url-encoder'
     | '/tools/url-parser'
     | '/tools/uuid-generator'
@@ -1764,8 +1991,11 @@ export interface FileRouteTypes {
     | '/tools/word-cloud-generator'
     | '/tools/word-counter'
     | '/tools/word-density-analyzer'
+    | '/tools/word-frequency'
     | '/tools/word-frequency-analyzer'
     | '/tools/xml-formatter'
+    | '/tools/xml-to-json'
+    | '/tools/yaml-formatter'
     | '/use-cases/$slug'
     | '/blog/'
     | '/collections/'
@@ -1794,9 +2024,11 @@ export interface RootRouteChildren {
   FileTypesSlugRoute: typeof FileTypesSlugRoute
   QuestionsSlugRoute: typeof QuestionsSlugRoute
   RobotsTxtRoute: typeof RobotsTxtRoute
+  ToolsAddLineNumbersRoute: typeof ToolsAddLineNumbersRoute
   ToolsAgeCalculatorRoute: typeof ToolsAgeCalculatorRoute
   ToolsBackgroundRemoverRoute: typeof ToolsBackgroundRemoverRoute
   ToolsBarcodeGeneratorRoute: typeof ToolsBarcodeGeneratorRoute
+  ToolsBase64DecodeRoute: typeof ToolsBase64DecodeRoute
   ToolsBase64EncoderRoute: typeof ToolsBase64EncoderRoute
   ToolsBase64ImageEncoderRoute: typeof ToolsBase64ImageEncoderRoute
   ToolsBinaryConverterRoute: typeof ToolsBinaryConverterRoute
@@ -1806,6 +2038,8 @@ export interface RootRouteChildren {
   ToolsColorConverterRoute: typeof ToolsColorConverterRoute
   ToolsColorMixerRoute: typeof ToolsColorMixerRoute
   ToolsColorPaletteGeneratorRoute: typeof ToolsColorPaletteGeneratorRoute
+  ToolsColorPickerRoute: typeof ToolsColorPickerRoute
+  ToolsCompoundInterestCalculatorRoute: typeof ToolsCompoundInterestCalculatorRoute
   ToolsCountdownTimerRoute: typeof ToolsCountdownTimerRoute
   ToolsCreditCardGeneratorRoute: typeof ToolsCreditCardGeneratorRoute
   ToolsCreditCardValidatorRoute: typeof ToolsCreditCardValidatorRoute
@@ -1813,6 +2047,7 @@ export interface RootRouteChildren {
   ToolsCronParserRoute: typeof ToolsCronParserRoute
   ToolsCssGradientGeneratorRoute: typeof ToolsCssGradientGeneratorRoute
   ToolsCssMinifierRoute: typeof ToolsCssMinifierRoute
+  ToolsCsvFormatterRoute: typeof ToolsCsvFormatterRoute
   ToolsCsvToJsonConverterRoute: typeof ToolsCsvToJsonConverterRoute
   ToolsCsvViewerRoute: typeof ToolsCsvViewerRoute
   ToolsCurrencyConverterRoute: typeof ToolsCurrencyConverterRoute
@@ -1824,6 +2059,7 @@ export interface RootRouteChildren {
   ToolsDuplicateLinesRemoverRoute: typeof ToolsDuplicateLinesRemoverRoute
   ToolsEncDecTextRoute: typeof ToolsEncDecTextRoute
   ToolsFaviconGeneratorRoute: typeof ToolsFaviconGeneratorRoute
+  ToolsFindReplaceRoute: typeof ToolsFindReplaceRoute
   ToolsFlipCoinSimulatorRoute: typeof ToolsFlipCoinSimulatorRoute
   ToolsHashCheckGeneratorRoute: typeof ToolsHashCheckGeneratorRoute
   ToolsHashComparatorRoute: typeof ToolsHashComparatorRoute
@@ -1847,8 +2083,10 @@ export interface RootRouteChildren {
   ToolsJsonPathTesterRoute: typeof ToolsJsonPathTesterRoute
   ToolsJsonToCsvConverterRoute: typeof ToolsJsonToCsvConverterRoute
   ToolsJsonToXmlConverterRoute: typeof ToolsJsonToXmlConverterRoute
+  ToolsJsonToYamlRoute: typeof ToolsJsonToYamlRoute
   ToolsJsonValidatorRoute: typeof ToolsJsonValidatorRoute
   ToolsJwtDecoderRoute: typeof ToolsJwtDecoderRoute
+  ToolsJwtEncoderRoute: typeof ToolsJwtEncoderRoute
   ToolsLineCounterRoute: typeof ToolsLineCounterRoute
   ToolsListRandomizerRoute: typeof ToolsListRandomizerRoute
   ToolsLoanCalculatorRoute: typeof ToolsLoanCalculatorRoute
@@ -1856,6 +2094,7 @@ export interface RootRouteChildren {
   ToolsLoremIpsumCustomizerRoute: typeof ToolsLoremIpsumCustomizerRoute
   ToolsLoremIpsumGeneratorRoute: typeof ToolsLoremIpsumGeneratorRoute
   ToolsMarkdownPreviewRoute: typeof ToolsMarkdownPreviewRoute
+  ToolsMarkdownTableRoute: typeof ToolsMarkdownTableRoute
   ToolsMd5GeneratorRoute: typeof ToolsMd5GeneratorRoute
   ToolsMorseCodeConverterRoute: typeof ToolsMorseCodeConverterRoute
   ToolsNumberBaseConverterRoute: typeof ToolsNumberBaseConverterRoute
@@ -1878,20 +2117,26 @@ export interface RootRouteChildren {
   ToolsRandomLotteryNumberGeneratorRoute: typeof ToolsRandomLotteryNumberGeneratorRoute
   ToolsRandomNameGeneratorRoute: typeof ToolsRandomNameGeneratorRoute
   ToolsRandomNumberGeneratorRoute: typeof ToolsRandomNumberGeneratorRoute
+  ToolsRandomPasswordRoute: typeof ToolsRandomPasswordRoute
   ToolsRandomPasswordGeneratorRoute: typeof ToolsRandomPasswordGeneratorRoute
   ToolsRandomPickerRoute: typeof ToolsRandomPickerRoute
   ToolsRandomTeamGeneratorRoute: typeof ToolsRandomTeamGeneratorRoute
   ToolsRegexGeneratorRoute: typeof ToolsRegexGeneratorRoute
   ToolsRegexTesterRoute: typeof ToolsRegexTesterRoute
+  ToolsRemoveDuplicateLinesRoute: typeof ToolsRemoveDuplicateLinesRoute
+  ToolsRemoveEmptyLinesRoute: typeof ToolsRemoveEmptyLinesRoute
+  ToolsReverseTextRoute: typeof ToolsReverseTextRoute
   ToolsRomanNumeralConverterRoute: typeof ToolsRomanNumeralConverterRoute
   ToolsSentenceCaseConverterRoute: typeof ToolsSentenceCaseConverterRoute
   ToolsSlugCheckerRoute: typeof ToolsSlugCheckerRoute
   ToolsSlugGeneratorRoute: typeof ToolsSlugGeneratorRoute
+  ToolsSortLinesRoute: typeof ToolsSortLinesRoute
   ToolsSqlFormatterRoute: typeof ToolsSqlFormatterRoute
   ToolsStopwatchRoute: typeof ToolsStopwatchRoute
   ToolsStringDiffCheckerRoute: typeof ToolsStringDiffCheckerRoute
   ToolsTemperatureConverterRoute: typeof ToolsTemperatureConverterRoute
   ToolsTextCaseConverterRoute: typeof ToolsTextCaseConverterRoute
+  ToolsTextDiffRoute: typeof ToolsTextDiffRoute
   ToolsTextDiffCheckerRoute: typeof ToolsTextDiffCheckerRoute
   ToolsTextToSlugRoute: typeof ToolsTextToSlugRoute
   ToolsTextToSpeechRoute: typeof ToolsTextToSpeechRoute
@@ -1901,6 +2146,7 @@ export interface RootRouteChildren {
   ToolsTipSplitterRoute: typeof ToolsTipSplitterRoute
   ToolsTranslatorRoute: typeof ToolsTranslatorRoute
   ToolsUnitConverterRoute: typeof ToolsUnitConverterRoute
+  ToolsUrlDecodeRoute: typeof ToolsUrlDecodeRoute
   ToolsUrlEncoderRoute: typeof ToolsUrlEncoderRoute
   ToolsUrlParserRoute: typeof ToolsUrlParserRoute
   ToolsUuidGeneratorRoute: typeof ToolsUuidGeneratorRoute
@@ -1910,8 +2156,11 @@ export interface RootRouteChildren {
   ToolsWordCloudGeneratorRoute: typeof ToolsWordCloudGeneratorRoute
   ToolsWordCounterRoute: typeof ToolsWordCounterRoute
   ToolsWordDensityAnalyzerRoute: typeof ToolsWordDensityAnalyzerRoute
+  ToolsWordFrequencyRoute: typeof ToolsWordFrequencyRoute
   ToolsWordFrequencyAnalyzerRoute: typeof ToolsWordFrequencyAnalyzerRoute
   ToolsXmlFormatterRoute: typeof ToolsXmlFormatterRoute
+  ToolsXmlToJsonRoute: typeof ToolsXmlToJsonRoute
+  ToolsYamlFormatterRoute: typeof ToolsYamlFormatterRoute
   UseCasesSlugRoute: typeof UseCasesSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
   CollectionsIndexRoute: typeof CollectionsIndexRoute
@@ -2084,6 +2333,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RobotsTxtRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools/add-line-numbers': {
+      id: '/tools/add-line-numbers'
+      path: '/tools/add-line-numbers'
+      fullPath: '/tools/add-line-numbers'
+      preLoaderRoute: typeof ToolsAddLineNumbersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tools/age-calculator': {
       id: '/tools/age-calculator'
       path: '/tools/age-calculator'
@@ -2103,6 +2359,13 @@ declare module '@tanstack/react-router' {
       path: '/tools/barcode-generator'
       fullPath: '/tools/barcode-generator'
       preLoaderRoute: typeof ToolsBarcodeGeneratorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/base64-decode': {
+      id: '/tools/base64-decode'
+      path: '/tools/base64-decode'
+      fullPath: '/tools/base64-decode'
+      preLoaderRoute: typeof ToolsBase64DecodeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tools/base64-encoder': {
@@ -2168,6 +2431,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsColorPaletteGeneratorRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools/color-picker': {
+      id: '/tools/color-picker'
+      path: '/tools/color-picker'
+      fullPath: '/tools/color-picker'
+      preLoaderRoute: typeof ToolsColorPickerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/compound-interest-calculator': {
+      id: '/tools/compound-interest-calculator'
+      path: '/tools/compound-interest-calculator'
+      fullPath: '/tools/compound-interest-calculator'
+      preLoaderRoute: typeof ToolsCompoundInterestCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tools/countdown-timer': {
       id: '/tools/countdown-timer'
       path: '/tools/countdown-timer'
@@ -2215,6 +2492,13 @@ declare module '@tanstack/react-router' {
       path: '/tools/css-minifier'
       fullPath: '/tools/css-minifier'
       preLoaderRoute: typeof ToolsCssMinifierRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/csv-formatter': {
+      id: '/tools/csv-formatter'
+      path: '/tools/csv-formatter'
+      fullPath: '/tools/csv-formatter'
+      preLoaderRoute: typeof ToolsCsvFormatterRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tools/csv-to-json-converter': {
@@ -2292,6 +2576,13 @@ declare module '@tanstack/react-router' {
       path: '/tools/favicon-generator'
       fullPath: '/tools/favicon-generator'
       preLoaderRoute: typeof ToolsFaviconGeneratorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/find-replace': {
+      id: '/tools/find-replace'
+      path: '/tools/find-replace'
+      fullPath: '/tools/find-replace'
+      preLoaderRoute: typeof ToolsFindReplaceRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tools/flip-coin-simulator': {
@@ -2455,6 +2746,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsJsonToXmlConverterRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools/json-to-yaml': {
+      id: '/tools/json-to-yaml'
+      path: '/tools/json-to-yaml'
+      fullPath: '/tools/json-to-yaml'
+      preLoaderRoute: typeof ToolsJsonToYamlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tools/json-validator': {
       id: '/tools/json-validator'
       path: '/tools/json-validator'
@@ -2467,6 +2765,13 @@ declare module '@tanstack/react-router' {
       path: '/tools/jwt-decoder'
       fullPath: '/tools/jwt-decoder'
       preLoaderRoute: typeof ToolsJwtDecoderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/jwt-encoder': {
+      id: '/tools/jwt-encoder'
+      path: '/tools/jwt-encoder'
+      fullPath: '/tools/jwt-encoder'
+      preLoaderRoute: typeof ToolsJwtEncoderRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tools/line-counter': {
@@ -2516,6 +2821,13 @@ declare module '@tanstack/react-router' {
       path: '/tools/markdown-preview'
       fullPath: '/tools/markdown-preview'
       preLoaderRoute: typeof ToolsMarkdownPreviewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/markdown-table': {
+      id: '/tools/markdown-table'
+      path: '/tools/markdown-table'
+      fullPath: '/tools/markdown-table'
+      preLoaderRoute: typeof ToolsMarkdownTableRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tools/md5-generator': {
@@ -2672,6 +2984,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsRandomNumberGeneratorRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools/random-password': {
+      id: '/tools/random-password'
+      path: '/tools/random-password'
+      fullPath: '/tools/random-password'
+      preLoaderRoute: typeof ToolsRandomPasswordRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tools/random-password-generator': {
       id: '/tools/random-password-generator'
       path: '/tools/random-password-generator'
@@ -2707,6 +3026,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsRegexTesterRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools/remove-duplicate-lines': {
+      id: '/tools/remove-duplicate-lines'
+      path: '/tools/remove-duplicate-lines'
+      fullPath: '/tools/remove-duplicate-lines'
+      preLoaderRoute: typeof ToolsRemoveDuplicateLinesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/remove-empty-lines': {
+      id: '/tools/remove-empty-lines'
+      path: '/tools/remove-empty-lines'
+      fullPath: '/tools/remove-empty-lines'
+      preLoaderRoute: typeof ToolsRemoveEmptyLinesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/reverse-text': {
+      id: '/tools/reverse-text'
+      path: '/tools/reverse-text'
+      fullPath: '/tools/reverse-text'
+      preLoaderRoute: typeof ToolsReverseTextRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tools/roman-numeral-converter': {
       id: '/tools/roman-numeral-converter'
       path: '/tools/roman-numeral-converter'
@@ -2733,6 +3073,13 @@ declare module '@tanstack/react-router' {
       path: '/tools/slug-generator'
       fullPath: '/tools/slug-generator'
       preLoaderRoute: typeof ToolsSlugGeneratorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/sort-lines': {
+      id: '/tools/sort-lines'
+      path: '/tools/sort-lines'
+      fullPath: '/tools/sort-lines'
+      preLoaderRoute: typeof ToolsSortLinesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tools/sql-formatter': {
@@ -2768,6 +3115,13 @@ declare module '@tanstack/react-router' {
       path: '/tools/text-case-converter'
       fullPath: '/tools/text-case-converter'
       preLoaderRoute: typeof ToolsTextCaseConverterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/text-diff': {
+      id: '/tools/text-diff'
+      path: '/tools/text-diff'
+      fullPath: '/tools/text-diff'
+      preLoaderRoute: typeof ToolsTextDiffRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tools/text-diff-checker': {
@@ -2833,6 +3187,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsUnitConverterRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools/url-decode': {
+      id: '/tools/url-decode'
+      path: '/tools/url-decode'
+      fullPath: '/tools/url-decode'
+      preLoaderRoute: typeof ToolsUrlDecodeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tools/url-encoder': {
       id: '/tools/url-encoder'
       path: '/tools/url-encoder'
@@ -2896,6 +3257,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsWordDensityAnalyzerRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools/word-frequency': {
+      id: '/tools/word-frequency'
+      path: '/tools/word-frequency'
+      fullPath: '/tools/word-frequency'
+      preLoaderRoute: typeof ToolsWordFrequencyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tools/word-frequency-analyzer': {
       id: '/tools/word-frequency-analyzer'
       path: '/tools/word-frequency-analyzer'
@@ -2908,6 +3276,20 @@ declare module '@tanstack/react-router' {
       path: '/tools/xml-formatter'
       fullPath: '/tools/xml-formatter'
       preLoaderRoute: typeof ToolsXmlFormatterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/xml-to-json': {
+      id: '/tools/xml-to-json'
+      path: '/tools/xml-to-json'
+      fullPath: '/tools/xml-to-json'
+      preLoaderRoute: typeof ToolsXmlToJsonRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/yaml-formatter': {
+      id: '/tools/yaml-formatter'
+      path: '/tools/yaml-formatter'
+      fullPath: '/tools/yaml-formatter'
+      preLoaderRoute: typeof ToolsYamlFormatterRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/use-cases/': {
@@ -2946,9 +3328,11 @@ const rootRouteChildren: RootRouteChildren = {
   FileTypesSlugRoute: FileTypesSlugRoute,
   QuestionsSlugRoute: QuestionsSlugRoute,
   RobotsTxtRoute: RobotsTxtRoute,
+  ToolsAddLineNumbersRoute: ToolsAddLineNumbersRoute,
   ToolsAgeCalculatorRoute: ToolsAgeCalculatorRoute,
   ToolsBackgroundRemoverRoute: ToolsBackgroundRemoverRoute,
   ToolsBarcodeGeneratorRoute: ToolsBarcodeGeneratorRoute,
+  ToolsBase64DecodeRoute: ToolsBase64DecodeRoute,
   ToolsBase64EncoderRoute: ToolsBase64EncoderRoute,
   ToolsBase64ImageEncoderRoute: ToolsBase64ImageEncoderRoute,
   ToolsBinaryConverterRoute: ToolsBinaryConverterRoute,
@@ -2958,6 +3342,8 @@ const rootRouteChildren: RootRouteChildren = {
   ToolsColorConverterRoute: ToolsColorConverterRoute,
   ToolsColorMixerRoute: ToolsColorMixerRoute,
   ToolsColorPaletteGeneratorRoute: ToolsColorPaletteGeneratorRoute,
+  ToolsColorPickerRoute: ToolsColorPickerRoute,
+  ToolsCompoundInterestCalculatorRoute: ToolsCompoundInterestCalculatorRoute,
   ToolsCountdownTimerRoute: ToolsCountdownTimerRoute,
   ToolsCreditCardGeneratorRoute: ToolsCreditCardGeneratorRoute,
   ToolsCreditCardValidatorRoute: ToolsCreditCardValidatorRoute,
@@ -2965,6 +3351,7 @@ const rootRouteChildren: RootRouteChildren = {
   ToolsCronParserRoute: ToolsCronParserRoute,
   ToolsCssGradientGeneratorRoute: ToolsCssGradientGeneratorRoute,
   ToolsCssMinifierRoute: ToolsCssMinifierRoute,
+  ToolsCsvFormatterRoute: ToolsCsvFormatterRoute,
   ToolsCsvToJsonConverterRoute: ToolsCsvToJsonConverterRoute,
   ToolsCsvViewerRoute: ToolsCsvViewerRoute,
   ToolsCurrencyConverterRoute: ToolsCurrencyConverterRoute,
@@ -2976,6 +3363,7 @@ const rootRouteChildren: RootRouteChildren = {
   ToolsDuplicateLinesRemoverRoute: ToolsDuplicateLinesRemoverRoute,
   ToolsEncDecTextRoute: ToolsEncDecTextRoute,
   ToolsFaviconGeneratorRoute: ToolsFaviconGeneratorRoute,
+  ToolsFindReplaceRoute: ToolsFindReplaceRoute,
   ToolsFlipCoinSimulatorRoute: ToolsFlipCoinSimulatorRoute,
   ToolsHashCheckGeneratorRoute: ToolsHashCheckGeneratorRoute,
   ToolsHashComparatorRoute: ToolsHashComparatorRoute,
@@ -2999,8 +3387,10 @@ const rootRouteChildren: RootRouteChildren = {
   ToolsJsonPathTesterRoute: ToolsJsonPathTesterRoute,
   ToolsJsonToCsvConverterRoute: ToolsJsonToCsvConverterRoute,
   ToolsJsonToXmlConverterRoute: ToolsJsonToXmlConverterRoute,
+  ToolsJsonToYamlRoute: ToolsJsonToYamlRoute,
   ToolsJsonValidatorRoute: ToolsJsonValidatorRoute,
   ToolsJwtDecoderRoute: ToolsJwtDecoderRoute,
+  ToolsJwtEncoderRoute: ToolsJwtEncoderRoute,
   ToolsLineCounterRoute: ToolsLineCounterRoute,
   ToolsListRandomizerRoute: ToolsListRandomizerRoute,
   ToolsLoanCalculatorRoute: ToolsLoanCalculatorRoute,
@@ -3008,6 +3398,7 @@ const rootRouteChildren: RootRouteChildren = {
   ToolsLoremIpsumCustomizerRoute: ToolsLoremIpsumCustomizerRoute,
   ToolsLoremIpsumGeneratorRoute: ToolsLoremIpsumGeneratorRoute,
   ToolsMarkdownPreviewRoute: ToolsMarkdownPreviewRoute,
+  ToolsMarkdownTableRoute: ToolsMarkdownTableRoute,
   ToolsMd5GeneratorRoute: ToolsMd5GeneratorRoute,
   ToolsMorseCodeConverterRoute: ToolsMorseCodeConverterRoute,
   ToolsNumberBaseConverterRoute: ToolsNumberBaseConverterRoute,
@@ -3033,20 +3424,26 @@ const rootRouteChildren: RootRouteChildren = {
     ToolsRandomLotteryNumberGeneratorRoute,
   ToolsRandomNameGeneratorRoute: ToolsRandomNameGeneratorRoute,
   ToolsRandomNumberGeneratorRoute: ToolsRandomNumberGeneratorRoute,
+  ToolsRandomPasswordRoute: ToolsRandomPasswordRoute,
   ToolsRandomPasswordGeneratorRoute: ToolsRandomPasswordGeneratorRoute,
   ToolsRandomPickerRoute: ToolsRandomPickerRoute,
   ToolsRandomTeamGeneratorRoute: ToolsRandomTeamGeneratorRoute,
   ToolsRegexGeneratorRoute: ToolsRegexGeneratorRoute,
   ToolsRegexTesterRoute: ToolsRegexTesterRoute,
+  ToolsRemoveDuplicateLinesRoute: ToolsRemoveDuplicateLinesRoute,
+  ToolsRemoveEmptyLinesRoute: ToolsRemoveEmptyLinesRoute,
+  ToolsReverseTextRoute: ToolsReverseTextRoute,
   ToolsRomanNumeralConverterRoute: ToolsRomanNumeralConverterRoute,
   ToolsSentenceCaseConverterRoute: ToolsSentenceCaseConverterRoute,
   ToolsSlugCheckerRoute: ToolsSlugCheckerRoute,
   ToolsSlugGeneratorRoute: ToolsSlugGeneratorRoute,
+  ToolsSortLinesRoute: ToolsSortLinesRoute,
   ToolsSqlFormatterRoute: ToolsSqlFormatterRoute,
   ToolsStopwatchRoute: ToolsStopwatchRoute,
   ToolsStringDiffCheckerRoute: ToolsStringDiffCheckerRoute,
   ToolsTemperatureConverterRoute: ToolsTemperatureConverterRoute,
   ToolsTextCaseConverterRoute: ToolsTextCaseConverterRoute,
+  ToolsTextDiffRoute: ToolsTextDiffRoute,
   ToolsTextDiffCheckerRoute: ToolsTextDiffCheckerRoute,
   ToolsTextToSlugRoute: ToolsTextToSlugRoute,
   ToolsTextToSpeechRoute: ToolsTextToSpeechRoute,
@@ -3056,6 +3453,7 @@ const rootRouteChildren: RootRouteChildren = {
   ToolsTipSplitterRoute: ToolsTipSplitterRoute,
   ToolsTranslatorRoute: ToolsTranslatorRoute,
   ToolsUnitConverterRoute: ToolsUnitConverterRoute,
+  ToolsUrlDecodeRoute: ToolsUrlDecodeRoute,
   ToolsUrlEncoderRoute: ToolsUrlEncoderRoute,
   ToolsUrlParserRoute: ToolsUrlParserRoute,
   ToolsUuidGeneratorRoute: ToolsUuidGeneratorRoute,
@@ -3065,8 +3463,11 @@ const rootRouteChildren: RootRouteChildren = {
   ToolsWordCloudGeneratorRoute: ToolsWordCloudGeneratorRoute,
   ToolsWordCounterRoute: ToolsWordCounterRoute,
   ToolsWordDensityAnalyzerRoute: ToolsWordDensityAnalyzerRoute,
+  ToolsWordFrequencyRoute: ToolsWordFrequencyRoute,
   ToolsWordFrequencyAnalyzerRoute: ToolsWordFrequencyAnalyzerRoute,
   ToolsXmlFormatterRoute: ToolsXmlFormatterRoute,
+  ToolsXmlToJsonRoute: ToolsXmlToJsonRoute,
+  ToolsYamlFormatterRoute: ToolsYamlFormatterRoute,
   UseCasesSlugRoute: UseCasesSlugRoute,
   BlogIndexRoute: BlogIndexRoute,
   CollectionsIndexRoute: CollectionsIndexRoute,

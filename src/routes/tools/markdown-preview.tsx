@@ -8,7 +8,9 @@ import { categoryNameKey, toolNameKey } from "@/lib/i18n/keys";
 export const Route = createFileRoute("/tools/markdown-preview")({
   head: () => ({
     meta: [
-      { title: "Markdown Preview — Free Online Tool | Flixo" },
+      {
+        title: "Markdown Preview — Free Online Tool | Flixo",
+      },
       {
         name: "description",
         content: "Free online markdown preview tool. Easy to use, no signup required.",

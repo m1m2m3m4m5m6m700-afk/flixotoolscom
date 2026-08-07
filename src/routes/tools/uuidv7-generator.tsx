@@ -8,7 +8,9 @@ import { categoryNameKey, toolNameKey } from "@/lib/i18n/keys";
 export const Route = createFileRoute("/tools/uuidv7-generator")({
   head: () => ({
     meta: [
-      { title: "Uuidv7 Generator — Free Online Tool | Flixo" },
+      {
+        title: "Uuidv7 Generator — Free Online Tool | Flixo",
+      },
       {
         name: "description",
         content: "Free online uuidv7 generator tool. Easy to use, no signup required.",
