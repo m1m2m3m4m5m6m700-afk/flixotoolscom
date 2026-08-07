@@ -2653,6 +2653,301 @@ const toolSeoRegistry: Record<string, ToolSeoData> = {
       { question: "Is my data safe?", answer: "Yes, all processing is done locally." },
     ],
   },
+  "email-extractor": {
+    slug: "email-extractor",
+    title: "Email Extractor — Extract Emails from Text | Flixo",
+    description:
+      "Extract email addresses from any text or documents instantly. Fast, free, and privacy-focused with no uploads required.",
+    keywords: ["email extractor", "extract emails", "find emails", "email finder", "flixo"],
+    overview:
+      "Quickly extract all email addresses from text, documents, or web content. Works entirely in your browser with no data upload.",
+    features: [
+      "Extract emails from text",
+      "Extract emails from URLs",
+      "Copy all results",
+      "No upload required",
+      "Privacy-focused",
+    ],
+    howToUse: ["Paste your text or enter URL", "Click extract", "Copy extracted emails"],
+    benefits: ["Instant results", "No upload needed", "100% private"],
+    faqs: [
+      { question: "Is this free?", answer: "Yes, completely free." },
+      { question: "Is my data safe?", answer: "Yes, all processing is local." },
+    ],
+  },
+  "emi-calculator": {
+    slug: "emi-calculator",
+    title: "EMI Calculator — Calculate Loan EMI | Flixo",
+    description:
+      "Calculate Equated Monthly Installment for loans, mortgages, and car loans. Free, instant, and accurate calculations.",
+    keywords: [
+      "emi calculator",
+      "loan calculator",
+      "mortgage calculator",
+      "car loan calculator",
+      "flixo",
+    ],
+    overview:
+      "Calculate EMI for various loans with principal, interest rate, and tenure. Get detailed amortization schedules instantly.",
+    features: [
+      "EMI calculation",
+      "Amortization schedule",
+      "Multiple loan types",
+      "Detailed breakdown",
+    ],
+    howToUse: ["Enter loan amount", "Enter interest rate", "Enter tenure", "Get instant results"],
+    benefits: ["Accurate calculations", "No signup required", "Mobile friendly"],
+    faqs: [
+      { question: "Is EMI calculation accurate?", answer: "Yes, uses standard EMI formula." },
+      { question: "Is my data saved?", answer: "No, all calculations are local." },
+    ],
+  },
+  "image-brightness-contrast": {
+    slug: "image-brightness-contrast",
+    title: "Image Brightness & Contrast — Adjust Images Online | Flixo",
+    description:
+      "Adjust brightness, contrast, and other image settings instantly in your browser. No upload needed, 100% private.",
+    keywords: ["image brightness", "contrast adjustment", "photo editor", "image filter", "flixo"],
+    overview:
+      "Adjust brightness and contrast of images directly in your browser. Preview changes in real-time and download the result.",
+    features: [
+      "Brightness adjustment",
+      "Contrast adjustment",
+      "Real-time preview",
+      "No upload required",
+    ],
+    howToUse: ["Upload or paste image", "Adjust sliders", "Download result"],
+    benefits: ["No upload needed", "Real-time preview", "100% private"],
+    faqs: [
+      { question: "Is my image uploaded?", answer: "No, all processing is done locally." },
+      { question: "What formats are supported?", answer: "PNG, JPG, WebP." },
+    ],
+  },
+  "image-grayscale": {
+    slug: "image-grayscale",
+    title: "Image Grayscale — Convert to Black & White | Flixo",
+    description:
+      "Convert any image to grayscale or black & white instantly. Free, fast, and completely private.",
+    keywords: [
+      "grayscale converter",
+      "black and white image",
+      "image converter",
+      "photo filter",
+      "flixo",
+    ],
+    overview:
+      "Transform colorful images to stunning grayscale with our instant browser-based tool. No upload or signup needed.",
+    features: [
+      "Instant grayscale conversion",
+      "Preview before download",
+      "High quality output",
+      "No upload required",
+    ],
+    howToUse: ["Upload image", "Preview grayscale", "Download result"],
+    benefits: ["Instant processing", "No upload needed", "100% private"],
+    faqs: [
+      { question: "Is my image uploaded?", answer: "No, all processing is local." },
+      { question: "What formats work?", answer: "PNG, JPG, WebP." },
+    ],
+  },
+  "markdown-to-html": {
+    slug: "markdown-to-html",
+    title: "Markdown to HTML Converter | Flixo",
+    description:
+      "Convert Markdown to HTML instantly. Free, fast, and works entirely in your browser.",
+    keywords: ["markdown to html", "md to html", "markdown converter", "flixo"],
+    overview:
+      "Transform Markdown text to clean HTML code with our instant converter. Perfect for developers and content creators.",
+    features: [
+      "Instant conversion",
+      "Clean HTML output",
+      "Syntax highlighting",
+      "Copy to clipboard",
+    ],
+    howToUse: ["Paste Markdown", "Get HTML output", "Copy result"],
+    benefits: ["Fast conversion", "No signup", "Privacy focused"],
+    faqs: [
+      { question: "Is this free?", answer: "Yes, completely free." },
+      { question: "Is my text saved?", answer: "No, all processing is local." },
+    ],
+  },
+  "html-to-markdown": {
+    slug: "html-to-markdown",
+    title: "HTML to Markdown Converter | Flixo",
+    description: "Convert HTML to Markdown instantly. Free, fast, and privacy-focused.",
+    keywords: ["html to markdown", "md converter", "html to md", "flixo"],
+    overview:
+      "Transform HTML content to clean Markdown format. Great for content migration and formatting conversion.",
+    features: [
+      "Instant conversion",
+      "Clean Markdown output",
+      "Preserves formatting",
+      "Copy to clipboard",
+    ],
+    howToUse: ["Paste HTML", "Get Markdown output", "Copy result"],
+    benefits: ["Fast conversion", "No signup", "Privacy focused"],
+    faqs: [
+      { question: "Is this free?", answer: "Yes, completely free." },
+      { question: "Is my text saved?", answer: "No, all processing is local." },
+    ],
+  },
+  "fuel-cost-calculator": {
+    slug: "fuel-cost-calculator",
+    title: "Fuel Cost Calculator — Calculate Trip Fuel Expenses | Flixo",
+    description:
+      "Calculate fuel costs for your trip based on distance, mileage, and fuel price. Free and instant.",
+    keywords: [
+      "fuel cost calculator",
+      "trip calculator",
+      "gas calculator",
+      "petrol calculator",
+      "flixo",
+    ],
+    overview:
+      "Estimate fuel costs for any trip by entering distance, vehicle mileage, and current fuel prices.",
+    features: [
+      "Distance-based calculation",
+      "Multiple units",
+      "Fuel efficiency settings",
+      "Cost comparison",
+    ],
+    howToUse: ["Enter distance", "Set fuel efficiency", "Enter fuel price", "Get cost estimate"],
+    benefits: ["Accurate estimates", "Multiple units", "Free to use"],
+    faqs: [
+      { question: "How accurate is this?", answer: "Based on your inputs, very accurate." },
+      { question: "What units are supported?", answer: "Miles, km, liters, gallons." },
+    ],
+  },
+  "keyword-extractor": {
+    slug: "keyword-extractor",
+    title: "Keyword Extractor — Extract Keywords from Text | Flixo",
+    description:
+      "Extract keywords and key phrases from any text instantly. Free SEO and content analysis tool.",
+    keywords: ["keyword extractor", "keyword finder", "SEO keywords", "text analysis", "flixo"],
+    overview:
+      "Extract the most important keywords and phrases from any text for SEO, content planning, or analysis.",
+    features: ["Keyword extraction", "Frequency analysis", "Export results", "No signup required"],
+    howToUse: ["Paste your text", "Get keywords", "Copy or export"],
+    benefits: ["Instant results", "Free", "Privacy focused"],
+    faqs: [
+      { question: "Is this free?", answer: "Yes, completely free." },
+      { question: "Is my text saved?", answer: "No, all processing is local." },
+    ],
+  },
+  "random-text-generator": {
+    slug: "random-text-generator",
+    title: "Random Text Generator — Generate Placeholder Text | Flixo",
+    description:
+      "Generate random text, sentences, or paragraphs for design and development. Free and instant.",
+    keywords: [
+      "random text generator",
+      "lorem ipsum",
+      "placeholder text",
+      "text generator",
+      "flixo",
+    ],
+    overview:
+      "Create random text for mocking up designs, testing layouts, or filling templates. Multiple options available.",
+    features: [
+      "Customizable length",
+      "Multiple formats",
+      "Various content types",
+      "Instant generation",
+    ],
+    howToUse: ["Set options", "Generate text", "Copy results"],
+    benefits: ["Instant", "Free", "Multiple formats"],
+    faqs: [
+      { question: "Is this free?", answer: "Yes, completely free." },
+      { question: "What formats?", answer: "Sentences, paragraphs, words." },
+    ],
+  },
+  "timestamp-converter": {
+    slug: "timestamp-converter",
+    title: "Timestamp Converter — Unix Time Converter | Flixo",
+    description:
+      "Convert between Unix timestamps and human-readable dates. Free, fast, and timezone-aware.",
+    keywords: ["timestamp converter", "unix time", "epoch converter", "time converter", "flixo"],
+    overview:
+      "Convert Unix timestamps to dates and vice versa with timezone support. Perfect for developers.",
+    features: ["Multiple formats", "Timezone support", "Current timestamp", "Batch conversion"],
+    howToUse: ["Enter timestamp or date", "Select format", "Get conversion"],
+    benefits: ["Fast conversion", "Timezone support", "Developer friendly"],
+    faqs: [
+      { question: "What formats?", answer: "Unix, ISO, custom formats." },
+      { question: "Timezones?", answer: "Yes, full timezone support." },
+    ],
+  },
+  "profit-margin-calculator": {
+    slug: "profit-margin-calculator",
+    title: "Profit Margin Calculator — Calculate Business Profit | Flixo",
+    description:
+      "Calculate profit margins, markup, and gross profit. Free business calculator for entrepreneurs.",
+    keywords: [
+      "profit margin calculator",
+      "markup calculator",
+      "business calculator",
+      "profit calculator",
+      "flixo",
+    ],
+    overview:
+      "Calculate profit margins, gross profit, and markup percentages for your business. Essential for pricing decisions.",
+    features: ["Margin calculation", "Markup calculation", "Gross profit", "Break-even analysis"],
+    howToUse: ["Enter cost and price", "Get margin", "View breakdown"],
+    benefits: ["Accurate", "Free", "Business friendly"],
+    faqs: [
+      { question: "Is this accurate?", answer: "Yes, uses standard formulas." },
+      { question: "Is my data saved?", answer: "No, all processing is local." },
+    ],
+  },
+  "roi-calculator": {
+    slug: "roi-calculator",
+    title: "ROI Calculator — Return on Investment Calculator | Flixo",
+    description:
+      "Calculate return on investment for any business decision. Free, fast, and accurate.",
+    keywords: [
+      "roi calculator",
+      "return on investment",
+      "investment calculator",
+      "profit calculator",
+      "flixo",
+    ],
+    overview:
+      "Calculate ROI, annualized ROI, and investment performance. Make better investment decisions with instant analysis.",
+    features: ["ROI calculation", "Annualized ROI", "Comparison mode", "Visual results"],
+    howToUse: ["Enter investment details", "Get ROI analysis", "Compare options"],
+    benefits: ["Accurate", "Free", "Comparison tool"],
+    faqs: [
+      { question: "How accurate?", answer: "Uses standard ROI formula." },
+      { question: "Can I compare?", answer: "Yes, comparison mode available." },
+    ],
+  },
+  "mortgage-calculator": {
+    slug: "mortgage-calculator",
+    title: "Mortgage Calculator — Home Loan Calculator | Flixo",
+    description:
+      "Calculate monthly mortgage payments, total interest, and amortization. Free home loan calculator.",
+    keywords: [
+      "mortgage calculator",
+      "home loan calculator",
+      "loan calculator",
+      "mortgage payment",
+      "flixo",
+    ],
+    overview:
+      "Calculate monthly mortgage payments including principal, interest, taxes, and insurance. Plan your home purchase.",
+    features: [
+      "Monthly payment calculation",
+      "Amortization schedule",
+      "Tax and insurance estimates",
+      "Multiple scenarios",
+    ],
+    howToUse: ["Enter loan amount", "Set interest rate", "Set term", "Get results"],
+    benefits: ["Accurate", "Free", "Amortization view"],
+    faqs: [
+      { question: "How accurate?", answer: "Based on your inputs." },
+      { question: "Does it include taxes?", answer: "Optional tax and insurance estimates." },
+    ],
+  },
 };
 
 export function getToolSeo(slug: string): ToolSeoData {
