@@ -1,0 +1,147 @@
+{
+  "slug": "color-converter",
+  "locale": "th",
+  "toolName": "ตัวแปลงสี",
+  "englishName": "Color Converter",
+  "title": "ตัวแปลงสี",
+  "tagline": "Convert between different formats quickly and accurately.",
+  "description": "A free online converter tool that converts data between different formats. Fast, accurate, and works entirely in your browser.",
+  "metaTitle": "Free Unit Converter Online - Convert Units Instantly | Flixo",
+  "metaDescription": "Use our free unit converter tool. Convert between units instantly with high accuracy. No signup, no upload, works offline.",
+  "keywords": [
+    "unit converter",
+    "convert units",
+    "measurement converter",
+    "free converter",
+    "online converter"
+  ],
+  "faq": [
+    {
+      "q": "What formats are supported?",
+      "a": "We support all major formats. Check the tool for full list."
+    },
+    {
+      "q": "Is this converter free?",
+      "a": "Yes, completely free with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all conversions happen locally in your browser."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Utility Tools",
+    "Unit Converter"
+  ],
+  "canonical": "/tools/color-converter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/color-converter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/color-converter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/color-converter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/color-converter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/color-converter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/color-converter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/color-converter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/color-converter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/color-converter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/color-converter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/color-converter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/color-converter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/color-converter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/color-converter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/color-converter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/color-converter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/color-converter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/color-converter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/color-converter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/color-converter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ตัวแปลงสี",
+    "description": "A free online converter tool that converts data between different formats. Fast, accurate, and works entirely in your browser.",
+    "url": "https://flixotools.com/tools/color-converter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "th"
+  },
+  "openGraph": {
+    "title": "Free Unit Converter Online - Convert Units Instantly | Flixo",
+    "description": "Use our free unit converter tool. Convert between units instantly with high accuracy. No signup, no upload, works offline.",
+    "url": "https://flixotools.com/tools/color-converter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Unit Converter Online - Convert Units Instantly | Flixo",
+    "description": "Use our free unit converter tool. Convert between units instantly with high accuracy. No signup, no upload, works offline."
+  }
+}

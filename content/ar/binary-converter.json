@@ -1,0 +1,147 @@
+{
+  "slug": "binary-converter",
+  "locale": "ar",
+  "toolName": "محول النظام الثنائي",
+  "englishName": "Binary Converter",
+  "title": "محول النظام الثنائي",
+  "tagline": "Convert between different formats quickly and accurately.",
+  "description": "A free online converter tool that converts data between different formats. Fast, accurate, and works entirely in your browser.",
+  "metaTitle": "Free Unit Converter Online - Convert Units Instantly | Flixo",
+  "metaDescription": "Use our free unit converter tool. Convert between units instantly with high accuracy. No signup, no upload, works offline.",
+  "keywords": [
+    "unit converter",
+    "convert units",
+    "measurement converter",
+    "free converter",
+    "online converter"
+  ],
+  "faq": [
+    {
+      "q": "What formats are supported?",
+      "a": "We support all major formats. Check the tool for full list."
+    },
+    {
+      "q": "Is this converter free?",
+      "a": "Yes, completely free with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all conversions happen locally in your browser."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Utility Tools",
+    "Unit Converter"
+  ],
+  "canonical": "/tools/binary-converter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/binary-converter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/binary-converter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/binary-converter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/binary-converter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/binary-converter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/binary-converter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/binary-converter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/binary-converter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/binary-converter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/binary-converter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/binary-converter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/binary-converter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/binary-converter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/binary-converter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/binary-converter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/binary-converter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/binary-converter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/binary-converter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/binary-converter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/binary-converter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "محول النظام الثنائي",
+    "description": "A free online converter tool that converts data between different formats. Fast, accurate, and works entirely in your browser.",
+    "url": "https://flixotools.com/tools/binary-converter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ar"
+  },
+  "openGraph": {
+    "title": "Free Unit Converter Online - Convert Units Instantly | Flixo",
+    "description": "Use our free unit converter tool. Convert between units instantly with high accuracy. No signup, no upload, works offline.",
+    "url": "https://flixotools.com/tools/binary-converter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Unit Converter Online - Convert Units Instantly | Flixo",
+    "description": "Use our free unit converter tool. Convert between units instantly with high accuracy. No signup, no upload, works offline."
+  }
+}

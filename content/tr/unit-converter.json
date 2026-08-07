@@ -1,0 +1,147 @@
+{
+  "slug": "unit-converter",
+  "locale": "tr",
+  "toolName": "Birim Dönüştürücü",
+  "englishName": "Unit Converter",
+  "title": "Birim Dönüştürücü",
+  "tagline": "Convert between different formats quickly and accurately.",
+  "description": "A free online converter tool that converts data between different formats. Fast, accurate, and works entirely in your browser.",
+  "metaTitle": "Free Unit Converter Online - Convert Units Instantly | Flixo",
+  "metaDescription": "Use our free unit converter tool. Convert between units instantly with high accuracy. No signup, no upload, works offline.",
+  "keywords": [
+    "unit converter",
+    "convert units",
+    "measurement converter",
+    "free converter",
+    "online converter"
+  ],
+  "faq": [
+    {
+      "q": "What formats are supported?",
+      "a": "We support all major formats. Check the tool for full list."
+    },
+    {
+      "q": "Is this converter free?",
+      "a": "Yes, completely free with no signup required."
+    },
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all conversions happen locally in your browser."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Utility Tools",
+    "Unit Converter"
+  ],
+  "canonical": "/tools/unit-converter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/unit-converter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/unit-converter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/unit-converter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/unit-converter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/unit-converter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/unit-converter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/unit-converter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/unit-converter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/unit-converter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/unit-converter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/unit-converter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/unit-converter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/unit-converter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/unit-converter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/unit-converter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/unit-converter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/unit-converter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/unit-converter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/unit-converter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/unit-converter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Birim Dönüştürücü",
+    "description": "A free online converter tool that converts data between different formats. Fast, accurate, and works entirely in your browser.",
+    "url": "https://flixotools.com/tools/unit-converter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "tr"
+  },
+  "openGraph": {
+    "title": "Free Unit Converter Online - Convert Units Instantly | Flixo",
+    "description": "Use our free unit converter tool. Convert between units instantly with high accuracy. No signup, no upload, works offline.",
+    "url": "https://flixotools.com/tools/unit-converter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Unit Converter Online - Convert Units Instantly | Flixo",
+    "description": "Use our free unit converter tool. Convert between units instantly with high accuracy. No signup, no upload, works offline."
+  }
+}

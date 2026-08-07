@@ -1,0 +1,147 @@
+{
+  "slug": "json-formatter",
+  "locale": "ar",
+  "toolName": "منسق JSON",
+  "englishName": "JSON Formatter",
+  "title": "منسق JSON",
+  "tagline": "Format and validate data with syntax highlighting.",
+  "description": "A free online formatter tool that formats, validates, and pretty-prints data. Instant validation with error detection.",
+  "metaTitle": "Free JSON Formatter Online - Format & Validate Instantly | Flixo",
+  "metaDescription": "Use our free JSON formatter tool. Format, validate, and beautify JSON. Instant validation, error detection, no signup.",
+  "keywords": [
+    "json formatter",
+    "format json",
+    "validate json",
+    "pretty print json",
+    "json beautifier"
+  ],
+  "faq": [
+    {
+      "q": "Does this validate JSON?",
+      "a": "Yes, it validates your JSON and highlights any errors."
+    },
+    {
+      "q": "Can I minify JSON?",
+      "a": "Yes, use the minify option to compress JSON."
+    },
+    {
+      "q": "Is my data uploaded?",
+      "a": "No, all processing happens locally in your browser."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Utility Tools",
+    "JSON Formatter"
+  ],
+  "canonical": "/tools/json-formatter",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/json-formatter"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/json-formatter"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/json-formatter"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/json-formatter"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/json-formatter"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/json-formatter"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/json-formatter"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/json-formatter"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/json-formatter"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/json-formatter"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/json-formatter"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/json-formatter"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/json-formatter"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/json-formatter"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/json-formatter"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/json-formatter"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/json-formatter"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/json-formatter"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/json-formatter"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/json-formatter"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "منسق JSON",
+    "description": "A free online formatter tool that formats, validates, and pretty-prints data. Instant validation with error detection.",
+    "url": "https://flixotools.com/tools/json-formatter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "ar"
+  },
+  "openGraph": {
+    "title": "Free JSON Formatter Online - Format & Validate Instantly | Flixo",
+    "description": "Use our free JSON formatter tool. Format, validate, and beautify JSON. Instant validation, error detection, no signup.",
+    "url": "https://flixotools.com/tools/json-formatter",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free JSON Formatter Online - Format & Validate Instantly | Flixo",
+    "description": "Use our free JSON formatter tool. Format, validate, and beautify JSON. Instant validation, error detection, no signup."
+  }
+}

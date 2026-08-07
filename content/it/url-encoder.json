@@ -1,0 +1,147 @@
+{
+  "slug": "url-encoder",
+  "locale": "it",
+  "toolName": "Codificatore URL",
+  "englishName": "URL Encoder",
+  "title": "Codificatore URL",
+  "tagline": "Encode and decode data quickly and accurately.",
+  "description": "A free online encoder tool that lets you encode and decode data instantly. No server upload, your data stays private.",
+  "metaTitle": "Free Base64 Encoder Online - Encode/Decode Instantly | Flixo",
+  "metaDescription": "Use our free encoder tool. Encode or decode data instantly. No signup, no upload, 100% private.",
+  "keywords": [
+    "base64 encoder",
+    "encode base64",
+    "decode base64",
+    "free encoder",
+    "online encoder"
+  ],
+  "faq": [
+    {
+      "q": "Is my data secure?",
+      "a": "Yes, all encoding happens in your browser. Your data never leaves your device."
+    },
+    {
+      "q": "Is this encoder free?",
+      "a": "Yes, completely free with no signup required."
+    },
+    {
+      "q": "Can I decode data back?",
+      "a": "Yes, use the decode function to reverse the encoding."
+    }
+  ],
+  "breadcrumb": [
+    "Home",
+    "Tools",
+    "Utility Tools",
+    "Base64 Encoder"
+  ],
+  "canonical": "/tools/url-encoder",
+  "hreflangs": [
+    {
+      "lang": "en",
+      "url": "/en/tools/url-encoder"
+    },
+    {
+      "lang": "ar",
+      "url": "/ar/tools/url-encoder"
+    },
+    {
+      "lang": "es",
+      "url": "/es/tools/url-encoder"
+    },
+    {
+      "lang": "fr",
+      "url": "/fr/tools/url-encoder"
+    },
+    {
+      "lang": "de",
+      "url": "/de/tools/url-encoder"
+    },
+    {
+      "lang": "pt",
+      "url": "/pt/tools/url-encoder"
+    },
+    {
+      "lang": "it",
+      "url": "/it/tools/url-encoder"
+    },
+    {
+      "lang": "nl",
+      "url": "/nl/tools/url-encoder"
+    },
+    {
+      "lang": "tr",
+      "url": "/tr/tools/url-encoder"
+    },
+    {
+      "lang": "ru",
+      "url": "/ru/tools/url-encoder"
+    },
+    {
+      "lang": "pl",
+      "url": "/pl/tools/url-encoder"
+    },
+    {
+      "lang": "uk",
+      "url": "/uk/tools/url-encoder"
+    },
+    {
+      "lang": "hi",
+      "url": "/hi/tools/url-encoder"
+    },
+    {
+      "lang": "id",
+      "url": "/id/tools/url-encoder"
+    },
+    {
+      "lang": "vi",
+      "url": "/vi/tools/url-encoder"
+    },
+    {
+      "lang": "th",
+      "url": "/th/tools/url-encoder"
+    },
+    {
+      "lang": "ja",
+      "url": "/ja/tools/url-encoder"
+    },
+    {
+      "lang": "ko",
+      "url": "/ko/tools/url-encoder"
+    },
+    {
+      "lang": "zh-CN",
+      "url": "/zh-CN/tools/url-encoder"
+    },
+    {
+      "lang": "zh-TW",
+      "url": "/zh-TW/tools/url-encoder"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Codificatore URL",
+    "description": "A free online encoder tool that lets you encode and decode data instantly. No server upload, your data stays private.",
+    "url": "https://flixotools.com/tools/url-encoder",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "it"
+  },
+  "openGraph": {
+    "title": "Free Base64 Encoder Online - Encode/Decode Instantly | Flixo",
+    "description": "Use our free encoder tool. Encode or decode data instantly. No signup, no upload, 100% private.",
+    "url": "https://flixotools.com/tools/url-encoder",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Free Base64 Encoder Online - Encode/Decode Instantly | Flixo",
+    "description": "Use our free encoder tool. Encode or decode data instantly. No signup, no upload, 100% private."
+  }
+}
