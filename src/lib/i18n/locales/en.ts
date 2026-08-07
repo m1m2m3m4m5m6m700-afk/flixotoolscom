@@ -713,6 +713,75 @@ export const en = {
   // Email Extractor
   "tool.email-extractor.name": "Email Extractor",
   "tool.email-extractor.tagline": "Extract email addresses from any text.",
+
+  // Add Line Numbers
+  "tool.add-line-numbers.name": "Add Line Numbers",
+  "tool.add-line-numbers.tagline": "Add line numbers to your text content.",
+
+  // Base64 Decode
+  "tool.base64-decode.name": "Base64 Decode",
+  "tool.base64-decode.tagline": "Decode Base64 encoded strings.",
+
+  // Compound Interest Calculator
+  "tool.compound-interest-calculator.name": "Compound Interest Calculator",
+  "tool.compound-interest-calculator.tagline":
+    "Calculate compound interest with detailed breakdown.",
+
+  // CSV Formatter
+  "tool.csv-formatter.name": "CSV Formatter",
+  "tool.csv-formatter.tagline": "Format, sort, filter, and analyze CSV data.",
+
+  // Find and Replace
+  "tool.find-replace.name": "Find and Replace",
+  "tool.find-replace.tagline": "Find and replace text patterns.",
+
+  // JSON to YAML
+  "tool.json-to-yaml.name": "JSON to YAML",
+  "tool.json-to-yaml.tagline": "Convert JSON to YAML format.",
+
+  // Markdown Table
+  "tool.markdown-table.name": "Markdown Table Generator",
+  "tool.markdown-table.tagline": "Generate Markdown tables easily.",
+
+  // Random Password
+  "tool.random-password.name": "Random Password Generator",
+  "tool.random-password.tagline": "Generate secure random passwords.",
+
+  // Remove Duplicate Lines
+  "tool.remove-duplicate-lines.name": "Remove Duplicate Lines",
+  "tool.remove-duplicate-lines.tagline": "Remove duplicate lines from text.",
+
+  // Remove Empty Lines
+  "tool.remove-empty-lines.name": "Remove Empty Lines",
+  "tool.remove-empty-lines.tagline": "Remove empty and blank lines.",
+
+  // Reverse Text
+  "tool.reverse-text.name": "Reverse Text",
+  "tool.reverse-text.tagline": "Reverse text characters or words.",
+
+  // Sort Lines
+  "tool.sort-lines.name": "Sort Lines",
+  "tool.sort-lines.tagline": "Sort lines alphabetically or numerically.",
+
+  // Text Diff
+  "tool.text-diff.name": "Text Diff",
+  "tool.text-diff.tagline": "Compare two texts and find differences.",
+
+  // URL Decode
+  "tool.url-decode.name": "URL Decode",
+  "tool.url-decode.tagline": "Decode URL encoded strings.",
+
+  // Word Frequency
+  "tool.word-frequency.name": "Word Frequency Analyzer",
+  "tool.word-frequency.tagline": "Analyze word frequency in text.",
+
+  // XML to JSON
+  "tool.xml-to-json.name": "XML to JSON",
+  "tool.xml-to-json.tagline": "Convert XML to JSON format.",
+
+  // YAML Formatter
+  "tool.yaml-formatter.name": "YAML Formatter",
+  "tool.yaml-formatter.tagline": "Format and validate YAML data.",
 } as const;
 
 export type TranslationKey = keyof typeof en;

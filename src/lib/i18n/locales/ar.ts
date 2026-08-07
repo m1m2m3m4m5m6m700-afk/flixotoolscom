@@ -699,4 +699,72 @@ export const ar: Dictionary = {
   // Email Extractor
   "tool.email-extractor.name": "مستخرج البريد الإلكتروني",
   "tool.email-extractor.tagline": "استخرج عناوين البريد الإلكتروني من أي نص.",
+
+  // Add Line Numbers
+  "tool.add-line-numbers.name": "إضافة أرقام الأسطر",
+  "tool.add-line-numbers.tagline": "أضف أرقامًا إلى سطور النص.",
+
+  // Base64 Decode
+  "tool.base64-decode.name": "فك تشفير Base64",
+  "tool.base64-decode.tagline": "فك تشفير النصوص المشفرة بـ Base64.",
+
+  // Compound Interest Calculator
+  "tool.compound-interest-calculator.name": "حاسبة الفائدة المركبة",
+  "tool.compound-interest-calculator.tagline": "احسب الفائدة المركبة مع تفاصيل كاملة.",
+
+  // CSV Formatter
+  "tool.csv-formatter.name": "منسق CSV",
+  "tool.csv-formatter.tagline": "نسّق ورتّب وصغّر بيانات CSV.",
+
+  // Find and Replace
+  "tool.find-replace.name": "بحث واستبدال",
+  "tool.find-replace.tagline": "ابحث واستبدل أنماط النص.",
+
+  // JSON to YAML
+  "tool.json-to-yaml.name": "JSON إلى YAML",
+  "tool.json-to-yaml.tagline": "حوّل JSON إلى تنسيق YAML.",
+
+  // Markdown Table
+  "tool.markdown-table.name": "مولد جداول Markdown",
+  "tool.markdown-table.tagline": "أنشئ جداول Markdown بسهولة.",
+
+  // Random Password
+  "tool.random-password.name": "مولد كلمات المرور",
+  "tool.random-password.tagline": "أنشئ كلمات مرور آمنة عشوائية.",
+
+  // Remove Duplicate Lines
+  "tool.remove-duplicate-lines.name": "إزالة الأسطر المكررة",
+  "tool.remove-duplicate-lines.tagline": "أزل الأسطر المكررة من النص.",
+
+  // Remove Empty Lines
+  "tool.remove-empty-lines.name": "إزالة الأسطر الفارغة",
+  "tool.remove-empty-lines.tagline": "أزل الأسطر الفارغة والفراغات.",
+
+  // Reverse Text
+  "tool.reverse-text.name": "عكس النص",
+  "tool.reverse-text.tagline": "اعكس ترتيب أحرف أو كلمات النص.",
+
+  // Sort Lines
+  "tool.sort-lines.name": "ترتيب الأسطر",
+  "tool.sort-lines.tagline": "رتّب الأسطر أبجديًا أو عدديًا.",
+
+  // Text Diff
+  "tool.text-diff.name": "مقارنة النصوص",
+  "tool.text-diff.tagline": "قارن نصين واعرف الفروقات.",
+
+  // URL Decode
+  "tool.url-decode.name": "فك تشفير URL",
+  "tool.url-decode.tagline": "فك تشفير النصوص المشفرة في الروابط.",
+
+  // Word Frequency
+  "tool.word-frequency.name": "محلل تكرار الكلمات",
+  "tool.word-frequency.tagline": "حلّل تكرار الكلمات في النص.",
+
+  // XML to JSON
+  "tool.xml-to-json.name": "XML إلى JSON",
+  "tool.xml-to-json.tagline": "حوّل XML إلى تنسيق JSON.",
+
+  // YAML Formatter
+  "tool.yaml-formatter.name": "منسق YAML",
+  "tool.yaml-formatter.tagline": "نسّق وتحقق من صحة YAML.",
 };
