@@ -21,7 +21,13 @@ import { BreakdownList } from "./BreakdownList";
 import { SearchTrendsCard } from "./SearchTrendsCard";
 import { RecentActivityFeed } from "./RecentActivityFeed";
 import { getAnalytics, type AnalyticsData, type AnalyticsRecentEvent } from "@/lib/analytics";
-import type { TimeframeOption, ChartDataPoint, BreakdownItem, SearchTrend, ActivityEvent } from "./types";
+import type {
+  TimeframeOption,
+  ChartDataPoint,
+  BreakdownItem,
+  SearchTrend,
+  ActivityEvent,
+} from "./types";
 
 function toBreakdownItems(entries: Record<string, number>, category?: string): BreakdownItem[] {
   const pairs = Object.entries(entries).sort((a, b) => b[1] - a[1]);
@@ -52,8 +58,14 @@ function toActivityEvents(events: AnalyticsRecentEvent[]): ActivityEvent[] {
 function createAggregateChartData(analyticsData: AnalyticsData): ChartDataPoint[] {
   const pageViews = Object.values(analyticsData.pageViews).reduce((sum, count) => sum + count, 0);
   const uniqueVisitors = Object.keys(analyticsData.landingPages).length;
-  const searches = Object.values(analyticsData.searchedKeywords).reduce((sum, count) => sum + count, 0);
-  const toolInteractions = Object.values(analyticsData.openedTools).reduce((sum, count) => sum + count, 0);
+  const searches = Object.values(analyticsData.searchedKeywords).reduce(
+    (sum, count) => sum + count,
+    0,
+  );
+  const toolInteractions = Object.values(analyticsData.openedTools).reduce(
+    (sum, count) => sum + count,
+    0,
+  );
 
   return [
     {
@@ -81,7 +93,8 @@ export function AdminAnalyticsDashboard() {
     [analyticsData.pageViews],
   );
   const totalSearches = useMemo(
-    () => Object.values(analyticsData.searchedKeywords || {}).reduce((sum, count) => sum + count, 0),
+    () =>
+      Object.values(analyticsData.searchedKeywords || {}).reduce((sum, count) => sum + count, 0),
     [analyticsData.searchedKeywords],
   );
   const totalToolOpens = useMemo(
@@ -136,7 +149,10 @@ export function AdminAnalyticsDashboard() {
     [analyticsData.recentEvents],
   );
 
-  const aggregateChartData = useMemo(() => createAggregateChartData(analyticsData), [analyticsData]);
+  const aggregateChartData = useMemo(
+    () => createAggregateChartData(analyticsData),
+    [analyticsData],
+  );
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 space-y-8">
@@ -156,7 +172,9 @@ export function AdminAnalyticsDashboard() {
               </Badge>
             </h1>
             <p className="text-xs text-muted-foreground mt-0.5 flex items-center gap-2">
-              <span>Only recorded browser analytics are shown. Demo and synthetic metrics are excluded.</span>
+              <span>
+                Only recorded browser analytics are shown. Demo and synthetic metrics are excluded.
+              </span>
               <span>•</span>
               <span className="flex items-center gap-1 font-mono text-[11px]">
                 <Clock className="size-3 text-primary" />
@@ -308,7 +326,8 @@ export function AdminAnalyticsDashboard() {
       <RecentActivityFeed initialEvents={activityEvents} />
 
       <div className="rounded-2xl border border-border/70 bg-surface/30 px-4 py-3 text-xs text-muted-foreground">
-        Landing page entries recorded: <span className="font-semibold text-foreground">{totalLandingEntries}</span>
+        Landing page entries recorded:{" "}
+        <span className="font-semibold text-foreground">{totalLandingEntries}</span>
       </div>
     </div>
   );

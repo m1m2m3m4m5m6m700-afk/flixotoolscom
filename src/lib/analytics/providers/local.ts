@@ -114,7 +114,7 @@ export class LocalAnalyticsProvider implements AnalyticsProviderInterface {
     data.recentEvents = [
       {
         id: `analytics-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-        type: "page_view",
+        type: "page_view" as AnalyticsRecentEventType,
         title: `Visited ${pagePath}`,
         detail: "Page view recorded",
         createdAt: new Date().toISOString(),
@@ -138,7 +138,7 @@ export class LocalAnalyticsProvider implements AnalyticsProviderInterface {
     const data = this.getData();
     incrementCounter(data.searchedKeywords, cleaned);
     this.saveData(data);
-    this.recordEvent("search", `Searched for \"${cleaned}\"`, "Search query recorded");
+    this.recordEvent("search", `Searched for "${cleaned}"`, "Search query recorded");
   }
 
   trackToolClick(toolId: string): void {
@@ -163,8 +163,14 @@ export class LocalAnalyticsProvider implements AnalyticsProviderInterface {
   }
 
   trackCopy(contentType: string, textLength?: number, toolId?: string): void {
-    const detail = [toolId, textLength ? `${textLength} chars` : undefined].filter(Boolean).join(" • ");
-    this.recordEvent("copy", `Copied ${contentType || "content"}`, detail || "Copy action recorded");
+    const detail = [toolId, textLength ? `${textLength} chars` : undefined]
+      .filter(Boolean)
+      .join(" • ");
+    this.recordEvent(
+      "copy",
+      `Copied ${contentType || "content"}`,
+      detail || "Copy action recorded",
+    );
   }
 
   trackDownload(fileName: string, fileType?: string, toolId?: string): void {

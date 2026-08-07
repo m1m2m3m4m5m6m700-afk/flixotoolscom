@@ -238,6 +238,10 @@ export const categories: Category[] = [
       "xml-formatter",
       "csv-viewer",
       "text-compare",
+      "random-number-generator",
+      "credit-card-validator",
+      "url-encoder",
+      "base64-encoder",
     ],
   },
   {
@@ -302,6 +306,7 @@ export const categories: Category[] = [
       "css-minifier",
       "js-minifier",
       "http-headers",
+      "slug-generator",
     ],
   },
   {
@@ -321,6 +326,8 @@ export const categories: Category[] = [
       "color-converter",
       "hex-rgb-converter",
       "cron-parser",
+      "json-formatter",
+      "hash-generator",
     ],
   },
   {

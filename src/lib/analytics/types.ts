@@ -24,13 +24,7 @@ export interface AnalyticsProviderInterface {
 }
 
 export type AnalyticsRecentEventType =
-  | "page_view"
-  | "search"
-  | "tool_click"
-  | "category_click"
-  | "download"
-  | "copy"
-  | "external_link";
+  "page_view" | "search" | "tool_click" | "category_click" | "download" | "copy" | "external_link";
 
 export interface AnalyticsRecentEvent {
   id: string;

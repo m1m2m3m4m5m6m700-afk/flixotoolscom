@@ -1,14 +1,5 @@
 import { useMemo } from "react";
-import {
-  Activity,
-  Eye,
-  Search,
-  Wrench,
-  Download,
-  Copy,
-  ExternalLink,
-  Radio,
-} from "lucide-react";
+import { Activity, Eye, Search, Wrench, Download, Copy, ExternalLink, Radio } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import type { ActivityEvent } from "./types";
 
@@ -118,7 +109,9 @@ export function RecentActivityFeed({ initialEvents }: RecentActivityFeedProps) {
                   <span className="text-lg shrink-0">🧭</span>
                   <div className="min-w-0">
                     <div className="flex items-center gap-2">
-                      <span className="font-bold text-xs text-foreground truncate">{evt.title}</span>
+                      <span className="font-bold text-xs text-foreground truncate">
+                        {evt.title}
+                      </span>
                       <Badge
                         variant="outline"
                         className={`text-[9px] px-1.5 py-0 font-semibold flex items-center gap-1 ${config.color}`}
