@@ -1,160 +1,98 @@
-import { useState, useCallback } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { useState } from "react";
 import { Label } from "@/components/ui/label";
-import { Copy, Check, Download, Link, Type } from "lucide-react";
-import { trackCopyAction, trackDownloadAction } from "@/lib/analytics";
+import { Check, AlertTriangle } from "lucide-react";
 
 export function SlugGenerator() {
-  const [input, setInput] = useState("");
-  const [slug, setSlug] = useState("");
-  const [copied, setCopied] = useState(false);
+  const [text, setText] = useState("");
 
-  const generateSlug = useCallback(() => {
-    if (!input.trim()) {
-      setSlug("");
-      return;
-    }
-
-    const generated = input
+  const generateSlug = (input: string): string => {
+    return input
       .toLowerCase()
       .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "") // Remove diacritics
-      .replace(/[^\w\s-]/g, "") // Remove special characters
-      .replace(/\s+/g, "-") // Replace spaces with hyphens
-      .replace(/-+/g, "-") // Replace multiple hyphens with single
-      .replace(/^-|-$/g, "") // Remove leading/trailing hyphens
-      .substring(0, 100); // Limit length
-
-    setSlug(generated);
-  }, [input]);
-
-  const handleCopy = async () => {
-    if (!slug) return;
-    try {
-      await navigator.clipboard.writeText(slug);
-      trackCopyAction("slug-generator", slug.length, "slug-generator");
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1600);
-    } catch {
-      // Ignore
-    }
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9\s-]/g, "")
+      .replace(/\s+/g, "-")
+      .replace(/-+/g, "-")
+      .replace(/^-|-$/g, "");
   };
 
-  const handleDownload = () => {
-    if (!slug) return;
-    const blob = new Blob([slug], { type: "text/plain" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "slug.txt";
-    a.click();
-    URL.revokeObjectURL(url);
-    trackDownloadAction("slug.txt", "text/plain", "slug-generator");
-  };
+  const slug = generateSlug(text);
 
-  const handleClear = () => {
-    setInput("");
-    setSlug("");
-  };
-
-  const examples = [
-    "Hello World",
-    "My Blog Post Title",
-    "What's the best way?",
-    "  Multiple   Spaces  ",
-    "Special Characters: @#$%",
-    "Émojis 🎉 and Accents",
+  const checks = [
+    {
+      label: "No uppercase letters",
+      pass: !/[A-Z]/.test(text),
+    },
+    {
+      label: "No special characters",
+      pass: !/[^a-z0-9\s-]/.test(text),
+    },
+    {
+      label: "No consecutive spaces",
+      pass: !/\s{2,}/.test(text),
+    },
+    {
+      label: "Slug is not empty",
+      pass: slug.length > 0,
+    },
+    {
+      label: "No leading/trailing hyphens",
+      pass: !slug.startsWith("-") && !slug.endsWith("-"),
+    },
   ];
 
+  const allPass = checks.every((c) => c.pass);
+
   return (
-    <div className="rounded-3xl border border-border bg-card/80 p-4 shadow-soft backdrop-blur md:p-6 space-y-6">
-      {/* Input */}
-      <div>
-        <Label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-          Enter Title or Text
+    <div className="rounded-3xl border border-border bg-card/80 p-4 shadow-soft backdrop-blur md:p-6 space-y-4">
+      <div className="space-y-2">
+        <Label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+          Enter Text
         </Label>
-        <Input
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder="Enter a title to convert to URL slug..."
-          className="h-12 text-lg"
+        <input
+          type="text"
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          className="w-full rounded-xl border border-border bg-background p-3 text-lg"
+          placeholder="Enter title or text to generate URL slug..."
         />
       </div>
 
-      {/* Generate Button */}
-      <Button onClick={generateSlug} disabled={!input.trim()} className="w-full">
-        <Link className="mr-2 size-4" />
-        Generate Slug
-      </Button>
-
-      {/* Slug Output */}
       {slug && (
-        <div className="rounded-xl border border-border bg-muted/30 p-4">
-          <div className="flex items-center justify-between mb-2">
-            <Label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-              Generated Slug
-            </Label>
-            <span className="text-xs text-muted-foreground">{slug.length}/100 chars</span>
+        <>
+          <div className="rounded-xl border border-primary/30 bg-primary/5 p-4 text-center">
+            <p className="text-xs text-muted-foreground uppercase mb-1">Generated Slug</p>
+            <p className="text-xl font-mono font-medium break-all">/{slug}</p>
           </div>
-          <p className="font-mono text-lg break-all text-primary">{slug}</p>
-        </div>
+
+          <div className="space-y-2">
+            <Label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+              Validation Checks
+            </Label>
+            <div className="space-y-1">
+              {checks.map(({ label, pass }) => (
+                <div
+                  key={label}
+                  className={`flex items-center gap-2 rounded-lg border p-2 ${
+                    pass
+                      ? "border-emerald-500/30 bg-emerald-500/10"
+                      : "border-amber-500/30 bg-amber-500/10"
+                  }`}
+                >
+                  {pass ? (
+                    <Check className="size-4 text-emerald-500" />
+                  ) : (
+                    <AlertTriangle className="size-4 text-amber-500" />
+                  )}
+                  <span className={`text-sm ${pass ? "text-emerald-600" : "text-amber-600"}`}>
+                    {label}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </>
       )}
-
-      {/* Actions */}
-      <div className="flex flex-wrap gap-3">
-        <Button
-          onClick={handleCopy}
-          disabled={!slug}
-          variant="outline"
-          className="flex-1 min-w-[100px]"
-        >
-          {copied ? <Check className="mr-2 size-4" /> : <Copy className="mr-2 size-4" />}
-          {copied ? "Copied!" : "Copy Slug"}
-        </Button>
-        <Button
-          onClick={handleDownload}
-          disabled={!slug}
-          variant="outline"
-          className="flex-1 min-w-[100px]"
-        >
-          <Download className="mr-2 size-4" />
-          Download
-        </Button>
-        <Button onClick={handleClear} variant="ghost" className="flex-1 min-w-[100px]">
-          Clear
-        </Button>
-      </div>
-
-      {/* Examples */}
-      <div>
-        <Label className="mb-3 block text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-          Try These Examples
-        </Label>
-        <div className="flex flex-wrap gap-2">
-          {examples.map((example) => (
-            <Button
-              key={example}
-              variant="outline"
-              size="sm"
-              onClick={() => setInput(example)}
-              className="text-xs"
-            >
-              {example}
-            </Button>
-          ))}
-        </div>
-      </div>
-
-      {/* Info */}
-      <div className="rounded-xl border border-border/60 bg-surface/40 p-3 text-xs text-muted-foreground">
-        <p className="font-semibold text-foreground mb-1">What is a URL slug?</p>
-        <p>
-          A URL slug is the part of a URL that identifies a specific page in a readable format. It's
-          typically lowercase with hyphens replacing spaces, making it SEO-friendly and easy to
-          share.
-        </p>
-      </div>
     </div>
   );
 }

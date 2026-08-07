@@ -7,7 +7,7 @@ import { SponsorSection } from "@/components/landing/SponsorSection";
 import { usePageSeo } from "@/lib/usePageSeo";
 
 interface ToolLayoutProps {
-  icon: LucideIcon;
+  icon?: LucideIcon;
   name: string;
   description: string;
   category: string;
@@ -48,9 +48,11 @@ export function ToolLayout({
 
         <header className="mt-6 grid grid-cols-[minmax(0,1fr)_auto] items-start gap-4 sm:flex sm:items-center">
           <div className="flex min-w-0 items-center gap-4">
-            <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-primary/12 text-primary">
-              <Icon className="size-6" />
-            </span>
+            {Icon && (
+              <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-primary/12 text-primary">
+                <Icon className="size-6" />
+              </span>
+            )}
             <div className="min-w-0">
               <h1 className="truncate text-2xl font-bold md:text-3xl">{name}</h1>
               <p className="mt-1 text-sm text-muted-foreground">{description}</p>
