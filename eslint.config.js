@@ -67,5 +67,13 @@ export default tseslint.config(
       "react-refresh/only-export-components": "off",
     },
   },
+  {
+    files: ["src/lib/tool-runtime/tools/*.tsx"],
+    rules: {
+      // Tool runtime components export both the tool component and metadata
+      // by design; splitting them would reduce maintainability.
+      "react-refresh/only-export-components": "off",
+    },
+  },
   eslintPluginPrettier,
 );
