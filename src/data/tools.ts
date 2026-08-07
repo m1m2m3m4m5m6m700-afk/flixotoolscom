@@ -2716,6 +2716,142 @@ export const tools: Tool[] = [
     ["xml formatter", "xml formatter"],
     "xml-formatter",
   ),
+
+  // New Calculator Tools
+  t(
+    "mortgage-calculator",
+    "Mortgage Calculator",
+    "calculators",
+    "Calculate mortgage payments and amortization schedule.",
+    "ready",
+    ["mortgage", "loan", "calculator"],
+    "mortgage-calculator",
+  ),
+  t(
+    "emi-calculator",
+    "EMI Calculator",
+    "calculators",
+    "Calculate EMI for loans with detailed breakdown.",
+    "ready",
+    ["emi", "loan", "calculator"],
+    "emi-calculator",
+  ),
+  t(
+    "roi-calculator",
+    "ROI Calculator",
+    "calculators",
+    "Calculate Return on Investment and analyze performance.",
+    "ready",
+    ["roi", "investment", "calculator"],
+    "roi-calculator",
+  ),
+  t(
+    "profit-margin-calculator",
+    "Profit Margin Calculator",
+    "calculators",
+    "Calculate profit margins and markup for your business.",
+    "ready",
+    ["profit", "margin", "calculator"],
+    "profit-margin-calculator",
+  ),
+  t(
+    "fuel-cost-calculator",
+    "Fuel Cost Calculator",
+    "calculators",
+    "Calculate fuel costs for your trip based on distance and efficiency.",
+    "ready",
+    ["fuel", "gas", "calculator"],
+    "fuel-cost-calculator",
+  ),
+
+  // New Image Tools
+  t(
+    "image-grayscale",
+    "Image Grayscale",
+    "images",
+    "Convert images to grayscale instantly.",
+    "ready",
+    ["grayscale", "image", "filter"],
+    "image-grayscale",
+  ),
+  t(
+    "image-brightness-contrast",
+    "Image Brightness & Contrast",
+    "images",
+    "Adjust image brightness and contrast.",
+    "ready",
+    ["brightness", "contrast", "image"],
+    "image-brightness-contrast",
+  ),
+
+  // New Text Tools (using utilities category)
+  t(
+    "trim-spaces",
+    "Trim Spaces",
+    "utilities",
+    "Remove leading, trailing, and multiple spaces from text.",
+    "ready",
+    ["trim", "spaces", "text"],
+    "trim-spaces",
+  ),
+  t(
+    "keyword-extractor",
+    "Keyword Extractor",
+    "utilities",
+    "Extract important keywords from text using TF-IDF algorithm.",
+    "ready",
+    ["keyword", "extractor", "nlp"],
+    "keyword-extractor",
+  ),
+  t(
+    "random-text-generator",
+    "Random Text Generator",
+    "utilities",
+    "Generate random text content with customizable options.",
+    "ready",
+    ["random", "text", "generator"],
+    "random-text-generator",
+  ),
+  t(
+    "html-to-markdown",
+    "HTML to Markdown",
+    "utilities",
+    "Convert HTML to Markdown format.",
+    "ready",
+    ["html", "markdown", "converter"],
+    "html-to-markdown",
+  ),
+  t(
+    "markdown-to-html",
+    "Markdown to HTML",
+    "utilities",
+    "Convert Markdown to HTML format.",
+    "ready",
+    ["markdown", "html", "converter"],
+    "markdown-to-html",
+  ),
+
+  // New Developer Tools
+  t(
+    "timestamp-converter",
+    "Timestamp Converter",
+    "developer",
+    "Convert between timestamps and dates. Unix timestamp converter.",
+    "ready",
+    ["timestamp", "unix", "converter"],
+    "timestamp-converter",
+  ),
+
+  // New Utility Tools
+  t(
+    "email-extractor",
+    "Email Extractor",
+    "utilities",
+    "Extract email addresses from any text.",
+    "ready",
+    ["email", "extractor", "utility"],
+    "email-extractor",
+  ),
 ];
 
 export const toolById = new Map<string, Tool>(tools.map((tool) => [tool.id, tool]));

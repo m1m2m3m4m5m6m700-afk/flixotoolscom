@@ -655,6 +655,64 @@ export const en = {
   "translator.emptyTitle": "Your translation appears here",
   "translator.emptyBody":
     "Pick a target language, drop in some text, and hit Translate. Auto detect figures out the source for you.",
+
+  // Mortgage Calculator
+  "tool.mortgage-calculator.name": "Mortgage Calculator",
+  "tool.mortgage-calculator.tagline": "Calculate mortgage payments and amortization schedule.",
+
+  // EMI Calculator
+  "tool.emi-calculator.name": "EMI Calculator",
+  "tool.emi-calculator.tagline": "Calculate EMI for loans with detailed breakdown.",
+
+  // ROI Calculator
+  "tool.roi-calculator.name": "ROI Calculator",
+  "tool.roi-calculator.tagline": "Calculate Return on Investment and analyze performance.",
+
+  // Profit Margin Calculator
+  "tool.profit-margin-calculator.name": "Profit Margin Calculator",
+  "tool.profit-margin-calculator.tagline": "Calculate profit margins and markup for your business.",
+
+  // Fuel Cost Calculator
+  "tool.fuel-cost-calculator.name": "Fuel Cost Calculator",
+  "tool.fuel-cost-calculator.tagline":
+    "Calculate fuel costs for your trip based on distance and efficiency.",
+
+  // Image Grayscale
+  "tool.image-grayscale.name": "Image Grayscale",
+  "tool.image-grayscale.tagline": "Convert images to grayscale instantly.",
+
+  // Image Brightness & Contrast
+  "tool.image-brightness-contrast.name": "Image Brightness & Contrast",
+  "tool.image-brightness-contrast.tagline": "Adjust image brightness and contrast.",
+
+  // Trim Spaces
+  "tool.trim-spaces.name": "Trim Spaces",
+  "tool.trim-spaces.tagline": "Remove leading, trailing, and multiple spaces from text.",
+
+  // Keyword Extractor
+  "tool.keyword-extractor.name": "Keyword Extractor",
+  "tool.keyword-extractor.tagline": "Extract important keywords from text using TF-IDF algorithm.",
+
+  // Random Text Generator
+  "tool.random-text-generator.name": "Random Text Generator",
+  "tool.random-text-generator.tagline": "Generate random text content with customizable options.",
+
+  // HTML to Markdown
+  "tool.html-to-markdown.name": "HTML to Markdown",
+  "tool.html-to-markdown.tagline": "Convert HTML to Markdown format.",
+
+  // Markdown to HTML
+  "tool.markdown-to-html.name": "Markdown to HTML",
+  "tool.markdown-to-html.tagline": "Convert Markdown to HTML format.",
+
+  // Timestamp Converter
+  "tool.timestamp-converter.name": "Timestamp Converter",
+  "tool.timestamp-converter.tagline":
+    "Convert between timestamps and dates. Unix timestamp converter.",
+
+  // Email Extractor
+  "tool.email-extractor.name": "Email Extractor",
+  "tool.email-extractor.tagline": "Extract email addresses from any text.",
 } as const;
 
 export type TranslationKey = keyof typeof en;

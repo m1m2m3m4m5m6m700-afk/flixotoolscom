@@ -642,4 +642,61 @@ export const ar: Dictionary = {
   "translator.emptyTitle": "ستظهر الترجمة هنا",
   "translator.emptyBody":
     "اختر اللغة الهدف، أدخل النص، ثم اضغط ترجم. الكشف التلقائي سيتعرّف على لغة المصدر نيابةً عنك.",
+
+  // Mortgage Calculator
+  "tool.mortgage-calculator.name": "حاسبة الرهن العقاري",
+  "tool.mortgage-calculator.tagline": "احسب أقساط الرهن العقاري وجدول amortisation.",
+
+  // EMI Calculator
+  "tool.emi-calculator.name": "حاسبة EMI",
+  "tool.emi-calculator.tagline": "احسب EMI للقروض مع تفاصيل كاملة.",
+
+  // ROI Calculator
+  "tool.roi-calculator.name": "حاسبة العائد على الاستثمار",
+  "tool.roi-calculator.tagline": "احسب العائد على الاستثمار وحلل الأداء.",
+
+  // Profit Margin Calculator
+  "tool.profit-margin-calculator.name": "حاسبة هامش الربح",
+  "tool.profit-margin-calculator.tagline": "احسب هوامش الربح والهامش لتجارتك.",
+
+  // Fuel Cost Calculator
+  "tool.fuel-cost-calculator.name": "حاسبة تكلفة الوقود",
+  "tool.fuel-cost-calculator.tagline": "احسب تكاليف الوقود لرحلتك بناءً على المسافة والكفاءة.",
+
+  // Image Grayscale
+  "tool.image-grayscale.name": "تدرج الرمادي للصور",
+  "tool.image-grayscale.tagline": "حوّل الصور إلى تدرج رمادي فورًا.",
+
+  // Image Brightness & Contrast
+  "tool.image-brightness-contrast.name": "سطوع وتباين الصورة",
+  "tool.image-brightness-contrast.tagline": "عدّل سطوع الصورة وتباينها.",
+
+  // Trim Spaces
+  "tool.trim-spaces.name": "إزالة المسافات",
+  "tool.trim-spaces.tagline": "أزل المسافات الزائدة من النص.",
+
+  // Keyword Extractor
+  "tool.keyword-extractor.name": "مستخرج الكلمات المفتاحية",
+  "tool.keyword-extractor.tagline":
+    "استخرج الكلمات المفتاحية المهمة من النص باستخدام خوارزمية TF-IDF.",
+
+  // Random Text Generator
+  "tool.random-text-generator.name": "مولد نص عشوائي",
+  "tool.random-text-generator.tagline": "أنشئ نصًا عشوائيًا بخيارات قابلة للتخصيص.",
+
+  // HTML to Markdown
+  "tool.html-to-markdown.name": "HTML إلى Markdown",
+  "tool.html-to-markdown.tagline": "حوّل HTML إلى تنسيق Markdown.",
+
+  // Markdown to HTML
+  "tool.markdown-to-html.name": "Markdown إلى HTML",
+  "tool.markdown-to-html.tagline": "حوّل Markdown إلى تنسيق HTML.",
+
+  // Timestamp Converter
+  "tool.timestamp-converter.name": "محول الطوابع الزمنية",
+  "tool.timestamp-converter.tagline": "حوّل بين الطوابع الزمنية والتواريخ.",
+
+  // Email Extractor
+  "tool.email-extractor.name": "مستخرج البريد الإلكتروني",
+  "tool.email-extractor.tagline": "استخرج عناوين البريد الإلكتروني من أي نص.",
 };
