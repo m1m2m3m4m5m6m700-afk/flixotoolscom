@@ -87,6 +87,7 @@ import { Route as ToolsJsonToCsvConverterRouteImport } from './routes/tools/json
 import { Route as ToolsJsonToXmlConverterRouteImport } from './routes/tools/json-to-xml-converter'
 import { Route as ToolsJsonValidatorRouteImport } from './routes/tools/json-validator'
 import { Route as ToolsJwtDecoderRouteImport } from './routes/tools/jwt-decoder'
+import { Route as ToolsJwtEncoderRouteImport } from './routes/tools/jwt-encoder'
 import { Route as ToolsLineCounterRouteImport } from './routes/tools/line-counter'
 import { Route as ToolsListRandomizerRouteImport } from './routes/tools/list-randomizer'
 import { Route as ToolsLoanCalculatorRouteImport } from './routes/tools/loan-calculator'
@@ -552,6 +553,11 @@ const ToolsJwtDecoderRoute = ToolsJwtDecoderRouteImport.update({
   path: '/tools/jwt-decoder',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ToolsJwtEncoderRoute = ToolsJwtEncoderRouteImport.update({
+  id: '/tools/jwt-encoder',
+  path: '/tools/jwt-encoder',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ToolsLineCounterRoute = ToolsLineCounterRouteImport.update({
   id: '/tools/line-counter',
   path: '/tools/line-counter',
@@ -975,6 +981,7 @@ export interface FileRoutesByFullPath {
   '/tools/json-to-xml-converter': typeof ToolsJsonToXmlConverterRoute
   '/tools/json-validator': typeof ToolsJsonValidatorRoute
   '/tools/jwt-decoder': typeof ToolsJwtDecoderRoute
+  '/tools/jwt-encoder': typeof ToolsJwtEncoderRoute
   '/tools/line-counter': typeof ToolsLineCounterRoute
   '/tools/list-randomizer': typeof ToolsListRandomizerRoute
   '/tools/loan-calculator': typeof ToolsLoanCalculatorRoute
@@ -1120,6 +1127,7 @@ export interface FileRoutesByTo {
   '/tools/json-to-xml-converter': typeof ToolsJsonToXmlConverterRoute
   '/tools/json-validator': typeof ToolsJsonValidatorRoute
   '/tools/jwt-decoder': typeof ToolsJwtDecoderRoute
+  '/tools/jwt-encoder': typeof ToolsJwtEncoderRoute
   '/tools/line-counter': typeof ToolsLineCounterRoute
   '/tools/list-randomizer': typeof ToolsListRandomizerRoute
   '/tools/loan-calculator': typeof ToolsLoanCalculatorRoute
@@ -1266,6 +1274,7 @@ export interface FileRoutesById {
   '/tools/json-to-xml-converter': typeof ToolsJsonToXmlConverterRoute
   '/tools/json-validator': typeof ToolsJsonValidatorRoute
   '/tools/jwt-decoder': typeof ToolsJwtDecoderRoute
+  '/tools/jwt-encoder': typeof ToolsJwtEncoderRoute
   '/tools/line-counter': typeof ToolsLineCounterRoute
   '/tools/list-randomizer': typeof ToolsListRandomizerRoute
   '/tools/loan-calculator': typeof ToolsLoanCalculatorRoute
@@ -1413,6 +1422,7 @@ export interface FileRouteTypes {
     | '/tools/json-to-xml-converter'
     | '/tools/json-validator'
     | '/tools/jwt-decoder'
+    | '/tools/jwt-encoder'
     | '/tools/line-counter'
     | '/tools/list-randomizer'
     | '/tools/loan-calculator'
@@ -1558,6 +1568,7 @@ export interface FileRouteTypes {
     | '/tools/json-to-xml-converter'
     | '/tools/json-validator'
     | '/tools/jwt-decoder'
+    | '/tools/jwt-encoder'
     | '/tools/line-counter'
     | '/tools/list-randomizer'
     | '/tools/loan-calculator'
@@ -1703,6 +1714,7 @@ export interface FileRouteTypes {
     | '/tools/json-to-xml-converter'
     | '/tools/json-validator'
     | '/tools/jwt-decoder'
+    | '/tools/jwt-encoder'
     | '/tools/line-counter'
     | '/tools/list-randomizer'
     | '/tools/loan-calculator'
@@ -1849,6 +1861,7 @@ export interface RootRouteChildren {
   ToolsJsonToXmlConverterRoute: typeof ToolsJsonToXmlConverterRoute
   ToolsJsonValidatorRoute: typeof ToolsJsonValidatorRoute
   ToolsJwtDecoderRoute: typeof ToolsJwtDecoderRoute
+  ToolsJwtEncoderRoute: typeof ToolsJwtEncoderRoute
   ToolsLineCounterRoute: typeof ToolsLineCounterRoute
   ToolsListRandomizerRoute: typeof ToolsListRandomizerRoute
   ToolsLoanCalculatorRoute: typeof ToolsLoanCalculatorRoute
@@ -2469,6 +2482,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsJwtDecoderRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools/jwt-encoder': {
+      id: '/tools/jwt-encoder'
+      path: '/tools/jwt-encoder'
+      fullPath: '/tools/jwt-encoder'
+      preLoaderRoute: typeof ToolsJwtEncoderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tools/line-counter': {
       id: '/tools/line-counter'
       path: '/tools/line-counter'
@@ -3001,6 +3021,7 @@ const rootRouteChildren: RootRouteChildren = {
   ToolsJsonToXmlConverterRoute: ToolsJsonToXmlConverterRoute,
   ToolsJsonValidatorRoute: ToolsJsonValidatorRoute,
   ToolsJwtDecoderRoute: ToolsJwtDecoderRoute,
+  ToolsJwtEncoderRoute: ToolsJwtEncoderRoute,
   ToolsLineCounterRoute: ToolsLineCounterRoute,
   ToolsListRandomizerRoute: ToolsListRandomizerRoute,
   ToolsLoanCalculatorRoute: ToolsLoanCalculatorRoute,
