@@ -41,7 +41,7 @@ function PdfToPowerpointTool() {
         setProgress(Math.round((i / pdf.numPages) * 100));
       }
 
-      zip.file("[Content_Types].xml", contentTypesXml());
+      zip.file("[Content_Types].xml", contentTypesXml(pdf.numPages));
       zip.file("_rels/.rels", rootRelsXml());
       zip.file("ppt/presentation.xml", presentationXml(pdf.numPages));
       zip.file("ppt/_rels/presentation.xml.rels", presentationRelsXml(pdf.numPages));
@@ -171,8 +171,13 @@ function addSlideXml(zip: import("jszip"), idx: number, wPx: number, hPx: number
     `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="../media/slide${idx}.png"/></Relationships>`,
   );
 }
-function contentTypesXml() {
-  return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Default Extension="png" ContentType="image/png"/><Override PartName="/ppt/presentation.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml"/><Override PartName="/ppt/slides/slide1.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.slide+xml"/></Types>`;
+function contentTypesXml(slides: number) {
+  const slideOverrides = Array.from(
+    { length: slides },
+    (_, i) =>
+      `<Override PartName="/ppt/slides/slide${i + 1}.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.slide+xml"/>`,
+  ).join("");
+  return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Default Extension="png" ContentType="image/png"/><Override PartName="/ppt/presentation.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml"/><Override PartName="/ppt/presProps.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.presProps+xml"/>${slideOverrides}</Types>`;
 }
 function rootRelsXml() {
   return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="ppt/presentation.xml"/></Relationships>`;
