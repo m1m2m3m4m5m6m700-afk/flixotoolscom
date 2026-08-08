@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 import {
   MessageSquare,
@@ -40,6 +40,7 @@ import {
   type Attachment,
 } from "@/lib/communicationStore";
 import { cn } from "@/lib/utils";
+import { revokeAttachmentUrls, revokeObjectUrlSafe } from "@/lib/objectUrls";
 
 const CATEGORY_OPTIONS: {
   label: ConversationCategory;
@@ -116,8 +117,19 @@ export function ContactOwnerPage() {
   const [submittedId, setSubmittedId] = useState<string | null>(null);
 
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const attachmentsRef = useRef<Attachment[]>([]);
 
   const { conversations, createConversation, sendMessage } = useCommunicationStore();
+
+  useEffect(() => {
+    attachmentsRef.current = attachments;
+  }, [attachments]);
+
+  useEffect(() => {
+    return () => {
+      revokeAttachmentUrls(attachmentsRef.current);
+    };
+  }, []);
 
   const handleFileUpload = (files: FileList | null) => {
     if (!files || files.length === 0) return;
@@ -363,9 +375,10 @@ export function ContactOwnerPage() {
                             <span className="text-[10px] text-muted-foreground">({att.size})</span>
                             <X
                               className="size-3.5 ms-1 cursor-pointer hover:text-destructive"
-                              onClick={() =>
-                                setAttachments((prev) => prev.filter((a) => a.id !== att.id))
-                              }
+                              onClick={() => {
+                                revokeObjectUrlSafe(att.url);
+                                setAttachments((prev) => prev.filter((a) => a.id !== att.id));
+                              }}
                             />
                           </Badge>
                         ))}

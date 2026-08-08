@@ -37,7 +37,14 @@ function SitemapRoute() {
 
   const allPages = [
     { url: "/", title: "Homepage", type: "Core Page" },
+    { url: "/about", title: "About Flixo", type: "Brand" },
     { url: "/contact", title: "Contact Owner & Community", type: "Community" },
+    { url: "/privacy", title: "Privacy Policy", type: "Brand" },
+    { url: "/terms", title: "Terms of Use", type: "Brand" },
+    { url: "/ai-tools", title: "AI Tools Landing Page", type: "Category" },
+    { url: "/image-tools", title: "Image Tools Landing Page", type: "Category" },
+    { url: "/pdf-tools", title: "PDF Tools Landing Page", type: "Category" },
+    { url: "/translation-tools", title: "Translation Tools Landing Page", type: "Category" },
     { url: "/blog", title: "Flixo Blog Index", type: "Blog" },
     { url: "/changelog", title: "Flixo Release Changelog", type: "Changelog" },
     { url: "/compare", title: "Tool Comparisons Index", type: "SEO Benchmark" },

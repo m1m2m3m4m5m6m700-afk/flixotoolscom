@@ -12,15 +12,15 @@ export function Footer({ onRequestTool, onOpenAnalytics }: FooterProps) {
 
   return (
     <footer className="border-t border-border/60 bg-surface/60">
-      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
-        <div>
+      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-4">
+        <div className="md:col-span-1">
           <div className="flex items-center gap-2">
             <span className="grid size-9 place-items-center rounded-xl bg-primary text-primary-foreground">
               <Sparkles className="size-4" />
             </span>
             <span className="font-display text-lg font-bold">Flixo</span>
           </div>
-          <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
+          <p className="mt-4 text-xs leading-relaxed text-muted-foreground">
             {t("footer.tagline")}
           </p>
           {onOpenAnalytics && (
@@ -34,163 +34,36 @@ export function Footer({ onRequestTool, onOpenAnalytics }: FooterProps) {
           )}
         </div>
 
-        <FooterCol title="SEO & Guides Hub">
-          <li>
-            <Link
-              to="/compare"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground font-medium"
-            >
-              Tool Comparisons
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/use-cases"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground font-medium"
-            >
-              Use-Case Workflows
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/file-types"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground font-medium"
-            >
-              File Format Directory
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/questions"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground font-medium"
-            >
-              How-To Questions
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/collections"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground font-medium"
-            >
-              Tool Collections
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/changelog"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground font-medium"
-            >
-              Release Changelog
-            </Link>
-          </li>
-        </FooterCol>
-
-        <FooterCol title={t("footer.product")}>
-          <FooterLink href="/#tools">{t("footer.featured")}</FooterLink>
-          <li>
-            <Link
-              to="/blog"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground font-medium"
-            >
-              Flixo Blog & Guides
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/sitemap"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              XML & HTML Sitemap
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/robots/txt"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              Robots.txt Directive
-            </Link>
-          </li>
-          <FooterLink href="/#why">{t("nav.why")}</FooterLink>
-          <FooterLink href="/#stats">{t("footer.numbers")}</FooterLink>
-          <FooterLink href="/#faq">{t("nav.faq")}</FooterLink>
-          <li>
-            <Link
-              to="/contact"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground font-medium"
-            >
-              Contact Owner
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/admin/inbox"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground font-medium"
-            >
-              Owner Inbox
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/admin/analytics"
-              className="text-sm text-primary font-bold transition-colors hover:underline"
-            >
-              Admin Analytics
-            </Link>
-          </li>
-        </FooterCol>
-
-        <FooterCol title="Category Hubs">
-          <li>
-            <Link
-              to="/image-tools"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              Image Tools
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/translation-tools"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              Translation Hub
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/pdf-tools"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              PDF Tools
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/video-tools"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              Video Tools
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/audio-tools"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              Audio Tools
-            </Link>
-          </li>
+        <FooterCol title="About Flixo">
+          <FooterLink href="/about">About Flixo</FooterLink>
+          <FooterLink href="/contact">Contact Support</FooterLink>
+          <FooterLink href="/changelog">Changelog</FooterLink>
+          <FooterLink href="/sitemap">Sitemap Directory</FooterLink>
           {onRequestTool && (
-            <li className="pt-2">
+            <li className="pt-1">
               <button
                 onClick={onRequestTool}
-                className="text-sm text-primary font-bold transition-colors hover:underline"
+                className="text-xs text-primary font-bold transition-colors hover:underline"
               >
                 + {t("request.trigger")}
               </button>
             </li>
           )}
+        </FooterCol>
+
+        <FooterCol title="Trust & E-E-A-T">
+          <FooterLink href="/editorial-policy">Editorial Policy</FooterLink>
+          <FooterLink href="/accessibility">Accessibility (WCAG AA)</FooterLink>
+          <FooterLink href="/status">System Status</FooterLink>
+          <FooterLink href="/api-docs">Developer API</FooterLink>
+        </FooterCol>
+
+        <FooterCol title="Legal & Privacy">
+          <FooterLink href="/privacy">Privacy Policy</FooterLink>
+          <FooterLink href="/terms">Terms of Use</FooterLink>
+          <FooterLink href="/disclaimer">Legal Disclaimer</FooterLink>
+          <FooterLink href="/cookie-policy">Cookie Policy</FooterLink>
+          <FooterLink href="/dmca">DMCA Policy</FooterLink>
         </FooterCol>
       </div>
 

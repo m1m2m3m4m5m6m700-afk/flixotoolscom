@@ -114,5 +114,36 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
 }
 
+export function LocalI18nProvider({
+  locale,
+  children,
+}: {
+  locale: LocaleCode;
+  children: ReactNode;
+}) {
+  const parent = useI18n();
+  const dir = localeMeta(locale).dir;
+
+  useEffect(() => {
+    if (typeof document !== "undefined") {
+      const root = document.documentElement;
+      root.setAttribute("lang", locale);
+      root.setAttribute("dir", dir);
+    }
+  }, [locale, dir]);
+
+  const value = useMemo<I18nValue>(() => {
+    const dict = DICTIONARIES[locale] ?? en;
+    return {
+      locale,
+      dir,
+      setLocale: parent.setLocale,
+      t: (key, vars) => interpolate(dict[key] ?? en[key] ?? key, vars),
+    };
+  }, [locale, dir, parent.setLocale]);
+
+  return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
+}
+
 export const useI18n = () => useContext(I18nContext);
 export type { TranslationKey };

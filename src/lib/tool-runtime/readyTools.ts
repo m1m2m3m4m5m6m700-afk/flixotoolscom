@@ -1,0 +1,163 @@
+import { LargeTextTranslatorRuntime } from "./tools/large-text-translator";
+import { PdfTranslatorRuntime } from "./tools/pdf-translator";
+import { DocxTranslatorRuntime } from "./tools/docx-translator";
+import { ImageTranslatorRuntime } from "./tools/image-translator";
+import { OcrTranslatorRuntime } from "./tools/ocr-translator";
+import { SubtitleTranslatorRuntime } from "./tools/subtitle-translator";
+import { WebsiteTranslatorRuntime } from "./tools/website-translator";
+import { VoiceTranslatorRuntime } from "./tools/voice-translator";
+import { LanguageDetectionRuntime } from "./tools/language-detection";
+import { DocumentTranslatorRuntime } from "./tools/document-translator";
+import { ImageGeneratorRuntime } from "./tools/image-generator";
+import { ImageUpscalerRuntime } from "./tools/image-upscaler";
+import { BackgroundChangerRuntime } from "./tools/background-changer";
+import { ImageResizerRuntime } from "./tools/image-resizer";
+import { CropImageRuntime } from "./tools/crop-image";
+import { RotateImageRuntime } from "./tools/rotate-image";
+import { WatermarkRemoverRuntime } from "./tools/watermark-remover";
+import { BlurImageRuntime } from "./tools/blur-image";
+import { SharpenImageRuntime } from "./tools/sharpen-image";
+import { ImageConverterRuntime } from "./tools/image-converter";
+import { ImageEditorRuntime } from "./tools/image-editor";
+import { ColorPickerRuntime } from "./tools/color-picker";
+import { ColorPaletteGeneratorRuntime } from "./tools/color-palette-generator";
+import { ImageToPdfRuntime } from "./tools/image-to-pdf";
+import { ImageOcrRuntime } from "./tools/image-ocr";
+import { FaceBlurRuntime } from "./tools/face-blur";
+import { ScreenshotEditorRuntime } from "./tools/screenshot-editor";
+import { PdfMergeRuntime } from "./tools/pdf-merge";
+import { PdfSplitRuntime } from "./tools/pdf-split";
+import { PdfCompressRuntime } from "./tools/pdf-compress";
+import { JpgToPdfRuntime } from "./tools/jpg-to-pdf";
+import { WordToPdfRuntime } from "./tools/word-to-pdf";
+import { ExcelToPdfRuntime } from "./tools/excel-to-pdf";
+import { PowerpointToPdfRuntime } from "./tools/powerpoint-to-pdf";
+import { PdfToWordRuntime } from "./tools/pdf-to-word";
+import { PdfToJpgRuntime } from "./tools/pdf-to-jpg";
+import { PdfOcrRuntime } from "./tools/pdf-ocr";
+import { PdfUnlockRuntime } from "./tools/pdf-unlock";
+import { PdfProtectRuntime } from "./tools/pdf-protect";
+import { PdfRotateRuntime } from "./tools/pdf-rotate";
+import { PdfSignRuntime } from "./tools/pdf-sign";
+import { PdfEditRuntime } from "./tools/pdf-edit";
+import { PdfExtractPagesRuntime } from "./tools/pdf-extract-pages";
+import { PdfWatermarkRuntime } from "./tools/pdf-watermark";
+import { AiWriterRuntime } from "./tools/ai-writer";
+import { ArticleGeneratorRuntime } from "./tools/article-generator";
+import { BlogGeneratorRuntime } from "./tools/blog-generator";
+import { RewriteTextRuntime } from "./tools/rewrite-text";
+import { SummarizerRuntime } from "./tools/summarizer";
+import { GrammarCheckerRuntime } from "./tools/grammar-checker";
+import { WordCounterRuntime } from "./tools/word-counter";
+import { JsonFormatterRuntime } from "./tools/json-formatter";
+import { LoremIpsumRuntime } from "./tools/lorem-ipsum";
+import { CaseConverterRuntime } from "./tools/case-converter";
+import { UuidGeneratorRuntime } from "./tools/uuid-generator";
+import { BarcodeGeneratorRuntime } from "./tools/barcode-generator";
+import { UnitConverterRuntime } from "./tools/unit-converter";
+import { PercentageCalculatorRuntime } from "./tools/percentage-calculator";
+import { Base64ConverterRuntime } from "./tools/base64-converter";
+import { UrlEncoderRuntime } from "./tools/url-encoder";
+import { MarkdownPreviewRuntime } from "./tools/markdown-preview";
+import { JsonValidatorRuntime } from "./tools/json-validator";
+import { RegexTesterRuntime } from "./tools/regex-tester";
+import { CsvToJsonRuntime } from "./tools/csv-to-json";
+import { HtmlMinifierRuntime } from "./tools/html-minifier";
+import { CssMinifierRuntime } from "./tools/css-minifier";
+import { JsMinifierRuntime } from "./tools/js-minifier";
+import { MetaTagGeneratorRuntime } from "./tools/meta-tag-generator";
+import { JwtDecoderRuntime } from "./tools/jwt-decoder";
+import { FileHashGeneratorRuntime } from "./tools/file-hash-generator";
+import { backgroundRemoverRuntime } from "./tools/background-remover";
+import { imageCompressorRuntime } from "./tools/image-compressor";
+import { imageEnhancerRuntime } from "./tools/image-enhancer";
+import { passwordGeneratorRuntime } from "./tools/password-generator";
+import { qrGeneratorRuntime } from "./tools/qr-generator";
+import { translatorRuntime } from "./tools/translator";
+import type { ReadyToolRuntimeDefinition } from "./types";
+
+export const readyToolRuntimes = [
+  translatorRuntime,
+  imageEnhancerRuntime,
+  imageCompressorRuntime,
+  backgroundRemoverRuntime,
+  passwordGeneratorRuntime,
+  qrGeneratorRuntime,
+  LargeTextTranslatorRuntime,
+  PdfTranslatorRuntime,
+  DocxTranslatorRuntime,
+  ImageTranslatorRuntime,
+  OcrTranslatorRuntime,
+  SubtitleTranslatorRuntime,
+  WebsiteTranslatorRuntime,
+  VoiceTranslatorRuntime,
+  LanguageDetectionRuntime,
+  DocumentTranslatorRuntime,
+  ImageGeneratorRuntime,
+  ImageUpscalerRuntime,
+  BackgroundChangerRuntime,
+  ImageResizerRuntime,
+  CropImageRuntime,
+  RotateImageRuntime,
+  WatermarkRemoverRuntime,
+  BlurImageRuntime,
+  SharpenImageRuntime,
+  ImageConverterRuntime,
+  ImageEditorRuntime,
+  ColorPickerRuntime,
+  ColorPaletteGeneratorRuntime,
+  ImageToPdfRuntime,
+  ImageOcrRuntime,
+  FaceBlurRuntime,
+  ScreenshotEditorRuntime,
+  PdfMergeRuntime,
+  PdfSplitRuntime,
+  PdfCompressRuntime,
+  JpgToPdfRuntime,
+  WordToPdfRuntime,
+  ExcelToPdfRuntime,
+  PowerpointToPdfRuntime,
+  PdfToWordRuntime,
+  PdfToJpgRuntime,
+  PdfOcrRuntime,
+  PdfUnlockRuntime,
+  PdfProtectRuntime,
+  PdfRotateRuntime,
+  PdfSignRuntime,
+  PdfEditRuntime,
+  PdfExtractPagesRuntime,
+  PdfWatermarkRuntime,
+  AiWriterRuntime,
+  ArticleGeneratorRuntime,
+  BlogGeneratorRuntime,
+  RewriteTextRuntime,
+  SummarizerRuntime,
+  GrammarCheckerRuntime,
+  WordCounterRuntime,
+  JsonFormatterRuntime,
+  LoremIpsumRuntime,
+  CaseConverterRuntime,
+  UuidGeneratorRuntime,
+  BarcodeGeneratorRuntime,
+  UnitConverterRuntime,
+  PercentageCalculatorRuntime,
+  Base64ConverterRuntime,
+  UrlEncoderRuntime,
+  MarkdownPreviewRuntime,
+  JsonValidatorRuntime,
+  RegexTesterRuntime,
+  CsvToJsonRuntime,
+  HtmlMinifierRuntime,
+  CssMinifierRuntime,
+  JsMinifierRuntime,
+  MetaTagGeneratorRuntime,
+  JwtDecoderRuntime,
+  FileHashGeneratorRuntime,
+] as const satisfies readonly ReadyToolRuntimeDefinition[];
+
+export const readyToolRuntimeBySlug = new Map<string, ReadyToolRuntimeDefinition>(
+  readyToolRuntimes.map((runtime) => [runtime.slug, runtime]),
+);
+
+export const getReadyToolRuntime = (slug: string): ReadyToolRuntimeDefinition | undefined =>
+  readyToolRuntimeBySlug.get(slug);

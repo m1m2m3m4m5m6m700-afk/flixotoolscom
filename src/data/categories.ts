@@ -29,6 +29,7 @@ export type CategoryId =
   | "converters"
   | "calculators"
   | "web"
+  | "chrome"
   | "developer"
   | "ai"
   | "future";
@@ -47,6 +48,8 @@ export interface Category {
   /** Ids of the tools that belong to this category. */
   toolIds: string[];
 }
+
+const chromeToolIds = Array.from({ length: 1020 }, (_, index) => `chrome-tool-${index + 1}`);
 
 export const categories: Category[] = [
   {
@@ -238,10 +241,6 @@ export const categories: Category[] = [
       "xml-formatter",
       "csv-viewer",
       "text-compare",
-      "random-number-generator",
-      "credit-card-validator",
-      "url-encoder",
-      "base64-encoder",
     ],
   },
   {
@@ -306,8 +305,16 @@ export const categories: Category[] = [
       "css-minifier",
       "js-minifier",
       "http-headers",
-      "slug-generator",
     ],
+  },
+  {
+    id: "chrome",
+    name: "Chrome Tools",
+    description: "Browser extension and Chrome-specific tools for browsing productivity.",
+    icon: Sparkles,
+    anchor: "chrome",
+    order: 12,
+    toolIds: chromeToolIds,
   },
   {
     id: "developer",
@@ -315,7 +322,7 @@ export const categories: Category[] = [
     description: "Formatters, validators and generators for day-to-day coding.",
     icon: Code2,
     anchor: "developer",
-    order: 12,
+    order: 13,
     toolIds: [
       "json-validator",
       "regex-tester",
@@ -326,8 +333,6 @@ export const categories: Category[] = [
       "color-converter",
       "hex-rgb-converter",
       "cron-parser",
-      "json-formatter",
-      "hash-generator",
     ],
   },
   {
@@ -336,7 +341,7 @@ export const categories: Category[] = [
     description: "General-purpose AI assistants for ideas, code and analysis.",
     icon: Sparkles,
     anchor: "ai",
-    order: 13,
+    order: 14,
     toolIds: [
       "ai-chat",
       "ai-code-assistant",
@@ -357,7 +362,7 @@ export const categories: Category[] = [
     description: "Experiments and requested tools on the Flixo roadmap.",
     icon: Rocket,
     anchor: "future",
-    order: 14,
+    order: 15,
     toolIds: [
       "workflow-builder",
       "tool-api",

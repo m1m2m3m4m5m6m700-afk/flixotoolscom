@@ -199,7 +199,7 @@ export function AIPromptBox({
             value={prompt}
             onChange={(e) => onPromptChange(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="What would you like to do today?"
+            placeholder="Describe what you need — Flixo picks the right tool for your files, text, images, videos or documents."
             rows={3}
             className="w-full resize-none bg-transparent px-2 py-1 text-base md:text-lg outline-none placeholder:text-muted-foreground/60 font-sans"
           />

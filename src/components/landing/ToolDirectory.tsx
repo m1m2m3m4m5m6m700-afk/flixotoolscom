@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { sortedCategories, type CategoryId } from "@/data/categories";
@@ -13,6 +14,17 @@ interface ToolDirectoryProps {
 
 /** Full tools directory — one section per category, completely data-driven. */
 export function ToolDirectory({ onRequestTool, highlightedCategoryId }: ToolDirectoryProps) {
+  const [expandedCategoryIds, setExpandedCategoryIds] = useState<Set<CategoryId>>(new Set());
+
+  const toggleCategoryExpansion = (categoryId: CategoryId) => {
+    setExpandedCategoryIds((current) => {
+      const next = new Set(current);
+      if (next.has(categoryId)) next.delete(categoryId);
+      else next.add(categoryId);
+      return next;
+    });
+  };
+
   return (
     <section id="tools" className="mx-auto max-w-7xl scroll-mt-20 px-5 py-20 md:py-28">
       {/* Directory Section Header */}
@@ -37,8 +49,10 @@ export function ToolDirectory({ onRequestTool, highlightedCategoryId }: ToolDire
           const catTools = toolsByCategory(category.id);
           if (catTools.length === 0) return null;
 
-          const readyCount = catTools.filter((t) => t.status === "ready").length;
           const isHighlighted = highlightedCategoryId === category.id;
+          const isExpanded = expandedCategoryIds.has(category.id);
+          const visibleTools = isExpanded ? catTools : catTools.slice(0, 12);
+          const readyCount = catTools.filter((t) => t.status === "ready").length;
           const showSponsorBetween = index === 2;
 
           return (
@@ -76,7 +90,8 @@ export function ToolDirectory({ onRequestTool, highlightedCategoryId }: ToolDire
 
                   <div className="flex items-center gap-2 text-xs">
                     <span className="rounded-full border border-border/80 bg-surface/80 px-3 py-1 font-medium text-muted-foreground">
-                      {catTools.length} {catTools.length === 1 ? "tool" : "tools"}
+                      {visibleTools.length} / {catTools.length}{" "}
+                      {catTools.length === 1 ? "tool" : "tools"}
                     </span>
                     {readyCount > 0 && (
                       <span className="rounded-full border border-primary/30 bg-primary/15 px-3 py-1 font-semibold text-primary">
@@ -88,7 +103,7 @@ export function ToolDirectory({ onRequestTool, highlightedCategoryId }: ToolDire
 
                 {/* Responsive Tools Grid */}
                 <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                  {catTools.map((tool) => (
+                  {visibleTools.map((tool) => (
                     <ToolCard
                       key={tool.id}
                       tool={tool}
@@ -97,6 +112,17 @@ export function ToolDirectory({ onRequestTool, highlightedCategoryId }: ToolDire
                     />
                   ))}
                 </div>
+
+                {catTools.length > 12 && (
+                  <div className="mt-4 flex justify-center">
+                    <Button
+                      variant="secondary"
+                      onClick={() => toggleCategoryExpansion(category.id)}
+                    >
+                      {isExpanded ? "Show fewer tools" : `Show all ${catTools.length} tools`}
+                    </Button>
+                  </div>
+                )}
               </motion.div>
 
               {showSponsorBetween && <SponsorSection />}

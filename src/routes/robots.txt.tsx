@@ -26,7 +26,7 @@ Allow: /
 Allow: /tools/
 Allow: /categories/
 Allow: /blog/
-Allow: /sitemap
+Allow: /sitemap.xml
 
 # AI Search Engine Crawlers (Perplexity, ChatGPT, Claude, Gemini)
 User-agent: PerplexityBot
@@ -44,7 +44,7 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://flixotools.com/sitemap
+Sitemap: https://flixotools.com/sitemap.xml
 `;
 
   const handleCopy = () => {
