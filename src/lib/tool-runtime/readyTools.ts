@@ -68,6 +68,26 @@ import { JsMinifierRuntime } from "./tools/js-minifier";
 import { MetaTagGeneratorRuntime } from "./tools/meta-tag-generator";
 import { JwtDecoderRuntime } from "./tools/jwt-decoder";
 import { FileHashGeneratorRuntime } from "./tools/file-hash-generator";
+import { RemoveDuplicateLinesRuntime } from "./tools/remove-duplicate-lines";
+import { RemoveEmptyLinesRuntime } from "./tools/remove-empty-lines";
+import { SortLinesRuntime } from "./tools/sort-lines";
+import { ReverseTextRuntime } from "./tools/reverse-text";
+import { AddLineNumbersRuntime } from "./tools/add-line-numbers";
+import { FindAndReplaceRuntime } from "./tools/find-and-replace";
+import { WordFrequencyRuntime } from "./tools/word-frequency";
+import { TextCompareRuntime } from "./tools/text-compare";
+import { XmlFormatterRuntime } from "./tools/xml-formatter";
+import { XmlValidatorRuntime } from "./tools/xml-validator";
+import { HtmlFormatterRuntime } from "./tools/html-formatter";
+import { SqlFormatterRuntime } from "./tools/sql-formatter";
+import { YamlFormatterRuntime } from "./tools/yaml-formatter";
+import { MarkdownTableGeneratorRuntime } from "./tools/markdown-table-generator";
+import { CronParserRuntime } from "./tools/cron-parser";
+import { CssGradientGeneratorRuntime } from "./tools/css-gradient-generator";
+import { RandomNameRuntime } from "./tools/random-name";
+import { QrReaderRuntime } from "./tools/qr-reader";
+import { PasswordCheckerRuntime } from "./tools/password-checker";
+import { CsvViewerRuntime } from "./tools/csv-viewer";
 import { backgroundRemoverRuntime } from "./tools/background-remover";
 import { imageCompressorRuntime } from "./tools/image-compressor";
 import { imageEnhancerRuntime } from "./tools/image-enhancer";
@@ -193,6 +213,26 @@ export const readyToolRuntimes = [
   TextToWordRuntime,
   MarkdownToPdfRuntime,
   MarkdownToWordRuntime,
+  RemoveDuplicateLinesRuntime,
+  RemoveEmptyLinesRuntime,
+  SortLinesRuntime,
+  ReverseTextRuntime,
+  AddLineNumbersRuntime,
+  FindAndReplaceRuntime,
+  WordFrequencyRuntime,
+  TextCompareRuntime,
+  XmlFormatterRuntime,
+  XmlValidatorRuntime,
+  HtmlFormatterRuntime,
+  SqlFormatterRuntime,
+  YamlFormatterRuntime,
+  MarkdownTableGeneratorRuntime,
+  CronParserRuntime,
+  CssGradientGeneratorRuntime,
+  RandomNameRuntime,
+  QrReaderRuntime,
+  PasswordCheckerRuntime,
+  CsvViewerRuntime,
 ] as const satisfies readonly ReadyToolRuntimeDefinition[];
 
 export const readyToolRuntimeBySlug = new Map<string, ReadyToolRuntimeDefinition>(
