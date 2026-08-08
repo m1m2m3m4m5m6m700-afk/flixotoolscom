@@ -86,6 +86,9 @@ export const ar: Dictionary = {
   "category.utilities.name": "الأدوات المساعدة",
   "category.utilities.blurb": "نسّق وحوّل وأنشئ المقتطفات التقنية اليومية.",
   "category.utilities.tools": "منسّق JSON · مولّد QR · محوّل Base64",
+  "category.developer.name": "أدوات المطورين",
+  "category.developer.blurb": "منسقات ومدققات ومولدات لاحتياجات البرمجة اليومية.",
+  "category.developer.tools": "منسّق JSON · مدقق XML · محلل Cron",
 
   "tool.translator.name": "المترجم الذكي",
   "tool.translator.tagline": "ترجم بين أكثر من 20 لغة مع كشف تلقائي وتبديل فوري للاتجاه.",
@@ -345,4 +348,90 @@ export const ar: Dictionary = {
   "tool.grammar-checker.name": "المقق النحوي والإملائي",
   "tool.grammar-checker.tagline": "فحص وتصحيح الأخطاء الإملائية والنحوية فورياً.",
   "tool.grammar-checker.pageDescription": "فحص وتصحيح الأخطاء الإملائية والنحوية فورياً.",
+  "tool.remove-duplicate-lines.name": "إزالة الأسطر المكررة",
+  "tool.remove-duplicate-lines.tagline":
+    "إزالة الأسطر المكررة من أي نص مع مطابقة غير حساسة لحالة الأحرف والمسافات.",
+  "tool.remove-duplicate-lines.pageDescription":
+    "إزالة الأسطر المكررة من أي نص مع مطابقة غير حساسة لحالة الأحرف والمسافات.",
+  "tool.remove-empty-lines.name": "إزالة الأسطر الفارغة",
+  "tool.remove-empty-lines.tagline": "إزالة الأسطر الفارغة والأسطر التي تحتوي مسافات فقط فوراً.",
+  "tool.remove-empty-lines.pageDescription":
+    "إزالة الأسطر الفارغة والأسطر التي تحتوي مسافات فقط فوراً.",
+  "tool.sort-lines.name": "ترتيب الأسطر",
+  "tool.sort-lines.tagline":
+    "ترتيب أسطر النص أبجدياً أو حسب الطول أو خلطها عشوائياً مع خيارات الحالة والأسطر الفارغة.",
+  "tool.sort-lines.pageDescription":
+    "ترتيب أسطر النص أبجدياً أو حسب الطول أو خلطها عشوائياً مع خيارات الحالة والأسطر الفارغة.",
+  "tool.reverse-text.name": "عكس النص",
+  "tool.reverse-text.tagline": "عكس النص حسب الأحرف أو الكلمات أو الأسطر بالكامل فوراً.",
+  "tool.reverse-text.pageDescription": "عكس النص حسب الأحرف أو الكلمات أو الأسطر بالكامل فوراً.",
+  "tool.add-line-numbers.name": "ترقيم الأسطر",
+  "tool.add-line-numbers.tagline":
+    "إضافة أرقام تسلسلية لأسطر أي نص مع فواصل مخصصة ومحاذاة ونقطة بداية.",
+  "tool.add-line-numbers.pageDescription":
+    "إضافة أرقام تسلسلية لأسطر أي نص مع فواصل مخصصة ومحاذاة ونقطة بداية.",
+  "tool.word-frequency.name": "محلل تكرار الكلمات",
+  "tool.word-frequency.tagline":
+    "تحليل تكرار الكلمات في أي نص مع فرز وحساسية الحالة ومرشحات الطول.",
+  "tool.word-frequency.pageDescription":
+    "تحليل تكرار الكلمات في أي نص مع فرز وحساسية الحالة ومرشحات الطول.",
+  "tool.text-compare.name": "مقارنة النصوص",
+  "tool.text-compare.tagline": "مقارنة نصين سطراً بسطر وإبراز الإضافات والحذف والتطابقات.",
+  "tool.text-compare.pageDescription": "مقارنة نصين سطراً بسطر وإبراز الإضافات والحذف والتطابقات.",
+  "tool.find-and-replace.name": "بحث واستبدال",
+  "tool.find-and-replace.tagline":
+    "البحث والاستبدال في النصوص الطويلة مع دعم Regex وخيار حساسية الحالة.",
+  "tool.find-and-replace.pageDescription":
+    "البحث والاستبدال في النصوص الطويلة مع دعم Regex وخيار حساسية الحالة.",
+  "tool.xml-formatter.name": "منسق XML",
+  "tool.xml-formatter.tagline": "تنسيق وضغط والتحقق من XML مع خيارات إزاحة مخصصة.",
+  "tool.xml-formatter.pageDescription": "تنسيق وضغط والتحقق من XML مع خيارات إزاحة مخصصة.",
+  "tool.xml-validator.name": "مدقق XML",
+  "tool.xml-validator.tagline": "التحقق من سلامة XML وتوازن الوسوم والبنية مع تقارير أخطاء فورية.",
+  "tool.xml-validator.pageDescription":
+    "التحقق من سلامة XML وتوازن الوسوم والبنية مع تقارير أخطاء فورية.",
+  "tool.html-formatter.name": "منسق HTML",
+  "tool.html-formatter.tagline": "تنسيق وضغط HTML مع تداخل صحيح وإزاحة قابلة للضبط.",
+  "tool.html-formatter.pageDescription": "تنسيق وضغط HTML مع تداخل صحيح وإزاحة قابلة للضبط.",
+  "tool.sql-formatter.name": "منسق SQL",
+  "tool.sql-formatter.tagline":
+    "تنسيق وضغط استعلامات SQL مع تحويل الكلمات المفتاحية لأحرف كبيرة وإزاحة قابلة للضبط.",
+  "tool.sql-formatter.pageDescription":
+    "تنسيق وضغط استعلامات SQL مع تحويل الكلمات المفتاحية لأحرف كبيرة وإزاحة قابلة للضبط.",
+  "tool.yaml-formatter.name": "منسق YAML",
+  "tool.yaml-formatter.tagline": "تنسيق وتوحيد YAML مع إزاحة قابلة للضبط والتحقق من الصحة.",
+  "tool.yaml-formatter.pageDescription": "تنسيق وتوحيد YAML مع إزاحة قابلة للضبط والتحقق من الصحة.",
+  "tool.markdown-table-generator.name": "مولد جداول Markdown",
+  "tool.markdown-table-generator.tagline":
+    "إنشاء جداول Markdown بصرياً وتصديرها بصيغة الأنابيب جاهزة للصق.",
+  "tool.markdown-table-generator.pageDescription":
+    "إنشاء جداول Markdown بصرياً وتصديرها بصيغة الأنابيب جاهزة للصق.",
+  "tool.cron-parser.name": "محلل Cron",
+  "tool.cron-parser.tagline":
+    "ترجمة تعبيرات Cron إلى لغة واضحة مع تفصيل الحقول ومواعيد التشغيل القادمة.",
+  "tool.cron-parser.pageDescription":
+    "ترجمة تعبيرات Cron إلى لغة واضحة مع تفصيل الحقول ومواعيد التشغيل القادمة.",
+  "tool.css-gradient-generator.name": "مولد تدرجات CSS",
+  "tool.css-gradient-generator.tagline":
+    "تصميم تدرجات CSS الخطية والشعاعية والمخروطية بصرياً مع نقاط الألوان والزاوية.",
+  "tool.css-gradient-generator.pageDescription":
+    "تصميم تدرجات CSS الخطية والشعاعية والمخروطية بصرياً مع نقاط الألوان والزاوية.",
+  "tool.random-name.name": "منتقي الأسماء العشوائي",
+  "tool.random-name.tagline": "اختيار اسم أو أكثر عشوائياً من قائمة مخصصة مع خيار عدم التكرار.",
+  "tool.random-name.pageDescription":
+    "اختيار اسم أو أكثر عشوائياً من قائمة مخصصة مع خيار عدم التكرار.",
+  "tool.qr-reader.name": "قارئ QR",
+  "tool.qr-reader.tagline":
+    "مسح وفك رموز QR من الصور المرفوعة أو الكاميرا وتحويلها إلى نص أو روابط.",
+  "tool.qr-reader.pageDescription":
+    "مسح وفك رموز QR من الصور المرفوعة أو الكاميرا وتحويلها إلى نص أو روابط.",
+  "tool.password-checker.name": "مدقق كلمات المرور",
+  "tool.password-checker.tagline":
+    "فحص قوة كلمة المرور والإنتروبي ووقت التخمين المقدر مع نصائح عملية.",
+  "tool.password-checker.pageDescription":
+    "فحص قوة كلمة المرور والإنتروبي ووقت التخمين المقدر مع نصائح عملية.",
+  "tool.csv-viewer.name": "عارض CSV",
+  "tool.csv-viewer.tagline": "معاينة بيانات CSV كجدول مع اختيار الفاصل واكتشاف صف العناوين.",
+  "tool.csv-viewer.pageDescription":
+    "معاينة بيانات CSV كجدول مع اختيار الفاصل واكتشاف صف العناوين.",
 };

@@ -92,6 +92,9 @@ export const en = {
   "category.utilities.name": "Utilities",
   "category.utilities.blurb": "Format, convert and generate everyday technical snippets.",
   "category.utilities.tools": "JSON Formatter · QR Generator · Base64 Converter",
+  "category.developer.name": "Developer Tools",
+  "category.developer.blurb": "Formatters, validators and generators for day-to-day coding.",
+  "category.developer.tools": "JSON Formatter · XML Validator · Cron Parser",
 
   "tool.translator.name": "AI Translator",
   "tool.translator.tagline":
@@ -361,6 +364,105 @@ export const en = {
   "tool.grammar-checker.tagline": "Fix spelling, punctuation, and grammatical errors instantly.",
   "tool.grammar-checker.pageDescription":
     "Fix spelling, punctuation, and grammatical errors instantly.",
+  "tool.remove-duplicate-lines.name": "Remove Duplicate Lines",
+  "tool.remove-duplicate-lines.tagline":
+    "Remove duplicate lines from any text with case-insensitive and whitespace-aware matching.",
+  "tool.remove-duplicate-lines.pageDescription":
+    "Remove duplicate lines from any text with case-insensitive and whitespace-aware matching.",
+  "tool.remove-empty-lines.name": "Remove Empty Lines",
+  "tool.remove-empty-lines.tagline":
+    "Strip blank and whitespace-only lines from any text instantly.",
+  "tool.remove-empty-lines.pageDescription":
+    "Strip blank and whitespace-only lines from any text instantly.",
+  "tool.sort-lines.name": "Sort Lines",
+  "tool.sort-lines.tagline":
+    "Sort text lines alphabetically, by length, or shuffle them with case and blank options.",
+  "tool.sort-lines.pageDescription":
+    "Sort text lines alphabetically, by length, or shuffle them with case and blank options.",
+  "tool.reverse-text.name": "Reverse Text",
+  "tool.reverse-text.tagline": "Reverse text by characters, words, or entire lines instantly.",
+  "tool.reverse-text.pageDescription":
+    "Reverse text by characters, words, or entire lines instantly.",
+  "tool.add-line-numbers.name": "Add Line Numbers",
+  "tool.add-line-numbers.tagline":
+    "Add sequential line numbers to any text with custom separators, padding, and start offset.",
+  "tool.add-line-numbers.pageDescription":
+    "Add sequential line numbers to any text with custom separators, padding, and start offset.",
+  "tool.word-frequency.name": "Word Frequency Analyzer",
+  "tool.word-frequency.tagline":
+    "Analyze word frequency in any text with sorting, case sensitivity, and length filters.",
+  "tool.word-frequency.pageDescription":
+    "Analyze word frequency in any text with sorting, case sensitivity, and length filters.",
+  "tool.text-compare.name": "Text Compare",
+  "tool.text-compare.tagline":
+    "Compare two texts line by line and highlight additions, removals, and matches.",
+  "tool.text-compare.pageDescription":
+    "Compare two texts line by line and highlight additions, removals, and matches.",
+  "tool.find-and-replace.name": "Find and Replace",
+  "tool.find-and-replace.tagline":
+    "Find and replace text across long documents with optional regex and case-sensitive matching.",
+  "tool.find-and-replace.pageDescription":
+    "Find and replace text across long documents with optional regex and case-sensitive matching.",
+  "tool.xml-formatter.name": "XML Formatter",
+  "tool.xml-formatter.tagline":
+    "Beautify, minify, and validate XML with custom indentation options.",
+  "tool.xml-formatter.pageDescription":
+    "Beautify, minify, and validate XML with custom indentation options.",
+  "tool.xml-validator.name": "XML Validator",
+  "tool.xml-validator.tagline":
+    "Validate XML well-formedness, tag balance, and structure with instant error reporting.",
+  "tool.xml-validator.pageDescription":
+    "Validate XML well-formedness, tag balance, and structure with instant error reporting.",
+  "tool.html-formatter.name": "HTML Formatter",
+  "tool.html-formatter.tagline":
+    "Beautify and minify HTML with proper nesting and configurable indentation.",
+  "tool.html-formatter.pageDescription":
+    "Beautify and minify HTML with proper nesting and configurable indentation.",
+  "tool.sql-formatter.name": "SQL Formatter",
+  "tool.sql-formatter.tagline":
+    "Beautify and minify SQL queries with keyword uppercasing and configurable indentation.",
+  "tool.sql-formatter.pageDescription":
+    "Beautify and minify SQL queries with keyword uppercasing and configurable indentation.",
+  "tool.yaml-formatter.name": "YAML Formatter",
+  "tool.yaml-formatter.tagline":
+    "Beautify and normalize YAML with configurable indentation and validation.",
+  "tool.yaml-formatter.pageDescription":
+    "Beautify and normalize YAML with configurable indentation and validation.",
+  "tool.markdown-table-generator.name": "Markdown Table Generator",
+  "tool.markdown-table-generator.tagline":
+    "Build Markdown tables visually and export ready-to-paste pipe-formatted output.",
+  "tool.markdown-table-generator.pageDescription":
+    "Build Markdown tables visually and export ready-to-paste pipe-formatted output.",
+  "tool.cron-parser.name": "Cron Parser",
+  "tool.cron-parser.tagline":
+    "Translate cron expressions into plain language with field breakdowns and upcoming runs.",
+  "tool.cron-parser.pageDescription":
+    "Translate cron expressions into plain language with field breakdowns and upcoming runs.",
+  "tool.css-gradient-generator.name": "CSS Gradient Generator",
+  "tool.css-gradient-generator.tagline":
+    "Design linear, radial, and conic CSS gradients visually with color stops and angle controls.",
+  "tool.css-gradient-generator.pageDescription":
+    "Design linear, radial, and conic CSS gradients visually with color stops and angle controls.",
+  "tool.random-name.name": "Random Name Picker",
+  "tool.random-name.tagline":
+    "Pick one or more random names from a custom list with optional duplicate-free selection.",
+  "tool.random-name.pageDescription":
+    "Pick one or more random names from a custom list with optional duplicate-free selection.",
+  "tool.qr-reader.name": "QR Reader",
+  "tool.qr-reader.tagline":
+    "Scan and decode QR codes from uploaded images or your camera into text or links.",
+  "tool.qr-reader.pageDescription":
+    "Scan and decode QR codes from uploaded images or your camera into text or links.",
+  "tool.password-checker.name": "Password Checker",
+  "tool.password-checker.tagline":
+    "Check password strength, entropy, and estimated crack time with actionable tips.",
+  "tool.password-checker.pageDescription":
+    "Check password strength, entropy, and estimated crack time with actionable tips.",
+  "tool.csv-viewer.name": "CSV Viewer",
+  "tool.csv-viewer.tagline":
+    "Preview CSV data as a table with delimiter selection and header detection.",
+  "tool.csv-viewer.pageDescription":
+    "Preview CSV data as a table with delimiter selection and header detection.",
 } as const;
 
 export type TranslationKey = keyof typeof en;

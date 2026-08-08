@@ -3118,6 +3118,911 @@ const toolSeoRegistry: Record<string, ToolSeoData> = {
       { question: "Is this tool free?", answer: "Yes, completely free with no file size limits." },
     ],
   },
+  "remove-duplicate-lines": {
+    slug: "remove-duplicate-lines",
+    title: "Remove Duplicate Lines — Dedupe Text Online | Flixo",
+    description:
+      "Remove duplicate lines from any text instantly with case-insensitive and whitespace-aware matching. Free, private, browser-based line deduper.",
+    keywords: [
+      "remove duplicate lines",
+      "dedupe lines",
+      "unique lines",
+      "delete duplicate text",
+      "flixo deduper",
+    ],
+    overview:
+      "Flixo Remove Duplicate Lines cleans up lists, logs, and text by removing repeated lines while preserving order. Toggle case sensitivity and whitespace handling to match your data precisely.",
+    features: [
+      "Case-sensitive or insensitive matching",
+      "Optional leading/trailing whitespace trimming",
+      "Preserves original line order",
+      "Removal count summary",
+      "Copy and download unique output",
+    ],
+    howToUse: [
+      "Paste your text into the input area.",
+      "Choose case-sensitivity and whitespace options.",
+      "Click Remove Duplicates.",
+      "Copy or download the unique lines.",
+    ],
+    benefits: [
+      "Cleans messy lists and exports in seconds",
+      "No sign-up or upload to a server",
+      "Works offline entirely in your browser",
+    ],
+    examples: [
+      "Dedupe a mailing list exported from a CRM.",
+      "Clean a log file before analysis.",
+      "Remove repeated entries from a brainstormed list.",
+    ],
+    faqs: [
+      {
+        question: "Does it keep the first occurrence of each line?",
+        answer:
+          "Yes, the first occurrence is preserved and later duplicates are removed, keeping original order.",
+      },
+      {
+        question: "Can I ignore case when removing duplicates?",
+        answer:
+          "Yes, toggle the Case-sensitive option off to treat lines regardless of capitalization.",
+      },
+    ],
+  },
+  "remove-empty-lines": {
+    slug: "remove-empty-lines",
+    title: "Remove Empty Lines — Strip Blank Lines Online | Flixo",
+    description:
+      "Remove blank and whitespace-only lines from any text instantly. Free, private, browser-based empty line remover.",
+    keywords: [
+      "remove empty lines",
+      "delete blank lines",
+      "strip empty lines",
+      "remove whitespace lines",
+      "flixo",
+    ],
+    overview:
+      "Flixo Remove Empty Lines strips blank and whitespace-only lines from text so your content stays compact and readable. Optionally trim lines that contain only spaces.",
+    features: [
+      "Removes all empty lines",
+      "Optional whitespace-only line trimming",
+      "Reports removed line count",
+      "Copy and download cleaned output",
+    ],
+    howToUse: [
+      "Paste text containing blank lines.",
+      "Toggle whitespace-only trimming if needed.",
+      "Click Remove Empty Lines.",
+      "Copy or download the result.",
+    ],
+    benefits: [
+      "Tightens up copied text and code snippets",
+      "No registration required",
+      "100% client-side processing",
+    ],
+    examples: [
+      "Clean up text copied from a PDF.",
+      "Compact a config file before committing.",
+      "Prepare content for a single-paragraph paste.",
+    ],
+    faqs: [
+      {
+        question: "What counts as an empty line?",
+        answer:
+          "Any line with no characters. Enable whitespace trimming to also remove lines that contain only spaces or tabs.",
+      },
+      {
+        question: "Is this tool free?",
+        answer: "Yes, completely free with no usage limits.",
+      },
+    ],
+  },
+  "sort-lines": {
+    slug: "sort-lines",
+    title: "Sort Lines — Alphabetical & Custom Line Sorter | Flixo",
+    description:
+      "Sort text lines alphabetically, by length, or shuffle them randomly. Case-sensitive and blank-line options included. Free online line sorter.",
+    keywords: [
+      "sort lines",
+      "alphabetical sort",
+      "sort text lines",
+      "shuffle lines",
+      "line sorter online",
+    ],
+    overview:
+      "Flixo Sort Lines reorders lines of text by alphabetical order (A-Z or Z-A), by length (shortest or longest first), or shuffles them randomly, with case sensitivity and blank-line controls.",
+    features: [
+      "A-Z and Z-A alphabetical sorting",
+      "Sort by line length (shortest or longest first)",
+      "Random shuffle mode",
+      "Case-sensitive toggle",
+      "Optional blank-line skipping",
+    ],
+    howToUse: [
+      "Paste your list of lines.",
+      "Choose a sort mode.",
+      "Adjust case and blank-line options.",
+      "Click Sort Lines and copy the result.",
+    ],
+    benefits: [
+      "Organize lists and data quickly",
+      "No upload or account needed",
+      "Instant client-side sorting",
+    ],
+    examples: [
+      "Sort a list of names alphabetically.",
+      "Shuffle raffle entries randomly.",
+      "Order todo items by length.",
+    ],
+    faqs: [
+      {
+        question: "Can I shuffle lines randomly?",
+        answer: "Yes, select the Shuffle mode to randomize line order.",
+      },
+      {
+        question: "Are blank lines included in the sort?",
+        answer:
+          "By default blank lines are skipped. Disable the Skip blanks option to include them.",
+      },
+    ],
+  },
+  "reverse-text": {
+    slug: "reverse-text",
+    title: "Reverse Text — Flip Characters, Words & Lines | Flixo",
+    description:
+      "Reverse text by characters, words, or entire lines instantly. Free, private, browser-based text reverser.",
+    keywords: [
+      "reverse text",
+      "flip text",
+      "reverse characters",
+      "reverse words",
+      "text backwards",
+    ],
+    overview:
+      "Flixo Reverse Text flips your content by characters, words, or lines. Useful for puzzles, data transformation, and testing layout under reversed content.",
+    features: [
+      "Reverse by characters",
+      "Reverse by words",
+      "Reverse by lines",
+      "Copy and download reversed output",
+    ],
+    howToUse: [
+      "Paste the text to reverse.",
+      "Pick a reversal mode.",
+      "Click Reverse Text.",
+      "Copy or download the result.",
+    ],
+    benefits: ["Instant transformation", "No sign-up required", "Runs entirely in your browser"],
+    examples: [
+      "Reverse a string for a coding puzzle.",
+      "Flip word order in a sentence.",
+      "Reverse line order of a transcript.",
+    ],
+    faqs: [
+      {
+        question: "Does reversing preserve Unicode characters?",
+        answer:
+          "Yes, character reversal uses grapheme-safe splitting so emojis and combined characters stay intact.",
+      },
+      {
+        question: "Is this tool free?",
+        answer: "Yes, completely free with no limits.",
+      },
+    ],
+  },
+  "add-line-numbers": {
+    slug: "add-line-numbers",
+    title: "Add Line Numbers — Number Text Lines Online | Flixo",
+    description:
+      "Add sequential line numbers to any text with custom separators, padding, and start offset. Free online line numbering tool.",
+    keywords: [
+      "add line numbers",
+      "number lines",
+      "enumerate lines",
+      "line number prefix",
+      "flixo",
+    ],
+    overview:
+      "Flixo Add Line Numbers prefixes each line with a sequential number, customizable separator, optional zero-padding, and a configurable start offset.",
+    features: [
+      "Custom separators (., ), :, |)",
+      "Start at 0 or 1",
+      "Optional number padding",
+      "Copy and download numbered output",
+    ],
+    howToUse: [
+      "Paste your text.",
+      "Choose a separator and start value.",
+      "Toggle padding.",
+      "Click Add Line Numbers.",
+    ],
+    benefits: [
+      "Great for documentation and references",
+      "No upload or registration",
+      "Instant client-side numbering",
+    ],
+    examples: [
+      "Number lines of a poem for citation.",
+      "Prepare a log excerpt with line references.",
+      "Enumerate steps in a procedure.",
+    ],
+    faqs: [
+      {
+        question: "Can I start numbering from zero?",
+        answer: "Yes, use the Start at 0 option.",
+      },
+      {
+        question: "Does padding align numbers?",
+        answer: "Yes, enable Pad numbers to right-align numbers based on the largest line count.",
+      },
+    ],
+  },
+  "word-frequency": {
+    slug: "word-frequency",
+    title: "Word Frequency Analyzer — Count Word Occurrences | Flixo",
+    description:
+      "Analyze word frequency in any text with sorting, case sensitivity, and minimum length filters. Free online word frequency counter.",
+    keywords: [
+      "word frequency",
+      "word count analyzer",
+      "text frequency",
+      "word occurrence counter",
+      "flixo",
+    ],
+    overview:
+      "Flixo Word Frequency Analyzer counts how often each word appears in your text, with sorting by frequency or alphabetically, case sensitivity, and a minimum word length filter.",
+    features: [
+      "Frequency and alphabetical sorting",
+      "Case-sensitive toggle",
+      "Minimum word length filter",
+      "Visual frequency bars",
+      "Copy and download results",
+    ],
+    howToUse: [
+      "Paste your text.",
+      "Set case sensitivity and minimum length.",
+      "Choose a sort order.",
+      "Review the frequency list.",
+    ],
+    benefits: [
+      "Surface top terms in any document",
+      "No upload or account needed",
+      "Instant client-side analysis",
+    ],
+    examples: [
+      "Find the most common words in an essay.",
+      "Analyze keyword density in marketing copy.",
+      "Review repetition in a speech.",
+    ],
+    faqs: [
+      {
+        question: "Does it support Arabic text?",
+        answer:
+          "Yes, the tokenizer includes Arabic character ranges so Arabic words are counted correctly.",
+      },
+      {
+        question: "Can I filter out short words?",
+        answer: "Yes, set a minimum length to exclude words shorter than the threshold.",
+      },
+    ],
+  },
+  "text-compare": {
+    slug: "text-compare",
+    title: "Text Compare — Diff Two Texts Line by Line | Flixo",
+    description:
+      "Compare two text blocks line by line and highlight additions, removals, and matches. Free online text diff tool with ignore case and whitespace options.",
+    keywords: ["text compare", "text diff", "compare two texts", "line by line diff", "flixo diff"],
+    overview:
+      "Flixo Text Compare performs a line-by-line diff between two text blocks, highlighting added and removed lines with line numbers, plus ignore case and whitespace options.",
+    features: [
+      "Line-by-line LCS diff algorithm",
+      "Added and removed line highlighting",
+      "Ignore case and whitespace options",
+      "Line numbers for both sides",
+      "Copy and download unified diff",
+    ],
+    howToUse: [
+      "Paste the original text on the left.",
+      "Paste the modified text on the right.",
+      "Set ignore options.",
+      "Click Compare Texts.",
+    ],
+    benefits: [
+      "Spot edits between document versions quickly",
+      "No upload or account needed",
+      "Instant client-side diffing",
+    ],
+    examples: [
+      "Compare two drafts of an article.",
+      "Diff configuration file changes.",
+      "Review edits in a contract.",
+    ],
+    faqs: [
+      {
+        question: "How does the comparison work?",
+        answer:
+          "It uses a longest-common-subsequence algorithm to align matching lines and mark additions and removals.",
+      },
+      {
+        question: "Can I ignore whitespace differences?",
+        answer: "Yes, enable Ignore whitespace to normalize lines before comparing.",
+      },
+    ],
+  },
+  "find-and-replace": {
+    slug: "find-and-replace",
+    title: "Find and Replace — Search & Replace Text Online | Flixo",
+    description:
+      "Find and replace text across long documents with optional regex and case-sensitive matching. Free, private, browser-based find and replace tool.",
+    keywords: ["find and replace", "replace text", "search and replace", "regex replace", "flixo"],
+    overview:
+      "Flixo Find and Replace searches for text or regex patterns across long documents and replaces all matches instantly, with case-sensitive and regex options and a replacement count.",
+    features: [
+      "Plain text or regex search",
+      "Case-sensitive toggle",
+      "Global replacement count",
+      "Invalid regex error reporting",
+      "Copy and download result",
+    ],
+    howToUse: [
+      "Paste your text.",
+      "Enter the text or pattern to find.",
+      "Enter the replacement.",
+      "Toggle regex and case options.",
+      "Click Replace All.",
+    ],
+    benefits: [
+      "Bulk edits in seconds",
+      "No upload or registration",
+      "Instant client-side processing",
+    ],
+    examples: [
+      "Rename a term across a document.",
+      "Normalize date formats with regex.",
+      "Strip unwanted characters.",
+    ],
+    faqs: [
+      {
+        question: "Can I use regular expressions?",
+        answer:
+          "Yes, enable the Use regex option to search with JavaScript regex syntax, including capture groups in the replacement.",
+      },
+      {
+        question: "Is my text uploaded?",
+        answer: "No, all processing happens locally in your browser.",
+      },
+    ],
+  },
+  "xml-formatter": {
+    slug: "xml-formatter",
+    title: "XML Formatter — Beautify & Minify XML Online | Flixo",
+    description:
+      "Beautify, minify, and validate XML with custom indentation options. Free, private, browser-based XML formatter.",
+    keywords: ["xml formatter", "beautify xml", "minify xml", "xml prettifier", "flixo xml"],
+    overview:
+      "Flixo XML Formatter beautifies and minifies XML documents with configurable indentation while validating well-formedness and reporting errors instantly.",
+    features: [
+      "Beautify and minify XML",
+      "2-space, 4-space, or tab indentation",
+      "Built-in validation and error reporting",
+      "Copy and download formatted output",
+    ],
+    howToUse: [
+      "Paste your XML.",
+      "Choose an indentation.",
+      "Click Beautify XML or Minify XML.",
+      "Copy or download the result.",
+    ],
+    benefits: [
+      "Readable XML in one click",
+      "No upload or registration",
+      "Instant client-side formatting",
+    ],
+    examples: [
+      "Pretty-print an API response.",
+      "Minify a config before deployment.",
+      "Validate an XML feed.",
+    ],
+    faqs: [
+      {
+        question: "Does it validate XML?",
+        answer:
+          "Yes, the formatter checks tag balance and uses the browser XML parser to report well-formedness errors.",
+      },
+      {
+        question: "Is this tool free?",
+        answer: "Yes, completely free with no limits.",
+      },
+    ],
+  },
+  "xml-validator": {
+    slug: "xml-validator",
+    title: "XML Validator — Check XML Well-Formedness Online | Flixo",
+    description:
+      "Validate XML well-formedness, tag balance, and structure with instant error reporting. Free online XML validator.",
+    keywords: ["xml validator", "validate xml", "xml checker", "well-formed xml", "flixo"],
+    overview:
+      "Flixo XML Validator checks whether your XML is well-formed, verifies tag balance, and reports structural details like the root element and child count.",
+    features: [
+      "Well-formedness validation",
+      "Tag balance checking",
+      "Root element and child count details",
+      "Clear error messages",
+    ],
+    howToUse: ["Paste your XML.", "Click Validate XML.", "Review the result and details."],
+    benefits: [
+      "Catch XML errors before deployment",
+      "No upload or account needed",
+      "Instant client-side validation",
+    ],
+    examples: [
+      "Validate an RSS feed.",
+      "Check a SOAP request payload.",
+      "Inspect an unknown XML file.",
+    ],
+    faqs: [
+      {
+        question: "Does it validate against an XSD schema?",
+        answer: "It validates well-formedness and structure, not schema (XSD) compliance.",
+      },
+      {
+        question: "Is this tool free?",
+        answer: "Yes, completely free with no limits.",
+      },
+    ],
+  },
+  "html-formatter": {
+    slug: "html-formatter",
+    title: "HTML Formatter — Beautify & Minify HTML Online | Flixo",
+    description:
+      "Beautify and minify HTML with proper nesting and configurable indentation. Free, private, browser-based HTML formatter.",
+    keywords: ["html formatter", "beautify html", "minify html", "html prettifier", "flixo html"],
+    overview:
+      "Flixo HTML Formatter beautifies and minifies HTML using the browser DOM parser to produce properly nested, readable markup with configurable indentation.",
+    features: [
+      "Beautify and minify HTML",
+      "2-space, 4-space, or tab indentation",
+      "Proper inline and void tag handling",
+      "Copy and download formatted output",
+    ],
+    howToUse: [
+      "Paste your HTML.",
+      "Choose an indentation.",
+      "Click Beautify HTML or Minify HTML.",
+      "Copy or download the result.",
+    ],
+    benefits: [
+      "Readable HTML in one click",
+      "No upload or registration",
+      "Instant client-side formatting",
+    ],
+    examples: [
+      "Pretty-print a template snippet.",
+      "Minify markup before publishing.",
+      "Tidy copied HTML.",
+    ],
+    faqs: [
+      {
+        question: "Does it fix broken HTML?",
+        answer:
+          "It parses with the browser HTML parser, which is fault-tolerant, and outputs the normalized structure.",
+      },
+      {
+        question: "Is this tool free?",
+        answer: "Yes, completely free with no limits.",
+      },
+    ],
+  },
+  "sql-formatter": {
+    slug: "sql-formatter",
+    title: "SQL Formatter — Beautify & Minify SQL Online | Flixo",
+    description:
+      "Beautify and minify SQL queries with keyword uppercasing and configurable indentation. Free online SQL formatter.",
+    keywords: ["sql formatter", "beautify sql", "minify sql", "sql prettifier", "flixo sql"],
+    overview:
+      "Flixo SQL Formatter beautifies and minifies SQL queries, uppercases keywords optionally, and supports configurable indentation for readable database code.",
+    features: [
+      "Beautify and minify SQL",
+      "Optional keyword uppercasing",
+      "2-space, 4-space, or tab indentation",
+      "Copy and download formatted output",
+    ],
+    howToUse: [
+      "Paste your SQL query.",
+      "Choose indentation and keyword casing.",
+      "Click Beautify SQL or Minify SQL.",
+      "Copy or download the result.",
+    ],
+    benefits: [
+      "Readable SQL in one click",
+      "No upload or registration",
+      "Instant client-side formatting",
+    ],
+    examples: [
+      "Format a complex JOIN query.",
+      "Minify SQL before embedding.",
+      "Standardize keyword casing.",
+    ],
+    faqs: [
+      {
+        question: "Which SQL dialects are supported?",
+        answer:
+          "It handles standard SQL keywords common across MySQL, PostgreSQL, SQLite, and SQL Server.",
+      },
+      {
+        question: "Is this tool free?",
+        answer: "Yes, completely free with no limits.",
+      },
+    ],
+  },
+  "yaml-formatter": {
+    slug: "yaml-formatter",
+    title: "YAML Formatter — Beautify YAML Online | Flixo",
+    description:
+      "Beautify and normalize YAML with configurable indentation and validation. Free, private, browser-based YAML formatter.",
+    keywords: [
+      "yaml formatter",
+      "beautify yaml",
+      "yaml prettifier",
+      "format yaml online",
+      "flixo yaml",
+    ],
+    overview:
+      "Flixo YAML Formatter parses and re-serializes YAML with configurable 2 or 4 space indentation, normalizing structure and surfacing syntax errors.",
+    features: [
+      "Beautify and normalize YAML",
+      "2-space or 4-space indentation",
+      "Inline validation and error reporting",
+      "Copy and download formatted output",
+    ],
+    howToUse: [
+      "Paste your YAML.",
+      "Choose an indentation.",
+      "Click Beautify YAML.",
+      "Copy or download the result.",
+    ],
+    benefits: [
+      "Consistent YAML in one click",
+      "No upload or registration",
+      "Instant client-side formatting",
+    ],
+    examples: [
+      "Tidy a Docker Compose file.",
+      "Normalize a CI config.",
+      "Format a Kubernetes manifest.",
+    ],
+    faqs: [
+      {
+        question: "Does it support nested mappings and sequences?",
+        answer:
+          "Yes, nested maps, sequences, and common scalar types (strings, numbers, booleans, null) are handled.",
+      },
+      {
+        question: "Is this tool free?",
+        answer: "Yes, completely free with no limits.",
+      },
+    ],
+  },
+  "markdown-table-generator": {
+    slug: "markdown-table-generator",
+    title: "Markdown Table Generator — Build MD Tables Online | Flixo",
+    description:
+      "Build Markdown tables visually and export ready-to-paste pipe-formatted output. Free online Markdown table generator.",
+    keywords: [
+      "markdown table generator",
+      "md table",
+      "markdown table maker",
+      "pipe table",
+      "flixo markdown",
+    ],
+    overview:
+      "Flixo Markdown Table Generator lets you build tables with an interactive editor and exports valid pipe-delimited Markdown ready to paste into docs.",
+    features: [
+      "Visual row and column editing",
+      "Add and remove rows or columns",
+      "Pipe-escaping for cell content",
+      "Copy and download .md output",
+    ],
+    howToUse: [
+      "Edit headers and cells in the table.",
+      "Add rows or columns as needed.",
+      "Copy or download the generated Markdown.",
+    ],
+    benefits: ["No manual pipe alignment", "No sign-up required", "Instant client-side generation"],
+    examples: [
+      "Create a feature comparison table.",
+      "Document a data dictionary.",
+      "Build a release notes table.",
+    ],
+    faqs: [
+      {
+        question: "Are pipes in cell content escaped?",
+        answer: "Yes, pipe characters inside cells are escaped so the table renders correctly.",
+      },
+      {
+        question: "Is this tool free?",
+        answer: "Yes, completely free with no limits.",
+      },
+    ],
+  },
+  "cron-parser": {
+    slug: "cron-parser",
+    title: "Cron Parser — Explain Cron Expressions Online | Flixo",
+    description:
+      "Translate cron expressions into plain language with field breakdowns and upcoming run times. Free online cron parser.",
+    keywords: [
+      "cron parser",
+      "cron expression explainer",
+      "crontab guru",
+      "cron schedule",
+      "flixo cron",
+    ],
+    overview:
+      "Flixo Cron Parser converts a 5-field cron expression into a human-readable summary, breaks down each field, and lists the next scheduled run times.",
+    features: [
+      "Human-readable summary",
+      "Per-field breakdown",
+      "Next 5 run times",
+      "Step, range, and list support",
+      "One-click examples",
+    ],
+    howToUse: [
+      "Enter a cron expression.",
+      "Click Parse Cron (or pick an example).",
+      "Review the summary, fields, and upcoming runs.",
+    ],
+    benefits: [
+      "Understand cron schedules instantly",
+      "No upload or account needed",
+      "Instant client-side parsing",
+    ],
+    examples: [
+      "Verify a scheduled job interval.",
+      "Explain a teammate's crontab entry.",
+      "Find the next run time of a task.",
+    ],
+    faqs: [
+      {
+        question: "Which cron format is supported?",
+        answer:
+          "Standard 5-field cron: minute hour day-of-month month day-of-week, with *, steps, ranges, and lists.",
+      },
+      {
+        question: "Are the next run times accurate?",
+        answer:
+          "Yes, they are computed by simulating forward minute-by-minute from the current time, respecting all fields.",
+      },
+    ],
+  },
+  "css-gradient-generator": {
+    slug: "css-gradient-generator",
+    title: "CSS Gradient Generator — Linear, Radial & Conic | Flixo",
+    description:
+      "Design linear, radial, and conic CSS gradients visually with color stops, angle, and shape controls. Free online CSS gradient generator.",
+    keywords: [
+      "css gradient generator",
+      "linear gradient",
+      "radial gradient",
+      "conic gradient",
+      "flixo gradient",
+    ],
+    overview:
+      "Flixo CSS Gradient Generator lets you design linear, radial, and conic gradients visually with adjustable color stops, angle, and shape, exporting ready-to-paste CSS.",
+    features: [
+      "Linear, radial, and conic gradients",
+      "Multiple color stops with pickers",
+      "Angle slider and shape selector",
+      "Live preview",
+      "Copy CSS and download .css",
+    ],
+    howToUse: [
+      "Choose a gradient type.",
+      "Add or edit color stops.",
+      "Adjust angle or shape.",
+      "Copy or download the CSS.",
+    ],
+    benefits: [
+      "Visual design without memorizing syntax",
+      "No sign-up required",
+      "Instant client-side preview",
+    ],
+    examples: [
+      "Design a hero section background.",
+      "Create a button hover gradient.",
+      "Build a brand color transition.",
+    ],
+    faqs: [
+      {
+        question: "How many color stops can I use?",
+        answer:
+          "As many as you like - add stops with the Add stop button and remove any beyond the minimum of two.",
+      },
+      {
+        question: "Is this tool free?",
+        answer: "Yes, completely free with no limits.",
+      },
+    ],
+  },
+  "random-name": {
+    slug: "random-name",
+    title: "Random Name Picker — Pick Random Names Online | Flixo",
+    description:
+      "Pick one or more random names from a custom list with optional duplicate-free selection. Free online random name picker.",
+    keywords: [
+      "random name picker",
+      "pick random name",
+      "name picker",
+      "random winner picker",
+      "flixo",
+    ],
+    overview:
+      "Flixo Random Name Picker selects one or more names at random from a list you provide, with an option to avoid duplicate picks - perfect for draws and decisions.",
+    features: [
+      "Pick one or multiple names",
+      "Duplicate-free option",
+      "Custom list input",
+      "Copy results",
+    ],
+    howToUse: [
+      "Enter one name per line.",
+      "Set how many to pick.",
+      "Toggle no-duplicates.",
+      "Click Pick Random.",
+    ],
+    benefits: [
+      "Fair random draws in seconds",
+      "No upload or registration",
+      "Instant client-side selection",
+    ],
+    examples: [
+      "Pick a raffle winner.",
+      "Choose a random presenter.",
+      "Assign tasks randomly to a team.",
+    ],
+    faqs: [
+      {
+        question: "Can I pick more than one name?",
+        answer: "Yes, set the count to pick multiple names at once, optionally without duplicates.",
+      },
+      {
+        question: "Is the selection truly random?",
+        answer:
+          "It uses the browser's built-in pseudo-random number generator, suitable for everyday draws.",
+      },
+    ],
+  },
+  "qr-reader": {
+    slug: "qr-reader",
+    title: "QR Reader — Scan & Decode QR Codes Online | Flixo",
+    description:
+      "Scan and decode QR codes from uploaded images or your camera into text or links. Free, private, browser-based QR code reader.",
+    keywords: ["qr reader", "qr code scanner", "decode qr", "read qr from image", "flixo qr"],
+    overview:
+      "Flixo QR Reader decodes QR codes from uploaded images or your device camera using the native BarcodeDetector API, returning the embedded text or link instantly.",
+    features: [
+      "Upload image or use camera",
+      "Native BarcodeDetector API",
+      "Supports multiple barcode formats",
+      "Open detected links directly",
+      "Copy decoded text",
+    ],
+    howToUse: [
+      "Upload a QR image or start your camera.",
+      "Capture or let the scanner read the code.",
+      "Copy the decoded text or open the link.",
+    ],
+    benefits: [
+      "No upload to a server",
+      "Works with images and live camera",
+      "Free with no sign-up",
+    ],
+    examples: [
+      "Read a QR code from a printed poster.",
+      "Decode a Wi-Fi QR code.",
+      "Scan a restaurant menu code.",
+    ],
+    faqs: [
+      {
+        question: "Does it work without a camera?",
+        answer: "Yes, you can upload an image of a QR code and it will be decoded locally.",
+      },
+      {
+        question: "Which browsers support camera scanning?",
+        answer:
+          "Live camera scanning works best in Chrome and Edge. Other browsers can use image upload.",
+      },
+    ],
+  },
+  "password-checker": {
+    slug: "password-checker",
+    title: "Password Checker — Test Password Strength Online | Flixo",
+    description:
+      "Check password strength, entropy, and estimated crack time with actionable improvement tips. Free online password strength checker.",
+    keywords: [
+      "password checker",
+      "password strength",
+      "password entropy",
+      "how strong is my password",
+      "flixo",
+    ],
+    overview:
+      "Flixo Password Checker evaluates password strength using entropy estimation, reports an estimated crack time, and suggests improvements - all processed locally in your browser.",
+    features: [
+      "Entropy and strength score",
+      "Estimated time to crack",
+      "Character and pattern checks",
+      "Actionable improvement suggestions",
+      "Show/hide toggle",
+    ],
+    howToUse: [
+      "Type or paste a password.",
+      "Review the strength score and crack time.",
+      "Follow the suggestions to improve it.",
+    ],
+    benefits: [
+      "Evaluate passwords before use",
+      "Nothing is sent to a server",
+      "Free with no sign-up",
+    ],
+    examples: [
+      "Test a new account password.",
+      "Compare passphrase strength.",
+      "Audit reused passwords.",
+    ],
+    faqs: [
+      {
+        question: "Is my password sent anywhere?",
+        answer:
+          "No. All analysis happens locally in your browser and the password is never transmitted or stored.",
+      },
+      {
+        question: "How is crack time estimated?",
+        answer:
+          "It uses password entropy based on length and character set size, divided by an assumed guess rate.",
+      },
+    ],
+  },
+  "csv-viewer": {
+    slug: "csv-viewer",
+    title: "CSV Viewer — Preview CSV as a Table Online | Flixo",
+    description:
+      "Preview CSV data as a table with delimiter selection and header detection. Upload or paste CSV and view it instantly. Free online CSV viewer.",
+    keywords: ["csv viewer", "csv to table", "csv preview", "view csv online", "flixo csv"],
+    overview:
+      "Flixo CSV Viewer parses pasted or uploaded CSV data into a clean table preview with configurable delimiters, header detection, and RFC-4180 quoted-field support.",
+    features: [
+      "Paste or upload CSV",
+      "Comma, semicolon, tab, or pipe delimiters",
+      "Header row toggle",
+      "Quoted field and escape handling",
+      "Copy and download output",
+    ],
+    howToUse: [
+      "Paste CSV or upload a .csv file.",
+      "Choose a delimiter.",
+      "Toggle header row.",
+      "Review the table preview.",
+    ],
+    benefits: [
+      "Inspect CSV data without spreadsheets",
+      "No upload or registration",
+      "Instant client-side parsing",
+    ],
+    examples: [
+      "Preview an exported dataset.",
+      "Inspect a CSV before importing.",
+      "Switch delimiter for regional files.",
+    ],
+    faqs: [
+      {
+        question: "Does it handle quoted fields with commas?",
+        answer: "Yes, RFC-4180 style quoted fields and escaped quotes are parsed correctly.",
+      },
+      {
+        question: "Is this tool free?",
+        answer: "Yes, completely free with no limits.",
+      },
+    ],
+  },
 };
 
 export function getToolSeo(slug: string): ToolSeoData {

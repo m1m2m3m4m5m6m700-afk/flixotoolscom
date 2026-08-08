@@ -2010,6 +2010,523 @@ const toolContentRegistry: Record<string, Omit<ToolContentData, "slug">> = {
       processingType: "Local",
     },
   },
+  "remove-duplicate-lines": {
+    overview:
+      "Flixo Remove Duplicate Lines cleans up lists, logs, and text by removing repeated lines while preserving original order, with case and whitespace controls.",
+    howItWorks: [
+      "Paste your text into the input area.",
+      "Choose case-sensitivity and whitespace options.",
+      "Click Remove Duplicates to filter repeated lines.",
+      "Copy or download the unique lines.",
+    ],
+    features: getToolSeo("remove-duplicate-lines").features,
+    useCases: [
+      "Dedupe mailing lists exported from a CRM.",
+      "Clean log files before analysis.",
+      "Remove repeated entries from brainstormed lists.",
+    ],
+    examples: getToolSeo("remove-duplicate-lines").examples,
+    faqs: getToolSeo("remove-duplicate-lines").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Text is processed entirely in your browser and never uploaded.",
+      processingType: "Local",
+    },
+  },
+  "remove-empty-lines": {
+    overview:
+      "Flixo Remove Empty Lines strips blank and whitespace-only lines from text so your content stays compact and readable.",
+    howItWorks: [
+      "Paste text containing blank lines.",
+      "Toggle whitespace-only line trimming.",
+      "Click Remove Empty Lines.",
+      "Copy or download the cleaned result.",
+    ],
+    features: getToolSeo("remove-empty-lines").features,
+    useCases: [
+      "Clean up text copied from a PDF.",
+      "Compact config files before committing.",
+      "Prepare content for a single-paragraph paste.",
+    ],
+    examples: getToolSeo("remove-empty-lines").examples,
+    faqs: getToolSeo("remove-empty-lines").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "All processing happens locally; nothing leaves your browser.",
+      processingType: "Local",
+    },
+  },
+  "sort-lines": {
+    overview:
+      "Flixo Sort Lines reorders lines of text alphabetically, by length, or shuffles them randomly, with case and blank-line controls.",
+    howItWorks: [
+      "Paste your list of lines.",
+      "Choose a sort mode (A-Z, Z-A, length, shuffle).",
+      "Adjust case and blank-line options.",
+      "Click Sort Lines and copy the result.",
+    ],
+    features: getToolSeo("sort-lines").features,
+    useCases: [
+      "Sort lists of names alphabetically.",
+      "Shuffle raffle entries randomly.",
+      "Order todo items by length.",
+    ],
+    examples: getToolSeo("sort-lines").examples,
+    faqs: getToolSeo("sort-lines").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Sorting runs entirely in your browser with no data upload.",
+      processingType: "Local",
+    },
+  },
+  "reverse-text": {
+    overview:
+      "Flixo Reverse Text flips content by characters, words, or lines for puzzles, data transformation, and layout testing.",
+    howItWorks: [
+      "Paste the text to reverse.",
+      "Pick a reversal mode (characters, words, lines).",
+      "Click Reverse Text.",
+      "Copy or download the result.",
+    ],
+    features: getToolSeo("reverse-text").features,
+    useCases: [
+      "Reverse a string for a coding puzzle.",
+      "Flip word order in a sentence.",
+      "Reverse line order of a transcript.",
+    ],
+    examples: getToolSeo("reverse-text").examples,
+    faqs: getToolSeo("reverse-text").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Reversal is performed locally; your text is never transmitted.",
+      processingType: "Local",
+    },
+  },
+  "add-line-numbers": {
+    overview:
+      "Flixo Add Line Numbers prefixes each line with a sequential number, custom separator, optional padding, and configurable start offset.",
+    howItWorks: [
+      "Paste your text.",
+      "Choose a separator and start value.",
+      "Toggle number padding.",
+      "Click Add Line Numbers.",
+    ],
+    features: getToolSeo("add-line-numbers").features,
+    useCases: [
+      "Number lines of a poem for citation.",
+      "Prepare a log excerpt with references.",
+      "Enumerate steps in a procedure.",
+    ],
+    examples: getToolSeo("add-line-numbers").examples,
+    faqs: getToolSeo("add-line-numbers").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Numbering happens entirely in your browser.",
+      processingType: "Local",
+    },
+  },
+  "word-frequency": {
+    overview:
+      "Flixo Word Frequency Analyzer counts how often each word appears in text, with sorting, case sensitivity, and a minimum length filter.",
+    howItWorks: [
+      "Paste your text.",
+      "Set case sensitivity and minimum length.",
+      "Choose a sort order.",
+      "Review the frequency list.",
+    ],
+    features: getToolSeo("word-frequency").features,
+    useCases: [
+      "Find the most common words in an essay.",
+      "Analyze keyword density in marketing copy.",
+      "Review repetition in a speech.",
+    ],
+    examples: getToolSeo("word-frequency").examples,
+    faqs: getToolSeo("word-frequency").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Analysis runs locally; your text never leaves the browser.",
+      processingType: "Local",
+    },
+  },
+  "text-compare": {
+    overview:
+      "Flixo Text Compare performs a line-by-line diff between two text blocks, highlighting added and removed lines with line numbers and ignore options.",
+    howItWorks: [
+      "Paste the original text on the left.",
+      "Paste the modified text on the right.",
+      "Set ignore case or whitespace options.",
+      "Click Compare Texts to view the diff.",
+    ],
+    features: getToolSeo("text-compare").features,
+    useCases: [
+      "Compare two drafts of an article.",
+      "Diff configuration file changes.",
+      "Review edits in a contract.",
+    ],
+    examples: getToolSeo("text-compare").examples,
+    faqs: getToolSeo("text-compare").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Comparison is computed locally; neither text is uploaded.",
+      processingType: "Local",
+    },
+  },
+  "xml-formatter": {
+    overview:
+      "Flixo XML Formatter beautifies and minifies XML with configurable indentation while validating well-formedness and reporting errors.",
+    howItWorks: [
+      "Paste your XML.",
+      "Choose an indentation.",
+      "Click Beautify XML or Minify XML.",
+      "Copy or download the result.",
+    ],
+    features: getToolSeo("xml-formatter").features,
+    useCases: [
+      "Pretty-print an API response.",
+      "Minify a config before deployment.",
+      "Validate an XML feed.",
+    ],
+    examples: getToolSeo("xml-formatter").examples,
+    faqs: getToolSeo("xml-formatter").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "XML parsing uses the browser DOMParser; no data is uploaded.",
+      processingType: "Local",
+    },
+  },
+  "xml-validator": {
+    overview:
+      "Flixo XML Validator checks XML well-formedness, tag balance, and structure, reporting errors and structural details instantly.",
+    howItWorks: [
+      "Paste your XML.",
+      "Click Validate XML.",
+      "Review the result and structural details.",
+    ],
+    features: getToolSeo("xml-validator").features,
+    useCases: [
+      "Validate an RSS feed.",
+      "Check a SOAP request payload.",
+      "Inspect an unknown XML file.",
+    ],
+    examples: getToolSeo("xml-validator").examples,
+    faqs: getToolSeo("xml-validator").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Validation uses the browser XML parser; nothing is transmitted.",
+      processingType: "Local",
+    },
+  },
+  "html-formatter": {
+    overview:
+      "Flixo HTML Formatter beautifies and minifies HTML using the browser DOM parser to produce properly nested, readable markup.",
+    howItWorks: [
+      "Paste your HTML.",
+      "Choose an indentation.",
+      "Click Beautify HTML or Minify HTML.",
+      "Copy or download the result.",
+    ],
+    features: getToolSeo("html-formatter").features,
+    useCases: [
+      "Pretty-print a template snippet.",
+      "Minify markup before publishing.",
+      "Tidy copied HTML.",
+    ],
+    examples: getToolSeo("html-formatter").examples,
+    faqs: getToolSeo("html-formatter").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "HTML parsing uses the browser DOM; no data leaves your device.",
+      processingType: "Local",
+    },
+  },
+  "sql-formatter": {
+    overview:
+      "Flixo SQL Formatter beautifies and minifies SQL queries, optionally uppercases keywords, and supports configurable indentation.",
+    howItWorks: [
+      "Paste your SQL query.",
+      "Choose indentation and keyword casing.",
+      "Click Beautify SQL or Minify SQL.",
+      "Copy or download the result.",
+    ],
+    features: getToolSeo("sql-formatter").features,
+    useCases: [
+      "Format a complex JOIN query.",
+      "Minify SQL before embedding.",
+      "Standardize keyword casing.",
+    ],
+    examples: getToolSeo("sql-formatter").examples,
+    faqs: getToolSeo("sql-formatter").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Formatting is performed locally; queries are never uploaded.",
+      processingType: "Local",
+    },
+  },
+  "yaml-formatter": {
+    overview:
+      "Flixo YAML Formatter parses and re-serializes YAML with configurable indentation, normalizing structure and surfacing syntax errors.",
+    howItWorks: [
+      "Paste your YAML.",
+      "Choose an indentation.",
+      "Click Beautify YAML.",
+      "Copy or download the result.",
+    ],
+    features: getToolSeo("yaml-formatter").features,
+    useCases: [
+      "Tidy a Docker Compose file.",
+      "Normalize a CI config.",
+      "Format a Kubernetes manifest.",
+    ],
+    examples: getToolSeo("yaml-formatter").examples,
+    faqs: getToolSeo("yaml-formatter").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "YAML parsing runs in your browser; no data is transmitted.",
+      processingType: "Local",
+    },
+  },
+  "markdown-table-generator": {
+    overview:
+      "Flixo Markdown Table Generator builds tables with an interactive editor and exports valid pipe-delimited Markdown.",
+    howItWorks: [
+      "Edit headers and cells in the table.",
+      "Add rows or columns as needed.",
+      "Copy or download the generated Markdown.",
+    ],
+    features: getToolSeo("markdown-table-generator").features,
+    useCases: [
+      "Create a feature comparison table.",
+      "Document a data dictionary.",
+      "Build a release notes table.",
+    ],
+    examples: getToolSeo("markdown-table-generator").examples,
+    faqs: getToolSeo("markdown-table-generator").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Table generation happens locally; no content is uploaded.",
+      processingType: "Local",
+    },
+  },
+  "cron-parser": {
+    overview:
+      "Flixo Cron Parser converts a 5-field cron expression into a human-readable summary, breaks down each field, and lists upcoming run times.",
+    howItWorks: [
+      "Enter a cron expression or pick an example.",
+      "Click Parse Cron.",
+      "Review the summary, field breakdown, and next runs.",
+    ],
+    features: getToolSeo("cron-parser").features,
+    useCases: [
+      "Verify a scheduled job interval.",
+      "Explain a teammate's crontab entry.",
+      "Find the next run time of a task.",
+    ],
+    examples: getToolSeo("cron-parser").examples,
+    faqs: getToolSeo("cron-parser").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Parsing and next-run simulation run locally; no data is uploaded.",
+      processingType: "Local",
+    },
+  },
+  "css-gradient-generator": {
+    overview:
+      "Flixo CSS Gradient Generator designs linear, radial, and conic gradients visually with adjustable color stops, angle, and shape.",
+    howItWorks: [
+      "Choose a gradient type.",
+      "Add or edit color stops.",
+      "Adjust angle or shape.",
+      "Copy or download the CSS.",
+    ],
+    features: getToolSeo("css-gradient-generator").features,
+    useCases: [
+      "Design a hero section background.",
+      "Create a button hover gradient.",
+      "Build a brand color transition.",
+    ],
+    examples: getToolSeo("css-gradient-generator").examples,
+    faqs: getToolSeo("css-gradient-generator").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Gradient generation is entirely client-side; nothing is uploaded.",
+      processingType: "Local",
+    },
+  },
+  "random-name": {
+    overview:
+      "Flixo Random Name Picker selects one or more names at random from a list you provide, with an option to avoid duplicate picks.",
+    howItWorks: [
+      "Enter one name per line.",
+      "Set how many to pick.",
+      "Toggle no-duplicates.",
+      "Click Pick Random.",
+    ],
+    features: getToolSeo("random-name").features,
+    useCases: [
+      "Pick a raffle winner.",
+      "Choose a random presenter.",
+      "Assign tasks randomly to a team.",
+    ],
+    examples: getToolSeo("random-name").examples,
+    faqs: getToolSeo("random-name").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Selection happens locally; your list never leaves the browser.",
+      processingType: "Local",
+    },
+  },
+  "qr-reader": {
+    overview:
+      "Flixo QR Reader decodes QR codes from uploaded images or your device camera using the native BarcodeDetector API.",
+    howItWorks: [
+      "Upload a QR image or start your camera.",
+      "Capture or let the scanner read the code.",
+      "Copy the decoded text or open the link.",
+    ],
+    features: getToolSeo("qr-reader").features,
+    useCases: [
+      "Read a QR code from a printed poster.",
+      "Decode a Wi-Fi QR code.",
+      "Scan a restaurant menu code.",
+    ],
+    examples: getToolSeo("qr-reader").examples,
+    faqs: getToolSeo("qr-reader").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Image and camera processing are local; no image is uploaded.",
+      processingType: "Local",
+    },
+  },
+  "password-checker": {
+    overview:
+      "Flixo Password Checker evaluates password strength using entropy estimation, reports an estimated crack time, and suggests improvements.",
+    howItWorks: [
+      "Type or paste a password.",
+      "Review the strength score and crack time.",
+      "Follow the suggestions to improve it.",
+    ],
+    features: getToolSeo("password-checker").features,
+    useCases: [
+      "Test a new account password.",
+      "Compare passphrase strength.",
+      "Audit reused passwords.",
+    ],
+    examples: getToolSeo("password-checker").examples,
+    faqs: getToolSeo("password-checker").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Password analysis is local; the password is never transmitted or stored.",
+      processingType: "Local",
+    },
+  },
+  "csv-viewer": {
+    overview:
+      "Flixo CSV Viewer parses pasted or uploaded CSV data into a clean table preview with configurable delimiters and header detection.",
+    howItWorks: [
+      "Paste CSV or upload a .csv file.",
+      "Choose a delimiter.",
+      "Toggle the header row.",
+      "Review the table preview.",
+    ],
+    features: getToolSeo("csv-viewer").features,
+    useCases: [
+      "Preview an exported dataset.",
+      "Inspect a CSV before importing.",
+      "Switch delimiter for regional files.",
+    ],
+    examples: getToolSeo("csv-viewer").examples,
+    faqs: getToolSeo("csv-viewer").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "CSV parsing runs in your browser; files are never uploaded.",
+      processingType: "Local",
+    },
+  },
+  "find-and-replace": {
+    overview:
+      "Flixo Find and Replace searches for text or regex patterns across long documents and replaces all matches instantly, with case-sensitive and regex options and a replacement count.",
+    howItWorks: [
+      "Paste your text into the input area.",
+      "Enter the text or pattern to find.",
+      "Enter the replacement text.",
+      "Toggle regex and case-sensitive options.",
+      "Click Replace All to update every match.",
+    ],
+    features: getToolSeo("find-and-replace").features,
+    useCases: [
+      "Rename a term across a long document.",
+      "Normalize date formats with regex.",
+      "Strip unwanted characters in bulk.",
+    ],
+    examples: getToolSeo("find-and-replace").examples,
+    faqs: getToolSeo("find-and-replace").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v2.6.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement:
+        "All find and replace operations happen locally; your text is never uploaded.",
+      processingType: "Local",
+    },
+  },
 };
 
 export function getAllToolContentEntries() {
