@@ -115,7 +115,7 @@ const toolSignals = (tool: Tool): string[] =>
 
 /** Ranks tools inside a category: ready first, then keyword overlap. */
 function pickTool(categoryId: CategoryId, text: string): Tool | undefined {
-  const candidates = toolsByCategory(categoryId);
+  const candidates = toolsByCategory(categoryId).filter((t) => t.status === "ready");
   if (candidates.length === 0) return undefined;
 
   const scored = candidates.map((tool) => {
@@ -148,7 +148,7 @@ export function classifyIntent(prompt: string): ClassificationResult {
     for (const keyword of KEYWORDS[category.id]) {
       if (text.includes(normalize(keyword))) matched.add(keyword);
     }
-    for (const tool of toolsByCategory(category.id)) {
+    for (const tool of toolsByCategory(category.id).filter((t) => t.status === "ready")) {
       for (const signal of toolSignals(tool)) {
         if (signal.length > 2 && text.includes(signal)) matched.add(signal);
       }

@@ -51,7 +51,9 @@ function UseCaseSlugRoute() {
     );
   }
 
-  const recommendedTools = tools.filter((t) => uc.recommendedToolIds.includes(t.id));
+  const recommendedTools = tools.filter(
+    (t) => uc.recommendedToolIds.includes(t.id) && t.status === "ready",
+  );
 
   const siteUrl = "https://flixotools.com";
   const pageUrl = `${siteUrl}/use-cases/${uc.slug}`;

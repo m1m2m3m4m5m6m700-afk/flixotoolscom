@@ -51,7 +51,9 @@ function FileTypeSlugRoute() {
     );
   }
 
-  const compatibleTools = tools.filter((t) => ft.compatibleToolIds.includes(t.id));
+  const compatibleTools = tools.filter(
+    (t) => ft.compatibleToolIds.includes(t.id) && t.status === "ready",
+  );
 
   const siteUrl = "https://flixotools.com";
   const pageUrl = `${siteUrl}/file-types/${ft.slug}`;

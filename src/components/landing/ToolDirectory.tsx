@@ -46,7 +46,9 @@ export function ToolDirectory({ onRequestTool, highlightedCategoryId }: ToolDire
       <div className="space-y-16">
         {sortedCategories.map((category, index) => {
           const Icon = category.icon;
-          const catTools = toolsByCategory(category.id);
+          const catTools = toolsByCategory(category.id).filter(
+            (t) => t.status === "ready",
+          );
           if (catTools.length === 0) return null;
 
           const isHighlighted = highlightedCategoryId === category.id;

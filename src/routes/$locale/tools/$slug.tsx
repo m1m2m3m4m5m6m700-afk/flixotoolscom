@@ -32,7 +32,10 @@ function LocalizedToolPageContent({ slug, locale }: { slug: string; locale: Loca
   const runtime = getReadyToolRuntime(slug);
   usePageSeo(slug, runtime?.seoOverride, locale);
 
-  if (runtime) {
+  // Hidden / non-ready tools must never render their implementation, even when
+  // a runtime is registered. Block direct URLs to stub/mock tools.
+  const toolRecord = tools.find((t) => t.slug === slug || t.id === slug);
+  if (runtime && (!toolRecord || toolRecord.status === "ready")) {
     const ToolComponent = runtime.component;
     const description = runtime.layoutDescriptionKey
       ? t(runtime.layoutDescriptionKey as never)
@@ -53,12 +56,12 @@ function LocalizedToolPageContent({ slug, locale }: { slug: string; locale: Loca
     );
   }
 
-  const tool = tools.find((t) => t.slug === slug || t.id === slug);
+  const tool = toolRecord;
   const category = tool ? categoryById?.get(tool.categoryId) : undefined;
   const icon = category?.icon ?? Sparkles;
   const categoryName = category ? t(categoryNameKey(category.id)) : t("nav.tools");
 
-  if (!tool) {
+  if (!tool || tool.status !== "ready") {
     return (
       <SiteLayout>
         <div className="mx-auto max-w-4xl px-5 py-20 text-center">

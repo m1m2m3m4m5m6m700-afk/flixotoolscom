@@ -23,7 +23,12 @@ export function getSuggestedRelatedTools(slug: string, limit = 6): Tool[] {
   ]);
 
   return tools
-    .filter((candidate) => candidate.id !== current.id && candidate.slug)
+    .filter(
+      (candidate) =>
+        candidate.id !== current.id &&
+        candidate.slug &&
+        candidate.status === "ready",
+    )
     .map((candidate) => {
       const candidateSeo = getToolSeo(candidate.slug!);
       const candidateTokens = tokenize([

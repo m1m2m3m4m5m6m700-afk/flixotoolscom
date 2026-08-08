@@ -22,7 +22,9 @@ function ToolSlugRoute() {
     trackPageView(`/tools/${slug}`);
   }, [slug]);
 
-  if (!tool) {
+  // Hidden / non-ready tools are never served at their direct URL — treat the
+  // same as a missing tool so stubs and placeholders cannot be reached.
+  if (!tool || tool.status !== "ready") {
     return (
       <SiteLayout>
         <div className="mx-auto max-w-4xl px-5 py-20 text-center">

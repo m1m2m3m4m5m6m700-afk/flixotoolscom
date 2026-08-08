@@ -23,7 +23,7 @@ export function PopularCategories({ onSelectCategory }: PopularCategoriesProps) 
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         {topCategories.map((cat) => {
           const Icon = cat.icon;
-          const count = toolsByCategory(cat.id).length;
+          const count = toolsByCategory(cat.id).filter((t) => t.status === "ready").length;
 
           return (
             <button

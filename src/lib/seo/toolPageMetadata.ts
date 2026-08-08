@@ -1,8 +1,10 @@
+import { getToolBySlug } from "@/data/tools";
 import { getToolSeo, type ToolSeoData } from "@/data/toolSeo";
 import { ar } from "@/lib/i18n/locales/ar";
 import type { LocaleCode } from "@/lib/i18n";
 import {
   DEFAULT_ROBOTS,
+  NOINDEX_ROBOTS,
   SITE_NAME,
   SITE_TWITTER_HANDLE,
   getDefaultOgImageUrl,
@@ -69,11 +71,17 @@ export function resolvePageSeo(
       ? window.location.origin
       : "https://flixotools.com";
 
+  // Hidden / non-ready tools must never be indexed. Direct URLs still resolve
+  // to a not-found page, but search engines are told to drop the URL.
+  const tool = slug ? getToolBySlug(slug) : undefined;
+  const isPublicTool = !slug || (tool?.status === "ready");
+  const robots = isPublicTool ? DEFAULT_ROBOTS : NOINDEX_ROBOTS;
+
   return {
     title,
     description,
     keywords,
-    robots: DEFAULT_ROBOTS,
+    robots,
     pageUrl,
     canonicalUrl,
     ogImage: getDefaultOgImageUrl(origin),

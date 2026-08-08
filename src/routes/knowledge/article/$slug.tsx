@@ -46,7 +46,9 @@ function KnowledgeArticleRoute() {
 
   const siteUrl = "https://flixotools.com";
   const pageUrl = `${siteUrl}/knowledge/article/${article.slug}`;
-  const relatedTools = tools.filter((tool) => article.toolIds.includes(tool.id));
+  const relatedTools = tools.filter(
+    (tool) => article.toolIds.includes(tool.id) && tool.status === "ready",
+  );
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",

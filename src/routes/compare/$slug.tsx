@@ -177,7 +177,7 @@ function ComparisonSlugRoute() {
           </section>
 
           {/* Action Callout */}
-          {matchedTool && matchedTool.slug && (
+          {matchedTool && matchedTool.slug && matchedTool.status === "ready" && (
             <div className="rounded-3xl border border-primary/30 bg-primary/10 p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div>
                 <h3 className="font-bold text-foreground text-base sm:text-lg">

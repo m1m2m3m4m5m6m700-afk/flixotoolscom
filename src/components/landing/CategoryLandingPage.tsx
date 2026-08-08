@@ -239,7 +239,9 @@ export function CategoryLandingPage({ categoryId }: CategoryLandingPageProps) {
   }
 
   const CategoryIcon = category.icon;
-  const categoryTools = tools.filter((t) => t.categoryId === categoryId);
+  const categoryTools = tools.filter(
+    (t) => t.categoryId === categoryId && t.status === "ready",
+  );
   const sortedTools = [...categoryTools].sort((a, b) => {
     const statusDiff = TOOL_STATUS_ORDER[a.status] - TOOL_STATUS_ORDER[b.status];
     if (statusDiff !== 0) return statusDiff;

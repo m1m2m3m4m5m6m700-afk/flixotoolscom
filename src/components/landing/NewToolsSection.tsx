@@ -9,13 +9,14 @@ const NEW_IDS = [
   "qr-generator",
   "password-generator",
   "image-enhancer",
-  "translator",
+  "word-counter",
 ];
 
 /** Newly added tools — signals to visitors and crawlers that Flixo keeps shipping. */
 export function NewToolsSection() {
   const fresh = NEW_IDS.map((id) => tools.find((tool) => tool.id === id)).filter(
-    (tool): tool is NonNullable<typeof tool> => Boolean(tool?.slug),
+    (tool): tool is NonNullable<typeof tool> =>
+      Boolean(tool?.slug && tool.status === "ready"),
   );
 
   return (

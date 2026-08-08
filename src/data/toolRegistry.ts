@@ -241,7 +241,12 @@ const createRegistryEntry = (tool: Tool): ToolRegistryItem => {
   };
 };
 
-const registry: ToolRegistryItem[] = tools.map(createRegistryEntry);
+// Only "ready" tools are exposed publicly. Stub/placeholder/mock tools are
+// excluded from search, categories, featured collections, related tools, and
+// every other registry-derived surface so they can never reach users.
+const registry: ToolRegistryItem[] = tools
+  .map(createRegistryEntry)
+  .filter((item) => item.status === "ready");
 
 const registryMap = new Map<string, ToolRegistryItem>(registry.map((item) => [item.id, item]));
 const registrySlugMap = new Map<string, ToolRegistryItem>(

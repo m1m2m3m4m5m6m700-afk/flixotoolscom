@@ -46,7 +46,9 @@ function BestToolsPageRoute() {
 
   const siteUrl = "https://flixotools.com";
   const pageUrl = `${siteUrl}/knowledge/best/${page.slug}`;
-  const recommendedTools = tools.filter((tool) => page.recommendedToolIds.includes(tool.id));
+  const recommendedTools = tools.filter(
+    (tool) => page.recommendedToolIds.includes(tool.id) && tool.status === "ready",
+  );
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",

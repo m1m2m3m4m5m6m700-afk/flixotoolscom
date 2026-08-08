@@ -96,12 +96,13 @@ for (const tool of readyTools) {
   }
 }
 
+// Runtimes may exist for non-ready (hidden) tools — their source is retained
+// while the route layer blocks public access. Only flag runtimes that reference
+// a tool id that does not exist at all.
 for (const entry of runtimeEntries) {
-  const tool = readyTools.find((item) => item.id === entry.toolId);
+  const tool = tools.find((item) => item.id === entry.toolId);
   if (!tool) {
-    issues.push(
-      `Runtime definition ${entry.file} references non-ready or unknown tool ${entry.toolId}.`,
-    );
+    issues.push(`Runtime definition ${entry.file} references unknown tool ${entry.toolId}.`);
   }
 }
 

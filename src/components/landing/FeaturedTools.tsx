@@ -24,6 +24,7 @@ export function FeaturedTools() {
           const count = liveCount(cat.id);
           const isLive = count > 0;
           const toolNames = toolsByCategory(cat.id)
+            .filter((tool) => tool.status === "ready")
             .slice(0, 3)
             .map((tool) => tool.name)
             .join(" · ");

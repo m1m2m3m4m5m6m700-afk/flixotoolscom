@@ -55,7 +55,9 @@ function CollectionSlugRoute() {
     );
   }
 
-  const bundledTools = tools.filter((t) => col.toolIds.includes(t.id));
+  const bundledTools = tools.filter(
+    (t) => col.toolIds.includes(t.id) && t.status === "ready",
+  );
 
   const siteUrl = "https://flixotools.com";
   const pageUrl = `${siteUrl}/collections/${col.slug}`;

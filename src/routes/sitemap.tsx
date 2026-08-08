@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import { Globe, FileCode2, ChevronRight, Sparkles, ExternalLink } from "lucide-react";
-import { tools } from "@/data/tools";
+import { readyTools } from "@/data/tools";
 import { categories } from "@/data/categories";
 import { blogPosts } from "@/data/blogData";
 import {
@@ -84,7 +84,7 @@ function SitemapRoute() {
       title: `Collection: ${col.title}`,
       type: "Tool Collection",
     })),
-    ...tools.map((t) => ({
+    ...readyTools().map((t) => ({
       url: t.slug ? `/tools/${t.slug}` : `/#${t.categoryId}`,
       title: `${t.name} (${t.status.toUpperCase()})`,
       type: `Tool (${t.categoryId})`,
@@ -194,10 +194,10 @@ ${allPages
               {/* Tools Index */}
               <section className="rounded-2xl border border-border/80 bg-card/60 p-6 space-y-4">
                 <h2 className="text-lg font-bold flex items-center gap-2 text-foreground">
-                  <Globe className="size-4 text-primary" /> All AI & Utility Tools ({tools.length})
+                  <Globe className="size-4 text-primary" /> All AI & Utility Tools ({readyTools().length})
                 </h2>
                 <div className="grid gap-2.5 sm:grid-cols-2 lg:grid-cols-3 max-h-[400px] overflow-y-auto pr-2">
-                  {tools.map((t) => (
+                  {readyTools().map((t) => (
                     <Link
                       key={t.id}
                       to={(t.slug ? `/tools/${t.slug}` : `/#${t.categoryId}`) as never}

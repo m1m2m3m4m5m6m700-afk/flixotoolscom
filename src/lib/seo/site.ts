@@ -5,6 +5,7 @@ export const SITE_TWITTER_HANDLE = "@FlixoTools";
 export const DEFAULT_OG_IMAGE_PATH = "/og-image.png";
 export const DEFAULT_ROBOTS =
   "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
+export const NOINDEX_ROBOTS = "noindex, nofollow";
 
 export const getDefaultOgImageUrl = (origin: string = SITE_URL) =>
   `${origin}${DEFAULT_OG_IMAGE_PATH}`;
