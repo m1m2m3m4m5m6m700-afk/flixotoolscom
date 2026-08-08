@@ -54,7 +54,7 @@ function LocalizedToolPageContent({ slug, locale }: { slug: string; locale: Loca
   }
 
   const tool = tools.find((t) => t.slug === slug || t.id === slug);
-  const category = tool ? categoryById.get(tool.categoryId) : undefined;
+  const category = tool ? categoryById?.get(tool.categoryId) : undefined;
   const icon = category?.icon ?? Sparkles;
   const categoryName = category ? t(categoryNameKey(category.id)) : t("nav.tools");
 

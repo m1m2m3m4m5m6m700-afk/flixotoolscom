@@ -1,5 +1,6 @@
 import { QueryClient } from "@tanstack/react-query";
 import { createRouter } from "@tanstack/react-router";
+import { createBrowserHistory } from "@tanstack/history";
 import { getGlobalStartContext } from "@tanstack/react-start";
 import { routeTree } from "./routeTree.gen";
 
@@ -13,6 +14,7 @@ export const getRouter = () => {
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,
     ssr: requestContext?.nonce ? { nonce: requestContext.nonce } : undefined,
+    history: typeof window !== "undefined" ? createBrowserHistory() : undefined,
   });
 
   return router;

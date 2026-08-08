@@ -2508,7 +2508,7 @@ export function getAllToolContentEntries() {
 export function getToolContent(slug: string): ToolContentData {
   const seo = getToolSeo(slug);
   const tool = getToolBySlug(slug) || tools.find((entry) => entry.id === slug);
-  const category = tool ? categoryById.get(tool.categoryId) : undefined;
+  const category = tool ? categoryById?.get(tool.categoryId) : undefined;
   const entry = toolContentRegistry[slug];
 
   if (entry) {

@@ -14,7 +14,7 @@ export const Route = createFileRoute("/tools/$slug")({
 function ToolSlugRoute() {
   const { slug } = Route.useParams() as { slug?: string };
   const tool = tools.find((tool) => tool.slug === slug || tool.id === slug);
-  const category = tool ? categoryById.get(tool.categoryId) : undefined;
+  const category = tool ? categoryById?.get(tool.categoryId) : undefined;
   const icon = category?.icon ?? Sparkles;
   const categoryName = category?.name ?? "Tools";
 

@@ -21,11 +21,17 @@ import { ThemeProvider } from "../lib/theme";
 import { I18nProvider } from "../lib/i18n";
 import { AnalyticsProvider } from "../lib/analytics";
 
-const jsonLdData = [
-  buildRootWebApplicationSchema(),
-  buildOrganizationSchema(),
-  buildWebSiteSchema(),
-];
+let _jsonLdData: ReturnType<typeof buildRootWebApplicationSchema>[] | null = null;
+function getJsonLdData() {
+  if (!_jsonLdData) {
+    _jsonLdData = [
+      buildRootWebApplicationSchema(),
+      buildOrganizationSchema(),
+      buildWebSiteSchema(),
+    ];
+  }
+  return _jsonLdData;
+}
 
 function NotFoundComponent() {
   return (
@@ -145,7 +151,7 @@ function RootShell({ children }: { children: ReactNode }) {
         <script src="/init-theme.js" />
         <script src="/init-locale.js" />
         <script src="/register-sw.js" />
-        <JsonLd data={jsonLdData} />
+        <JsonLd data={getJsonLdData()} />
       </head>
       <body>
         {children}

@@ -3942,7 +3942,7 @@ const toolSeoRegistry: Record<string, ToolSeoData> = {
 
 export function getToolSeo(slug: string): ToolSeoData {
   return (
-    toolSeoRegistry[slug] ?? {
+    toolSeoRegistry?.[slug] ?? {
       slug,
       title: `${slug} — Free Online Tool | Flixo`,
       description: `Use ${slug} online for fast, private browser processing on Flixo.`,

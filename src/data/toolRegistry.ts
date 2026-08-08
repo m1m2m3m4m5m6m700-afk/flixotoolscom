@@ -211,7 +211,7 @@ const compareSimilarity = (a: ToolRegistryItem, b: ToolRegistryItem) => {
 };
 
 const createRegistryEntry = (tool: Tool): ToolRegistryItem => {
-  const category = categoryById.get(tool.categoryId);
+  const category = categoryById?.get(tool.categoryId);
   const categoryName = category?.name ?? tool.categoryId;
   const subcategory = categorySubcategory(tool);
   const collection = toolCollection(tool);
