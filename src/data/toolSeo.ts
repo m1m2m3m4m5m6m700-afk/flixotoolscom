@@ -3120,9 +3120,9 @@ const toolSeoRegistry: Record<string, ToolSeoData> = {
   },
   "audio-converter": {
     slug: "audio-converter",
-    title: "Audio Converter — Convert MP3, WAV, OGG, AAC & M4A | Flixo",
+    title: "Audio Converter — Convert Audio to WAV | Flixo",
     description:
-      "Convert audio between MP3, WAV, OGG, AAC and M4A formats directly in your browser. Fast, private, and no sign-up required.",
+      "Convert audio files (MP3, OGG, FLAC and more) to WAV format directly in your browser. Fast, private, and no sign-up required.",
     keywords: [
       "audio converter",
       "mp3 to wav",
@@ -3131,7 +3131,7 @@ const toolSeoRegistry: Record<string, ToolSeoData> = {
       "flixo audio",
     ],
     overview:
-      "Flixo Audio Converter transforms audio files between common formats including MP3, WAV, OGG, AAC, and M4A entirely inside your browser.",
+      "Flixo Audio Converter decodes audio files (MP3, OGG, FLAC and more) using the browser's Web Audio API and exports them to WAV format, entirely inside your browser.",
     features: [
       "100% Client-side browser processing",
       "No account or sign-up required",
@@ -3202,18 +3202,18 @@ const toolSeoRegistry: Record<string, ToolSeoData> = {
   },
   "video-converter": {
     slug: "video-converter",
-    title: "Video Converter — Convert MP4, WebM, MOV & AVI | Flixo",
+    title: "Video Converter — Convert to MP4 (H.264) or AVI (MPEG-4) | Flixo",
     description:
-      "Convert video between MP4, WebM, MOV and AVI formats where browser capabilities allow. Private, browser-based, no sign-up.",
+      "Convert video to MP4 (H.264/AAC) or AVI (MPEG-4/MP2) formats in your browser. Private, browser-based, no sign-up.",
     keywords: [
       "video converter",
-      "mp4 to webm",
+      "convert to mp4",
       "convert video",
       "online video tool",
       "flixo video",
     ],
     overview:
-      "Flixo Video Converter changes video container formats such as MP4, WebM, MOV, and AVI where the browser runtime supports it, entirely client-side.",
+      "Flixo Video Converter re-encodes video to MP4 (H.264/AAC) or AVI (MPEG-4/MP2) formats entirely client-side, using FFmpeg compiled to WebAssembly.",
     features: [
       "100% Client-side browser processing",
       "No account or sign-up required",

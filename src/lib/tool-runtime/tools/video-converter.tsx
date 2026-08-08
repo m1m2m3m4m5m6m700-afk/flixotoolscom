@@ -9,7 +9,7 @@ function VideoConverterTool() {
   const [error, setError] = useState("");
   const [result, setResult] = useState<{ name: string; size: number } | null>(null);
   const [progress, setProgress] = useState(0);
-  const [format, setFormat] = useState<"webm" | "mp4">("webm");
+  const [format, setFormat] = useState<"mp4" | "avi">("mp4");
 
   const handleProcess = async () => {
     if (!file) return;
@@ -27,25 +27,21 @@ function VideoConverterTool() {
       const progressCb = ({ progress }: { progress: number }) =>
         setProgress(Math.round(progress * 100));
       ffmpeg.on("progress", progressCb);
-      const codec = format === "webm" ? "libvpx-vp9" : "libx264";
-      await ffmpeg.exec([
-        "-i",
-        inName,
-        "-c:v",
-        codec,
-        "-b:v",
-        "1M",
-        "-c:a",
-        format === "webm" ? "libvorbis" : "aac",
-        outName,
-      ]);
+      // Use encoders verified to work in the single-thread FFmpeg.wasm core:
+      // libx264/aac (MP4) and mpeg4/mp2 (AVI). VP8/VP9 (libvpx) crash with an
+      // out-of-bounds wasm memory trap in this core, so WebM output is not offered.
+      const args =
+        format === "mp4"
+          ? ["-i", inName, "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", outName]
+          : ["-i", inName, "-c:v", "mpeg4", "-q:v", "5", "-c:a", "mp2", outName];
+      await ffmpeg.exec(args);
       ffmpeg.off("progress", progressCb);
       const outData = (await ffmpeg.readFile(outName)) as Uint8Array;
       const outFile = file.name.replace(/\.[^.]+$/, "") + "." + format;
       downloadBlob(
         new Uint8Array(outData),
         outFile,
-        format === "webm" ? "video/webm" : "video/mp4",
+        format === "mp4" ? "video/mp4" : "video/x-msvideo",
       );
       setResult({ name: outFile, size: outData.length });
       try {
@@ -104,8 +100,8 @@ function VideoConverterTool() {
               onChange={(e) => setFormat(e.target.value as typeof format)}
               className="w-full mt-1 rounded-lg border border-border bg-background p-2 text-sm"
             >
-              <option value="webm">WebM (VP9)</option>
-              <option value="mp4">MP4 (H.264)</option>
+              <option value="mp4">MP4 (H.264 / AAC)</option>
+              <option value="avi">AVI (MPEG-4 / MP2)</option>
             </select>
           </div>
           <p className="text-[11px] text-muted-foreground">
@@ -170,6 +166,6 @@ export const VideoConverterRuntime: ReadyToolRuntimeDefinition = {
   icon: Film,
   component: VideoConverterTool,
   layoutDescription:
-    "Convert videos between MP4 and WebM formats using FFmpeg, entirely in your browser.",
+    "Convert videos to MP4 (H.264) or AVI (MPEG-4) using FFmpeg, entirely in your browser.",
   layoutDescriptionKey: "tool.video-converter.pageDescription",
 };

@@ -363,18 +363,18 @@ export const en = {
     "Fix spelling, punctuation, and grammatical errors instantly.",
   "tool.audio-converter.name": "Audio Converter",
   "tool.audio-converter.tagline":
-    "Convert audio between MP3, WAV, OGG, AAC and M4A in your browser.",
+    "Convert audio files (MP3, OGG, FLAC and more) to WAV in your browser.",
   "tool.audio-converter.pageDescription":
-    "Convert audio between MP3, WAV, OGG, AAC and M4A in your browser.",
+    "Convert audio files (MP3, OGG, FLAC and more) to WAV in your browser.",
   "tool.audio-compressor.name": "Audio Compressor",
   "tool.audio-compressor.tagline":
     "Compress audio files while controlling output quality and bitrate.",
   "tool.audio-compressor.pageDescription":
     "Compress audio files while controlling output quality and bitrate.",
   "tool.video-converter.name": "Video Converter",
-  "tool.video-converter.tagline": "Convert video between MP4, WebM, MOV and AVI where supported.",
+  "tool.video-converter.tagline": "Convert video to MP4 (H.264) or AVI (MPEG-4) in your browser.",
   "tool.video-converter.pageDescription":
-    "Convert video between MP4, WebM, MOV and AVI where supported.",
+    "Convert video to MP4 (H.264) or AVI (MPEG-4) in your browser.",
   "tool.video-compressor.name": "Video Compressor",
   "tool.video-compressor.tagline":
     "Reduce video file size with configurable quality and output settings.",

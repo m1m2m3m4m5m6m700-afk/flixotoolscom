@@ -138,6 +138,9 @@ function PdfToPowerpointTool() {
               <div className="flex flex-col items-center gap-2 text-muted-foreground">
                 <Presentation className="size-8 opacity-40" />
                 <span>Your PowerPoint will download here.</span>
+                <span className="text-[11px] text-muted-foreground">
+                  Each page becomes a slide image; text is not editable.
+                </span>
               </div>
             )}
           </div>
@@ -207,6 +210,7 @@ export const PdfToPowerpointRuntime: ReadyToolRuntimeDefinition = {
   categoryId: "pdf",
   icon: Presentation,
   component: PdfToPowerpointTool,
-  layoutDescription: "Convert each PDF page into a PowerPoint slide, entirely in your browser.",
+  layoutDescription:
+    "Convert each PDF page into an image-based PowerPoint slide (text is not editable), entirely in your browser.",
   layoutDescriptionKey: "tool.pdf-to-powerpoint.pageDescription",
 };

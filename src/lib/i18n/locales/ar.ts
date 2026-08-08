@@ -347,16 +347,18 @@ export const ar: Dictionary = {
   "tool.grammar-checker.pageDescription": "فحص وتصحيح الأخطاء الإملائية والنحوية فورياً.",
 
   "tool.audio-converter.name": "محوّل الصوت",
-  "tool.audio-converter.tagline": "تحويل الصوت بين صيغ MP3 وWAV وOGG وAAC وM4A في متصفحك.",
-  "tool.audio-converter.pageDescription": "تحويل الصوت بين صيغ MP3 وWAV وOGG وAAC وM4A في متصفحك.",
+  "tool.audio-converter.tagline":
+    "تحويل ملفات الصوت (MP3 وOGG وFLAC وغيرها) إلى صيغة WAV في متصفحك.",
+  "tool.audio-converter.pageDescription":
+    "تحويل ملفات الصوت (MP3 وOGG وFLAC وغيرها) إلى صيغة WAV في متصفحك.",
   "tool.audio-compressor.name": "ضاغط الصوت",
   "tool.audio-compressor.tagline": "ضغط ملفات الصوت مع التحكم في جودة ومعدل البِت للمخرجات.",
   "tool.audio-compressor.pageDescription":
     "ضغط ملفات الصوت مع التحكم في جودة ومعدل البِت للمخرجات.",
   "tool.video-converter.name": "محوّل الفيديو",
-  "tool.video-converter.tagline": "تحويل الفيديو بين صيغ MP4 وWebM وMOV وAVI حيثما يدعم المتصفح.",
+  "tool.video-converter.tagline": "تحويل الفيديو إلى MP4 (H.264) أو AVI (MPEG-4) في متصفحك.",
   "tool.video-converter.pageDescription":
-    "تحويل الفيديو بين صيغ MP4 وWebM وMOV وAVI حيثما يدعم المتصفح.",
+    "تحويل الفيديو إلى MP4 (H.264) أو AVI (MPEG-4) في متصفحك.",
   "tool.video-compressor.name": "ضاغط الفيديو",
   "tool.video-compressor.tagline": "تقليل حجم ملف الفيديو بإعدادات جودة ومخرجات قابلة للضبط.",
   "tool.video-compressor.pageDescription":

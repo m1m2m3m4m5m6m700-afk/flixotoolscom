@@ -21,29 +21,36 @@ function VideoCompressorTool() {
       const ffmpeg = await getFfmpeg();
       const inExt = (file.name.split(".").pop() || "mp4").toLowerCase();
       const inName = "input." + inExt;
-      const outName = "output.webm";
+      const outName = "output.mp4";
       const data = new Uint8Array(await readFileAsArrayBuffer(file));
       await ffmpeg.writeFile(inName, data);
       const progressCb = ({ progress }: { progress: number }) =>
         setProgress(Math.round(progress * 100));
       ffmpeg.on("progress", progressCb);
+      // libx264 with CRF is verified to work in the single-thread FFmpeg.wasm core
+      // and produces real compression (CRF 32 ≈ 25% smaller). VP9/VP8 (libvpx) crash
+      // with an out-of-bounds wasm memory trap in this core, so H.264 is used.
       await ffmpeg.exec([
         "-i",
         inName,
         "-c:v",
-        "libvpx-vp9",
+        "libx264",
+        "-pix_fmt",
+        "yuv420p",
         "-crf",
         String(crf),
-        "-b:v",
-        "0",
+        "-preset",
+        "ultrafast",
         "-c:a",
-        "libvorbis",
+        "aac",
+        "-b:a",
+        "96k",
         outName,
       ]);
       ffmpeg.off("progress", progressCb);
       const outData = (await ffmpeg.readFile(outName)) as Uint8Array;
-      const outFile = file.name.replace(/\.[^.]+$/, "") + "-compressed.webm";
-      downloadBlob(new Uint8Array(outData), outFile, "video/webm");
+      const outFile = file.name.replace(/\.[^.]+$/, "") + "-compressed.mp4";
+      downloadBlob(new Uint8Array(outData), outFile, "video/mp4");
       const saved = file.size - outData.length;
       setResult({ name: outFile, size: outData.length, saved });
       try {
@@ -110,7 +117,8 @@ function VideoCompressorTool() {
             />
           </div>
           <p className="text-[11px] text-muted-foreground">
-            Re-encodes to WebM (VP9) with adjustable compression. Powered by FFmpeg in your browser.
+            Re-encodes to MP4 (H.264) with adjustable compression. Powered by FFmpeg in your
+            browser.
           </p>
           <button
             type="button"

@@ -32,17 +32,26 @@ function PdfToTextTool() {
       const pdf = await pdfjs.getDocument({ data }).promise;
       setPageCount(pdf.numPages);
       const parts: string[] = [];
+      let totalItems = 0;
       for (let i = 1; i <= pdf.numPages; i++) {
         const page = await pdf.getPage(i);
         const content = await page.getTextContent();
-        const pageText = content.items
-          .map((item) => ("str" in item ? (item as { str: string }).str : ""))
+        const textItems = content.items.filter((item) => "str" in item) as { str: string }[];
+        totalItems += textItems.length;
+        const pageText = textItems
+          .map((item) => item.str)
           .join(" ")
           .replace(/[ \t]+/g, " ");
         parts.push(`--- Page ${i} ---\n${pageText.trim()}`);
       }
       const out = parts.join("\n\n");
-      setText(out);
+      if (totalItems === 0) {
+        setError(
+          "No text layer found. This PDF appears to be scanned or image-based. Text extraction requires OCR (optical character recognition), which is not available in a browser-based tool.",
+        );
+      } else {
+        setText(out);
+      }
     } catch (e) {
       setError(
         e instanceof Error

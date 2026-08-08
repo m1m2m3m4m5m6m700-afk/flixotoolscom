@@ -29,13 +29,21 @@ function PdfToExcelTool() {
       const data = await readFileAsArrayBuffer(file);
       const pdf = await pdfjs.getDocument({ data }).promise;
       const rows: string[][] = [];
+      let totalItems = 0;
       for (let i = 1; i <= pdf.numPages; i++) {
         const page = await pdf.getPage(i);
         const content = await page.getTextContent();
         const items = content.items.filter((it): it is TextItem => "str" in it);
+        totalItems += items.length;
         rows.push([`Page ${i}`]);
         rows.push(...buildRows(items));
         rows.push([]);
+      }
+      if (totalItems === 0) {
+        setError(
+          "No text layer found. This PDF appears to be scanned or image-based. CSV extraction requires OCR (optical character recognition), which is not available in a browser-based tool.",
+        );
+        return;
       }
       const csv = rows.map((r) => r.map(csvEscape).join(",")).join("\n");
       const outName = file.name.replace(/\.pdf$/i, "") + ".csv";
