@@ -74,6 +74,26 @@ import { imageEnhancerRuntime } from "./tools/image-enhancer";
 import { passwordGeneratorRuntime } from "./tools/password-generator";
 import { qrGeneratorRuntime } from "./tools/qr-generator";
 import { translatorRuntime } from "./tools/translator";
+import { AudioConverterRuntime } from "./tools/audio-converter";
+import { AudioCompressorRuntime } from "./tools/audio-compressor";
+import { VideoConverterRuntime } from "./tools/video-converter";
+import { VideoCompressorRuntime } from "./tools/video-compressor";
+import { VideoTrimmerRuntime } from "./tools/video-trimmer";
+import { GifMakerRuntime } from "./tools/gif-maker";
+import { GifCompressorRuntime } from "./tools/gif-compressor";
+import { AudioCutterRuntime } from "./tools/audio-cutter";
+import { VideoToGifRuntime } from "./tools/video-to-gif";
+import { ImageToGifRuntime } from "./tools/image-to-gif";
+import { PdfToExcelRuntime } from "./tools/pdf-to-excel";
+import { PdfToPowerpointRuntime } from "./tools/pdf-to-powerpoint";
+import { PdfToTextRuntime } from "./tools/pdf-to-text";
+import { PdfCropRuntime } from "./tools/pdf-crop";
+import { PdfPageNumbersRuntime } from "./tools/pdf-page-numbers";
+import { PdfHeaderFooterRuntime } from "./tools/pdf-header-footer";
+import { TextToPdfRuntime } from "./tools/text-to-pdf";
+import { TextToWordRuntime } from "./tools/text-to-word";
+import { MarkdownToPdfRuntime } from "./tools/markdown-to-pdf";
+import { MarkdownToWordRuntime } from "./tools/markdown-to-word";
 import type { ReadyToolRuntimeDefinition } from "./types";
 
 export const readyToolRuntimes = [
@@ -153,6 +173,26 @@ export const readyToolRuntimes = [
   MetaTagGeneratorRuntime,
   JwtDecoderRuntime,
   FileHashGeneratorRuntime,
+  AudioConverterRuntime,
+  AudioCompressorRuntime,
+  VideoConverterRuntime,
+  VideoCompressorRuntime,
+  VideoTrimmerRuntime,
+  GifMakerRuntime,
+  GifCompressorRuntime,
+  AudioCutterRuntime,
+  VideoToGifRuntime,
+  ImageToGifRuntime,
+  PdfToExcelRuntime,
+  PdfToPowerpointRuntime,
+  PdfToTextRuntime,
+  PdfCropRuntime,
+  PdfPageNumbersRuntime,
+  PdfHeaderFooterRuntime,
+  TextToPdfRuntime,
+  TextToWordRuntime,
+  MarkdownToPdfRuntime,
+  MarkdownToWordRuntime,
 ] as const satisfies readonly ReadyToolRuntimeDefinition[];
 
 export const readyToolRuntimeBySlug = new Map<string, ReadyToolRuntimeDefinition>(

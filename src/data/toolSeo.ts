@@ -3118,6 +3118,826 @@ const toolSeoRegistry: Record<string, ToolSeoData> = {
       { question: "Is this tool free?", answer: "Yes, completely free with no file size limits." },
     ],
   },
+  "audio-converter": {
+    slug: "audio-converter",
+    title: "Audio Converter — Convert MP3, WAV, OGG, AAC & M4A | Flixo",
+    description:
+      "Convert audio between MP3, WAV, OGG, AAC and M4A formats directly in your browser. Fast, private, and no sign-up required.",
+    keywords: [
+      "audio converter",
+      "mp3 to wav",
+      "convert audio",
+      "online audio tool",
+      "flixo audio",
+    ],
+    overview:
+      "Flixo Audio Converter transforms audio files between common formats including MP3, WAV, OGG, AAC, and M4A entirely inside your browser.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the Audio Converter tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is Audio Converter free to use on Flixo?",
+        answer:
+          "Yes, Audio Converter is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using Audio Converter?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
+  "audio-compressor": {
+    slug: "audio-compressor",
+    title: "Audio Compressor — Reduce Audio File Size Online | Flixo",
+    description:
+      "Compress audio files while controlling output quality and bitrate. Shrink MP3, WAV and more without uploading to a server.",
+    keywords: ["audio compressor", "compress mp3", "reduce audio size", "bitrate", "flixo audio"],
+    overview:
+      "Flixo Audio Compressor reduces audio file size with adjustable quality and bitrate settings, all processed locally in your browser.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the Audio Compressor tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is Audio Compressor free to use on Flixo?",
+        answer:
+          "Yes, Audio Compressor is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using Audio Compressor?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
+  "video-converter": {
+    slug: "video-converter",
+    title: "Video Converter — Convert MP4, WebM, MOV & AVI | Flixo",
+    description:
+      "Convert video between MP4, WebM, MOV and AVI formats where browser capabilities allow. Private, browser-based, no sign-up.",
+    keywords: [
+      "video converter",
+      "mp4 to webm",
+      "convert video",
+      "online video tool",
+      "flixo video",
+    ],
+    overview:
+      "Flixo Video Converter changes video container formats such as MP4, WebM, MOV, and AVI where the browser runtime supports it, entirely client-side.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the Video Converter tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is Video Converter free to use on Flixo?",
+        answer:
+          "Yes, Video Converter is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using Video Converter?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
+  "video-compressor": {
+    slug: "video-compressor",
+    title: "Video Compressor — Reduce Video File Size Online | Flixo",
+    description:
+      "Reduce video file size with configurable quality and output settings. Compress MP4 and more privately in your browser.",
+    keywords: [
+      "video compressor",
+      "compress mp4",
+      "reduce video size",
+      "online video tool",
+      "flixo video",
+    ],
+    overview:
+      "Flixo Video Compressor shrinks video file size using configurable quality and output settings, processed entirely in your browser.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the Video Compressor tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is Video Compressor free to use on Flixo?",
+        answer:
+          "Yes, Video Compressor is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using Video Compressor?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
+  "video-trimmer": {
+    slug: "video-trimmer",
+    title: "Video Trimmer — Trim Video Clips Online | Flixo",
+    description:
+      "Trim a selected portion of a video using start and end controls. Fast, private, browser-based video cutting with no sign-up.",
+    keywords: ["video trimmer", "trim video", "cut video", "online video tool", "flixo video"],
+    overview:
+      "Flixo Video Trimmer lets you select start and end points to cut a portion of a video, all processed locally in your browser.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the Video Trimmer tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is Video Trimmer free to use on Flixo?",
+        answer:
+          "Yes, Video Trimmer is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using Video Trimmer?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
+  "gif-maker": {
+    slug: "gif-maker",
+    title: "GIF Maker — Create Animated GIFs Online | Flixo",
+    description:
+      "Create an animated GIF from uploaded images or supported video input. Build GIFs privately in your browser with no sign-up.",
+    keywords: ["gif maker", "create gif", "animated gif", "online gif tool", "flixo gif"],
+    overview:
+      "Flixo GIF Maker creates animated GIFs from uploaded images or supported video input, entirely inside your browser.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the GIF Maker tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is GIF Maker free to use on Flixo?",
+        answer:
+          "Yes, GIF Maker is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using GIF Maker?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
+  "gif-compressor": {
+    slug: "gif-compressor",
+    title: "GIF Compressor — Reduce GIF File Size Online | Flixo",
+    description:
+      "Reduce GIF file size while preserving acceptable visual quality. Compress animated GIFs privately in your browser, no sign-up.",
+    keywords: ["gif compressor", "compress gif", "reduce gif size", "optimize gif", "flixo gif"],
+    overview:
+      "Flixo GIF Compressor reduces animated GIF file size while keeping acceptable visual quality, processed entirely in your browser.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the GIF Compressor tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is GIF Compressor free to use on Flixo?",
+        answer:
+          "Yes, GIF Compressor is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using GIF Compressor?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
+  "audio-cutter": {
+    slug: "audio-cutter",
+    title: "Audio Cutter — Cut Audio Clips Online | Flixo",
+    description:
+      "Cut a selected portion from an audio file using start and end controls. Fast, private, browser-based audio cutting, no sign-up.",
+    keywords: ["audio cutter", "cut audio", "trim audio", "online audio tool", "flixo audio"],
+    overview:
+      "Flixo Audio Cutter lets you choose start and end points to extract a portion of an audio file, all processed locally in your browser.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the Audio Cutter tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is Audio Cutter free to use on Flixo?",
+        answer:
+          "Yes, Audio Cutter is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using Audio Cutter?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
+  "video-to-gif": {
+    slug: "video-to-gif",
+    title: "Video to GIF — Convert Video to Animated GIF | Flixo",
+    description:
+      "Convert a supported video segment into an animated GIF. Private, browser-based video-to-GIF conversion with no sign-up.",
+    keywords: [
+      "video to gif",
+      "convert video to gif",
+      "animated gif",
+      "online gif tool",
+      "flixo video",
+    ],
+    overview:
+      "Flixo Video to GIF converts a selected segment of a supported video into an animated GIF, entirely inside your browser.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the Video to GIF tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is Video to GIF free to use on Flixo?",
+        answer:
+          "Yes, Video to GIF is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using Video to GIF?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
+  "image-to-gif": {
+    slug: "image-to-gif",
+    title: "Image to GIF — Make Animated GIF from Images | Flixo",
+    description:
+      "Create an animated GIF from multiple uploaded images. Combine images into a GIF privately in your browser, no sign-up required.",
+    keywords: ["image to gif", "images to gif", "create gif", "animated gif", "flixo gif"],
+    overview:
+      "Flixo Image to GIF combines multiple uploaded images into an animated GIF, processed entirely in your browser.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the Image to GIF tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is Image to GIF free to use on Flixo?",
+        answer:
+          "Yes, Image to GIF is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using Image to GIF?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
+  "pdf-to-excel": {
+    slug: "pdf-to-excel",
+    title: "PDF to Excel — Convert PDF Tables to Excel | Flixo",
+    description:
+      "Convert suitable PDF tables and content into an Excel-compatible file. Private, browser-based PDF to Excel conversion, no sign-up.",
+    keywords: ["pdf to excel", "convert pdf to excel", "pdf table extractor", "xlsx", "flixo pdf"],
+    overview:
+      "Flixo PDF to Excel extracts suitable tabular content from PDF documents into an Excel-compatible file, entirely in your browser.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the PDF to Excel tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is PDF to Excel free to use on Flixo?",
+        answer:
+          "Yes, PDF to Excel is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using PDF to Excel?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
+  "pdf-to-powerpoint": {
+    slug: "pdf-to-powerpoint",
+    title: "PDF to PowerPoint — Convert PDF to PPTX | Flixo",
+    description:
+      "Convert suitable PDF pages and content into a PowerPoint-compatible file. Private, browser-based PDF to PPTX, no sign-up.",
+    keywords: [
+      "pdf to powerpoint",
+      "convert pdf to pptx",
+      "pdf to ppt",
+      "online pdf tool",
+      "flixo pdf",
+    ],
+    overview:
+      "Flixo PDF to PowerPoint converts suitable PDF pages into a PowerPoint-compatible file, processed entirely in your browser.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the PDF to PowerPoint tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is PDF to PowerPoint free to use on Flixo?",
+        answer:
+          "Yes, PDF to PowerPoint is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using PDF to PowerPoint?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
+  "pdf-to-text": {
+    slug: "pdf-to-text",
+    title: "PDF to Text — Extract Text from PDF Online | Flixo",
+    description:
+      "Extract selectable text from PDF documents. Fast, private, browser-based PDF text extraction with no sign-up required.",
+    keywords: [
+      "pdf to text",
+      "extract text from pdf",
+      "pdf text extractor",
+      "online pdf tool",
+      "flixo pdf",
+    ],
+    overview:
+      "Flixo PDF to Text extracts selectable text from PDF documents so you can copy and reuse content, entirely in your browser.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the PDF to Text tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is PDF to Text free to use on Flixo?",
+        answer:
+          "Yes, PDF to Text is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using PDF to Text?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
+  "pdf-crop": {
+    slug: "pdf-crop",
+    title: "PDF Crop — Crop PDF Pages Online | Flixo",
+    description:
+      "Crop PDF pages with configurable crop boundaries. Trim PDF margins privately in your browser, no sign-up required.",
+    keywords: ["pdf crop", "crop pdf pages", "trim pdf margins", "online pdf tool", "flixo pdf"],
+    overview:
+      "Flixo PDF Crop applies configurable crop boundaries to PDF pages so you can trim margins and unwanted areas, all in your browser.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the PDF Crop tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is PDF Crop free to use on Flixo?",
+        answer:
+          "Yes, PDF Crop is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using PDF Crop?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
+  "pdf-page-numbers": {
+    slug: "pdf-page-numbers",
+    title: "PDF Page Numbers — Add Page Numbers to PDF | Flixo",
+    description:
+      "Add configurable page numbers to PDF pages. Number PDF pages privately in your browser with no sign-up required.",
+    keywords: [
+      "pdf page numbers",
+      "add page numbers pdf",
+      "number pdf pages",
+      "online pdf tool",
+      "flixo pdf",
+    ],
+    overview:
+      "Flixo PDF Page Numbers adds configurable page numbers to PDF pages with position and format options, entirely in your browser.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the PDF Page Numbers tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is PDF Page Numbers free to use on Flixo?",
+        answer:
+          "Yes, PDF Page Numbers is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using PDF Page Numbers?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
+  "pdf-header-footer": {
+    slug: "pdf-header-footer",
+    title: "PDF Header Footer — Add Headers & Footers to PDF | Flixo",
+    description:
+      "Add customizable headers and footers to PDF pages. Brand and label PDFs privately in your browser, no sign-up required.",
+    keywords: [
+      "pdf header footer",
+      "add header pdf",
+      "add footer pdf",
+      "online pdf tool",
+      "flixo pdf",
+    ],
+    overview:
+      "Flixo PDF Header Footer adds customizable headers and footers to PDF pages with text and position controls, all in your browser.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the PDF Header Footer tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is PDF Header Footer free to use on Flixo?",
+        answer:
+          "Yes, PDF Header Footer is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using PDF Header Footer?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
+  "text-to-pdf": {
+    slug: "text-to-pdf",
+    title: "Text to PDF — Convert Text to PDF Online | Flixo",
+    description:
+      "Convert entered or pasted text into a downloadable PDF. Fast, private, browser-based text to PDF with no sign-up required.",
+    keywords: ["text to pdf", "convert text to pdf", "txt to pdf", "online pdf tool", "flixo pdf"],
+    overview:
+      "Flixo Text to PDF turns entered or pasted text into a downloadable PDF document, processed entirely in your browser.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the Text to PDF tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is Text to PDF free to use on Flixo?",
+        answer:
+          "Yes, Text to PDF is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using Text to PDF?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
+  "text-to-word": {
+    slug: "text-to-word",
+    title: "Text to Word — Convert Text to DOCX Online | Flixo",
+    description:
+      "Convert entered or pasted text into a downloadable DOCX document. Private, browser-based text to Word, no sign-up required.",
+    keywords: [
+      "text to word",
+      "convert text to docx",
+      "txt to docx",
+      "online doc tool",
+      "flixo pdf",
+    ],
+    overview:
+      "Flixo Text to Word converts entered or pasted text into a downloadable DOCX document, entirely in your browser.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the Text to Word tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is Text to Word free to use on Flixo?",
+        answer:
+          "Yes, Text to Word is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using Text to Word?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
+  "markdown-to-pdf": {
+    slug: "markdown-to-pdf",
+    title: "Markdown to PDF — Convert MD to PDF Online | Flixo",
+    description:
+      "Convert Markdown content into a formatted PDF. Render Markdown to PDF privately in your browser, no sign-up required.",
+    keywords: ["markdown to pdf", "md to pdf", "convert markdown", "online pdf tool", "flixo pdf"],
+    overview:
+      "Flixo Markdown to PDF converts Markdown content into a formatted, downloadable PDF document, entirely in your browser.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the Markdown to PDF tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is Markdown to PDF free to use on Flixo?",
+        answer:
+          "Yes, Markdown to PDF is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using Markdown to PDF?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
+  "markdown-to-word": {
+    slug: "markdown-to-word",
+    title: "Markdown to Word — Convert MD to DOCX Online | Flixo",
+    description:
+      "Convert Markdown content into a formatted DOCX document. Render Markdown to Word privately in your browser, no sign-up required.",
+    keywords: [
+      "markdown to word",
+      "md to docx",
+      "convert markdown",
+      "online doc tool",
+      "flixo pdf",
+    ],
+    overview:
+      "Flixo Markdown to Word converts Markdown content into a formatted, downloadable DOCX document, entirely in your browser.",
+    features: [
+      "100% Client-side browser processing",
+      "No account or sign-up required",
+      "Instant real-time preview and export",
+      "Supports English and Arabic interfaces",
+    ],
+    howToUse: [
+      "Open the Markdown to Word tool.",
+      "Input your data or upload your file.",
+      "Adjust options to your preference.",
+      "Copy or download your result instantly.",
+    ],
+    benefits: [
+      "Complete data privacy with zero server uploads",
+      "Fast response time with no queuing",
+      "Free for personal and commercial usage",
+    ],
+    faqs: [
+      {
+        question: "Is Markdown to Word free to use on Flixo?",
+        answer:
+          "Yes, Markdown to Word is completely free with no usage limits or registration requirements.",
+      },
+      {
+        question: "Is my data private when using Markdown to Word?",
+        answer:
+          "Yes, all processing occurs locally in your browser. Your files and data are never stored on external servers.",
+      },
+    ],
+  },
 };
 
 export function getToolSeo(slug: string): ToolSeoData {

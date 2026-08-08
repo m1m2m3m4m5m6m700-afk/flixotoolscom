@@ -361,6 +361,84 @@ export const en = {
   "tool.grammar-checker.tagline": "Fix spelling, punctuation, and grammatical errors instantly.",
   "tool.grammar-checker.pageDescription":
     "Fix spelling, punctuation, and grammatical errors instantly.",
+  "tool.audio-converter.name": "Audio Converter",
+  "tool.audio-converter.tagline":
+    "Convert audio between MP3, WAV, OGG, AAC and M4A in your browser.",
+  "tool.audio-converter.pageDescription":
+    "Convert audio between MP3, WAV, OGG, AAC and M4A in your browser.",
+  "tool.audio-compressor.name": "Audio Compressor",
+  "tool.audio-compressor.tagline":
+    "Compress audio files while controlling output quality and bitrate.",
+  "tool.audio-compressor.pageDescription":
+    "Compress audio files while controlling output quality and bitrate.",
+  "tool.video-converter.name": "Video Converter",
+  "tool.video-converter.tagline": "Convert video between MP4, WebM, MOV and AVI where supported.",
+  "tool.video-converter.pageDescription":
+    "Convert video between MP4, WebM, MOV and AVI where supported.",
+  "tool.video-compressor.name": "Video Compressor",
+  "tool.video-compressor.tagline":
+    "Reduce video file size with configurable quality and output settings.",
+  "tool.video-compressor.pageDescription":
+    "Reduce video file size with configurable quality and output settings.",
+  "tool.video-trimmer.name": "Video Trimmer",
+  "tool.video-trimmer.tagline": "Trim a selected portion of a video using start and end controls.",
+  "tool.video-trimmer.pageDescription":
+    "Trim a selected portion of a video using start and end controls.",
+  "tool.gif-maker.name": "GIF Maker",
+  "tool.gif-maker.tagline": "Create an animated GIF from uploaded images or supported video.",
+  "tool.gif-maker.pageDescription":
+    "Create an animated GIF from uploaded images or supported video.",
+  "tool.gif-compressor.name": "GIF Compressor",
+  "tool.gif-compressor.tagline": "Reduce GIF file size while preserving acceptable visual quality.",
+  "tool.gif-compressor.pageDescription":
+    "Reduce GIF file size while preserving acceptable visual quality.",
+  "tool.audio-cutter.name": "Audio Cutter",
+  "tool.audio-cutter.tagline":
+    "Cut a selected portion from an audio file using start and end controls.",
+  "tool.audio-cutter.pageDescription":
+    "Cut a selected portion from an audio file using start and end controls.",
+  "tool.video-to-gif.name": "Video to GIF",
+  "tool.video-to-gif.tagline": "Convert a supported video segment into an animated GIF.",
+  "tool.video-to-gif.pageDescription": "Convert a supported video segment into an animated GIF.",
+  "tool.image-to-gif.name": "Image to GIF",
+  "tool.image-to-gif.tagline": "Create an animated GIF from multiple uploaded images.",
+  "tool.image-to-gif.pageDescription": "Create an animated GIF from multiple uploaded images.",
+  "tool.pdf-to-excel.name": "PDF to Excel",
+  "tool.pdf-to-excel.tagline":
+    "Convert suitable PDF tables and content into an Excel-compatible file.",
+  "tool.pdf-to-excel.pageDescription":
+    "Convert suitable PDF tables and content into an Excel-compatible file.",
+  "tool.pdf-to-powerpoint.name": "PDF to PowerPoint",
+  "tool.pdf-to-powerpoint.tagline":
+    "Convert suitable PDF pages and content into a PowerPoint-compatible file.",
+  "tool.pdf-to-powerpoint.pageDescription":
+    "Convert suitable PDF pages and content into a PowerPoint-compatible file.",
+  "tool.pdf-to-text.name": "PDF to Text",
+  "tool.pdf-to-text.tagline": "Extract selectable text from PDF documents.",
+  "tool.pdf-to-text.pageDescription": "Extract selectable text from PDF documents.",
+  "tool.pdf-crop.name": "PDF Crop",
+  "tool.pdf-crop.tagline": "Crop PDF pages with configurable crop boundaries.",
+  "tool.pdf-crop.pageDescription": "Crop PDF pages with configurable crop boundaries.",
+  "tool.pdf-page-numbers.name": "PDF Page Numbers",
+  "tool.pdf-page-numbers.tagline": "Add configurable page numbers to PDF pages.",
+  "tool.pdf-page-numbers.pageDescription": "Add configurable page numbers to PDF pages.",
+  "tool.pdf-header-footer.name": "PDF Header Footer",
+  "tool.pdf-header-footer.tagline": "Add customizable headers and footers to PDF pages.",
+  "tool.pdf-header-footer.pageDescription": "Add customizable headers and footers to PDF pages.",
+  "tool.text-to-pdf.name": "Text to PDF",
+  "tool.text-to-pdf.tagline": "Convert entered or pasted text into a downloadable PDF.",
+  "tool.text-to-pdf.pageDescription": "Convert entered or pasted text into a downloadable PDF.",
+  "tool.text-to-word.name": "Text to Word",
+  "tool.text-to-word.tagline": "Convert entered or pasted text into a downloadable DOCX document.",
+  "tool.text-to-word.pageDescription":
+    "Convert entered or pasted text into a downloadable DOCX document.",
+  "tool.markdown-to-pdf.name": "Markdown to PDF",
+  "tool.markdown-to-pdf.tagline": "Convert Markdown content into a formatted PDF.",
+  "tool.markdown-to-pdf.pageDescription": "Convert Markdown content into a formatted PDF.",
+  "tool.markdown-to-word.name": "Markdown to Word",
+  "tool.markdown-to-word.tagline": "Convert Markdown content into a formatted DOCX document.",
+  "tool.markdown-to-word.pageDescription":
+    "Convert Markdown content into a formatted DOCX document.",
 } as const;
 
 export type TranslationKey = keyof typeof en;

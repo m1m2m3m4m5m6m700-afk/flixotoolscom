@@ -49,6 +49,9 @@ import { Route as ToolsIndexRouteImport } from './routes/tools/index'
 import { Route as ToolsSlugRouteImport } from './routes/tools/$slug'
 import { Route as ToolsAiWriterRouteImport } from './routes/tools/ai-writer'
 import { Route as ToolsArticleGeneratorRouteImport } from './routes/tools/article-generator'
+import { Route as ToolsAudioCompressorRouteImport } from './routes/tools/audio-compressor'
+import { Route as ToolsAudioConverterRouteImport } from './routes/tools/audio-converter'
+import { Route as ToolsAudioCutterRouteImport } from './routes/tools/audio-cutter'
 import { Route as ToolsBackgroundChangerRouteImport } from './routes/tools/background-changer'
 import { Route as ToolsBackgroundRemoverRouteImport } from './routes/tools/background-remover'
 import { Route as ToolsBarcodeGeneratorRouteImport } from './routes/tools/barcode-generator'
@@ -66,6 +69,8 @@ import { Route as ToolsDocxTranslatorRouteImport } from './routes/tools/docx-tra
 import { Route as ToolsExcelToPdfRouteImport } from './routes/tools/excel-to-pdf'
 import { Route as ToolsFaceBlurRouteImport } from './routes/tools/face-blur'
 import { Route as ToolsFileHashGeneratorRouteImport } from './routes/tools/file-hash-generator'
+import { Route as ToolsGifCompressorRouteImport } from './routes/tools/gif-compressor'
+import { Route as ToolsGifMakerRouteImport } from './routes/tools/gif-maker'
 import { Route as ToolsGrammarCheckerRouteImport } from './routes/tools/grammar-checker'
 import { Route as ToolsHtmlMinifierRouteImport } from './routes/tools/html-minifier'
 import { Route as ToolsImageCompressorRouteImport } from './routes/tools/image-compressor'
@@ -75,6 +80,7 @@ import { Route as ToolsImageEnhancerRouteImport } from './routes/tools/image-enh
 import { Route as ToolsImageGeneratorRouteImport } from './routes/tools/image-generator'
 import { Route as ToolsImageOcrRouteImport } from './routes/tools/image-ocr'
 import { Route as ToolsImageResizerRouteImport } from './routes/tools/image-resizer'
+import { Route as ToolsImageToGifRouteImport } from './routes/tools/image-to-gif'
 import { Route as ToolsImageToPdfRouteImport } from './routes/tools/image-to-pdf'
 import { Route as ToolsImageTranslatorRouteImport } from './routes/tools/image-translator'
 import { Route as ToolsImageUpscalerRouteImport } from './routes/tools/image-upscaler'
@@ -87,19 +93,27 @@ import { Route as ToolsLanguageDetectionRouteImport } from './routes/tools/langu
 import { Route as ToolsLargeTextTranslatorRouteImport } from './routes/tools/large-text-translator'
 import { Route as ToolsLoremIpsumRouteImport } from './routes/tools/lorem-ipsum'
 import { Route as ToolsMarkdownPreviewRouteImport } from './routes/tools/markdown-preview'
+import { Route as ToolsMarkdownToPdfRouteImport } from './routes/tools/markdown-to-pdf'
+import { Route as ToolsMarkdownToWordRouteImport } from './routes/tools/markdown-to-word'
 import { Route as ToolsMetaTagGeneratorRouteImport } from './routes/tools/meta-tag-generator'
 import { Route as ToolsOcrTranslatorRouteImport } from './routes/tools/ocr-translator'
 import { Route as ToolsPasswordGeneratorRouteImport } from './routes/tools/password-generator'
 import { Route as ToolsPdfCompressRouteImport } from './routes/tools/pdf-compress'
+import { Route as ToolsPdfCropRouteImport } from './routes/tools/pdf-crop'
 import { Route as ToolsPdfEditRouteImport } from './routes/tools/pdf-edit'
 import { Route as ToolsPdfExtractPagesRouteImport } from './routes/tools/pdf-extract-pages'
+import { Route as ToolsPdfHeaderFooterRouteImport } from './routes/tools/pdf-header-footer'
 import { Route as ToolsPdfMergeRouteImport } from './routes/tools/pdf-merge'
 import { Route as ToolsPdfOcrRouteImport } from './routes/tools/pdf-ocr'
+import { Route as ToolsPdfPageNumbersRouteImport } from './routes/tools/pdf-page-numbers'
 import { Route as ToolsPdfProtectRouteImport } from './routes/tools/pdf-protect'
 import { Route as ToolsPdfRotateRouteImport } from './routes/tools/pdf-rotate'
 import { Route as ToolsPdfSignRouteImport } from './routes/tools/pdf-sign'
 import { Route as ToolsPdfSplitRouteImport } from './routes/tools/pdf-split'
+import { Route as ToolsPdfToExcelRouteImport } from './routes/tools/pdf-to-excel'
 import { Route as ToolsPdfToJpgRouteImport } from './routes/tools/pdf-to-jpg'
+import { Route as ToolsPdfToPowerpointRouteImport } from './routes/tools/pdf-to-powerpoint'
+import { Route as ToolsPdfToTextRouteImport } from './routes/tools/pdf-to-text'
 import { Route as ToolsPdfToWordRouteImport } from './routes/tools/pdf-to-word'
 import { Route as ToolsPdfTranslatorRouteImport } from './routes/tools/pdf-translator'
 import { Route as ToolsPdfUnlockRouteImport } from './routes/tools/pdf-unlock'
@@ -114,10 +128,16 @@ import { Route as ToolsScreenshotEditorRouteImport } from './routes/tools/screen
 import { Route as ToolsSharpenImageRouteImport } from './routes/tools/sharpen-image'
 import { Route as ToolsSubtitleTranslatorRouteImport } from './routes/tools/subtitle-translator'
 import { Route as ToolsSummarizerRouteImport } from './routes/tools/summarizer'
+import { Route as ToolsTextToPdfRouteImport } from './routes/tools/text-to-pdf'
+import { Route as ToolsTextToWordRouteImport } from './routes/tools/text-to-word'
 import { Route as ToolsTranslatorRouteImport } from './routes/tools/translator'
 import { Route as ToolsUnitConverterRouteImport } from './routes/tools/unit-converter'
 import { Route as ToolsUrlEncoderRouteImport } from './routes/tools/url-encoder'
 import { Route as ToolsUuidGeneratorRouteImport } from './routes/tools/uuid-generator'
+import { Route as ToolsVideoCompressorRouteImport } from './routes/tools/video-compressor'
+import { Route as ToolsVideoConverterRouteImport } from './routes/tools/video-converter'
+import { Route as ToolsVideoToGifRouteImport } from './routes/tools/video-to-gif'
+import { Route as ToolsVideoTrimmerRouteImport } from './routes/tools/video-trimmer'
 import { Route as ToolsVoiceTranslatorRouteImport } from './routes/tools/voice-translator'
 import { Route as ToolsWatermarkRemoverRouteImport } from './routes/tools/watermark-remover'
 import { Route as ToolsWebsiteTranslatorRouteImport } from './routes/tools/website-translator'
@@ -329,6 +349,21 @@ const ToolsArticleGeneratorRoute = ToolsArticleGeneratorRouteImport.update({
   path: '/tools/article-generator',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ToolsAudioCompressorRoute = ToolsAudioCompressorRouteImport.update({
+  id: '/tools/audio-compressor',
+  path: '/tools/audio-compressor',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsAudioConverterRoute = ToolsAudioConverterRouteImport.update({
+  id: '/tools/audio-converter',
+  path: '/tools/audio-converter',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsAudioCutterRoute = ToolsAudioCutterRouteImport.update({
+  id: '/tools/audio-cutter',
+  path: '/tools/audio-cutter',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ToolsBackgroundChangerRoute = ToolsBackgroundChangerRouteImport.update({
   id: '/tools/background-changer',
   path: '/tools/background-changer',
@@ -415,6 +450,16 @@ const ToolsFileHashGeneratorRoute = ToolsFileHashGeneratorRouteImport.update({
   path: '/tools/file-hash-generator',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ToolsGifCompressorRoute = ToolsGifCompressorRouteImport.update({
+  id: '/tools/gif-compressor',
+  path: '/tools/gif-compressor',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsGifMakerRoute = ToolsGifMakerRouteImport.update({
+  id: '/tools/gif-maker',
+  path: '/tools/gif-maker',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ToolsGrammarCheckerRoute = ToolsGrammarCheckerRouteImport.update({
   id: '/tools/grammar-checker',
   path: '/tools/grammar-checker',
@@ -458,6 +503,11 @@ const ToolsImageOcrRoute = ToolsImageOcrRouteImport.update({
 const ToolsImageResizerRoute = ToolsImageResizerRouteImport.update({
   id: '/tools/image-resizer',
   path: '/tools/image-resizer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsImageToGifRoute = ToolsImageToGifRouteImport.update({
+  id: '/tools/image-to-gif',
+  path: '/tools/image-to-gif',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ToolsImageToPdfRoute = ToolsImageToPdfRouteImport.update({
@@ -521,6 +571,16 @@ const ToolsMarkdownPreviewRoute = ToolsMarkdownPreviewRouteImport.update({
   path: '/tools/markdown-preview',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ToolsMarkdownToPdfRoute = ToolsMarkdownToPdfRouteImport.update({
+  id: '/tools/markdown-to-pdf',
+  path: '/tools/markdown-to-pdf',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsMarkdownToWordRoute = ToolsMarkdownToWordRouteImport.update({
+  id: '/tools/markdown-to-word',
+  path: '/tools/markdown-to-word',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ToolsMetaTagGeneratorRoute = ToolsMetaTagGeneratorRouteImport.update({
   id: '/tools/meta-tag-generator',
   path: '/tools/meta-tag-generator',
@@ -541,6 +601,11 @@ const ToolsPdfCompressRoute = ToolsPdfCompressRouteImport.update({
   path: '/tools/pdf-compress',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ToolsPdfCropRoute = ToolsPdfCropRouteImport.update({
+  id: '/tools/pdf-crop',
+  path: '/tools/pdf-crop',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ToolsPdfEditRoute = ToolsPdfEditRouteImport.update({
   id: '/tools/pdf-edit',
   path: '/tools/pdf-edit',
@@ -551,6 +616,11 @@ const ToolsPdfExtractPagesRoute = ToolsPdfExtractPagesRouteImport.update({
   path: '/tools/pdf-extract-pages',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ToolsPdfHeaderFooterRoute = ToolsPdfHeaderFooterRouteImport.update({
+  id: '/tools/pdf-header-footer',
+  path: '/tools/pdf-header-footer',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ToolsPdfMergeRoute = ToolsPdfMergeRouteImport.update({
   id: '/tools/pdf-merge',
   path: '/tools/pdf-merge',
@@ -559,6 +629,11 @@ const ToolsPdfMergeRoute = ToolsPdfMergeRouteImport.update({
 const ToolsPdfOcrRoute = ToolsPdfOcrRouteImport.update({
   id: '/tools/pdf-ocr',
   path: '/tools/pdf-ocr',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsPdfPageNumbersRoute = ToolsPdfPageNumbersRouteImport.update({
+  id: '/tools/pdf-page-numbers',
+  path: '/tools/pdf-page-numbers',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ToolsPdfProtectRoute = ToolsPdfProtectRouteImport.update({
@@ -581,9 +656,24 @@ const ToolsPdfSplitRoute = ToolsPdfSplitRouteImport.update({
   path: '/tools/pdf-split',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ToolsPdfToExcelRoute = ToolsPdfToExcelRouteImport.update({
+  id: '/tools/pdf-to-excel',
+  path: '/tools/pdf-to-excel',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ToolsPdfToJpgRoute = ToolsPdfToJpgRouteImport.update({
   id: '/tools/pdf-to-jpg',
   path: '/tools/pdf-to-jpg',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsPdfToPowerpointRoute = ToolsPdfToPowerpointRouteImport.update({
+  id: '/tools/pdf-to-powerpoint',
+  path: '/tools/pdf-to-powerpoint',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsPdfToTextRoute = ToolsPdfToTextRouteImport.update({
+  id: '/tools/pdf-to-text',
+  path: '/tools/pdf-to-text',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ToolsPdfToWordRoute = ToolsPdfToWordRouteImport.update({
@@ -657,6 +747,16 @@ const ToolsSummarizerRoute = ToolsSummarizerRouteImport.update({
   path: '/tools/summarizer',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ToolsTextToPdfRoute = ToolsTextToPdfRouteImport.update({
+  id: '/tools/text-to-pdf',
+  path: '/tools/text-to-pdf',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsTextToWordRoute = ToolsTextToWordRouteImport.update({
+  id: '/tools/text-to-word',
+  path: '/tools/text-to-word',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ToolsTranslatorRoute = ToolsTranslatorRouteImport.update({
   id: '/tools/translator',
   path: '/tools/translator',
@@ -675,6 +775,26 @@ const ToolsUrlEncoderRoute = ToolsUrlEncoderRouteImport.update({
 const ToolsUuidGeneratorRoute = ToolsUuidGeneratorRouteImport.update({
   id: '/tools/uuid-generator',
   path: '/tools/uuid-generator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsVideoCompressorRoute = ToolsVideoCompressorRouteImport.update({
+  id: '/tools/video-compressor',
+  path: '/tools/video-compressor',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsVideoConverterRoute = ToolsVideoConverterRouteImport.update({
+  id: '/tools/video-converter',
+  path: '/tools/video-converter',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsVideoToGifRoute = ToolsVideoToGifRouteImport.update({
+  id: '/tools/video-to-gif',
+  path: '/tools/video-to-gif',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsVideoTrimmerRoute = ToolsVideoTrimmerRouteImport.update({
+  id: '/tools/video-trimmer',
+  path: '/tools/video-trimmer',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ToolsVoiceTranslatorRoute = ToolsVoiceTranslatorRouteImport.update({
@@ -761,6 +881,9 @@ export interface FileRoutesByFullPath {
   '/tools/$slug': typeof ToolsSlugRoute
   '/tools/ai-writer': typeof ToolsAiWriterRoute
   '/tools/article-generator': typeof ToolsArticleGeneratorRoute
+  '/tools/audio-compressor': typeof ToolsAudioCompressorRoute
+  '/tools/audio-converter': typeof ToolsAudioConverterRoute
+  '/tools/audio-cutter': typeof ToolsAudioCutterRoute
   '/tools/background-changer': typeof ToolsBackgroundChangerRoute
   '/tools/background-remover': typeof ToolsBackgroundRemoverRoute
   '/tools/barcode-generator': typeof ToolsBarcodeGeneratorRoute
@@ -778,6 +901,8 @@ export interface FileRoutesByFullPath {
   '/tools/excel-to-pdf': typeof ToolsExcelToPdfRoute
   '/tools/face-blur': typeof ToolsFaceBlurRoute
   '/tools/file-hash-generator': typeof ToolsFileHashGeneratorRoute
+  '/tools/gif-compressor': typeof ToolsGifCompressorRoute
+  '/tools/gif-maker': typeof ToolsGifMakerRoute
   '/tools/grammar-checker': typeof ToolsGrammarCheckerRoute
   '/tools/html-minifier': typeof ToolsHtmlMinifierRoute
   '/tools/image-compressor': typeof ToolsImageCompressorRoute
@@ -787,6 +912,7 @@ export interface FileRoutesByFullPath {
   '/tools/image-generator': typeof ToolsImageGeneratorRoute
   '/tools/image-ocr': typeof ToolsImageOcrRoute
   '/tools/image-resizer': typeof ToolsImageResizerRoute
+  '/tools/image-to-gif': typeof ToolsImageToGifRoute
   '/tools/image-to-pdf': typeof ToolsImageToPdfRoute
   '/tools/image-translator': typeof ToolsImageTranslatorRoute
   '/tools/image-upscaler': typeof ToolsImageUpscalerRoute
@@ -799,19 +925,27 @@ export interface FileRoutesByFullPath {
   '/tools/large-text-translator': typeof ToolsLargeTextTranslatorRoute
   '/tools/lorem-ipsum': typeof ToolsLoremIpsumRoute
   '/tools/markdown-preview': typeof ToolsMarkdownPreviewRoute
+  '/tools/markdown-to-pdf': typeof ToolsMarkdownToPdfRoute
+  '/tools/markdown-to-word': typeof ToolsMarkdownToWordRoute
   '/tools/meta-tag-generator': typeof ToolsMetaTagGeneratorRoute
   '/tools/ocr-translator': typeof ToolsOcrTranslatorRoute
   '/tools/password-generator': typeof ToolsPasswordGeneratorRoute
   '/tools/pdf-compress': typeof ToolsPdfCompressRoute
+  '/tools/pdf-crop': typeof ToolsPdfCropRoute
   '/tools/pdf-edit': typeof ToolsPdfEditRoute
   '/tools/pdf-extract-pages': typeof ToolsPdfExtractPagesRoute
+  '/tools/pdf-header-footer': typeof ToolsPdfHeaderFooterRoute
   '/tools/pdf-merge': typeof ToolsPdfMergeRoute
   '/tools/pdf-ocr': typeof ToolsPdfOcrRoute
+  '/tools/pdf-page-numbers': typeof ToolsPdfPageNumbersRoute
   '/tools/pdf-protect': typeof ToolsPdfProtectRoute
   '/tools/pdf-rotate': typeof ToolsPdfRotateRoute
   '/tools/pdf-sign': typeof ToolsPdfSignRoute
   '/tools/pdf-split': typeof ToolsPdfSplitRoute
+  '/tools/pdf-to-excel': typeof ToolsPdfToExcelRoute
   '/tools/pdf-to-jpg': typeof ToolsPdfToJpgRoute
+  '/tools/pdf-to-powerpoint': typeof ToolsPdfToPowerpointRoute
+  '/tools/pdf-to-text': typeof ToolsPdfToTextRoute
   '/tools/pdf-to-word': typeof ToolsPdfToWordRoute
   '/tools/pdf-translator': typeof ToolsPdfTranslatorRoute
   '/tools/pdf-unlock': typeof ToolsPdfUnlockRoute
@@ -826,10 +960,16 @@ export interface FileRoutesByFullPath {
   '/tools/sharpen-image': typeof ToolsSharpenImageRoute
   '/tools/subtitle-translator': typeof ToolsSubtitleTranslatorRoute
   '/tools/summarizer': typeof ToolsSummarizerRoute
+  '/tools/text-to-pdf': typeof ToolsTextToPdfRoute
+  '/tools/text-to-word': typeof ToolsTextToWordRoute
   '/tools/translator': typeof ToolsTranslatorRoute
   '/tools/unit-converter': typeof ToolsUnitConverterRoute
   '/tools/url-encoder': typeof ToolsUrlEncoderRoute
   '/tools/uuid-generator': typeof ToolsUuidGeneratorRoute
+  '/tools/video-compressor': typeof ToolsVideoCompressorRoute
+  '/tools/video-converter': typeof ToolsVideoConverterRoute
+  '/tools/video-to-gif': typeof ToolsVideoToGifRoute
+  '/tools/video-trimmer': typeof ToolsVideoTrimmerRoute
   '/tools/voice-translator': typeof ToolsVoiceTranslatorRoute
   '/tools/watermark-remover': typeof ToolsWatermarkRemoverRoute
   '/tools/website-translator': typeof ToolsWebsiteTranslatorRoute
@@ -882,6 +1022,9 @@ export interface FileRoutesByTo {
   '/tools/$slug': typeof ToolsSlugRoute
   '/tools/ai-writer': typeof ToolsAiWriterRoute
   '/tools/article-generator': typeof ToolsArticleGeneratorRoute
+  '/tools/audio-compressor': typeof ToolsAudioCompressorRoute
+  '/tools/audio-converter': typeof ToolsAudioConverterRoute
+  '/tools/audio-cutter': typeof ToolsAudioCutterRoute
   '/tools/background-changer': typeof ToolsBackgroundChangerRoute
   '/tools/background-remover': typeof ToolsBackgroundRemoverRoute
   '/tools/barcode-generator': typeof ToolsBarcodeGeneratorRoute
@@ -899,6 +1042,8 @@ export interface FileRoutesByTo {
   '/tools/excel-to-pdf': typeof ToolsExcelToPdfRoute
   '/tools/face-blur': typeof ToolsFaceBlurRoute
   '/tools/file-hash-generator': typeof ToolsFileHashGeneratorRoute
+  '/tools/gif-compressor': typeof ToolsGifCompressorRoute
+  '/tools/gif-maker': typeof ToolsGifMakerRoute
   '/tools/grammar-checker': typeof ToolsGrammarCheckerRoute
   '/tools/html-minifier': typeof ToolsHtmlMinifierRoute
   '/tools/image-compressor': typeof ToolsImageCompressorRoute
@@ -908,6 +1053,7 @@ export interface FileRoutesByTo {
   '/tools/image-generator': typeof ToolsImageGeneratorRoute
   '/tools/image-ocr': typeof ToolsImageOcrRoute
   '/tools/image-resizer': typeof ToolsImageResizerRoute
+  '/tools/image-to-gif': typeof ToolsImageToGifRoute
   '/tools/image-to-pdf': typeof ToolsImageToPdfRoute
   '/tools/image-translator': typeof ToolsImageTranslatorRoute
   '/tools/image-upscaler': typeof ToolsImageUpscalerRoute
@@ -920,19 +1066,27 @@ export interface FileRoutesByTo {
   '/tools/large-text-translator': typeof ToolsLargeTextTranslatorRoute
   '/tools/lorem-ipsum': typeof ToolsLoremIpsumRoute
   '/tools/markdown-preview': typeof ToolsMarkdownPreviewRoute
+  '/tools/markdown-to-pdf': typeof ToolsMarkdownToPdfRoute
+  '/tools/markdown-to-word': typeof ToolsMarkdownToWordRoute
   '/tools/meta-tag-generator': typeof ToolsMetaTagGeneratorRoute
   '/tools/ocr-translator': typeof ToolsOcrTranslatorRoute
   '/tools/password-generator': typeof ToolsPasswordGeneratorRoute
   '/tools/pdf-compress': typeof ToolsPdfCompressRoute
+  '/tools/pdf-crop': typeof ToolsPdfCropRoute
   '/tools/pdf-edit': typeof ToolsPdfEditRoute
   '/tools/pdf-extract-pages': typeof ToolsPdfExtractPagesRoute
+  '/tools/pdf-header-footer': typeof ToolsPdfHeaderFooterRoute
   '/tools/pdf-merge': typeof ToolsPdfMergeRoute
   '/tools/pdf-ocr': typeof ToolsPdfOcrRoute
+  '/tools/pdf-page-numbers': typeof ToolsPdfPageNumbersRoute
   '/tools/pdf-protect': typeof ToolsPdfProtectRoute
   '/tools/pdf-rotate': typeof ToolsPdfRotateRoute
   '/tools/pdf-sign': typeof ToolsPdfSignRoute
   '/tools/pdf-split': typeof ToolsPdfSplitRoute
+  '/tools/pdf-to-excel': typeof ToolsPdfToExcelRoute
   '/tools/pdf-to-jpg': typeof ToolsPdfToJpgRoute
+  '/tools/pdf-to-powerpoint': typeof ToolsPdfToPowerpointRoute
+  '/tools/pdf-to-text': typeof ToolsPdfToTextRoute
   '/tools/pdf-to-word': typeof ToolsPdfToWordRoute
   '/tools/pdf-translator': typeof ToolsPdfTranslatorRoute
   '/tools/pdf-unlock': typeof ToolsPdfUnlockRoute
@@ -947,10 +1101,16 @@ export interface FileRoutesByTo {
   '/tools/sharpen-image': typeof ToolsSharpenImageRoute
   '/tools/subtitle-translator': typeof ToolsSubtitleTranslatorRoute
   '/tools/summarizer': typeof ToolsSummarizerRoute
+  '/tools/text-to-pdf': typeof ToolsTextToPdfRoute
+  '/tools/text-to-word': typeof ToolsTextToWordRoute
   '/tools/translator': typeof ToolsTranslatorRoute
   '/tools/unit-converter': typeof ToolsUnitConverterRoute
   '/tools/url-encoder': typeof ToolsUrlEncoderRoute
   '/tools/uuid-generator': typeof ToolsUuidGeneratorRoute
+  '/tools/video-compressor': typeof ToolsVideoCompressorRoute
+  '/tools/video-converter': typeof ToolsVideoConverterRoute
+  '/tools/video-to-gif': typeof ToolsVideoToGifRoute
+  '/tools/video-trimmer': typeof ToolsVideoTrimmerRoute
   '/tools/voice-translator': typeof ToolsVoiceTranslatorRoute
   '/tools/watermark-remover': typeof ToolsWatermarkRemoverRoute
   '/tools/website-translator': typeof ToolsWebsiteTranslatorRoute
@@ -1004,6 +1164,9 @@ export interface FileRoutesById {
   '/tools/$slug': typeof ToolsSlugRoute
   '/tools/ai-writer': typeof ToolsAiWriterRoute
   '/tools/article-generator': typeof ToolsArticleGeneratorRoute
+  '/tools/audio-compressor': typeof ToolsAudioCompressorRoute
+  '/tools/audio-converter': typeof ToolsAudioConverterRoute
+  '/tools/audio-cutter': typeof ToolsAudioCutterRoute
   '/tools/background-changer': typeof ToolsBackgroundChangerRoute
   '/tools/background-remover': typeof ToolsBackgroundRemoverRoute
   '/tools/barcode-generator': typeof ToolsBarcodeGeneratorRoute
@@ -1021,6 +1184,8 @@ export interface FileRoutesById {
   '/tools/excel-to-pdf': typeof ToolsExcelToPdfRoute
   '/tools/face-blur': typeof ToolsFaceBlurRoute
   '/tools/file-hash-generator': typeof ToolsFileHashGeneratorRoute
+  '/tools/gif-compressor': typeof ToolsGifCompressorRoute
+  '/tools/gif-maker': typeof ToolsGifMakerRoute
   '/tools/grammar-checker': typeof ToolsGrammarCheckerRoute
   '/tools/html-minifier': typeof ToolsHtmlMinifierRoute
   '/tools/image-compressor': typeof ToolsImageCompressorRoute
@@ -1030,6 +1195,7 @@ export interface FileRoutesById {
   '/tools/image-generator': typeof ToolsImageGeneratorRoute
   '/tools/image-ocr': typeof ToolsImageOcrRoute
   '/tools/image-resizer': typeof ToolsImageResizerRoute
+  '/tools/image-to-gif': typeof ToolsImageToGifRoute
   '/tools/image-to-pdf': typeof ToolsImageToPdfRoute
   '/tools/image-translator': typeof ToolsImageTranslatorRoute
   '/tools/image-upscaler': typeof ToolsImageUpscalerRoute
@@ -1042,19 +1208,27 @@ export interface FileRoutesById {
   '/tools/large-text-translator': typeof ToolsLargeTextTranslatorRoute
   '/tools/lorem-ipsum': typeof ToolsLoremIpsumRoute
   '/tools/markdown-preview': typeof ToolsMarkdownPreviewRoute
+  '/tools/markdown-to-pdf': typeof ToolsMarkdownToPdfRoute
+  '/tools/markdown-to-word': typeof ToolsMarkdownToWordRoute
   '/tools/meta-tag-generator': typeof ToolsMetaTagGeneratorRoute
   '/tools/ocr-translator': typeof ToolsOcrTranslatorRoute
   '/tools/password-generator': typeof ToolsPasswordGeneratorRoute
   '/tools/pdf-compress': typeof ToolsPdfCompressRoute
+  '/tools/pdf-crop': typeof ToolsPdfCropRoute
   '/tools/pdf-edit': typeof ToolsPdfEditRoute
   '/tools/pdf-extract-pages': typeof ToolsPdfExtractPagesRoute
+  '/tools/pdf-header-footer': typeof ToolsPdfHeaderFooterRoute
   '/tools/pdf-merge': typeof ToolsPdfMergeRoute
   '/tools/pdf-ocr': typeof ToolsPdfOcrRoute
+  '/tools/pdf-page-numbers': typeof ToolsPdfPageNumbersRoute
   '/tools/pdf-protect': typeof ToolsPdfProtectRoute
   '/tools/pdf-rotate': typeof ToolsPdfRotateRoute
   '/tools/pdf-sign': typeof ToolsPdfSignRoute
   '/tools/pdf-split': typeof ToolsPdfSplitRoute
+  '/tools/pdf-to-excel': typeof ToolsPdfToExcelRoute
   '/tools/pdf-to-jpg': typeof ToolsPdfToJpgRoute
+  '/tools/pdf-to-powerpoint': typeof ToolsPdfToPowerpointRoute
+  '/tools/pdf-to-text': typeof ToolsPdfToTextRoute
   '/tools/pdf-to-word': typeof ToolsPdfToWordRoute
   '/tools/pdf-translator': typeof ToolsPdfTranslatorRoute
   '/tools/pdf-unlock': typeof ToolsPdfUnlockRoute
@@ -1069,10 +1243,16 @@ export interface FileRoutesById {
   '/tools/sharpen-image': typeof ToolsSharpenImageRoute
   '/tools/subtitle-translator': typeof ToolsSubtitleTranslatorRoute
   '/tools/summarizer': typeof ToolsSummarizerRoute
+  '/tools/text-to-pdf': typeof ToolsTextToPdfRoute
+  '/tools/text-to-word': typeof ToolsTextToWordRoute
   '/tools/translator': typeof ToolsTranslatorRoute
   '/tools/unit-converter': typeof ToolsUnitConverterRoute
   '/tools/url-encoder': typeof ToolsUrlEncoderRoute
   '/tools/uuid-generator': typeof ToolsUuidGeneratorRoute
+  '/tools/video-compressor': typeof ToolsVideoCompressorRoute
+  '/tools/video-converter': typeof ToolsVideoConverterRoute
+  '/tools/video-to-gif': typeof ToolsVideoToGifRoute
+  '/tools/video-trimmer': typeof ToolsVideoTrimmerRoute
   '/tools/voice-translator': typeof ToolsVoiceTranslatorRoute
   '/tools/watermark-remover': typeof ToolsWatermarkRemoverRoute
   '/tools/website-translator': typeof ToolsWebsiteTranslatorRoute
@@ -1127,6 +1307,9 @@ export interface FileRouteTypes {
     | '/tools/$slug'
     | '/tools/ai-writer'
     | '/tools/article-generator'
+    | '/tools/audio-compressor'
+    | '/tools/audio-converter'
+    | '/tools/audio-cutter'
     | '/tools/background-changer'
     | '/tools/background-remover'
     | '/tools/barcode-generator'
@@ -1144,6 +1327,8 @@ export interface FileRouteTypes {
     | '/tools/excel-to-pdf'
     | '/tools/face-blur'
     | '/tools/file-hash-generator'
+    | '/tools/gif-compressor'
+    | '/tools/gif-maker'
     | '/tools/grammar-checker'
     | '/tools/html-minifier'
     | '/tools/image-compressor'
@@ -1153,6 +1338,7 @@ export interface FileRouteTypes {
     | '/tools/image-generator'
     | '/tools/image-ocr'
     | '/tools/image-resizer'
+    | '/tools/image-to-gif'
     | '/tools/image-to-pdf'
     | '/tools/image-translator'
     | '/tools/image-upscaler'
@@ -1165,19 +1351,27 @@ export interface FileRouteTypes {
     | '/tools/large-text-translator'
     | '/tools/lorem-ipsum'
     | '/tools/markdown-preview'
+    | '/tools/markdown-to-pdf'
+    | '/tools/markdown-to-word'
     | '/tools/meta-tag-generator'
     | '/tools/ocr-translator'
     | '/tools/password-generator'
     | '/tools/pdf-compress'
+    | '/tools/pdf-crop'
     | '/tools/pdf-edit'
     | '/tools/pdf-extract-pages'
+    | '/tools/pdf-header-footer'
     | '/tools/pdf-merge'
     | '/tools/pdf-ocr'
+    | '/tools/pdf-page-numbers'
     | '/tools/pdf-protect'
     | '/tools/pdf-rotate'
     | '/tools/pdf-sign'
     | '/tools/pdf-split'
+    | '/tools/pdf-to-excel'
     | '/tools/pdf-to-jpg'
+    | '/tools/pdf-to-powerpoint'
+    | '/tools/pdf-to-text'
     | '/tools/pdf-to-word'
     | '/tools/pdf-translator'
     | '/tools/pdf-unlock'
@@ -1192,10 +1386,16 @@ export interface FileRouteTypes {
     | '/tools/sharpen-image'
     | '/tools/subtitle-translator'
     | '/tools/summarizer'
+    | '/tools/text-to-pdf'
+    | '/tools/text-to-word'
     | '/tools/translator'
     | '/tools/unit-converter'
     | '/tools/url-encoder'
     | '/tools/uuid-generator'
+    | '/tools/video-compressor'
+    | '/tools/video-converter'
+    | '/tools/video-to-gif'
+    | '/tools/video-trimmer'
     | '/tools/voice-translator'
     | '/tools/watermark-remover'
     | '/tools/website-translator'
@@ -1248,6 +1448,9 @@ export interface FileRouteTypes {
     | '/tools/$slug'
     | '/tools/ai-writer'
     | '/tools/article-generator'
+    | '/tools/audio-compressor'
+    | '/tools/audio-converter'
+    | '/tools/audio-cutter'
     | '/tools/background-changer'
     | '/tools/background-remover'
     | '/tools/barcode-generator'
@@ -1265,6 +1468,8 @@ export interface FileRouteTypes {
     | '/tools/excel-to-pdf'
     | '/tools/face-blur'
     | '/tools/file-hash-generator'
+    | '/tools/gif-compressor'
+    | '/tools/gif-maker'
     | '/tools/grammar-checker'
     | '/tools/html-minifier'
     | '/tools/image-compressor'
@@ -1274,6 +1479,7 @@ export interface FileRouteTypes {
     | '/tools/image-generator'
     | '/tools/image-ocr'
     | '/tools/image-resizer'
+    | '/tools/image-to-gif'
     | '/tools/image-to-pdf'
     | '/tools/image-translator'
     | '/tools/image-upscaler'
@@ -1286,19 +1492,27 @@ export interface FileRouteTypes {
     | '/tools/large-text-translator'
     | '/tools/lorem-ipsum'
     | '/tools/markdown-preview'
+    | '/tools/markdown-to-pdf'
+    | '/tools/markdown-to-word'
     | '/tools/meta-tag-generator'
     | '/tools/ocr-translator'
     | '/tools/password-generator'
     | '/tools/pdf-compress'
+    | '/tools/pdf-crop'
     | '/tools/pdf-edit'
     | '/tools/pdf-extract-pages'
+    | '/tools/pdf-header-footer'
     | '/tools/pdf-merge'
     | '/tools/pdf-ocr'
+    | '/tools/pdf-page-numbers'
     | '/tools/pdf-protect'
     | '/tools/pdf-rotate'
     | '/tools/pdf-sign'
     | '/tools/pdf-split'
+    | '/tools/pdf-to-excel'
     | '/tools/pdf-to-jpg'
+    | '/tools/pdf-to-powerpoint'
+    | '/tools/pdf-to-text'
     | '/tools/pdf-to-word'
     | '/tools/pdf-translator'
     | '/tools/pdf-unlock'
@@ -1313,10 +1527,16 @@ export interface FileRouteTypes {
     | '/tools/sharpen-image'
     | '/tools/subtitle-translator'
     | '/tools/summarizer'
+    | '/tools/text-to-pdf'
+    | '/tools/text-to-word'
     | '/tools/translator'
     | '/tools/unit-converter'
     | '/tools/url-encoder'
     | '/tools/uuid-generator'
+    | '/tools/video-compressor'
+    | '/tools/video-converter'
+    | '/tools/video-to-gif'
+    | '/tools/video-trimmer'
     | '/tools/voice-translator'
     | '/tools/watermark-remover'
     | '/tools/website-translator'
@@ -1369,6 +1589,9 @@ export interface FileRouteTypes {
     | '/tools/$slug'
     | '/tools/ai-writer'
     | '/tools/article-generator'
+    | '/tools/audio-compressor'
+    | '/tools/audio-converter'
+    | '/tools/audio-cutter'
     | '/tools/background-changer'
     | '/tools/background-remover'
     | '/tools/barcode-generator'
@@ -1386,6 +1609,8 @@ export interface FileRouteTypes {
     | '/tools/excel-to-pdf'
     | '/tools/face-blur'
     | '/tools/file-hash-generator'
+    | '/tools/gif-compressor'
+    | '/tools/gif-maker'
     | '/tools/grammar-checker'
     | '/tools/html-minifier'
     | '/tools/image-compressor'
@@ -1395,6 +1620,7 @@ export interface FileRouteTypes {
     | '/tools/image-generator'
     | '/tools/image-ocr'
     | '/tools/image-resizer'
+    | '/tools/image-to-gif'
     | '/tools/image-to-pdf'
     | '/tools/image-translator'
     | '/tools/image-upscaler'
@@ -1407,19 +1633,27 @@ export interface FileRouteTypes {
     | '/tools/large-text-translator'
     | '/tools/lorem-ipsum'
     | '/tools/markdown-preview'
+    | '/tools/markdown-to-pdf'
+    | '/tools/markdown-to-word'
     | '/tools/meta-tag-generator'
     | '/tools/ocr-translator'
     | '/tools/password-generator'
     | '/tools/pdf-compress'
+    | '/tools/pdf-crop'
     | '/tools/pdf-edit'
     | '/tools/pdf-extract-pages'
+    | '/tools/pdf-header-footer'
     | '/tools/pdf-merge'
     | '/tools/pdf-ocr'
+    | '/tools/pdf-page-numbers'
     | '/tools/pdf-protect'
     | '/tools/pdf-rotate'
     | '/tools/pdf-sign'
     | '/tools/pdf-split'
+    | '/tools/pdf-to-excel'
     | '/tools/pdf-to-jpg'
+    | '/tools/pdf-to-powerpoint'
+    | '/tools/pdf-to-text'
     | '/tools/pdf-to-word'
     | '/tools/pdf-translator'
     | '/tools/pdf-unlock'
@@ -1434,10 +1668,16 @@ export interface FileRouteTypes {
     | '/tools/sharpen-image'
     | '/tools/subtitle-translator'
     | '/tools/summarizer'
+    | '/tools/text-to-pdf'
+    | '/tools/text-to-word'
     | '/tools/translator'
     | '/tools/unit-converter'
     | '/tools/url-encoder'
     | '/tools/uuid-generator'
+    | '/tools/video-compressor'
+    | '/tools/video-converter'
+    | '/tools/video-to-gif'
+    | '/tools/video-trimmer'
     | '/tools/voice-translator'
     | '/tools/watermark-remover'
     | '/tools/website-translator'
@@ -1491,6 +1731,9 @@ export interface RootRouteChildren {
   ToolsSlugRoute: typeof ToolsSlugRoute
   ToolsAiWriterRoute: typeof ToolsAiWriterRoute
   ToolsArticleGeneratorRoute: typeof ToolsArticleGeneratorRoute
+  ToolsAudioCompressorRoute: typeof ToolsAudioCompressorRoute
+  ToolsAudioConverterRoute: typeof ToolsAudioConverterRoute
+  ToolsAudioCutterRoute: typeof ToolsAudioCutterRoute
   ToolsBackgroundChangerRoute: typeof ToolsBackgroundChangerRoute
   ToolsBackgroundRemoverRoute: typeof ToolsBackgroundRemoverRoute
   ToolsBarcodeGeneratorRoute: typeof ToolsBarcodeGeneratorRoute
@@ -1508,6 +1751,8 @@ export interface RootRouteChildren {
   ToolsExcelToPdfRoute: typeof ToolsExcelToPdfRoute
   ToolsFaceBlurRoute: typeof ToolsFaceBlurRoute
   ToolsFileHashGeneratorRoute: typeof ToolsFileHashGeneratorRoute
+  ToolsGifCompressorRoute: typeof ToolsGifCompressorRoute
+  ToolsGifMakerRoute: typeof ToolsGifMakerRoute
   ToolsGrammarCheckerRoute: typeof ToolsGrammarCheckerRoute
   ToolsHtmlMinifierRoute: typeof ToolsHtmlMinifierRoute
   ToolsImageCompressorRoute: typeof ToolsImageCompressorRoute
@@ -1517,6 +1762,7 @@ export interface RootRouteChildren {
   ToolsImageGeneratorRoute: typeof ToolsImageGeneratorRoute
   ToolsImageOcrRoute: typeof ToolsImageOcrRoute
   ToolsImageResizerRoute: typeof ToolsImageResizerRoute
+  ToolsImageToGifRoute: typeof ToolsImageToGifRoute
   ToolsImageToPdfRoute: typeof ToolsImageToPdfRoute
   ToolsImageTranslatorRoute: typeof ToolsImageTranslatorRoute
   ToolsImageUpscalerRoute: typeof ToolsImageUpscalerRoute
@@ -1529,19 +1775,27 @@ export interface RootRouteChildren {
   ToolsLargeTextTranslatorRoute: typeof ToolsLargeTextTranslatorRoute
   ToolsLoremIpsumRoute: typeof ToolsLoremIpsumRoute
   ToolsMarkdownPreviewRoute: typeof ToolsMarkdownPreviewRoute
+  ToolsMarkdownToPdfRoute: typeof ToolsMarkdownToPdfRoute
+  ToolsMarkdownToWordRoute: typeof ToolsMarkdownToWordRoute
   ToolsMetaTagGeneratorRoute: typeof ToolsMetaTagGeneratorRoute
   ToolsOcrTranslatorRoute: typeof ToolsOcrTranslatorRoute
   ToolsPasswordGeneratorRoute: typeof ToolsPasswordGeneratorRoute
   ToolsPdfCompressRoute: typeof ToolsPdfCompressRoute
+  ToolsPdfCropRoute: typeof ToolsPdfCropRoute
   ToolsPdfEditRoute: typeof ToolsPdfEditRoute
   ToolsPdfExtractPagesRoute: typeof ToolsPdfExtractPagesRoute
+  ToolsPdfHeaderFooterRoute: typeof ToolsPdfHeaderFooterRoute
   ToolsPdfMergeRoute: typeof ToolsPdfMergeRoute
   ToolsPdfOcrRoute: typeof ToolsPdfOcrRoute
+  ToolsPdfPageNumbersRoute: typeof ToolsPdfPageNumbersRoute
   ToolsPdfProtectRoute: typeof ToolsPdfProtectRoute
   ToolsPdfRotateRoute: typeof ToolsPdfRotateRoute
   ToolsPdfSignRoute: typeof ToolsPdfSignRoute
   ToolsPdfSplitRoute: typeof ToolsPdfSplitRoute
+  ToolsPdfToExcelRoute: typeof ToolsPdfToExcelRoute
   ToolsPdfToJpgRoute: typeof ToolsPdfToJpgRoute
+  ToolsPdfToPowerpointRoute: typeof ToolsPdfToPowerpointRoute
+  ToolsPdfToTextRoute: typeof ToolsPdfToTextRoute
   ToolsPdfToWordRoute: typeof ToolsPdfToWordRoute
   ToolsPdfTranslatorRoute: typeof ToolsPdfTranslatorRoute
   ToolsPdfUnlockRoute: typeof ToolsPdfUnlockRoute
@@ -1556,10 +1810,16 @@ export interface RootRouteChildren {
   ToolsSharpenImageRoute: typeof ToolsSharpenImageRoute
   ToolsSubtitleTranslatorRoute: typeof ToolsSubtitleTranslatorRoute
   ToolsSummarizerRoute: typeof ToolsSummarizerRoute
+  ToolsTextToPdfRoute: typeof ToolsTextToPdfRoute
+  ToolsTextToWordRoute: typeof ToolsTextToWordRoute
   ToolsTranslatorRoute: typeof ToolsTranslatorRoute
   ToolsUnitConverterRoute: typeof ToolsUnitConverterRoute
   ToolsUrlEncoderRoute: typeof ToolsUrlEncoderRoute
   ToolsUuidGeneratorRoute: typeof ToolsUuidGeneratorRoute
+  ToolsVideoCompressorRoute: typeof ToolsVideoCompressorRoute
+  ToolsVideoConverterRoute: typeof ToolsVideoConverterRoute
+  ToolsVideoToGifRoute: typeof ToolsVideoToGifRoute
+  ToolsVideoTrimmerRoute: typeof ToolsVideoTrimmerRoute
   ToolsVoiceTranslatorRoute: typeof ToolsVoiceTranslatorRoute
   ToolsWatermarkRemoverRoute: typeof ToolsWatermarkRemoverRoute
   ToolsWebsiteTranslatorRoute: typeof ToolsWebsiteTranslatorRoute
@@ -1862,6 +2122,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsArticleGeneratorRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools/audio-compressor': {
+      id: '/tools/audio-compressor'
+      path: '/tools/audio-compressor'
+      fullPath: '/tools/audio-compressor'
+      preLoaderRoute: typeof ToolsAudioCompressorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/audio-converter': {
+      id: '/tools/audio-converter'
+      path: '/tools/audio-converter'
+      fullPath: '/tools/audio-converter'
+      preLoaderRoute: typeof ToolsAudioConverterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/audio-cutter': {
+      id: '/tools/audio-cutter'
+      path: '/tools/audio-cutter'
+      fullPath: '/tools/audio-cutter'
+      preLoaderRoute: typeof ToolsAudioCutterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tools/background-changer': {
       id: '/tools/background-changer'
       path: '/tools/background-changer'
@@ -1981,6 +2262,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsFileHashGeneratorRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools/gif-compressor': {
+      id: '/tools/gif-compressor'
+      path: '/tools/gif-compressor'
+      fullPath: '/tools/gif-compressor'
+      preLoaderRoute: typeof ToolsGifCompressorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/gif-maker': {
+      id: '/tools/gif-maker'
+      path: '/tools/gif-maker'
+      fullPath: '/tools/gif-maker'
+      preLoaderRoute: typeof ToolsGifMakerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tools/grammar-checker': {
       id: '/tools/grammar-checker'
       path: '/tools/grammar-checker'
@@ -2042,6 +2337,13 @@ declare module '@tanstack/react-router' {
       path: '/tools/image-resizer'
       fullPath: '/tools/image-resizer'
       preLoaderRoute: typeof ToolsImageResizerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/image-to-gif': {
+      id: '/tools/image-to-gif'
+      path: '/tools/image-to-gif'
+      fullPath: '/tools/image-to-gif'
+      preLoaderRoute: typeof ToolsImageToGifRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tools/image-to-pdf': {
@@ -2128,6 +2430,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsMarkdownPreviewRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools/markdown-to-pdf': {
+      id: '/tools/markdown-to-pdf'
+      path: '/tools/markdown-to-pdf'
+      fullPath: '/tools/markdown-to-pdf'
+      preLoaderRoute: typeof ToolsMarkdownToPdfRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/markdown-to-word': {
+      id: '/tools/markdown-to-word'
+      path: '/tools/markdown-to-word'
+      fullPath: '/tools/markdown-to-word'
+      preLoaderRoute: typeof ToolsMarkdownToWordRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tools/meta-tag-generator': {
       id: '/tools/meta-tag-generator'
       path: '/tools/meta-tag-generator'
@@ -2156,6 +2472,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsPdfCompressRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools/pdf-crop': {
+      id: '/tools/pdf-crop'
+      path: '/tools/pdf-crop'
+      fullPath: '/tools/pdf-crop'
+      preLoaderRoute: typeof ToolsPdfCropRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tools/pdf-edit': {
       id: '/tools/pdf-edit'
       path: '/tools/pdf-edit'
@@ -2170,6 +2493,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsPdfExtractPagesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools/pdf-header-footer': {
+      id: '/tools/pdf-header-footer'
+      path: '/tools/pdf-header-footer'
+      fullPath: '/tools/pdf-header-footer'
+      preLoaderRoute: typeof ToolsPdfHeaderFooterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tools/pdf-merge': {
       id: '/tools/pdf-merge'
       path: '/tools/pdf-merge'
@@ -2182,6 +2512,13 @@ declare module '@tanstack/react-router' {
       path: '/tools/pdf-ocr'
       fullPath: '/tools/pdf-ocr'
       preLoaderRoute: typeof ToolsPdfOcrRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/pdf-page-numbers': {
+      id: '/tools/pdf-page-numbers'
+      path: '/tools/pdf-page-numbers'
+      fullPath: '/tools/pdf-page-numbers'
+      preLoaderRoute: typeof ToolsPdfPageNumbersRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tools/pdf-protect': {
@@ -2212,11 +2549,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsPdfSplitRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools/pdf-to-excel': {
+      id: '/tools/pdf-to-excel'
+      path: '/tools/pdf-to-excel'
+      fullPath: '/tools/pdf-to-excel'
+      preLoaderRoute: typeof ToolsPdfToExcelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tools/pdf-to-jpg': {
       id: '/tools/pdf-to-jpg'
       path: '/tools/pdf-to-jpg'
       fullPath: '/tools/pdf-to-jpg'
       preLoaderRoute: typeof ToolsPdfToJpgRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/pdf-to-powerpoint': {
+      id: '/tools/pdf-to-powerpoint'
+      path: '/tools/pdf-to-powerpoint'
+      fullPath: '/tools/pdf-to-powerpoint'
+      preLoaderRoute: typeof ToolsPdfToPowerpointRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/pdf-to-text': {
+      id: '/tools/pdf-to-text'
+      path: '/tools/pdf-to-text'
+      fullPath: '/tools/pdf-to-text'
+      preLoaderRoute: typeof ToolsPdfToTextRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tools/pdf-to-word': {
@@ -2317,6 +2675,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsSummarizerRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools/text-to-pdf': {
+      id: '/tools/text-to-pdf'
+      path: '/tools/text-to-pdf'
+      fullPath: '/tools/text-to-pdf'
+      preLoaderRoute: typeof ToolsTextToPdfRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/text-to-word': {
+      id: '/tools/text-to-word'
+      path: '/tools/text-to-word'
+      fullPath: '/tools/text-to-word'
+      preLoaderRoute: typeof ToolsTextToWordRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tools/translator': {
       id: '/tools/translator'
       path: '/tools/translator'
@@ -2343,6 +2715,34 @@ declare module '@tanstack/react-router' {
       path: '/tools/uuid-generator'
       fullPath: '/tools/uuid-generator'
       preLoaderRoute: typeof ToolsUuidGeneratorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/video-compressor': {
+      id: '/tools/video-compressor'
+      path: '/tools/video-compressor'
+      fullPath: '/tools/video-compressor'
+      preLoaderRoute: typeof ToolsVideoCompressorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/video-converter': {
+      id: '/tools/video-converter'
+      path: '/tools/video-converter'
+      fullPath: '/tools/video-converter'
+      preLoaderRoute: typeof ToolsVideoConverterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/video-to-gif': {
+      id: '/tools/video-to-gif'
+      path: '/tools/video-to-gif'
+      fullPath: '/tools/video-to-gif'
+      preLoaderRoute: typeof ToolsVideoToGifRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/video-trimmer': {
+      id: '/tools/video-trimmer'
+      path: '/tools/video-trimmer'
+      fullPath: '/tools/video-trimmer'
+      preLoaderRoute: typeof ToolsVideoTrimmerRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tools/voice-translator': {
@@ -2451,6 +2851,9 @@ const rootRouteChildren: RootRouteChildren = {
   ToolsSlugRoute: ToolsSlugRoute,
   ToolsAiWriterRoute: ToolsAiWriterRoute,
   ToolsArticleGeneratorRoute: ToolsArticleGeneratorRoute,
+  ToolsAudioCompressorRoute: ToolsAudioCompressorRoute,
+  ToolsAudioConverterRoute: ToolsAudioConverterRoute,
+  ToolsAudioCutterRoute: ToolsAudioCutterRoute,
   ToolsBackgroundChangerRoute: ToolsBackgroundChangerRoute,
   ToolsBackgroundRemoverRoute: ToolsBackgroundRemoverRoute,
   ToolsBarcodeGeneratorRoute: ToolsBarcodeGeneratorRoute,
@@ -2468,6 +2871,8 @@ const rootRouteChildren: RootRouteChildren = {
   ToolsExcelToPdfRoute: ToolsExcelToPdfRoute,
   ToolsFaceBlurRoute: ToolsFaceBlurRoute,
   ToolsFileHashGeneratorRoute: ToolsFileHashGeneratorRoute,
+  ToolsGifCompressorRoute: ToolsGifCompressorRoute,
+  ToolsGifMakerRoute: ToolsGifMakerRoute,
   ToolsGrammarCheckerRoute: ToolsGrammarCheckerRoute,
   ToolsHtmlMinifierRoute: ToolsHtmlMinifierRoute,
   ToolsImageCompressorRoute: ToolsImageCompressorRoute,
@@ -2477,6 +2882,7 @@ const rootRouteChildren: RootRouteChildren = {
   ToolsImageGeneratorRoute: ToolsImageGeneratorRoute,
   ToolsImageOcrRoute: ToolsImageOcrRoute,
   ToolsImageResizerRoute: ToolsImageResizerRoute,
+  ToolsImageToGifRoute: ToolsImageToGifRoute,
   ToolsImageToPdfRoute: ToolsImageToPdfRoute,
   ToolsImageTranslatorRoute: ToolsImageTranslatorRoute,
   ToolsImageUpscalerRoute: ToolsImageUpscalerRoute,
@@ -2489,19 +2895,27 @@ const rootRouteChildren: RootRouteChildren = {
   ToolsLargeTextTranslatorRoute: ToolsLargeTextTranslatorRoute,
   ToolsLoremIpsumRoute: ToolsLoremIpsumRoute,
   ToolsMarkdownPreviewRoute: ToolsMarkdownPreviewRoute,
+  ToolsMarkdownToPdfRoute: ToolsMarkdownToPdfRoute,
+  ToolsMarkdownToWordRoute: ToolsMarkdownToWordRoute,
   ToolsMetaTagGeneratorRoute: ToolsMetaTagGeneratorRoute,
   ToolsOcrTranslatorRoute: ToolsOcrTranslatorRoute,
   ToolsPasswordGeneratorRoute: ToolsPasswordGeneratorRoute,
   ToolsPdfCompressRoute: ToolsPdfCompressRoute,
+  ToolsPdfCropRoute: ToolsPdfCropRoute,
   ToolsPdfEditRoute: ToolsPdfEditRoute,
   ToolsPdfExtractPagesRoute: ToolsPdfExtractPagesRoute,
+  ToolsPdfHeaderFooterRoute: ToolsPdfHeaderFooterRoute,
   ToolsPdfMergeRoute: ToolsPdfMergeRoute,
   ToolsPdfOcrRoute: ToolsPdfOcrRoute,
+  ToolsPdfPageNumbersRoute: ToolsPdfPageNumbersRoute,
   ToolsPdfProtectRoute: ToolsPdfProtectRoute,
   ToolsPdfRotateRoute: ToolsPdfRotateRoute,
   ToolsPdfSignRoute: ToolsPdfSignRoute,
   ToolsPdfSplitRoute: ToolsPdfSplitRoute,
+  ToolsPdfToExcelRoute: ToolsPdfToExcelRoute,
   ToolsPdfToJpgRoute: ToolsPdfToJpgRoute,
+  ToolsPdfToPowerpointRoute: ToolsPdfToPowerpointRoute,
+  ToolsPdfToTextRoute: ToolsPdfToTextRoute,
   ToolsPdfToWordRoute: ToolsPdfToWordRoute,
   ToolsPdfTranslatorRoute: ToolsPdfTranslatorRoute,
   ToolsPdfUnlockRoute: ToolsPdfUnlockRoute,
@@ -2516,10 +2930,16 @@ const rootRouteChildren: RootRouteChildren = {
   ToolsSharpenImageRoute: ToolsSharpenImageRoute,
   ToolsSubtitleTranslatorRoute: ToolsSubtitleTranslatorRoute,
   ToolsSummarizerRoute: ToolsSummarizerRoute,
+  ToolsTextToPdfRoute: ToolsTextToPdfRoute,
+  ToolsTextToWordRoute: ToolsTextToWordRoute,
   ToolsTranslatorRoute: ToolsTranslatorRoute,
   ToolsUnitConverterRoute: ToolsUnitConverterRoute,
   ToolsUrlEncoderRoute: ToolsUrlEncoderRoute,
   ToolsUuidGeneratorRoute: ToolsUuidGeneratorRoute,
+  ToolsVideoCompressorRoute: ToolsVideoCompressorRoute,
+  ToolsVideoConverterRoute: ToolsVideoConverterRoute,
+  ToolsVideoToGifRoute: ToolsVideoToGifRoute,
+  ToolsVideoTrimmerRoute: ToolsVideoTrimmerRoute,
   ToolsVoiceTranslatorRoute: ToolsVoiceTranslatorRoute,
   ToolsWatermarkRemoverRoute: ToolsWatermarkRemoverRoute,
   ToolsWebsiteTranslatorRoute: ToolsWebsiteTranslatorRoute,

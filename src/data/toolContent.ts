@@ -2010,6 +2010,495 @@ const toolContentRegistry: Record<string, Omit<ToolContentData, "slug">> = {
       processingType: "Local",
     },
   },
+  "audio-converter": {
+    overview:
+      "Flixo Audio Converter provides fast, private, browser-based processing so you can complete audio converter workflows without uploads or sign-up.",
+    howItWorks: [
+      "Open the Audio Converter and upload an audio file.",
+      "Choose the target output format.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("audio-converter").features,
+    useCases: [
+      "Re-encode interviews between MP3 and WAV for editing workflows.",
+      "Handle everyday audio converter tasks without extra software.",
+    ],
+    faqs: getToolSeo("audio-converter").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement:
+        "Audio conversion runs inside your browser session and is not stored after use.",
+      processingType: "Local",
+    },
+  },
+  "audio-compressor": {
+    overview:
+      "Flixo Audio Compressor provides fast, private, browser-based processing so you can complete audio compressor workflows without uploads or sign-up.",
+    howItWorks: [
+      "Upload an audio file to the Audio Compressor.",
+      "Adjust the quality or bitrate to balance size and clarity.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("audio-compressor").features,
+    useCases: [
+      "Shrink podcast episodes for faster sharing over limited connections.",
+      "Handle everyday audio compressor tasks without extra software.",
+    ],
+    faqs: getToolSeo("audio-compressor").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement:
+        "Audio compression happens locally in your browser and is not retained after use.",
+      processingType: "Local",
+    },
+  },
+  "video-converter": {
+    overview:
+      "Flixo Video Converter provides fast, private, browser-based processing so you can complete video converter workflows without uploads or sign-up.",
+    howItWorks: [
+      "Open the Video Converter and upload a video file.",
+      "Select a supported output container format.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("video-converter").features,
+    useCases: [
+      "Switch clips to WebM for lighter web embedding where supported.",
+      "Handle everyday video converter tasks without extra software.",
+    ],
+    faqs: getToolSeo("video-converter").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement:
+        "Video conversion runs inside your browser session and is not stored after use.",
+      processingType: "Local",
+    },
+  },
+  "video-compressor": {
+    overview:
+      "Flixo Video Compressor provides fast, private, browser-based processing so you can complete video compressor workflows without uploads or sign-up.",
+    howItWorks: [
+      "Upload a video file to the Video Compressor.",
+      "Choose quality and output settings to reduce file size.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("video-compressor").features,
+    useCases: [
+      "Reduce lecture recording sizes before uploading to a shared drive.",
+      "Handle everyday video compressor tasks without extra software.",
+    ],
+    faqs: getToolSeo("video-compressor").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement:
+        "Video compression is handled in your browser and is not retained after use.",
+      processingType: "Local",
+    },
+  },
+  "video-trimmer": {
+    overview:
+      "Flixo Video Trimmer provides fast, private, browser-based processing so you can complete video trimmer workflows without uploads or sign-up.",
+    howItWorks: [
+      "Open the Video Trimmer and upload a video.",
+      "Set the start and end points for the clip you want to keep.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("video-trimmer").features,
+    useCases: [
+      "Cut highlight segments out of longer recordings for quick previews.",
+      "Handle everyday video trimmer tasks without extra software.",
+    ],
+    faqs: getToolSeo("video-trimmer").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement:
+        "Trimming is performed locally in your browser and is not stored after use.",
+      processingType: "Local",
+    },
+  },
+  "gif-maker": {
+    overview:
+      "Flixo GIF Maker provides fast, private, browser-based processing so you can complete gif maker workflows without uploads or sign-up.",
+    howItWorks: [
+      "Open the GIF Maker and add images or a supported video.",
+      "Arrange frames and set the animation timing.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("gif-maker").features,
+    useCases: [
+      "Build looping product demos from a sequence of screenshots.",
+      "Handle everyday gif maker tasks without extra software.",
+    ],
+    faqs: getToolSeo("gif-maker").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "GIF creation runs entirely in your browser and is not stored after use.",
+      processingType: "Local",
+    },
+  },
+  "gif-compressor": {
+    overview:
+      "Flixo GIF Compressor provides fast, private, browser-based processing so you can complete gif compressor workflows without uploads or sign-up.",
+    howItWorks: [
+      "Upload an animated GIF to the GIF Compressor.",
+      "Choose compression settings that balance size and visual quality.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("gif-compressor").features,
+    useCases: [
+      "Trim GIF file sizes so they fit within messaging app limits.",
+      "Handle everyday gif compressor tasks without extra software.",
+    ],
+    faqs: getToolSeo("gif-compressor").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "GIF compression is handled in your browser and is not retained after use.",
+      processingType: "Local",
+    },
+  },
+  "audio-cutter": {
+    overview:
+      "Flixo Audio Cutter provides fast, private, browser-based processing so you can complete audio cutter workflows without uploads or sign-up.",
+    howItWorks: [
+      "Open the Audio Cutter and upload an audio file.",
+      "Set the start and end points for the segment you want to keep.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("audio-cutter").features,
+    useCases: [
+      "Extract a single track segment from a longer recording for reuse.",
+      "Handle everyday audio cutter tasks without extra software.",
+    ],
+    faqs: getToolSeo("audio-cutter").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Audio cutting runs locally in your browser and is not stored after use.",
+      processingType: "Local",
+    },
+  },
+  "video-to-gif": {
+    overview:
+      "Flixo Video to GIF provides fast, private, browser-based processing so you can complete video to gif workflows without uploads or sign-up.",
+    howItWorks: [
+      "Open the Video to GIF tool and upload a supported video.",
+      "Select the segment and settings for the animated GIF output.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("video-to-gif").features,
+    useCases: [
+      "Turn a short clip into a shareable looping GIF for social posts.",
+      "Handle everyday video to gif tasks without extra software.",
+    ],
+    faqs: getToolSeo("video-to-gif").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Conversion runs entirely in your browser and is not stored after use.",
+      processingType: "Local",
+    },
+  },
+  "image-to-gif": {
+    overview:
+      "Flixo Image to GIF provides fast, private, browser-based processing so you can complete image to gif workflows without uploads or sign-up.",
+    howItWorks: [
+      "Open the Image to GIF tool and upload multiple images.",
+      "Order the frames and set the animation speed.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("image-to-gif").features,
+    useCases: [
+      "Combine a photo series into an animated showcase GIF.",
+      "Handle everyday image to gif tasks without extra software.",
+    ],
+    faqs: getToolSeo("image-to-gif").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "GIF assembly runs entirely in your browser and is not stored after use.",
+      processingType: "Local",
+    },
+  },
+  "pdf-to-excel": {
+    overview:
+      "Flixo PDF to Excel provides fast, private, browser-based processing so you can complete pdf to excel workflows without uploads or sign-up.",
+    howItWorks: [
+      "Open the PDF to Excel tool and upload a PDF document.",
+      "Extract suitable tabular content into an Excel-compatible file.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("pdf-to-excel").features,
+    useCases: [
+      "Turn financial PDF tables into editable spreadsheets for analysis.",
+      "Handle everyday pdf to excel tasks without extra software.",
+    ],
+    faqs: getToolSeo("pdf-to-excel").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Conversion runs inside your browser session and is not stored after use.",
+      processingType: "Local",
+    },
+  },
+  "pdf-to-powerpoint": {
+    overview:
+      "Flixo PDF to PowerPoint provides fast, private, browser-based processing so you can complete pdf to powerpoint workflows without uploads or sign-up.",
+    howItWorks: [
+      "Open the PDF to PowerPoint tool and upload a PDF.",
+      "Convert suitable pages into a PowerPoint-compatible file.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("pdf-to-powerpoint").features,
+    useCases: [
+      "Repurpose PDF slide content into editable presentations.",
+      "Handle everyday pdf to powerpoint tasks without extra software.",
+    ],
+    faqs: getToolSeo("pdf-to-powerpoint").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Conversion runs inside your browser session and is not stored after use.",
+      processingType: "Local",
+    },
+  },
+  "pdf-to-text": {
+    overview:
+      "Flixo PDF to Text provides fast, private, browser-based processing so you can complete pdf to text workflows without uploads or sign-up.",
+    howItWorks: [
+      "Open the PDF to Text tool and upload a PDF document.",
+      "Extract the selectable text into an editable result.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("pdf-to-text").features,
+    useCases: [
+      "Pull quotes and figures from PDFs into reports and notes.",
+      "Handle everyday pdf to text tasks without extra software.",
+    ],
+    faqs: getToolSeo("pdf-to-text").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement:
+        "Text extraction runs inside your browser session and is not stored after use.",
+      processingType: "Local",
+    },
+  },
+  "pdf-crop": {
+    overview:
+      "Flixo PDF Crop provides fast, private, browser-based processing so you can complete pdf crop workflows without uploads or sign-up.",
+    howItWorks: [
+      "Open the PDF Crop tool and upload a PDF document.",
+      "Set the crop boundaries for each page.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("pdf-crop").features,
+    useCases: [
+      "Trim margins and unwanted borders before printing or sharing PDFs.",
+      "Handle everyday pdf crop tasks without extra software.",
+    ],
+    faqs: getToolSeo("pdf-crop").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Cropping runs inside your browser session and is not stored after use.",
+      processingType: "Local",
+    },
+  },
+  "pdf-page-numbers": {
+    overview:
+      "Flixo PDF Page Numbers provides fast, private, browser-based processing so you can complete pdf page numbers workflows without uploads or sign-up.",
+    howItWorks: [
+      "Open the PDF Page Numbers tool and upload a PDF.",
+      "Configure the numbering position, format, and starting page.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("pdf-page-numbers").features,
+    useCases: [
+      "Add page numbers to multi-page reports for easier reference.",
+      "Handle everyday pdf page numbers tasks without extra software.",
+    ],
+    faqs: getToolSeo("pdf-page-numbers").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Numbering runs inside your browser session and is not stored after use.",
+      processingType: "Local",
+    },
+  },
+  "pdf-header-footer": {
+    overview:
+      "Flixo PDF Header Footer provides fast, private, browser-based processing so you can complete pdf header footer workflows without uploads or sign-up.",
+    howItWorks: [
+      "Open the PDF Header Footer tool and upload a PDF.",
+      "Configure the header and footer text and placement.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("pdf-header-footer").features,
+    useCases: [
+      "Add branded headers and footers to client-facing PDF documents.",
+      "Handle everyday pdf header footer tasks without extra software.",
+    ],
+    faqs: getToolSeo("pdf-header-footer").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement:
+        "Header and footer insertion runs in your browser and is not stored after use.",
+      processingType: "Local",
+    },
+  },
+  "text-to-pdf": {
+    overview:
+      "Flixo Text to PDF provides fast, private, browser-based processing so you can complete text to pdf workflows without uploads or sign-up.",
+    howItWorks: [
+      "Open the Text to PDF tool and enter or paste your text.",
+      "Generate and download a formatted PDF document.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("text-to-pdf").features,
+    useCases: [
+      "Convert meeting notes into a shareable, formatted PDF.",
+      "Handle everyday text to pdf tasks without extra software.",
+    ],
+    faqs: getToolSeo("text-to-pdf").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement:
+        "PDF generation runs inside your browser session and is not stored after use.",
+      processingType: "Local",
+    },
+  },
+  "text-to-word": {
+    overview:
+      "Flixo Text to Word provides fast, private, browser-based processing so you can complete text to word workflows without uploads or sign-up.",
+    howItWorks: [
+      "Open the Text to Word tool and enter or paste your text.",
+      "Generate and download a DOCX document.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("text-to-word").features,
+    useCases: [
+      "Turn quick drafts into editable Word documents for collaborators.",
+      "Handle everyday text to word tasks without extra software.",
+    ],
+    faqs: getToolSeo("text-to-word").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement:
+        "DOCX generation runs inside your browser session and is not stored after use.",
+      processingType: "Local",
+    },
+  },
+  "markdown-to-pdf": {
+    overview:
+      "Flixo Markdown to PDF provides fast, private, browser-based processing so you can complete markdown to pdf workflows without uploads or sign-up.",
+    howItWorks: [
+      "Open the Markdown to PDF tool and paste your Markdown.",
+      "Render the content and download a formatted PDF.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("markdown-to-pdf").features,
+    useCases: [
+      "Convert documentation written in Markdown into a polished PDF.",
+      "Handle everyday markdown to pdf tasks without extra software.",
+    ],
+    faqs: getToolSeo("markdown-to-pdf").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Rendering runs inside your browser session and is not stored after use.",
+      processingType: "Local",
+    },
+  },
+  "markdown-to-word": {
+    overview:
+      "Flixo Markdown to Word provides fast, private, browser-based processing so you can complete markdown to word workflows without uploads or sign-up.",
+    howItWorks: [
+      "Open the Markdown to Word tool and paste your Markdown.",
+      "Render the content and download a formatted DOCX.",
+      "Run the tool and review the generated output.",
+      "Copy or download the result instantly.",
+    ],
+    features: getToolSeo("markdown-to-word").features,
+    useCases: [
+      "Convert Markdown notes into editable Word documents for review.",
+      "Handle everyday markdown to word tasks without extra software.",
+    ],
+    faqs: getToolSeo("markdown-to-word").faqs,
+    eeat: {
+      author: defaultAuthor,
+      lastUpdated: "2026-08-08",
+      version: "v1.0.0",
+      supportedPlatforms: defaultPlatforms,
+      privacyStatement: "Rendering runs inside your browser session and is not stored after use.",
+      processingType: "Local",
+    },
+  },
 };
 
 export function getAllToolContentEntries() {
