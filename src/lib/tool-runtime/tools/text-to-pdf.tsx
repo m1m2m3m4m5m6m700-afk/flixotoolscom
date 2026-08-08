@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FilePlus, Download, RefreshCw, ShieldCheck, AlertCircle, Type } from "lucide-react";
-import { downloadBlob } from "@/lib/utils";
+import { downloadBlob, friendlyError } from "@/lib/utils";
 import type { ReadyToolRuntimeDefinition } from "../types";
 
 function TextToPdfTool() {
@@ -45,7 +45,7 @@ function TextToPdfTool() {
       downloadBlob(outBytes, outName, "application/pdf");
       setResult({ name: outName, size: outBytes.byteLength });
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Failed to generate PDF.");
+      setError(friendlyError(e, "Failed to generate PDF."));
     } finally {
       setIsProcessing(false);
     }

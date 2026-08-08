@@ -1,6 +1,13 @@
 import { useState } from "react";
 import { Presentation, Download, RefreshCw, Upload, ShieldCheck, AlertCircle } from "lucide-react";
-import { downloadBlob, formatBytes, getPdfjs, readFileAsArrayBuffer } from "@/lib/utils";
+import {
+  assertFileValid,
+  downloadBlob,
+  formatBytes,
+  friendlyError,
+  getPdfjs,
+  readFileAsArrayBuffer,
+} from "@/lib/utils";
 import type { ReadyToolRuntimeDefinition } from "../types";
 
 function PdfToPowerpointTool() {
@@ -17,6 +24,7 @@ function PdfToPowerpointTool() {
     setResult(null);
     setProgress(0);
     try {
+      assertFileValid(file, { kind: "PDF", maxBytes: 100 * 1024 * 1024 });
       const pdfjs = await getPdfjs();
       const data = await readFileAsArrayBuffer(file);
       const pdf = await pdfjs.getDocument({ data }).promise;
@@ -55,7 +63,9 @@ function PdfToPowerpointTool() {
       downloadBlob(blob, outName);
       setResult({ name: outName, slides: pdf.numPages, size: blob.size });
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Failed to convert PDF to PowerPoint.");
+      setError(
+        friendlyError(e, "Failed to convert PDF to PowerPoint. It may be damaged or protected."),
+      );
     } finally {
       setIsProcessing(false);
     }

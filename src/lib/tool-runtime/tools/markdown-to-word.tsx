@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FileDown, Download, RefreshCw, ShieldCheck, AlertCircle } from "lucide-react";
-import { downloadBlob } from "@/lib/utils";
+import { downloadBlob, friendlyError } from "@/lib/utils";
 import type { ReadyToolRuntimeDefinition } from "../types";
 
 function MarkdownToWordTool() {
@@ -95,7 +95,7 @@ function MarkdownToWordTool() {
       downloadBlob(blob, outName);
       setResult({ name: outName, size: blob.size });
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Failed to generate DOCX from Markdown.");
+      setError(friendlyError(e, "Failed to generate DOCX from Markdown."));
     } finally {
       setIsProcessing(false);
     }

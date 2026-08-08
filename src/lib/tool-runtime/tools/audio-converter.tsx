@@ -7,7 +7,14 @@ import {
   ShieldCheck,
   AlertCircle,
 } from "lucide-react";
-import { downloadBlob, formatBytes, audioBufferToWav, decodeAudioFile } from "@/lib/utils";
+import {
+  assertFileValid,
+  audioBufferToWav,
+  decodeAudioFile,
+  downloadBlob,
+  formatBytes,
+  friendlyError,
+} from "@/lib/utils";
 import type { ReadyToolRuntimeDefinition } from "../types";
 
 function AudioConverterTool() {
@@ -23,6 +30,7 @@ function AudioConverterTool() {
     setError("");
     setResult(null);
     try {
+      assertFileValid(file, { kind: "audio", maxBytes: 100 * 1024 * 1024 });
       const buffer = await decodeAudioFile(file);
       const wav = audioBufferToWav(buffer, { sampleRate, mono: false });
       const outName = file.name.replace(/\.[^.]+$/, "") + ".wav";
@@ -34,9 +42,10 @@ function AudioConverterTool() {
       });
     } catch (e) {
       setError(
-        e instanceof Error
-          ? e.message
-          : "Failed to convert audio. Please upload a valid audio file (MP3, WAV, OGG, M4A, FLAC).",
+        friendlyError(
+          e,
+          "Failed to convert audio. Please upload a valid audio file (MP3, WAV, OGG, M4A, FLAC).",
+        ),
       );
     } finally {
       setIsProcessing(false);

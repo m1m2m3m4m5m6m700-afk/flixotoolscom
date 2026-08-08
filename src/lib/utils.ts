@@ -144,3 +144,134 @@ export async function getFfmpeg(): Promise<import("@ffmpeg/ffmpeg").FFmpeg> {
   ffmpegInstance = ffmpeg;
   return ffmpeg;
 }
+
+/**
+ * Validate that a file is non-empty and (optionally) matches an expected
+ * MIME prefix or extension. Throws a user-friendly Error on rejection so the
+ * calling tool can surface it directly.
+ */
+export function assertFileValid(
+  file: File,
+  opts?: { accept?: string[]; kind?: string; maxBytes?: number },
+): void {
+  const kind = opts?.kind ?? "file";
+  if (!file || file.size === 0) {
+    throw new Error(`This ${kind} is empty (0 bytes). Please choose a valid ${kind}.`);
+  }
+  const maxBytes = opts?.maxBytes;
+  if (typeof maxBytes === "number" && file.size > maxBytes) {
+    const mb = Math.round(maxBytes / (1024 * 1024));
+    throw new Error(
+      `This ${kind} is too large (${Math.round(file.size / (1024 * 1024))} MB). The maximum supported size is ${mb} MB.`,
+    );
+  }
+  const accept = opts?.accept;
+  if (accept && accept.length) {
+    const name = file.name.toLowerCase();
+    const type = (file.type || "").toLowerCase();
+    const ok = accept.some((a) => {
+      if (a.startsWith(".")) return name.endsWith(a);
+      if (a.endsWith("/*")) return type.startsWith(a.slice(0, -1));
+      return type === a;
+    });
+    if (!ok) {
+      throw new Error(
+        `This ${kind} format is not supported. Please use one of: ${accept.join(", ")}.`,
+      );
+    }
+  }
+}
+
+/**
+ * Map a raw library/WASM/browser error into a concise, non-technical message
+ * suitable for end users. Never exposes stack traces, WASM internals, worker
+ * errors, or raw FFmpeg output.
+ */
+export function friendlyError(e: unknown, fallback: string): string {
+  if (!(e instanceof Error)) return fallback;
+  const raw = e.message || "";
+  const lower = raw.toLowerCase();
+
+  // Empty / zero-byte files
+  if (lower.includes("empty") && lower.includes("zero")) {
+    return "This file is empty (0 bytes). Please choose a valid file.";
+  }
+
+  // PDF.js errors
+  if (raw.includes("InvalidPDFException") || lower.includes("invalid pdf structure")) {
+    return "This PDF could not be processed. It may be damaged, encrypted, or not a real PDF.";
+  }
+  if (raw.includes("PasswordException") || lower.includes("password")) {
+    return "This PDF is password-protected. Please unlock it first and try again.";
+  }
+  if (lower.includes("formaterror") || lower.includes("pdf format")) {
+    return "This PDF is malformed or corrupted. Please try a different file.";
+  }
+
+  // WASM / memory traps
+  if (
+    lower.includes("memory access out of bounds") ||
+    lower.includes("unreachable") ||
+    lower.includes("wasm") ||
+    lower.includes("runtimeerror")
+  ) {
+    return "This file is too complex to process in your browser. Please try a smaller or simpler file.";
+  }
+
+  // Network / import failures for lazy-loaded libs (check before generic FFmpeg)
+  if (
+    lower.includes("failed to import") ||
+    lower.includes("networkerror") ||
+    lower.includes("fetch")
+  ) {
+    return "A required component failed to load. Please check your connection and reload the page.";
+  }
+
+  // FFmpeg engine not loaded / terminated
+  if (lower.includes("not loaded") && lower.includes("ffmpeg")) {
+    return "The processing engine could not start. Please reload the page and try again.";
+  }
+  if (raw.includes("ERROR_TERMINATED") || lower.includes("terminate")) {
+    return "Processing was interrupted. Please try again.";
+  }
+
+  // FFmpeg processing failures
+  if (raw.includes("FFMPEG_PROCESS_FAILED") || raw.includes("ffmpeg") || raw.includes("FFmpeg")) {
+    return "This file could not be processed. It may be corrupted or in an unsupported format.";
+  }
+
+  // Web Audio / decode errors
+  if (
+    lower.includes("decodeaudiodata") ||
+    lower.includes("domexception") ||
+    lower.includes("encodingerror") ||
+    lower.includes("notsupported") ||
+    lower.includes("unable to decode")
+  ) {
+    return "This audio file could not be decoded. It may be corrupted or in an unsupported format.";
+  }
+
+  // GIF parser / worker errors
+  if (lower.includes("no frames found") || lower.includes("gif")) {
+    return "This GIF could not be processed. It may be corrupted or not a real animated GIF.";
+  }
+
+  // FileReader
+  if (lower.includes("failed to read file")) {
+    return "This file could not be read. Please try again with a different file.";
+  }
+
+  // Canvas
+  if (lower.includes("canvas not supported")) {
+    return "Your browser does not support the required canvas features for this tool.";
+  }
+
+  // Generic out-of-memory / quota
+  if (lower.includes("out of memory") || lower.includes("quota")) {
+    return "Your browser ran out of memory. Please try a smaller file.";
+  }
+
+  // If the raw message is short and friendly enough, keep it; otherwise mask.
+  if (raw.length > 0 && raw.length <= 120 && !/[A-Z_]{3,}/.test(raw)) return raw;
+  return fallback;
+}

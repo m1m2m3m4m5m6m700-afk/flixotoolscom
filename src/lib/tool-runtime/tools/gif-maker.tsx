@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Film, Download, RefreshCw, Upload, ShieldCheck, AlertCircle, X, Plus } from "lucide-react";
-import { downloadBlob, getGifEncoder, formatBytes } from "@/lib/utils";
+import { downloadBlob, friendlyError, getGifEncoder, formatBytes } from "@/lib/utils";
 import type { ReadyToolRuntimeDefinition } from "../types";
 
 function GifMakerTool() {
@@ -70,7 +70,7 @@ function GifMakerTool() {
       downloadBlob(blob, outName);
       setResult({ size: blob.size });
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Failed to create GIF.");
+      setError(friendlyError(e, "Failed to create GIF. Please check that all images are valid."));
     } finally {
       setIsProcessing(false);
     }

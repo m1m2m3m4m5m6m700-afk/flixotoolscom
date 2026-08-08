@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FileText, Download, RefreshCw, ShieldCheck, AlertCircle } from "lucide-react";
-import { downloadBlob } from "@/lib/utils";
+import { downloadBlob, friendlyError } from "@/lib/utils";
 import type { ReadyToolRuntimeDefinition } from "../types";
 
 function TextToWordTool() {
@@ -43,7 +43,7 @@ function TextToWordTool() {
       downloadBlob(blob, outName);
       setResult({ name: outName, size: blob.size });
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Failed to generate DOCX.");
+      setError(friendlyError(e, "Failed to generate DOCX."));
     } finally {
       setIsProcessing(false);
     }

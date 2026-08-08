@@ -7,7 +7,14 @@ import {
   ShieldCheck,
   AlertCircle,
 } from "lucide-react";
-import { downloadBlob, formatBytes, getPdfjs, readFileAsArrayBuffer } from "@/lib/utils";
+import {
+  assertFileValid,
+  downloadBlob,
+  formatBytes,
+  friendlyError,
+  getPdfjs,
+  readFileAsArrayBuffer,
+} from "@/lib/utils";
 import type { TextItem } from "pdfjs-dist/types/src/display/api";
 import type { ReadyToolRuntimeDefinition } from "../types";
 
@@ -25,6 +32,7 @@ function PdfToExcelTool() {
     setError("");
     setResult(null);
     try {
+      assertFileValid(file, { kind: "PDF", maxBytes: 100 * 1024 * 1024 });
       const pdfjs = await getPdfjs();
       const data = await readFileAsArrayBuffer(file);
       const pdf = await pdfjs.getDocument({ data }).promise;
@@ -54,9 +62,7 @@ function PdfToExcelTool() {
         preview: csv.split("\n").slice(0, 8).join("\n"),
       });
     } catch (e) {
-      setError(
-        e instanceof Error ? e.message : "Failed to convert PDF. It may be scanned or protected.",
-      );
+      setError(friendlyError(e, "Failed to convert PDF. It may be scanned or protected."));
     } finally {
       setIsProcessing(false);
     }

@@ -9,7 +9,14 @@ import {
   Copy,
   Check,
 } from "lucide-react";
-import { downloadBlob, formatBytes, getPdfjs, readFileAsArrayBuffer } from "@/lib/utils";
+import {
+  assertFileValid,
+  downloadBlob,
+  formatBytes,
+  friendlyError,
+  getPdfjs,
+  readFileAsArrayBuffer,
+} from "@/lib/utils";
 import type { ReadyToolRuntimeDefinition } from "../types";
 
 function PdfToTextTool() {
@@ -27,6 +34,7 @@ function PdfToTextTool() {
     setText("");
     setCopied(false);
     try {
+      assertFileValid(file, { kind: "PDF", maxBytes: 100 * 1024 * 1024 });
       const pdfjs = await getPdfjs();
       const data = await readFileAsArrayBuffer(file);
       const pdf = await pdfjs.getDocument({ data }).promise;
@@ -54,9 +62,10 @@ function PdfToTextTool() {
       }
     } catch (e) {
       setError(
-        e instanceof Error
-          ? e.message
-          : "Failed to extract text. The PDF may be scanned (image-based) or protected.",
+        friendlyError(
+          e,
+          "Failed to extract text. The PDF may be scanned (image-based) or protected.",
+        ),
       );
     } finally {
       setIsProcessing(false);

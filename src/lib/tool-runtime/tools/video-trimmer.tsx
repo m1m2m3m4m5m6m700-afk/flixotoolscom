@@ -1,6 +1,13 @@
 import { useState } from "react";
 import { Scissors, Download, RefreshCw, Upload, ShieldCheck, AlertCircle } from "lucide-react";
-import { downloadBlob, formatBytes, getFfmpeg, readFileAsArrayBuffer } from "@/lib/utils";
+import {
+  assertFileValid,
+  downloadBlob,
+  formatBytes,
+  friendlyError,
+  getFfmpeg,
+  readFileAsArrayBuffer,
+} from "@/lib/utils";
 import type { ReadyToolRuntimeDefinition } from "../types";
 
 function VideoTrimmerTool() {
@@ -19,6 +26,7 @@ function VideoTrimmerTool() {
     setResult(null);
     setProgress(0);
     try {
+      assertFileValid(f, { kind: "video", maxBytes: 512 * 1024 * 1024 });
       const video = document.createElement("video");
       video.preload = "metadata";
       video.src = URL.createObjectURL(f);
@@ -31,8 +39,10 @@ function VideoTrimmerTool() {
       setDuration(dur);
       setStartSec(0);
       setEndSec(Math.min(10, Math.round(dur * 10) / 10));
-    } catch {
-      setError("Could not read this video's metadata. You can still set times manually.");
+    } catch (e) {
+      setError(
+        friendlyError(e, "Could not read this video's metadata. You can still set times manually."),
+      );
       setDuration(0);
     }
   };
@@ -48,6 +58,7 @@ function VideoTrimmerTool() {
     setResult(null);
     setProgress(0);
     try {
+      assertFileValid(file, { kind: "video", maxBytes: 512 * 1024 * 1024 });
       const ffmpeg = await getFfmpeg();
       const inExt = (file.name.split(".").pop() || "mp4").toLowerCase();
       const inName = "input." + inExt;
@@ -57,7 +68,7 @@ function VideoTrimmerTool() {
       const progressCb = ({ progress }: { progress: number }) =>
         setProgress(Math.round(progress * 100));
       ffmpeg.on("progress", progressCb);
-      await ffmpeg.exec([
+      const ret = await ffmpeg.exec([
         "-ss",
         String(startSec),
         "-to",
@@ -68,8 +79,10 @@ function VideoTrimmerTool() {
         "copy",
         outName,
       ]);
+      if (ret !== 0) throw new Error("FFMPEG_PROCESS_FAILED");
       ffmpeg.off("progress", progressCb);
       const outData = (await ffmpeg.readFile(outName)) as Uint8Array;
+      if (!outData || outData.length === 0) throw new Error("FFMPEG_PROCESS_FAILED");
       const outFile = file.name.replace(/\.[^.]+$/, "") + "-trimmed." + inExt;
       downloadBlob(new Uint8Array(outData), outFile, "video/mp4");
       setResult({ name: outFile, size: outData.length });
@@ -80,9 +93,7 @@ function VideoTrimmerTool() {
         /* ignore */
       }
     } catch (e) {
-      setError(
-        e instanceof Error ? e.message : "Failed to trim video. The format may be unsupported.",
-      );
+      setError(friendlyError(e, "Failed to trim video. The format may be unsupported."));
     } finally {
       setIsProcessing(false);
     }

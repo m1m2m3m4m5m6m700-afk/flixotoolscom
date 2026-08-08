@@ -1,6 +1,13 @@
 import { useState } from "react";
 import { Scissors, Download, RefreshCw, Upload, ShieldCheck, AlertCircle } from "lucide-react";
-import { downloadBlob, formatBytes, audioBufferToWav, decodeAudioFile } from "@/lib/utils";
+import {
+  assertFileValid,
+  audioBufferToWav,
+  decodeAudioFile,
+  downloadBlob,
+  formatBytes,
+  friendlyError,
+} from "@/lib/utils";
 import type { ReadyToolRuntimeDefinition } from "../types";
 
 function AudioCutterTool() {
@@ -17,12 +24,13 @@ function AudioCutterTool() {
     setError("");
     setResult(null);
     try {
+      assertFileValid(f, { kind: "audio", maxBytes: 100 * 1024 * 1024 });
       const buffer = await decodeAudioFile(f);
       setDuration(buffer.duration);
       setStartSec(0);
       setEndSec(Math.round(buffer.duration * 10) / 10);
-    } catch {
-      setError("Could not read this audio file's duration.");
+    } catch (e) {
+      setError(friendlyError(e, "Could not read this audio file's duration."));
     }
   };
 
@@ -36,6 +44,7 @@ function AudioCutterTool() {
     setError("");
     setResult(null);
     try {
+      assertFileValid(file, { kind: "audio", maxBytes: 100 * 1024 * 1024 });
       const buffer = await decodeAudioFile(file);
       const sr = buffer.sampleRate;
       const startSample = Math.floor(startSec * sr);
@@ -57,9 +66,7 @@ function AudioCutterTool() {
       downloadBlob(wav, outName, "audio/wav");
       setResult({ name: outName, size: wav.byteLength });
     } catch (e) {
-      setError(
-        e instanceof Error ? e.message : "Failed to cut audio. Please upload a valid audio file.",
-      );
+      setError(friendlyError(e, "Failed to cut audio. Please upload a valid audio file."));
     } finally {
       setIsProcessing(false);
     }

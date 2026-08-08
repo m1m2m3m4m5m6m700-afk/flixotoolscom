@@ -1,6 +1,13 @@
 import { useState } from "react";
 import { RefreshCw, Upload, ShieldCheck, AlertCircle, Film } from "lucide-react";
-import { downloadBlob, formatBytes, getFfmpeg, readFileAsArrayBuffer } from "@/lib/utils";
+import {
+  assertFileValid,
+  downloadBlob,
+  formatBytes,
+  friendlyError,
+  getFfmpeg,
+  readFileAsArrayBuffer,
+} from "@/lib/utils";
 import type { ReadyToolRuntimeDefinition } from "../types";
 
 function VideoConverterTool() {
@@ -18,6 +25,7 @@ function VideoConverterTool() {
     setResult(null);
     setProgress(0);
     try {
+      assertFileValid(file, { kind: "video", maxBytes: 512 * 1024 * 1024 });
       const ffmpeg = await getFfmpeg();
       const inExt = (file.name.split(".").pop() || "").toLowerCase();
       const inName = "input." + inExt;
@@ -34,9 +42,11 @@ function VideoConverterTool() {
         format === "mp4"
           ? ["-i", inName, "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", outName]
           : ["-i", inName, "-c:v", "mpeg4", "-q:v", "5", "-c:a", "mp2", outName];
-      await ffmpeg.exec(args);
+      const ret = await ffmpeg.exec(args);
+      if (ret !== 0) throw new Error("FFMPEG_PROCESS_FAILED");
       ffmpeg.off("progress", progressCb);
       const outData = (await ffmpeg.readFile(outName)) as Uint8Array;
+      if (!outData || outData.length === 0) throw new Error("FFMPEG_PROCESS_FAILED");
       const outFile = file.name.replace(/\.[^.]+$/, "") + "." + format;
       downloadBlob(
         new Uint8Array(outData),
@@ -51,9 +61,7 @@ function VideoConverterTool() {
         /* ignore */
       }
     } catch (e) {
-      setError(
-        e instanceof Error ? e.message : "Failed to convert video. The format may be unsupported.",
-      );
+      setError(friendlyError(e, "Failed to convert video. The format may be unsupported."));
     } finally {
       setIsProcessing(false);
     }

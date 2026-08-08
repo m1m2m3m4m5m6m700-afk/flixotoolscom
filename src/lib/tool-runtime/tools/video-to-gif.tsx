@@ -1,6 +1,13 @@
 import { useState } from "react";
 import { Clapperboard, Download, RefreshCw, Upload, ShieldCheck, AlertCircle } from "lucide-react";
-import { downloadBlob, formatBytes, getFfmpeg, readFileAsArrayBuffer } from "@/lib/utils";
+import {
+  assertFileValid,
+  downloadBlob,
+  formatBytes,
+  friendlyError,
+  getFfmpeg,
+  readFileAsArrayBuffer,
+} from "@/lib/utils";
 import type { ReadyToolRuntimeDefinition } from "../types";
 
 function VideoToGifTool() {
@@ -21,6 +28,7 @@ function VideoToGifTool() {
     setResult(null);
     setProgress(0);
     try {
+      assertFileValid(file, { kind: "video", maxBytes: 512 * 1024 * 1024 });
       const ffmpeg = await getFfmpeg();
       const inExt = (file.name.split(".").pop() || "mp4").toLowerCase();
       const inName = "input." + inExt;
@@ -29,7 +37,7 @@ function VideoToGifTool() {
       const progressCb = ({ progress }: { progress: number }) =>
         setProgress(Math.round(progress * 100));
       ffmpeg.on("progress", progressCb);
-      await ffmpeg.exec([
+      const ret = await ffmpeg.exec([
         "-ss",
         String(startSec),
         "-t",
@@ -42,8 +50,10 @@ function VideoToGifTool() {
         "0",
         "output.gif",
       ]);
+      if (ret !== 0) throw new Error("FFMPEG_PROCESS_FAILED");
       ffmpeg.off("progress", progressCb);
       const outData = (await ffmpeg.readFile("output.gif")) as Uint8Array;
+      if (!outData || outData.length === 0) throw new Error("FFMPEG_PROCESS_FAILED");
       const outFile = file.name.replace(/\.[^.]+$/, "") + ".gif";
       downloadBlob(new Uint8Array(outData), outFile, "image/gif");
       setResult({ name: outFile, size: outData.length });
@@ -54,11 +64,7 @@ function VideoToGifTool() {
         /* ignore */
       }
     } catch (e) {
-      setError(
-        e instanceof Error
-          ? e.message
-          : "Failed to convert video to GIF. The format may be unsupported.",
-      );
+      setError(friendlyError(e, "Failed to convert video to GIF. The format may be unsupported."));
     } finally {
       setIsProcessing(false);
     }

@@ -8,7 +8,13 @@ import {
   FileText,
   AlertCircle,
 } from "lucide-react";
-import { downloadBlob, formatBytes, readFileAsArrayBuffer } from "@/lib/utils";
+import {
+  downloadBlob,
+  formatBytes,
+  assertFileValid,
+  friendlyError,
+  readFileAsArrayBuffer,
+} from "@/lib/utils";
 import type { ReadyToolRuntimeDefinition } from "../types";
 
 function PdfPageNumbersTool() {
@@ -28,6 +34,7 @@ function PdfPageNumbersTool() {
     setError("");
     setResult(null);
     try {
+      assertFileValid(file, { kind: "PDF", maxBytes: 100 * 1024 * 1024 });
       const arrayBuffer = await readFileAsArrayBuffer(file);
       const { PDFDocument, StandardFonts, rgb } = await import("pdf-lib");
       const pdf = await PDFDocument.load(arrayBuffer, { ignoreEncryption: true });
@@ -60,9 +67,7 @@ function PdfPageNumbersTool() {
       downloadBlob(new Uint8Array(outBytes), outName, "application/pdf");
       setResult({ name: outName, size: outBytes.length });
     } catch (e) {
-      setError(
-        e instanceof Error ? e.message : "Failed to add page numbers. Please upload a valid PDF.",
-      );
+      setError(friendlyError(e, "Failed to add page numbers. Please upload a valid PDF."));
     } finally {
       setIsProcessing(false);
     }

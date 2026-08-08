@@ -1,6 +1,13 @@
 import { useState } from "react";
 import { FileImage, Download, RefreshCw, Upload, ShieldCheck, AlertCircle } from "lucide-react";
-import { downloadBlob, formatBytes, getGifEncoder, readFileAsArrayBuffer } from "@/lib/utils";
+import {
+  assertFileValid,
+  downloadBlob,
+  formatBytes,
+  friendlyError,
+  getGifEncoder,
+  readFileAsArrayBuffer,
+} from "@/lib/utils";
 import type { ReadyToolRuntimeDefinition } from "../types";
 
 function GifCompressorTool() {
@@ -16,6 +23,7 @@ function GifCompressorTool() {
     setError("");
     setResult(null);
     try {
+      assertFileValid(file, { kind: "GIF", maxBytes: 50 * 1024 * 1024 });
       const { GIF, workerScript } = await getGifEncoder();
       const { parseGIF, decompressFrames } = await import("gifuct-js");
       const buffer = await readFileAsArrayBuffer(file);
@@ -24,6 +32,9 @@ function GifCompressorTool() {
       if (!frames.length) throw new Error("No frames found in GIF.");
       const width = gif.lsd.width,
         height = gif.lsd.height;
+      if (!Number.isFinite(width) || !Number.isFinite(height) || width <= 0 || height <= 0) {
+        throw new Error("This GIF has invalid dimensions and could not be processed.");
+      }
       const qualityVal = quality === "high" ? 1 : quality === "medium" ? 20 : 40;
       const encoder = new GIF({
         workers: 2,
@@ -63,9 +74,7 @@ function GifCompressorTool() {
       const saved = file.size - blob.size;
       setResult({ name: outName, size: blob.size, saved });
     } catch (e) {
-      setError(
-        e instanceof Error ? e.message : "Failed to compress GIF. Please upload a valid GIF file.",
-      );
+      setError(friendlyError(e, "Failed to compress GIF. Please upload a valid GIF file."));
     } finally {
       setIsProcessing(false);
     }

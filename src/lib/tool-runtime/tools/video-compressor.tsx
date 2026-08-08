@@ -1,6 +1,13 @@
 import { useState } from "react";
 import { FileVideo, Download, RefreshCw, Upload, ShieldCheck, AlertCircle } from "lucide-react";
-import { downloadBlob, formatBytes, getFfmpeg, readFileAsArrayBuffer } from "@/lib/utils";
+import {
+  assertFileValid,
+  downloadBlob,
+  formatBytes,
+  friendlyError,
+  getFfmpeg,
+  readFileAsArrayBuffer,
+} from "@/lib/utils";
 import type { ReadyToolRuntimeDefinition } from "../types";
 
 function VideoCompressorTool() {
@@ -18,6 +25,7 @@ function VideoCompressorTool() {
     setResult(null);
     setProgress(0);
     try {
+      assertFileValid(file, { kind: "video", maxBytes: 512 * 1024 * 1024 });
       const ffmpeg = await getFfmpeg();
       const inExt = (file.name.split(".").pop() || "mp4").toLowerCase();
       const inName = "input." + inExt;
@@ -30,7 +38,7 @@ function VideoCompressorTool() {
       // libx264 with CRF is verified to work in the single-thread FFmpeg.wasm core
       // and produces real compression (CRF 32 ≈ 25% smaller). VP9/VP8 (libvpx) crash
       // with an out-of-bounds wasm memory trap in this core, so H.264 is used.
-      await ffmpeg.exec([
+      const ret = await ffmpeg.exec([
         "-i",
         inName,
         "-c:v",
@@ -47,8 +55,10 @@ function VideoCompressorTool() {
         "96k",
         outName,
       ]);
+      if (ret !== 0) throw new Error("FFMPEG_PROCESS_FAILED");
       ffmpeg.off("progress", progressCb);
       const outData = (await ffmpeg.readFile(outName)) as Uint8Array;
+      if (!outData || outData.length === 0) throw new Error("FFMPEG_PROCESS_FAILED");
       const outFile = file.name.replace(/\.[^.]+$/, "") + "-compressed.mp4";
       downloadBlob(new Uint8Array(outData), outFile, "video/mp4");
       const saved = file.size - outData.length;
@@ -60,9 +70,7 @@ function VideoCompressorTool() {
         /* ignore */
       }
     } catch (e) {
-      setError(
-        e instanceof Error ? e.message : "Failed to compress video. The format may be unsupported.",
-      );
+      setError(friendlyError(e, "Failed to compress video. The format may be unsupported."));
     } finally {
       setIsProcessing(false);
     }

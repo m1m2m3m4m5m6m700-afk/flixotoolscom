@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FileDown, Download, RefreshCw, ShieldCheck, AlertCircle, FileText } from "lucide-react";
-import { downloadBlob } from "@/lib/utils";
+import { downloadBlob, friendlyError } from "@/lib/utils";
 import type { ReadyToolRuntimeDefinition } from "../types";
 
 function MarkdownToPdfTool() {
@@ -96,7 +96,7 @@ function MarkdownToPdfTool() {
       downloadBlob(outBytes, outName, "application/pdf");
       setResult({ name: outName, size: outBytes.byteLength });
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Failed to generate PDF from Markdown.");
+      setError(friendlyError(e, "Failed to generate PDF from Markdown."));
     } finally {
       setIsProcessing(false);
     }

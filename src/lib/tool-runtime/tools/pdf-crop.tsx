@@ -8,7 +8,13 @@ import {
   FileText,
   AlertCircle,
 } from "lucide-react";
-import { downloadBlob, formatBytes, readFileAsArrayBuffer } from "@/lib/utils";
+import {
+  downloadBlob,
+  formatBytes,
+  assertFileValid,
+  friendlyError,
+  readFileAsArrayBuffer,
+} from "@/lib/utils";
 import type { ReadyToolRuntimeDefinition } from "../types";
 
 function PdfCropTool() {
@@ -24,6 +30,7 @@ function PdfCropTool() {
     setError("");
     setResult(null);
     try {
+      assertFileValid(file, { kind: "PDF", maxBytes: 100 * 1024 * 1024 });
       const arrayBuffer = await readFileAsArrayBuffer(file);
       const { PDFDocument } = await import("pdf-lib");
       const pdf = await PDFDocument.load(arrayBuffer, { ignoreEncryption: true });
@@ -50,7 +57,7 @@ function PdfCropTool() {
       downloadBlob(new Uint8Array(outBytes), outName, "application/pdf");
       setResult({ name: outName, size: outBytes.length });
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Failed to crop PDF. Please upload a valid PDF.");
+      setError(friendlyError(e, "Failed to crop PDF. Please upload a valid PDF."));
     } finally {
       setIsProcessing(false);
     }
